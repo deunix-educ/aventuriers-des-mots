@@ -12,6 +12,8 @@ func _init() -> void:
     checked += _validate_simple_dir("res://data/curriculum", "curriculum", failures)
     checked += _validate_dictations("res://data/dictations", failures)
     checked += _validate_exercises("res://data/exercises", failures)
+    checked += _validate_missions("res://data/missions", failures)
+    checked += _validate_simple_dir("res://data/localization", "localization", failures)
 
     if failures.is_empty():
         print("validate-data : %d fichier(s) JSON valide(s)" % checked)
@@ -40,6 +42,30 @@ func _validate_dictations(dir_path: String, failures: Array[String]) -> int:
         if schema_errors.is_empty():
             var data: Dictionary = DataLoader.read_json(path)
             failures.append_array(SemanticChecks.check_dictation(data, path))
+    return count
+
+
+func _validate_missions(dir_path: String, failures: Array[String]) -> int:
+    var known_rule_ids: Array[String] = []
+    for path in DataLoader.find_json_files("res://data/rules"):
+        var rule: Variant = DataLoader.read_json(path)
+        if typeof(rule) == TYPE_DICTIONARY and rule.has("rule_id"):
+            known_rule_ids.append(rule["rule_id"])
+
+    var count := 0
+    for path in DataLoader.find_json_files(dir_path):
+        count += 1
+        var schema_errors := DataLoader.validate_file(path, "mission")
+        failures.append_array(schema_errors)
+        if not schema_errors.is_empty():
+            continue
+        var data: Dictionary = DataLoader.read_json(path)
+        if not known_rule_ids.has(data["rule_id"]):
+            var message := (
+                "%s : rule_id '%s' ne correspond a aucune regle de data/rules"
+                % [path, data["rule_id"]]
+            )
+            failures.append(message)
     return count
 
 

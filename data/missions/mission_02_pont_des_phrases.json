@@ -1,0 +1,9 @@
+{
+  "mission_id": "mission_02_pont_des_phrases",
+  "title": "Le pont des phrases",
+  "narrative_context": "Un pont de pierres portant chacune un mot s'est abîmé. Repère la pierre fautive et corrige-la pour que les voyageurs puissent traverser en toute sécurité.",
+  "rule_id": "regle_accord_adjectif",
+  "exercise_type": "sentence_correction",
+  "map_position": { "x": 0.5, "y": 0.4 },
+  "review_status": "draft"
+}

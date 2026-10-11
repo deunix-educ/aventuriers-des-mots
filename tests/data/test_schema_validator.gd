@@ -68,3 +68,15 @@ func test_numeric_bounds_are_checked() -> void:
     var errors := SchemaValidator.validate(data, schema)
     assert_eq(errors.size(), 1)
     assert_string_contains(errors[0], "difficulty")
+
+
+func test_additional_properties_as_schema_validates_dynamic_keys() -> void:
+    var dynamic_schema := {
+        "type": "object",
+        "additionalProperties": {"type": "integer", "minimum": 0},
+    }
+    assert_eq(SchemaValidator.validate({"a": 1, "b": 2}, dynamic_schema), [])
+
+    var errors := SchemaValidator.validate({"a": 1, "b": -5}, dynamic_schema)
+    assert_eq(errors.size(), 1)
+    assert_string_contains(errors[0], "b")

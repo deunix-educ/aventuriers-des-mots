@@ -31,5 +31,22 @@ func list_profiles() -> Array[String]:
     return SaveManager.list_profile_ids()
 
 
+## Resume de chaque profil pour l'ecran de selection : profile_id, display_name
+## et school_level, sans charger toute la progression.
+func list_profile_summaries() -> Array[Dictionary]:
+    var summaries: Array[Dictionary] = []
+    for profile_id in list_profiles():
+        var data: Variant = SaveManager.load(profile_id)
+        if data == null:
+            continue
+        var summary := {
+            "profile_id": profile_id,
+            "display_name": data["display_name"],
+            "school_level": data["school_level"],
+        }
+        summaries.append(summary)
+    return summaries
+
+
 func _generate_profile_id() -> String:
     return "profile_%d_%d" % [Time.get_unix_time_from_system(), randi() % 10000]

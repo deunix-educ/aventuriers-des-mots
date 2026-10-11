@@ -58,3 +58,14 @@ static func unlock_region(save_data: Dictionary, region_id: String) -> Dictionar
         regions.append(region_id)
     updated["unlocked_regions"] = regions
     return updated
+
+
+## Les recompenses valorisent l'effort et la progression, jamais la vitesse
+## (cahier des charges §2, principe 6) : un nombre fixe d'etoiles par mission
+## terminee, quel que soit le temps pris ou le nombre d'aides utilisees.
+static func add_stars(save_data: Dictionary, amount: int) -> Dictionary:
+    var updated: Dictionary = save_data.duplicate(true)
+    var rewards: Dictionary = updated["rewards"].duplicate(true)
+    rewards["stars"] = int(rewards["stars"]) + amount
+    updated["rewards"] = rewards
+    return updated

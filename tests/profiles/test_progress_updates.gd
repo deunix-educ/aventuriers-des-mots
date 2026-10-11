@@ -81,3 +81,10 @@ func test_unlock_region_adds_region_once() -> void:
 func test_next_difficulty_for_unknown_skill_returns_current_difficulty() -> void:
     var data := _base_save()
     assert_eq(ProgressUpdates.next_difficulty_for_skill(data, "inconnue", 2), 2)
+
+
+func test_add_stars_accumulates() -> void:
+    var data := _base_save()
+    data = ProgressUpdates.add_stars(data, 1)
+    data = ProgressUpdates.add_stars(data, 2)
+    assert_eq(data["rewards"]["stars"], 3)

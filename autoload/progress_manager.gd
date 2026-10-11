@@ -37,6 +37,14 @@ func unlock_region(region_id: String) -> void:
     _current_save = ProgressUpdates.unlock_region(_current_save, region_id)
 
 
+func add_stars(amount: int) -> void:
+    _current_save = ProgressUpdates.add_stars(_current_save, amount)
+
+
+func stars() -> int:
+    return _current_save.get("rewards", {}).get("stars", 0)
+
+
 func next_difficulty_for_skill(skill_id: String, current_difficulty: int) -> int:
     return ProgressUpdates.next_difficulty_for_skill(_current_save, skill_id, current_difficulty)
 

@@ -18,7 +18,36 @@
     "school_level": { "type": "string", "enum": ["CE1", "CE2"] },
     "session_count": { "type": "integer", "minimum": 0 },
     "unlocked_regions": { "type": "array", "items": { "type": "string" } },
-    "skills": { "type": "object" },
+    "skills": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "status",
+          "recent_results",
+          "recent_hint_used",
+          "sessions_succeeded",
+          "formats_succeeded",
+          "last_session_practiced",
+          "review_interval_index",
+          "next_review_session"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "status": {
+            "type": "string",
+            "enum": ["decouverte", "en_acquisition", "en_consolidation", "acquise", "a_reviser"]
+          },
+          "recent_results": { "type": "array", "items": { "type": "boolean" } },
+          "recent_hint_used": { "type": "array", "items": { "type": "boolean" } },
+          "sessions_succeeded": { "type": "array", "items": { "type": "integer" } },
+          "formats_succeeded": { "type": "array", "items": { "type": "string" } },
+          "last_session_practiced": { "type": "integer" },
+          "review_interval_index": { "type": "integer" },
+          "next_review_session": { "type": "integer" }
+        }
+      }
+    },
     "rewards": {
       "type": "object",
       "required": ["stars", "items"],

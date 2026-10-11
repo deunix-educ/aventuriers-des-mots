@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "required": [
+    "mission_id",
+    "title",
+    "narrative_context",
+    "rule_id",
+    "exercise_type",
+    "map_position",
+    "review_status"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "mission_id": { "type": "string", "pattern": "^[a-z][a-z0-9_]*$" },
+    "title": { "type": "string", "minLength": 1 },
+    "narrative_context": { "type": "string", "minLength": 1 },
+    "rule_id": { "type": "string", "pattern": "^[a-z][a-z0-9_]*$" },
+    "exercise_type": {
+      "type": "string",
+      "enum": ["multiple_choice", "sentence_correction", "dictation"]
+    },
+    "map_position": {
+      "type": "object",
+      "required": ["x", "y"],
+      "additionalProperties": false,
+      "properties": {
+        "x": { "type": "number", "minimum": 0, "maximum": 1 },
+        "y": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    },
+    "review_status": { "type": "string", "enum": ["draft", "validated"] }
+  }
+}

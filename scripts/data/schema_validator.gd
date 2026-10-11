@@ -81,8 +81,13 @@ static func _validate_object(
     for key: String in value.keys():
         if properties.has(key):
             _validate_node(value[key], properties[key], "%s.%s" % [path, key], errors)
-        elif additional_allowed == false:
+        elif typeof(additional_allowed) == TYPE_BOOL and additional_allowed == false:
             errors.append("%s : propriete inattendue '%s'" % [path, key])
+        elif typeof(additional_allowed) == TYPE_DICTIONARY:
+            # additionalProperties est lui-meme un schema : toute cle non
+            # listee dans "properties" doit s'y conformer (cles dynamiques,
+            # ex. une competence par skill_id dans une sauvegarde).
+            _validate_node(value[key], additional_allowed, "%s.%s" % [path, key], errors)
 
 
 static func _validate_array(
