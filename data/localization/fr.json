@@ -30,6 +30,7 @@
   "exercise_host.validate_button": "Valider",
   "exercise_host.continue_button": "Continuer",
   "exercise_host.finish_mission_button": "Terminer la mission",
+  "exercise_host.progress_label": "Exercice",
   "feedback_panel.correct_title": "Bravo !",
   "feedback_panel.incorrect_title": "Pas tout à fait",
   "feedback_panel.hint_label": "Indice :",

@@ -58,3 +58,24 @@ func test_correct_word_tap_and_retype_validates_through_exercise_host() -> void:
 
     var skill_state := ProgressManager.get_skill_state("accord_groupe_nominal")
     assert_eq(skill_state["recent_results"], [true])
+
+    # "Bravo pas de suite ici ?" : cliquer sur Continuer doit faire avancer
+    # la mission (deuxieme exercice charge), pas rester bloque sur le meme
+    # panneau.
+    var old_exercise_scene: Control = exercise_scene
+    feedback.get_node("%ContinueButton").pressed.emit()
+    await wait_process_frames(1)
+
+    assert_eq(host.get_completed_count(), 1, "le premier exercice doit compter comme termine")
+    assert_eq(overlay.get_child_count(), 0, "le panneau de retour doit disparaitre")
+
+    var new_exercise_scene: Control = host.get_node("%ExerciseContainer").get_child(0)
+    assert_ne(
+        new_exercise_scene,
+        old_exercise_scene,
+        "une nouvelle instance d'exercice doit remplacer la precedente",
+    )
+    assert_eq(host.get_attempt_number(), 1, "le nouvel exercice repart a la premiere tentative")
+
+    var progress_label: Label = host.get_node("%ProgressLabel")
+    assert_string_contains(progress_label.text, "2/3")

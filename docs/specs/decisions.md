@@ -146,3 +146,11 @@ Ajouts à l'arborescence proposée :
 **Correction** : la comparaison passe maintenant par `TextNormalizer.normalize(...).to_lower()` des deux côtés (même normalisation que pour les dictées), tout en gardant le texte brut saisi dans `found` pour l'affichage du retour. Un test automatisé avec la séquence exacte rapportée (toucher une fois, taper, valider) n'avait pas reproduit le bug — preuve que la logique fonctionnait pour une saisie identique au caractère près ; c'est la tolérance aux variations incidentes qui manquait, pas la logique d'association mot/correction elle-même. Trois tests couvrent maintenant la casse, les espaces superflus et les accents décomposés.
 
 **Leçon** : toute comparaison de texte saisi par l'enfant doit passer par `TextNormalizer`, pas par une égalité de chaîne brute — à vérifier si d'autres types d'exercices à saisie libre sont ajoutés plus tard.
+
+## 17. Bug signalé manuellement : « Bravo » sans suite visible
+
+**Symptôme** : après « Bravo ! » sur la mission « Le pont des phrases », cliquer sur « Continuer » semblait ne rien faire.
+
+**Diagnostic** : un test automatisé confirme que la mission avance bien (un nouvel exercice est réellement chargé, `completed_count` augmente). Le contenu pédagogique de cette mission ne contient qu'une seule correction de phrase (`ce1_accord_adjectif_correction_01`, voir le point 14 sur le volume de contenu encore minimal) : le deuxième exercice de la mission est donc **exactement la même phrase**, ce qui donne l'impression visuelle de n'avoir pas bougé alors que la mission en est à l'exercice 2 sur 3.
+
+**Correction** : ajout d'un repère visuel permanent (« Exercice N/3 ») en haut de `exercise_host`, mis à jour à chaque exercice chargé. Ne corrige pas le manque de contenu (qui reste à écrire), mais rend la répétition explicite plutôt que silencieuse.

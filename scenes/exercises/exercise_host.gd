@@ -26,6 +26,7 @@ var _last_exercise_id := ""
 
 @onready var _exercise_container: Control = %ExerciseContainer
 @onready var _overlay_container: Control = %OverlayContainer
+@onready var _progress_label: Label = %ProgressLabel
 
 
 ## Accesseurs reserves aux tests d'integration (scenes/exercises/
@@ -67,6 +68,7 @@ func _load_next_exercise() -> void:
         _mission, _last_exercise_id, _current_difficulty
     )
     _attempt_number = 1
+    _update_progress_label()
 
     if _current_exercise_scene != null:
         _current_exercise_scene.queue_free()
@@ -76,6 +78,15 @@ func _load_next_exercise() -> void:
     _exercise_container.add_child(_current_exercise_scene)
     _current_exercise_scene.load_exercise(_current_exercise)
     _connect_answer_signal()
+
+
+## Un contenu encore peu nombreux (voir docs/specs/decisions.md, point 14)
+## peut faire redonner le meme exercice d'une mission a l'autre tentative :
+## sans ce repere, ca ressemble a un blocage plutot qu'a une progression.
+func _update_progress_label() -> void:
+    _progress_label.text = "%s %d/%d" % [
+        UIText.get_text("exercise_host.progress_label"), _completed_count + 1, MISSION_LENGTH
+    ]
 
 
 func _connect_answer_signal() -> void:
