@@ -1,0 +1,29 @@
+{
+  "id": "ce1_accord_adjectif_correction_04",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "accord_groupe_nominal",
+  "rule_id": "regle_accord_adjectif",
+  "difficulty": 3,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    { "text": "Les", "correct": true },
+    { "text": "fleurs", "correct": true },
+    { "text": "du", "correct": true },
+    { "text": "jardin", "correct": true },
+    { "text": "sont", "correct": true },
+    {
+      "text": "belle",
+      "correct": false,
+      "expected": "belles",
+      "rule_id": "regle_accord_adjectif"
+    },
+    { "text": "le", "correct": true },
+    { "text": "matin.", "correct": true }
+  ],
+  "hint": "Cherche le nom auquel l'adjectif se rapporte, meme s'il n'est pas juste avant.",
+  "explanation": "L'adjectif « belle » s'accorde avec le nom « fleurs », qui est feminin pluriel, meme si d'autres mots separent le nom de l'adjectif : il faut ecrire « belles ».",
+  "review_tags": ["genre", "pluriel", "accord_adjectif"],
+  "review_status": "draft"
+}

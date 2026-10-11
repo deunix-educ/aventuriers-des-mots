@@ -154,3 +154,11 @@ Ajouts à l'arborescence proposée :
 **Diagnostic** : un test automatisé confirme que la mission avance bien (un nouvel exercice est réellement chargé, `completed_count` augmente). Le contenu pédagogique de cette mission ne contient qu'une seule correction de phrase (`ce1_accord_adjectif_correction_01`, voir le point 14 sur le volume de contenu encore minimal) : le deuxième exercice de la mission est donc **exactement la même phrase**, ce qui donne l'impression visuelle de n'avoir pas bougé alors que la mission en est à l'exercice 2 sur 3.
 
 **Correction** : ajout d'un repère visuel permanent (« Exercice N/3 ») en haut de `exercise_host`, mis à jour à chaque exercice chargé. Ne corrige pas le manque de contenu (qui reste à écrire), mais rend la répétition explicite plutôt que silencieuse.
+
+## 18. Contenu : corrections de phrase de `regle_accord_adjectif` portées à 4
+
+**Contexte** : le point 14 notait que le volume minimal du cahier des charges (prompt-lancement.md : « par règle, au moins 8 choix multiples et 4 corrections de phrase, répartis sur les niveaux de difficulté ») n'était pas atteint — une seule correction de phrase existait, cause directe de la répétition constatée au point 17.
+
+**Ajout** : trois corrections de phrase supplémentaires pour `regle_accord_adjectif` (`ce1_accord_adjectif_correction_02` à `_04`), portant le total à 4 et couvrant les trois niveaux de difficulté (1, 2, 3) ainsi que les deux axes de l'accord (genre et nombre), avec un cas difficulté 3 où le nom et l'adjectif sont séparés par d'autres mots. Toutes en `review_status: draft` (non relues par un humain, cf. CLAUDE.md).
+
+**Reste à faire** : les 8 choix multiples par règle (2 existent) et les 3 dictées par chapitre (1 existe) ne sont pas couverts par ce travail ; le volume minimal du cahier des charges n'est donc pas encore entièrement atteint pour cette règle.

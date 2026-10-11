@@ -1,0 +1,26 @@
+{
+  "id": "ce1_accord_adjectif_correction_02",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "accord_groupe_nominal",
+  "rule_id": "regle_accord_adjectif",
+  "difficulty": 1,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    { "text": "Les", "correct": true },
+    { "text": "enfants", "correct": true },
+    {
+      "text": "sage",
+      "correct": false,
+      "expected": "sages",
+      "rule_id": "regle_accord_adjectif"
+    },
+    { "text": "jouent", "correct": true },
+    { "text": "dehors.", "correct": true }
+  ],
+  "hint": "Le nom « enfants » est au pluriel.",
+  "explanation": "L'adjectif « sage » s'accorde avec le nom « enfants », qui est au pluriel : il faut ecrire « sages ».",
+  "review_tags": ["pluriel", "accord_adjectif"],
+  "review_status": "draft"
+}
