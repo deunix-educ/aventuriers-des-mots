@@ -184,3 +184,15 @@ Ajouts à l'arborescence proposée :
 **Effet de bord** : `pyright` ne résolvait pas l'import `piper` en ciblant l'environnement Python par défaut plutôt que `.venv/`. Ajout de `pyrightconfig.json` (`venvPath`/`venv`) à la racine pour que `make lint` continue de fonctionner sans option supplémentaire.
 
 **Régénéré** : `ce1_accord_adjectif_dictee_01.ogg` avec la nouvelle voix. Non encore réécouté par un humain au moment d'écrire ceci — à confirmer en test manuel que l'intelligibilité est bien résolue, pas seulement supposée meilleure.
+
+**Confirmation manuelle** : voix jugée parfaitement intelligible par un test humain. Voir le point 21 pour le bug distinct révélé par ce même test.
+
+## 21. Bug signalé manuellement : dictée correcte refusée (ponctuation finale)
+
+**Symptôme** : en écoutant la dictée (point 20, voix maintenant intelligible) et en tapant exactement « Les petits chats dorment » tel qu'entendu, la réponse n'était pas validée comme correcte.
+
+**Cause** : `data/dictations/ce1_accord_adjectif_dictee_01.json` attend le texte avec un point final (`"target_text": "Les petits chats dorment."`), mais aucune voix (provisoire ou future) ne vocalise la ponctuation terminale — rien dans ce que l'enfant entend ne lui indique qu'il faut écrire ce point. `DictationAnalyzer` comparait le texte tel quel : l'absence du point faisait échouer la comparaison exacte, puis l'alignement mot à mot traitait « dorment » et « dorment. » comme deux mots différents (une substitution), signalée comme une erreur non classée. Un test reproduisant exactement l'interaction rapportée (`tests/exercises/test_exercise_host_dictation.gd`) a confirmé le problème avant toute correction.
+
+**Correction** : `DictationAnalyzer` ignore désormais la ponctuation terminale (`.`, `!`, `?`, `…`) à la comparaison — aussi bien dans le test d'égalité exacte (et celui des variantes acceptées) que dans l'alignement mot à mot, où elle est retirée avant la découpe en mots plutôt qu'après coup. La ponctuation interne à la phrase n'est pas concernée. Quatre tests couvrent : omission du point, point remplacé par un autre signe, et absence de faux négatif (une vraie faute sur le dernier mot reste détectée malgré la tolérance de ponctuation).
+
+**Leçon** : une tolérance de comparaison doit correspondre à ce que le canal d'entrée (ici l'audio) peut réellement transmettre à l'enfant — exiger une information qu'il n'a pas reçue revient à le punir d'une faute qu'il n'a pas commise (CLAUDE.md, invariants pédagogiques). À revoir si l'audio final fait un jour entendre la ponctuation (pause marquée, voix qui annonce « point »).

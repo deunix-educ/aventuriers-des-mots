@@ -65,3 +65,23 @@ func test_accepted_variant_is_treated_as_correct() -> void:
 func test_normalizes_before_comparing() -> void:
     var result := DictationAnalyzer.analyze(dictation, "Les petits chats dorment.")
     assert_true(result.is_correct)
+
+
+## L'audio provisoire ne fait entendre aucune ponctuation (voir
+## docs/specs/decisions.md, point 19/20) : l'omettre n'est pas une erreur.
+func test_missing_terminal_punctuation_is_still_correct() -> void:
+    var result := DictationAnalyzer.analyze(dictation, "Les petits chats dorment")
+    assert_true(result.is_correct)
+
+
+func test_different_terminal_punctuation_is_still_correct() -> void:
+    var result := DictationAnalyzer.analyze(dictation, "Les petits chats dorment!")
+    assert_true(result.is_correct)
+
+
+func test_terminal_punctuation_tolerance_does_not_hide_a_real_error_on_the_last_word() -> void:
+    var result := DictationAnalyzer.analyze(dictation, "Les petits chats dorme")
+    assert_false(result.is_correct)
+    assert_eq(result.errors.size(), 1)
+    assert_eq(result.errors[0]["found"], "dorme")
+    assert_eq(result.errors[0]["expected"], "dorment.")
