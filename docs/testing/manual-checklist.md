@@ -7,7 +7,7 @@ Tout ce qui suit ne peut pas être vérifié sans écran (rendu, mise en page, a
 1. `make run`.
 2. Écran de sélection de profil vide → bouton « Nouveau profil » visible et cliquable.
 3. Création de profil : le bouton de validation refuse un prénom vide avec un message visible (pas seulement une absence de réaction) ; CE1 est sélectionné par défaut ; le bouton CE2 bascule correctement l'état visuel des deux boutons (ils doivent se comporter comme des boutons radio, un seul actif à la fois).
-4. Après création, arrivée sur la carte (« La forêt des accords ») avec **neuf** lieux visibles (point 25 de `decisions.md` : extension au-delà du prototype §15) et positionnés à des endroits différents, **jamais vérifié à l'écran avec ce nombre de lieux** — vérifier particulièrement qu'aucun marqueur ne se superpose à un autre, surtout sur petit écran.
+4. Après création, arrivée sur la carte (« La forêt des accords ») avec **neuf** lieux visibles (point 25 de `decisions.md` : extension au-delà du prototype §15), disposés sur une grille 3x3 (point 26 : deux missions se chevauchaient avant ce repositionnement) — vérifier qu'aucun marqueur ne se superpose à un autre, y compris en redimensionnant la fenêtre vers une taille réduite.
 5. Chaque lieu affiche un intitulé et un état (« À découvrir », etc.) lisible.
 6. Clic sur un lieu → introduction de la mission : le texte narratif s'affiche en entier (pas tronqué), Plume (le hibou) affiche la même phrase dans sa bulle.
 7. « Commencer la mission » → panneau de règle : énoncé et exemple lisibles, bouton « C'est parti ! » visible.

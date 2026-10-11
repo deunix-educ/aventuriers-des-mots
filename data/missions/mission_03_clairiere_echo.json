@@ -4,6 +4,6 @@
   "narrative_context": "L'écho de la clairière répète fidèlement les phrases qu'on lui confie, mais seulement si elles sont bien écrites. Dicte-lui la phrase sans faute pour l'entendre résonner.",
   "rule_id": "regle_accord_adjectif",
   "exercise_type": "dictation",
-  "map_position": { "x": 0.8, "y": 0.65 },
+  "map_position": { "x": 0.85, "y": 0.85 },
   "review_status": "draft"
 }

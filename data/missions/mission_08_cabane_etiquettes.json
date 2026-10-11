@@ -4,6 +4,6 @@
   "narrative_context": "Dans la cabane, les etiquettes des objets ont ete melangees par le vent. Repere celle qui ne va pas et remets le bon petit mot devant.",
   "rule_id": "regle_accord_determinant",
   "exercise_type": "sentence_correction",
-  "map_position": { "x": 0.92, "y": 0.78 },
+  "map_position": { "x": 0.85, "y": 0.5 },
   "review_status": "draft"
 }

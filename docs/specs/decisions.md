@@ -234,3 +234,13 @@ Ajouts à l'arborescence proposée :
 - Audio des 6 nouvelles dictées généré avec `make generate-dictation-audio` (voix Piper, point 20), crédité dans `assets/CREDITS.md`.
 
 **Non vérifié** : la disposition des 9 lieux sur la carte (positions fractionnelles choisies à l'écart les unes des autres, mais jamais vues à l'écran) — à vérifier à la main, voir `docs/testing/manual-checklist.md`.
+
+## 26. Bug signalé manuellement : deux marqueurs de mission se chevauchaient
+
+**Symptôme** : « La clairière » (`mission_03_clairiere_echo`) et « La cabane » (`mission_08_cabane_etiquettes`) se chevauchaient sur la carte — exactement le risque signalé sans être vérifié au point 25.
+
+**Cause** : leurs positions fractionnelles (0.8, 0.65) et (0.92, 0.78) étaient trop proches pour la taille des marqueurs (`MARKER_HALF_WIDTH`/`MARKER_HALF_HEIGHT` dans `world_map.gd`) à la résolution par défaut du projet (aucune taille de fenêtre fixée dans `project.godot`, donc le viewport par defaut de Godot, 1152x648).
+
+**Correction** : les 9 missions sont replacées sur une grille régulière 3x3 (x, y ∈ {0.15, 0.5, 0.85}), avec un écart de 0.35 entre positions adjacentes — largement supérieur à la largeur/hauteur des marqueurs rapportée à la fenêtre par défaut. Les trois missions historiques (`mission_01` à `_03`) sont déplacées elles aussi, pas seulement les nouvelles, pour que la grille soit cohérente partout plutôt que patchée au cas par cas.
+
+**Garde-fou** : nouveau test headless (`tests/data/test_mission_positions.gd`) qui échoue si deux missions ont un écart fractionnel inférieur à 0.3 sur les deux axes — ne remplace pas une vérification visuelle (l'écart réel en pixels dépend de la taille de fenêtre réelle, non fixée), mais attrape la classe d'erreur qui vient de se produire avant qu'elle ne soit signalée à la main.

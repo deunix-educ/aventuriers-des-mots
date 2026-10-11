@@ -4,6 +4,6 @@
   "narrative_context": "Les lutins du pré n'arrivent plus à accorder leurs mots entre eux. Aide-les à retrouver les bonnes terminaisons pour que leurs phrases retrouvent leur sens !",
   "rule_id": "regle_accord_adjectif",
   "exercise_type": "multiple_choice",
-  "map_position": { "x": 0.2, "y": 0.7 },
+  "map_position": { "x": 0.15, "y": 0.85 },
   "review_status": "draft"
 }
