@@ -2,7 +2,7 @@
 
 Jeu éducatif de français pour les CE1-CE2 (7-9 ans) : une aventure 2D hors ligne, avec une carte à explorer, un personnage guide, et des exercices de grammaire, d'orthographe et de dictées.
 
-Projet open source, en développement. Statut actuel : premier prototype jouable (périmètre du §15 du cahier des charges) — démarrage, profils, carte à trois lieux, trois types d'exercices, sauvegardes, exports Linux/Windows. Contenu pédagogique encore minimal (voir `docs/specs/decisions.md` pour les décisions de cadrage et `docs/specs/cahier-des-charges.md` pour la spécification complète).
+Projet open source, en développement. Statut actuel : version 0.1.0, jouable hors ligne sur Linux et Windows — profils, sauvegardes, trois types d'exercices (choix multiple, correction de phrase, dictée), chapitre CE1 « accords dans le groupe nominal » (3 règles) et chapitre CE2 « homophones grammaticaux » (a/à, et/est, son/sont, on/ont), 21 missions. Contenu pédagogique entièrement en brouillon (`draft`, à valider) et voix des dictées provisoires (voir `assets/CREDITS.md` ; voir `docs/specs/decisions.md` pour les décisions de cadrage et `docs/specs/cahier-des-charges.md` pour la spécification complète).
 
 ## Pile technique
 
@@ -27,7 +27,10 @@ make run     # lance le jeu
 | `make validate-data` | valide les JSON de `data/` |
 | `make test` | tests headless |
 | `make check` | lint + validate-data + test, à passer avant chaque commit |
+| `make content-review` | régénère `docs/review/content-review.md` (document de validation du contenu) |
+| `make generate-dictation-audio` | génère l'audio provisoire des dictées |
 | `make export-linux` / `make export-windows` | exports dans `build/` |
+| `make package` | produit les archives distribuables dans `dist/` (exécutable unique + licence + crédits) |
 
 ## Structure
 

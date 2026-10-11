@@ -35,6 +35,8 @@ Tout ce qui suit ne peut pas être vérifié sans écran (rendu, mise en page, a
 
 ## Exports
 
+- `make package` produit `dist/aventuriers-des-mots-0.1.0-{linux,windows}-x86_64.*` (exécutable unique, PCK embarqué) : sommes de contrôle et lancement headless de l'archive Linux vérifiés ici ; le binaire Windows n'a été vérifié que par son format (PE32+).
+
 - `make export-linux` produit `build/linux/aventuriers_des_mots.x86_64` : lancé et vérifié en headless dans cet environnement, mais **jamais vu à l'écran** ni testé sur une autre distribution (cahier des charges §13 demande un test sur les distributions cibles).
 - `make export-windows` produit `build/windows/aventuriers_des_mots.exe` : seul le format du binaire (PE32+) a pu être vérifié ici. **Jamais exécuté** (pas de machine Windows ni de Wine disponibles) : à tester sur une vraie machine Windows avant toute diffusion.
 - Vérifier manuellement que le jeu se comporte correctement en plein écran et en fenêtré sur les deux plateformes.

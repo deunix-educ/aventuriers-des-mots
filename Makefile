@@ -6,7 +6,7 @@ PYRIGHT := $(VENV)/bin/pyright
 PYTHON := $(VENV)/bin/python3
 GD_SOURCES := autoload scripts tests
 
-.PHONY: setup run lint format validate-data test check content-review generate-dictation-audio export-linux export-windows
+.PHONY: setup run lint format validate-data test check content-review generate-dictation-audio export-linux export-windows package
 
 setup:
 	tools/setup.sh
@@ -42,3 +42,6 @@ export-linux:
 export-windows:
 	mkdir -p build/windows
 	$(GODOT_BIN) --headless --path . --export-release "Windows" build/windows/aventuriers_des_mots.exe
+
+package:
+	tools/package.sh

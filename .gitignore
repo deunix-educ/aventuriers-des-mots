@@ -1,6 +1,7 @@
 # Runtime et artefacts Godot
 .godot/
 build/
+dist/
 
 # Outillage telecharge par `make setup` (Godot, GUT), non versionne
 .godot-bin/

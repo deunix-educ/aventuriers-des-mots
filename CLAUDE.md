@@ -19,6 +19,7 @@ Le `Makefile` est le seul point d'entrée pour les opérations système. Tenir c
 - `make content-review` : régénère `docs/review/content-review.md` à partir de `data/`
 - `make generate-dictation-audio` : génère l'audio provisoire des dictées (voix neuronale Piper via `.venv`, `ffmpeg` requis sur la machine) dans `assets/audio/dictations/`, sans écraser l'existant (`--force` pour régénérer)
 - `make export-linux` / `make export-windows` : exports dans `build/`
+- `make package` : réexporte puis produit les archives distribuables (exécutable unique + licence + crédits + notice) et `SHA256SUMS` dans `dist/`
 
 ## Conventions de code
 

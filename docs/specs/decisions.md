@@ -262,3 +262,11 @@ Ajouts à l'arborescence proposée :
 **Correction** : restauration des accents sur 76 lignes de 44 fichiers de `data/` (champs `instruction`, `question`, `hint`, `explanation`, `statement`, `example`, `title`, `narrative_context` uniquement ; aucun identifiant, `target_text`, mot de dictée ni token modifié, donc aucun lien entre données ni audio touché). Cas particuliers : « a » devenu « à » (préposition) et « annonce » devenu « annoncé ». Le tag interne `feminin` de `review_tags` est conservé (identifiant, non affiché).
 
 **Règle pour la suite** : tout texte destiné à l'enfant est écrit avec ses accents dès la rédaction.
+
+## 29. Production de la version 0.1.0 (relecture du cahier des charges)
+
+**Relecture** : le §15 (première version jouable) demande un export Linux et Windows ; le §12 demande « une version installable et testée » par plateforme ; le §13 recommande de valider d'abord Linux et Windows, Android/macOS/iOS venant ensuite (hors périmètre, prompt-lancement.md). La version est donc produite pour Linux x86_64 et Windows x86_64.
+
+**Mise en œuvre** : `config/version="0.1.0"` dans `project.godot` ; PCK embarqué dans l'exécutable (`binary_format/embed_pck=true`) pour un fichier unique par plateforme ; `make package` (`tools/package.sh`) réexporte depuis zéro puis crée `dist/` : `.tar.gz` Linux et `.zip` Windows contenant l'exécutable, `LICENSE`, `README.md`, `README-EN.md`, `CREDITS.md` et une notice `LISEZMOI.txt` (lancement, emplacement des sauvegardes, voix provisoires), plus `SHA256SUMS`. Le script refuse d'empaqueter un document vide (un README tronqué par une erreur d'édition a été détecté pendant cette production).
+
+**Écarts connus par rapport au cahier des charges, non traités** (hors périmètre du §15 ou nécessitant des ressources/décisions humaines) : voix préenregistrées naturelles (§16 : voix de synthèse provisoires), illustrations originales et personnage guide animé (formes simples, §11/§16), espace adulte et export/restauration des sauvegardes (§9/§10), écran de réglages (volume, taille du texte, animations — `SettingsManager` existe sans interface), tests sur appareils réels et sur d'autres distributions/Windows (§12/§13), contenu entièrement en `draft` (validation humaine requise avant diffusion).
