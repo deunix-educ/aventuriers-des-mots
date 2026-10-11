@@ -29,6 +29,8 @@ var _pending_outcome := ""
 @onready var _exercise_container: Control = %ExerciseContainer
 @onready var _overlay_container: Control = %OverlayContainer
 @onready var _progress_label: Label = %ProgressLabel
+@onready var _abandon_button: Button = %AbandonButton
+@onready var _abandon_confirm_dialog: ConfirmationDialog = %AbandonConfirmDialog
 
 
 ## Accesseurs reserves aux tests d'integration (scenes/exercises/
@@ -50,11 +52,33 @@ func get_outcomes() -> Array[String]:
 
 
 func _ready() -> void:
+    _abandon_button.text = UIText.get_text("exercise_host.abandon_button")
+    _abandon_button.pressed.connect(_on_abandon_pressed)
+    _abandon_confirm_dialog.title = UIText.get_text("exercise_host.abandon_confirm_title")
+    _abandon_confirm_dialog.dialog_text = UIText.get_text("exercise_host.abandon_confirm_message")
+    _abandon_confirm_dialog.ok_button_text = UIText.get_text("exercise_host.abandon_confirm_yes")
+    _abandon_confirm_dialog.cancel_button_text = UIText.get_text("exercise_host.abandon_confirm_no")
+    _abandon_confirm_dialog.confirmed.connect(_on_abandon_confirmed)
+
     _mission = ExerciseEngine.get_mission(GameManager.pending_mission_id)
     _rule = ExerciseEngine.get_rule(_mission["rule_id"])
     _skill_id = _rule.get("skill", "")
     _current_difficulty = ProgressManager.next_difficulty_for_skill(_skill_id, 1)
     _show_rule_panel()
+
+
+func _on_abandon_pressed() -> void:
+    _abandon_confirm_dialog.popup_centered()
+
+
+## Quitter une mission ne rapporte ni etoile ni objet et n'est jamais compte
+## comme un echec. Les tentatives deja faites restent enregistrees (ce sont de
+## vraies observations d'apprentissage) et sont sauvegardees avant de partir.
+func _on_abandon_confirmed() -> void:
+    ProgressManager.save_now()
+    GameManager.pending_mission_id = ""
+    GameManager.last_outcomes = []
+    GameManager.goto(GameManager.SCENE_WORLD_MAP)
 
 
 func _show_rule_panel() -> void:

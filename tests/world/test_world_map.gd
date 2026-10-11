@@ -43,3 +43,12 @@ func test_ce2_profile_sees_ce2_missions_and_can_review_ce1() -> void:
     toggle.pressed.emit()
     await wait_process_frames(1)
     assert_eq(map.get_node("%MapArea").get_child_count(), 12)
+
+
+func test_map_offers_a_way_back_to_the_profile_selection() -> void:
+    var map := _open_map_for("CE1")
+    await wait_process_frames(1)
+
+    var button: Button = map.get_node("%ProfileButton")
+    assert_true(button.visible)
+    assert_eq(button.text, UIText.get_text("world_map.change_profile_button"))

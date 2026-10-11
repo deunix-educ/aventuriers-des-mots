@@ -16,6 +16,7 @@ var _viewed_level := "CE1"
 @onready var _level_toggle_button: Button = %LevelToggleButton
 @onready var _total_stars_label: Label = %TotalStarsLabel
 @onready var _collection_button: Button = %CollectionButton
+@onready var _profile_button: Button = %ProfileButton
 
 
 func _ready() -> void:
@@ -24,6 +25,8 @@ func _ready() -> void:
     _level_toggle_button.pressed.connect(_on_level_toggle_pressed)
     _collection_button.text = UIText.get_text("world_map.collection_button")
     _collection_button.pressed.connect(_on_collection_pressed)
+    _profile_button.text = UIText.get_text("world_map.change_profile_button")
+    _profile_button.pressed.connect(_on_change_profile_pressed)
     _refresh()
 
 
@@ -47,6 +50,13 @@ func _populate_missions() -> void:
 
     for mission: Dictionary in ExerciseEngine.get_missions_for_level(_viewed_level):
         _map_area.add_child(_build_marker(mission))
+
+
+## Revient au choix du profil sans rien perdre : la progression est ecrite
+## avant de quitter la carte (le profil se rechargera a la prochaine selection).
+func _on_change_profile_pressed() -> void:
+    ProgressManager.save_now()
+    GameManager.goto(GameManager.SCENE_PROFILE_SELECT)
 
 
 func _on_collection_pressed() -> void:
