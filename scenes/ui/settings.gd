@@ -7,6 +7,10 @@ extends Control
 @onready var _title_label: Label = %TitleLabel
 @onready var _volume_label: Label = %VolumeLabel
 @onready var _volume_slider: HSlider = %VolumeSlider
+@onready var _music_label: Label = %MusicLabel
+@onready var _music_slider: HSlider = %MusicSlider
+@onready var _effects_label: Label = %EffectsLabel
+@onready var _effects_slider: HSlider = %EffectsSlider
 @onready var _text_size_label: Label = %TextSizeLabel
 @onready var _text_size_box: HBoxContainer = %TextSizeBox
 @onready var _animations_label: Label = %AnimationsLabel
@@ -23,11 +27,14 @@ func _ready() -> void:
     _adult_button.text = UIText.get_text("settings.adult_button")
     _back_button.text = UIText.get_text("settings.back_button")
 
-    _volume_slider.min_value = 0.0
-    _volume_slider.max_value = 1.0
-    _volume_slider.step = 1.0 / AppSettings.VOLUME_STEPS
-    _volume_slider.value = SettingsManager.volume
-    _volume_slider.value_changed.connect(_on_volume_changed)
+    _music_label.text = UIText.get_text("settings.music_label")
+    _effects_label.text = UIText.get_text("settings.effects_label")
+    _setup_slider(_volume_slider, SettingsManager.volume, _on_volume_changed)
+    _setup_slider(_music_slider, SettingsManager.music_volume, _on_music_changed)
+    _setup_slider(_effects_slider, SettingsManager.effects_volume, _on_effects_changed)
+    # Un petit son a la fin du geste fait entendre le niveau choisi.
+    _volume_slider.drag_ended.connect(_on_drag_ended)
+    _effects_slider.drag_ended.connect(_on_drag_ended)
 
     _build_text_size_buttons()
 
@@ -65,8 +72,28 @@ func _build_animation_buttons() -> void:
         _animations_box.add_child(button)
 
 
+func _setup_slider(slider: HSlider, value: float, handler: Callable) -> void:
+    slider.min_value = 0.0
+    slider.max_value = 1.0
+    slider.step = 1.0 / AppSettings.VOLUME_STEPS
+    slider.value = value
+    slider.value_changed.connect(handler)
+
+
 func _on_volume_changed(value: float) -> void:
     SettingsManager.set_volume(value)
+
+
+func _on_music_changed(value: float) -> void:
+    SettingsManager.set_music_volume(value)
+
+
+func _on_effects_changed(value: float) -> void:
+    SettingsManager.set_effects_volume(value)
+
+
+func _on_drag_ended(_value_changed: bool) -> void:
+    AudioManager.play_sfx("success")
 
 
 func _on_text_size_pressed(index: int) -> void:

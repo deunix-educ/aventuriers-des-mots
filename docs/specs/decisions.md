@@ -314,3 +314,15 @@ Ajouts à l'arborescence proposée :
 **Export et restauration** : l'export écrit la sauvegarde du profil telle quelle (JSON versionné) dans `Documents/AventuriersDesMots/` (repli `user://exports` si la plateforme n'expose pas Documents), sans jamais écraser un export précédent (`_2`, `_3`...). La restauration liste ce dossier, valide chaque fichier (migration + schéma ; les illisibles sont signalés et non restaurables) et crée toujours un NOUVEAU profil avec un identifiant neuf : aucun profil existant n'est jamais modifié. Aucun accès réseau, aucun sélecteur de fichier système (limite assumée : l'adulte dépose le fichier dans le dossier indiqué).
 
 **Tests** : AppSettings, ProgressReport, AdultGate, SaveTransfer (export, non-écrasement, restauration non destructive, fichiers invalides, dossier absent), intitulés de notions présents dans la traduction, barrière de l'espace adulte. **Non vérifié** (sans humain) : curseur de volume à l'oreille (aucun son d'interface n'existe encore, phase suivante), tactile, export vers un vrai dossier Documents sous Windows, résolutions autres que 1152x648.
+
+## 33. Phase « Son et musique » (version 0.5.0)
+
+**Sons** : 5 effets (`click`, `success`, `try_again`, `star`, `fanfare`) et 2 musiques d'ambiance en boucle (`forest` pour le CE1, `marsh` pour le CE2), synthétisés de façon procédurale par `tools/generate_sounds.py` (`make generate-sounds`, numpy + ffmpeg, aucun échantillon tiers, donc aucune attribution à ajouter). Résolus par identifiant dans un répertoire fixe (`SoundCatalog`). Fichier absent : avertissement, pas de plantage.
+
+**Intentions** : le retour « à retenter » est une courte phrase de deux notes douces qui montent, jamais un buzzer (une erreur n'est jamais punie) ; la fanfare ne retentit que pour 3 étoiles ou un objet gagné, sans lien avec la vitesse. Musiques calmes, sans percussions. Un clic sur n'importe quel bouton produit le même petit son (`AudioManager` observe les nouveaux boutons ; méta `silent` pour en exclure un).
+
+**Mixage** : bus `Music` et `Effects` créés à l'exécution, enfants du bus principal. Réglages : volume général, musique, effets (trois curseurs, `user://settings.json`, format des sauvegardes de profil inchangé). La musique baisse de 12 dB pendant la lecture d'une dictée pour ne jamais couvrir la voix.
+
+**Voix plus naturelles** : non traité. La voix Piper `fr_FR-siwis-medium` reste la voix provisoire (point 19) ; une voix plus naturelle suppose un enregistrement humain ou un autre modèle à évaluer à l'oreille, ce que je ne peux pas faire ici. Les dictées gardent le badge « voix provisoire ».
+
+**Tests** : catalogue (fichiers présents, aucun chemin libre), `AudioManager` (lecture, musique mémorisée), bus idempotents, bornes des volumes. **Non vérifié** : tout ce qui s'entend (timbre, niveau relatif musique/effets/voix, boucle sans claquement, agrément) ; vérifié seulement : durées et niveaux de crête des fichiers (aucun écrêtage).

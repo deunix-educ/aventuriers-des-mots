@@ -28,6 +28,7 @@ func _ready() -> void:
     var mission := ExerciseEngine.get_mission(GameManager.pending_mission_id)
     var rule := ExerciseEngine.get_rule(mission.get("rule_id", ""))
     _backdrop.kind = "marsh" if rule.get("level", "CE1") == "CE2" else "forest"
+    AudioManager.play_music(SoundCatalog.music_for_level(rule.get("level", "CE1")))
 
     var summary := ProgressManager.complete_mission(
         GameManager.pending_mission_id, GameManager.last_outcomes
@@ -47,6 +48,10 @@ func _ready() -> void:
         "%s %d" % [UIText.get_text("reward_screen.total_label"), summary["total_stars"]]
     )
     _show_new_items(summary["new_items"])
+    if summary["stars"] == MissionScoring.MAX_STARS or not summary["new_items"].is_empty():
+        get_tree().create_timer(0.25 + 0.2 * MissionScoring.MAX_STARS).timeout.connect(
+            AudioManager.play_sfx.bind("fanfare")
+        )
 
     _collection_button.text = UIText.get_text("reward_screen.collection_button")
     _collection_button.pressed.connect(_on_collection_pressed)
@@ -64,6 +69,9 @@ func _show_stars(earned: int) -> void:
         _stars_row.add_child(star)
         if i < earned:
             Motion.pop_in(star, 0.25 + 0.2 * i)
+            get_tree().create_timer(0.25 + 0.2 * i).timeout.connect(
+                AudioManager.play_sfx.bind("star")
+            )
 
 
 func _show_new_items(new_items: Array) -> void:

@@ -6,7 +6,7 @@ PYRIGHT := $(VENV)/bin/pyright
 PYTHON := $(VENV)/bin/python3
 GD_SOURCES := autoload scripts tests
 
-.PHONY: setup run lint format validate-data test check content-review generate-dictation-audio export-linux export-windows package screenshot
+.PHONY: setup run lint format validate-data test check content-review generate-dictation-audio generate-sounds export-linux export-windows package screenshot
 
 setup:
 	tools/setup.sh
@@ -34,6 +34,9 @@ content-review:
 
 generate-dictation-audio:
 	$(PYTHON) tools/generate_dictation_audio.py
+
+generate-sounds:
+	$(PYTHON) tools/generate_sounds.py
 
 export-linux:
 	mkdir -p build/linux

@@ -20,6 +20,8 @@ static func defaults() -> Dictionary:
     return {
         "format_version": FORMAT_VERSION,
         "volume": 0.8,
+        "music_volume": 0.5,
+        "effects_volume": 0.8,
         "text_scale_index": 0,
         "animations_enabled": true,
     }
@@ -35,6 +37,10 @@ static func sanitize(raw: Variant) -> Dictionary:
     var volume: Variant = source.get("volume")
     if typeof(volume) == TYPE_FLOAT or typeof(volume) == TYPE_INT:
         result["volume"] = clampf(float(volume), 0.0, 1.0)
+    for key: String in ["music_volume", "effects_volume"]:
+        var other: Variant = source.get(key)
+        if typeof(other) == TYPE_FLOAT or typeof(other) == TYPE_INT:
+            result[key] = clampf(float(other), 0.0, 1.0)
     var index: Variant = source.get("text_scale_index")
     if typeof(index) == TYPE_FLOAT or typeof(index) == TYPE_INT:
         result["text_scale_index"] = clampi(int(index), 0, TEXT_SCALES.size() - 1)

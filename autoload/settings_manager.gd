@@ -1,5 +1,6 @@
 extends Node
-## Volume, taille du texte et animations. Les reglages sont ceux de l'appareil
+## Volumes (general, musique, effets), taille du texte et animations. Les
+## reglages sont ceux de l'appareil
 ## (user://settings.json), pas ceux d'un profil. Les valeurs sont nettoyees par
 ## AppSettings a chaque lecture ; un fichier absent ou abime redonne les valeurs
 ## par defaut sans erreur. Le volume agit sur le bus principal ; la taille du
@@ -11,6 +12,8 @@ const SETTINGS_PATH := "user://settings.json"
 
 var animations_enabled := true
 var volume := 0.8
+var music_volume := 0.5
+var effects_volume := 0.8
 var text_scale_index := 0
 
 var _base_font_sizes: Dictionary = {}
@@ -36,6 +39,16 @@ func set_volume(value: float) -> void:
     _commit()
 
 
+func set_music_volume(value: float) -> void:
+    music_volume = clampf(value, 0.0, 1.0)
+    _commit()
+
+
+func set_effects_volume(value: float) -> void:
+    effects_volume = clampf(value, 0.0, 1.0)
+    _commit()
+
+
 func set_text_scale_index(index: int) -> void:
     text_scale_index = clampi(index, 0, AppSettings.TEXT_SCALES.size() - 1)
     _commit()
@@ -54,6 +67,8 @@ func load_from_disk() -> void:
             raw = JSON.parse_string(file.get_as_text())
     var clean := AppSettings.sanitize(raw)
     volume = clean["volume"]
+    music_volume = clean["music_volume"]
+    effects_volume = clean["effects_volume"]
     text_scale_index = clean["text_scale_index"]
     animations_enabled = clean["animations_enabled"]
 
@@ -62,6 +77,8 @@ func load_from_disk() -> void:
 func save_to_disk() -> bool:
     var data := AppSettings.defaults()
     data["volume"] = volume
+    data["music_volume"] = music_volume
+    data["effects_volume"] = effects_volume
     data["text_scale_index"] = text_scale_index
     data["animations_enabled"] = animations_enabled
     var tmp_path := SETTINGS_PATH + ".tmp"
@@ -79,7 +96,14 @@ func save_to_disk() -> bool:
 ## Applique les reglages au moteur : volume du bus principal et tailles du
 ## theme global.
 func apply() -> void:
+    AudioBuses.ensure()
     AudioServer.set_bus_volume_db(0, AppSettings.volume_db(volume))
+    AudioServer.set_bus_volume_db(
+        AudioServer.get_bus_index(AudioBuses.MUSIC), AppSettings.volume_db(music_volume)
+    )
+    AudioServer.set_bus_volume_db(
+        AudioServer.get_bus_index(AudioBuses.EFFECTS), AppSettings.volume_db(effects_volume)
+    )
     _apply_text_scale()
 
 

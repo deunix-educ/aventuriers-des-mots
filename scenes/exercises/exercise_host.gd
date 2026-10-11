@@ -66,6 +66,7 @@ func _ready() -> void:
     _skill_id = _rule.get("skill", "")
     _current_difficulty = ProgressManager.next_difficulty_for_skill(_skill_id, 1)
     $Backdrop.kind = "marsh" if _rule.get("level", "CE1") == "CE2" else "forest"
+    AudioManager.play_music(SoundCatalog.music_for_level(_rule.get("level", "CE1")))
     _show_rule_panel()
 
 
@@ -171,6 +172,7 @@ func _handle_result(result: CorrectionResult) -> void:
     ProgressManager.record_attempt(
         _skill_id, result.is_correct, _attempt_number > 1, _mission["exercise_type"]
     )
+    AudioManager.play_sfx("success" if result.is_correct else "try_again")
 
     _show_feedback(result, support_level, is_terminal)
 

@@ -35,3 +35,10 @@ func test_zero_volume_is_real_silence() -> void:
     assert_eq(AppSettings.volume_db(0.0), -80.0)
     assert_eq(AppSettings.volume_db(1.0), 0.0)
     assert_lt(AppSettings.volume_db(0.5), 0.0)
+
+
+func test_music_and_effects_volumes_are_bounded() -> void:
+    var clean := AppSettings.sanitize({"music_volume": 3, "effects_volume": -1})
+    assert_eq(clean["music_volume"], 1.0)
+    assert_eq(clean["effects_volume"], 0.0)
+    assert_eq(AppSettings.sanitize({})["music_volume"], AppSettings.defaults()["music_volume"])

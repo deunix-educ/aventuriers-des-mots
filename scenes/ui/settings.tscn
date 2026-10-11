@@ -49,14 +49,55 @@ layout_mode = 2
 theme_type_variation = &"CardTitle"
 horizontal_alignment = 1
 
-[node name="VolumeLabel" type="Label" parent="Margin/Center/Card/VBox"]
+[node name="VolumeRow" type="HBoxContainer" parent="Margin/Center/Card/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="VolumeLabel" type="Label" parent="Margin/Center/Card/VBox/VolumeRow"]
 unique_name_in_owner = true
 layout_mode = 2
+custom_minimum_size = Vector2(230, 0)
 theme_type_variation = &"Emphasis"
 
-[node name="VolumeSlider" type="HSlider" parent="Margin/Center/Card/VBox"]
+[node name="VolumeSlider" type="HSlider" parent="Margin/Center/Card/VBox/VolumeRow"]
 unique_name_in_owner = true
 layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+custom_minimum_size = Vector2(0, 40)
+
+[node name="MusicRow" type="HBoxContainer" parent="Margin/Center/Card/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="MusicLabel" type="Label" parent="Margin/Center/Card/VBox/MusicRow"]
+unique_name_in_owner = true
+layout_mode = 2
+custom_minimum_size = Vector2(230, 0)
+theme_type_variation = &"Emphasis"
+
+[node name="MusicSlider" type="HSlider" parent="Margin/Center/Card/VBox/MusicRow"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+custom_minimum_size = Vector2(0, 40)
+
+[node name="EffectsRow" type="HBoxContainer" parent="Margin/Center/Card/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="EffectsLabel" type="Label" parent="Margin/Center/Card/VBox/EffectsRow"]
+unique_name_in_owner = true
+layout_mode = 2
+custom_minimum_size = Vector2(230, 0)
+theme_type_variation = &"Emphasis"
+
+[node name="EffectsSlider" type="HSlider" parent="Margin/Center/Card/VBox/EffectsRow"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
 custom_minimum_size = Vector2(0, 40)
 
 [node name="TextSizeLabel" type="Label" parent="Margin/Center/Card/VBox"]

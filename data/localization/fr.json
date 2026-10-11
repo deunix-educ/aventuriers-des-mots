@@ -75,7 +75,7 @@
   "world_map.settings_button": "Réglages",
   "profile_select.settings_button": "Réglages",
   "settings.title": "Réglages",
-  "settings.volume_label": "Volume du son",
+  "settings.volume_label": "Volume général",
   "settings.text_size_label": "Taille du texte",
   "settings.text_size_0": "Normal",
   "settings.text_size_1": "Grand",
@@ -107,5 +107,7 @@
   "skill.accord_groupe_nominal": "Accords dans le groupe nominal",
   "skill.homophones_grammaticaux": "Homophones grammaticaux",
   "settings.animations_on": "Avec animations",
-  "settings.animations_off": "Sans animations"
+  "settings.animations_off": "Sans animations",
+  "settings.music_label": "Musique",
+  "settings.effects_label": "Effets sonores"
 }

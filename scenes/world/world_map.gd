@@ -40,6 +40,7 @@ func _ready() -> void:
 func _refresh() -> void:
     var is_ce2 := _viewed_level == "CE2"
     _backdrop.kind = "marsh" if is_ce2 else "forest"
+    AudioManager.play_music(SoundCatalog.music_for_level(_viewed_level))
     _title_label.text = UIText.get_text("world_map.title_ce2" if is_ce2 else "world_map.title")
     _level_toggle_button.text = UIText.get_text(
         "world_map.review_ce1_button" if is_ce2 else "world_map.back_to_ce2_button"
