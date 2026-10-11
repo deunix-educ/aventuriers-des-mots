@@ -27,15 +27,25 @@ func _initialize() -> void:
                 typed.append(part)
             game.set("last_outcomes", typed)
 
+    # Les autoloads terminent leur _ready apres _initialize : on attend une
+    # image, sinon SettingsManager relirait ses reglages par-dessus les notres.
+    await process_frame
+    for arg in args:
+        if arg.begins_with("text_scale:"):
+            # Applique sans ecrire user://settings.json (reglages reels).
+            var settings: Node = root.get_node("SettingsManager")
+            settings.set("text_scale_index", int(arg.trim_prefix("text_scale:")))
+            settings.call("apply")
+
     var scene: Node = load(scene_path).instantiate()
     root.add_child(scene)
     for i in 5:
         await process_frame
     # Actions optionnelles sur exercise_host, a partir du 5e argument :
     #   continue_rule | answer:<index> | toggle:<index> | type:<texte> | validate
-    #   | continue_feedback
+    #   | continue_feedback | solve_gate (espace adulte)
     for action in args.slice(4):
-        if action.begins_with("outcomes:"):
+        if action.begins_with("outcomes:") or action.begins_with("text_scale:"):
             continue
         await _run_action(scene, action)
         for i in 5:
@@ -49,9 +59,18 @@ func _initialize() -> void:
 
 
 func _run_action(scene: Node, action: String) -> void:
-    var overlay: Node = scene.get_node("%OverlayContainer")
-    var exercise: Node = scene.get_node("%ExerciseContainer").get_child(0) if scene.get_node("%ExerciseContainer").get_child_count() > 0 else null
     var parts := action.split(":", true, 1)
+    if parts[0] == "solve_gate":
+        # Espace adulte : saisit la bonne reponse a la barriere.
+        var input: LineEdit = scene.find_child("GateInput", true, false)
+        input.text = str(scene.get("_challenge")["answer"])
+        scene.call("_on_gate_submitted")
+        return
+    var overlay: Node = scene.get_node_or_null("%OverlayContainer")
+    var exercise_container: Node = scene.get_node_or_null("%ExerciseContainer")
+    var exercise: Node = null
+    if exercise_container != null and exercise_container.get_child_count() > 0:
+        exercise = exercise_container.get_child(0)
     match parts[0]:
         "continue_rule":
             overlay.get_child(0).emit_signal("continued")

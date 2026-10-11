@@ -2,7 +2,7 @@
 
 An educational French-language game for 7-9 year olds (French grades CE1-CE2): an offline 2D adventure with an explorable map, a guide character, and grammar, spelling, and dictation exercises.
 
-Open source project, in development. Current status: version 0.1.0, playable offline on Linux and Windows — profiles, saves, three exercise types (multiple choice, sentence correction, dictation), a CE1 chapter on noun-group agreement (3 rules) and a CE2 chapter on grammatical homophones (a/à, et/est, son/sont, on/ont), 21 missions. All pedagogical content is still `draft` (awaiting validation) and dictation voices are placeholders (see `assets/CREDITS.md`; see `docs/specs/decisions.md` for scoping decisions and `docs/specs/cahier-des-charges.md` for the full specification, both in French — this is a French-curriculum product).
+Open source project, in development. Current status: version 0.4.0, playable offline on Linux and Windows — profiles, saves (with export and restore in the adult area), stars and an item collection, settings (volume, text size, animations), a progress dashboard for adults, three exercise types (multiple choice, sentence correction, dictation), a CE1 chapter on noun-group agreement (3 rules) and a CE2 chapter on grammatical homophones (a/à, et/est, son/sont, on/ont), 21 missions. All pedagogical content is still `draft` (awaiting validation) and dictation voices are placeholders (see `assets/CREDITS.md`; see `docs/specs/decisions.md` for scoping decisions and `docs/specs/cahier-des-charges.md` for the full specification, both in French — this is a French-curriculum product).
 
 ## Tech stack
 

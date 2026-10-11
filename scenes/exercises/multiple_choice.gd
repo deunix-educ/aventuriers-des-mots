@@ -22,7 +22,7 @@ func load_exercise(exercise: Dictionary) -> void:
         var button := Button.new()
         button.text = answers[i]
         button.custom_minimum_size = Vector2(0, 64)
-        button.add_theme_font_size_override("font_size", 28)
+        button.add_theme_font_size_override("font_size", SettingsManager.scaled_font_size(28))
         button.pressed.connect(_on_answer_pressed.bind(i))
         _answers_box.add_child(button)
 

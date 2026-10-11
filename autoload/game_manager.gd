@@ -12,6 +12,8 @@ const SCENE_MISSION_INTRO := "res://scenes/world/mission_intro.tscn"
 const SCENE_EXERCISE_HOST := "res://scenes/exercises/exercise_host.tscn"
 const SCENE_REWARD := "res://scenes/ui/reward_screen.tscn"
 const SCENE_COLLECTION := "res://scenes/ui/collection.tscn"
+const SCENE_SETTINGS := "res://scenes/ui/settings.tscn"
+const SCENE_ADULT_SPACE := "res://scenes/ui/adult_space.tscn"
 
 ## Mission choisie sur la carte, lue par mission_intro puis exercise_host et
 ## reward_screen. Remise a vide par reward_screen au retour sur la carte.
@@ -20,6 +22,10 @@ var pending_mission_id: String = ""
 ## Resultat de chaque exercice de la mission qui vient de se terminer
 ## (MissionScoring.OUTCOME_*), transmis par exercise_host a reward_screen.
 var last_outcomes: Array[String] = []
+
+## Scene a laquelle l'ecran de reglages rend la main (carte ou selection de
+## profil, selon d'ou il a ete ouvert).
+var settings_return_scene: String = SCENE_WORLD_MAP
 
 
 func goto(scene_path: String) -> void:

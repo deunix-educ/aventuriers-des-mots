@@ -8,6 +8,7 @@ var _pending_delete_profile_id: String = ""
 @onready var _profile_list: VBoxContainer = %ProfileList
 @onready var _empty_state_label: Label = %EmptyStateLabel
 @onready var _new_profile_button: Button = %NewProfileButton
+@onready var _settings_button: Button = %SettingsButton
 @onready var _delete_confirm_dialog: ConfirmationDialog = %DeleteConfirmDialog
 
 
@@ -22,6 +23,8 @@ func _ready() -> void:
         "profile_select.delete_confirm_no"
     )
 
+    _settings_button.text = UIText.get_text("profile_select.settings_button")
+    _settings_button.pressed.connect(_on_settings_pressed)
     _new_profile_button.pressed.connect(_on_new_profile_pressed)
     _delete_confirm_dialog.confirmed.connect(_on_delete_confirmed)
 
@@ -79,3 +82,8 @@ func _on_delete_confirmed() -> void:
 
 func _on_new_profile_pressed() -> void:
     GameManager.goto(GameManager.SCENE_PROFILE_CREATE)
+
+
+func _on_settings_pressed() -> void:
+    GameManager.settings_return_scene = GameManager.SCENE_PROFILE_SELECT
+    GameManager.goto(GameManager.SCENE_SETTINGS)

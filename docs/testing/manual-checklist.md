@@ -32,6 +32,15 @@ Tout ce qui suit ne peut pas être vérifié sans écran (rendu, mise en page, a
 - Boutons testés à la souris et au clavier (tabulation / entrée). Le tactile n'a pas pu être testé (pas d'export mobile à ce stade).
 - Vérifier qu'aucun texte destiné à l'enfant n'apparaît tronqué ou coupé sur les écrans où l'`autowrap` est activé.
 
+## Réglages et espace adulte (point 32 de `decisions.md`)
+
+- « Réglages » depuis la carte et depuis le choix du profil ; « Retour » revient à l'écran d'où l'on vient.
+- Taille du texte : Normal / Grand / Très grand s'applique immédiatement, à tous les écrans, et est conservée après redémarrage. Au plus grand réglage, aucun bouton ne sort de la fenêtre.
+- Animations : « Sans animations » supprime les rebonds et fondus (carte, récompense) ; le réglage est conservé après redémarrage.
+- Volume : écouter une dictée en déplaçant le curseur (le son baisse, le silence est complet à 0). Aucun son d'interface n'existe encore.
+- Espace adulte : une mauvaise réponse à la barrière n'ouvre rien ; la bonne ouvre le tableau de progrès. Après quelques missions, les notions et leurs réussites correspondent à ce qui a été joué.
+- Export : « Exporter ce profil » crée un fichier dans `Documents/AventuriersDesMots/` (vérifier le chemin affiché). Restaurer ce fichier crée un nouveau profil identique ; le profil d'origine est intact. Un fichier quelconque déposé dans le dossier est signalé « illisible » et ne peut pas être restauré.
+
 ## Audio
 
 - `ce1_accord_adjectif_dictee_01` a un fichier audio provisoire généré par `make generate-dictation-audio` (voix neuronale Piper, voir `assets/CREDITS.md`). Testé manuellement : voix claire et bien comprise.

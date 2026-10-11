@@ -19,6 +19,7 @@ var _viewed_level := "CE1"
 @onready var _collection_button: Button = %CollectionButton
 @onready var _profile_button: Button = %ProfileButton
 @onready var _guide: Control = %Guide
+@onready var _settings_button: Button = %SettingsButton
 
 
 func _ready() -> void:
@@ -29,6 +30,8 @@ func _ready() -> void:
     _collection_button.pressed.connect(_on_collection_pressed)
     _profile_button.text = UIText.get_text("world_map.change_profile_button")
     _profile_button.pressed.connect(_on_change_profile_pressed)
+    _settings_button.text = UIText.get_text("world_map.settings_button")
+    _settings_button.pressed.connect(_on_settings_pressed)
     _map_area.resized.connect(_layout_markers)
     _guide.say(UIText.get_text("world_map.guide_hint"))
     _refresh()
@@ -129,3 +132,8 @@ func _on_level_toggle_pressed() -> void:
 func _on_mission_pressed(mission_id: String) -> void:
     GameManager.pending_mission_id = mission_id
     GameManager.goto(GameManager.SCENE_MISSION_INTRO)
+
+
+func _on_settings_pressed() -> void:
+    GameManager.settings_return_scene = GameManager.SCENE_WORLD_MAP
+    GameManager.goto(GameManager.SCENE_SETTINGS)

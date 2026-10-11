@@ -1,7 +1,27 @@
-[gd_resource type="Theme" load_steps=20 format=3]
+[gd_resource type="Theme" load_steps=24 format=3]
 
 [ext_resource type="FontFile" path="res://assets/fonts/AtkinsonHyperlegible-Regular.ttf" id="font_regular"]
 [ext_resource type="FontFile" path="res://assets/fonts/AtkinsonHyperlegible-Bold.ttf" id="font_bold"]
+
+[ext_resource type="Texture2D" path="res://assets/interface/slider_grabber.svg" id="slider_grabber"]
+
+[sub_resource type="StyleBoxFlat" id="slider_track"]
+bg_color = Color(0.82, 0.78, 0.66, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+content_margin_top = 8
+content_margin_bottom = 8
+
+[sub_resource type="StyleBoxFlat" id="slider_fill"]
+bg_color = Color(0.184, 0.502, 0.251, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+content_margin_top = 8
+content_margin_bottom = 8
 
 [sub_resource type="StyleBoxFlat" id="btn_normal"]
 bg_color = Color(0.184, 0.502, 0.251, 1)
@@ -334,6 +354,12 @@ SoftCard/base_type = &"PanelContainer"
 SoftCard/styles/panel = SubResource("card_soft")
 Pill/base_type = &"PanelContainer"
 Pill/styles/panel = SubResource("pill")
+HSlider/styles/slider = SubResource("slider_track")
+HSlider/styles/grabber_area = SubResource("slider_fill")
+HSlider/styles/grabber_area_highlight = SubResource("slider_fill")
+HSlider/icons/grabber = ExtResource("slider_grabber")
+HSlider/icons/grabber_highlight = ExtResource("slider_grabber")
+HSlider/icons/grabber_disabled = ExtResource("slider_grabber")
 LineEdit/colors/font_color = Color(0.149, 0.196, 0.290, 1)
 LineEdit/colors/font_placeholder_color = Color(0.45, 0.48, 0.56, 1)
 LineEdit/colors/caret_color = Color(0.149, 0.196, 0.290, 1)

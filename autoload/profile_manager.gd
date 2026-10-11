@@ -48,5 +48,10 @@ func list_profile_summaries() -> Array[Dictionary]:
     return summaries
 
 
+## Identifiant neuf pour un profil restaure depuis une sauvegarde exportee.
+func new_profile_id() -> String:
+    return _generate_profile_id()
+
+
 func _generate_profile_id() -> String:
     return "profile_%d_%d" % [Time.get_unix_time_from_system(), randi() % 10000]

@@ -70,5 +70,11 @@ unique_name_in_owner = true
 layout_mode = 2
 custom_minimum_size = Vector2(0, 56)
 
+[node name="SettingsButton" type="Button" parent="Margin/Center/Card/VBox"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"SecondaryButton"
+custom_minimum_size = Vector2(0, 52)
+
 [node name="DeleteConfirmDialog" type="ConfirmationDialog" parent="."]
 unique_name_in_owner = true
