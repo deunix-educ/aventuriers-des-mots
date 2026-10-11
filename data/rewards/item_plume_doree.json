@@ -1,0 +1,10 @@
+{
+  "item_id": "item_plume_doree",
+  "title": "Plume dorée",
+  "description": "Une plume tombée de l'aile de Plume, le hibou guide.",
+  "unlock": {
+    "type": "total_stars",
+    "count": 6
+  },
+  "review_status": "draft"
+}

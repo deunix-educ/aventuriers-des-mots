@@ -1,10 +1,11 @@
 class_name SaveMigration
 extends RefCounted
-## Migration des sauvegardes entre versions de schema. Code pur. Une seule
-## version existe pour l'instant (1) ; chaque montee de version future ajoute
-## une etape a la chaine ci-dessous, sans jamais reecrire les etapes passees.
+## Migration des sauvegardes entre versions de schema. Code pur. Chaque
+## montee de version ajoute une etape a la chaine ci-dessous, sans jamais
+## reecrire les etapes passees.
+## Version 2 : ajout de mission_results (meilleur score par mission).
 
-const CURRENT_SCHEMA_VERSION := 1
+const CURRENT_SCHEMA_VERSION := 2
 
 
 ## Retourne un dictionnaire vide si la version est absente, invalide, ou plus
@@ -21,10 +22,17 @@ static func migrate(data: Dictionary) -> Dictionary:
         return {}
 
     var migrated: Dictionary = data.duplicate(true)
-    # Chaine de montees de version, a completer quand CURRENT_SCHEMA_VERSION
-    # augmentera :
-    # if version_int == 1:
-    #     migrated = _migrate_v1_to_v2(migrated)
-    #     version_int = 2
+    if version_int == 1:
+        migrated = _migrate_v1_to_v2(migrated)
+        version_int = 2
     migrated["schema_version"] = CURRENT_SCHEMA_VERSION
+    return migrated
+
+
+## Les etoiles deja gagnees (rewards.stars) sont conservees telles quelles ;
+## le detail par mission n'existait pas, il repart vide.
+static func _migrate_v1_to_v2(data: Dictionary) -> Dictionary:
+    var migrated: Dictionary = data.duplicate(true)
+    if not migrated.has("mission_results"):
+        migrated["mission_results"] = {}
     return migrated

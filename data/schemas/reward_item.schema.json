@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "required": ["item_id", "title", "description", "unlock", "review_status"],
+  "additionalProperties": false,
+  "properties": {
+    "item_id": { "type": "string", "pattern": "^[a-z][a-z0-9_]*$" },
+    "title": { "type": "string", "minLength": 1 },
+    "description": { "type": "string", "minLength": 1 },
+    "unlock": {
+      "type": "object",
+      "required": ["type", "count"],
+      "additionalProperties": false,
+      "properties": {
+        "type": { "type": "string", "enum": ["total_stars", "mission_stars"] },
+        "count": { "type": "integer", "minimum": 1 },
+        "mission_id": { "type": "string", "pattern": "^[a-z][a-z0-9_]*$" }
+      }
+    },
+    "review_status": { "type": "string", "enum": ["draft", "validated"] }
+  }
+}

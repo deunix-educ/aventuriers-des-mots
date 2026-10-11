@@ -29,6 +29,16 @@ func test_missions_are_filtered_by_the_level_of_their_rule() -> void:
     assert_eq(ExerciseEngine.get_missions_for_level("CM1").size(), 0)
 
 
+func test_reward_catalog_is_loaded_and_sorted_by_threshold() -> void:
+    var items := ExerciseEngine.get_reward_items()
+    assert_eq(items.size(), 10)
+    var counts: Array = items.map(func(i: Dictionary) -> int: return i["unlock"]["count"])
+    var sorted_counts := counts.duplicate()
+    sorted_counts.sort()
+    assert_eq(counts, sorted_counts)
+    assert_eq(items[0]["item_id"], "item_graine_magique", "seuil 3, ordre alphabetique")
+
+
 func test_get_mission_returns_the_requested_mission() -> void:
     var mission := ExerciseEngine.get_mission("mission_02_pont_des_phrases")
     assert_eq(mission["exercise_type"], "sentence_correction")

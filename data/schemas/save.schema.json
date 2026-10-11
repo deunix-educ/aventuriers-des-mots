@@ -8,6 +8,7 @@
     "session_count",
     "unlocked_regions",
     "skills",
+    "mission_results",
     "rewards"
   ],
   "additionalProperties": false,
@@ -45,6 +46,19 @@
           "last_session_practiced": { "type": "integer" },
           "review_interval_index": { "type": "integer" },
           "next_review_session": { "type": "integer" }
+        }
+      }
+    },
+    "mission_results": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["best_stars", "last_stars", "completions"],
+        "additionalProperties": false,
+        "properties": {
+          "best_stars": { "type": "integer", "minimum": 1, "maximum": 3 },
+          "last_stars": { "type": "integer", "minimum": 1, "maximum": 3 },
+          "completions": { "type": "integer", "minimum": 1 }
         }
       }
     },

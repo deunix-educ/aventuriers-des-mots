@@ -1,0 +1,11 @@
+{
+  "item_id": "item_trophee_clairiere",
+  "title": "Trophée de la clairière",
+  "description": "L'écho de la clairière chante ton nom : tu as tout réussi sans aide.",
+  "unlock": {
+    "type": "mission_stars",
+    "count": 3,
+    "mission_id": "mission_03_clairiere_echo"
+  },
+  "review_status": "draft"
+}

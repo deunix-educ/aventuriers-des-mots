@@ -37,8 +37,35 @@ func unlock_region(region_id: String) -> void:
     _current_save = ProgressUpdates.unlock_region(_current_save, region_id)
 
 
-func add_stars(amount: int) -> void:
-    _current_save = ProgressUpdates.add_stars(_current_save, amount)
+## Enregistre la fin d'une mission : score en etoiles (MissionScoring),
+## meilleur score par mission, total, puis objets de la collection
+## debloques (RewardRules). Renvoie de quoi afficher l'ecran de recompense.
+## L'ecriture sur disque reste a la charge de save_now().
+func complete_mission(mission_id: String, outcomes: Array[String]) -> Dictionary:
+    var earned := MissionScoring.stars_for(outcomes)
+    var previous_best := mission_best_stars(mission_id)
+    _current_save = ProgressUpdates.record_mission_result(_current_save, mission_id, earned)
+
+    var new_items := RewardRules.newly_unlocked(
+        ExerciseEngine.get_reward_items(), stars(), _current_save["mission_results"], owned_items()
+    )
+    _current_save = ProgressUpdates.grant_items(_current_save, new_items)
+    return {
+        "stars": earned,
+        "previous_best": previous_best,
+        "is_record": previous_best > 0 and earned > previous_best,
+        "total_stars": stars(),
+        "new_items": new_items,
+    }
+
+
+func mission_best_stars(mission_id: String) -> int:
+    var results: Dictionary = _current_save.get("mission_results", {})
+    return int(results.get(mission_id, {}).get("best_stars", 0))
+
+
+func owned_items() -> Array:
+    return _current_save.get("rewards", {}).get("items", [])
 
 
 func stars() -> int:

@@ -50,3 +50,21 @@ static func check_dictation(data: Dictionary, path: String) -> Array[String]:
             )
         )
     return errors
+
+
+static func check_reward_item(data: Dictionary, path: String) -> Array[String]:
+    var errors: Array[String] = []
+    var unlock: Dictionary = data.get("unlock", {})
+    var count: int = int(unlock.get("count", 0))
+    match unlock.get("type", ""):
+        "total_stars":
+            if unlock.has("mission_id"):
+                errors.append("%s : total_stars ne prend pas de mission_id" % path)
+        "mission_stars":
+            if not unlock.has("mission_id"):
+                errors.append("%s : mission_stars exige un mission_id" % path)
+            if count > 3:
+                errors.append(
+                    "%s : une mission rapporte au plus 3 etoiles (count=%d)" % [path, count]
+                )
+    return errors

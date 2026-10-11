@@ -83,8 +83,44 @@ func test_next_difficulty_for_unknown_skill_returns_current_difficulty() -> void
     assert_eq(ProgressUpdates.next_difficulty_for_skill(data, "inconnue", 2), 2)
 
 
-func test_add_stars_accumulates() -> void:
-    var data := _base_save()
-    data = ProgressUpdates.add_stars(data, 1)
-    data = ProgressUpdates.add_stars(data, 2)
+func test_first_mission_result_adds_its_stars_to_the_total() -> void:
+    var data := ProgressUpdates.record_mission_result(_base_save(), "mission_a", 2)
+    assert_eq(data["rewards"]["stars"], 2)
+    assert_eq(
+        data["mission_results"]["mission_a"], {"best_stars": 2, "last_stars": 2, "completions": 1}
+    )
+
+
+func test_replaying_a_mission_only_adds_the_improvement() -> void:
+    var data := ProgressUpdates.record_mission_result(_base_save(), "mission_a", 1)
+    data = ProgressUpdates.record_mission_result(data, "mission_a", 3)
+    assert_eq(data["rewards"]["stars"], 3, "1 puis 3 etoiles : 3 au total, pas 4")
+    assert_eq(data["mission_results"]["mission_a"]["best_stars"], 3)
+    assert_eq(data["mission_results"]["mission_a"]["completions"], 2)
+
+
+func test_a_worse_replay_never_lowers_the_best_score() -> void:
+    var data := ProgressUpdates.record_mission_result(_base_save(), "mission_a", 3)
+    data = ProgressUpdates.record_mission_result(data, "mission_a", 1)
     assert_eq(data["rewards"]["stars"], 3)
+    assert_eq(data["mission_results"]["mission_a"]["best_stars"], 3)
+    assert_eq(data["mission_results"]["mission_a"]["last_stars"], 1)
+
+
+func test_stars_of_different_missions_add_up() -> void:
+    var data := ProgressUpdates.record_mission_result(_base_save(), "mission_a", 2)
+    data = ProgressUpdates.record_mission_result(data, "mission_b", 3)
+    assert_eq(data["rewards"]["stars"], 5)
+
+
+func test_grant_items_never_duplicates() -> void:
+    var ids: Array[String] = ["item_a", "item_b"]
+    var data := ProgressUpdates.grant_items(_base_save(), ids)
+    data = ProgressUpdates.grant_items(data, ids)
+    assert_eq(data["rewards"]["items"], ["item_a", "item_b"])
+
+
+func test_record_mission_result_validates_against_the_save_schema() -> void:
+    var data := ProgressUpdates.record_mission_result(_base_save(), "mission_a", 2)
+    var errors := SchemaValidator.validate(data, DataLoader.load_schema("save"))
+    assert_eq(errors, [])

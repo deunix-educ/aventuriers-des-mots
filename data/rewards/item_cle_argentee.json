@@ -1,0 +1,10 @@
+{
+  "item_id": "item_cle_argentee",
+  "title": "Clé argentée",
+  "description": "Elle ouvre la porte d'un secret caché au fond de la forêt.",
+  "unlock": {
+    "type": "total_stars",
+    "count": 30
+  },
+  "review_status": "draft"
+}

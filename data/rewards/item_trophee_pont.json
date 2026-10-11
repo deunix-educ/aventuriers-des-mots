@@ -1,0 +1,11 @@
+{
+  "item_id": "item_trophee_pont",
+  "title": "Trophée du pont",
+  "description": "Le pont des phrases brille grâce à toi : tu as tout réussi sans aide.",
+  "unlock": {
+    "type": "mission_stars",
+    "count": 3,
+    "mission_id": "mission_02_pont_des_phrases"
+  },
+  "review_status": "draft"
+}

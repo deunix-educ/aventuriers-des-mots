@@ -13,5 +13,6 @@ static func new_save(profile_id: String, display_name: String, school_level: Str
         "session_count": 0,
         "unlocked_regions": [],
         "skills": {},
+        "mission_results": {},
         "rewards": {"stars": 0, "items": []},
     }

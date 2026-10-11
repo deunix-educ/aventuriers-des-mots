@@ -60,12 +60,38 @@ static func unlock_region(save_data: Dictionary, region_id: String) -> Dictionar
     return updated
 
 
-## Les recompenses valorisent l'effort et la progression, jamais la vitesse
-## (cahier des charges §2, principe 6) : un nombre fixe d'etoiles par mission
-## terminee, quel que soit le temps pris ou le nombre d'aides utilisees.
-static func add_stars(save_data: Dictionary, amount: int) -> Dictionary:
+## Enregistre le resultat d'une mission terminee. Le meilleur score est
+## conserve ; seules les etoiles gagnees en plus du meilleur score precedent
+## s'ajoutent au total, donc rejouer une mission ne gonfle pas le total.
+static func record_mission_result(
+    save_data: Dictionary, mission_id: String, stars: int
+) -> Dictionary:
+    var updated: Dictionary = save_data.duplicate(true)
+    var results: Dictionary = updated["mission_results"]
+    var previous: Dictionary = results.get(mission_id, {})
+    var previous_best: int = int(previous.get("best_stars", 0))
+    var new_best: int = maxi(previous_best, stars)
+
+    results[mission_id] = {
+        "best_stars": new_best,
+        "last_stars": stars,
+        "completions": int(previous.get("completions", 0)) + 1,
+    }
+    updated["mission_results"] = results
+
+    var rewards: Dictionary = updated["rewards"].duplicate(true)
+    rewards["stars"] = int(rewards["stars"]) + (new_best - previous_best)
+    updated["rewards"] = rewards
+    return updated
+
+
+static func grant_items(save_data: Dictionary, item_ids: Array[String]) -> Dictionary:
     var updated: Dictionary = save_data.duplicate(true)
     var rewards: Dictionary = updated["rewards"].duplicate(true)
-    rewards["stars"] = int(rewards["stars"]) + amount
+    var items: Array = rewards["items"]
+    for item_id in item_ids:
+        if not items.has(item_id):
+            items.append(item_id)
+    rewards["items"] = items
     updated["rewards"] = rewards
     return updated

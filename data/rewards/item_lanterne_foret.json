@@ -1,0 +1,10 @@
+{
+  "item_id": "item_lanterne_foret",
+  "title": "Lanterne de la forêt",
+  "description": "Elle éclaire les chemins quand la nuit tombe sur les mots.",
+  "unlock": {
+    "type": "total_stars",
+    "count": 10
+  },
+  "review_status": "draft"
+}

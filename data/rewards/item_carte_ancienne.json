@@ -1,0 +1,10 @@
+{
+  "item_id": "item_carte_ancienne",
+  "title": "Carte ancienne",
+  "description": "Une vieille carte qui montre des lieux que personne n'a encore visités.",
+  "unlock": {
+    "type": "total_stars",
+    "count": 15
+  },
+  "review_status": "draft"
+}

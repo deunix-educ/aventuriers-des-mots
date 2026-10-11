@@ -23,6 +23,8 @@ var _current_difficulty := 1
 var _attempt_number := 1
 var _completed_count := 0
 var _last_exercise_id := ""
+var _outcomes: Array[String] = []
+var _pending_outcome := ""
 
 @onready var _exercise_container: Control = %ExerciseContainer
 @onready var _overlay_container: Control = %OverlayContainer
@@ -41,6 +43,10 @@ func get_attempt_number() -> int:
 
 func get_completed_count() -> int:
     return _completed_count
+
+
+func get_outcomes() -> Array[String]:
+    return _outcomes
 
 
 func _ready() -> void:
@@ -126,6 +132,15 @@ func _handle_result(result: CorrectionResult) -> void:
         support_level = AttemptFlow.support_level_for_attempt(_attempt_number)
         is_terminal = AttemptFlow.should_end_exercise(_attempt_number)
 
+    if result.is_correct:
+        _pending_outcome = (
+            MissionScoring.OUTCOME_FIRST_TRY
+            if _attempt_number == 1
+            else MissionScoring.OUTCOME_WITH_HELP
+        )
+    elif is_terminal:
+        _pending_outcome = MissionScoring.OUTCOME_REVEALED
+
     ProgressManager.record_attempt(
         _skill_id, result.is_correct, _attempt_number > 1, _mission["exercise_type"]
     )
@@ -154,8 +169,10 @@ func _on_feedback_continued(feedback: Control, is_terminal: bool) -> void:
     )
     _last_exercise_id = _current_exercise.get("id", "")
     _completed_count += 1
+    _outcomes.append(_pending_outcome)
 
     if _completed_count >= MISSION_LENGTH:
+        GameManager.last_outcomes = _outcomes.duplicate()
         GameManager.goto(GameManager.SCENE_REWARD)
     else:
         _load_next_exercise()

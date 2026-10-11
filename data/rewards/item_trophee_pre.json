@@ -1,0 +1,11 @@
+{
+  "item_id": "item_trophee_pre",
+  "title": "Trophée du pré",
+  "description": "Les lutins t'offrent ce trophée : tu as tout réussi sans aide au pré des petits mots.",
+  "unlock": {
+    "type": "mission_stars",
+    "count": 3,
+    "mission_id": "mission_01_pre_des_mots"
+  },
+  "review_status": "draft"
+}

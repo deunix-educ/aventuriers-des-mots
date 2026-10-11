@@ -13,6 +13,7 @@ func _init() -> void:
     checked += _validate_dictations("res://data/dictations", failures)
     checked += _validate_exercises("res://data/exercises", failures)
     checked += _validate_missions("res://data/missions", failures)
+    checked += _validate_rewards("res://data/rewards", failures)
     checked += _validate_simple_dir("res://data/localization", "localization", failures)
 
     if failures.is_empty():
@@ -91,4 +92,28 @@ func _validate_exercises(dir_path: String, failures: Array[String]) -> int:
                 failures.append_array(SemanticChecks.check_multiple_choice(data, path))
             "sentence_correction":
                 failures.append_array(SemanticChecks.check_sentence_correction(data, path))
+    return count
+
+
+func _validate_rewards(dir_path: String, failures: Array[String]) -> int:
+    var known_mission_ids: Array[String] = []
+    for path in DataLoader.find_json_files("res://data/missions"):
+        var mission: Variant = DataLoader.read_json(path)
+        if typeof(mission) == TYPE_DICTIONARY and mission.has("mission_id"):
+            known_mission_ids.append(mission["mission_id"])
+
+    var count := 0
+    for path in DataLoader.find_json_files(dir_path):
+        count += 1
+        var schema_errors := DataLoader.validate_file(path, "reward_item")
+        failures.append_array(schema_errors)
+        if not schema_errors.is_empty():
+            continue
+        var data: Dictionary = DataLoader.read_json(path)
+        failures.append_array(SemanticChecks.check_reward_item(data, path))
+        var mission_id: String = data["unlock"].get("mission_id", "")
+        if not mission_id.is_empty() and not known_mission_ids.has(mission_id):
+            failures.append(
+                "%s : mission_id '%s' ne correspond a aucune mission" % [path, mission_id]
+            )
     return count

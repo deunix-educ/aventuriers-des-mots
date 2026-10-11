@@ -10,6 +10,7 @@ extends Node
 var _rules: Dictionary = {}
 var _exercises_by_rule_and_type: Dictionary = {}
 var _dictations_by_rule: Dictionary = {}
+var _reward_items: Array[Dictionary] = []
 var _missions: Dictionary = {}
 var _mission_order: Array[String] = []
 var _rng := RandomNumberGenerator.new()
@@ -21,6 +22,7 @@ func _ready() -> void:
     _load_exercises()
     _load_dictations()
     _load_missions()
+    _load_rewards()
 
 
 func get_rule(rule_id: String) -> Dictionary:
@@ -42,6 +44,12 @@ func get_missions_for_level(level: String) -> Array[Dictionary]:
         if get_rule(mission["rule_id"]).get("level", "") == level:
             missions.append(mission)
     return missions
+
+
+## Catalogue des objets de la collection, du plus facile au plus difficile
+## a obtenir (ordre stable : seuil puis identifiant).
+func get_reward_items() -> Array[Dictionary]:
+    return _reward_items
 
 
 func get_mission(mission_id: String) -> Dictionary:
@@ -141,3 +149,21 @@ func _load_missions() -> void:
         mission_ids.append(mission["mission_id"])
     mission_ids.sort()
     _mission_order = mission_ids
+
+
+func _load_rewards() -> void:
+    for path in DataLoader.find_json_files("res://data/rewards"):
+        var errors := DataLoader.validate_file(path, "reward_item")
+        if not errors.is_empty():
+            push_error("Objet de collection ignore (%s) : %s" % [path, errors])
+            continue
+        var item: Dictionary = DataLoader.read_json(path)
+        _reward_items.append(item)
+    _reward_items.sort_custom(
+        func(a: Dictionary, b: Dictionary) -> bool:
+            var count_a: int = a["unlock"]["count"]
+            var count_b: int = b["unlock"]["count"]
+            if count_a != count_b:
+                return count_a < count_b
+            return String(a["item_id"]) < String(b["item_id"])
+    )

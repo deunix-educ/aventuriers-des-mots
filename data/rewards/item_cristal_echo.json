@@ -1,0 +1,10 @@
+{
+  "item_id": "item_cristal_echo",
+  "title": "Cristal d'écho",
+  "description": "Il répète en chantant toutes les phrases bien écrites.",
+  "unlock": {
+    "type": "total_stars",
+    "count": 45
+  },
+  "review_status": "draft"
+}

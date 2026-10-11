@@ -1,0 +1,10 @@
+{
+  "item_id": "item_couronne_feuilles",
+  "title": "Couronne de feuilles",
+  "description": "Tressée avec les feuilles de la forêt des accords.",
+  "unlock": {
+    "type": "total_stars",
+    "count": 22
+  },
+  "review_status": "draft"
+}

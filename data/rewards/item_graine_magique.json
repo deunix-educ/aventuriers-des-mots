@@ -1,0 +1,10 @@
+{
+  "item_id": "item_graine_magique",
+  "title": "Graine magique",
+  "description": "Une petite graine qui brille. Elle attend la bonne forêt pour pousser.",
+  "unlock": {
+    "type": "total_stars",
+    "count": 3
+  },
+  "review_status": "draft"
+}
