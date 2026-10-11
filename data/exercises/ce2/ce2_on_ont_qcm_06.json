@@ -1,0 +1,23 @@
+{
+  "id": "ce2_on_ont_qcm_06",
+  "level": "CE2",
+  "domain": "orthographe",
+  "skill": "homophones_grammaticaux",
+  "rule_id": "regle_homophone_on_ont",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "À la récréation, ... saute à la corde.",
+  "answers": [
+    "on",
+    "ont"
+  ],
+  "correct_answer": 0,
+  "hint": "Essaie de remplacer par « avaient », ou par « il ».",
+  "explanation": "« avaient » ne convient pas ici, mais « il » convient : c'est le pronom « on ».",
+  "review_tags": [
+    "homophone",
+    "on_ont"
+  ],
+  "review_status": "draft"
+}

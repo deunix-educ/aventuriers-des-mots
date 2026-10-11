@@ -1,0 +1,53 @@
+{
+  "id": "ce2_et_est_correction_04",
+  "level": "CE2",
+  "domain": "orthographe",
+  "skill": "homophones_grammaticaux",
+  "rule_id": "regle_homophone_et_est",
+  "difficulty": 3,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Le",
+      "correct": true
+    },
+    {
+      "text": "lapin",
+      "correct": true
+    },
+    {
+      "text": "mange",
+      "correct": true
+    },
+    {
+      "text": "une",
+      "correct": true
+    },
+    {
+      "text": "carotte",
+      "correct": true
+    },
+    {
+      "text": "est",
+      "correct": false,
+      "expected": "et",
+      "rule_id": "regle_homophone_et_est"
+    },
+    {
+      "text": "un",
+      "correct": true
+    },
+    {
+      "text": "chou.",
+      "correct": true
+    }
+  ],
+  "hint": "Essaie de remplacer par « était ». Relis la phrase en entier avant d'essayer.",
+  "explanation": "« était » ne convient pas ici, mais « et puis » convient : c'est « et », qui relie deux mots.",
+  "review_tags": [
+    "homophone",
+    "et_est"
+  ],
+  "review_status": "draft"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ce2_a_a_qcm_08",
+  "level": "CE2",
+  "domain": "orthographe",
+  "skill": "homophones_grammaticaux",
+  "rule_id": "regle_homophone_a_a",
+  "difficulty": 3,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Il commence ... lire un livre.",
+  "answers": [
+    "a",
+    "à"
+  ],
+  "correct_answer": 1,
+  "hint": "Essaie de remplacer par « avait ». Relis la phrase en entier avant d'essayer.",
+  "explanation": "« avait » ne convient pas ici : c'est le petit mot « à », avec un accent.",
+  "review_tags": [
+    "homophone",
+    "a_a"
+  ],
+  "review_status": "draft"
+}

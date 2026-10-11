@@ -1,0 +1,49 @@
+{
+  "id": "ce2_son_sont_correction_04",
+  "level": "CE2",
+  "domain": "orthographe",
+  "skill": "homophones_grammaticaux",
+  "rule_id": "regle_homophone_son_sont",
+  "difficulty": 3,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Ma",
+      "correct": true
+    },
+    {
+      "text": "sœur",
+      "correct": true
+    },
+    {
+      "text": "cherche",
+      "correct": true
+    },
+    {
+      "text": "sont",
+      "correct": false,
+      "expected": "son",
+      "rule_id": "regle_homophone_son_sont"
+    },
+    {
+      "text": "petit",
+      "correct": true
+    },
+    {
+      "text": "chien",
+      "correct": true
+    },
+    {
+      "text": "noir.",
+      "correct": true
+    }
+  ],
+  "hint": "Essaie de remplacer par « étaient », ou par « mon ». Relis la phrase en entier avant d'essayer.",
+  "explanation": "« étaient » ne convient pas ici, mais « mon » convient : c'est « son », qui accompagne un nom.",
+  "review_tags": [
+    "homophone",
+    "son_sont"
+  ],
+  "review_status": "draft"
+}

@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_12_grotte_resonante",
+  "title": "La grotte résonante",
+  "narrative_context": "La grotte te répète une phrase, une seule fois. Écoute bien et écris-la en pensant à tes petits mots.",
+  "rule_id": "regle_homophone_a_a",
+  "exercise_type": "dictation",
+  "map_position": {
+    "x": 0.12,
+    "y": 0.85
+  },
+  "review_status": "draft"
+}

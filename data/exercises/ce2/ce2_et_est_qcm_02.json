@@ -1,0 +1,23 @@
+{
+  "id": "ce2_et_est_qcm_02",
+  "level": "CE2",
+  "domain": "orthographe",
+  "skill": "homophones_grammaticaux",
+  "rule_id": "regle_homophone_et_est",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Un chat ... un chien jouent.",
+  "answers": [
+    "et",
+    "est"
+  ],
+  "correct_answer": 0,
+  "hint": "Essaie de remplacer par « était ».",
+  "explanation": "« était » ne convient pas ici, mais « et puis » convient : c'est « et », qui relie deux mots.",
+  "review_tags": [
+    "homophone",
+    "et_est"
+  ],
+  "review_status": "draft"
+}

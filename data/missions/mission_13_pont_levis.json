@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_13_pont_levis",
+  "title": "Le pont-levis des mots",
+  "narrative_context": "Le pont-levis ne s'abaisse que si tu choisis le bon mot : « et » ou « est » ? Essaie de remplacer par « était ».",
+  "rule_id": "regle_homophone_et_est",
+  "exercise_type": "multiple_choice",
+  "map_position": {
+    "x": 0.375,
+    "y": 0.15
+  },
+  "review_status": "draft"
+}

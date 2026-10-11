@@ -1,0 +1,9 @@
+{
+  "rule_id": "regle_homophone_a_a",
+  "level": "CE2",
+  "domain": "orthographe",
+  "skill": "homophones_grammaticaux",
+  "statement": "Pour choisir entre « a » et « à », essaie de remplacer par « avait ». Si ça marche, c'est le verbe avoir : on écrit « a » sans accent. Sinon, on écrit « à » avec un accent.",
+  "example": "Léa a un chat. Léa va à la plage.",
+  "review_status": "draft"
+}

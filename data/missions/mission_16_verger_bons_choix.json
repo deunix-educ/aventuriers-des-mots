@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_16_verger_bons_choix",
+  "title": "Le verger des bons choix",
+  "narrative_context": "Dans le verger, chaque fruit attend son étiquette : « son » ou « sont » ? Aide le jardinier à ne pas se tromper.",
+  "rule_id": "regle_homophone_son_sont",
+  "exercise_type": "multiple_choice",
+  "map_position": {
+    "x": 0.625,
+    "y": 0.15
+  },
+  "review_status": "draft"
+}

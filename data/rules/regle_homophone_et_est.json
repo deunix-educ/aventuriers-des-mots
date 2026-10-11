@@ -1,0 +1,9 @@
+{
+  "rule_id": "regle_homophone_et_est",
+  "level": "CE2",
+  "domain": "orthographe",
+  "skill": "homophones_grammaticaux",
+  "statement": "Pour choisir entre « et » et « est », essaie de remplacer par « était ». Si ça marche, c'est le verbe être : on écrit « est ». Sinon, c'est « et », qui relie deux mots.",
+  "example": "Le chat est noir et blanc.",
+  "review_status": "draft"
+}

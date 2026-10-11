@@ -1,0 +1,23 @@
+{
+  "id": "ce2_et_est_qcm_08",
+  "level": "CE2",
+  "domain": "orthographe",
+  "skill": "homophones_grammaticaux",
+  "rule_id": "regle_homophone_et_est",
+  "difficulty": 3,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Le chat dort sur le canapé ... le chien dort sur le tapis.",
+  "answers": [
+    "et",
+    "est"
+  ],
+  "correct_answer": 0,
+  "hint": "Essaie de remplacer par « était ». Relis la phrase en entier avant d'essayer.",
+  "explanation": "« était » ne convient pas ici, mais « et puis » convient : c'est « et », qui relie deux mots.",
+  "review_tags": [
+    "homophone",
+    "et_est"
+  ],
+  "review_status": "draft"
+}

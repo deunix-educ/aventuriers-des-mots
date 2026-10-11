@@ -1,0 +1,23 @@
+{
+  "id": "ce2_on_ont_qcm_07",
+  "level": "CE2",
+  "domain": "orthographe",
+  "skill": "homophones_grammaticaux",
+  "rule_id": "regle_homophone_on_ont",
+  "difficulty": 3,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Les enfants de ma classe ... fini leur travail.",
+  "answers": [
+    "on",
+    "ont"
+  ],
+  "correct_answer": 1,
+  "hint": "Essaie de remplacer par « avaient », ou par « il ». Relis la phrase en entier avant d'essayer.",
+  "explanation": "« avaient » convient ici : c'est le verbe avoir, on écrit « ont ».",
+  "review_tags": [
+    "homophone",
+    "on_ont"
+  ],
+  "review_status": "draft"
+}

@@ -1,0 +1,9 @@
+{
+  "rule_id": "regle_homophone_on_ont",
+  "level": "CE2",
+  "domain": "orthographe",
+  "skill": "homophones_grammaticaux",
+  "statement": "Pour choisir entre « on » et « ont », essaie de remplacer par « avaient ». Si ça marche, c'est le verbe avoir : on écrit « ont ». Sinon, on peut remplacer par « il » : on écrit « on ».",
+  "example": "Les enfants ont faim. On mange des pommes.",
+  "review_status": "draft"
+}

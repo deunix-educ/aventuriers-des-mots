@@ -54,6 +54,11 @@ func get_skill_state(skill_id: String) -> Dictionary:
     return skills.get(skill_id, ReviewScheduler.initial_state())
 
 
+## Niveau scolaire du profil courant ("CE1" par defaut si aucun profil charge).
+func school_level() -> String:
+    return _current_save.get("school_level", "CE1")
+
+
 func current_save() -> Dictionary:
     return _current_save
 

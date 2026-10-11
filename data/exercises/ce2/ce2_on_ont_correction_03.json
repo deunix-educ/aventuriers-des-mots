@@ -1,0 +1,45 @@
+{
+  "id": "ce2_on_ont_correction_03",
+  "level": "CE2",
+  "domain": "orthographe",
+  "skill": "homophones_grammaticaux",
+  "rule_id": "regle_homophone_on_ont",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Mes",
+      "correct": true
+    },
+    {
+      "text": "cousins",
+      "correct": true
+    },
+    {
+      "text": "on",
+      "correct": false,
+      "expected": "ont",
+      "rule_id": "regle_homophone_on_ont"
+    },
+    {
+      "text": "un",
+      "correct": true
+    },
+    {
+      "text": "grand",
+      "correct": true
+    },
+    {
+      "text": "chien.",
+      "correct": true
+    }
+  ],
+  "hint": "Essaie de remplacer par « avaient », ou par « il ».",
+  "explanation": "« avaient » convient ici : c'est le verbe avoir, on écrit « ont ».",
+  "review_tags": [
+    "homophone",
+    "on_ont"
+  ],
+  "review_status": "draft"
+}

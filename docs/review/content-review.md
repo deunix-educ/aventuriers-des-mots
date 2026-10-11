@@ -188,6 +188,378 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
   - Audio : provisoire
   - Statut : draft
 
+## regle_homophone_a_a (CE2, orthographe)
+
+**Enonce** : Pour choisir entre « a » et « à », essaie de remplacer par « avait ». Si ça marche, c'est le verbe avoir : on écrit « a » sans accent. Sinon, on écrit « à » avec un accent.
+
+**Exemple** : Léa a un chat. Léa va à la plage.
+
+**Statut** : draft
+
+### Choix multiples
+
+- **ce2_a_a_qcm_01** (difficulte 1) : Léa ... un chat.
+  - Reponses : a, à
+  - Reponse attendue : a
+  - Indice : Essaie de remplacer par « avait ».
+  - Explication : « avait » convient ici : c'est le verbe avoir, on écrit « a » sans accent.
+  - Statut : draft
+- **ce2_a_a_qcm_02** (difficulte 1) : Nous allons ... la plage.
+  - Reponses : a, à
+  - Reponse attendue : à
+  - Indice : Essaie de remplacer par « avait ».
+  - Explication : « avait » ne convient pas ici : c'est le petit mot « à », avec un accent.
+  - Statut : draft
+- **ce2_a_a_qcm_03** (difficulte 1) : Le chien ... faim.
+  - Reponses : a, à
+  - Reponse attendue : a
+  - Indice : Essaie de remplacer par « avait ».
+  - Explication : « avait » convient ici : c'est le verbe avoir, on écrit « a » sans accent.
+  - Statut : draft
+- **ce2_a_a_qcm_04** (difficulte 1) : Tom joue ... la balle.
+  - Reponses : a, à
+  - Reponse attendue : à
+  - Indice : Essaie de remplacer par « avait ».
+  - Explication : « avait » ne convient pas ici : c'est le petit mot « à », avec un accent.
+  - Statut : draft
+- **ce2_a_a_qcm_05** (difficulte 2) : Mon frère ... un vélo rouge.
+  - Reponses : a, à
+  - Reponse attendue : a
+  - Indice : Essaie de remplacer par « avait ».
+  - Explication : « avait » convient ici : c'est le verbe avoir, on écrit « a » sans accent.
+  - Statut : draft
+- **ce2_a_a_qcm_06** (difficulte 2) : Elle donne un bonbon ... sa sœur.
+  - Reponses : a, à
+  - Reponse attendue : à
+  - Indice : Essaie de remplacer par « avait ».
+  - Explication : « avait » ne convient pas ici : c'est le petit mot « à », avec un accent.
+  - Statut : draft
+- **ce2_a_a_qcm_07** (difficulte 3) : Ma sœur ... mangé toute la tarte.
+  - Reponses : a, à
+  - Reponse attendue : a
+  - Indice : Essaie de remplacer par « avait ». Relis la phrase en entier avant d'essayer.
+  - Explication : « avait » convient ici : c'est le verbe avoir, on écrit « a » sans accent.
+  - Statut : draft
+- **ce2_a_a_qcm_08** (difficulte 3) : Il commence ... lire un livre.
+  - Reponses : a, à
+  - Reponse attendue : à
+  - Indice : Essaie de remplacer par « avait ». Relis la phrase en entier avant d'essayer.
+  - Explication : « avait » ne convient pas ici : c'est le petit mot « à », avec un accent.
+  - Statut : draft
+
+### Corrections de phrase
+
+- **ce2_a_a_correction_01** (difficulte 1) : Le chat [à -> a] faim ce soir.
+  - Indice : Essaie de remplacer par « avait ».
+  - Explication : « avait » convient ici : c'est le verbe avoir, on écrit « a » sans accent.
+  - Statut : draft
+- **ce2_a_a_correction_02** (difficulte 1) : Nous allons [a -> à] la piscine.
+  - Indice : Essaie de remplacer par « avait ».
+  - Explication : « avait » ne convient pas ici : c'est le petit mot « à », avec un accent.
+  - Statut : draft
+- **ce2_a_a_correction_03** (difficulte 2) : Mon voisin [à -> a] un grand jardin.
+  - Indice : Essaie de remplacer par « avait ».
+  - Explication : « avait » convient ici : c'est le verbe avoir, on écrit « a » sans accent.
+  - Statut : draft
+- **ce2_a_a_correction_04** (difficulte 3) : Marie pense [a -> à] son ami depuis hier.
+  - Indice : Essaie de remplacer par « avait ». Relis la phrase en entier avant d'essayer.
+  - Explication : « avait » ne convient pas ici : c'est le petit mot « à », avec un accent.
+  - Statut : draft
+
+### Dictees
+
+- **ce2_a_a_dictee_01** : Léa a un chat.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **ce2_a_a_dictee_02** : Nous allons à la piscine.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **ce2_a_a_dictee_03** : Papa a donné un cadeau à Léa.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+
+## regle_homophone_et_est (CE2, orthographe)
+
+**Enonce** : Pour choisir entre « et » et « est », essaie de remplacer par « était ». Si ça marche, c'est le verbe être : on écrit « est ». Sinon, c'est « et », qui relie deux mots.
+
+**Exemple** : Le chat est noir et blanc.
+
+**Statut** : draft
+
+### Choix multiples
+
+- **ce2_et_est_qcm_01** (difficulte 1) : Le chat ... noir.
+  - Reponses : et, est
+  - Reponse attendue : est
+  - Indice : Essaie de remplacer par « était ».
+  - Explication : « était » convient ici : c'est le verbe être, on écrit « est ».
+  - Statut : draft
+- **ce2_et_est_qcm_02** (difficulte 1) : Un chat ... un chien jouent.
+  - Reponses : et, est
+  - Reponse attendue : et
+  - Indice : Essaie de remplacer par « était ».
+  - Explication : « était » ne convient pas ici, mais « et puis » convient : c'est « et », qui relie deux mots.
+  - Statut : draft
+- **ce2_et_est_qcm_03** (difficulte 1) : Ma maison ... grande.
+  - Reponses : et, est
+  - Reponse attendue : est
+  - Indice : Essaie de remplacer par « était ».
+  - Explication : « était » convient ici : c'est le verbe être, on écrit « est ».
+  - Statut : draft
+- **ce2_et_est_qcm_04** (difficulte 1) : Je mange du pain ... du fromage.
+  - Reponses : et, est
+  - Reponse attendue : et
+  - Indice : Essaie de remplacer par « était ».
+  - Explication : « était » ne convient pas ici, mais « et puis » convient : c'est « et », qui relie deux mots.
+  - Statut : draft
+- **ce2_et_est_qcm_05** (difficulte 2) : Papa ... maman sont partis.
+  - Reponses : et, est
+  - Reponse attendue : et
+  - Indice : Essaie de remplacer par « était ».
+  - Explication : « était » ne convient pas ici, mais « et puis » convient : c'est « et », qui relie deux mots.
+  - Statut : draft
+- **ce2_et_est_qcm_06** (difficulte 2) : Le gâteau ... sur la table.
+  - Reponses : et, est
+  - Reponse attendue : est
+  - Indice : Essaie de remplacer par « était ».
+  - Explication : « était » convient ici : c'est le verbe être, on écrit « est ».
+  - Statut : draft
+- **ce2_et_est_qcm_07** (difficulte 3) : Mon petit frère ... très content de son cadeau.
+  - Reponses : et, est
+  - Reponse attendue : est
+  - Indice : Essaie de remplacer par « était ». Relis la phrase en entier avant d'essayer.
+  - Explication : « était » convient ici : c'est le verbe être, on écrit « est ».
+  - Statut : draft
+- **ce2_et_est_qcm_08** (difficulte 3) : Le chat dort sur le canapé ... le chien dort sur le tapis.
+  - Reponses : et, est
+  - Reponse attendue : et
+  - Indice : Essaie de remplacer par « était ». Relis la phrase en entier avant d'essayer.
+  - Explication : « était » ne convient pas ici, mais « et puis » convient : c'est « et », qui relie deux mots.
+  - Statut : draft
+
+### Corrections de phrase
+
+- **ce2_et_est_correction_01** (difficulte 1) : Le chien [et -> est] gentil avec moi.
+  - Indice : Essaie de remplacer par « était ».
+  - Explication : « était » convient ici : c'est le verbe être, on écrit « est ».
+  - Statut : draft
+- **ce2_et_est_correction_02** (difficulte 1) : Paul [est -> et] Marie jouent ensemble.
+  - Indice : Essaie de remplacer par « était ».
+  - Explication : « était » ne convient pas ici, mais « et puis » convient : c'est « et », qui relie deux mots.
+  - Statut : draft
+- **ce2_et_est_correction_03** (difficulte 2) : Ma sœur [et -> est] très fière de son dessin.
+  - Indice : Essaie de remplacer par « était ».
+  - Explication : « était » convient ici : c'est le verbe être, on écrit « est ».
+  - Statut : draft
+- **ce2_et_est_correction_04** (difficulte 3) : Le lapin mange une carotte [est -> et] un chou.
+  - Indice : Essaie de remplacer par « était ». Relis la phrase en entier avant d'essayer.
+  - Explication : « était » ne convient pas ici, mais « et puis » convient : c'est « et », qui relie deux mots.
+  - Statut : draft
+
+### Dictees
+
+- **ce2_et_est_dictee_01** : Le chat est noir.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **ce2_et_est_dictee_02** : Paul et Marie jouent ensemble.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **ce2_et_est_dictee_03** : Mon frère est petit et blond.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+
+## regle_homophone_on_ont (CE2, orthographe)
+
+**Enonce** : Pour choisir entre « on » et « ont », essaie de remplacer par « avaient ». Si ça marche, c'est le verbe avoir : on écrit « ont ». Sinon, on peut remplacer par « il » : on écrit « on ».
+
+**Exemple** : Les enfants ont faim. On mange des pommes.
+
+**Statut** : draft
+
+### Choix multiples
+
+- **ce2_on_ont_qcm_01** (difficulte 1) : ... joue dehors.
+  - Reponses : On, Ont
+  - Reponse attendue : On
+  - Indice : Essaie de remplacer par « avaient », ou par « il ».
+  - Explication : « avaient » ne convient pas ici, mais « il » convient : c'est le pronom « on ».
+  - Statut : draft
+- **ce2_on_ont_qcm_02** (difficulte 1) : Les enfants ... faim.
+  - Reponses : on, ont
+  - Reponse attendue : ont
+  - Indice : Essaie de remplacer par « avaient », ou par « il ».
+  - Explication : « avaient » convient ici : c'est le verbe avoir, on écrit « ont ».
+  - Statut : draft
+- **ce2_on_ont_qcm_03** (difficulte 1) : Ce soir, ... mange des pâtes.
+  - Reponses : on, ont
+  - Reponse attendue : on
+  - Indice : Essaie de remplacer par « avaient », ou par « il ».
+  - Explication : « avaient » ne convient pas ici, mais « il » convient : c'est le pronom « on ».
+  - Statut : draft
+- **ce2_on_ont_qcm_04** (difficulte 1) : Les chiens ... soif.
+  - Reponses : on, ont
+  - Reponse attendue : ont
+  - Indice : Essaie de remplacer par « avaient », ou par « il ».
+  - Explication : « avaient » convient ici : c'est le verbe avoir, on écrit « ont ».
+  - Statut : draft
+- **ce2_on_ont_qcm_05** (difficulte 2) : Paul et Léa ... un nouveau vélo.
+  - Reponses : on, ont
+  - Reponse attendue : ont
+  - Indice : Essaie de remplacer par « avaient », ou par « il ».
+  - Explication : « avaient » convient ici : c'est le verbe avoir, on écrit « ont ».
+  - Statut : draft
+- **ce2_on_ont_qcm_06** (difficulte 2) : À la récréation, ... saute à la corde.
+  - Reponses : on, ont
+  - Reponse attendue : on
+  - Indice : Essaie de remplacer par « avaient », ou par « il ».
+  - Explication : « avaient » ne convient pas ici, mais « il » convient : c'est le pronom « on ».
+  - Statut : draft
+- **ce2_on_ont_qcm_07** (difficulte 3) : Les enfants de ma classe ... fini leur travail.
+  - Reponses : on, ont
+  - Reponse attendue : ont
+  - Indice : Essaie de remplacer par « avaient », ou par « il ». Relis la phrase en entier avant d'essayer.
+  - Explication : « avaient » convient ici : c'est le verbe avoir, on écrit « ont ».
+  - Statut : draft
+- **ce2_on_ont_qcm_08** (difficulte 3) : Quand il pleut, ... reste à la maison.
+  - Reponses : on, ont
+  - Reponse attendue : on
+  - Indice : Essaie de remplacer par « avaient », ou par « il ». Relis la phrase en entier avant d'essayer.
+  - Explication : « avaient » ne convient pas ici, mais « il » convient : c'est le pronom « on ».
+  - Statut : draft
+
+### Corrections de phrase
+
+- **ce2_on_ont_correction_01** (difficulte 1) : Les chats [on -> ont] peur du chien.
+  - Indice : Essaie de remplacer par « avaient », ou par « il ».
+  - Explication : « avaient » convient ici : c'est le verbe avoir, on écrit « ont ».
+  - Statut : draft
+- **ce2_on_ont_correction_02** (difficulte 1) : [Ont -> On] joue dans la cour.
+  - Indice : Essaie de remplacer par « avaient », ou par « il ».
+  - Explication : « avaient » ne convient pas ici, mais « il » convient : c'est le pronom « on ».
+  - Statut : draft
+- **ce2_on_ont_correction_03** (difficulte 2) : Mes cousins [on -> ont] un grand chien.
+  - Indice : Essaie de remplacer par « avaient », ou par « il ».
+  - Explication : « avaient » convient ici : c'est le verbe avoir, on écrit « ont ».
+  - Statut : draft
+- **ce2_on_ont_correction_04** (difficulte 3) : Le soir, [ont -> on] lit une histoire à la maison.
+  - Indice : Essaie de remplacer par « avaient », ou par « il ». Relis la phrase en entier avant d'essayer.
+  - Explication : « avaient » ne convient pas ici, mais « il » convient : c'est le pronom « on ».
+  - Statut : draft
+
+### Dictees
+
+- **ce2_on_ont_dictee_01** : On joue dehors.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **ce2_on_ont_dictee_02** : Les enfants ont faim.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **ce2_on_ont_dictee_03** : Les enfants ont sommeil et on lit une histoire.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+
+## regle_homophone_son_sont (CE2, orthographe)
+
+**Enonce** : Pour choisir entre « son » et « sont », essaie de remplacer par « étaient ». Si ça marche, c'est le verbe être : on écrit « sont ». Sinon, on peut remplacer par « mon » : on écrit « son ».
+
+**Exemple** : Les chats sont gentils. Paul range son cartable.
+
+**Statut** : draft
+
+### Choix multiples
+
+- **ce2_son_sont_qcm_01** (difficulte 1) : Les chats ... gentils.
+  - Reponses : son, sont
+  - Reponse attendue : sont
+  - Indice : Essaie de remplacer par « étaient », ou par « mon ».
+  - Explication : « étaient » convient ici : c'est le verbe être, on écrit « sont ».
+  - Statut : draft
+- **ce2_son_sont_qcm_02** (difficulte 1) : Léa mange ... gâteau.
+  - Reponses : son, sont
+  - Reponse attendue : son
+  - Indice : Essaie de remplacer par « étaient », ou par « mon ».
+  - Explication : « étaient » ne convient pas ici, mais « mon » convient : c'est « son », qui accompagne un nom.
+  - Statut : draft
+- **ce2_son_sont_qcm_03** (difficulte 1) : Les fleurs ... belles.
+  - Reponses : son, sont
+  - Reponse attendue : sont
+  - Indice : Essaie de remplacer par « étaient », ou par « mon ».
+  - Explication : « étaient » convient ici : c'est le verbe être, on écrit « sont ».
+  - Statut : draft
+- **ce2_son_sont_qcm_04** (difficulte 1) : Paul range ... cartable.
+  - Reponses : son, sont
+  - Reponse attendue : son
+  - Indice : Essaie de remplacer par « étaient », ou par « mon ».
+  - Explication : « étaient » ne convient pas ici, mais « mon » convient : c'est « son », qui accompagne un nom.
+  - Statut : draft
+- **ce2_son_sont_qcm_05** (difficulte 2) : Mes amis ... en retard.
+  - Reponses : son, sont
+  - Reponse attendue : sont
+  - Indice : Essaie de remplacer par « étaient », ou par « mon ».
+  - Explication : « étaient » convient ici : c'est le verbe être, on écrit « sont ».
+  - Statut : draft
+- **ce2_son_sont_qcm_06** (difficulte 2) : Le chien boit dans ... bol.
+  - Reponses : son, sont
+  - Reponse attendue : son
+  - Indice : Essaie de remplacer par « étaient », ou par « mon ».
+  - Explication : « étaient » ne convient pas ici, mais « mon » convient : c'est « son », qui accompagne un nom.
+  - Statut : draft
+- **ce2_son_sont_qcm_07** (difficulte 3) : Les enfants de la classe ... allés à la piscine.
+  - Reponses : son, sont
+  - Reponse attendue : sont
+  - Indice : Essaie de remplacer par « étaient », ou par « mon ». Relis la phrase en entier avant d'essayer.
+  - Explication : « étaient » convient ici : c'est le verbe être, on écrit « sont ».
+  - Statut : draft
+- **ce2_son_sont_qcm_08** (difficulte 3) : Marie a perdu ... joli stylo bleu.
+  - Reponses : son, sont
+  - Reponse attendue : son
+  - Indice : Essaie de remplacer par « étaient », ou par « mon ». Relis la phrase en entier avant d'essayer.
+  - Explication : « étaient » ne convient pas ici, mais « mon » convient : c'est « son », qui accompagne un nom.
+  - Statut : draft
+
+### Corrections de phrase
+
+- **ce2_son_sont_correction_01** (difficulte 1) : Les oiseaux [son -> sont] dans le nid.
+  - Indice : Essaie de remplacer par « étaient », ou par « mon ».
+  - Explication : « étaient » convient ici : c'est le verbe être, on écrit « sont ».
+  - Statut : draft
+- **ce2_son_sont_correction_02** (difficulte 1) : Paul mange [sont -> son] pain.
+  - Indice : Essaie de remplacer par « étaient », ou par « mon ».
+  - Explication : « étaient » ne convient pas ici, mais « mon » convient : c'est « son », qui accompagne un nom.
+  - Statut : draft
+- **ce2_son_sont_correction_03** (difficulte 2) : Mes voisins [son -> sont] partis ce matin.
+  - Indice : Essaie de remplacer par « étaient », ou par « mon ».
+  - Explication : « étaient » convient ici : c'est le verbe être, on écrit « sont ».
+  - Statut : draft
+- **ce2_son_sont_correction_04** (difficulte 3) : Ma sœur cherche [sont -> son] petit chien noir.
+  - Indice : Essaie de remplacer par « étaient », ou par « mon ». Relis la phrase en entier avant d'essayer.
+  - Explication : « étaient » ne convient pas ici, mais « mon » convient : c'est « son », qui accompagne un nom.
+  - Statut : draft
+
+### Dictees
+
+- **ce2_son_sont_dictee_01** : Les chats sont gentils.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **ce2_son_sont_dictee_02** : Paul range son cartable.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **ce2_son_sont_dictee_03** : Léa et Paul sont dans son jardin.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+
 ## regle_pluriel_nom (CE1, grammaire)
 
 **Enonce** : Le plus souvent, on forme le pluriel d'un nom en ajoutant un -s a la fin du mot.

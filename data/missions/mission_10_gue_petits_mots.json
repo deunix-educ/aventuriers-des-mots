@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_10_gue_petits_mots",
+  "title": "Le gué des petits mots",
+  "narrative_context": "Pour traverser le gué, il faut poser le bon petit mot sur chaque pierre : « a » ou « à » ? Fais le test du remplacement avant de choisir.",
+  "rule_id": "regle_homophone_a_a",
+  "exercise_type": "multiple_choice",
+  "map_position": {
+    "x": 0.12,
+    "y": 0.15
+  },
+  "review_status": "draft"
+}

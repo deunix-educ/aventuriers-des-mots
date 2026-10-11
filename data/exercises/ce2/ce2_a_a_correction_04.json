@@ -1,0 +1,49 @@
+{
+  "id": "ce2_a_a_correction_04",
+  "level": "CE2",
+  "domain": "orthographe",
+  "skill": "homophones_grammaticaux",
+  "rule_id": "regle_homophone_a_a",
+  "difficulty": 3,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Marie",
+      "correct": true
+    },
+    {
+      "text": "pense",
+      "correct": true
+    },
+    {
+      "text": "a",
+      "correct": false,
+      "expected": "à",
+      "rule_id": "regle_homophone_a_a"
+    },
+    {
+      "text": "son",
+      "correct": true
+    },
+    {
+      "text": "ami",
+      "correct": true
+    },
+    {
+      "text": "depuis",
+      "correct": true
+    },
+    {
+      "text": "hier.",
+      "correct": true
+    }
+  ],
+  "hint": "Essaie de remplacer par « avait ». Relis la phrase en entier avant d'essayer.",
+  "explanation": "« avait » ne convient pas ici : c'est le petit mot « à », avec un accent.",
+  "review_tags": [
+    "homophone",
+    "a_a"
+  ],
+  "review_status": "draft"
+}

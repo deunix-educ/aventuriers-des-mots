@@ -1,0 +1,23 @@
+{
+  "id": "ce2_a_a_qcm_07",
+  "level": "CE2",
+  "domain": "orthographe",
+  "skill": "homophones_grammaticaux",
+  "rule_id": "regle_homophone_a_a",
+  "difficulty": 3,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Ma sœur ... mangé toute la tarte.",
+  "answers": [
+    "a",
+    "à"
+  ],
+  "correct_answer": 0,
+  "hint": "Essaie de remplacer par « avait ». Relis la phrase en entier avant d'essayer.",
+  "explanation": "« avait » convient ici : c'est le verbe avoir, on écrit « a » sans accent.",
+  "review_tags": [
+    "homophone",
+    "a_a"
+  ],
+  "review_status": "draft"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "ce2_a_a_dictee_02",
+  "level": "CE2",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_homophone_a_a"
+  ],
+  "difficulty": 2,
+  "target_text": "Nous allons à la piscine.",
+  "words": [
+    {
+      "text": "Nous",
+      "expects_capital": true
+    },
+    {
+      "text": "allons"
+    },
+    {
+      "text": "à",
+      "rule_id": "regle_homophone_a_a"
+    },
+    {
+      "text": "la"
+    },
+    {
+      "text": "piscine."
+    }
+  ],
+  "audio_id": "ce2_a_a_dictee_02",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

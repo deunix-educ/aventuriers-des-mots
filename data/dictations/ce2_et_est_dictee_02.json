@@ -1,0 +1,33 @@
+{
+  "id": "ce2_et_est_dictee_02",
+  "level": "CE2",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_homophone_et_est"
+  ],
+  "difficulty": 2,
+  "target_text": "Paul et Marie jouent ensemble.",
+  "words": [
+    {
+      "text": "Paul",
+      "expects_capital": true
+    },
+    {
+      "text": "et",
+      "rule_id": "regle_homophone_et_est"
+    },
+    {
+      "text": "Marie"
+    },
+    {
+      "text": "jouent"
+    },
+    {
+      "text": "ensemble."
+    }
+  ],
+  "audio_id": "ce2_et_est_dictee_02",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

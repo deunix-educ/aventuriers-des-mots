@@ -41,6 +41,11 @@ unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
 
+[node name="LevelToggleButton" type="Button" parent="VBox"]
+unique_name_in_owner = true
+layout_mode = 2
+custom_minimum_size = Vector2(0, 48)
+
 [node name="Guide" type="Control" parent="VBox" instance=ExtResource("2")]
 unique_name_in_owner = true
 layout_mode = 2

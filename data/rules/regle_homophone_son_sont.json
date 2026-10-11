@@ -1,0 +1,9 @@
+{
+  "rule_id": "regle_homophone_son_sont",
+  "level": "CE2",
+  "domain": "orthographe",
+  "skill": "homophones_grammaticaux",
+  "statement": "Pour choisir entre « son » et « sont », essaie de remplacer par « étaient ». Si ça marche, c'est le verbe être : on écrit « sont ». Sinon, on peut remplacer par « mon » : on écrit « son ».",
+  "example": "Les chats sont gentils. Paul range son cartable.",
+  "review_status": "draft"
+}

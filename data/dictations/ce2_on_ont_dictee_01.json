@@ -1,0 +1,27 @@
+{
+  "id": "ce2_on_ont_dictee_01",
+  "level": "CE2",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_homophone_on_ont"
+  ],
+  "difficulty": 1,
+  "target_text": "On joue dehors.",
+  "words": [
+    {
+      "text": "On",
+      "expects_capital": true,
+      "rule_id": "regle_homophone_on_ont"
+    },
+    {
+      "text": "joue"
+    },
+    {
+      "text": "dehors."
+    }
+  ],
+  "audio_id": "ce2_on_ont_dictee_01",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

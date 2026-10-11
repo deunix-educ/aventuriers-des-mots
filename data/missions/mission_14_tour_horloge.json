@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_14_tour_horloge",
+  "title": "La tour de l'horloge",
+  "narrative_context": "Les aiguilles de l'horloge sont déréglées : un « et » et un « est » ont changé de place. Remets-les d'aplomb.",
+  "rule_id": "regle_homophone_et_est",
+  "exercise_type": "sentence_correction",
+  "map_position": {
+    "x": 0.375,
+    "y": 0.5
+  },
+  "review_status": "draft"
+}

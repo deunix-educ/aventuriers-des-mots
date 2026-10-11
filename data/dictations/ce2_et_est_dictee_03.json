@@ -1,0 +1,37 @@
+{
+  "id": "ce2_et_est_dictee_03",
+  "level": "CE2",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_homophone_et_est"
+  ],
+  "difficulty": 3,
+  "target_text": "Mon frère est petit et blond.",
+  "words": [
+    {
+      "text": "Mon",
+      "expects_capital": true
+    },
+    {
+      "text": "frère"
+    },
+    {
+      "text": "est",
+      "rule_id": "regle_homophone_et_est"
+    },
+    {
+      "text": "petit"
+    },
+    {
+      "text": "et",
+      "rule_id": "regle_homophone_et_est"
+    },
+    {
+      "text": "blond."
+    }
+  ],
+  "audio_id": "ce2_et_est_dictee_03",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

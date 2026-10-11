@@ -1,0 +1,57 @@
+{
+  "id": "ce2_on_ont_correction_04",
+  "level": "CE2",
+  "domain": "orthographe",
+  "skill": "homophones_grammaticaux",
+  "rule_id": "regle_homophone_on_ont",
+  "difficulty": 3,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Le",
+      "correct": true
+    },
+    {
+      "text": "soir,",
+      "correct": true
+    },
+    {
+      "text": "ont",
+      "correct": false,
+      "expected": "on",
+      "rule_id": "regle_homophone_on_ont"
+    },
+    {
+      "text": "lit",
+      "correct": true
+    },
+    {
+      "text": "une",
+      "correct": true
+    },
+    {
+      "text": "histoire",
+      "correct": true
+    },
+    {
+      "text": "à",
+      "correct": true
+    },
+    {
+      "text": "la",
+      "correct": true
+    },
+    {
+      "text": "maison.",
+      "correct": true
+    }
+  ],
+  "hint": "Essaie de remplacer par « avaient », ou par « il ». Relis la phrase en entier avant d'essayer.",
+  "explanation": "« avaient » ne convient pas ici, mais « il » convient : c'est le pronom « on ».",
+  "review_tags": [
+    "homophone",
+    "on_ont"
+  ],
+  "review_status": "draft"
+}

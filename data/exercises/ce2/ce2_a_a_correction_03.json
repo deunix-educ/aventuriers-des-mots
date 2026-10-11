@@ -1,0 +1,45 @@
+{
+  "id": "ce2_a_a_correction_03",
+  "level": "CE2",
+  "domain": "orthographe",
+  "skill": "homophones_grammaticaux",
+  "rule_id": "regle_homophone_a_a",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Mon",
+      "correct": true
+    },
+    {
+      "text": "voisin",
+      "correct": true
+    },
+    {
+      "text": "à",
+      "correct": false,
+      "expected": "a",
+      "rule_id": "regle_homophone_a_a"
+    },
+    {
+      "text": "un",
+      "correct": true
+    },
+    {
+      "text": "grand",
+      "correct": true
+    },
+    {
+      "text": "jardin.",
+      "correct": true
+    }
+  ],
+  "hint": "Essaie de remplacer par « avait ».",
+  "explanation": "« avait » convient ici : c'est le verbe avoir, on écrit « a » sans accent.",
+  "review_tags": [
+    "homophone",
+    "a_a"
+  ],
+  "review_status": "draft"
+}

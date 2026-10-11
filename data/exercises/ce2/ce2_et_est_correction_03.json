@@ -1,0 +1,53 @@
+{
+  "id": "ce2_et_est_correction_03",
+  "level": "CE2",
+  "domain": "orthographe",
+  "skill": "homophones_grammaticaux",
+  "rule_id": "regle_homophone_et_est",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Ma",
+      "correct": true
+    },
+    {
+      "text": "sœur",
+      "correct": true
+    },
+    {
+      "text": "et",
+      "correct": false,
+      "expected": "est",
+      "rule_id": "regle_homophone_et_est"
+    },
+    {
+      "text": "très",
+      "correct": true
+    },
+    {
+      "text": "fière",
+      "correct": true
+    },
+    {
+      "text": "de",
+      "correct": true
+    },
+    {
+      "text": "son",
+      "correct": true
+    },
+    {
+      "text": "dessin.",
+      "correct": true
+    }
+  ],
+  "hint": "Essaie de remplacer par « était ».",
+  "explanation": "« était » convient ici : c'est le verbe être, on écrit « est ».",
+  "review_tags": [
+    "homophone",
+    "et_est"
+  ],
+  "review_status": "draft"
+}

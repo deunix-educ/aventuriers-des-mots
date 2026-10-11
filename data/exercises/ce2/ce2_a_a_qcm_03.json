@@ -1,0 +1,23 @@
+{
+  "id": "ce2_a_a_qcm_03",
+  "level": "CE2",
+  "domain": "orthographe",
+  "skill": "homophones_grammaticaux",
+  "rule_id": "regle_homophone_a_a",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Le chien ... faim.",
+  "answers": [
+    "a",
+    "à"
+  ],
+  "correct_answer": 0,
+  "hint": "Essaie de remplacer par « avait ».",
+  "explanation": "« avait » convient ici : c'est le verbe avoir, on écrit « a » sans accent.",
+  "review_tags": [
+    "homophone",
+    "a_a"
+  ],
+  "review_status": "draft"
+}

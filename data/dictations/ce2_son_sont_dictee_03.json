@@ -1,0 +1,40 @@
+{
+  "id": "ce2_son_sont_dictee_03",
+  "level": "CE2",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_homophone_son_sont"
+  ],
+  "difficulty": 3,
+  "target_text": "Léa et Paul sont dans son jardin.",
+  "words": [
+    {
+      "text": "Léa",
+      "expects_capital": true
+    },
+    {
+      "text": "et"
+    },
+    {
+      "text": "Paul"
+    },
+    {
+      "text": "sont",
+      "rule_id": "regle_homophone_son_sont"
+    },
+    {
+      "text": "dans"
+    },
+    {
+      "text": "son",
+      "rule_id": "regle_homophone_son_sont"
+    },
+    {
+      "text": "jardin."
+    }
+  ],
+  "audio_id": "ce2_son_sont_dictee_03",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

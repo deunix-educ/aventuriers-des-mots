@@ -1,0 +1,23 @@
+{
+  "id": "ce2_son_sont_qcm_05",
+  "level": "CE2",
+  "domain": "orthographe",
+  "skill": "homophones_grammaticaux",
+  "rule_id": "regle_homophone_son_sont",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Mes amis ... en retard.",
+  "answers": [
+    "son",
+    "sont"
+  ],
+  "correct_answer": 1,
+  "hint": "Essaie de remplacer par « étaient », ou par « mon ».",
+  "explanation": "« étaient » convient ici : c'est le verbe être, on écrit « sont ».",
+  "review_tags": [
+    "homophone",
+    "son_sont"
+  ],
+  "review_status": "draft"
+}

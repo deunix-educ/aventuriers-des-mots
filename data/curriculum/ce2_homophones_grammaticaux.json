@@ -1,0 +1,13 @@
+{
+  "level": "CE2",
+  "region_id": "marais_des_homophones",
+  "chapter_id": "homophones_grammaticaux",
+  "title": "Les homophones grammaticaux",
+  "rule_ids": [
+    "regle_homophone_a_a",
+    "regle_homophone_et_est",
+    "regle_homophone_son_sont",
+    "regle_homophone_on_ont"
+  ],
+  "review_status": "draft"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ce2_a_a_qcm_02",
+  "level": "CE2",
+  "domain": "orthographe",
+  "skill": "homophones_grammaticaux",
+  "rule_id": "regle_homophone_a_a",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Nous allons ... la plage.",
+  "answers": [
+    "a",
+    "à"
+  ],
+  "correct_answer": 1,
+  "hint": "Essaie de remplacer par « avait ».",
+  "explanation": "« avait » ne convient pas ici : c'est le petit mot « à », avec un accent.",
+  "review_tags": [
+    "homophone",
+    "a_a"
+  ],
+  "review_status": "draft"
+}

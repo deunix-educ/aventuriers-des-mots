@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_17_serre_etiquettes",
+  "title": "La serre aux étiquettes",
+  "narrative_context": "Dans la serre, des étiquettes ont été mal posées. Repère celle qui ne va pas et remplace-la par la bonne.",
+  "rule_id": "regle_homophone_son_sont",
+  "exercise_type": "sentence_correction",
+  "map_position": {
+    "x": 0.625,
+    "y": 0.5
+  },
+  "review_status": "draft"
+}

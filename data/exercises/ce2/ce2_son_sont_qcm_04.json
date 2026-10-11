@@ -1,0 +1,23 @@
+{
+  "id": "ce2_son_sont_qcm_04",
+  "level": "CE2",
+  "domain": "orthographe",
+  "skill": "homophones_grammaticaux",
+  "rule_id": "regle_homophone_son_sont",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Paul range ... cartable.",
+  "answers": [
+    "son",
+    "sont"
+  ],
+  "correct_answer": 0,
+  "hint": "Essaie de remplacer par « étaient », ou par « mon ».",
+  "explanation": "« étaient » ne convient pas ici, mais « mon » convient : c'est « son », qui accompagne un nom.",
+  "review_tags": [
+    "homophone",
+    "son_sont"
+  ],
+  "review_status": "draft"
+}

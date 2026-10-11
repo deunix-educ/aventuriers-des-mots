@@ -1,0 +1,23 @@
+{
+  "id": "ce2_on_ont_qcm_04",
+  "level": "CE2",
+  "domain": "orthographe",
+  "skill": "homophones_grammaticaux",
+  "rule_id": "regle_homophone_on_ont",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Les chiens ... soif.",
+  "answers": [
+    "on",
+    "ont"
+  ],
+  "correct_answer": 1,
+  "hint": "Essaie de remplacer par « avaient », ou par « il ».",
+  "explanation": "« avaient » convient ici : c'est le verbe avoir, on écrit « ont ».",
+  "review_tags": [
+    "homophone",
+    "on_ont"
+  ],
+  "review_status": "draft"
+}

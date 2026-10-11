@@ -1,0 +1,23 @@
+{
+  "id": "ce2_on_ont_qcm_08",
+  "level": "CE2",
+  "domain": "orthographe",
+  "skill": "homophones_grammaticaux",
+  "rule_id": "regle_homophone_on_ont",
+  "difficulty": 3,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Quand il pleut, ... reste à la maison.",
+  "answers": [
+    "on",
+    "ont"
+  ],
+  "correct_answer": 0,
+  "hint": "Essaie de remplacer par « avaient », ou par « il ». Relis la phrase en entier avant d'essayer.",
+  "explanation": "« avaient » ne convient pas ici, mais « il » convient : c'est le pronom « on ».",
+  "review_tags": [
+    "homophone",
+    "on_ont"
+  ],
+  "review_status": "draft"
+}

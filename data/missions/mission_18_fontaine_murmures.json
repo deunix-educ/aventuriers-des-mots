@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_18_fontaine_murmures",
+  "title": "La fontaine aux murmures",
+  "narrative_context": "La fontaine murmure une phrase, une seule fois. Tends l'oreille et écris-la sans faute.",
+  "rule_id": "regle_homophone_son_sont",
+  "exercise_type": "dictation",
+  "map_position": {
+    "x": 0.625,
+    "y": 0.85
+  },
+  "review_status": "draft"
+}

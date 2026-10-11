@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_15_source_chantante",
+  "title": "La source chantante",
+  "narrative_context": "La source chante une phrase, une seule fois. Écoute-la bien et écris exactement ce qu'elle chante.",
+  "rule_id": "regle_homophone_et_est",
+  "exercise_type": "dictation",
+  "map_position": {
+    "x": 0.375,
+    "y": 0.85
+  },
+  "review_status": "draft"
+}

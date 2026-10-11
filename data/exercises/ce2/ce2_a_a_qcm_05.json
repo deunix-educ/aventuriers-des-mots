@@ -1,0 +1,23 @@
+{
+  "id": "ce2_a_a_qcm_05",
+  "level": "CE2",
+  "domain": "orthographe",
+  "skill": "homophones_grammaticaux",
+  "rule_id": "regle_homophone_a_a",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Mon frère ... un vélo rouge.",
+  "answers": [
+    "a",
+    "à"
+  ],
+  "correct_answer": 0,
+  "hint": "Essaie de remplacer par « avait ».",
+  "explanation": "« avait » convient ici : c'est le verbe avoir, on écrit « a » sans accent.",
+  "review_tags": [
+    "homophone",
+    "a_a"
+  ],
+  "review_status": "draft"
+}

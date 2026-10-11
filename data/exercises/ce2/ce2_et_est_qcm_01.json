@@ -1,0 +1,23 @@
+{
+  "id": "ce2_et_est_qcm_01",
+  "level": "CE2",
+  "domain": "orthographe",
+  "skill": "homophones_grammaticaux",
+  "rule_id": "regle_homophone_et_est",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Le chat ... noir.",
+  "answers": [
+    "et",
+    "est"
+  ],
+  "correct_answer": 1,
+  "hint": "Essaie de remplacer par « était ».",
+  "explanation": "« était » convient ici : c'est le verbe être, on écrit « est ».",
+  "review_tags": [
+    "homophone",
+    "et_est"
+  ],
+  "review_status": "draft"
+}

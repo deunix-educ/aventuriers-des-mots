@@ -1,0 +1,30 @@
+{
+  "id": "ce2_et_est_dictee_01",
+  "level": "CE2",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_homophone_et_est"
+  ],
+  "difficulty": 1,
+  "target_text": "Le chat est noir.",
+  "words": [
+    {
+      "text": "Le",
+      "expects_capital": true
+    },
+    {
+      "text": "chat"
+    },
+    {
+      "text": "est",
+      "rule_id": "regle_homophone_et_est"
+    },
+    {
+      "text": "noir."
+    }
+  ],
+  "audio_id": "ce2_et_est_dictee_01",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

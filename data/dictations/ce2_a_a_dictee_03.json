@@ -1,0 +1,40 @@
+{
+  "id": "ce2_a_a_dictee_03",
+  "level": "CE2",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_homophone_a_a"
+  ],
+  "difficulty": 3,
+  "target_text": "Papa a donné un cadeau à Léa.",
+  "words": [
+    {
+      "text": "Papa",
+      "expects_capital": true
+    },
+    {
+      "text": "a",
+      "rule_id": "regle_homophone_a_a"
+    },
+    {
+      "text": "donné"
+    },
+    {
+      "text": "un"
+    },
+    {
+      "text": "cadeau"
+    },
+    {
+      "text": "à",
+      "rule_id": "regle_homophone_a_a"
+    },
+    {
+      "text": "Léa."
+    }
+  ],
+  "audio_id": "ce2_a_a_dictee_03",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

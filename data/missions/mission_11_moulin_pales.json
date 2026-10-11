@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_11_moulin_pales",
+  "title": "Le moulin aux pales mélangées",
+  "narrative_context": "Les pales du moulin portent des mots, mais un « a » et un « à » se sont échangés. Trouve l'intrus et remets-le en place.",
+  "rule_id": "regle_homophone_a_a",
+  "exercise_type": "sentence_correction",
+  "map_position": {
+    "x": 0.12,
+    "y": 0.5
+  },
+  "review_status": "draft"
+}

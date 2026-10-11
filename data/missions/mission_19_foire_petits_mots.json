@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_19_foire_petits_mots",
+  "title": "La foire aux petits mots",
+  "narrative_context": "À la foire, un jeu demande de choisir entre « on » et « ont ». Fais le test du remplacement pour gagner !",
+  "rule_id": "regle_homophone_on_ont",
+  "exercise_type": "multiple_choice",
+  "map_position": {
+    "x": 0.88,
+    "y": 0.15
+  },
+  "review_status": "draft"
+}

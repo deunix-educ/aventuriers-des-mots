@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_20_atelier_conteur",
+  "title": "L'atelier du conteur",
+  "narrative_context": "Dans l'atelier, une histoire a des mots échangés. Trouve le mot qui ne va pas et corrige-le.",
+  "rule_id": "regle_homophone_on_ont",
+  "exercise_type": "sentence_correction",
+  "map_position": {
+    "x": 0.88,
+    "y": 0.5
+  },
+  "review_status": "draft"
+}

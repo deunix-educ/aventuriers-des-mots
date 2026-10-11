@@ -34,6 +34,16 @@ func get_missions() -> Array[Dictionary]:
     return missions
 
 
+## Missions dont la regle appartient au niveau scolaire demande (le niveau
+## d'une mission est celui de sa regle, pas un champ de plus a tenir a jour).
+func get_missions_for_level(level: String) -> Array[Dictionary]:
+    var missions: Array[Dictionary] = []
+    for mission in get_missions():
+        if get_rule(mission["rule_id"]).get("level", "") == level:
+            missions.append(mission)
+    return missions
+
+
 func get_mission(mission_id: String) -> Dictionary:
     return _missions.get(mission_id, {})
 

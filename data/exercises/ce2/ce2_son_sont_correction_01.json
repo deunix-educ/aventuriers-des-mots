@@ -1,0 +1,45 @@
+{
+  "id": "ce2_son_sont_correction_01",
+  "level": "CE2",
+  "domain": "orthographe",
+  "skill": "homophones_grammaticaux",
+  "rule_id": "regle_homophone_son_sont",
+  "difficulty": 1,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Les",
+      "correct": true
+    },
+    {
+      "text": "oiseaux",
+      "correct": true
+    },
+    {
+      "text": "son",
+      "correct": false,
+      "expected": "sont",
+      "rule_id": "regle_homophone_son_sont"
+    },
+    {
+      "text": "dans",
+      "correct": true
+    },
+    {
+      "text": "le",
+      "correct": true
+    },
+    {
+      "text": "nid.",
+      "correct": true
+    }
+  ],
+  "hint": "Essaie de remplacer par « étaient », ou par « mon ».",
+  "explanation": "« étaient » convient ici : c'est le verbe être, on écrit « sont ».",
+  "review_tags": [
+    "homophone",
+    "son_sont"
+  ],
+  "review_status": "draft"
+}
