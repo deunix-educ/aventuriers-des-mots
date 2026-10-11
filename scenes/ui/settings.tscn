@@ -41,7 +41,7 @@ custom_minimum_size = Vector2(640, 0)
 
 [node name="VBox" type="VBoxContainer" parent="Margin/Center/Card"]
 layout_mode = 2
-theme_override_constants/separation = 14
+theme_override_constants/separation = 8
 
 [node name="TitleLabel" type="Label" parent="Margin/Center/Card/VBox"]
 unique_name_in_owner = true
@@ -99,6 +99,22 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 4
 custom_minimum_size = Vector2(0, 40)
+
+[node name="TrackRow" type="HBoxContainer" parent="Margin/Center/Card/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="TrackLabel" type="Label" parent="Margin/Center/Card/VBox/TrackRow"]
+unique_name_in_owner = true
+layout_mode = 2
+custom_minimum_size = Vector2(230, 0)
+theme_type_variation = &"Emphasis"
+
+[node name="TrackOption" type="OptionButton" parent="Margin/Center/Card/VBox/TrackRow"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+custom_minimum_size = Vector2(0, 48)
 
 [node name="TextSizeLabel" type="Label" parent="Margin/Center/Card/VBox"]
 unique_name_in_owner = true

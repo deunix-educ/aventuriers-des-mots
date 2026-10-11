@@ -109,5 +109,12 @@
   "settings.animations_on": "Avec animations",
   "settings.animations_off": "Sans animations",
   "settings.music_label": "Musique",
-  "settings.effects_label": "Effets sonores"
+  "settings.effects_label": "Effets sonores",
+  "settings.track_label": "Musique de fond",
+  "music.auto": "Automatique (selon le lieu)",
+  "music.forest": "Forêt",
+  "music.marsh": "Marais",
+  "music.meadow": "Prairie",
+  "music.river": "Rivière",
+  "music.night": "Nuit"
 }

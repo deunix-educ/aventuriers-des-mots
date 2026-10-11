@@ -28,7 +28,7 @@ func _ready() -> void:
     _new_profile_button.pressed.connect(_on_new_profile_pressed)
     _delete_confirm_dialog.confirmed.connect(_on_delete_confirmed)
 
-    AudioManager.play_music("forest")
+    AudioManager.play_region_music("CE1")
     _refresh_profile_list()
 
 

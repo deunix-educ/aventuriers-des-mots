@@ -14,6 +14,7 @@ var animations_enabled := true
 var volume := 0.8
 var music_volume := 0.5
 var effects_volume := 0.8
+var music_track := SoundCatalog.MUSIC_AUTO
 var text_scale_index := 0
 
 var _base_font_sizes: Dictionary = {}
@@ -49,6 +50,11 @@ func set_effects_volume(value: float) -> void:
     _commit()
 
 
+func set_music_track(choice: String) -> void:
+    music_track = choice if SoundCatalog.music_choices().has(choice) else SoundCatalog.MUSIC_AUTO
+    _commit()
+
+
 func set_text_scale_index(index: int) -> void:
     text_scale_index = clampi(index, 0, AppSettings.TEXT_SCALES.size() - 1)
     _commit()
@@ -69,6 +75,7 @@ func load_from_disk() -> void:
     volume = clean["volume"]
     music_volume = clean["music_volume"]
     effects_volume = clean["effects_volume"]
+    music_track = clean["music_track"]
     text_scale_index = clean["text_scale_index"]
     animations_enabled = clean["animations_enabled"]
 
@@ -79,6 +86,7 @@ func save_to_disk() -> bool:
     data["volume"] = volume
     data["music_volume"] = music_volume
     data["effects_volume"] = effects_volume
+    data["music_track"] = music_track
     data["text_scale_index"] = text_scale_index
     data["animations_enabled"] = animations_enabled
     var tmp_path := SETTINGS_PATH + ".tmp"

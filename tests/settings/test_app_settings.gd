@@ -42,3 +42,9 @@ func test_music_and_effects_volumes_are_bounded() -> void:
     assert_eq(clean["music_volume"], 1.0)
     assert_eq(clean["effects_volume"], 0.0)
     assert_eq(AppSettings.sanitize({})["music_volume"], AppSettings.defaults()["music_volume"])
+
+
+func test_music_track_must_be_a_known_choice() -> void:
+    assert_eq(AppSettings.sanitize({"music_track": "river"})["music_track"], "river")
+    assert_eq(AppSettings.sanitize({"music_track": "../x"})["music_track"], "auto")
+    assert_eq(AppSettings.sanitize({"music_track": 3})["music_track"], "auto")

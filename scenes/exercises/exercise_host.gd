@@ -66,7 +66,7 @@ func _ready() -> void:
     _skill_id = _rule.get("skill", "")
     _current_difficulty = ProgressManager.next_difficulty_for_skill(_skill_id, 1)
     $Backdrop.kind = "marsh" if _rule.get("level", "CE1") == "CE2" else "forest"
-    AudioManager.play_music(SoundCatalog.music_for_level(_rule.get("level", "CE1")))
+    AudioManager.play_region_music(_rule.get("level", "CE1"))
     _show_rule_panel()
 
 

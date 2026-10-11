@@ -22,6 +22,7 @@ static func defaults() -> Dictionary:
         "volume": 0.8,
         "music_volume": 0.5,
         "effects_volume": 0.8,
+        "music_track": SoundCatalog.MUSIC_AUTO,
         "text_scale_index": 0,
         "animations_enabled": true,
     }
@@ -41,6 +42,9 @@ static func sanitize(raw: Variant) -> Dictionary:
         var other: Variant = source.get(key)
         if typeof(other) == TYPE_FLOAT or typeof(other) == TYPE_INT:
             result[key] = clampf(float(other), 0.0, 1.0)
+    var track: Variant = source.get("music_track")
+    if typeof(track) == TYPE_STRING and SoundCatalog.music_choices().has(track):
+        result["music_track"] = track
     var index: Variant = source.get("text_scale_index")
     if typeof(index) == TYPE_FLOAT or typeof(index) == TYPE_INT:
         result["text_scale_index"] = clampi(int(index), 0, TEXT_SCALES.size() - 1)

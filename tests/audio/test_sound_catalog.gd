@@ -23,6 +23,23 @@ func test_music_follows_the_level() -> void:
     assert_eq(SoundCatalog.music_for_level("CE2"), "marsh")
 
 
+func test_there_are_five_music_tracks_and_an_automatic_choice() -> void:
+    assert_eq(SoundCatalog.MUSIC_IDS.size(), 5)
+    assert_eq(SoundCatalog.music_choices().size(), 6)
+    assert_eq(SoundCatalog.music_choices()[0], SoundCatalog.MUSIC_AUTO)
+
+
+func test_resolve_music_follows_choice_or_level() -> void:
+    assert_eq(SoundCatalog.resolve_music("night", "CE1"), "night")
+    assert_eq(SoundCatalog.resolve_music("auto", "CE2"), "marsh")
+    assert_eq(SoundCatalog.resolve_music("n_importe_quoi", "CE1"), "forest")
+
+
+func test_every_music_choice_has_a_label() -> void:
+    for choice in SoundCatalog.music_choices():
+        assert_ne(UIText.get_text("music.%s" % choice), "music.%s" % choice)
+
+
 func test_audio_manager_plays_without_crashing_and_remembers_music() -> void:
     AudioManager.play_sfx("success")
     AudioManager.play_music("marsh")

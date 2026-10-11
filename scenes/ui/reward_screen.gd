@@ -28,7 +28,7 @@ func _ready() -> void:
     var mission := ExerciseEngine.get_mission(GameManager.pending_mission_id)
     var rule := ExerciseEngine.get_rule(mission.get("rule_id", ""))
     _backdrop.kind = "marsh" if rule.get("level", "CE1") == "CE2" else "forest"
-    AudioManager.play_music(SoundCatalog.music_for_level(rule.get("level", "CE1")))
+    AudioManager.play_region_music(rule.get("level", "CE1"))
 
     var summary := ProgressManager.complete_mission(
         GameManager.pending_mission_id, GameManager.last_outcomes

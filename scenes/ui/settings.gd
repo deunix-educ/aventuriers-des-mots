@@ -11,6 +11,8 @@ extends Control
 @onready var _music_slider: HSlider = %MusicSlider
 @onready var _effects_label: Label = %EffectsLabel
 @onready var _effects_slider: HSlider = %EffectsSlider
+@onready var _track_label: Label = %TrackLabel
+@onready var _track_option: OptionButton = %TrackOption
 @onready var _text_size_label: Label = %TextSizeLabel
 @onready var _text_size_box: HBoxContainer = %TextSizeBox
 @onready var _animations_label: Label = %AnimationsLabel
@@ -36,6 +38,7 @@ func _ready() -> void:
     _volume_slider.drag_ended.connect(_on_drag_ended)
     _effects_slider.drag_ended.connect(_on_drag_ended)
 
+    _build_track_option()
     _build_text_size_buttons()
 
     _build_animation_buttons()
@@ -78,6 +81,21 @@ func _setup_slider(slider: HSlider, value: float, handler: Callable) -> void:
     slider.step = 1.0 / AppSettings.VOLUME_STEPS
     slider.value = value
     slider.value_changed.connect(handler)
+
+
+func _build_track_option() -> void:
+    _track_label.text = UIText.get_text("settings.track_label")
+    var choices := SoundCatalog.music_choices()
+    for choice in choices:
+        _track_option.add_item(UIText.get_text("music.%s" % choice))
+    _track_option.select(choices.find(SettingsManager.music_track))
+    _track_option.item_selected.connect(_on_track_selected)
+
+
+func _on_track_selected(index: int) -> void:
+    SettingsManager.set_music_track(SoundCatalog.music_choices()[index])
+    # On fait entendre le choix tout de suite.
+    AudioManager.play_region_music(ProgressManager.school_level())
 
 
 func _on_volume_changed(value: float) -> void:

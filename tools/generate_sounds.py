@@ -68,7 +68,11 @@ def normalise(signal: Signal, peak: float) -> Signal:
 
 def hz(note: str) -> float:
     names = {"C": 0, "D": 2, "E": 4, "F": 5, "G": 7, "A": 9, "B": 11}
-    pitch = names[note[0]] + (1 if note[1] == "#" else 0)
+    pitch = names[note[0]]
+    if note[1] == "#":
+        pitch += 1
+    elif note[1] == "b":
+        pitch -= 1
     octave = int(note[-1])
     midi = 12 * (octave + 1) + pitch
     return 440.0 * 2 ** ((midi - 69) / 12)
@@ -149,7 +153,28 @@ def make_all_music() -> dict[str, Signal]:
         seed=23,
         melody_density=0.35,
     )
-    return {"forest": forest, "marsh": marsh}
+    meadow = make_music(  # prairie : majeur lumineux, un peu plus vif
+        chords=[["G2", "D3", "B3"], ["E2", "B2", "G3"], ["C3", "G3", "E4"], ["D3", "A3", "F#4"]] * 2,
+        melody_scale=["G4", "A4", "B4", "D5", "E5", "G5"],
+        seconds_per_chord=3.5,
+        seed=37,
+        melody_density=0.55,
+    )
+    river = make_music(  # riviere : mode dorien, melodie qui coule
+        chords=[["D3", "A3", "F4"], ["G2", "D3", "B3"], ["C3", "G3", "E4"], ["A2", "E3", "C4"]] * 2,
+        melody_scale=["D5", "E5", "F5", "A5", "C6", "A4"],
+        seconds_per_chord=3.0,
+        seed=41,
+        melody_density=0.65,
+    )
+    night = make_music(  # nuit : berceuse lente et rare
+        chords=[["F2", "C3", "A3"], ["D3", "A3", "E4"], ["Bb2", "F3", "D4"], ["C3", "G3", "E4"]] * 2,
+        melody_scale=["F5", "G5", "A5", "C6", "E5"],
+        seconds_per_chord=6.0,
+        seed=53,
+        melody_density=0.25,
+    )
+    return {"forest": forest, "marsh": marsh, "meadow": meadow, "river": river, "night": night}
 
 
 def write_ogg(signal: Signal, destination: Path, quality: str = "3") -> None:

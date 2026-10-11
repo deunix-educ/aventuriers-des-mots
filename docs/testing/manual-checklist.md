@@ -43,7 +43,7 @@ Tout ce qui suit ne peut pas être vérifié sans écran (rendu, mise en page, a
 
 ## Audio
 
-- Son et musique (point 33 de `decisions.md`) : clic sur les boutons, « Bravo » (accord montant) et « Pas tout à fait » (deux notes douces, jamais agressives), étoiles une à une puis fanfare à 3 étoiles ou objet gagné ; musique de forêt (CE1) et de marais (CE2), en boucle sans coupure audible, qui baisse pendant une dictée ; trois curseurs de réglages qui agissent bien chacun sur leur bus ; tout reste agréable à volume moyen et il n'y a jamais d'écrasement de la voix.
+- Son et musique (point 33 de `decisions.md`) : clic sur les boutons, « Bravo » (accord montant) et « Pas tout à fait » (deux notes douces, jamais agressives), étoiles une à une puis fanfare à 3 étoiles ou objet gagné ; musique de forêt (CE1) et de marais (CE2), en boucle sans coupure audible, qui baisse pendant une dictée ; cinq morceaux au choix dans « Musique de fond » (le choix s'entend aussitôt et est conservé après redémarrage) ; trois curseurs de réglages qui agissent bien chacun sur leur bus ; tout reste agréable à volume moyen et il n'y a jamais d'écrasement de la voix.
 
 - `ce1_accord_adjectif_dictee_01` a un fichier audio provisoire généré par `make generate-dictation-audio` (voix neuronale Piper, voir `assets/CREDITS.md`). Testé manuellement : voix claire et bien comprise.
 - Toute dictée ajoutée sans régénérer son audio se dégrade silencieusement (avertissement en console, pas de plantage) : vérifier qu'aucune dictée manquante ne passe inaperçue avant diffusion (`make generate-dictation-audio` ne régénère pas l'existant, `--force` pour forcer).

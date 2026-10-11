@@ -76,6 +76,12 @@ func play_music(music_id: String) -> void:
     _music_player.play()
 
 
+## Musique de fond selon le choix des reglages et le niveau scolaire de la
+## scene appelante (« automatique » = celle de la region).
+func play_region_music(level: String) -> void:
+    play_music(SoundCatalog.resolve_music(SettingsManager.music_track, level))
+
+
 func current_music_id() -> String:
     return _current_music_id
 
