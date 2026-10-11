@@ -1,0 +1,8 @@
+{
+  "level": "CE1",
+  "region_id": "foret_des_accords",
+  "chapter_id": "accords_groupe_nominal",
+  "title": "Les accords dans le groupe nominal",
+  "rule_ids": ["regle_accord_adjectif"],
+  "review_status": "draft"
+}

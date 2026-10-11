@@ -16,6 +16,7 @@ Le `Makefile` est le seul point d'entrée pour les opérations système. Tenir c
 - `make validate-data` : valide tous les JSON de `data/` contre leurs schémas
 - `make test` : tests en mode headless
 - `make check` : lint + validate-data + test (à passer avant chaque commit)
+- `make content-review` : régénère `docs/review/content-review.md` à partir de `data/`
 - `make export-linux` / `make export-windows` : exports dans `build/`
 
 ## Conventions de code

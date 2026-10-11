@@ -1,0 +1,9 @@
+{
+  "rule_id": "regle_accord_adjectif",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "accord_groupe_nominal",
+  "statement": "Quand un adjectif accompagne un nom, il s'accorde avec ce nom en genre et en nombre.",
+  "example": "Un petit chien. Une petite chienne. Des petits chiens. Des petites chiennes.",
+  "review_status": "draft"
+}

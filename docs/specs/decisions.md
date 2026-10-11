@@ -88,3 +88,13 @@ Ajouts à l'arborescence proposée :
 - Licence et hébergement : tranchés ci-dessus (point 0).
 - Validation du contenu CE1/CE2 par un enseignant avant diffusion : à organiser, pas de date fixée.
 - Spécification minimale de performance pour « appareil familial » : non définie, à préciser avant les exports.
+
+## 11. Étape « Données » : précisions prises en cours d'implémentation
+
+- Le validateur générique (`scripts/data/schema_validator.gd`) implémente un sous-ensemble de JSON Schema (`type`, `required`, `properties`, `additionalProperties`, `items`, `enum`, `const`, bornes numériques, longueurs, `pattern`). Suffisant pour tous les schémas actuels ; pas de `patternProperties` ni de `if`/`then`.
+- Le dispatch du schéma d'exercice se fait sur le champ `type` (`multiple_choice` → `exercise_multiple_choice.schema.json`, `sentence_correction` → `exercise_sentence_correction.schema.json`), dans `DataLoader.exercise_schema_name_for_type`. Un type absent de cette fonction est rejeté explicitement par `make validate-data`, conformément à l'invariant « liste fermée des types d'exercices ».
+- Les contraintes croisées qu'un schéma ne peut pas exprimer (index `correct_answer` dans les bornes de `answers`, au moins un token fautif en correction de phrase avec une correction `expected`, cohérence entre `target_text` et `words` en dictée) vivent dans `scripts/data/semantic_checks.gd`, testées indépendamment du schéma.
+- Schéma de dictée : `words` (annotation mot par mot : `rule_id` et `expects_capital` facultatifs) est **obligatoire**, pas facultatif — sans lui, l'erreur reste non classée (cf. « Points durs » du prompt de lancement). Le nombre de mots dans `words` doit correspondre à `target_text` découpé sur les espaces.
+- Le schéma `save` reste provisoire pour le champ `skills` (`{"type": "object"}`, sans validation des clés dynamiques) : le validateur actuel ne sait pas exprimer un schéma pour des clés arbitraires. À affiner à l'étape « Profils et sauvegardes ».
+- GUT est pinné en v9.6.0, pas la dernière version (9.7.1 référence le singleton `AccessibilityServer`, absent de Godot 4.6.3 en mode headless).
+- `tools/setup.sh` lance `godot --headless --path . --import` en fin d'installation : nécessaire pour que les scripts `class_name` globaux (`SchemaValidator`, `DataLoader`, `SemanticChecks`) soient résolus avant la première exécution de `make test` / `make validate-data`.

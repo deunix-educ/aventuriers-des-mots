@@ -1,0 +1,47 @@
+{
+  "type": "object",
+  "required": [
+    "id",
+    "level",
+    "domain",
+    "rule_ids",
+    "difficulty",
+    "target_text",
+    "words",
+    "audio_id",
+    "audio_provisional",
+    "accepted_variants",
+    "review_status"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z][a-z0-9_]*$" },
+    "level": { "type": "string", "enum": ["CE1", "CE2"] },
+    "domain": { "type": "string", "enum": ["grammaire", "orthographe"] },
+    "rule_ids": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "pattern": "^[a-z][a-z0-9_]*$" }
+    },
+    "difficulty": { "type": "integer", "minimum": 1, "maximum": 3 },
+    "target_text": { "type": "string", "minLength": 1 },
+    "words": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["text"],
+        "additionalProperties": false,
+        "properties": {
+          "text": { "type": "string", "minLength": 1 },
+          "rule_id": { "type": "string", "pattern": "^[a-z][a-z0-9_]*$" },
+          "expects_capital": { "type": "boolean" }
+        }
+      }
+    },
+    "audio_id": { "type": "string", "pattern": "^[a-z][a-z0-9_]*$" },
+    "audio_provisional": { "type": "boolean" },
+    "accepted_variants": { "type": "array", "items": { "type": "string" } },
+    "review_status": { "type": "string", "enum": ["draft", "validated"] }
+  }
+}

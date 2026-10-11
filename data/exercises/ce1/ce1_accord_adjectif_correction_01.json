@@ -1,0 +1,25 @@
+{
+  "id": "ce1_accord_adjectif_correction_01",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "accord_groupe_nominal",
+  "rule_id": "regle_accord_adjectif",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    { "text": "Les", "correct": true },
+    {
+      "text": "petit",
+      "correct": false,
+      "expected": "petits",
+      "rule_id": "regle_accord_adjectif"
+    },
+    { "text": "chiens", "correct": true },
+    { "text": "courent.", "correct": true }
+  ],
+  "hint": "Le determinant « les » indique un pluriel.",
+  "explanation": "L'adjectif « petit » s'accorde avec le nom « chiens », qui est au pluriel : il faut ecrire « petits ».",
+  "review_tags": ["pluriel", "accord_adjectif"],
+  "review_status": "draft"
+}

@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "required": [
+    "schema_version",
+    "profile_id",
+    "display_name",
+    "school_level",
+    "session_count",
+    "unlocked_regions",
+    "skills",
+    "rewards"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "type": "integer", "minimum": 1 },
+    "profile_id": { "type": "string", "pattern": "^[a-z][a-z0-9_]*$" },
+    "display_name": { "type": "string", "minLength": 1 },
+    "school_level": { "type": "string", "enum": ["CE1", "CE2"] },
+    "session_count": { "type": "integer", "minimum": 0 },
+    "unlocked_regions": { "type": "array", "items": { "type": "string" } },
+    "skills": { "type": "object" },
+    "rewards": {
+      "type": "object",
+      "required": ["stars", "items"],
+      "additionalProperties": false,
+      "properties": {
+        "stars": { "type": "integer", "minimum": 0 },
+        "items": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}

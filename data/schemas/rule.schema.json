@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "required": [
+    "rule_id",
+    "level",
+    "domain",
+    "skill",
+    "statement",
+    "example",
+    "review_status"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "rule_id": { "type": "string", "pattern": "^[a-z][a-z0-9_]*$" },
+    "level": { "type": "string", "enum": ["CE1", "CE2"] },
+    "domain": { "type": "string", "enum": ["grammaire", "orthographe"] },
+    "skill": { "type": "string", "pattern": "^[a-z][a-z0-9_]*$" },
+    "statement": { "type": "string", "minLength": 1 },
+    "example": { "type": "string", "minLength": 1 },
+    "review_status": { "type": "string", "enum": ["draft", "validated"] }
+  }
+}

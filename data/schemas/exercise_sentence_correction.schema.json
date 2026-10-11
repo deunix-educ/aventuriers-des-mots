@@ -1,0 +1,48 @@
+{
+  "type": "object",
+  "required": [
+    "id",
+    "level",
+    "domain",
+    "skill",
+    "rule_id",
+    "difficulty",
+    "type",
+    "instruction",
+    "tokens",
+    "hint",
+    "explanation",
+    "review_tags",
+    "review_status"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z][a-z0-9_]*$" },
+    "level": { "type": "string", "enum": ["CE1", "CE2"] },
+    "domain": { "type": "string", "enum": ["grammaire", "orthographe"] },
+    "skill": { "type": "string", "pattern": "^[a-z][a-z0-9_]*$" },
+    "rule_id": { "type": "string", "pattern": "^[a-z][a-z0-9_]*$" },
+    "difficulty": { "type": "integer", "minimum": 1, "maximum": 3 },
+    "type": { "type": "string", "const": "sentence_correction" },
+    "instruction": { "type": "string", "minLength": 1 },
+    "tokens": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": ["text", "correct"],
+        "additionalProperties": false,
+        "properties": {
+          "text": { "type": "string", "minLength": 1 },
+          "correct": { "type": "boolean" },
+          "expected": { "type": "string", "minLength": 1 },
+          "rule_id": { "type": "string", "pattern": "^[a-z][a-z0-9_]*$" }
+        }
+      }
+    },
+    "hint": { "type": "string", "minLength": 1 },
+    "explanation": { "type": "string", "minLength": 1 },
+    "review_tags": { "type": "array", "items": { "type": "string" } },
+    "review_status": { "type": "string", "enum": ["draft", "validated"] }
+  }
+}

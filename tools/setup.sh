@@ -11,6 +11,7 @@ GODOT_BIN_DIR=".godot-bin"
 GODOT_BIN="${GODOT_BIN_DIR}/godot"
 GUT_VERSION="v9.6.0" # v9.6.1+ reference AccessibilityServer, absent de Godot 4.6.3
 GDTOOLKIT_VERSION="4.5.0"
+PYRIGHT_VERSION="1.1.407"
 
 mkdir -p "${GODOT_BIN_DIR}"
 
@@ -46,6 +47,9 @@ if [ ! -d ".venv" ]; then
     python3 -m venv .venv
 fi
 ./.venv/bin/pip install --quiet --upgrade pip
-./.venv/bin/pip install --quiet "gdtoolkit==${GDTOOLKIT_VERSION}"
+./.venv/bin/pip install --quiet "gdtoolkit==${GDTOOLKIT_VERSION}" "pyright==${PYRIGHT_VERSION}"
 
-echo "Setup termine : Godot ${GODOT_VERSION}, GUT ${GUT_VERSION}, gdtoolkit ${GDTOOLKIT_VERSION}."
+echo "Import du projet (enregistre les class_name globaux : SchemaValidator, DataLoader...)."
+"${GODOT_BIN}" --headless --path . --import >/dev/null
+
+echo "Setup termine : Godot ${GODOT_VERSION}, GUT ${GUT_VERSION}, gdtoolkit ${GDTOOLKIT_VERSION}, pyright ${PYRIGHT_VERSION}."
