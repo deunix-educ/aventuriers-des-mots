@@ -29,6 +29,7 @@ var _pending_outcome := ""
 @onready var _exercise_container: Control = %ExerciseContainer
 @onready var _overlay_container: Control = %OverlayContainer
 @onready var _progress_label: Label = %ProgressLabel
+@onready var _progress_pill: Control = %ProgressPill
 @onready var _abandon_button: Button = %AbandonButton
 @onready var _abandon_confirm_dialog: ConfirmationDialog = %AbandonConfirmDialog
 
@@ -64,6 +65,7 @@ func _ready() -> void:
     _rule = ExerciseEngine.get_rule(_mission["rule_id"])
     _skill_id = _rule.get("skill", "")
     _current_difficulty = ProgressManager.next_difficulty_for_skill(_skill_id, 1)
+    $Backdrop.kind = "marsh" if _rule.get("level", "CE1") == "CE2" else "forest"
     _show_rule_panel()
 
 
@@ -114,6 +116,7 @@ func _load_next_exercise() -> void:
 ## peut faire redonner le meme exercice d'une mission a l'autre tentative :
 ## sans ce repere, ca ressemble a un blocage plutot qu'a une progression.
 func _update_progress_label() -> void:
+    _progress_pill.visible = true
     _progress_label.text = "%s %d/%d" % [
         UIText.get_text("exercise_host.progress_label"), _completed_count + 1, MISSION_LENGTH
     ]

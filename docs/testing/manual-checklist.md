@@ -24,6 +24,9 @@ Tout ce qui suit ne peut pas être vérifié sans écran (rendu, mise en page, a
 
 ## Accessibilité et interface
 
+- Habillage (point 31 de `decisions.md`) : relire chaque écran (profils, carte CE1 et CE2, introduction, règle, les trois types d'exercice, retour juste/faux, récompense, collection) ; le rendu à 1152x648 a été relu sur captures, pas les autres tailles ni le tactile. Redimensionner la fenêtre : les lieux de la carte restent entiers et ne se chevauchent pas.
+- Navigation : « Changer de profil » sur la carte ramène au choix du profil sans perte ; « Quitter la mission » demande confirmation, ne donne aucune étoile et ramène à la carte.
+
 - Réussite et erreur ne doivent jamais se distinguer **uniquement** par la couleur (vérifier que le texte du titre du panneau de retour diffère bien : « Bravo ! » vs « Pas tout à fait »).
 - Taille et contraste du texte à vérifier sur un petit écran et un grand écran (redimensionner la fenêtre pendant que le jeu tourne, vérifier que les boutons restent utilisables et ne se chevauchent pas — conteneurs et ancres, pas de position fixe).
 - Boutons testés à la souris et au clavier (tabulation / entrée). Le tactile n'a pas pu être testé (pas d'export mobile à ce stade).

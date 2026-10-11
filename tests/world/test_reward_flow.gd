@@ -83,5 +83,10 @@ func test_collection_lists_owned_and_mysterious_items() -> void:
 
     var rows := collection.get_node("%ItemsBox").get_children()
     assert_eq(rows.size(), ExerciseEngine.get_reward_items().size())
-    assert_string_contains((rows[0] as Label).text, "Graine magique")
-    assert_string_contains((rows[1] as Label).text, UIText.get_text("collection.locked_title"))
+    assert_string_contains(
+        (rows[0].find_child("TextLabel", true, false) as Label).text, "Graine magique"
+    )
+    assert_string_contains(
+        (rows[1].find_child("TextLabel", true, false) as Label).text,
+        UIText.get_text("collection.locked_title")
+    )

@@ -2,9 +2,11 @@ extends Control
 ## Collection d'objets gagnes avec les etoiles. Un objet non debloque reste
 ## mysterieux mais indique comment l'obtenir (jamais de mystere frustrant).
 
+const ICON_SIZE := 72.0
+
 @onready var _title_label: Label = %TitleLabel
 @onready var _progress_label: Label = %ProgressLabel
-@onready var _items_box: VBoxContainer = %ItemsBox
+@onready var _items_box: GridContainer = %ItemsBox
 @onready var _back_button: Button = %BackButton
 
 
@@ -26,20 +28,39 @@ func _ready() -> void:
     )
 
 
+## Une ligne = pictogramme + texte (le Label s'appelle "TextLabel").
 func _build_row(item: Dictionary, is_owned: bool) -> Control:
+    var card := PanelContainer.new()
+    card.theme_type_variation = &"SoftCard"
+    card.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+
+    var row := HBoxContainer.new()
+    row.add_theme_constant_override("separation", 12)
+    card.add_child(row)
+
+    var icon := TextureRect.new()
+    icon.texture = (
+        ItemIcons.texture_for(item["item_id"]) if is_owned else ItemIcons.locked_texture()
+    )
+    icon.custom_minimum_size = Vector2(ICON_SIZE, ICON_SIZE)
+    icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+    icon.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+    icon.size_flags_vertical = Control.SIZE_SHRINK_CENTER
+    row.add_child(icon)
+
     var label := Label.new()
+    label.name = "TextLabel"
     label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-    label.custom_minimum_size = Vector2(560, 0)
+    label.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+    label.size_flags_vertical = Control.SIZE_SHRINK_CENTER
     if is_owned:
-        label.text = (
-            "%s — %s\n%s"
-            % [item["title"], UIText.get_text("collection.owned_marker"), item["description"]]
-        )
+        label.text = "%s\n%s" % [item["title"], item["description"]]
     else:
         label.text = (
             "%s\n%s" % [UIText.get_text("collection.locked_title"), _unlock_hint(item["unlock"])]
         )
-    return label
+    row.add_child(label)
+    return card
 
 
 func _unlock_hint(unlock: Dictionary) -> String:

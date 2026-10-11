@@ -5,6 +5,10 @@ extends Control
 
 signal continue_pressed
 
+const ICON_CORRECT := preload("res://assets/interface/icon_correct.svg")
+const ICON_TRY_AGAIN := preload("res://assets/interface/icon_try_again.svg")
+
+@onready var _icon: TextureRect = %Icon
 @onready var _title_label: Label = %TitleLabel
 @onready var _hint_box: VBoxContainer = %HintBox
 @onready var _hint_label: Label = %HintLabel
@@ -21,6 +25,8 @@ func _ready() -> void:
 
 
 func show_result(result: CorrectionResult, support_level: AttemptFlow.SupportLevel) -> void:
+    _icon.texture = ICON_CORRECT if result.is_correct else ICON_TRY_AGAIN
+    Motion.pop_in(_icon)
     _title_label.text = (
         UIText.get_text("feedback_panel.correct_title")
         if result.is_correct

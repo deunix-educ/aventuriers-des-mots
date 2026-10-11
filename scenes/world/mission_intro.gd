@@ -4,7 +4,6 @@ extends Control
 ## (voir "Points durs" du prompt de lancement, Sens de l'aventure).
 
 @onready var _title_label: Label = %TitleLabel
-@onready var _narrative_label: Label = %NarrativeLabel
 @onready var _guide: Control = %Guide
 @onready var _start_button: Button = %StartButton
 @onready var _back_button: Button = %BackButton
@@ -13,8 +12,9 @@ extends Control
 func _ready() -> void:
     var mission := ExerciseEngine.get_mission(GameManager.pending_mission_id)
     _title_label.text = mission.get("title", "")
-    _narrative_label.text = mission.get("narrative_context", "")
     _guide.say(mission.get("narrative_context", ""))
+    var rule := ExerciseEngine.get_rule(mission.get("rule_id", ""))
+    $Backdrop.kind = "marsh" if rule.get("level", "CE1") == "CE2" else "forest"
 
     _start_button.text = UIText.get_text("mission_intro.start_button")
     _back_button.text = UIText.get_text("mission_intro.back_button")

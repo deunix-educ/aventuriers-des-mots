@@ -33,6 +33,9 @@ func load_exercise(exercise: Dictionary) -> void:
         var button := Button.new()
         button.text = tokens[i]["text"]
         button.toggle_mode = true
+        button.theme_type_variation = &"SecondaryButton"
+        button.custom_minimum_size = Vector2(0, 60)
+        button.add_theme_font_size_override("font_size", 30)
         button.toggled.connect(_on_token_toggled.bind(i))
         _tokens_box.add_child(button)
 

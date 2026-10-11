@@ -29,6 +29,7 @@ theme_override_constants/separation = 16
 
 [node name="InstructionLabel" type="Label" parent="Margin/VBox"]
 unique_name_in_owner = true
+theme_type_variation = &"Emphasis"
 layout_mode = 2
 autowrap_mode = 2
 

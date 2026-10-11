@@ -17,6 +17,7 @@
   "profile_create.cancel_button": "Retour",
   "profile_create.name_required_error": "Choisis un prénom avant de continuer.",
   "world_map.title": "La forêt des accords",
+  "world_map.guide_hint": "Choisis un lieu pour commencer l'aventure !",
   "world_map.title_ce2": "Le marais des homophones",
   "world_map.review_ce1_button": "Revoir le CE1",
   "world_map.back_to_ce2_button": "Retour au CE2",

@@ -41,14 +41,17 @@ func _refresh_profile_list() -> void:
 
 func _build_profile_row(summary: Dictionary) -> Control:
     var row := HBoxContainer.new()
+    row.add_theme_constant_override("separation", 10)
 
     var select_button := Button.new()
     select_button.text = "%s (%s)" % [summary["display_name"], summary["school_level"]]
     select_button.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+    select_button.custom_minimum_size = Vector2(0, 56)
     select_button.pressed.connect(_on_profile_selected.bind(summary["profile_id"]))
     row.add_child(select_button)
 
     var delete_button := Button.new()
+    delete_button.theme_type_variation = &"SecondaryButton"
     delete_button.text = UIText.get_text("profile_select.delete_button")
     delete_button.pressed.connect(_on_delete_requested.bind(summary["profile_id"]))
     row.add_child(delete_button)

@@ -288,3 +288,19 @@ Ajouts à l'arborescence proposée :
 **Tests** : scoring, règles de déblocage, mise à jour de sauvegarde, migration v1→v2, validation du schéma, suivi des issues dans `exercise_host`, écran de récompense et collection de bout en bout. **Non vérifié** (sans écran) : rendu et lisibilité des trois lignes des marqueurs, mise en page de l'écran de récompense et de la collection, défilement de la liste.
 
 **À faire (phases suivantes)** : habillage visuel et illustrations des objets, réglages et espace adulte (dont export/restauration des sauvegardes), son et musique.
+
+## 31. Phase « Habillage visuel » et navigation (version 0.3.0)
+
+**Navigation (demande utilisateur)** : bouton « Changer de profil » sur la carte (sauvegarde avant de quitter) ; bouton « Quitter la mission » dans l'hôte d'exercice avec confirmation. Quitter ne rapporte ni étoile ni objet et n'est jamais compté comme un échec ; les tentatives déjà faites restent enregistrées (vraies observations d'apprentissage) et sont sauvegardées.
+
+**Vérification du rendu** : `tools/screenshot.gd` (`make screenshot`) charge une scène dans une vraie fenêtre et enregistre un PNG, avec actions scriptées (`continue_rule`, `answer:N`, `toggle:N`, `type:…`, `validate`, `outcomes:…`). Il a permis de relire le rendu réel et d'y corriger ce que les tests ne voient pas : marqueurs de la carte qui se chevauchaient (zone de carte plus basse que supposé au point 26), titres tronqués, vignettes de progression vides. Le test d'écart des positions (point 26) reste un garde-fou de données ; le rendu réel passe désormais par ces captures.
+
+**Système visuel** : thème Godot unique (`assets/interface/theme.tres`, appliqué par `project.godot`) : police Atkinson Hyperlegible (libre, conçue pour la lisibilité ; tous les caractères français vérifiés), palette crème/vert/or, boutons à relief, cartes arrondies, focus clavier bleu épais, variantes de type (`SecondaryButton`, `MarkerButton`, `CardTitle`, `HeaderTitle`, `Pill`...). Fenêtre de base 1152x648 avec étirement `canvas_items`. Réussite/erreur : icône (coche / point d'interrogation) en plus du texte, jamais la couleur seule ; étoiles pleines/vides par la forme.
+
+**Illustrations** (SVG vectoriels originaux, provisoires, générés par script jetable) : décors forêt (CE1) et marais (CE2) — le décor suit le niveau de la règle —, hibou Plume, étoiles, pictogrammes de types d'exercice, icônes de retour, 10 objets de collection. Résolution par identifiant dans un répertoire fixe (`ItemIcons`), repli sur un cadenas.
+
+**Écrans refaits** : carte (barre du haut : profil, titre, total d'étoiles, collection ; lieux = cartes avec pictogramme, titre, étoiles ; position fractionnelle étalée sur toute la zone et recalculée au redimensionnement ; Plume en bas), choix et création de profil, introduction de mission (Plume porte le texte narratif, doublon supprimé), hôte d'exercice (décor + carte de contenu, indicateur d'exercice en pastille), panneaux de règle et de retour, récompense (étoiles qui apparaissent, objets débloqués illustrés), collection (grille).
+
+**Animations** : `Motion` (apparition en rebond, fondu) respecte `SettingsManager.animations_enabled` (cahier des charges §11) ; l'écran de réglages qui le pilotera reste à faire (phase suivante).
+
+**Non vérifié** : tactile, clavier virtuel, rendu sur d'autres résolutions que 1152x648, animations en mouvement (les captures montrent l'état final), rendu sous Windows.

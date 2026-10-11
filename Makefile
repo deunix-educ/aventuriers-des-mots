@@ -6,7 +6,7 @@ PYRIGHT := $(VENV)/bin/pyright
 PYTHON := $(VENV)/bin/python3
 GD_SOURCES := autoload scripts tests
 
-.PHONY: setup run lint format validate-data test check content-review generate-dictation-audio export-linux export-windows package
+.PHONY: setup run lint format validate-data test check content-review generate-dictation-audio export-linux export-windows package screenshot
 
 setup:
 	tools/setup.sh
@@ -45,3 +45,8 @@ export-windows:
 
 package:
 	tools/package.sh
+
+# Capture d'une scene dans une vraie fenetre (voir tools/screenshot.gd) :
+#   make screenshot SCENE=res://scenes/world/world_map.tscn OUT=/tmp/map.png ARGS="CE2"
+screenshot:
+	$(GODOT_BIN) --path . -s res://tools/screenshot.gd -- $(SCENE) $(OUT) $(ARGS)
