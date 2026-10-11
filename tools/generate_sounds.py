@@ -138,7 +138,107 @@ def make_music(
     return normalise(folded, 0.5)
 
 
+def pluck(freq: float, duration: float, decay: float = 9.0) -> Signal:
+    """Note pincee courte et sautillante (harmoniques qui tombent vite)."""
+    t = _time(duration)
+    tone = np.sin(2 * np.pi * freq * t) + 0.5 * np.sin(2 * np.pi * freq * 2 * t) * np.exp(-decay * t)
+    tone += 0.25 * np.sin(2 * np.pi * freq * 3 * t) * np.exp(-decay * 2 * t)
+    return tone * np.exp(-decay * t) * np.minimum(t / 0.003, 1.0)
+
+
+def flow(freq: float, duration: float) -> Signal:
+    """Note ronde et liee, a attaque douce : pour les arpeges continus."""
+    t = _time(duration)
+    tone = np.sin(2 * np.pi * freq * t) + 0.15 * np.sin(2 * np.pi * freq * 2 * t)
+    env = np.minimum(t / 0.03, 1.0) * np.exp(-2.2 * t)
+    return tone * env
+
+
+def drone(freq: float, duration: float, tremolo_hz: float) -> Signal:
+    """Bourdon grave et lent, avec un battement d'amplitude."""
+    t = _time(duration)
+    tone = np.sin(2 * np.pi * freq * t) + 0.4 * np.sin(2 * np.pi * freq * 1.5 * t)
+    wobble = 0.65 + 0.35 * np.sin(2 * np.pi * tremolo_hz * t)
+    env = np.minimum(t / 3.0, 1.0) * np.minimum((duration - t) / 3.0, 1.0)
+    return tone * wobble * np.clip(env, 0.0, 1.0)
+
+
+def fold_loop(track: Signal, body_seconds: float) -> Signal:
+    """Replie la queue sur le debut : la boucle ne claque pas."""
+    length = int(body_seconds * SAMPLE_RATE)
+    folded = track[:length].copy()
+    overflow = track[length:]
+    folded[: len(overflow)] += overflow
+    return folded
+
+
+def make_arpeggio(
+    chords: list[list[str]],
+    pattern: list[int],
+    step: float,
+    voice: str,
+    bass: bool,
+    pad_gain: float,
+) -> Signal:
+    """Motif d'arpege repete sur chaque accord ; `pattern` indexe l'accord."""
+    steps_per_chord = len(pattern)
+    chord_seconds = steps_per_chord * step
+    body = chord_seconds * len(chords)
+    track = np.zeros(int((body + 3.0) * SAMPLE_RATE))
+    for index, chord in enumerate(chords):
+        start = index * chord_seconds
+        if pad_gain > 0:
+            for note in chord:
+                place(track, pad(hz(note), chord_seconds + 1.0), start, gain=pad_gain)
+        if bass:
+            place(track, pluck(hz(chord[0]) / 2, 1.2, decay=4.0), start, gain=0.9)
+        for position, chord_index in enumerate(pattern):
+            note = chord[chord_index % len(chord)]
+            octave_up = 2.0 if chord_index >= len(chord) else 1.0
+            freq = hz(note) * 2.0 * octave_up
+            sound = pluck(freq, 0.6) if voice == "pluck" else flow(freq, 1.2)
+            place(track, sound, start + position * step, gain=0.5)
+    return normalise(fold_loop(track, body), 0.5)
+
+
+def make_drone_music(seed: int) -> Signal:
+    """Marais : bourdon grave qui respire et rares notes de cloche creuses."""
+    rng = np.random.default_rng(seed)
+    body = 40.0
+    track = np.zeros(int((body + 4.0) * SAMPLE_RATE))
+    place(track, drone(hz("A1"), body + 4.0, 0.11), 0.0, gain=0.8)
+    place(track, drone(hz("E2"), body + 4.0, 0.17), 0.0, gain=0.5)
+    for start in np.arange(2.0, body - 3.0, 5.0):
+        note = ["A3", "C4", "E4", "G3"][int(rng.integers(4))]
+        place(track, bell(hz(note), 3.5, decay=1.6, brightness=0.15), float(start), gain=0.5)
+    return normalise(fold_loop(track, body), 0.5)
+
+
+def make_music_box(seed: int) -> Signal:
+    """Nuit : boite a musique aigue en 3 temps, tres lente, sur un lit grave."""
+    rng = np.random.default_rng(seed)
+    scale = ["C5", "D5", "E5", "G5", "A5", "C6", "E6"]
+    beat = 0.95
+    bars = 16
+    body = bars * 3 * beat
+    track = np.zeros(int((body + 3.0) * SAMPLE_RATE))
+    for bar in range(bars):
+        root = ["C3", "A2", "F2", "G2"][bar % 4]
+        place(track, pad(hz(root), 3 * beat + 1.0, attack=0.8), bar * 3 * beat, gain=0.3)
+        for count in range(3):
+            if count == 0 or rng.random() < 0.6:
+                note = scale[int(rng.integers(len(scale)))]
+                place(
+                    track,
+                    bell(hz(note), 1.8, decay=3.2, brightness=0.7),
+                    (bar * 3 + count) * beat,
+                    gain=0.55,
+                )
+    return normalise(fold_loop(track, body), 0.5)
+
+
 def make_all_music() -> dict[str, Signal]:
+    """Cinq ambiances nettement differentes (timbre, rythme, registre)."""
     forest = make_music(
         chords=[["C3", "G3", "E4"], ["A2", "E3", "C4"], ["F2", "C3", "A3"], ["G2", "D3", "B3"]] * 2,
         melody_scale=["C5", "D5", "E5", "G5", "A5", "C6"],
@@ -146,34 +246,24 @@ def make_all_music() -> dict[str, Signal]:
         seed=11,
         melody_density=0.45,
     )
-    marsh = make_music(
-        chords=[["A2", "E3", "C4"], ["F2", "C3", "A3"], ["D3", "A3", "F4"], ["E3", "B3", "G4"]] * 2,
-        melody_scale=["A4", "C5", "D5", "E5", "G5"],
-        seconds_per_chord=5.0,
-        seed=23,
-        melody_density=0.35,
+    marsh = make_drone_music(seed=23)
+    meadow = make_arpeggio(  # prairie : pizzicati allegres, basse sur le temps
+        chords=[["G3", "B3", "D4"], ["E3", "G3", "B3"], ["C3", "E3", "G3"], ["D3", "F#3", "A3"]] * 2,
+        pattern=[0, 1, 2, 1, 0, 1, 2, 3],
+        step=0.25,
+        voice="pluck",
+        bass=True,
+        pad_gain=0.0,
     )
-    meadow = make_music(  # prairie : majeur lumineux, un peu plus vif
-        chords=[["G2", "D3", "B3"], ["E2", "B2", "G3"], ["C3", "G3", "E4"], ["D3", "A3", "F#4"]] * 2,
-        melody_scale=["G4", "A4", "B4", "D5", "E5", "G5"],
-        seconds_per_chord=3.5,
-        seed=37,
-        melody_density=0.55,
+    river = make_arpeggio(  # riviere : arpege continu, lie, qui monte et descend
+        chords=[["D3", "A3", "F4"], ["G3", "D4", "B4"], ["C3", "G3", "E4"], ["A2", "E3", "C4"]] * 2,
+        pattern=[0, 1, 2, 3, 4, 3, 2, 1],
+        step=0.18,
+        voice="flow",
+        bass=False,
+        pad_gain=0.12,
     )
-    river = make_music(  # riviere : mode dorien, melodie qui coule
-        chords=[["D3", "A3", "F4"], ["G2", "D3", "B3"], ["C3", "G3", "E4"], ["A2", "E3", "C4"]] * 2,
-        melody_scale=["D5", "E5", "F5", "A5", "C6", "A4"],
-        seconds_per_chord=3.0,
-        seed=41,
-        melody_density=0.65,
-    )
-    night = make_music(  # nuit : berceuse lente et rare
-        chords=[["F2", "C3", "A3"], ["D3", "A3", "E4"], ["Bb2", "F3", "D4"], ["C3", "G3", "E4"]] * 2,
-        melody_scale=["F5", "G5", "A5", "C6", "E5"],
-        seconds_per_chord=6.0,
-        seed=53,
-        melody_density=0.25,
-    )
+    night = make_music_box(seed=53)
     return {"forest": forest, "marsh": marsh, "meadow": meadow, "river": river, "night": night}
 
 
