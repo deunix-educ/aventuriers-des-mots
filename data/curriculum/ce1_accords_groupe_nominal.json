@@ -3,6 +3,6 @@
   "region_id": "foret_des_accords",
   "chapter_id": "accords_groupe_nominal",
   "title": "Les accords dans le groupe nominal",
-  "rule_ids": ["regle_accord_adjectif"],
+  "rule_ids": ["regle_accord_adjectif", "regle_pluriel_nom", "regle_accord_determinant"],
   "review_status": "draft"
 }

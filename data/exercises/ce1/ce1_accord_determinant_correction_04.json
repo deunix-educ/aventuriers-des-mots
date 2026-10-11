@@ -1,0 +1,26 @@
+{
+  "id": "ce1_accord_determinant_correction_04",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "accord_groupe_nominal",
+  "rule_id": "regle_accord_determinant",
+  "difficulty": 3,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Le",
+      "correct": false,
+      "expected": "Les",
+      "rule_id": "regle_accord_determinant"
+    },
+    { "text": "petites", "correct": true },
+    { "text": "fleurs", "correct": true },
+    { "text": "sont", "correct": true },
+    { "text": "jolies.", "correct": true }
+  ],
+  "hint": "Cherche le nom auquel le determinant se rapporte, meme si un autre mot s'intercale.",
+  "explanation": "Le determinant se rapporte a « fleurs », qui est feminin pluriel, meme si l'adjectif « petites » s'intercale : il faut ecrire « Les ».",
+  "review_tags": ["pluriel", "accord_determinant"],
+  "review_status": "draft"
+}

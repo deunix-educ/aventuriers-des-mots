@@ -1,7 +1,10 @@
 extends Control
-## Carte a trois lieux (cahier des charges §15). La position de chaque mission
-## vient de data/missions/*.json (fractions 0..1 de la zone de carte), jamais
-## d'une position fixe en dur dans le script.
+## Carte des missions. Le prototype initial (cahier des charges §15) se
+## limitait a trois lieux ; le perimetre a ete etendu au-dela (voir
+## docs/specs/decisions.md, point 25) pour couvrir plus d'une regle par
+## chapitre. La position de chaque mission vient de data/missions/*.json
+## (fractions 0..1 de la zone de carte), jamais d'une position fixe en dur
+## dans le script.
 
 const MARKER_HALF_WIDTH := 80.0
 const MARKER_HALF_HEIGHT := 36.0

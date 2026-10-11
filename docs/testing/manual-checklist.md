@@ -7,7 +7,7 @@ Tout ce qui suit ne peut pas être vérifié sans écran (rendu, mise en page, a
 1. `make run`.
 2. Écran de sélection de profil vide → bouton « Nouveau profil » visible et cliquable.
 3. Création de profil : le bouton de validation refuse un prénom vide avec un message visible (pas seulement une absence de réaction) ; CE1 est sélectionné par défaut ; le bouton CE2 bascule correctement l'état visuel des deux boutons (ils doivent se comporter comme des boutons radio, un seul actif à la fois).
-4. Après création, arrivée sur la carte (« La forêt des accords ») avec trois lieux visibles et positionnés à des endroits différents, pas superposés.
+4. Après création, arrivée sur la carte (« La forêt des accords ») avec **neuf** lieux visibles (point 25 de `decisions.md` : extension au-delà du prototype §15) et positionnés à des endroits différents, **jamais vérifié à l'écran avec ce nombre de lieux** — vérifier particulièrement qu'aucun marqueur ne se superpose à un autre, surtout sur petit écran.
 5. Chaque lieu affiche un intitulé et un état (« À découvrir », etc.) lisible.
 6. Clic sur un lieu → introduction de la mission : le texte narratif s'affiche en entier (pas tronqué), Plume (le hibou) affiche la même phrase dans sa bulle.
 7. « Commencer la mission » → panneau de règle : énoncé et exemple lisibles, bouton « C'est parti ! » visible.
@@ -16,6 +16,7 @@ Tout ce qui suit ne peut pas être vérifié sans écran (rendu, mise en page, a
 10. Mission « Le pont des phrases » (correction de phrase) : toucher un mot le fait apparaître comme sélectionné (état visuel distinct, pas seulement une couleur) ; un champ de saisie apparaît sous le mot sélectionné ; toucher à nouveau le mot fait disparaître le champ.
 11. Mission « La clairière de l'écho » (dictée) : à l'arrivée sur l'exercice, la voix de synthèse doit se faire entendre automatiquement ; le bouton « Réécouter » la rejoue sans planter ; le badge « Voix provisoire » est visible ; la zone de saisie accepte le texte et les accents. Le rappel « N'oublie pas : une majuscule au début de la phrase et un point à la fin ! » doit être visible (point 22 de `decisions.md`) ; taper le texte sans majuscule ou sans point final doit être refusé, avec l'erreur correspondante.
 12. Après 3 exercices, écran de récompense avec le nombre d'étoiles, puis retour à la carte.
+12bis. Répéter rapidement les points 8-12 sur une mission de chacune des deux nouvelles règles (« La ruche qui se multiplie » pour le pluriel du nom, « Le sentier des bons compagnons » pour l'accord du déterminant) : jamais vu à l'écran, seulement validé en headless (point 25 de `decisions.md`).
 13. Quitter le jeu puis relancer `make run` : le profil et sa progression doivent être conservés (sélectionner le même profil, vérifier que l'état affiché sur la carte a changé par rapport à l'état initial).
 14. Depuis la sélection de profil, supprimer un profil : une confirmation explicite doit apparaître avant la suppression effective ; annuler doit ne rien supprimer.
 

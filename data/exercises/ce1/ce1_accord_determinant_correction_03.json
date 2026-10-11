@@ -1,0 +1,24 @@
+{
+  "id": "ce1_accord_determinant_correction_03",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "accord_groupe_nominal",
+  "rule_id": "regle_accord_determinant",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Le",
+      "correct": false,
+      "expected": "Les",
+      "rule_id": "regle_accord_determinant"
+    },
+    { "text": "chats", "correct": true },
+    { "text": "dorment.", "correct": true }
+  ],
+  "hint": "Le nom « chats » est au pluriel.",
+  "explanation": "« Chats » est au pluriel : il faut le determinant pluriel « Les ».",
+  "review_tags": ["pluriel", "accord_determinant"],
+  "review_status": "draft"
+}

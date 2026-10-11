@@ -1,0 +1,20 @@
+{
+  "id": "ce1_pluriel_nom_dictee_01",
+  "level": "CE1",
+  "domain": "grammaire",
+  "rule_ids": ["regle_pluriel_nom"],
+  "difficulty": 1,
+  "target_text": "Les chats jouent dans le jardin.",
+  "words": [
+    { "text": "Les", "expects_capital": true },
+    { "text": "chats", "rule_id": "regle_pluriel_nom" },
+    { "text": "jouent" },
+    { "text": "dans" },
+    { "text": "le" },
+    { "text": "jardin." }
+  ],
+  "audio_id": "ce1_pluriel_nom_dictee_01",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "ce1_accord_determinant_qcm_02",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "accord_groupe_nominal",
+  "rule_id": "regle_accord_determinant",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon determinant.",
+  "question": "... fleur sent bon.",
+  "answers": ["Le", "La"],
+  "correct_answer": 1,
+  "hint": "Le nom « fleur » est feminin.",
+  "explanation": "« Fleur » est un nom feminin : il faut le determinant feminin « La ».",
+  "review_tags": ["genre", "accord_determinant"],
+  "review_status": "draft"
+}

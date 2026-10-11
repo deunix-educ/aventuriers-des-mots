@@ -1,0 +1,17 @@
+{
+  "id": "ce1_accord_determinant_qcm_05",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "accord_groupe_nominal",
+  "rule_id": "regle_accord_determinant",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon determinant.",
+  "question": "J'ai ... chat noir.",
+  "answers": ["un", "une"],
+  "correct_answer": 0,
+  "hint": "Le nom « chat » est masculin.",
+  "explanation": "« Chat » est un nom masculin : il faut le determinant masculin « un ».",
+  "review_tags": ["genre", "accord_determinant"],
+  "review_status": "draft"
+}

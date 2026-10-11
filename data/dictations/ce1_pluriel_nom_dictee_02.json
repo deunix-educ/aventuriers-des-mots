@@ -1,0 +1,20 @@
+{
+  "id": "ce1_pluriel_nom_dictee_02",
+  "level": "CE1",
+  "domain": "grammaire",
+  "rule_ids": ["regle_pluriel_nom"],
+  "difficulty": 2,
+  "target_text": "Le cahier est sur la table.",
+  "words": [
+    { "text": "Le", "expects_capital": true },
+    { "text": "cahier", "rule_id": "regle_pluriel_nom" },
+    { "text": "est" },
+    { "text": "sur" },
+    { "text": "la" },
+    { "text": "table." }
+  ],
+  "audio_id": "ce1_pluriel_nom_dictee_02",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

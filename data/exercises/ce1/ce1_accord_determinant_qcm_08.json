@@ -1,0 +1,17 @@
+{
+  "id": "ce1_accord_determinant_qcm_08",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "accord_groupe_nominal",
+  "rule_id": "regle_accord_determinant",
+  "difficulty": 3,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon determinant.",
+  "question": "... maison est grande.",
+  "answers": ["Le", "La"],
+  "correct_answer": 1,
+  "hint": "« Maison » se termine par un -n, mais ecoute bien son genre.",
+  "explanation": "« Maison » est un nom feminin : il faut le determinant feminin « La ».",
+  "review_tags": ["genre", "accord_determinant"],
+  "review_status": "draft"
+}

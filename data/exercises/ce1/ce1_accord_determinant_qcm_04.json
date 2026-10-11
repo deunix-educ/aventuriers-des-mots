@@ -1,0 +1,17 @@
+{
+  "id": "ce1_accord_determinant_qcm_04",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "accord_groupe_nominal",
+  "rule_id": "regle_accord_determinant",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon determinant.",
+  "question": "... fleurs sentent bon.",
+  "answers": ["La", "Les"],
+  "correct_answer": 1,
+  "hint": "Le nom « fleurs » est au pluriel.",
+  "explanation": "« Fleurs » est au pluriel : il faut le determinant pluriel « Les ».",
+  "review_tags": ["pluriel", "accord_determinant"],
+  "review_status": "draft"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "ce1_accord_determinant_qcm_01",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "accord_groupe_nominal",
+  "rule_id": "regle_accord_determinant",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon determinant.",
+  "question": "... chat dort.",
+  "answers": ["Le", "La"],
+  "correct_answer": 0,
+  "hint": "Le nom « chat » est masculin.",
+  "explanation": "« Chat » est un nom masculin : il faut le determinant masculin « Le ».",
+  "review_tags": ["genre", "accord_determinant"],
+  "review_status": "draft"
+}

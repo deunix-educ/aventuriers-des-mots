@@ -15,10 +15,11 @@ func test_unknown_rule_returns_empty_dictionary() -> void:
 
 func test_missions_are_loaded_and_sorted() -> void:
     var missions := ExerciseEngine.get_missions()
-    assert_eq(missions.size(), 3)
+    assert_eq(missions.size(), 9)
     var ids: Array = missions.map(func(m: Dictionary) -> String: return m["mission_id"])
     assert_eq(ids, ids.duplicate())  # trivialement vrai, documente l'ordre stable
     assert_true(ids.has("mission_01_pre_des_mots"))
+    assert_true(ids.has("mission_09_rocher_qui_repete"))
 
 
 func test_get_mission_returns_the_requested_mission() -> void:

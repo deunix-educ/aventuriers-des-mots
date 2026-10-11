@@ -1,0 +1,17 @@
+{
+  "id": "ce1_accord_determinant_dictee_01",
+  "level": "CE1",
+  "domain": "grammaire",
+  "rule_ids": ["regle_accord_determinant"],
+  "difficulty": 1,
+  "target_text": "Le chat dort.",
+  "words": [
+    { "text": "Le", "expects_capital": true, "rule_id": "regle_accord_determinant" },
+    { "text": "chat" },
+    { "text": "dort." }
+  ],
+  "audio_id": "ce1_accord_determinant_dictee_01",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

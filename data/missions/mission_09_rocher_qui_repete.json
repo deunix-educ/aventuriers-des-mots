@@ -1,0 +1,9 @@
+{
+  "mission_id": "mission_09_rocher_qui_repete",
+  "title": "Le rocher qui repete",
+  "narrative_context": "Le vieux rocher de la foret repete une phrase, une seule fois, avant de se rendormir. Ecoute bien et ecris-la sans faute.",
+  "rule_id": "regle_accord_determinant",
+  "exercise_type": "dictation",
+  "map_position": { "x": 0.45, "y": 0.88 },
+  "review_status": "draft"
+}

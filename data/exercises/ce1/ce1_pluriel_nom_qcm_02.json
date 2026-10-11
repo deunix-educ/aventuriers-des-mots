@@ -1,0 +1,17 @@
+{
+  "id": "ce1_pluriel_nom_qcm_02",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "accord_groupe_nominal",
+  "rule_id": "regle_pluriel_nom",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Des ... poussent dans le jardin.",
+  "answers": ["fleur", "fleurs"],
+  "correct_answer": 1,
+  "hint": "Le determinant « des » indique plusieurs fleurs.",
+  "explanation": "Pour former le pluriel d'un nom, on ajoute un -s a la fin : « fleurs ».",
+  "review_tags": ["pluriel", "pluriel_nom"],
+  "review_status": "draft"
+}

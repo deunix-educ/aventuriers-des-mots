@@ -1,0 +1,9 @@
+{
+  "mission_id": "mission_08_cabane_etiquettes",
+  "title": "La cabane aux etiquettes melangees",
+  "narrative_context": "Dans la cabane, les etiquettes des objets ont ete melangees par le vent. Repere celle qui ne va pas et remets le bon petit mot devant.",
+  "rule_id": "regle_accord_determinant",
+  "exercise_type": "sentence_correction",
+  "map_position": { "x": 0.92, "y": 0.78 },
+  "review_status": "draft"
+}

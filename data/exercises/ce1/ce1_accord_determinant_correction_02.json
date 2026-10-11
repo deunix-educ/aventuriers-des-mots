@@ -1,0 +1,27 @@
+{
+  "id": "ce1_accord_determinant_correction_02",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "accord_groupe_nominal",
+  "rule_id": "regle_accord_determinant",
+  "difficulty": 1,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "La",
+      "correct": false,
+      "expected": "Le",
+      "rule_id": "regle_accord_determinant"
+    },
+    { "text": "chat", "correct": true },
+    { "text": "dort", "correct": true },
+    { "text": "sous", "correct": true },
+    { "text": "la", "correct": true },
+    { "text": "table.", "correct": true }
+  ],
+  "hint": "Le nom « chat » est masculin.",
+  "explanation": "« Chat » est un nom masculin : il faut le determinant masculin « Le ».",
+  "review_tags": ["genre", "accord_determinant"],
+  "review_status": "draft"
+}

@@ -1,0 +1,9 @@
+{
+  "mission_id": "mission_07_sentier_bons_compagnons",
+  "title": "Le sentier des bons compagnons",
+  "narrative_context": "Chaque mot du sentier cherche son compagnon : le bon petit mot qui l'accompagne toujours. Aide-les a se retrouver sans se tromper.",
+  "rule_id": "regle_accord_determinant",
+  "exercise_type": "multiple_choice",
+  "map_position": { "x": 0.9, "y": 0.3 },
+  "review_status": "draft"
+}

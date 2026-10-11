@@ -1,0 +1,21 @@
+{
+  "id": "ce1_pluriel_nom_dictee_03",
+  "level": "CE1",
+  "domain": "grammaire",
+  "rule_ids": ["regle_pluriel_nom"],
+  "difficulty": 3,
+  "target_text": "Les petites pommes sont dans le panier.",
+  "words": [
+    { "text": "Les", "expects_capital": true },
+    { "text": "petites" },
+    { "text": "pommes", "rule_id": "regle_pluriel_nom" },
+    { "text": "sont" },
+    { "text": "dans" },
+    { "text": "le" },
+    { "text": "panier." }
+  ],
+  "audio_id": "ce1_pluriel_nom_dictee_03",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

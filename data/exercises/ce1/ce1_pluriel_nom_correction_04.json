@@ -1,0 +1,28 @@
+{
+  "id": "ce1_pluriel_nom_correction_04",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "accord_groupe_nominal",
+  "rule_id": "regle_pluriel_nom",
+  "difficulty": 3,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    { "text": "Les", "correct": true },
+    { "text": "petits", "correct": true },
+    {
+      "text": "chat",
+      "correct": false,
+      "expected": "chats",
+      "rule_id": "regle_pluriel_nom"
+    },
+    { "text": "jouent", "correct": true },
+    { "text": "dans", "correct": true },
+    { "text": "le", "correct": true },
+    { "text": "jardin.", "correct": true }
+  ],
+  "hint": "Cherche le determinant, meme si un autre mot s'intercale avant le nom.",
+  "explanation": "« Les » indique le pluriel, meme si l'adjectif « petits » s'intercale avant le nom : il faut ecrire « chats ».",
+  "review_tags": ["pluriel", "pluriel_nom"],
+  "review_status": "draft"
+}

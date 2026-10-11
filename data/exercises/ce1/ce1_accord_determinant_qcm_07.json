@@ -1,0 +1,17 @@
+{
+  "id": "ce1_accord_determinant_qcm_07",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "accord_groupe_nominal",
+  "rule_id": "regle_accord_determinant",
+  "difficulty": 3,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon determinant.",
+  "question": "... arbre est grand.",
+  "answers": ["Le", "La"],
+  "correct_answer": 0,
+  "hint": "« Arbre » se termine par un -e, mais il est masculin.",
+  "explanation": "« Arbre » est un nom masculin, meme s'il se termine par -e : il faut le determinant masculin « Le ».",
+  "review_tags": ["genre", "accord_determinant"],
+  "review_status": "draft"
+}

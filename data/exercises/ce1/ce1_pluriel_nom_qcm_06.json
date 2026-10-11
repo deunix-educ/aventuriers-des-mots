@@ -1,0 +1,17 @@
+{
+  "id": "ce1_pluriel_nom_qcm_06",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "accord_groupe_nominal",
+  "rule_id": "regle_pluriel_nom",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "La ... est ouverte.",
+  "answers": ["porte", "portes"],
+  "correct_answer": 0,
+  "hint": "Le determinant « la » indique une seule porte.",
+  "explanation": "« La » indique un seul objet : le nom reste au singulier, sans -s : « porte ».",
+  "review_tags": ["pluriel_nom"],
+  "review_status": "draft"
+}
