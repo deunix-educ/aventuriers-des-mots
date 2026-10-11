@@ -12,8 +12,10 @@ static func check_multiple_choice(data: Dictionary, path: String) -> Array[Strin
     var correct_answer: int = data.get("correct_answer", -1)
     if correct_answer < 0 or correct_answer >= answers.size():
         errors.append(
-            "%s : correct_answer (%d) hors des bornes de answers (%d element(s))"
-            % [path, correct_answer, answers.size()]
+            (
+                "%s : correct_answer (%d) hors des bornes de answers (%d element(s))"
+                % [path, correct_answer, answers.size()]
+            )
         )
     return errors
 
@@ -28,8 +30,7 @@ static func check_sentence_correction(data: Dictionary, path: String) -> Array[S
             has_error_token = true
             if not token.has("expected"):
                 errors.append(
-                    "%s.tokens[%d] : token fautif sans correction attendue ('expected')"
-                    % [path, i]
+                    "%s.tokens[%d] : token fautif sans correction attendue ('expected')" % [path, i]
                 )
     if not has_error_token:
         errors.append("%s : aucun token fautif, rien a corriger" % path)
@@ -43,7 +44,9 @@ static func check_dictation(data: Dictionary, path: String) -> Array[String]:
     var expected_word_count := target_text.split(" ", false).size()
     if words.size() != expected_word_count:
         errors.append(
-            "%s : %d mot(s) annote(s) pour %d mot(s) dans target_text"
-            % [path, words.size(), expected_word_count]
+            (
+                "%s : %d mot(s) annote(s) pour %d mot(s) dans target_text"
+                % [path, words.size(), expected_word_count]
+            )
         )
     return errors
