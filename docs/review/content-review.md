@@ -15,69 +15,69 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
 - **ce1_accord_adjectif_qcm_01** (difficulte 1) : Les ... chiens jouent.
   - Reponses : petit, petits, petite
   - Reponse attendue : petits
-  - Indice : Observe le determinant « les » et le nom « chiens ».
+  - Indice : Observe le déterminant « les » et le nom « chiens ».
   - Explication : Le groupe nominal est au pluriel. L'adjectif prend ici la marque du pluriel.
   - Statut : draft
 - **ce1_accord_adjectif_qcm_02** (difficulte 1) : La ... maison est jolie.
   - Reponses : petit, petite, petites
   - Reponse attendue : petite
-  - Indice : Observe le determinant « la » et le nom « maison ».
-  - Explication : Le nom « maison » est feminin singulier. L'adjectif prend donc la marque du feminin.
+  - Indice : Observe le déterminant « la » et le nom « maison ».
+  - Explication : Le nom « maison » est féminin singulier. L'adjectif prend donc la marque du féminin.
   - Statut : draft
 - **ce1_accord_adjectif_qcm_03** (difficulte 1) : Les ... jardins sont fleuris.
   - Reponses : joli, jolis, jolie
   - Reponse attendue : jolis
-  - Indice : Observe le determinant « les » et le nom « jardins ».
+  - Indice : Observe le déterminant « les » et le nom « jardins ».
   - Explication : Le nom « jardins » est masculin pluriel. L'adjectif prend la marque du pluriel : « jolis ».
   - Statut : draft
 - **ce1_accord_adjectif_qcm_04** (difficulte 1) : Les ... fleurs sentent bon.
   - Reponses : joli, jolie, jolies
   - Reponse attendue : jolies
-  - Indice : Observe le determinant « les » et le nom « fleurs ».
-  - Explication : Le nom « fleurs » est feminin pluriel. L'adjectif prend la marque du feminin et du pluriel : « jolies ».
+  - Indice : Observe le déterminant « les » et le nom « fleurs ».
+  - Explication : Le nom « fleurs » est féminin pluriel. L'adjectif prend la marque du féminin et du pluriel : « jolies ».
   - Statut : draft
 - **ce1_accord_adjectif_qcm_05** (difficulte 2) : Le chat est ... .
   - Reponses : petit, petits, petite
   - Reponse attendue : petit
   - Indice : Le nom « chat » est masculin singulier.
-  - Explication : Au masculin singulier, l'adjectif ne prend ni « s » ni « e » : on ecrit « petit ».
+  - Explication : Au masculin singulier, l'adjectif ne prend ni « s » ni « e » : on écrit « petit ».
   - Statut : draft
 - **ce1_accord_adjectif_qcm_06** (difficulte 2) : La robe est ... .
   - Reponses : joli, jolie, jolis
   - Reponse attendue : jolie
-  - Indice : Le nom « robe » est feminin singulier.
-  - Explication : Le nom « robe » est feminin singulier. L'adjectif prend la marque du feminin : « jolie ».
+  - Indice : Le nom « robe » est féminin singulier.
+  - Explication : Le nom « robe » est féminin singulier. L'adjectif prend la marque du féminin : « jolie ».
   - Statut : draft
 - **ce1_accord_adjectif_qcm_07** (difficulte 3) : Les chats de la maison sont ... .
   - Reponses : petit, petits, petite
   - Reponse attendue : petits
-  - Indice : Cherche le nom auquel l'adjectif se rapporte, meme s'il n'est pas juste avant.
-  - Explication : L'adjectif se rapporte a « chats », qui est masculin pluriel, meme si « de la maison » s'intercale : il faut ecrire « petits ».
+  - Indice : Cherche le nom auquel l'adjectif se rapporte, même s'il n'est pas juste avant.
+  - Explication : L'adjectif se rapporte à « chats », qui est masculin pluriel, même si « de la maison » s'intercale : il faut écrire « petits ».
   - Statut : draft
 - **ce1_accord_adjectif_qcm_08** (difficulte 3) : Les robes de ce magasin sont ... .
   - Reponses : joli, jolie, jolies
   - Reponse attendue : jolies
-  - Indice : Cherche le nom auquel l'adjectif se rapporte, meme s'il n'est pas juste avant.
-  - Explication : L'adjectif se rapporte a « robes », qui est feminin pluriel, meme si « de ce magasin » s'intercale : il faut ecrire « jolies ».
+  - Indice : Cherche le nom auquel l'adjectif se rapporte, même s'il n'est pas juste avant.
+  - Explication : L'adjectif se rapporte à « robes », qui est féminin pluriel, même si « de ce magasin » s'intercale : il faut écrire « jolies ».
   - Statut : draft
 
 ### Corrections de phrase
 
 - **ce1_accord_adjectif_correction_01** (difficulte 2) : Les [petit -> petits] chiens courent.
-  - Indice : Le determinant « les » indique un pluriel.
-  - Explication : L'adjectif « petit » s'accorde avec le nom « chiens », qui est au pluriel : il faut ecrire « petits ».
+  - Indice : Le déterminant « les » indique un pluriel.
+  - Explication : L'adjectif « petit » s'accorde avec le nom « chiens », qui est au pluriel : il faut écrire « petits ».
   - Statut : draft
 - **ce1_accord_adjectif_correction_02** (difficulte 1) : Les enfants [sage -> sages] jouent dehors.
   - Indice : Le nom « enfants » est au pluriel.
-  - Explication : L'adjectif « sage » s'accorde avec le nom « enfants », qui est au pluriel : il faut ecrire « sages ».
+  - Explication : L'adjectif « sage » s'accorde avec le nom « enfants », qui est au pluriel : il faut écrire « sages ».
   - Statut : draft
 - **ce1_accord_adjectif_correction_03** (difficulte 2) : Une fille [joli -> jolie] chante dans la cour.
-  - Indice : Le nom « fille » est feminin.
-  - Explication : L'adjectif « joli » s'accorde avec le nom « fille », qui est feminin : il faut ecrire « jolie ».
+  - Indice : Le nom « fille » est féminin.
+  - Explication : L'adjectif « joli » s'accorde avec le nom « fille », qui est féminin : il faut écrire « jolie ».
   - Statut : draft
 - **ce1_accord_adjectif_correction_04** (difficulte 3) : Les fleurs du jardin sont [belle -> belles] le matin.
-  - Indice : Cherche le nom auquel l'adjectif se rapporte, meme s'il n'est pas juste avant.
-  - Explication : L'adjectif « belle » s'accorde avec le nom « fleurs », qui est feminin pluriel, meme si d'autres mots separent le nom de l'adjectif : il faut ecrire « belles ».
+  - Indice : Cherche le nom auquel l'adjectif se rapporte, même s'il n'est pas juste avant.
+  - Explication : L'adjectif « belle » s'accorde avec le nom « fleurs », qui est féminin pluriel, même si d'autres mots séparent le nom de l'adjectif : il faut écrire « belles ».
   - Statut : draft
 
 ### Dictees
@@ -97,7 +97,7 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
 
 ## regle_accord_determinant (CE1, grammaire)
 
-**Enonce** : Le determinant (le, la, les, un, une, des...) s'accorde en genre et en nombre avec le nom qu'il accompagne.
+**Enonce** : Le déterminant (le, la, les, un, une, des...) s'accorde en genre et en nombre avec le nom qu'il accompagne.
 
 **Exemple** : Le chat. La fleur. Les chats. Les fleurs.
 
@@ -109,68 +109,68 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
   - Reponses : Le, La
   - Reponse attendue : Le
   - Indice : Le nom « chat » est masculin.
-  - Explication : « Chat » est un nom masculin : il faut le determinant masculin « Le ».
+  - Explication : « Chat » est un nom masculin : il faut le déterminant masculin « Le ».
   - Statut : draft
 - **ce1_accord_determinant_qcm_02** (difficulte 1) : ... fleur sent bon.
   - Reponses : Le, La
   - Reponse attendue : La
-  - Indice : Le nom « fleur » est feminin.
-  - Explication : « Fleur » est un nom feminin : il faut le determinant feminin « La ».
+  - Indice : Le nom « fleur » est féminin.
+  - Explication : « Fleur » est un nom féminin : il faut le déterminant féminin « La ».
   - Statut : draft
 - **ce1_accord_determinant_qcm_03** (difficulte 1) : ... chats dorment.
   - Reponses : Le, Les
   - Reponse attendue : Les
   - Indice : Le nom « chats » est au pluriel.
-  - Explication : « Chats » est au pluriel : il faut le determinant pluriel « Les ».
+  - Explication : « Chats » est au pluriel : il faut le déterminant pluriel « Les ».
   - Statut : draft
 - **ce1_accord_determinant_qcm_04** (difficulte 1) : ... fleurs sentent bon.
   - Reponses : La, Les
   - Reponse attendue : Les
   - Indice : Le nom « fleurs » est au pluriel.
-  - Explication : « Fleurs » est au pluriel : il faut le determinant pluriel « Les ».
+  - Explication : « Fleurs » est au pluriel : il faut le déterminant pluriel « Les ».
   - Statut : draft
 - **ce1_accord_determinant_qcm_05** (difficulte 2) : J'ai ... chat noir.
   - Reponses : un, une
   - Reponse attendue : un
   - Indice : Le nom « chat » est masculin.
-  - Explication : « Chat » est un nom masculin : il faut le determinant masculin « un ».
+  - Explication : « Chat » est un nom masculin : il faut le déterminant masculin « un ».
   - Statut : draft
 - **ce1_accord_determinant_qcm_06** (difficulte 2) : J'ai ... fleur rouge.
   - Reponses : un, une
   - Reponse attendue : une
-  - Indice : Le nom « fleur » est feminin.
-  - Explication : « Fleur » est un nom feminin : il faut le determinant feminin « une ».
+  - Indice : Le nom « fleur » est féminin.
+  - Explication : « Fleur » est un nom féminin : il faut le déterminant féminin « une ».
   - Statut : draft
 - **ce1_accord_determinant_qcm_07** (difficulte 3) : ... arbre est grand.
   - Reponses : Le, La
   - Reponse attendue : Le
   - Indice : « Arbre » se termine par un -e, mais il est masculin.
-  - Explication : « Arbre » est un nom masculin, meme s'il se termine par -e : il faut le determinant masculin « Le ».
+  - Explication : « Arbre » est un nom masculin, même s'il se termine par -e : il faut le déterminant masculin « Le ».
   - Statut : draft
 - **ce1_accord_determinant_qcm_08** (difficulte 3) : ... maison est grande.
   - Reponses : Le, La
   - Reponse attendue : La
-  - Indice : « Maison » se termine par un -n, mais ecoute bien son genre.
-  - Explication : « Maison » est un nom feminin : il faut le determinant feminin « La ».
+  - Indice : « Maison » se termine par un -n, mais écoute bien son genre.
+  - Explication : « Maison » est un nom féminin : il faut le déterminant féminin « La ».
   - Statut : draft
 
 ### Corrections de phrase
 
 - **ce1_accord_determinant_correction_01** (difficulte 1) : [Le -> La] fleur est jolie.
-  - Indice : Le nom « fleur » est feminin.
-  - Explication : « Fleur » est un nom feminin : il faut le determinant feminin « La ».
+  - Indice : Le nom « fleur » est féminin.
+  - Explication : « Fleur » est un nom féminin : il faut le déterminant féminin « La ».
   - Statut : draft
 - **ce1_accord_determinant_correction_02** (difficulte 1) : [La -> Le] chat dort sous la table.
   - Indice : Le nom « chat » est masculin.
-  - Explication : « Chat » est un nom masculin : il faut le determinant masculin « Le ».
+  - Explication : « Chat » est un nom masculin : il faut le déterminant masculin « Le ».
   - Statut : draft
 - **ce1_accord_determinant_correction_03** (difficulte 2) : [Le -> Les] chats dorment.
   - Indice : Le nom « chats » est au pluriel.
-  - Explication : « Chats » est au pluriel : il faut le determinant pluriel « Les ».
+  - Explication : « Chats » est au pluriel : il faut le déterminant pluriel « Les ».
   - Statut : draft
 - **ce1_accord_determinant_correction_04** (difficulte 3) : [Le -> Les] petites fleurs sont jolies.
-  - Indice : Cherche le nom auquel le determinant se rapporte, meme si un autre mot s'intercale.
-  - Explication : Le determinant se rapporte a « fleurs », qui est feminin pluriel, meme si l'adjectif « petites » s'intercale : il faut ecrire « Les ».
+  - Indice : Cherche le nom auquel le déterminant se rapporte, même si un autre mot s'intercale.
+  - Explication : Le déterminant se rapporte à « fleurs », qui est féminin pluriel, même si l'adjectif « petites » s'intercale : il faut écrire « Les ».
   - Statut : draft
 
 ### Dictees
@@ -562,7 +562,7 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
 
 ## regle_pluriel_nom (CE1, grammaire)
 
-**Enonce** : Le plus souvent, on forme le pluriel d'un nom en ajoutant un -s a la fin du mot.
+**Enonce** : Le plus souvent, on forme le pluriel d'un nom en ajoutant un -s à la fin du mot.
 
 **Exemple** : Un chat. Des chats. Une fleur. Des fleurs.
 
@@ -573,69 +573,69 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
 - **ce1_pluriel_nom_qcm_01** (difficulte 1) : Les ... jouent dans le jardin.
   - Reponses : chat, chats
   - Reponse attendue : chats
-  - Indice : Le determinant « les » indique plusieurs chats.
-  - Explication : Pour former le pluriel d'un nom, on ajoute un -s a la fin : « chats ».
+  - Indice : Le déterminant « les » indique plusieurs chats.
+  - Explication : Pour former le pluriel d'un nom, on ajoute un -s à la fin : « chats ».
   - Statut : draft
 - **ce1_pluriel_nom_qcm_02** (difficulte 1) : Des ... poussent dans le jardin.
   - Reponses : fleur, fleurs
   - Reponse attendue : fleurs
-  - Indice : Le determinant « des » indique plusieurs fleurs.
-  - Explication : Pour former le pluriel d'un nom, on ajoute un -s a la fin : « fleurs ».
+  - Indice : Le déterminant « des » indique plusieurs fleurs.
+  - Explication : Pour former le pluriel d'un nom, on ajoute un -s à la fin : « fleurs ».
   - Statut : draft
 - **ce1_pluriel_nom_qcm_03** (difficulte 1) : Les ... sont rouges.
   - Reponses : pomme, pommes
   - Reponse attendue : pommes
-  - Indice : Le determinant « les » indique plusieurs pommes.
-  - Explication : Pour former le pluriel d'un nom, on ajoute un -s a la fin : « pommes ».
+  - Indice : Le déterminant « les » indique plusieurs pommes.
+  - Explication : Pour former le pluriel d'un nom, on ajoute un -s à la fin : « pommes ».
   - Statut : draft
 - **ce1_pluriel_nom_qcm_04** (difficulte 1) : Des ... roulent sur la route.
   - Reponses : voiture, voitures
   - Reponse attendue : voitures
-  - Indice : Le determinant « des » indique plusieurs voitures.
-  - Explication : Pour former le pluriel d'un nom, on ajoute un -s a la fin : « voitures ».
+  - Indice : Le déterminant « des » indique plusieurs voitures.
+  - Explication : Pour former le pluriel d'un nom, on ajoute un -s à la fin : « voitures ».
   - Statut : draft
 - **ce1_pluriel_nom_qcm_05** (difficulte 2) : Le ... est sur la table.
   - Reponses : cahier, cahiers
   - Reponse attendue : cahier
-  - Indice : Le determinant « le » indique un seul cahier.
+  - Indice : Le déterminant « le » indique un seul cahier.
   - Explication : « Le » indique un seul objet : le nom reste au singulier, sans -s : « cahier ».
   - Statut : draft
 - **ce1_pluriel_nom_qcm_06** (difficulte 2) : La ... est ouverte.
   - Reponses : porte, portes
   - Reponse attendue : porte
-  - Indice : Le determinant « la » indique une seule porte.
+  - Indice : Le déterminant « la » indique une seule porte.
   - Explication : « La » indique un seul objet : le nom reste au singulier, sans -s : « porte ».
   - Statut : draft
 - **ce1_pluriel_nom_qcm_07** (difficulte 3) : Les petits ... courent vite.
   - Reponses : chien, chiens
   - Reponse attendue : chiens
-  - Indice : Cherche le determinant, meme si un autre mot s'intercale avant le nom.
-  - Explication : « Les » indique le pluriel, meme si l'adjectif « petits » s'intercale avant le nom : il faut ecrire « chiens ».
+  - Indice : Cherche le déterminant, même si un autre mot s'intercale avant le nom.
+  - Explication : « Les » indique le pluriel, même si l'adjectif « petits » s'intercale avant le nom : il faut écrire « chiens ».
   - Statut : draft
 - **ce1_pluriel_nom_qcm_08** (difficulte 3) : Les jolies ... sentent bon.
   - Reponses : fleur, fleurs
   - Reponse attendue : fleurs
-  - Indice : Cherche le determinant, meme si un autre mot s'intercale avant le nom.
-  - Explication : « Les » indique le pluriel, meme si l'adjectif « jolies » s'intercale avant le nom : il faut ecrire « fleurs ».
+  - Indice : Cherche le déterminant, même si un autre mot s'intercale avant le nom.
+  - Explication : « Les » indique le pluriel, même si l'adjectif « jolies » s'intercale avant le nom : il faut écrire « fleurs ».
   - Statut : draft
 
 ### Corrections de phrase
 
 - **ce1_pluriel_nom_correction_01** (difficulte 1) : Les [chat -> chats] dorment dans le jardin.
-  - Indice : Le determinant « les » indique plusieurs chats.
-  - Explication : Le nom « chat » doit prendre la marque du pluriel, un -s, car il est annonce par « les » : il faut ecrire « chats ».
+  - Indice : Le déterminant « les » indique plusieurs chats.
+  - Explication : Le nom « chat » doit prendre la marque du pluriel, un -s, car il est annoncé par « les » : il faut écrire « chats ».
   - Statut : draft
 - **ce1_pluriel_nom_correction_02** (difficulte 1) : Des [pomme -> pommes] sont dans le panier.
-  - Indice : Le determinant « des » indique plusieurs pommes.
-  - Explication : Le nom « pomme » doit prendre la marque du pluriel, un -s, car il est annonce par « des » : il faut ecrire « pommes ».
+  - Indice : Le déterminant « des » indique plusieurs pommes.
+  - Explication : Le nom « pomme » doit prendre la marque du pluriel, un -s, car il est annoncé par « des » : il faut écrire « pommes ».
   - Statut : draft
 - **ce1_pluriel_nom_correction_03** (difficulte 2) : Le [chiens -> chien] dort.
-  - Indice : Le determinant « le » indique un seul chien.
+  - Indice : Le déterminant « le » indique un seul chien.
   - Explication : « Le » indique un seul animal : le nom reste au singulier, sans -s : « chien ».
   - Statut : draft
 - **ce1_pluriel_nom_correction_04** (difficulte 3) : Les petits [chat -> chats] jouent dans le jardin.
-  - Indice : Cherche le determinant, meme si un autre mot s'intercale avant le nom.
-  - Explication : « Les » indique le pluriel, meme si l'adjectif « petits » s'intercale avant le nom : il faut ecrire « chats ».
+  - Indice : Cherche le déterminant, même si un autre mot s'intercale avant le nom.
+  - Explication : « Les » indique le pluriel, même si l'adjectif « petits » s'intercale avant le nom : il faut écrire « chats ».
   - Statut : draft
 
 ### Dictees

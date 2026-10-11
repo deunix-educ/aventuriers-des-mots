@@ -6,12 +6,12 @@
   "rule_id": "regle_accord_determinant",
   "difficulty": 3,
   "type": "multiple_choice",
-  "instruction": "Choisis le bon determinant.",
+  "instruction": "Choisis le bon déterminant.",
   "question": "... arbre est grand.",
   "answers": ["Le", "La"],
   "correct_answer": 0,
   "hint": "« Arbre » se termine par un -e, mais il est masculin.",
-  "explanation": "« Arbre » est un nom masculin, meme s'il se termine par -e : il faut le determinant masculin « Le ».",
+  "explanation": "« Arbre » est un nom masculin, même s'il se termine par -e : il faut le déterminant masculin « Le ».",
   "review_tags": ["genre", "accord_determinant"],
   "review_status": "draft"
 }

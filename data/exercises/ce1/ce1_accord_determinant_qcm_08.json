@@ -6,12 +6,12 @@
   "rule_id": "regle_accord_determinant",
   "difficulty": 3,
   "type": "multiple_choice",
-  "instruction": "Choisis le bon determinant.",
+  "instruction": "Choisis le bon déterminant.",
   "question": "... maison est grande.",
   "answers": ["Le", "La"],
   "correct_answer": 1,
-  "hint": "« Maison » se termine par un -n, mais ecoute bien son genre.",
-  "explanation": "« Maison » est un nom feminin : il faut le determinant feminin « La ».",
+  "hint": "« Maison » se termine par un -n, mais écoute bien son genre.",
+  "explanation": "« Maison » est un nom féminin : il faut le déterminant féminin « La ».",
   "review_tags": ["genre", "accord_determinant"],
   "review_status": "draft"
 }

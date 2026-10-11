@@ -10,8 +10,8 @@
   "question": "La ... maison est jolie.",
   "answers": ["petit", "petite", "petites"],
   "correct_answer": 1,
-  "hint": "Observe le determinant « la » et le nom « maison ».",
-  "explanation": "Le nom « maison » est feminin singulier. L'adjectif prend donc la marque du feminin.",
+  "hint": "Observe le déterminant « la » et le nom « maison ».",
+  "explanation": "Le nom « maison » est féminin singulier. L'adjectif prend donc la marque du féminin.",
   "review_tags": ["feminin", "accord_adjectif"],
   "review_status": "draft"
 }

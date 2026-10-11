@@ -1,7 +1,7 @@
 {
   "mission_id": "mission_06_mare_grenouilles",
   "title": "La mare aux grenouilles chanteuses",
-  "narrative_context": "Les grenouilles de la mare chantent une phrase, une seule fois. Ecoute-les bien et ecris exactement ce qu'elles chantent.",
+  "narrative_context": "Les grenouilles de la mare chantent une phrase, une seule fois. Écoute-les bien et écris exactement ce qu'elles chantent.",
   "rule_id": "regle_pluriel_nom",
   "exercise_type": "dictation",
   "map_position": { "x": 0.85, "y": 0.15 },

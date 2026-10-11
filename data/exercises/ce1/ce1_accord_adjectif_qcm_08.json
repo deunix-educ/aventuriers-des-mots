@@ -10,8 +10,8 @@
   "question": "Les robes de ce magasin sont ... .",
   "answers": ["joli", "jolie", "jolies"],
   "correct_answer": 2,
-  "hint": "Cherche le nom auquel l'adjectif se rapporte, meme s'il n'est pas juste avant.",
-  "explanation": "L'adjectif se rapporte a « robes », qui est feminin pluriel, meme si « de ce magasin » s'intercale : il faut ecrire « jolies ».",
+  "hint": "Cherche le nom auquel l'adjectif se rapporte, même s'il n'est pas juste avant.",
+  "explanation": "L'adjectif se rapporte à « robes », qui est féminin pluriel, même si « de ce magasin » s'intercale : il faut écrire « jolies ».",
   "review_tags": ["genre", "pluriel", "accord_adjectif"],
   "review_status": "draft"
 }

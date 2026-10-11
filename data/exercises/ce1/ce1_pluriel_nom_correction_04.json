@@ -21,8 +21,8 @@
     { "text": "le", "correct": true },
     { "text": "jardin.", "correct": true }
   ],
-  "hint": "Cherche le determinant, meme si un autre mot s'intercale avant le nom.",
-  "explanation": "« Les » indique le pluriel, meme si l'adjectif « petits » s'intercale avant le nom : il faut ecrire « chats ».",
+  "hint": "Cherche le déterminant, même si un autre mot s'intercale avant le nom.",
+  "explanation": "« Les » indique le pluriel, même si l'adjectif « petits » s'intercale avant le nom : il faut écrire « chats ».",
   "review_tags": ["pluriel", "pluriel_nom"],
   "review_status": "draft"
 }

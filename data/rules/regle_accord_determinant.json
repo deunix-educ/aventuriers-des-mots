@@ -3,7 +3,7 @@
   "level": "CE1",
   "domain": "grammaire",
   "skill": "accord_groupe_nominal",
-  "statement": "Le determinant (le, la, les, un, une, des...) s'accorde en genre et en nombre avec le nom qu'il accompagne.",
+  "statement": "Le déterminant (le, la, les, un, une, des...) s'accorde en genre et en nombre avec le nom qu'il accompagne.",
   "example": "Le chat. La fleur. Les chats. Les fleurs.",
   "review_status": "draft"
 }

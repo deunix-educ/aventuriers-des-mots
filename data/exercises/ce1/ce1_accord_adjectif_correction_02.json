@@ -20,7 +20,7 @@
     { "text": "dehors.", "correct": true }
   ],
   "hint": "Le nom « enfants » est au pluriel.",
-  "explanation": "L'adjectif « sage » s'accorde avec le nom « enfants », qui est au pluriel : il faut ecrire « sages ».",
+  "explanation": "L'adjectif « sage » s'accorde avec le nom « enfants », qui est au pluriel : il faut écrire « sages ».",
   "review_tags": ["pluriel", "accord_adjectif"],
   "review_status": "draft"
 }

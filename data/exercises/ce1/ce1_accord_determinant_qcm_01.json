@@ -6,12 +6,12 @@
   "rule_id": "regle_accord_determinant",
   "difficulty": 1,
   "type": "multiple_choice",
-  "instruction": "Choisis le bon determinant.",
+  "instruction": "Choisis le bon déterminant.",
   "question": "... chat dort.",
   "answers": ["Le", "La"],
   "correct_answer": 0,
   "hint": "Le nom « chat » est masculin.",
-  "explanation": "« Chat » est un nom masculin : il faut le determinant masculin « Le ».",
+  "explanation": "« Chat » est un nom masculin : il faut le déterminant masculin « Le ».",
   "review_tags": ["genre", "accord_determinant"],
   "review_status": "draft"
 }

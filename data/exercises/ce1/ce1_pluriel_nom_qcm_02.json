@@ -10,8 +10,8 @@
   "question": "Des ... poussent dans le jardin.",
   "answers": ["fleur", "fleurs"],
   "correct_answer": 1,
-  "hint": "Le determinant « des » indique plusieurs fleurs.",
-  "explanation": "Pour former le pluriel d'un nom, on ajoute un -s a la fin : « fleurs ».",
+  "hint": "Le déterminant « des » indique plusieurs fleurs.",
+  "explanation": "Pour former le pluriel d'un nom, on ajoute un -s à la fin : « fleurs ».",
   "review_tags": ["pluriel", "pluriel_nom"],
   "review_status": "draft"
 }

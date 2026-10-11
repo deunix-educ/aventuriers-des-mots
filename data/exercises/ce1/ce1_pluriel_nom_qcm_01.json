@@ -10,8 +10,8 @@
   "question": "Les ... jouent dans le jardin.",
   "answers": ["chat", "chats"],
   "correct_answer": 1,
-  "hint": "Le determinant « les » indique plusieurs chats.",
-  "explanation": "Pour former le pluriel d'un nom, on ajoute un -s a la fin : « chats ».",
+  "hint": "Le déterminant « les » indique plusieurs chats.",
+  "explanation": "Pour former le pluriel d'un nom, on ajoute un -s à la fin : « chats ».",
   "review_tags": ["pluriel", "pluriel_nom"],
   "review_status": "draft"
 }

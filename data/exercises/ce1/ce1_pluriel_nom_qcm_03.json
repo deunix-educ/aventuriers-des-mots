@@ -10,8 +10,8 @@
   "question": "Les ... sont rouges.",
   "answers": ["pomme", "pommes"],
   "correct_answer": 1,
-  "hint": "Le determinant « les » indique plusieurs pommes.",
-  "explanation": "Pour former le pluriel d'un nom, on ajoute un -s a la fin : « pommes ».",
+  "hint": "Le déterminant « les » indique plusieurs pommes.",
+  "explanation": "Pour former le pluriel d'un nom, on ajoute un -s à la fin : « pommes ».",
   "review_tags": ["pluriel", "pluriel_nom"],
   "review_status": "draft"
 }

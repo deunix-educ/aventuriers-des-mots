@@ -11,7 +11,7 @@
   "answers": ["petit", "petits", "petite"],
   "correct_answer": 0,
   "hint": "Le nom « chat » est masculin singulier.",
-  "explanation": "Au masculin singulier, l'adjectif ne prend ni « s » ni « e » : on ecrit « petit ».",
+  "explanation": "Au masculin singulier, l'adjectif ne prend ni « s » ni « e » : on écrit « petit ».",
   "review_tags": ["accord_adjectif"],
   "review_status": "draft"
 }

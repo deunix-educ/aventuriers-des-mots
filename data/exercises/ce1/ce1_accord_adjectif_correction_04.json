@@ -22,8 +22,8 @@
     { "text": "le", "correct": true },
     { "text": "matin.", "correct": true }
   ],
-  "hint": "Cherche le nom auquel l'adjectif se rapporte, meme s'il n'est pas juste avant.",
-  "explanation": "L'adjectif « belle » s'accorde avec le nom « fleurs », qui est feminin pluriel, meme si d'autres mots separent le nom de l'adjectif : il faut ecrire « belles ».",
+  "hint": "Cherche le nom auquel l'adjectif se rapporte, même s'il n'est pas juste avant.",
+  "explanation": "L'adjectif « belle » s'accorde avec le nom « fleurs », qui est féminin pluriel, même si d'autres mots séparent le nom de l'adjectif : il faut écrire « belles ».",
   "review_tags": ["genre", "pluriel", "accord_adjectif"],
   "review_status": "draft"
 }

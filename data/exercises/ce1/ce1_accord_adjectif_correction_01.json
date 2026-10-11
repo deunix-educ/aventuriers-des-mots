@@ -18,8 +18,8 @@
     { "text": "chiens", "correct": true },
     { "text": "courent.", "correct": true }
   ],
-  "hint": "Le determinant « les » indique un pluriel.",
-  "explanation": "L'adjectif « petit » s'accorde avec le nom « chiens », qui est au pluriel : il faut ecrire « petits ».",
+  "hint": "Le déterminant « les » indique un pluriel.",
+  "explanation": "L'adjectif « petit » s'accorde avec le nom « chiens », qui est au pluriel : il faut écrire « petits ».",
   "review_tags": ["pluriel", "accord_adjectif"],
   "review_status": "draft"
 }

@@ -6,12 +6,12 @@
   "rule_id": "regle_accord_determinant",
   "difficulty": 2,
   "type": "multiple_choice",
-  "instruction": "Choisis le bon determinant.",
+  "instruction": "Choisis le bon déterminant.",
   "question": "J'ai ... fleur rouge.",
   "answers": ["un", "une"],
   "correct_answer": 1,
-  "hint": "Le nom « fleur » est feminin.",
-  "explanation": "« Fleur » est un nom feminin : il faut le determinant feminin « une ».",
+  "hint": "Le nom « fleur » est féminin.",
+  "explanation": "« Fleur » est un nom féminin : il faut le déterminant féminin « une ».",
   "review_tags": ["genre", "accord_determinant"],
   "review_status": "draft"
 }

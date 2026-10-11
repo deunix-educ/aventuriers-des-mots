@@ -20,8 +20,8 @@
     { "text": "le", "correct": true },
     { "text": "jardin.", "correct": true }
   ],
-  "hint": "Le determinant « les » indique plusieurs chats.",
-  "explanation": "Le nom « chat » doit prendre la marque du pluriel, un -s, car il est annonce par « les » : il faut ecrire « chats ».",
+  "hint": "Le déterminant « les » indique plusieurs chats.",
+  "explanation": "Le nom « chat » doit prendre la marque du pluriel, un -s, car il est annoncé par « les » : il faut écrire « chats ».",
   "review_tags": ["pluriel", "pluriel_nom"],
   "review_status": "draft"
 }

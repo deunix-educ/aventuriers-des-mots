@@ -18,8 +18,8 @@
     { "text": "est", "correct": true },
     { "text": "jolie.", "correct": true }
   ],
-  "hint": "Le nom « fleur » est feminin.",
-  "explanation": "« Fleur » est un nom feminin : il faut le determinant feminin « La ».",
+  "hint": "Le nom « fleur » est féminin.",
+  "explanation": "« Fleur » est un nom féminin : il faut le déterminant féminin « La ».",
   "review_tags": ["genre", "accord_determinant"],
   "review_status": "draft"
 }

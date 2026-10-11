@@ -10,8 +10,8 @@
   "question": "Des ... roulent sur la route.",
   "answers": ["voiture", "voitures"],
   "correct_answer": 1,
-  "hint": "Le determinant « des » indique plusieurs voitures.",
-  "explanation": "Pour former le pluriel d'un nom, on ajoute un -s a la fin : « voitures ».",
+  "hint": "Le déterminant « des » indique plusieurs voitures.",
+  "explanation": "Pour former le pluriel d'un nom, on ajoute un -s à la fin : « voitures ».",
   "review_tags": ["pluriel", "pluriel_nom"],
   "review_status": "draft"
 }

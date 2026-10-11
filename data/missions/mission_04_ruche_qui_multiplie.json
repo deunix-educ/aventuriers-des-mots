@@ -1,7 +1,7 @@
 {
   "mission_id": "mission_04_ruche_qui_multiplie",
   "title": "La ruche qui se multiplie",
-  "narrative_context": "Dans la ruche, chaque mot veut savoir s'il doit rester seul ou se multiplier. Aide les abeilles a choisir la bonne forme avant que le miel ne deborde !",
+  "narrative_context": "Dans la ruche, chaque mot veut savoir s'il doit rester seul ou se multiplier. Aide les abeilles à choisir la bonne forme avant que le miel ne déborde !",
   "rule_id": "regle_pluriel_nom",
   "exercise_type": "multiple_choice",
   "map_position": { "x": 0.15, "y": 0.15 },

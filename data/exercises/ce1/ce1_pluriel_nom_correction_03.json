@@ -17,7 +17,7 @@
     },
     { "text": "dort.", "correct": true }
   ],
-  "hint": "Le determinant « le » indique un seul chien.",
+  "hint": "Le déterminant « le » indique un seul chien.",
   "explanation": "« Le » indique un seul animal : le nom reste au singulier, sans -s : « chien ».",
   "review_tags": ["pluriel_nom"],
   "review_status": "draft"

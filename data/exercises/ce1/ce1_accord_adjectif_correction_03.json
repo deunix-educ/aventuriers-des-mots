@@ -21,8 +21,8 @@
     { "text": "la", "correct": true },
     { "text": "cour.", "correct": true }
   ],
-  "hint": "Le nom « fille » est feminin.",
-  "explanation": "L'adjectif « joli » s'accorde avec le nom « fille », qui est feminin : il faut ecrire « jolie ».",
+  "hint": "Le nom « fille » est féminin.",
+  "explanation": "L'adjectif « joli » s'accorde avec le nom « fille », qui est féminin : il faut écrire « jolie ».",
   "review_tags": ["genre", "accord_adjectif"],
   "review_status": "draft"
 }

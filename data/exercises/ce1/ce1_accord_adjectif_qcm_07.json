@@ -10,8 +10,8 @@
   "question": "Les chats de la maison sont ... .",
   "answers": ["petit", "petits", "petite"],
   "correct_answer": 1,
-  "hint": "Cherche le nom auquel l'adjectif se rapporte, meme s'il n'est pas juste avant.",
-  "explanation": "L'adjectif se rapporte a « chats », qui est masculin pluriel, meme si « de la maison » s'intercale : il faut ecrire « petits ».",
+  "hint": "Cherche le nom auquel l'adjectif se rapporte, même s'il n'est pas juste avant.",
+  "explanation": "L'adjectif se rapporte à « chats », qui est masculin pluriel, même si « de la maison » s'intercale : il faut écrire « petits ».",
   "review_tags": ["pluriel", "accord_adjectif"],
   "review_status": "draft"
 }

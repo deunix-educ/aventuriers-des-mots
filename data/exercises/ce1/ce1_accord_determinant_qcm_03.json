@@ -6,12 +6,12 @@
   "rule_id": "regle_accord_determinant",
   "difficulty": 1,
   "type": "multiple_choice",
-  "instruction": "Choisis le bon determinant.",
+  "instruction": "Choisis le bon déterminant.",
   "question": "... chats dorment.",
   "answers": ["Le", "Les"],
   "correct_answer": 1,
   "hint": "Le nom « chats » est au pluriel.",
-  "explanation": "« Chats » est au pluriel : il faut le determinant pluriel « Les ».",
+  "explanation": "« Chats » est au pluriel : il faut le déterminant pluriel « Les ».",
   "review_tags": ["pluriel", "accord_determinant"],
   "review_status": "draft"
 }

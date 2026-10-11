@@ -18,7 +18,7 @@
     { "text": "dorment.", "correct": true }
   ],
   "hint": "Le nom « chats » est au pluriel.",
-  "explanation": "« Chats » est au pluriel : il faut le determinant pluriel « Les ».",
+  "explanation": "« Chats » est au pluriel : il faut le déterminant pluriel « Les ».",
   "review_tags": ["pluriel", "accord_determinant"],
   "review_status": "draft"
 }

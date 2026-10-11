@@ -10,8 +10,8 @@
   "question": "Les jolies ... sentent bon.",
   "answers": ["fleur", "fleurs"],
   "correct_answer": 1,
-  "hint": "Cherche le determinant, meme si un autre mot s'intercale avant le nom.",
-  "explanation": "« Les » indique le pluriel, meme si l'adjectif « jolies » s'intercale avant le nom : il faut ecrire « fleurs ».",
+  "hint": "Cherche le déterminant, même si un autre mot s'intercale avant le nom.",
+  "explanation": "« Les » indique le pluriel, même si l'adjectif « jolies » s'intercale avant le nom : il faut écrire « fleurs ».",
   "review_tags": ["pluriel", "pluriel_nom"],
   "review_status": "draft"
 }

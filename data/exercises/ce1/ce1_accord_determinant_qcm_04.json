@@ -6,12 +6,12 @@
   "rule_id": "regle_accord_determinant",
   "difficulty": 1,
   "type": "multiple_choice",
-  "instruction": "Choisis le bon determinant.",
+  "instruction": "Choisis le bon déterminant.",
   "question": "... fleurs sentent bon.",
   "answers": ["La", "Les"],
   "correct_answer": 1,
   "hint": "Le nom « fleurs » est au pluriel.",
-  "explanation": "« Fleurs » est au pluriel : il faut le determinant pluriel « Les ».",
+  "explanation": "« Fleurs » est au pluriel : il faut le déterminant pluriel « Les ».",
   "review_tags": ["pluriel", "accord_determinant"],
   "review_status": "draft"
 }

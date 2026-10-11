@@ -21,7 +21,7 @@
     { "text": "table.", "correct": true }
   ],
   "hint": "Le nom « chat » est masculin.",
-  "explanation": "« Chat » est un nom masculin : il faut le determinant masculin « Le ».",
+  "explanation": "« Chat » est un nom masculin : il faut le déterminant masculin « Le ».",
   "review_tags": ["genre", "accord_determinant"],
   "review_status": "draft"
 }

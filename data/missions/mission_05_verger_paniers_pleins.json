@@ -1,7 +1,7 @@
 {
   "mission_id": "mission_05_verger_paniers_pleins",
   "title": "Le verger aux paniers pleins",
-  "narrative_context": "Les paniers du verger portent des etiquettes, mais certaines se sont trompees de nombre. Trouve l'etiquette fautive et corrige-la avant la recolte.",
+  "narrative_context": "Les paniers du verger portent des étiquettes, mais certaines se sont trompées de nombre. Trouve l'étiquette fautive et corrige-la avant la récolte.",
   "rule_id": "regle_pluriel_nom",
   "exercise_type": "sentence_correction",
   "map_position": { "x": 0.5, "y": 0.15 },

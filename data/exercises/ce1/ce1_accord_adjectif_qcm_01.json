@@ -10,7 +10,7 @@
   "question": "Les ... chiens jouent.",
   "answers": ["petit", "petits", "petite"],
   "correct_answer": 1,
-  "hint": "Observe le determinant « les » et le nom « chiens ».",
+  "hint": "Observe le déterminant « les » et le nom « chiens ».",
   "explanation": "Le groupe nominal est au pluriel. L'adjectif prend ici la marque du pluriel.",
   "review_tags": ["pluriel", "accord_adjectif"],
   "review_status": "draft"

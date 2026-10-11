@@ -20,8 +20,8 @@
     { "text": "le", "correct": true },
     { "text": "panier.", "correct": true }
   ],
-  "hint": "Le determinant « des » indique plusieurs pommes.",
-  "explanation": "Le nom « pomme » doit prendre la marque du pluriel, un -s, car il est annonce par « des » : il faut ecrire « pommes ».",
+  "hint": "Le déterminant « des » indique plusieurs pommes.",
+  "explanation": "Le nom « pomme » doit prendre la marque du pluriel, un -s, car il est annoncé par « des » : il faut écrire « pommes ».",
   "review_tags": ["pluriel", "pluriel_nom"],
   "review_status": "draft"
 }

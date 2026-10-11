@@ -253,4 +253,12 @@ Ajouts à l'arborescence proposée :
 
 **Carte par niveau** : 21 missions sur une seule carte ne tiennent pas (marqueurs de 160 px sur 1152 px). `ExerciseEngine.get_missions_for_level()` filtre sur le niveau de la règle de la mission (pas de champ supplémentaire dans les missions), `ProgressManager.school_level()` expose le niveau du profil, et `world_map` n'affiche que les missions du niveau du profil. Le cahier des charges (« un enfant de CE2 qui rencontre une difficulté sur une notion de CE1 pourra revenir à un entraînement adapté ») est respecté par un bouton « Revoir le CE1 » / « Retour au CE2 » visible uniquement pour un profil CE2. Un profil CE1 ne voit pas le CE2. Disposition CE2 : grille 4 colonnes (une par règle) × 3 lignes (QCM, correction, dictée) ; le test d'écart (point 26) vérifie maintenant chaque niveau séparément.
 
-**Non vérifié** : rendu de la carte CE2 (12 marqueurs), du bouton de bascule, et écoute des 12 voix — voir `docs/testing/manual-checklist.md`. Les textes plus anciens du CE1 (indices/explications) n'ont pas d'accents ; non corrigé ici, à traiter à part.
+**Non vérifié** : rendu de la carte CE2 (12 marqueurs), du bouton de bascule, et écoute des 12 voix — voir `docs/testing/manual-checklist.md`. Les textes CE1 sans accents sont corrigés au point 28.
+
+## 28. Accents manquants dans les textes CE1
+
+**Constat** : les indices, explications, consignes, énoncés de règle et récits de mission écrits pour le CE1 (points 18, 23-25 et contenu initial) étaient sans accents (« feminin », « ecrire », « determinant », « etiquettes », « a la fin »...), alors que ce sont des textes lus par l'enfant.
+
+**Correction** : restauration des accents sur 76 lignes de 44 fichiers de `data/` (champs `instruction`, `question`, `hint`, `explanation`, `statement`, `example`, `title`, `narrative_context` uniquement ; aucun identifiant, `target_text`, mot de dictée ni token modifié, donc aucun lien entre données ni audio touché). Cas particuliers : « a » devenu « à » (préposition) et « annonce » devenu « annoncé ». Le tag interne `feminin` de `review_tags` est conservé (identifiant, non affiché).
+
+**Règle pour la suite** : tout texte destiné à l'enfant est écrit avec ses accents dès la rédaction.

@@ -19,8 +19,8 @@
     { "text": "sont", "correct": true },
     { "text": "jolies.", "correct": true }
   ],
-  "hint": "Cherche le nom auquel le determinant se rapporte, meme si un autre mot s'intercale.",
-  "explanation": "Le determinant se rapporte a « fleurs », qui est feminin pluriel, meme si l'adjectif « petites » s'intercale : il faut ecrire « Les ».",
+  "hint": "Cherche le nom auquel le déterminant se rapporte, même si un autre mot s'intercale.",
+  "explanation": "Le déterminant se rapporte à « fleurs », qui est féminin pluriel, même si l'adjectif « petites » s'intercale : il faut écrire « Les ».",
   "review_tags": ["pluriel", "accord_determinant"],
   "review_status": "draft"
 }

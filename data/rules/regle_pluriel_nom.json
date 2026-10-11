@@ -3,7 +3,7 @@
   "level": "CE1",
   "domain": "grammaire",
   "skill": "accord_groupe_nominal",
-  "statement": "Le plus souvent, on forme le pluriel d'un nom en ajoutant un -s a la fin du mot.",
+  "statement": "Le plus souvent, on forme le pluriel d'un nom en ajoutant un -s à la fin du mot.",
   "example": "Un chat. Des chats. Une fleur. Des fleurs.",
   "review_status": "draft"
 }

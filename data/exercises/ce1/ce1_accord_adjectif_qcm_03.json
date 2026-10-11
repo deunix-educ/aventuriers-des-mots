@@ -10,7 +10,7 @@
   "question": "Les ... jardins sont fleuris.",
   "answers": ["joli", "jolis", "jolie"],
   "correct_answer": 1,
-  "hint": "Observe le determinant « les » et le nom « jardins ».",
+  "hint": "Observe le déterminant « les » et le nom « jardins ».",
   "explanation": "Le nom « jardins » est masculin pluriel. L'adjectif prend la marque du pluriel : « jolis ».",
   "review_tags": ["pluriel", "accord_adjectif"],
   "review_status": "draft"
