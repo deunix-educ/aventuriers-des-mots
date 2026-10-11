@@ -75,3 +75,41 @@ func test_sentence_correction_false_positive_on_correct_token() -> void:
     assert_eq(result.errors.size(), 1)
     assert_eq(result.errors[0]["error_type"], "unclassified")
     assert_eq(result.errors[0]["position"], 2)
+
+
+func test_sentence_correction_accepts_correction_with_different_case() -> void:
+    # Rapporte manuellement : "Petits" (majuscule incidente, ex. autocapitalisation)
+    # devait etre accepte au meme titre que "petits".
+    var result := AnswerValidator.validate_sentence_correction(
+        sentence_correction_exercise, [1], {1: "Petits"}
+    )
+    assert_true(result.is_correct)
+
+
+func test_sentence_correction_accepts_correction_with_surrounding_whitespace() -> void:
+    var result := AnswerValidator.validate_sentence_correction(
+        sentence_correction_exercise, [1], {1: "  petits  "}
+    )
+    assert_true(result.is_correct)
+
+
+func test_sentence_correction_accepts_decomposed_accented_correction() -> void:
+    var exercise_with_accent: Dictionary = {
+        "rule_id": "regle_test",
+        "hint": "indice",
+        "explanation": "explication",
+        "tokens":
+        [
+            {
+                "text": "lecole",
+                "correct": false,
+                "expected": "école",
+                "rule_id": "regle_accord_adjectif",
+            },
+        ],
+    }
+    # "e" + accent aigu combinant (U+0301), forme decomposee du meme mot.
+    var result := AnswerValidator.validate_sentence_correction(
+        exercise_with_accent, [0], {0: "école"}
+    )
+    assert_true(result.is_correct)

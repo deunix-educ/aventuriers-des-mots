@@ -136,3 +136,13 @@ Ajouts à l'arborescence proposée :
 - **Exclusion de `tests/` et `addons/gut/` de l'export** (`exclude_filter` des deux presets) : ce sont des dépendances de développement, elles n'ont rien à faire dans un exécutable livré à un enfant. Vérifié par la taille du `.pck` (124 Ko après exclusion contre 1,5 Mo avant).
 - **`export_presets.cfg` vérifié avant commit** : aucun champ de signature, de clé ou de chemin d'identifiants (ces champs n'existent que pour Android/iOS/macOS, hors périmètre). Rien à nettoyer.
 - **Non vérifié** : exécution réelle du binaire Windows (pas d'environnement Windows ni Wine disponible ici) ; comportement sur une distribution Linux différente de celle de cet environnement (cahier des charges §13 : « tester sur les distributions cibles et leurs dépendances graphiques ») ; macOS, Android, iOS restent hors périmètre de cette version.
+
+## 16. Bug signalé manuellement : correction de phrase trop stricte
+
+**Symptôme** : sur la mission « Le pont des phrases », toucher « petit » puis taper « petits » affichait « Pas tout à fait » au lieu d'être accepté.
+
+**Cause** : `AnswerValidator.validate_sentence_correction` comparait le texte saisi au texte attendu avec `!=`, une égalité de chaîne brute, sans aucune des tolérances déjà prévues pour les dictées (point 6) — pas de normalisation de casse, d'apostrophe typographique, d'espaces ou d'accents décomposés. Une différence incidente (ex. une majuscule ajoutée par une autocapitalisation du système) suffisait à rejeter une réponse pourtant correcte sur le fond (l'accord), ce qui contredit l'invariant pédagogique « une réponse ambiguë n'est pas déclarée fausse automatiquement ».
+
+**Correction** : la comparaison passe maintenant par `TextNormalizer.normalize(...).to_lower()` des deux côtés (même normalisation que pour les dictées), tout en gardant le texte brut saisi dans `found` pour l'affichage du retour. Un test automatisé avec la séquence exacte rapportée (toucher une fois, taper, valider) n'avait pas reproduit le bug — preuve que la logique fonctionnait pour une saisie identique au caractère près ; c'est la tolérance aux variations incidentes qui manquait, pas la logique d'association mot/correction elle-même. Trois tests couvrent maintenant la casse, les espaces superflus et les accents décomposés.
+
+**Leçon** : toute comparaison de texte saisi par l'enfant doit passer par `TextNormalizer`, pas par une égalité de chaîne brute — à vérifier si d'autres types d'exercices à saisie libre sont ajoutés plus tard.

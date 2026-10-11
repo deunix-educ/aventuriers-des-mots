@@ -48,7 +48,7 @@ static func validate_sentence_correction(
             errors.append(_missed_error(i, token, exercise))
         elif is_faulty and was_selected:
             var submitted: String = corrections.get(i, "")
-            if submitted != token["expected"]:
+            if not _matches_expected(submitted, token["expected"]):
                 errors.append(_wrong_correction_error(i, submitted, token, exercise))
         elif not is_faulty and was_selected:
             errors.append(_false_positive_error(i, token, exercise))
@@ -62,6 +62,18 @@ static func validate_sentence_correction(
             remediation.append(token["expected"])
     return CorrectionResult.incorrect(
         errors, exercise["explanation"], exercise["hint"], remediation
+    )
+
+
+## Compare la correction saisie a celle attendue en ignorant les differences
+## incidentes (majuscule/minuscule, apostrophe typographique, espaces,
+## accents decomposes) : ce n'est pas la casse qui est evaluee ici, c'est
+## l'accord. Une reponse ambigue n'est pas declaree fausse automatiquement
+## (CLAUDE.md, invariants pedagogiques).
+static func _matches_expected(submitted: String, expected: String) -> bool:
+    return (
+        TextNormalizer.normalize(submitted).to_lower()
+        == TextNormalizer.normalize(expected).to_lower()
     )
 
 
