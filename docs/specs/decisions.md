@@ -162,3 +162,13 @@ Ajouts à l'arborescence proposée :
 **Ajout** : trois corrections de phrase supplémentaires pour `regle_accord_adjectif` (`ce1_accord_adjectif_correction_02` à `_04`), portant le total à 4 et couvrant les trois niveaux de difficulté (1, 2, 3) ainsi que les deux axes de l'accord (genre et nombre), avec un cas difficulté 3 où le nom et l'adjectif sont séparés par d'autres mots. Toutes en `review_status: draft` (non relues par un humain, cf. CLAUDE.md).
 
 **Reste à faire** : les 8 choix multiples par règle (2 existent) et les 3 dictées par chapitre (1 existe) ne sont pas couverts par ce travail ; le volume minimal du cahier des charges n'est donc pas encore entièrement atteint pour cette règle.
+
+## 19. Audio provisoire des dictées : génération effective
+
+**Constat manuel** : testée à la main, la mission « La clairière de l'écho » ne pouvait pas être réellement jouée — aucun fichier audio n'existait (point 8), donc rien à écouter avant de dicter la phrase.
+
+**Mise en œuvre** : `tools/generate_dictation_audio.py` génère chaque dictée marquée `audio_provisional: true` en deux étapes outillées localement, sans accès réseau à l'exécution du jeu ni moteur TTS embarqué (conforme au point 8 et à l'invariant « aucun accès réseau ») : synthèse vocale hors ligne avec eSpeak NG (voix `fr-fr`, débit ralenti à 135 mots/minute pour un enfant de 7-9 ans) vers un `.wav` temporaire, puis encodage en Ogg Vorbis avec ffmpeg vers `assets/audio/dictations/<audio_id>.ogg`. N'écrase jamais un fichier existant sans `--force`. Exposé via `make generate-dictation-audio`. eSpeak NG n'est pas vendorisé (contrairement à Godot/GUT) : il doit être installé au niveau système (`apt install espeak-ng` ou équivalent) avant d'utiliser cette commande ; un message d'erreur explicite guide si l'outil est absent.
+
+**Généré** : `ce1_accord_adjectif_dictee_01.ogg` (seule dictée existante). Source notée dans `assets/CREDITS.md`.
+
+**Vérification** : nouveau test headless (`tests/data/test_dictation_audio.gd`) qui échoue si une dictée `audio_provisional` n'a pas de fichier `.ogg` chargeable — garde-fou contre un futur ajout de dictée sans régénération de l'audio, repéré plus tôt que par un test manuel. La qualité d'écoute elle-même (volume, clarté) reste non vérifiable sans écran/haut-parleur, donc à faire à la main (voir `docs/testing/manual-checklist.md`).

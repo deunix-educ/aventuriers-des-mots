@@ -14,7 +14,7 @@ Tout ce qui suit ne peut pas être vérifié sans écran (rendu, mise en page, a
 8. Mission « Le pré des petits mots » (choix multiple) : les réponses sont cliquables, une réponse juste affiche « Bravo ! », une réponse fausse affiche « Pas tout à fait » avec un indice.
 9. Refaire une erreur sur le même exercice : after la 2e erreur, l'explication remplace l'indice ; après la 3e, la bonne réponse est montrée et l'exercice passe au suivant sans blocage.
 10. Mission « Le pont des phrases » (correction de phrase) : toucher un mot le fait apparaître comme sélectionné (état visuel distinct, pas seulement une couleur) ; un champ de saisie apparaît sous le mot sélectionné ; toucher à nouveau le mot fait disparaître le champ.
-11. Mission « La clairière de l'écho » (dictée) : le bouton « Réécouter » ne doit rien faire planter (aucun fichier audio n'existe encore : vérifier qu'un avertissement apparaît dans la console, pas un crash) ; le badge « Voix provisoire » est visible ; la zone de saisie accepte le texte et les accents.
+11. Mission « La clairière de l'écho » (dictée) : à l'arrivée sur l'exercice, la voix de synthèse doit se faire entendre automatiquement ; le bouton « Réécouter » la rejoue sans planter ; le badge « Voix provisoire » est visible ; la zone de saisie accepte le texte et les accents. Le volume et la clarté de cette voix provisoire (eSpeak NG) sont à juger à l'oreille — rien d'étonnant à ce qu'elle sonne robotique, c'est volontairement provisoire (`audio_provisional: true`).
 12. Après 3 exercices, écran de récompense avec le nombre d'étoiles, puis retour à la carte.
 13. Quitter le jeu puis relancer `make run` : le profil et sa progression doivent être conservés (sélectionner le même profil, vérifier que l'état affiché sur la carte a changé par rapport à l'état initial).
 14. Depuis la sélection de profil, supprimer un profil : une confirmation explicite doit apparaître avant la suppression effective ; annuler doit ne rien supprimer.
@@ -28,7 +28,8 @@ Tout ce qui suit ne peut pas être vérifié sans écran (rendu, mise en page, a
 
 ## Audio
 
-- Aucun fichier audio n'a encore été généré (`assets/audio/dictations/` est vide) : c'est attendu à ce stade (étape « Graphismes et audio provisoires », à venir). Vérifier seulement que l'absence de fichier ne provoque pas de plantage, juste un avertissement en console.
+- `ce1_accord_adjectif_dictee_01` a un fichier audio provisoire généré par `make generate-dictation-audio` (eSpeak NG + ffmpeg, voir `assets/CREDITS.md`). À vérifier à l'oreille : la voix se déclenche à l'arrivée sur l'exercice et au clic sur « Réécouter », le volume est audible, la phrase reste comprise malgré l'accent robotique de la synthèse.
+- Toute dictée ajoutée sans régénérer son audio se dégrade silencieusement (avertissement en console, pas de plantage) : vérifier qu'aucune dictée manquante ne passe inaperçue avant diffusion (`make generate-dictation-audio` ne régénère pas l'existant, `--force` pour forcer).
 
 ## Exports
 
