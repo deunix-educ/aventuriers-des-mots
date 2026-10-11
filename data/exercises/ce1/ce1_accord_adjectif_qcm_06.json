@@ -1,0 +1,17 @@
+{
+  "id": "ce1_accord_adjectif_qcm_06",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "accord_groupe_nominal",
+  "rule_id": "regle_accord_adjectif",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon groupe de mots.",
+  "question": "La robe est ... .",
+  "answers": ["joli", "jolie", "jolis"],
+  "correct_answer": 1,
+  "hint": "Le nom « robe » est feminin singulier.",
+  "explanation": "Le nom « robe » est feminin singulier. L'adjectif prend la marque du feminin : « jolie ».",
+  "review_tags": ["genre", "accord_adjectif"],
+  "review_status": "draft"
+}

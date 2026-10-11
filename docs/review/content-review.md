@@ -24,6 +24,42 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
   - Indice : Observe le determinant « la » et le nom « maison ».
   - Explication : Le nom « maison » est feminin singulier. L'adjectif prend donc la marque du feminin.
   - Statut : draft
+- **ce1_accord_adjectif_qcm_03** (difficulte 1) : Les ... jardins sont fleuris.
+  - Reponses : joli, jolis, jolie
+  - Reponse attendue : jolis
+  - Indice : Observe le determinant « les » et le nom « jardins ».
+  - Explication : Le nom « jardins » est masculin pluriel. L'adjectif prend la marque du pluriel : « jolis ».
+  - Statut : draft
+- **ce1_accord_adjectif_qcm_04** (difficulte 1) : Les ... fleurs sentent bon.
+  - Reponses : joli, jolie, jolies
+  - Reponse attendue : jolies
+  - Indice : Observe le determinant « les » et le nom « fleurs ».
+  - Explication : Le nom « fleurs » est feminin pluriel. L'adjectif prend la marque du feminin et du pluriel : « jolies ».
+  - Statut : draft
+- **ce1_accord_adjectif_qcm_05** (difficulte 2) : Le chat est ... .
+  - Reponses : petit, petits, petite
+  - Reponse attendue : petit
+  - Indice : Le nom « chat » est masculin singulier.
+  - Explication : Au masculin singulier, l'adjectif ne prend ni « s » ni « e » : on ecrit « petit ».
+  - Statut : draft
+- **ce1_accord_adjectif_qcm_06** (difficulte 2) : La robe est ... .
+  - Reponses : joli, jolie, jolis
+  - Reponse attendue : jolie
+  - Indice : Le nom « robe » est feminin singulier.
+  - Explication : Le nom « robe » est feminin singulier. L'adjectif prend la marque du feminin : « jolie ».
+  - Statut : draft
+- **ce1_accord_adjectif_qcm_07** (difficulte 3) : Les chats de la maison sont ... .
+  - Reponses : petit, petits, petite
+  - Reponse attendue : petits
+  - Indice : Cherche le nom auquel l'adjectif se rapporte, meme s'il n'est pas juste avant.
+  - Explication : L'adjectif se rapporte a « chats », qui est masculin pluriel, meme si « de la maison » s'intercale : il faut ecrire « petits ».
+  - Statut : draft
+- **ce1_accord_adjectif_qcm_08** (difficulte 3) : Les robes de ce magasin sont ... .
+  - Reponses : joli, jolie, jolies
+  - Reponse attendue : jolies
+  - Indice : Cherche le nom auquel l'adjectif se rapporte, meme s'il n'est pas juste avant.
+  - Explication : L'adjectif se rapporte a « robes », qui est feminin pluriel, meme si « de ce magasin » s'intercale : il faut ecrire « jolies ».
+  - Statut : draft
 
 ### Corrections de phrase
 

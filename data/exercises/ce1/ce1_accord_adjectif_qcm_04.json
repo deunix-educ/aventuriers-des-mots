@@ -1,0 +1,17 @@
+{
+  "id": "ce1_accord_adjectif_qcm_04",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "accord_groupe_nominal",
+  "rule_id": "regle_accord_adjectif",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon groupe de mots.",
+  "question": "Les ... fleurs sentent bon.",
+  "answers": ["joli", "jolie", "jolies"],
+  "correct_answer": 2,
+  "hint": "Observe le determinant « les » et le nom « fleurs ».",
+  "explanation": "Le nom « fleurs » est feminin pluriel. L'adjectif prend la marque du feminin et du pluriel : « jolies ».",
+  "review_tags": ["genre", "pluriel", "accord_adjectif"],
+  "review_status": "draft"
+}

@@ -208,3 +208,9 @@ Ajouts à l'arborescence proposée :
 **Contrepartie** : exiger une convention que l'audio ne signale pas suppose que l'enfant la connaît déjà par ailleurs, pas qu'il la devine dictée par dictée. Ajout d'un rappel permanent et visible dans la scène de dictée (`dictation.tscn`, label `ConventionHintLabel`, clé `dictation.convention_hint` dans `data/localization/fr.json` : « N'oublie pas : une majuscule au début de la phrase et un point à la fin ! »). C'est la réponse concrète à « il faudra indiquer les règles quelque part » : la règle est communiquée par l'interface, pas supposée acquise silencieusement.
 
 **Tests** : `tests/correction/test_dictation_analyzer.gd` vérifie que l'omission du point est à nouveau une erreur (la majuscule l'était déjà, test existant) ; `tests/exercises/test_exercise_host_dictation.gd` vérifie la même chose au niveau de la scène complète.
+
+## 23. Contenu : choix multiples de `regle_accord_adjectif` portés à 8
+
+**Ajout** : six choix multiples supplémentaires (`ce1_accord_adjectif_qcm_03` à `_08`), portant le total à 8 — le minimum du cahier des charges pour ce type d'exercice sur une règle (prompt-lancement.md). Répartition : 4 en difficulté 1 (déterminant pluriel/singulier directement visible), 2 en difficulté 2 (adjectif après le nom, sans marqueur de déterminant pluriel comme repère), 2 en difficulté 3 (nom et adjectif séparés par un complément, comme au point 18 pour les corrections de phrase). Couvre les quatre combinaisons genre/nombre et deux adjectifs (« petit », « joli ») pour varier le vocabulaire. Toutes en `review_status: draft`.
+
+**Reste à faire** : les 3 dictées par chapitre (1 existe) restent en dessous du minimum du cahier des charges pour cette règle.
