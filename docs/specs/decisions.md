@@ -172,3 +172,15 @@ Ajouts à l'arborescence proposée :
 **Généré** : `ce1_accord_adjectif_dictee_01.ogg` (seule dictée existante). Source notée dans `assets/CREDITS.md`.
 
 **Vérification** : nouveau test headless (`tests/data/test_dictation_audio.gd`) qui échoue si une dictée `audio_provisional` n'a pas de fichier `.ogg` chargeable — garde-fou contre un futur ajout de dictée sans régénération de l'audio, repéré plus tôt que par un test manuel. La qualité d'écoute elle-même (volume, clarté) reste non vérifiable sans écran/haut-parleur, donc à faire à la main (voir `docs/testing/manual-checklist.md`).
+
+**Suite** : la voix eSpeak NG utilisée ici s'est révélée inintelligible à l'écoute (voir point 20) et a été remplacée.
+
+## 20. Audio provisoire des dictées : eSpeak NG remplacé par une voix neuronale Piper
+
+**Symptôme** : test manuel sur `ce1_accord_adjectif_dictee_01.ogg` (point 19, voix eSpeak NG par synthèse de formants) : « voix inintelligible ». Ralentir le débit ou ajuster les paramètres d'eSpeak NG ne change pas la nature du problème — une synthèse par formants reste mécanique par construction, ce n'est pas qu'une question de vitesse.
+
+**Remplacement** : `tools/generate_dictation_audio.py` utilise maintenant une voix neuronale hors ligne via la bibliothèque Python `piper-tts` (modèle `fr_FR-siwis-medium`, un locuteur, qualité medium, licence MIT pour Piper / CC-BY 4.0 pour le corpus SIWIS sous-jacent — attribution dans `assets/CREDITS.md`). Toujours aucun accès réseau à l'exécution du jeu : le modèle de voix (~60 Mo) est téléchargé une seule fois, à la demande, dans `.cache/piper-voices/` (non versionné, voir `.gitignore`), au moment de la rédaction de contenu, jamais par le jeu lui-même. `LENGTH_SCALE = 1.1` ralentit légèrement le débit par rapport à une diction adulte par défaut. eSpeak NG n'est plus une dépendance du projet ; `ffmpeg` (déjà présent sur la machine) reste utilisé pour l'encodage final en Ogg Vorbis. `piper-tts` est ajouté à `tools/setup.sh` (environnement Python partagé avec gdtoolkit/pyright).
+
+**Effet de bord** : `pyright` ne résolvait pas l'import `piper` en ciblant l'environnement Python par défaut plutôt que `.venv/`. Ajout de `pyrightconfig.json` (`venvPath`/`venv`) à la racine pour que `make lint` continue de fonctionner sans option supplémentaire.
+
+**Régénéré** : `ce1_accord_adjectif_dictee_01.ogg` avec la nouvelle voix. Non encore réécouté par un humain au moment d'écrire ceci — à confirmer en test manuel que l'intelligibilité est bien résolue, pas seulement supposée meilleure.

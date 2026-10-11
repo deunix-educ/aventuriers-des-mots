@@ -7,6 +7,9 @@ build/
 addons/gut/
 .venv/
 
+# Modeles de voix telecharges par tools/generate_dictation_audio.py, non versionnes
+.cache/
+
 # Python
 __pycache__/
 *.pyc

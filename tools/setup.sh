@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 # Installe l'outillage de developpement : binaire Godot pinne, addon GUT,
-# environnement Python pour gdtoolkit. Rien de ceci n'est commite (voir .gitignore) :
-# ce script est la seule source de verite pour reconstruire l'outillage.
+# environnement Python pour gdtoolkit/pyright/piper-tts (ce dernier pour
+# tools/generate_dictation_audio.py). Rien de ceci n'est commite (voir
+# .gitignore) : ce script est la seule source de verite pour reconstruire
+# l'outillage.
 set -euo pipefail
 
 cd "$(dirname "$0")/.."
@@ -66,7 +68,7 @@ if [ ! -d ".venv" ]; then
     python3 -m venv .venv
 fi
 ./.venv/bin/pip install --quiet --upgrade pip
-./.venv/bin/pip install --quiet "gdtoolkit==${GDTOOLKIT_VERSION}" "pyright==${PYRIGHT_VERSION}"
+./.venv/bin/pip install --quiet "gdtoolkit==${GDTOOLKIT_VERSION}" "pyright==${PYRIGHT_VERSION}" piper-tts
 
 echo "Import du projet (enregistre les class_name globaux : SchemaValidator, DataLoader...)."
 "${GODOT_BIN}" --headless --path . --import >/dev/null
