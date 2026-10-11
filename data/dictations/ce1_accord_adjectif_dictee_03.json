@@ -1,0 +1,20 @@
+{
+  "id": "ce1_accord_adjectif_dictee_03",
+  "level": "CE1",
+  "domain": "grammaire",
+  "rule_ids": ["regle_accord_adjectif"],
+  "difficulty": 3,
+  "target_text": "Les fleurs du jardin sont jolies.",
+  "words": [
+    { "text": "Les", "expects_capital": true },
+    { "text": "fleurs" },
+    { "text": "du" },
+    { "text": "jardin" },
+    { "text": "sont" },
+    { "text": "jolies", "rule_id": "regle_accord_adjectif" }
+  ],
+  "audio_id": "ce1_accord_adjectif_dictee_03",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

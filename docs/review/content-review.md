@@ -86,4 +86,12 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
   - Variantes acceptees : aucune
   - Audio : provisoire
   - Statut : draft
+- **ce1_accord_adjectif_dictee_02** : La petite chienne dort.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **ce1_accord_adjectif_dictee_03** : Les fleurs du jardin sont jolies.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
 

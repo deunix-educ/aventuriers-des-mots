@@ -214,3 +214,9 @@ Ajouts à l'arborescence proposée :
 **Ajout** : six choix multiples supplémentaires (`ce1_accord_adjectif_qcm_03` à `_08`), portant le total à 8 — le minimum du cahier des charges pour ce type d'exercice sur une règle (prompt-lancement.md). Répartition : 4 en difficulté 1 (déterminant pluriel/singulier directement visible), 2 en difficulté 2 (adjectif après le nom, sans marqueur de déterminant pluriel comme repère), 2 en difficulté 3 (nom et adjectif séparés par un complément, comme au point 18 pour les corrections de phrase). Couvre les quatre combinaisons genre/nombre et deux adjectifs (« petit », « joli ») pour varier le vocabulaire. Toutes en `review_status: draft`.
 
 **Reste à faire** : les 3 dictées par chapitre (1 existe) restent en dessous du minimum du cahier des charges pour cette règle.
+
+## 24. Contenu : dictées du chapitre « accords du groupe nominal » portées à 3
+
+**Ajout** : deux dictées supplémentaires (`ce1_accord_adjectif_dictee_02`, difficulté 2, féminin singulier ; `ce1_accord_adjectif_dictee_03`, difficulté 3, féminin pluriel avec nom et adjectif séparés par un complément, comme aux points 18 et 23), portant le total à 3 pour ce chapitre — le minimum du cahier des charges. Audio généré avec `make generate-dictation-audio` (voix Piper, voir point 20), crédité dans `assets/CREDITS.md`. Toutes en `review_status: draft`.
+
+**Volume minimal du cahier des charges désormais atteint pour `regle_accord_adjectif`** : 8 choix multiples (point 23), 4 corrections de phrase (point 18), 3 dictées (ci-dessus). Les deux autres règles CE1 prévues par prompt-lancement.md (pluriel du nom, accord du déterminant) et le chapitre CE2 (homophones grammaticaux) restent à écrire entièrement.
