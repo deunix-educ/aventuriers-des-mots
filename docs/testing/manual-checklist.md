@@ -30,8 +30,14 @@ Tout ce qui suit ne peut pas être vérifié sans écran (rendu, mise en page, a
 
 - Aucun fichier audio n'a encore été généré (`assets/audio/dictations/` est vide) : c'est attendu à ce stade (étape « Graphismes et audio provisoires », à venir). Vérifier seulement que l'absence de fichier ne provoque pas de plantage, juste un avertissement en console.
 
+## Exports
+
+- `make export-linux` produit `build/linux/aventuriers_des_mots.x86_64` : lancé et vérifié en headless dans cet environnement, mais **jamais vu à l'écran** ni testé sur une autre distribution (cahier des charges §13 demande un test sur les distributions cibles).
+- `make export-windows` produit `build/windows/aventuriers_des_mots.exe` : seul le format du binaire (PE32+) a pu être vérifié ici. **Jamais exécuté** (pas de machine Windows ni de Wine disponibles) : à tester sur une vraie machine Windows avant toute diffusion.
+- Vérifier manuellement que le jeu se comporte correctement en plein écran et en fenêtré sur les deux plateformes.
+
 ## Non vérifié par choix
 
-- Export Linux/Windows : pas encore configuré (étape 6).
-- Clavier virtuel tactile, formats d'écran mobile, Android/iOS/macOS : hors périmètre de cette version.
+- Export macOS, Android, iOS : hors périmètre de cette version (voir prompt de lancement, Objectif).
+- Clavier virtuel tactile, formats d'écran mobile : hors périmètre de cette version.
 - Animations : aucune n'existe encore (interface statique assumée pour ce prototype).

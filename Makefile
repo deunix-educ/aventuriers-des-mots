@@ -33,9 +33,9 @@ content-review:
 	$(PYTHON) tools/generate_content_review.py
 
 export-linux:
-	@echo "Export Linux : pas encore configure (voir Ordre de construction, etape 6)."
-	@exit 1
+	mkdir -p build/linux
+	$(GODOT_BIN) --headless --path . --export-release "Linux" build/linux/aventuriers_des_mots.x86_64
 
 export-windows:
-	@echo "Export Windows : pas encore configure (voir Ordre de construction, etape 6)."
-	@exit 1
+	mkdir -p build/windows
+	$(GODOT_BIN) --headless --path . --export-release "Windows" build/windows/aventuriers_des_mots.exe

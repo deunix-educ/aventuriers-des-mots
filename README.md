@@ -2,7 +2,7 @@
 
 Jeu éducatif de français pour les CE1-CE2 (7-9 ans) : une aventure 2D hors ligne, avec une carte à explorer, un personnage guide, et des exercices de grammaire, d'orthographe et de dictées.
 
-Projet open source, en développement. Statut actuel : squelette technique (voir `docs/specs/decisions.md` pour les décisions de cadrage et `docs/specs/cahier-des-charges.md` pour la spécification complète).
+Projet open source, en développement. Statut actuel : premier prototype jouable (périmètre du §15 du cahier des charges) — démarrage, profils, carte à trois lieux, trois types d'exercices, sauvegardes, exports Linux/Windows. Contenu pédagogique encore minimal (voir `docs/specs/decisions.md` pour les décisions de cadrage et `docs/specs/cahier-des-charges.md` pour la spécification complète).
 
 ## Pile technique
 
@@ -27,7 +27,7 @@ make run     # lance le jeu
 | `make validate-data` | valide les JSON de `data/` |
 | `make test` | tests headless |
 | `make check` | lint + validate-data + test, à passer avant chaque commit |
-| `make export-linux` / `make export-windows` | exports dans `build/` (à partir de l'étape export) |
+| `make export-linux` / `make export-windows` | exports dans `build/` |
 
 ## Structure
 

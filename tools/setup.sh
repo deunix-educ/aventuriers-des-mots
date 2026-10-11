@@ -28,6 +28,25 @@ else
     echo "Godot deja present dans ${GODOT_BIN}."
 fi
 
+# Godot nomme ce dossier avec un point avant "stable" (ex. "4.6.3.stable"),
+# alors que .godot-version et les URLs de telechargement utilisent un tiret
+# (ex. "4.6.3-stable") : les deux formats sont distincts, pas de typo ici.
+GODOT_TEMPLATE_VERSION="${GODOT_VERSION/-/.}"
+EXPORT_TEMPLATES_DIR="${HOME}/.local/share/godot/export_templates/${GODOT_TEMPLATE_VERSION}"
+if [ ! -d "${EXPORT_TEMPLATES_DIR}" ]; then
+    echo "Telechargement des modeles d'export Godot ${GODOT_VERSION} (environ 1,2 Go)..."
+    TMP_TPZ="$(mktemp)"
+    TMP_DIR="$(mktemp -d)"
+    curl -sL -o "${TMP_TPZ}" \
+        "https://github.com/godotengine/godot/releases/download/${GODOT_VERSION}/Godot_v${GODOT_VERSION}_export_templates.tpz"
+    unzip -q "${TMP_TPZ}" -d "${TMP_DIR}"
+    mkdir -p "${EXPORT_TEMPLATES_DIR}"
+    cp -r "${TMP_DIR}"/templates/* "${EXPORT_TEMPLATES_DIR}/"
+    rm -rf "${TMP_TPZ}" "${TMP_DIR}"
+else
+    echo "Modeles d'export deja presents dans ${EXPORT_TEMPLATES_DIR}."
+fi
+
 if [ ! -d "addons/gut" ]; then
     echo "Telechargement de GUT ${GUT_VERSION}..."
     TMP_TAR="$(mktemp)"

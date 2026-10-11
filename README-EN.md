@@ -2,7 +2,7 @@
 
 An educational French-language game for 7-9 year olds (French grades CE1-CE2): an offline 2D adventure with an explorable map, a guide character, and grammar, spelling, and dictation exercises.
 
-Open source project, in development. Current status: technical skeleton (see `docs/specs/decisions.md` for scoping decisions and `docs/specs/cahier-des-charges.md` for the full specification, both in French — this is a French-curriculum product).
+Open source project, in development. Current status: first playable prototype (scope of cahier-des-charges §15) — boot, profiles, a three-location map, all three exercise types, saves, Linux/Windows exports. Pedagogical content is still minimal (see `docs/specs/decisions.md` for scoping decisions and `docs/specs/cahier-des-charges.md` for the full specification, both in French — this is a French-curriculum product).
 
 ## Tech stack
 
@@ -27,7 +27,7 @@ make run     # runs the game
 | `make validate-data` | validates the JSON files in `data/` |
 | `make test` | headless tests |
 | `make check` | lint + validate-data + test, must pass before every commit |
-| `make export-linux` / `make export-windows` | exports into `build/` (from the export step onward) |
+| `make export-linux` / `make export-windows` | exports into `build/` |
 
 ## Structure
 
