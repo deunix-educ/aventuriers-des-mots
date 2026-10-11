@@ -1,0 +1,26 @@
+# Runtime et artefacts Godot
+.godot/
+build/
+
+# Outillage telecharge par `make setup` (Godot, GUT), non versionne
+.godot-bin/
+addons/gut/
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Secrets et identifiants (export, env, mots de passe, cles)
+.env
+*.env
+*.keystore
+*.jks
+*.p12
+*.mobileprovision
+secrets.*
+export_credentials.cfg
+
+# Fichiers d'edition courants
+*.swp
+.DS_Store
