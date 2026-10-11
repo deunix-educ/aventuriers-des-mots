@@ -1,7 +1,8 @@
 extends GutTest
-## Reproduction d'un bug signale manuellement via exercise_host : la dictee
-## "Les petits chats dorment." tapee exactement comme entendue n'etait pas
-## validee comme correcte.
+## Reproduction de deux retours de test manuel via exercise_host, sur la
+## dictee "Les petits chats dorment." (voir docs/specs/decisions.md, points
+## 21 et 22) : la reponse exacte doit valider, et la majuscule/le point final
+## restent exiges (conventions generales d'ecriture, pas une tolerance).
 
 var _profile_id: String = ""
 
@@ -30,10 +31,7 @@ func test_exact_target_text_is_validated_as_correct() -> void:
     assert_eq(_feedback_title(host), UIText.get_text("feedback_panel.correct_title"))
 
 
-## "J'entends parfaitement mais ne valide pas" : l'audio ne fait entendre
-## aucune ponctuation, donc l'enfant qui ecrit exactement ce qu'il entend
-## (sans le point final) doit tout de meme etre valide.
-func test_missing_final_period_is_still_validated_as_correct() -> void:
+func test_missing_final_period_is_not_validated_as_correct() -> void:
     var host: Control = await _ready_host()
     var exercise_scene: Control = host.get_node("%ExerciseContainer").get_child(0)
 
@@ -41,7 +39,7 @@ func test_missing_final_period_is_still_validated_as_correct() -> void:
     exercise_scene.get_node("%ValidateButton").pressed.emit()
     await wait_process_frames(1)
 
-    assert_eq(_feedback_title(host), UIText.get_text("feedback_panel.correct_title"))
+    assert_eq(_feedback_title(host), UIText.get_text("feedback_panel.incorrect_title"))
 
 
 func _ready_host() -> Control:

@@ -38,6 +38,7 @@
   "feedback_panel.correction_label": "La bonne réponse :",
   "sentence_correction.correction_placeholder": "Corrige ce mot",
   "dictation.instruction_label": "Écris la phrase que tu entends :",
+  "dictation.convention_hint": "N'oublie pas : une majuscule au début de la phrase et un point à la fin !",
   "dictation.input_placeholder": "Écris ici...",
   "dictation.replay_button": "Réécouter",
   "dictation.provisional_audio_badge": "Voix provisoire",

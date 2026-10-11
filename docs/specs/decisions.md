@@ -196,3 +196,15 @@ Ajouts à l'arborescence proposée :
 **Correction** : `DictationAnalyzer` ignore désormais la ponctuation terminale (`.`, `!`, `?`, `…`) à la comparaison — aussi bien dans le test d'égalité exacte (et celui des variantes acceptées) que dans l'alignement mot à mot, où elle est retirée avant la découpe en mots plutôt qu'après coup. La ponctuation interne à la phrase n'est pas concernée. Quatre tests couvrent : omission du point, point remplacé par un autre signe, et absence de faux négatif (une vraie faute sur le dernier mot reste détectée malgré la tolérance de ponctuation).
 
 **Leçon** : une tolérance de comparaison doit correspondre à ce que le canal d'entrée (ici l'audio) peut réellement transmettre à l'enfant — exiger une information qu'il n'a pas reçue revient à le punir d'une faute qu'il n'a pas commise (CLAUDE.md, invariants pédagogiques). À revoir si l'audio final fait un jour entendre la ponctuation (pause marquée, voix qui annonce « point »).
+
+**Revu au point 22** : cette tolérance a été annulée après discussion — majuscule et point final sont une convention générale, pas une information dictée.
+
+## 22. Majuscule et point final : exigés comme convention générale, pas tolérés
+
+**Contexte** : en poursuivant le test manuel du point 21, une réponse tapée sans majuscule initiale (« les petits chats dorment ») a aussi échoué, sur une erreur de catégorie « capitalization ». Question posée (CLAUDE.md : « en cas d'ambiguïté, poser la question plutôt que trancher seul ») plutôt que d'étendre seul la tolérance du point 21 à la majuscule : la majuscule en début de phrase et le point final sont-ils une information que l'audio devrait transmettre (comme supposé au point 21), ou une convention générale que l'enfant applique de lui-même, indépendamment de ce qu'il entend — comme en classe, où l'enseignant ne dit pas toujours « majuscule » ou « point » avant chaque dictée ?
+
+**Décision** : convention générale. Les deux sont exigés, comme n'importe quel autre mot de la phrase. La tolérance du point 21 est annulée : `DictationAnalyzer` retrouve sa comparaison d'origine (plus de `_strip_terminal_punctuation`), majuscule et point final doivent à nouveau être écrits exactement.
+
+**Contrepartie** : exiger une convention que l'audio ne signale pas suppose que l'enfant la connaît déjà par ailleurs, pas qu'il la devine dictée par dictée. Ajout d'un rappel permanent et visible dans la scène de dictée (`dictation.tscn`, label `ConventionHintLabel`, clé `dictation.convention_hint` dans `data/localization/fr.json` : « N'oublie pas : une majuscule au début de la phrase et un point à la fin ! »). C'est la réponse concrète à « il faudra indiquer les règles quelque part » : la règle est communiquée par l'interface, pas supposée acquise silencieusement.
+
+**Tests** : `tests/correction/test_dictation_analyzer.gd` vérifie que l'omission du point est à nouveau une erreur (la majuscule l'était déjà, test existant) ; `tests/exercises/test_exercise_host_dictation.gd` vérifie la même chose au niveau de la scène complète.

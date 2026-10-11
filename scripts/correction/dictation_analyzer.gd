@@ -7,13 +7,13 @@ extends RefCounted
 ## classee (voir "Points durs" du prompt de lancement). Code pur, sans horloge
 ## ni hasard. L'explication complete (texte de la regle) est composee par la
 ## couche d'affichage a partir des rule_id retournes, pas ici.
-
-## Ponctuation de fin de phrase ignoree a la comparaison : l'audio provisoire
-## (point 19/20 de docs/specs/decisions.md) ne la fait pas entendre, donc rien
-## dans ce que l'enfant ecoute ne lui indique qu'il faut l'ecrire. L'exiger
-## serait sanctionner une information qu'il n'a pas recue (CLAUDE.md : une
-## erreur declenche une explication, jamais une punition).
-const TERMINAL_PUNCTUATION := ".!?…"
+##
+## Majuscule initiale et point final sont exiges comme n'importe quel autre
+## mot : ce sont des conventions generales d'ecriture (toute phrase commence
+## par une majuscule et finit par un point), pas une information que l'audio
+## devrait faire entendre. L'enfant en est informe par le rappel affiche dans
+## la scene de dictee (voir docs/specs/decisions.md, point 22), pas par
+## tolerance a la correction.
 
 
 static func analyze(dictation: Dictionary, submitted_text: String) -> CorrectionResult:
@@ -23,10 +23,8 @@ static func analyze(dictation: Dictionary, submitted_text: String) -> Correction
     if _matches_target_or_variant(dictation, normalized_submitted, normalized_target):
         return CorrectionResult.correct(_build_explanation(0))
 
-    var target_words := TextNormalizer.split_words(_strip_terminal_punctuation(normalized_target))
-    var submitted_words := TextNormalizer.split_words(
-        _strip_terminal_punctuation(normalized_submitted)
-    )
+    var target_words := TextNormalizer.split_words(normalized_target)
+    var submitted_words := TextNormalizer.split_words(normalized_submitted)
     var words_meta: Array = dictation["words"]
 
     # L'alignement se fait insensible a la casse : une majuscule manquante est
@@ -83,25 +81,12 @@ static func analyze(dictation: Dictionary, submitted_text: String) -> Correction
 static func _matches_target_or_variant(
     dictation: Dictionary, normalized_submitted: String, normalized_target: String
 ) -> bool:
-    var stripped_submitted := _strip_terminal_punctuation(normalized_submitted)
-    if stripped_submitted == _strip_terminal_punctuation(normalized_target):
+    if normalized_submitted == normalized_target:
         return true
     for variant: String in dictation.get("accepted_variants", []):
-        if stripped_submitted == _strip_terminal_punctuation(TextNormalizer.normalize(variant)):
+        if normalized_submitted == TextNormalizer.normalize(variant):
             return true
     return false
-
-
-## Retire les signes de ponctuation terminale (un ou plusieurs, ex. "?!") en
-## fin de texte. N'affecte pas la ponctuation interne a la phrase.
-static func _strip_terminal_punctuation(text: String) -> String:
-    var result := text
-    while (
-        not result.is_empty()
-        and TERMINAL_PUNCTUATION.find(result.substr(result.length() - 1)) != -1
-    ):
-        result = result.substr(0, result.length() - 1)
-    return result.strip_edges()
 
 
 static func _classify_error(words_meta: Array, target_index: int, found: String) -> Dictionary:
