@@ -124,3 +124,28 @@ func test_record_mission_result_validates_against_the_save_schema() -> void:
     var data := ProgressUpdates.record_mission_result(_base_save(), "mission_a", 2)
     var errors := SchemaValidator.validate(data, DataLoader.load_schema("save"))
     assert_eq(errors, [])
+
+
+func test_next_difficulty_works_on_a_save_reloaded_from_disk() -> void:
+    # Regression : relu depuis le JSON, "recent_results" est un Array non type
+    # (et les entiers deviennent des flottants). L'affecter a un Array[bool]
+    # faisait echouer le choix de l'exercice suivant apres un redemarrage.
+    var save := SaveFactory.new_save("test_disk_reload", "Lea", "CE2")
+    save["skills"] = {
+        "homophones_grammaticaux":
+        {
+            "status": "en_consolidation",
+            "recent_results": [true, true, true, true, true, true, true, true],
+            "recent_hint_used": [false, false, false, false, false, false, false, false],
+            "sessions_succeeded": [1, 3],
+            "formats_succeeded": ["dictation"],
+            "last_session_practiced": 3,
+            "review_interval_index": -1,
+            "next_review_session": 4,
+        }
+    }
+    var reloaded: Dictionary = JSON.parse_string(JSON.stringify(save))
+    var difficulty := ProgressUpdates.next_difficulty_for_skill(
+        reloaded, "homophones_grammaticaux", 1
+    )
+    assert_eq(difficulty, 2, "huit reussites de suite : la difficulte monte")

@@ -338,3 +338,11 @@ Ajouts à l'arborescence proposée :
 **Élisions** : aucune élision manquante (« le arbre ») dans les données, vérifié sur tous les JSON y compris les listes de jetons ; garde-fou permanent `tests/data/test_elision.gd` (mots à « h » aspiré et exceptions listés ; l'assertion arrière écarte « écris-la en »). Si l'élision manquante vue en jeu vient d'ailleurs que des données, il faudra l'indication de l'écran concerné.
 
 **Phrases en double** : 14 phrases apparaissaient dans deux exercices ou dans un exercice et une dictée (ex. « Le chat dort. »). Les énoncés des QCM et corrections concernés ont été remplacés par de nouvelles phrases originales (indice et explication ajustés) ; les dictées, dont l'audio est généré, n'ont pas été touchées. Garde-fou permanent `tests/data/test_no_duplicate_sentences.gd` (phrase reconstituée en version correcte, comparée sans casse ni ponctuation).
+
+## 35. Plantage après redémarrage, profil relu depuis le disque (version 0.5.4)
+
+**Bug** : `ProgressUpdates.next_difficulty_for_skill` affectait le tableau `recent_results` d'une sauvegarde relue depuis le JSON (un `Array` non typé) à un `Array[bool]` : erreur de script, l'exercice suivant ne se chargeait pas (blocage/plantage), dès qu'un profil avait déjà de l'historique sur la notion. Les tests ne le voyaient pas car ils construisaient l'état en mémoire (tableaux typés) sans passer par le disque. Signalé par l'utilisateur sur « La serre aux étiquettes » (profil CE2 existant). Corrigé par recopie dans un `Array[bool]` ; test de non-régression qui passe l'état par `JSON.stringify`/`parse`.
+
+**Vérification** : copie des vrais profils de l'utilisateur dans un profil temporaire, puis parcours de chaque écran (récompense, carte, collection, espace adulte, réglages, introduction, choix de profil) et chargement de toutes les missions de leur niveau : aucune erreur de script. À retenir : tout état relu de JSON doit être converti avant d'être affecté à un tableau typé.
+
+**Son (non reproduit)** : sur la machine de développement, les exports Linux (4.6.3 et 4.7.2) jouent bien la voix de la dictée par le parcours réel (flux PipeWire non coupé, niveau mesuré sur le moniteur du périphérique). Cause de l'absence de son chez l'utilisateur non identifiée ; diagnostic demandé (pilote audio, sortie par défaut, messages console).

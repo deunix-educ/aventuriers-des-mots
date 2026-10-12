@@ -47,7 +47,11 @@ static func next_difficulty_for_skill(
     var skills: Dictionary = save_data["skills"]
     if not skills.has(skill_id):
         return current_difficulty
-    var recent: Array[bool] = skills[skill_id]["recent_results"]
+    # Relu depuis le disque (JSON), le tableau est un Array non type : on le
+    # recopie dans un Array[bool] plutot que de l'affecter directement.
+    var recent: Array[bool] = []
+    for result: Variant in skills[skill_id]["recent_results"]:
+        recent.append(bool(result))
     return DifficultyManager.next_difficulty(current_difficulty, recent)
 
 
