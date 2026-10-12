@@ -20,7 +20,7 @@ Tout ce qui suit ne peut pas être vérifié sans écran (rendu, mise en page, a
 12quater. Score et récompenses (point 30 de `decisions.md`) : terminer une mission sans aucune erreur donne 3 étoiles, avec un indice 2, avec une réponse montrée 1 (message encourageant, jamais de blâme) ; la carte affiche « Total d'étoiles » et « Étoiles : n/3 » sur chaque lieu sans texte coupé ; rejouer avec un meilleur score affiche « Nouveau record » et n'ajoute que la différence ; « Ma collection » montre les objets trouvés et les objets mystère avec la façon de les obtenir (liste défilante). Quitter puis relancer : étoiles et objets conservés.
 12bis. Répéter rapidement les points 8-12 sur une mission de chacune des deux nouvelles règles (« La ruche qui se multiplie » pour le pluriel du nom, « Le sentier des bons compagnons » pour l'accord du déterminant) : jamais vu à l'écran, seulement validé en headless (point 25 de `decisions.md`).
 13. Quitter le jeu puis relancer `make run` : le profil et sa progression doivent être conservés (sélectionner le même profil, vérifier que l'état affiché sur la carte a changé par rapport à l'état initial).
-14. Depuis la sélection de profil, supprimer un profil : une confirmation explicite doit apparaître avant la suppression effective ; annuler doit ne rien supprimer.
+14. La suppression d'un profil n'est plus sur la sélection de profil (point 37 de `decisions.md`) : Réglages → Espace adulte (barrière) → choisir le profil → « Supprimer ce profil » : une confirmation explicite nomme le profil ; annuler ne supprime rien ; les autres profils restent intacts.
 
 ## Accessibilité et interface
 

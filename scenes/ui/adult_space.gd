@@ -21,6 +21,8 @@ var _schema: Dictionary = {}
 @onready var _summary_label: Label = %SummaryLabel
 @onready var _skills_box: VBoxContainer = %SkillsBox
 @onready var _export_button: Button = %ExportButton
+@onready var _delete_button: Button = %DeleteButton
+@onready var _delete_dialog: ConfirmationDialog = %DeleteDialog
 @onready var _transfer_status_label: Label = %TransferStatusLabel
 @onready var _restore_title_label: Label = %RestoreTitleLabel
 @onready var _restore_list: VBoxContainer = %RestoreList
@@ -33,6 +35,12 @@ func _ready() -> void:
     _title_label.text = UIText.get_text("adult.title")
     _set_gate_texts()
     _export_button.text = UIText.get_text("adult.export_button")
+    _delete_button.text = UIText.get_text("adult.delete_button")
+    _delete_button.pressed.connect(_on_delete_pressed)
+    _delete_dialog.title = UIText.get_text("adult.delete_confirm_title")
+    _delete_dialog.ok_button_text = UIText.get_text("adult.delete_confirm_yes")
+    _delete_dialog.cancel_button_text = UIText.get_text("adult.delete_confirm_no")
+    _delete_dialog.confirmed.connect(_on_delete_confirmed)
     _restore_title_label.text = UIText.get_text("adult.restore_title")
     _folder_label.text = UIText.get_text("adult.folder_label") % SaveTransfer.default_export_dir()
     _back_button.text = UIText.get_text("adult.back_button")
@@ -80,6 +88,7 @@ func _refresh_profiles() -> void:
         _profile_option.set_item_metadata(_profile_option.item_count - 1, summary["profile_id"])
     var has_profiles := not summaries.is_empty()
     _export_button.disabled = not has_profiles
+    _delete_button.disabled = not has_profiles
     if has_profiles:
         _profile_option.select(0)
         _show_profile(_profile_option.get_item_metadata(0))
@@ -192,6 +201,24 @@ func _refresh_restore_list() -> void:
             button.text = UIText.get_text("adult.restore_invalid") % entry["path"].get_file()
             button.disabled = true
         _restore_list.add_child(button)
+
+
+func _on_delete_pressed() -> void:
+    if _selected_profile_id.is_empty():
+        return
+    var index := _profile_option.selected
+    _delete_dialog.dialog_text = (
+        UIText.get_text("adult.delete_confirm_message") % _profile_option.get_item_text(index)
+    )
+    _delete_dialog.popup_centered()
+
+
+func _on_delete_confirmed() -> void:
+    if _selected_profile_id.is_empty():
+        return
+    ProfileManager.delete_profile(_selected_profile_id)
+    _transfer_status_label.text = UIText.get_text("adult.delete_done")
+    _refresh_profiles()
 
 
 func _on_restore_pressed(path: String) -> void:

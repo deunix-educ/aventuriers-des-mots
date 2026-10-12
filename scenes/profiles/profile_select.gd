@@ -1,32 +1,21 @@
 extends Control
-## Ecran de selection de profil : un profil par enfant, suppression avec
-## confirmation explicite (cahier des charges §9).
-
-var _pending_delete_profile_id: String = ""
+## Ecran de selection de profil : un profil par enfant. La suppression d'un
+## profil appartient a l'adulte (espace adulte, derriere sa barriere).
 
 @onready var _title_label: Label = %TitleLabel
 @onready var _profile_list: VBoxContainer = %ProfileList
 @onready var _empty_state_label: Label = %EmptyStateLabel
 @onready var _new_profile_button: Button = %NewProfileButton
 @onready var _settings_button: Button = %SettingsButton
-@onready var _delete_confirm_dialog: ConfirmationDialog = %DeleteConfirmDialog
 
 
 func _ready() -> void:
     _title_label.text = UIText.get_text("profile_select.title")
     _new_profile_button.text = UIText.get_text("profile_select.new_profile_button")
     _empty_state_label.text = UIText.get_text("profile_select.empty_state")
-    _delete_confirm_dialog.title = UIText.get_text("profile_select.delete_confirm_title")
-    _delete_confirm_dialog.dialog_text = UIText.get_text("profile_select.delete_confirm_message")
-    _delete_confirm_dialog.ok_button_text = UIText.get_text("profile_select.delete_confirm_yes")
-    _delete_confirm_dialog.cancel_button_text = UIText.get_text(
-        "profile_select.delete_confirm_no"
-    )
-
     _settings_button.text = UIText.get_text("profile_select.settings_button")
     _settings_button.pressed.connect(_on_settings_pressed)
     _new_profile_button.pressed.connect(_on_new_profile_pressed)
-    _delete_confirm_dialog.confirmed.connect(_on_delete_confirmed)
 
     AudioManager.play_region_music("CE1")
     _refresh_profile_list()
@@ -54,31 +43,12 @@ func _build_profile_row(summary: Dictionary) -> Control:
     select_button.pressed.connect(_on_profile_selected.bind(summary["profile_id"]))
     row.add_child(select_button)
 
-    var delete_button := Button.new()
-    delete_button.theme_type_variation = &"SecondaryButton"
-    delete_button.text = UIText.get_text("profile_select.delete_button")
-    delete_button.pressed.connect(_on_delete_requested.bind(summary["profile_id"]))
-    row.add_child(delete_button)
-
     return row
 
 
 func _on_profile_selected(profile_id: String) -> void:
     if ProfileManager.select_profile(profile_id):
         GameManager.goto(GameManager.SCENE_WORLD_MAP)
-
-
-func _on_delete_requested(profile_id: String) -> void:
-    _pending_delete_profile_id = profile_id
-    _delete_confirm_dialog.popup_centered()
-
-
-func _on_delete_confirmed() -> void:
-    if _pending_delete_profile_id.is_empty():
-        return
-    ProfileManager.delete_profile(_pending_delete_profile_id)
-    _pending_delete_profile_id = ""
-    _refresh_profile_list()
 
 
 func _on_new_profile_pressed() -> void:

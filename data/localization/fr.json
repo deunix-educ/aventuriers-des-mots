@@ -1,11 +1,6 @@
 {
   "profile_select.title": "Choisis ton profil",
   "profile_select.new_profile_button": "Nouveau profil",
-  "profile_select.delete_button": "Supprimer",
-  "profile_select.delete_confirm_title": "Supprimer ce profil ?",
-  "profile_select.delete_confirm_message": "Cette action efface pour toujours la progression de ce profil.",
-  "profile_select.delete_confirm_yes": "Oui, supprimer",
-  "profile_select.delete_confirm_no": "Non, annuler",
   "profile_select.empty_state": "Pas encore de profil : crée le premier !",
   "profile_create.title": "Crée ton profil",
   "profile_create.name_label": "Comment t'appelles-tu ?",
@@ -116,5 +111,11 @@
   "music.marsh": "Marais",
   "music.meadow": "Prairie",
   "music.river": "Rivière",
-  "music.night": "Nuit"
+  "music.night": "Nuit",
+  "adult.delete_button": "Supprimer ce profil",
+  "adult.delete_confirm_title": "Supprimer ce profil ?",
+  "adult.delete_confirm_message": "Effacer pour toujours le profil « %s » et toute sa progression ? Pense à l'exporter avant si tu veux pouvoir le restaurer.",
+  "adult.delete_confirm_yes": "Oui, supprimer",
+  "adult.delete_confirm_no": "Non, annuler",
+  "adult.delete_done": "Profil supprimé."
 }

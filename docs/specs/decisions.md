@@ -354,3 +354,7 @@ Ajouts à l'arborescence proposée :
 **Phrases quasi identiques** : 14 énoncés (QCM et corrections) trop proches d'une autre phrase (ex. « Les petits chiens courent. » / « Les petits chiens jouent. » / « Les petits chiens courent vite. ») ont été remplacés par des phrases originales distinctes, indices et explications ajustés. Garde-fou permanent `tests/data/test_no_near_duplicate_sentences.gd` : deux phrases d'au moins 4 mots ne peuvent pas partager 75 % ou plus de leurs mots. Les dictées (audio déjà généré) n'ont pas été modifiées.
 
 **Voix** : l'utilisateur confirme que la voix de synthèse (« La fleur est belle. ») fonctionne avec le build Linux.
+
+## 37. Suppression d'un profil réservée à l'adulte (version 0.5.6)
+
+Demande utilisateur. Le bouton « Supprimer » est retiré de la sélection de profil (côté enfant) ; la suppression se fait dans l'espace adulte, derrière la barrière (point 32), via « Supprimer ce profil » avec une confirmation explicite qui nomme le profil et rappelle de l'exporter avant. Une suppression n'affecte jamais un autre profil. Le cahier des charges §9 (confirmation explicite) est respecté.
