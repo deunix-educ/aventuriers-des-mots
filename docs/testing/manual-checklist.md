@@ -82,3 +82,4 @@ Tout ce qui suit ne peut pas être vérifié sans écran (rendu, mise en page, a
 - `make export-macos` : archive vérifiée (structure .app, signature ad hoc) ; **jamais lancée** (pas de Mac). Au premier lancement : clic droit > Ouvrir.
 - `make export-web` : fichiers générés ; **jamais ouvert dans un navigateur**. Servir `build/web/` avec `python3 -m http.server`, ouvrir dans Chrome, vérifier son (le navigateur exige un premier clic), sauvegarde et plein écran.
 - Touche Entrée : en dictée et en correction, Entrée valide ; une seconde pression sur Entrée pendant le retour ne doit pas compter une réponse de plus.
+- Version web : `make serve-web` (ou `lancer-web.sh` / `lancer-web.bat` de l'archive ChromeOS) ; son confirmé à la main après un clic dans la page (0.9.1).

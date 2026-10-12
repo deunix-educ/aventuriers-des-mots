@@ -84,13 +84,23 @@ stage "${CHROMEOS}" build/android/aventuriers_des_mots.apk \
     "stockage privé de l'application, ou du navigateur pour la version web"
 mkdir -p "dist/${CHROMEOS}/web"
 cp build/web/* "dist/${CHROMEOS}/web/"
+cp tools/serve_web.py "dist/${CHROMEOS}/lancer-web.py"
+cat > "dist/${CHROMEOS}/lancer-web.sh" <<'LAUNCH'
+#!/usr/bin/env bash
+cd "$(dirname "$0")" && exec python3 lancer-web.py
+LAUNCH
+chmod +x "dist/${CHROMEOS}/lancer-web.sh"
+printf '@echo off\r\ncd /d "%%~dp0"\r\npy lancer-web.py || python lancer-web.py\r\n' \
+    > "dist/${CHROMEOS}/lancer-web.bat"
 cat > "dist/${CHROMEOS}/LISEZMOI-WEB.txt" <<WEB
 Version web (navigateur, hors ligne une fois servie localement)
 
-Un navigateur ne lit pas ces fichiers directement : ils doivent être servis
-par un petit serveur HTTP. Depuis le dossier web/ :
-  python3 -m http.server 8080
-puis ouvrir http://localhost:8080 dans Chrome.
+Lancer : double-clic sur lancer-web.sh (Linux, macOS) ou lancer-web.bat
+(Windows), ou en terminal : python3 lancer-web.py
+Python 3 est nécessaire. Le navigateur s'ouvre sur le jeu ; cliquer une
+fois dans la page pour activer le son. Ctrl+C dans le terminal arrête le
+serveur.
+
 La progression est conservée dans le stockage du navigateur : ne pas
 effacer les données du site, et utiliser l'espace adulte pour exporter.
 WEB

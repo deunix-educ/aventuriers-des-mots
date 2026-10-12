@@ -8,7 +8,7 @@ GD_SOURCES := autoload scripts tests
 
 .DEFAULT_GOAL := help
 
-.PHONY: help setup import run lint format validate-data test check content-review generate-dictation-audio generate-sounds export-linux export-windows export-android export-macos export-web package screenshot
+.PHONY: serve-web help setup import run lint format validate-data test check content-review generate-dictation-audio generate-sounds export-linux export-windows export-android export-macos export-web package screenshot
 
 # Liste les commandes : toute cible suivie de « ## description » y figure.
 help: ## Affiche cette aide
@@ -91,3 +91,6 @@ export-macos: import ## Exporte l'application macOS (zip) dans build/macos/
 export-web: import ## Exporte la version Web (navigateur, ChromeOS) dans build/web/
 	mkdir -p build/web
 	$(GODOT_BIN) --headless --path . --export-release "Web" build/web/index.html
+
+serve-web: export-web ## Exporte puis sert la version web en local et ouvre le navigateur
+	$(PYTHON) tools/serve_web.py build/web

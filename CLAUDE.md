@@ -24,6 +24,7 @@ Le `Makefile` est le seul point d'entrée pour les opérations système. Tenir c
 - `make export-linux` / `make export-windows` : exports dans `build/`
 - `make screenshot SCENE=… OUT=… ARGS=…` : capture le rendu réel d'une scène dans une fenêtre (outil de développement, ouvre brièvement une fenêtre)
 - `make export-android` / `make export-macos` / `make export-web` : APK Android (arm64 + x86_64, aussi pour ChromeOS), application macOS universelle (zip, signature ad hoc), version web
+- `make serve-web` : exporte puis sert la version web en local (127.0.0.1) et ouvre le navigateur (`tools/serve_web.py`)
 - `make package` : réexporte puis produit les archives distribuables (Linux, Windows, Android, macOS, ChromeOS ; licence + crédits + notice) et `SHA256SUMS` dans `dist/`
 
 ## Conventions de code

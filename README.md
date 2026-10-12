@@ -30,6 +30,7 @@ make run     # lance le jeu
 | `make content-review` | régénère `docs/review/content-review.md` (document de validation du contenu) |
 | `make generate-dictation-audio` | génère l'audio provisoire des dictées |
 | `make help` | liste les commandes disponibles |
+| `make serve-web` | exporte puis sert la version web en local et ouvre le navigateur |
 | `make export-linux` / `make export-windows` / `make export-android` / `make export-macos` / `make export-web` | exports dans `build/` |
 | `make package` | produit les archives distribuables dans `dist/` (exécutable unique + licence + crédits) |
 
