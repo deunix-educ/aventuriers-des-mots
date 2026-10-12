@@ -8,7 +8,7 @@ GD_SOURCES := autoload scripts tests
 
 .DEFAULT_GOAL := help
 
-.PHONY: serve-web help setup import run lint format validate-data test check content-review generate-dictation-audio generate-sounds export-linux export-windows export-android export-macos export-web package screenshot
+.PHONY: release release-dry-run serve-web help setup import run lint format validate-data test check content-review generate-dictation-audio generate-sounds export-linux export-windows export-android export-macos export-web package screenshot
 
 # Liste les commandes : toute cible suivie de « ## description » y figure.
 help: ## Affiche cette aide
@@ -71,14 +71,17 @@ package: ## Reexporte tout et produit les archives dans dist/
 screenshot: import ## Capture une scene (SCENE=... OUT=... ARGS=...)
 	$(GODOT_BIN) --path . -s res://tools/screenshot.gd -- $(SCENE) $(OUT) $(ARGS)
 
-# Android : APK unique (arm64 + x86_64, donc aussi les Chromebooks). Signature
-# de test avec la cle de debogage de Godot (standard, publique) : aucune cle
-# privee dans le depot. Pour publier sur un magasin, fournir sa propre cle via
-# GODOT_ANDROID_KEYSTORE_RELEASE_PATH / _USER / _PASSWORD.
+# Android : APK unique (arm64 + x86_64, donc aussi les Chromebooks). La cle de
+# publication (hors depot) est lue dans RELEASE_ENV : trois variables
+# GODOT_ANDROID_KEYSTORE_RELEASE_PATH / _USER / _PASSWORD. Sans ce fichier, repli
+# sur la cle de debogage publique de Godot : acceptable pour un essai local,
+# jamais pour une publication (tools/release.sh le refuse).
+RELEASE_ENV ?= $(HOME)/.config/aventuriers-des-mots/release.env
 ANDROID_DEBUG_KEYSTORE ?= $(HOME)/.local/share/godot/keystores/debug.keystore
 
 export-android: import ## Exporte l'APK Android / ChromeOS dans build/android/
 	mkdir -p build/android
+	set -a; [ -f "$(RELEASE_ENV)" ] && . "$(RELEASE_ENV)"; set +a; \
 	GODOT_ANDROID_KEYSTORE_RELEASE_PATH="$${GODOT_ANDROID_KEYSTORE_RELEASE_PATH:-$(ANDROID_DEBUG_KEYSTORE)}" \
 	GODOT_ANDROID_KEYSTORE_RELEASE_USER="$${GODOT_ANDROID_KEYSTORE_RELEASE_USER:-androiddebugkey}" \
 	GODOT_ANDROID_KEYSTORE_RELEASE_PASSWORD="$${GODOT_ANDROID_KEYSTORE_RELEASE_PASSWORD:-android}" \
@@ -94,3 +97,9 @@ export-web: import ## Exporte la version Web (navigateur, ChromeOS) dans build/w
 
 serve-web: export-web ## Exporte puis sert la version web en local et ouvre le navigateur
 	$(PYTHON) tools/serve_web.py build/web
+
+release: ## Publie une pre-release GitHub (STABLE=1 pour une version stable)
+	tools/release.sh $(if $(STABLE),--stable,)
+
+release-dry-run: ## Verifie tout et construit les archives sans rien publier
+	tools/release.sh --dry-run
