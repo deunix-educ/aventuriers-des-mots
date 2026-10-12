@@ -7,11 +7,17 @@
   "difficulty": 1,
   "type": "multiple_choice",
   "instruction": "Choisis le bon déterminant.",
-  "question": "... fleurs sentent bon.",
-  "answers": ["La", "Les"],
+  "question": "... pommes sentent bon.",
+  "answers": [
+    "La",
+    "Les"
+  ],
   "correct_answer": 1,
-  "hint": "Le nom « fleurs » est au pluriel.",
-  "explanation": "« Fleurs » est au pluriel : il faut le déterminant pluriel « Les ».",
-  "review_tags": ["pluriel", "accord_determinant"],
+  "hint": "Le nom « pommes » est au pluriel.",
+  "explanation": "« Pommes » est au pluriel : il faut le déterminant pluriel « Les ».",
+  "review_tags": [
+    "pluriel",
+    "accord_determinant"
+  ],
   "review_status": "draft"
 }

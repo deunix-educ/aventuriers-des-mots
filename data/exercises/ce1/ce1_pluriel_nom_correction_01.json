@@ -8,20 +8,38 @@
   "type": "sentence_correction",
   "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
   "tokens": [
-    { "text": "Les", "correct": true },
     {
-      "text": "chat",
+      "text": "Les",
+      "correct": true
+    },
+    {
+      "text": "lapin",
       "correct": false,
-      "expected": "chats",
+      "expected": "lapins",
       "rule_id": "regle_pluriel_nom"
     },
-    { "text": "dorment", "correct": true },
-    { "text": "dans", "correct": true },
-    { "text": "le", "correct": true },
-    { "text": "jardin.", "correct": true }
+    {
+      "text": "mangent",
+      "correct": true
+    },
+    {
+      "text": "dans",
+      "correct": true
+    },
+    {
+      "text": "le",
+      "correct": true
+    },
+    {
+      "text": "pré.",
+      "correct": true
+    }
   ],
-  "hint": "Le déterminant « les » indique plusieurs chats.",
-  "explanation": "Le nom « chat » doit prendre la marque du pluriel, un -s, car il est annoncé par « les » : il faut écrire « chats ».",
-  "review_tags": ["pluriel", "pluriel_nom"],
+  "hint": "Le déterminant « les » indique plusieurs lapins.",
+  "explanation": "Le nom « lapin » doit prendre la marque du pluriel, un -s, car il est annoncé par « les » : il faut écrire « lapins ».",
+  "review_tags": [
+    "pluriel",
+    "pluriel_nom"
+  ],
   "review_status": "draft"
 }

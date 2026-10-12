@@ -86,3 +86,31 @@ func test_wrong_answer_escalates_hint_then_explanation_then_reveal() -> void:
     var skill_state := ProgressManager.get_skill_state("accord_groupe_nominal")
     assert_eq(skill_state["recent_results"], [false, false, false])
     assert_eq(skill_state["recent_hint_used"], [false, true, true])
+
+
+func test_a_mission_never_shows_the_same_exercise_twice() -> void:
+    # Regression : le tirage n'excluait que le dernier exercice, donc le meme
+    # enonce pouvait revenir dans une meme mission (A, B, A). On s'arrete au
+    # troisieme exercice charge, sans le terminer (pas de changement de scene).
+    for _run in range(10):
+        var host := await _start_host()
+        host.get_node("%OverlayContainer").get_child(0).continued.emit()
+        await wait_process_frames(1)
+        var shown: Array[String] = []
+        for step in range(3):
+            shown.append(host.get_current_exercise()["id"])
+            if step == 2:
+                break
+            var scene: Control = host.get_node("%ExerciseContainer").get_child(0)
+            scene.answer_submitted.emit(host.get_current_exercise()["correct_answer"])
+            await wait_process_frames(1)
+            var overlay: Control = host.get_node("%OverlayContainer")
+            var feedback: Control = overlay.get_child(overlay.get_child_count() - 1)
+            feedback.get_node("%ContinueButton").pressed.emit()
+            await wait_process_frames(1)
+        var unique := {}
+        for exercise_id in shown:
+            unique[exercise_id] = true
+        assert_eq(unique.size(), 3, "exercices vus : %s" % [shown])
+        host.queue_free()
+        await wait_process_frames(1)

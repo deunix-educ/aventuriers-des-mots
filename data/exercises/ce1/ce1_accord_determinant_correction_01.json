@@ -14,12 +14,24 @@
       "expected": "La",
       "rule_id": "regle_accord_determinant"
     },
-    { "text": "fleur", "correct": true },
-    { "text": "est", "correct": true },
-    { "text": "jolie.", "correct": true }
+    {
+      "text": "tulipe",
+      "correct": true
+    },
+    {
+      "text": "est",
+      "correct": true
+    },
+    {
+      "text": "jaune.",
+      "correct": true
+    }
   ],
-  "hint": "Le nom « fleur » est féminin.",
-  "explanation": "« Fleur » est un nom féminin : il faut le déterminant féminin « La ».",
-  "review_tags": ["genre", "accord_determinant"],
+  "hint": "Le nom « tulipe » est féminin.",
+  "explanation": "« Tulipe » est un nom féminin : il faut le déterminant féminin « La ».",
+  "review_tags": [
+    "genre",
+    "accord_determinant"
+  ],
   "review_status": "draft"
 }

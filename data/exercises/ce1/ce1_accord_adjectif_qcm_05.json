@@ -7,11 +7,17 @@
   "difficulty": 2,
   "type": "multiple_choice",
   "instruction": "Choisis le bon groupe de mots.",
-  "question": "Le chat est ... .",
-  "answers": ["petit", "petits", "petite"],
+  "question": "Le mouton est ... .",
+  "answers": [
+    "petit",
+    "petits",
+    "petite"
+  ],
   "correct_answer": 0,
-  "hint": "Le nom « chat » est masculin singulier.",
+  "hint": "Le nom « mouton » est masculin singulier.",
   "explanation": "Au masculin singulier, l'adjectif ne prend ni « s » ni « e » : on écrit « petit ».",
-  "review_tags": ["accord_adjectif"],
+  "review_tags": [
+    "accord_adjectif"
+  ],
   "review_status": "draft"
 }

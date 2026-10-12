@@ -7,11 +7,17 @@
   "difficulty": 3,
   "type": "multiple_choice",
   "instruction": "Choisis le bon mot.",
-  "question": "Les petits ... courent vite.",
-  "answers": ["chien", "chiens"],
+  "question": "Les grands ... volent haut.",
+  "answers": [
+    "oiseau",
+    "oiseaux"
+  ],
   "correct_answer": 1,
   "hint": "Cherche le déterminant, même si un autre mot s'intercale avant le nom.",
-  "explanation": "« Les » indique le pluriel, même si l'adjectif « petits » s'intercale avant le nom : il faut écrire « chiens ».",
-  "review_tags": ["pluriel", "pluriel_nom"],
+  "explanation": "« Les » indique le pluriel, même si l'adjectif « grands » s'intercale avant le nom : il faut écrire « oiseaux ».",
+  "review_tags": [
+    "pluriel",
+    "pluriel_nom"
+  ],
   "review_status": "draft"
 }

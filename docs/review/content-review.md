@@ -12,10 +12,10 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
 
 ### Choix multiples
 
-- **ce1_accord_adjectif_qcm_01** (difficulte 1) : Les ... chiens jouent.
+- **ce1_accord_adjectif_qcm_01** (difficulte 1) : Les ... singes mangent.
   - Reponses : petit, petits, petite
   - Reponse attendue : petits
-  - Indice : Observe le déterminant « les » et le nom « chiens ».
+  - Indice : Observe le déterminant « les » et le nom « singes ».
   - Explication : Le groupe nominal est au pluriel. L'adjectif prend ici la marque du pluriel.
   - Statut : draft
 - **ce1_accord_adjectif_qcm_02** (difficulte 1) : La ... maison est jolie.
@@ -30,23 +30,23 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
   - Indice : Observe le déterminant « les » et le nom « jardins ».
   - Explication : Le nom « jardins » est masculin pluriel. L'adjectif prend la marque du pluriel : « jolis ».
   - Statut : draft
-- **ce1_accord_adjectif_qcm_04** (difficulte 1) : Les ... fleurs sentent bon.
+- **ce1_accord_adjectif_qcm_04** (difficulte 1) : Les ... roses sentent bon.
   - Reponses : joli, jolie, jolies
   - Reponse attendue : jolies
-  - Indice : Observe le déterminant « les » et le nom « fleurs ».
-  - Explication : Le nom « fleurs » est féminin pluriel. L'adjectif prend la marque du féminin et du pluriel : « jolies ».
+  - Indice : Observe le déterminant « les » et le nom « roses ».
+  - Explication : Le nom « roses » est féminin pluriel. L'adjectif prend la marque du féminin et du pluriel : « jolies ».
   - Statut : draft
-- **ce1_accord_adjectif_qcm_05** (difficulte 2) : Le chat est ... .
+- **ce1_accord_adjectif_qcm_05** (difficulte 2) : Le mouton est ... .
   - Reponses : petit, petits, petite
   - Reponse attendue : petit
-  - Indice : Le nom « chat » est masculin singulier.
+  - Indice : Le nom « mouton » est masculin singulier.
   - Explication : Au masculin singulier, l'adjectif ne prend ni « s » ni « e » : on écrit « petit ».
   - Statut : draft
-- **ce1_accord_adjectif_qcm_06** (difficulte 2) : La robe est ... .
+- **ce1_accord_adjectif_qcm_06** (difficulte 2) : La jupe est ... .
   - Reponses : joli, jolie, jolis
   - Reponse attendue : jolie
-  - Indice : Le nom « robe » est féminin singulier.
-  - Explication : Le nom « robe » est féminin singulier. L'adjectif prend la marque du féminin : « jolie ».
+  - Indice : Le nom « jupe » est féminin singulier.
+  - Explication : Le nom « jupe » est féminin singulier. L'adjectif prend la marque du féminin : « jolie ».
   - Statut : draft
 - **ce1_accord_adjectif_qcm_07** (difficulte 3) : Les chats de la maison sont ... .
   - Reponses : petit, petits, petite
@@ -63,9 +63,9 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
 
 ### Corrections de phrase
 
-- **ce1_accord_adjectif_correction_01** (difficulte 2) : Les [petit -> petits] chiens courent.
+- **ce1_accord_adjectif_correction_01** (difficulte 2) : Les [petit -> petits] canards nagent.
   - Indice : Le déterminant « les » indique un pluriel.
-  - Explication : L'adjectif « petit » s'accorde avec le nom « chiens », qui est au pluriel : il faut écrire « petits ».
+  - Explication : L'adjectif « petit » s'accorde avec le nom « canards », qui est au pluriel : il faut écrire « petits ».
   - Statut : draft
 - **ce1_accord_adjectif_correction_02** (difficulte 1) : Les enfants [sage -> sages] jouent dehors.
   - Indice : Le nom « enfants » est au pluriel.
@@ -123,11 +123,11 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
   - Indice : Le nom « oiseaux » est au pluriel.
   - Explication : « Oiseaux » est au pluriel : il faut le déterminant pluriel « Les ».
   - Statut : draft
-- **ce1_accord_determinant_qcm_04** (difficulte 1) : ... fleurs sentent bon.
+- **ce1_accord_determinant_qcm_04** (difficulte 1) : ... pommes sentent bon.
   - Reponses : La, Les
   - Reponse attendue : Les
-  - Indice : Le nom « fleurs » est au pluriel.
-  - Explication : « Fleurs » est au pluriel : il faut le déterminant pluriel « Les ».
+  - Indice : Le nom « pommes » est au pluriel.
+  - Explication : « Pommes » est au pluriel : il faut le déterminant pluriel « Les ».
   - Statut : draft
 - **ce1_accord_determinant_qcm_05** (difficulte 2) : J'ai ... chat noir.
   - Reponses : un, une
@@ -147,18 +147,18 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
   - Indice : « Arbre » se termine par un -e, mais il est masculin.
   - Explication : « Arbre » est un nom masculin, même s'il se termine par -e : il faut le déterminant masculin « Le ».
   - Statut : draft
-- **ce1_accord_determinant_qcm_08** (difficulte 3) : ... maison est grande.
+- **ce1_accord_determinant_qcm_08** (difficulte 3) : ... cabane est grande.
   - Reponses : Le, La
   - Reponse attendue : La
-  - Indice : « Maison » se termine par un -n, mais écoute bien son genre.
-  - Explication : « Maison » est un nom féminin : il faut le déterminant féminin « La ».
+  - Indice : Dis « une » ou « un » devant « cabane » pour trouver son genre.
+  - Explication : « Cabane » est un nom féminin : il faut le déterminant féminin « La ».
   - Statut : draft
 
 ### Corrections de phrase
 
-- **ce1_accord_determinant_correction_01** (difficulte 1) : [Le -> La] fleur est jolie.
-  - Indice : Le nom « fleur » est féminin.
-  - Explication : « Fleur » est un nom féminin : il faut le déterminant féminin « La ».
+- **ce1_accord_determinant_correction_01** (difficulte 1) : [Le -> La] tulipe est jaune.
+  - Indice : Le nom « tulipe » est féminin.
+  - Explication : « Tulipe » est un nom féminin : il faut le déterminant féminin « La ».
   - Statut : draft
 - **ce1_accord_determinant_correction_02** (difficulte 1) : [La -> Le] chat dort sous la table.
   - Indice : Le nom « chat » est masculin.
@@ -204,7 +204,7 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
   - Indice : Essaie de remplacer par « avait ».
   - Explication : « avait » convient ici : c'est le verbe avoir, on écrit « a » sans accent.
   - Statut : draft
-- **ce2_a_a_qcm_02** (difficulte 1) : Nous allons ... la plage.
+- **ce2_a_a_qcm_02** (difficulte 1) : Elle va ... la boulangerie.
   - Reponses : a, à
   - Reponse attendue : à
   - Indice : Essaie de remplacer par « avait ».
@@ -303,7 +303,7 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
   - Indice : Essaie de remplacer par « était ».
   - Explication : « était » ne convient pas ici, mais « et puis » convient : c'est « et », qui relie deux mots.
   - Statut : draft
-- **ce2_et_est_qcm_03** (difficulte 1) : Ma maison ... grande.
+- **ce2_et_est_qcm_03** (difficulte 1) : Ma chambre ... grande.
   - Reponses : et, est
   - Reponse attendue : est
   - Indice : Essaie de remplacer par « était ».
@@ -321,7 +321,7 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
   - Indice : Essaie de remplacer par « était ».
   - Explication : « était » ne convient pas ici, mais « et puis » convient : c'est « et », qui relie deux mots.
   - Statut : draft
-- **ce2_et_est_qcm_06** (difficulte 2) : Le gâteau ... sur la table.
+- **ce2_et_est_qcm_06** (difficulte 2) : Le gâteau ... dans le four.
   - Reponses : et, est
   - Reponse attendue : est
   - Indice : Essaie de remplacer par « était ».
@@ -606,11 +606,11 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
   - Indice : Le déterminant « la » indique une seule porte.
   - Explication : « La » indique un seul objet : le nom reste au singulier, sans -s : « porte ».
   - Statut : draft
-- **ce1_pluriel_nom_qcm_07** (difficulte 3) : Les petits ... courent vite.
-  - Reponses : chien, chiens
-  - Reponse attendue : chiens
+- **ce1_pluriel_nom_qcm_07** (difficulte 3) : Les grands ... volent haut.
+  - Reponses : oiseau, oiseaux
+  - Reponse attendue : oiseaux
   - Indice : Cherche le déterminant, même si un autre mot s'intercale avant le nom.
-  - Explication : « Les » indique le pluriel, même si l'adjectif « petits » s'intercale avant le nom : il faut écrire « chiens ».
+  - Explication : « Les » indique le pluriel, même si l'adjectif « grands » s'intercale avant le nom : il faut écrire « oiseaux ».
   - Statut : draft
 - **ce1_pluriel_nom_qcm_08** (difficulte 3) : Les belles ... brillent dans le ciel.
   - Reponses : étoile, étoiles
@@ -621,9 +621,9 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
 
 ### Corrections de phrase
 
-- **ce1_pluriel_nom_correction_01** (difficulte 1) : Les [chat -> chats] dorment dans le jardin.
-  - Indice : Le déterminant « les » indique plusieurs chats.
-  - Explication : Le nom « chat » doit prendre la marque du pluriel, un -s, car il est annoncé par « les » : il faut écrire « chats ».
+- **ce1_pluriel_nom_correction_01** (difficulte 1) : Les [lapin -> lapins] mangent dans le pré.
+  - Indice : Le déterminant « les » indique plusieurs lapins.
+  - Explication : Le nom « lapin » doit prendre la marque du pluriel, un -s, car il est annoncé par « les » : il faut écrire « lapins ».
   - Statut : draft
 - **ce1_pluriel_nom_correction_02** (difficulte 1) : Des [pomme -> pommes] sont dans le panier.
   - Indice : Le déterminant « des » indique plusieurs pommes.
@@ -633,9 +633,9 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
   - Indice : Le déterminant « le » indique un seul chien.
   - Explication : « Le » indique un seul animal : le nom reste au singulier, sans -s : « chien ».
   - Statut : draft
-- **ce1_pluriel_nom_correction_04** (difficulte 3) : Les petits [chat -> chats] jouent dans le jardin.
+- **ce1_pluriel_nom_correction_04** (difficulte 3) : Les gros [poisson -> poissons] nagent dans la mare.
   - Indice : Cherche le déterminant, même si un autre mot s'intercale avant le nom.
-  - Explication : « Les » indique le pluriel, même si l'adjectif « petits » s'intercale avant le nom : il faut écrire « chats ».
+  - Explication : « Les » indique le pluriel, même si l'adjectif « gros » s'intercale avant le nom : il faut écrire « poissons ».
   - Statut : draft
 
 ### Dictees

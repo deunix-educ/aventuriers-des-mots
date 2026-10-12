@@ -7,11 +7,17 @@
   "difficulty": 3,
   "type": "multiple_choice",
   "instruction": "Choisis le bon déterminant.",
-  "question": "... maison est grande.",
-  "answers": ["Le", "La"],
+  "question": "... cabane est grande.",
+  "answers": [
+    "Le",
+    "La"
+  ],
   "correct_answer": 1,
-  "hint": "« Maison » se termine par un -n, mais écoute bien son genre.",
-  "explanation": "« Maison » est un nom féminin : il faut le déterminant féminin « La ».",
-  "review_tags": ["genre", "accord_determinant"],
+  "hint": "Dis « une » ou « un » devant « cabane » pour trouver son genre.",
+  "explanation": "« Cabane » est un nom féminin : il faut le déterminant féminin « La ».",
+  "review_tags": [
+    "genre",
+    "accord_determinant"
+  ],
   "review_status": "draft"
 }

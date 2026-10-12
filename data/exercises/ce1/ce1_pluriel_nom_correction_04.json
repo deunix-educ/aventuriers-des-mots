@@ -8,21 +8,42 @@
   "type": "sentence_correction",
   "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
   "tokens": [
-    { "text": "Les", "correct": true },
-    { "text": "petits", "correct": true },
     {
-      "text": "chat",
+      "text": "Les",
+      "correct": true
+    },
+    {
+      "text": "gros",
+      "correct": true
+    },
+    {
+      "text": "poisson",
       "correct": false,
-      "expected": "chats",
+      "expected": "poissons",
       "rule_id": "regle_pluriel_nom"
     },
-    { "text": "jouent", "correct": true },
-    { "text": "dans", "correct": true },
-    { "text": "le", "correct": true },
-    { "text": "jardin.", "correct": true }
+    {
+      "text": "nagent",
+      "correct": true
+    },
+    {
+      "text": "dans",
+      "correct": true
+    },
+    {
+      "text": "la",
+      "correct": true
+    },
+    {
+      "text": "mare.",
+      "correct": true
+    }
   ],
   "hint": "Cherche le déterminant, même si un autre mot s'intercale avant le nom.",
-  "explanation": "« Les » indique le pluriel, même si l'adjectif « petits » s'intercale avant le nom : il faut écrire « chats ».",
-  "review_tags": ["pluriel", "pluriel_nom"],
+  "explanation": "« Les » indique le pluriel, même si l'adjectif « gros » s'intercale avant le nom : il faut écrire « poissons ».",
+  "review_tags": [
+    "pluriel",
+    "pluriel_nom"
+  ],
   "review_status": "draft"
 }

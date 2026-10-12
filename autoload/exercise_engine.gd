@@ -70,6 +70,21 @@ func pick_exercise_for_mission(
     return picked if picked != null else {}
 
 
+## Comme pick_exercise_for_mission, mais ne redonne jamais un exercice deja vu
+## pendant la mission tant qu'il en reste un autre (un enfant ne doit pas voir
+## deux fois la meme phrase dans une meme mission).
+func pick_unseen_exercise_for_mission(
+    mission: Dictionary, seen_ids: Array[String], difficulty: int
+) -> Dictionary:
+    var candidates: Array[Dictionary] = _candidates_for(
+        mission["rule_id"], mission["exercise_type"]
+    )
+    var picked: Variant = ExercisePicker.pick_unseen(
+        _filter_by_difficulty(candidates, difficulty), candidates, seen_ids, _rng
+    )
+    return picked if picked != null else {}
+
+
 ## Ne garde que les candidats a la difficulte demandee ; si aucun ne la
 ## propose, retombe sur l'ensemble des candidats plutot que de n'en donner
 ## aucun (le contenu disponible est encore limite, voir docs/specs/decisions.md).

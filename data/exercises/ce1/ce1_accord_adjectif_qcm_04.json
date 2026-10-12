@@ -7,11 +7,19 @@
   "difficulty": 1,
   "type": "multiple_choice",
   "instruction": "Choisis le bon groupe de mots.",
-  "question": "Les ... fleurs sentent bon.",
-  "answers": ["joli", "jolie", "jolies"],
+  "question": "Les ... roses sentent bon.",
+  "answers": [
+    "joli",
+    "jolie",
+    "jolies"
+  ],
   "correct_answer": 2,
-  "hint": "Observe le déterminant « les » et le nom « fleurs ».",
-  "explanation": "Le nom « fleurs » est féminin pluriel. L'adjectif prend la marque du féminin et du pluriel : « jolies ».",
-  "review_tags": ["genre", "pluriel", "accord_adjectif"],
+  "hint": "Observe le déterminant « les » et le nom « roses ».",
+  "explanation": "Le nom « roses » est féminin pluriel. L'adjectif prend la marque du féminin et du pluriel : « jolies ».",
+  "review_tags": [
+    "genre",
+    "pluriel",
+    "accord_adjectif"
+  ],
   "review_status": "draft"
 }

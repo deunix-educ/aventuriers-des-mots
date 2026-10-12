@@ -346,3 +346,11 @@ Ajouts à l'arborescence proposée :
 **Vérification** : copie des vrais profils de l'utilisateur dans un profil temporaire, puis parcours de chaque écran (récompense, carte, collection, espace adulte, réglages, introduction, choix de profil) et chargement de toutes les missions de leur niveau : aucune erreur de script. À retenir : tout état relu de JSON doit être converti avant d'être affecté à un tableau typé.
 
 **Son (non reproduit)** : sur la machine de développement, les exports Linux (4.6.3 et 4.7.2) jouent bien la voix de la dictée par le parcours réel (flux PipeWire non coupé, niveau mesuré sur le moniteur du périphérique). Cause de l'absence de son chez l'utilisateur non identifiée ; diagnostic demandé (pilote audio, sortie par défaut, messages console).
+
+## 36. Redites : jamais deux fois le même exercice dans une mission (version 0.5.5)
+
+**Cause du « même énoncé deux fois »** : le tirage n'excluait que le dernier exercice vu, donc une mission de 3 exercices pouvait donner A, B, A (le point 34 n'avait traité que les doublons de contenu). Le tirage exclut maintenant tous les exercices déjà vus dans la mission (`ExercisePicker.pick_unseen`, `ExerciseEngine.pick_unseen_exercise_for_mission`) : d'abord à la difficulté visée, puis toutes difficultés, et ne répète que si le contenu est épuisé. Test de non-régression sur l'hôte d'exercice (10 missions simulées).
+
+**Phrases quasi identiques** : 14 énoncés (QCM et corrections) trop proches d'une autre phrase (ex. « Les petits chiens courent. » / « Les petits chiens jouent. » / « Les petits chiens courent vite. ») ont été remplacés par des phrases originales distinctes, indices et explications ajustés. Garde-fou permanent `tests/data/test_no_near_duplicate_sentences.gd` : deux phrases d'au moins 4 mots ne peuvent pas partager 75 % ou plus de leurs mots. Les dictées (audio déjà généré) n'ont pas été modifiées.
+
+**Voix** : l'utilisateur confirme que la voix de synthèse (« La fleur est belle. ») fonctionne avec le build Linux.

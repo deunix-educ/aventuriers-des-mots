@@ -7,11 +7,18 @@
   "difficulty": 2,
   "type": "multiple_choice",
   "instruction": "Choisis le bon groupe de mots.",
-  "question": "La robe est ... .",
-  "answers": ["joli", "jolie", "jolis"],
+  "question": "La jupe est ... .",
+  "answers": [
+    "joli",
+    "jolie",
+    "jolis"
+  ],
   "correct_answer": 1,
-  "hint": "Le nom « robe » est féminin singulier.",
-  "explanation": "Le nom « robe » est féminin singulier. L'adjectif prend la marque du féminin : « jolie ».",
-  "review_tags": ["genre", "accord_adjectif"],
+  "hint": "Le nom « jupe » est féminin singulier.",
+  "explanation": "Le nom « jupe » est féminin singulier. L'adjectif prend la marque du féminin : « jolie ».",
+  "review_tags": [
+    "genre",
+    "accord_adjectif"
+  ],
   "review_status": "draft"
 }

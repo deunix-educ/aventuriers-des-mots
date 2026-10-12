@@ -22,7 +22,7 @@ var _current_exercise_scene: Control = null
 var _current_difficulty := 1
 var _attempt_number := 1
 var _completed_count := 0
-var _last_exercise_id := ""
+var _seen_exercise_ids: Array[String] = []
 var _outcomes: Array[String] = []
 var _pending_outcome := ""
 
@@ -97,9 +97,10 @@ func _on_rule_panel_continued(rule_panel: Control) -> void:
 
 
 func _load_next_exercise() -> void:
-    _current_exercise = ExerciseEngine.pick_exercise_for_mission(
-        _mission, _last_exercise_id, _current_difficulty
+    _current_exercise = ExerciseEngine.pick_unseen_exercise_for_mission(
+        _mission, _seen_exercise_ids, _current_difficulty
     )
+    _seen_exercise_ids.append(_current_exercise.get("id", ""))
     _attempt_number = 1
     _update_progress_label()
 
@@ -196,7 +197,6 @@ func _on_feedback_continued(feedback: Control, is_terminal: bool) -> void:
     _current_difficulty = ProgressManager.next_difficulty_for_skill(
         _skill_id, _current_difficulty
     )
-    _last_exercise_id = _current_exercise.get("id", "")
     _completed_count += 1
     _outcomes.append(_pending_outcome)
 

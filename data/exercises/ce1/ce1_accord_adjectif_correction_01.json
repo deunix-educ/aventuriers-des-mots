@@ -8,18 +8,30 @@
   "type": "sentence_correction",
   "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
   "tokens": [
-    { "text": "Les", "correct": true },
+    {
+      "text": "Les",
+      "correct": true
+    },
     {
       "text": "petit",
       "correct": false,
       "expected": "petits",
       "rule_id": "regle_accord_adjectif"
     },
-    { "text": "chiens", "correct": true },
-    { "text": "courent.", "correct": true }
+    {
+      "text": "canards",
+      "correct": true
+    },
+    {
+      "text": "nagent.",
+      "correct": true
+    }
   ],
   "hint": "Le déterminant « les » indique un pluriel.",
-  "explanation": "L'adjectif « petit » s'accorde avec le nom « chiens », qui est au pluriel : il faut écrire « petits ».",
-  "review_tags": ["pluriel", "accord_adjectif"],
+  "explanation": "L'adjectif « petit » s'accorde avec le nom « canards », qui est au pluriel : il faut écrire « petits ».",
+  "review_tags": [
+    "pluriel",
+    "accord_adjectif"
+  ],
   "review_status": "draft"
 }

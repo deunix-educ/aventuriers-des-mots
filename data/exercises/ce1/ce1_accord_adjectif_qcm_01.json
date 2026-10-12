@@ -7,11 +7,18 @@
   "difficulty": 1,
   "type": "multiple_choice",
   "instruction": "Choisis le bon groupe de mots.",
-  "question": "Les ... chiens jouent.",
-  "answers": ["petit", "petits", "petite"],
+  "question": "Les ... singes mangent.",
+  "answers": [
+    "petit",
+    "petits",
+    "petite"
+  ],
   "correct_answer": 1,
-  "hint": "Observe le déterminant « les » et le nom « chiens ».",
+  "hint": "Observe le déterminant « les » et le nom « singes ».",
   "explanation": "Le groupe nominal est au pluriel. L'adjectif prend ici la marque du pluriel.",
-  "review_tags": ["pluriel", "accord_adjectif"],
+  "review_tags": [
+    "pluriel",
+    "accord_adjectif"
+  ],
   "review_status": "draft"
 }
