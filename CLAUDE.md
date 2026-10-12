@@ -10,6 +10,7 @@ Jeu éducatif de français CE1 à CM2 (7–11 ans), aventure 2D, hors ligne, God
 
 Le `Makefile` est le seul point d'entrée pour les opérations système. Tenir cette liste à jour.
 
+- `make help` : liste les commandes (toute cible du Makefile suivie de `## description` y figure : tenir ces commentaires à jour)
 - `make setup` : installe l'outillage (lint, tests, modèles d'export)
 - `make import` : importe les ressources dans `.godot/` (deux passes ; appelé automatiquement par `run`, `test`, `validate-data`, `export-*`, `screenshot` : indispensable sur un dépôt fraîchement cloné)
 - `make run` : lance le jeu
@@ -22,7 +23,8 @@ Le `Makefile` est le seul point d'entrée pour les opérations système. Tenir c
 - `make generate-sounds` : génère les effets sonores et musiques d'ambiance (synthèse procédurale numpy + `ffmpeg`) dans `assets/audio/sfx/` et `assets/audio/music/`, sans écraser l'existant (`--force` pour régénérer)
 - `make export-linux` / `make export-windows` : exports dans `build/`
 - `make screenshot SCENE=… OUT=… ARGS=…` : capture le rendu réel d'une scène dans une fenêtre (outil de développement, ouvre brièvement une fenêtre)
-- `make package` : réexporte puis produit les archives distribuables (exécutable unique + licence + crédits + notice) et `SHA256SUMS` dans `dist/`
+- `make export-android` / `make export-macos` / `make export-web` : APK Android (arm64 + x86_64, aussi pour ChromeOS), application macOS universelle (zip, signature ad hoc), version web
+- `make package` : réexporte puis produit les archives distribuables (Linux, Windows, Android, macOS, ChromeOS ; licence + crédits + notice) et `SHA256SUMS` dans `dist/`
 
 ## Conventions de code
 

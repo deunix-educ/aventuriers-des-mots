@@ -425,3 +425,12 @@ Volume : 6 tableaux, 18 règles, 144 QCM, 72 corrections, 54 dictées (voix Pipe
 - **Indice qui donnait la réponse** (« avoir » avec « je ») reformulé.
 
 Les corrections et les dictées CE1/CE2 n'ont pas révélé d'autre problème ; les tests de doublons, quasi-doublons et de position de la bonne réponse sont verts. **Non vérifié** : relecture par un enseignant.
+
+**Plateformes et touche Entrée (0.9.0)**
+
+- **Entrée valide** : dans la dictée et dans les champs de correction, la touche Entrée équivaut au bouton « Valider ». L'hôte d'exercice ignore toute validation tant que le panneau de retour est ouvert (une seule réponse comptée par essai).
+- **Nouvelles cibles** : `make export-android` (APK arm64 + x86_64), `make export-macos` (application universelle, zip, signature ad hoc, non notariée), `make export-web` (Compatibility, sans threads). `make package` produit cinq archives.
+- **ChromeOS** : pas de cible propre au moteur ; l'archive regroupe l'APK (runtime Android) et la version web à servir en local. Le binaire Linux couvre aussi Crostini.
+- **Signature Android** : clé de débogage publique de Godot, via variables d'environnement (aucun secret dans le dépôt). Une publication sur un magasin demandera une vraie clé (`GODOT_ANDROID_KEYSTORE_RELEASE_*`).
+- **Réglage de projet** : import ETC2/ASTC activé (exigé par les exports mobile et macOS universel).
+- **Non vérifié** : aucune des trois nouvelles versions n'a été lancée sur un appareil. Le tactile (clavier virtuel Android pour les champs de saisie, taille des boutons), le stockage `user://` et l'audio sur Android/web restent à tester à la main.

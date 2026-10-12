@@ -75,3 +75,10 @@ Tout ce qui suit ne peut pas être vérifié sans écran (rendu, mise en page, a
 - Export macOS, Android, iOS : hors périmètre de cette version (voir prompt de lancement, Objectif).
 - Clavier virtuel tactile, formats d'écran mobile : hors périmètre de cette version.
 - Animations : aucune n'existe encore (interface statique assumée pour ce prototype).
+
+## Plateformes supplémentaires (0.9.0)
+
+- `make export-android` : APK structurellement vérifié (paquet, ABI arm64-v8a et x86_64, signature) ; **jamais installé** : à tester sur une tablette, notamment le clavier virtuel dans la dictée et les champs de correction, la taille des boutons au doigt, la sauvegarde et le son.
+- `make export-macos` : archive vérifiée (structure .app, signature ad hoc) ; **jamais lancée** (pas de Mac). Au premier lancement : clic droit > Ouvrir.
+- `make export-web` : fichiers générés ; **jamais ouvert dans un navigateur**. Servir `build/web/` avec `python3 -m http.server`, ouvrir dans Chrome, vérifier son (le navigateur exige un premier clic), sauvegarde et plein écran.
+- Touche Entrée : en dictée et en correction, Entrée valide ; une seconde pression sur Entrée pendant le retour ne doit pas compter une réponse de plus.

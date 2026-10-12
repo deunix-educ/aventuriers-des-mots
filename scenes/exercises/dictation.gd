@@ -30,6 +30,8 @@ func _ready() -> void:
 
     _replay_button.pressed.connect(_on_replay_pressed)
     _validate_button.pressed.connect(_on_validate_pressed)
+    # La touche Entree valide comme le bouton.
+    _text_edit.text_submitted.connect(func(_text: String) -> void: _on_validate_pressed())
 
 
 func load_exercise(dictation: Dictionary) -> void:

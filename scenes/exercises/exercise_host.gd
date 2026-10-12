@@ -24,6 +24,7 @@ var _attempt_number := 1
 var _completed_count := 0
 var _seen_exercise_ids: Array[String] = []
 var _outcomes: Array[String] = []
+var _feedback_open := false
 var _pending_outcome := ""
 
 @onready var _exercise_container: Control = %ExerciseContainer
@@ -155,6 +156,10 @@ func _on_dictation_submitted(submitted_text: String) -> void:
 
 
 func _handle_result(result: CorrectionResult) -> void:
+    # La touche Entree peut re-valider une saisie encore focalisee derriere le
+    # panneau de retour : une seule reponse est comptee par essai.
+    if _feedback_open:
+        return
     var support_level := AttemptFlow.SupportLevel.EXPLANATION
     var is_terminal := result.is_correct
 
@@ -183,6 +188,7 @@ func _show_feedback(
     result: CorrectionResult, support_level: AttemptFlow.SupportLevel, is_terminal: bool
 ) -> void:
     var feedback: Control = preload("res://scenes/ui/feedback_panel.tscn").instantiate()
+    _feedback_open = true
     _overlay_container.add_child(feedback)
     feedback.show_result(result, support_level)
     feedback.continue_pressed.connect(_on_feedback_continued.bind(feedback, is_terminal))
@@ -190,6 +196,7 @@ func _show_feedback(
 
 func _on_feedback_continued(feedback: Control, is_terminal: bool) -> void:
     feedback.queue_free()
+    _feedback_open = false
 
     if not is_terminal:
         _attempt_number += 1

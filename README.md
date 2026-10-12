@@ -2,7 +2,7 @@
 
 Jeu éducatif de français pour les CE1-CE2 (7-9 ans) : une aventure 2D hors ligne, avec une carte à explorer, un personnage guide, et des exercices de grammaire, d'orthographe et de dictées.
 
-Projet open source, en développement. Statut actuel : version 0.8.0, jouable hors ligne sur Linux et Windows — profils, sauvegardes (avec export et restauration dans l'espace adulte), étoiles et collection d'objets, sons et musique, réglages (volumes, taille du texte, animations), tableau de progrès pour l'adulte, trois types d'exercices (choix multiple, correction de phrase, dictée), CE1, CE2, CM1 et CM2 en trois tableaux chacun (homophones, verbes, orthographe des mots), 111 missions. Contenu pédagogique entièrement en brouillon (`draft`, à valider) et voix des dictées provisoires (voir `assets/CREDITS.md` ; voir `docs/specs/decisions.md` pour les décisions de cadrage et `docs/specs/cahier-des-charges.md` pour la spécification complète).
+Projet open source, en développement. Statut actuel : version 0.9.0, jouable hors ligne sur Linux, Windows, macOS, Android et ChromeOS (versions macOS, Android et web non testées sur matériel) — profils, sauvegardes (avec export et restauration dans l'espace adulte), étoiles et collection d'objets, sons et musique, réglages (volumes, taille du texte, animations), tableau de progrès pour l'adulte, trois types d'exercices (choix multiple, correction de phrase, dictée), CE1, CE2, CM1 et CM2 en trois tableaux chacun (homophones, verbes, orthographe des mots), 111 missions. Contenu pédagogique entièrement en brouillon (`draft`, à valider) et voix des dictées provisoires (voir `assets/CREDITS.md` ; voir `docs/specs/decisions.md` pour les décisions de cadrage et `docs/specs/cahier-des-charges.md` pour la spécification complète).
 
 ## Pile technique
 
@@ -29,7 +29,8 @@ make run     # lance le jeu
 | `make check` | lint + validate-data + test, à passer avant chaque commit |
 | `make content-review` | régénère `docs/review/content-review.md` (document de validation du contenu) |
 | `make generate-dictation-audio` | génère l'audio provisoire des dictées |
-| `make export-linux` / `make export-windows` | exports dans `build/` |
+| `make help` | liste les commandes disponibles |
+| `make export-linux` / `make export-windows` / `make export-android` / `make export-macos` / `make export-web` | exports dans `build/` |
 | `make package` | produit les archives distribuables dans `dist/` (exécutable unique + licence + crédits) |
 
 ## Structure

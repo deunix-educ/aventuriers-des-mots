@@ -2,7 +2,7 @@
 
 An educational French-language game for 7-9 year olds (French grades CE1-CE2): an offline 2D adventure with an explorable map, a guide character, and grammar, spelling, and dictation exercises.
 
-Open source project, in development. Current status: version 0.8.0, playable offline on Linux and Windows — profiles, saves (with export and restore in the adult area), stars and an item collection, sound effects and music, settings (volumes, text size, animations), a progress dashboard for adults, three exercise types (multiple choice, sentence correction, dictation), CE1, CE2, CM1 and CM2 in three boards each (homophones, verbs, word spelling), 111 missions. All pedagogical content is still `draft` (awaiting validation) and dictation voices are placeholders (see `assets/CREDITS.md`; see `docs/specs/decisions.md` for scoping decisions and `docs/specs/cahier-des-charges.md` for the full specification, both in French — this is a French-curriculum product).
+Open source project, in development. Current status: version 0.9.0, playable offline on Linux, Windows, macOS, Android and ChromeOS (macOS, Android and web builds untested on real hardware) — profiles, saves (with export and restore in the adult area), stars and an item collection, sound effects and music, settings (volumes, text size, animations), a progress dashboard for adults, three exercise types (multiple choice, sentence correction, dictation), CE1, CE2, CM1 and CM2 in three boards each (homophones, verbs, word spelling), 111 missions. All pedagogical content is still `draft` (awaiting validation) and dictation voices are placeholders (see `assets/CREDITS.md`; see `docs/specs/decisions.md` for scoping decisions and `docs/specs/cahier-des-charges.md` for the full specification, both in French — this is a French-curriculum product).
 
 ## Tech stack
 
@@ -29,7 +29,8 @@ make run     # runs the game
 | `make check` | lint + validate-data + test, must pass before every commit |
 | `make content-review` | regenerates `docs/review/content-review.md` (content validation document) |
 | `make generate-dictation-audio` | generates the placeholder dictation audio |
-| `make export-linux` / `make export-windows` | exports into `build/` |
+| `make help` | lists the available commands |
+| `make export-linux` / `make export-windows` / `make export-android` / `make export-macos` / `make export-web` | exports into `build/` |
 | `make package` | builds the distributable archives in `dist/` (single executable + license + credits) |
 
 ## Structure

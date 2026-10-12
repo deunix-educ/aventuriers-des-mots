@@ -45,6 +45,8 @@ func _on_token_toggled(pressed: bool, index: int) -> void:
         if not _correction_edits.has(index):
             var edit := LineEdit.new()
             edit.placeholder_text = UIText.get_text("sentence_correction.correction_placeholder")
+            # La touche Entree valide comme le bouton.
+            edit.text_submitted.connect(func(_text: String) -> void: _on_validate_pressed())
             _corrections_box.add_child(edit)
             _correction_edits[index] = edit
     elif _correction_edits.has(index):
