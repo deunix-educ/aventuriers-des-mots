@@ -9,7 +9,7 @@
   "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
   "tokens": [
     {
-      "text": "Paul",
+      "text": "Sarah",
       "correct": true
     },
     {
@@ -19,11 +19,11 @@
       "rule_id": "regle_homophone_et_est"
     },
     {
-      "text": "Marie",
+      "text": "Tom",
       "correct": true
     },
     {
-      "text": "jouent",
+      "text": "dessinent",
       "correct": true
     },
     {

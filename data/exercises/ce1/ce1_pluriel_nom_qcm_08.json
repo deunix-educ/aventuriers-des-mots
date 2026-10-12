@@ -7,11 +7,17 @@
   "difficulty": 3,
   "type": "multiple_choice",
   "instruction": "Choisis le bon mot.",
-  "question": "Les jolies ... sentent bon.",
-  "answers": ["fleur", "fleurs"],
+  "question": "Les belles ... brillent dans le ciel.",
+  "answers": [
+    "étoile",
+    "étoiles"
+  ],
   "correct_answer": 1,
   "hint": "Cherche le déterminant, même si un autre mot s'intercale avant le nom.",
-  "explanation": "« Les » indique le pluriel, même si l'adjectif « jolies » s'intercale avant le nom : il faut écrire « fleurs ».",
-  "review_tags": ["pluriel", "pluriel_nom"],
+  "explanation": "« Les » indique le pluriel, même si l'adjectif « belles » s'intercale avant le nom : il faut écrire « étoiles ».",
+  "review_tags": [
+    "pluriel",
+    "pluriel_nom"
+  ],
   "review_status": "draft"
 }

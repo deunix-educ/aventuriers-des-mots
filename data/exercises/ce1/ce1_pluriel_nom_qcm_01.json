@@ -7,11 +7,17 @@
   "difficulty": 1,
   "type": "multiple_choice",
   "instruction": "Choisis le bon mot.",
-  "question": "Les ... jouent dans le jardin.",
-  "answers": ["chat", "chats"],
+  "question": "Les ... courent dans la cour.",
+  "answers": [
+    "enfant",
+    "enfants"
+  ],
   "correct_answer": 1,
-  "hint": "Le déterminant « les » indique plusieurs chats.",
-  "explanation": "Pour former le pluriel d'un nom, on ajoute un -s à la fin : « chats ».",
-  "review_tags": ["pluriel", "pluriel_nom"],
+  "hint": "Le déterminant « les » indique plusieurs enfants.",
+  "explanation": "Pour former le pluriel d'un nom, on ajoute un -s à la fin : « enfants ».",
+  "review_tags": [
+    "pluriel",
+    "pluriel_nom"
+  ],
   "review_status": "draft"
 }

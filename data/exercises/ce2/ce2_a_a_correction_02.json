@@ -9,11 +9,11 @@
   "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
   "tokens": [
     {
-      "text": "Nous",
+      "text": "Ils",
       "correct": true
     },
     {
-      "text": "allons",
+      "text": "vont",
       "correct": true
     },
     {
@@ -23,11 +23,7 @@
       "rule_id": "regle_homophone_a_a"
     },
     {
-      "text": "la",
-      "correct": true
-    },
-    {
-      "text": "piscine.",
+      "text": "l'école.",
       "correct": true
     }
   ],

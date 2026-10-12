@@ -7,11 +7,17 @@
   "difficulty": 1,
   "type": "multiple_choice",
   "instruction": "Choisis le bon déterminant.",
-  "question": "... chat dort.",
-  "answers": ["Le", "La"],
+  "question": "... lapin dort.",
+  "answers": [
+    "Le",
+    "La"
+  ],
   "correct_answer": 0,
-  "hint": "Le nom « chat » est masculin.",
-  "explanation": "« Chat » est un nom masculin : il faut le déterminant masculin « Le ».",
-  "review_tags": ["genre", "accord_determinant"],
+  "hint": "Le nom « lapin » est masculin.",
+  "explanation": "« Lapin » est un nom masculin : il faut le déterminant masculin « Le ».",
+  "review_tags": [
+    "genre",
+    "accord_determinant"
+  ],
   "review_status": "draft"
 }

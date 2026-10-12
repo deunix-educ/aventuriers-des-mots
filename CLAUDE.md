@@ -11,6 +11,7 @@ Jeu éducatif de français CE1–CE2 (7–9 ans), aventure 2D, hors ligne, Godot
 Le `Makefile` est le seul point d'entrée pour les opérations système. Tenir cette liste à jour.
 
 - `make setup` : installe l'outillage (lint, tests, modèles d'export)
+- `make import` : importe les ressources dans `.godot/` (deux passes ; appelé automatiquement par `run`, `test`, `validate-data`, `export-*`, `screenshot` : indispensable sur un dépôt fraîchement cloné)
 - `make run` : lance le jeu
 - `make lint` / `make format` : analyse statique et formatage
 - `make validate-data` : valide tous les JSON de `data/` contre leurs schémas

@@ -105,11 +105,11 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
 
 ### Choix multiples
 
-- **ce1_accord_determinant_qcm_01** (difficulte 1) : ... chat dort.
+- **ce1_accord_determinant_qcm_01** (difficulte 1) : ... lapin dort.
   - Reponses : Le, La
   - Reponse attendue : Le
-  - Indice : Le nom « chat » est masculin.
-  - Explication : « Chat » est un nom masculin : il faut le déterminant masculin « Le ».
+  - Indice : Le nom « lapin » est masculin.
+  - Explication : « Lapin » est un nom masculin : il faut le déterminant masculin « Le ».
   - Statut : draft
 - **ce1_accord_determinant_qcm_02** (difficulte 1) : ... fleur sent bon.
   - Reponses : Le, La
@@ -117,11 +117,11 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
   - Indice : Le nom « fleur » est féminin.
   - Explication : « Fleur » est un nom féminin : il faut le déterminant féminin « La ».
   - Statut : draft
-- **ce1_accord_determinant_qcm_03** (difficulte 1) : ... chats dorment.
+- **ce1_accord_determinant_qcm_03** (difficulte 1) : ... oiseaux chantent.
   - Reponses : Le, Les
   - Reponse attendue : Les
-  - Indice : Le nom « chats » est au pluriel.
-  - Explication : « Chats » est au pluriel : il faut le déterminant pluriel « Les ».
+  - Indice : Le nom « oiseaux » est au pluriel.
+  - Explication : « Oiseaux » est au pluriel : il faut le déterminant pluriel « Les ».
   - Statut : draft
 - **ce1_accord_determinant_qcm_04** (difficulte 1) : ... fleurs sentent bon.
   - Reponses : La, Les
@@ -168,9 +168,9 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
   - Indice : Le nom « chats » est au pluriel.
   - Explication : « Chats » est au pluriel : il faut le déterminant pluriel « Les ».
   - Statut : draft
-- **ce1_accord_determinant_correction_04** (difficulte 3) : [Le -> Les] petites fleurs sont jolies.
+- **ce1_accord_determinant_correction_04** (difficulte 3) : [Le -> Les] grandes maisons sont anciennes.
   - Indice : Cherche le nom auquel le déterminant se rapporte, même si un autre mot s'intercale.
-  - Explication : Le déterminant se rapporte à « fleurs », qui est féminin pluriel, même si l'adjectif « petites » s'intercale : il faut écrire « Les ».
+  - Explication : Le déterminant se rapporte à « maisons », qui est féminin pluriel, même si l'adjectif « grandes » s'intercale : il faut écrire « Les ».
   - Statut : draft
 
 ### Dictees
@@ -198,7 +198,7 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
 
 ### Choix multiples
 
-- **ce2_a_a_qcm_01** (difficulte 1) : Léa ... un chat.
+- **ce2_a_a_qcm_01** (difficulte 1) : Max ... un vélo.
   - Reponses : a, à
   - Reponse attendue : a
   - Indice : Essaie de remplacer par « avait ».
@@ -253,7 +253,7 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
   - Indice : Essaie de remplacer par « avait ».
   - Explication : « avait » convient ici : c'est le verbe avoir, on écrit « a » sans accent.
   - Statut : draft
-- **ce2_a_a_correction_02** (difficulte 1) : Nous allons [a -> à] la piscine.
+- **ce2_a_a_correction_02** (difficulte 1) : Ils vont [a -> à] l'école.
   - Indice : Essaie de remplacer par « avait ».
   - Explication : « avait » ne convient pas ici : c'est le petit mot « à », avec un accent.
   - Statut : draft
@@ -291,7 +291,7 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
 
 ### Choix multiples
 
-- **ce2_et_est_qcm_01** (difficulte 1) : Le chat ... noir.
+- **ce2_et_est_qcm_01** (difficulte 1) : Le ciel ... bleu.
   - Reponses : et, est
   - Reponse attendue : est
   - Indice : Essaie de remplacer par « était ».
@@ -346,7 +346,7 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
   - Indice : Essaie de remplacer par « était ».
   - Explication : « était » convient ici : c'est le verbe être, on écrit « est ».
   - Statut : draft
-- **ce2_et_est_correction_02** (difficulte 1) : Paul [est -> et] Marie jouent ensemble.
+- **ce2_et_est_correction_02** (difficulte 1) : Sarah [est -> et] Tom dessinent ensemble.
   - Indice : Essaie de remplacer par « était ».
   - Explication : « était » ne convient pas ici, mais « et puis » convient : c'est « et », qui relie deux mots.
   - Statut : draft
@@ -384,13 +384,13 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
 
 ### Choix multiples
 
-- **ce2_on_ont_qcm_01** (difficulte 1) : ... joue dehors.
+- **ce2_on_ont_qcm_01** (difficulte 1) : ... chante une chanson.
   - Reponses : On, Ont
   - Reponse attendue : On
   - Indice : Essaie de remplacer par « avaient », ou par « il ».
   - Explication : « avaient » ne convient pas ici, mais « il » convient : c'est le pronom « on ».
   - Statut : draft
-- **ce2_on_ont_qcm_02** (difficulte 1) : Les enfants ... faim.
+- **ce2_on_ont_qcm_02** (difficulte 1) : Les oiseaux ... froid.
   - Reponses : on, ont
   - Reponse attendue : ont
   - Indice : Essaie de remplacer par « avaient », ou par « il ».
@@ -477,7 +477,7 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
 
 ### Choix multiples
 
-- **ce2_son_sont_qcm_01** (difficulte 1) : Les chats ... gentils.
+- **ce2_son_sont_qcm_01** (difficulte 1) : Les élèves ... contents.
   - Reponses : son, sont
   - Reponse attendue : sont
   - Indice : Essaie de remplacer par « étaient », ou par « mon ».
@@ -495,7 +495,7 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
   - Indice : Essaie de remplacer par « étaient », ou par « mon ».
   - Explication : « étaient » convient ici : c'est le verbe être, on écrit « sont ».
   - Statut : draft
-- **ce2_son_sont_qcm_04** (difficulte 1) : Paul range ... cartable.
+- **ce2_son_sont_qcm_04** (difficulte 1) : Julie ouvre ... cahier.
   - Reponses : son, sont
   - Reponse attendue : son
   - Indice : Essaie de remplacer par « étaient », ou par « mon ».
@@ -570,11 +570,11 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
 
 ### Choix multiples
 
-- **ce1_pluriel_nom_qcm_01** (difficulte 1) : Les ... jouent dans le jardin.
-  - Reponses : chat, chats
-  - Reponse attendue : chats
-  - Indice : Le déterminant « les » indique plusieurs chats.
-  - Explication : Pour former le pluriel d'un nom, on ajoute un -s à la fin : « chats ».
+- **ce1_pluriel_nom_qcm_01** (difficulte 1) : Les ... courent dans la cour.
+  - Reponses : enfant, enfants
+  - Reponse attendue : enfants
+  - Indice : Le déterminant « les » indique plusieurs enfants.
+  - Explication : Pour former le pluriel d'un nom, on ajoute un -s à la fin : « enfants ».
   - Statut : draft
 - **ce1_pluriel_nom_qcm_02** (difficulte 1) : Des ... poussent dans le jardin.
   - Reponses : fleur, fleurs
@@ -594,11 +594,11 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
   - Indice : Le déterminant « des » indique plusieurs voitures.
   - Explication : Pour former le pluriel d'un nom, on ajoute un -s à la fin : « voitures ».
   - Statut : draft
-- **ce1_pluriel_nom_qcm_05** (difficulte 2) : Le ... est sur la table.
-  - Reponses : cahier, cahiers
-  - Reponse attendue : cahier
-  - Indice : Le déterminant « le » indique un seul cahier.
-  - Explication : « Le » indique un seul objet : le nom reste au singulier, sans -s : « cahier ».
+- **ce1_pluriel_nom_qcm_05** (difficulte 2) : Le ... est dans le sac.
+  - Reponses : livre, livres
+  - Reponse attendue : livre
+  - Indice : Le déterminant « le » indique un seul livre.
+  - Explication : « Le » indique un seul objet : le nom reste au singulier, sans -s : « livre ».
   - Statut : draft
 - **ce1_pluriel_nom_qcm_06** (difficulte 2) : La ... est ouverte.
   - Reponses : porte, portes
@@ -612,11 +612,11 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
   - Indice : Cherche le déterminant, même si un autre mot s'intercale avant le nom.
   - Explication : « Les » indique le pluriel, même si l'adjectif « petits » s'intercale avant le nom : il faut écrire « chiens ».
   - Statut : draft
-- **ce1_pluriel_nom_qcm_08** (difficulte 3) : Les jolies ... sentent bon.
-  - Reponses : fleur, fleurs
-  - Reponse attendue : fleurs
+- **ce1_pluriel_nom_qcm_08** (difficulte 3) : Les belles ... brillent dans le ciel.
+  - Reponses : étoile, étoiles
+  - Reponse attendue : étoiles
   - Indice : Cherche le déterminant, même si un autre mot s'intercale avant le nom.
-  - Explication : « Les » indique le pluriel, même si l'adjectif « jolies » s'intercale avant le nom : il faut écrire « fleurs ».
+  - Explication : « Les » indique le pluriel, même si l'adjectif « belles » s'intercale avant le nom : il faut écrire « étoiles ».
   - Statut : draft
 
 ### Corrections de phrase
