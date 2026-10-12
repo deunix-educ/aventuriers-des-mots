@@ -22,6 +22,7 @@ for arg in "$@"; do
 done
 
 fail() { echo "ERREUR : $*" >&2; exit 1; }
+trap 'echo "ERREUR : arret inattendu a la ligne ${LINENO} (code $?)" >&2' ERR
 
 VERSION="$(sed -n 's/^config\/version="\(.*\)"/\1/p' project.godot)"
 [ -n "${VERSION}" ] || fail "config/version absent de project.godot"

@@ -21,7 +21,15 @@ sed -i \
     export_presets.cfg
 
 rm -rf build dist
-make export-linux export-windows export-android export-macos export-web >/dev/null
+# Les journaux d'export sont conserves ; en cas d'echec on en montre la fin au
+# lieu de s'arreter sans un mot.
+EXPORT_LOG="$(mktemp)"
+trap 'rm -f "${EXPORT_LOG}"' EXIT
+if ! make export-linux export-windows export-android export-macos export-web >"${EXPORT_LOG}" 2>&1; then
+    echo "ERREUR : un export a echoue. Fin du journal :" >&2
+    tail -n 25 "${EXPORT_LOG}" >&2
+    exit 1
+fi
 
 write_notice() {
     cat > "$1/LISEZMOI.txt" <<NOTICE
