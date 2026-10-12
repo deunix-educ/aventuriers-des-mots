@@ -7,14 +7,14 @@
   "difficulty": 3,
   "type": "multiple_choice",
   "instruction": "Choisis le bon mot.",
-  "question": "Les grands ... volent haut.",
+  "question": "Les grands ... se balancent dans le vent.",
   "answers": [
-    "oiseau",
-    "oiseaux"
+    "arbres",
+    "arbre"
   ],
-  "correct_answer": 1,
+  "correct_answer": 0,
   "hint": "Cherche le déterminant, même si un autre mot s'intercale avant le nom.",
-  "explanation": "« Les » indique le pluriel, même si l'adjectif « grands » s'intercale avant le nom : il faut écrire « oiseaux ».",
+  "explanation": "« Les » indique le pluriel, même si l'adjectif « grands » s'intercale avant le nom : il faut écrire « arbres ».",
   "review_tags": [
     "pluriel",
     "pluriel_nom"

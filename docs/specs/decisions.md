@@ -416,3 +416,12 @@ Volume : 6 tableaux, 18 règles, 144 QCM, 72 corrections, 54 dictées (voix Pipe
 - **Énoncé de règle incomplet** : « travail → travaux » ajouté à la règle des pluriels en -aux.
 
 **Non vérifié** : lecture faite par Claude, pas par un enseignant ; l'ambiguïté résiduelle possible (ex. « marron » parfois accordé dans l'usage) est assumée au profit de la norme.
+
+**Relecture CE1/CE2 (0.8.3)** — même audit que pour les CM, sur les 6 tableaux CE1 et CE2 (QCM, corrections, dictées, règles). Trouvé et corrigé :
+
+- **« Le arbre » (CE1, accord du déterminant)** : l'énoncé « ... arbre est grand. » avec les réponses Le/La n'avait aucune bonne réponse (il faut « l'arbre »). Remplacé par « ... fromage est délicieux. ». Même défaut, de la même famille, dans « La ... du volcan » (CM2, éruption) devenu « L'... du volcan ». Le garde-fou d'élision ne lisait pas les phrases à trous : il reconstitue maintenant la phrase correcte (blanc rempli, mot fautif corrigé) avant de la contrôler.
+- **Règle g/ge/gu inexacte** : on écrit « ge » devant a et o (pas u) pour garder le son doux ; énoncé corrigé.
+- **Pluriel en -x dans la règle du pluriel en -s** (CE1) : « oiseaux » remplacé par « arbres » (les pluriels en -aux/-eaux sont l'objet du CM1).
+- **Indice qui donnait la réponse** (« avoir » avec « je ») reformulé.
+
+Les corrections et les dictées CE1/CE2 n'ont pas révélé d'autre problème ; les tests de doublons, quasi-doublons et de position de la bonne réponse sont verts. **Non vérifié** : relecture par un enseignant.

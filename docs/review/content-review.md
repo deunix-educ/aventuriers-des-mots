@@ -141,11 +141,11 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
   - Indice : Le nom « fleur » est féminin.
   - Explication : « Fleur » est un nom féminin : il faut le déterminant féminin « une ».
   - Statut : draft
-- **ce1_accord_determinant_qcm_07** (difficulte 3) : ... arbre est grand.
+- **ce1_accord_determinant_qcm_07** (difficulte 3) : ... fromage est délicieux.
   - Reponses : Le, La
   - Reponse attendue : Le
-  - Indice : « Arbre » se termine par un -e, mais il est masculin.
-  - Explication : « Arbre » est un nom masculin, même s'il se termine par -e : il faut le déterminant masculin « Le ».
+  - Indice : « Fromage » se termine par un -e, mais il est masculin.
+  - Explication : « Fromage » est un nom masculin, même s'il se termine par -e : il faut le déterminant masculin « Le ».
   - Statut : draft
 - **ce1_accord_determinant_qcm_08** (difficulte 3) : ... cabane est grande.
   - Reponses : Le, La
@@ -1213,7 +1213,7 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
 
 ## regle_g_ge_gu (CE2, orthographe)
 
-**Enonce** : Devant a, o et u, on écrit « ge » pour garder le son doux [ʒ] (nous mangeons). Devant e et i, on écrit « gu » pour le son dur [g] (une guitare).
+**Enonce** : Devant a et o, on écrit « ge » pour garder le son doux [ʒ] (nous mangeons). Devant e et i, on écrit « gu » pour le son dur [g] (une guitare).
 
 **Exemple** : Nous mangeons. Une guitare. Un garage.
 
@@ -2652,11 +2652,11 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
   - Indice : Le déterminant « la » indique une seule porte.
   - Explication : « La » indique un seul objet : le nom reste au singulier, sans -s : « porte ».
   - Statut : draft
-- **ce1_pluriel_nom_qcm_07** (difficulte 3) : Les grands ... volent haut.
-  - Reponses : oiseau, oiseaux
-  - Reponse attendue : oiseaux
+- **ce1_pluriel_nom_qcm_07** (difficulte 3) : Les grands ... se balancent dans le vent.
+  - Reponses : arbres, arbre
+  - Reponse attendue : arbres
   - Indice : Cherche le déterminant, même si un autre mot s'intercale avant le nom.
-  - Explication : « Les » indique le pluriel, même si l'adjectif « grands » s'intercale avant le nom : il faut écrire « oiseaux ».
+  - Explication : « Les » indique le pluriel, même si l'adjectif « grands » s'intercale avant le nom : il faut écrire « arbres ».
   - Statut : draft
 - **ce1_pluriel_nom_qcm_08** (difficulte 3) : Les belles ... brillent dans le ciel.
   - Reponses : étoile, étoiles
@@ -3117,7 +3117,7 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
   - Indice : Ce mot a deux s : -ssion.
   - Explication : Le mot « impression » s'écrit avec -ssion.
   - Statut : draft
-- **cm2_tion_sion_qcm_07** (difficulte 3) : La ... du volcan a duré trois jours.
+- **cm2_tion_sion_qcm_07** (difficulte 3) : L'... du volcan a duré trois jours.
   - Reponses : érussion, érupsion, éruption
   - Reponse attendue : éruption
   - Indice : Le son [sjɔ̃] s'écrit ici avec -ption.
@@ -3177,7 +3177,7 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
 - **ce1_avoir_qcm_01** (difficulte 1) : J'... une grande trousse.
   - Reponses : a, as, ai
   - Reponse attendue : ai
-  - Indice : Avec « je », le verbe « avoir » s'écrit « ai ».
+  - Indice : Avec « je », le verbe « avoir » est très court et ne finit pas par -s.
   - Explication : Avec « je », on écrit « ai » : j'ai.
   - Statut : draft
 - **ce1_avoir_qcm_02** (difficulte 1) : Tu ... mal à la tête.

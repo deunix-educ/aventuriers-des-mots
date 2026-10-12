@@ -3,7 +3,7 @@
   "level": "CE2",
   "domain": "orthographe",
   "skill": "lettres_et_mots",
-  "statement": "Devant a, o et u, on écrit « ge » pour garder le son doux [ʒ] (nous mangeons). Devant e et i, on écrit « gu » pour le son dur [g] (une guitare).",
+  "statement": "Devant a et o, on écrit « ge » pour garder le son doux [ʒ] (nous mangeons). Devant e et i, on écrit « gu » pour le son dur [g] (une guitare).",
   "example": "Nous mangeons. Une guitare. Un garage.",
   "review_status": "draft"
 }

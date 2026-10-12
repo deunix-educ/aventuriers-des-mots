@@ -61,6 +61,28 @@ func test_no_missing_elision_in_game_texts() -> void:
     assert_eq(_problems.size(), 0, "Elisions manquantes : %s" % "\n".join(_problems))
 
 
+func test_no_missing_elision_once_the_blank_or_the_error_is_filled_in() -> void:
+    # Une phrase a trous ou a corriger n'est pas verifiable mot a mot : on
+    # reconstitue la phrase correcte (« ... arbre » + « Le » = « Le arbre »).
+    _problems.clear()
+    for path in _json_files("res://data/exercises"):
+        var data := _read(path)
+        var sentence := ""
+        if data.get("type", "") == "multiple_choice":
+            var answers: Array = data["answers"]
+            sentence = str(data["question"]).replace(
+                "...", str(answers[int(data["correct_answer"])])
+            )
+        elif data.get("type", "") == "sentence_correction":
+            var words: Array[String] = []
+            for token: Dictionary in data["tokens"]:
+                words.append(token["text"] if token["correct"] else token["expected"])
+            sentence = " ".join(words)
+        if not sentence.is_empty():
+            _check_text(sentence, "%s (phrase reconstituee)" % data["id"])
+    assert_eq(_problems.size(), 0, "Elisions manquantes : %s" % "\n".join(_problems))
+
+
 func test_detector_catches_a_missing_elision() -> void:
     _problems.clear()
     _check_text("le arbre est grand", "exemple")
@@ -110,3 +132,22 @@ func _check_text(text: String, where: String) -> void:
         if NO_ELISION_WORDS.has(next_word):
             continue
         _problems.append("%s : « %s »" % [where, match.get_string(0)])
+
+
+func _json_files(path: String) -> Array[String]:
+    var found: Array[String] = []
+    var dir := DirAccess.open(path)
+    if dir == null:
+        return found
+    for sub in dir.get_directories():
+        found.append_array(_json_files(path.path_join(sub)))
+    for file_name in dir.get_files():
+        if file_name.ends_with(".json"):
+            found.append(path.path_join(file_name))
+    return found
+
+
+func _read(path: String) -> Dictionary:
+    var file := FileAccess.open(path, FileAccess.READ)
+    var parsed: Variant = JSON.parse_string(file.get_as_text())
+    return parsed if typeof(parsed) == TYPE_DICTIONARY else {}
