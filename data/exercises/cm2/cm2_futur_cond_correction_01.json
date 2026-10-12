@@ -23,7 +23,7 @@
     {
       "text": "j'achèterai",
       "correct": false,
-      "expected": "achèterais",
+      "expected": "j'achèterais",
       "rule_id": "regle_futur_conditionnel"
     },
     {

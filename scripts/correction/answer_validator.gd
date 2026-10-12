@@ -48,7 +48,7 @@ static func validate_sentence_correction(
             errors.append(_missed_error(i, token, exercise))
         elif is_faulty and was_selected:
             var submitted: String = corrections.get(i, "")
-            if not _matches_expected(submitted, token["expected"]):
+            if not _matches_expected(submitted, token["expected"], token["text"]):
                 errors.append(_wrong_correction_error(i, submitted, token, exercise))
         elif not is_faulty and was_selected:
             errors.append(_false_positive_error(i, token, exercise))
@@ -68,13 +68,31 @@ static func validate_sentence_correction(
 ## Compare la correction saisie a celle attendue en ignorant les differences
 ## incidentes (majuscule/minuscule, apostrophe typographique, espaces,
 ## accents decomposes) : ce n'est pas la casse qui est evaluee ici, c'est
-## l'accord. Une reponse ambigue n'est pas declaree fausse automatiquement
-## (CLAUDE.md, invariants pedagogiques).
-static func _matches_expected(submitted: String, expected: String) -> bool:
-    return (
-        TextNormalizer.normalize(submitted).to_lower()
-        == TextNormalizer.normalize(expected).to_lower()
-    )
+## l'accord. Quand le mot touche porte une elision (« j'achèterai »), l'enfant
+## peut taper le mot entier (« j'achèterais ») ou seulement le verbe
+## (« achèterais ») : une reponse ambigue n'est pas declaree fausse
+## automatiquement (CLAUDE.md, invariants pedagogiques).
+static func _matches_expected(submitted: String, expected: String, token_text: String = "") -> bool:
+    var typed := TextNormalizer.normalize(submitted).to_lower()
+    for form in _accepted_forms(expected, token_text):
+        if typed == TextNormalizer.normalize(form).to_lower():
+            return true
+    return false
+
+
+## Formes acceptees : l'attendu, sans son prefixe d'elision (« j' », « l' »...),
+## ou avec le prefixe du mot touche quand l'attendu n'en porte pas.
+static func _accepted_forms(expected: String, token_text: String) -> Array[String]:
+    var forms: Array[String] = [expected]
+    var normalized_expected := TextNormalizer.normalize(expected)
+    var normalized_token := TextNormalizer.normalize(token_text)
+    var expected_cut := normalized_expected.find("'")
+    if expected_cut != -1:
+        forms.append(normalized_expected.substr(expected_cut + 1))
+    var token_cut := normalized_token.find("'")
+    if token_cut != -1 and expected_cut == -1:
+        forms.append(normalized_token.substr(0, token_cut + 1) + normalized_expected)
+    return forms
 
 
 static func _missed_error(index: int, token: Dictionary, exercise: Dictionary) -> Dictionary:

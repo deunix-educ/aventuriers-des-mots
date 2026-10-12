@@ -79,3 +79,30 @@ func test_correct_answer_position_is_not_always_the_same() -> void:
             1,
             "bonne reponse toujours au meme rang : %s" % rule_id
         )
+
+
+func test_elided_wrong_tokens_keep_the_same_prefix_unless_the_word_changes() -> void:
+    # Regression : « j'achèterai » avait pour attendu « achèterais » (sans « j' »),
+    # donc la reponse naturelle « j'achèterais » etait refusee. Un mot touche avec
+    # elision doit avoir un attendu qui garde le prefixe d'elision, sauf si c'est
+    # l'elision elle-meme qui est l'objet de l'exercice (la/l'a, qu'elle/quelle...).
+    for rule_id: String in ExerciseEngine._rules:
+        for exercise: Dictionary in ExerciseEngine._candidates_for(rule_id, "sentence_correction"):
+            for token: Dictionary in exercise["tokens"]:
+                if token.get("correct", true):
+                    continue
+                var text: String = token["text"]
+                var expected: String = token["expected"]
+                if not text.contains("'") or expected.contains("'"):
+                    continue
+                # Le mot change de nature (ex. « Qu'elle » -> « Quelle ») : seules
+                # les corrections ou l'elision est conservee sont concernees.
+                var prefix := text.split("'")[0]
+                var stem := text.substr(prefix.length() + 1)
+                assert_false(
+                    expected.to_lower().begins_with(stem.substr(0, 3).to_lower()),
+                    (
+                        "%s : attendu « %s » sans le prefixe de « %s »"
+                        % [exercise["id"], expected, text]
+                    )
+                )

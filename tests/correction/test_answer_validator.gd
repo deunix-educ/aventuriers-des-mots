@@ -113,3 +113,39 @@ func test_sentence_correction_accepts_decomposed_accented_correction() -> void:
         exercise_with_accent, [0], {0: "école"}
     )
     assert_true(result.is_correct)
+
+
+func _elision_exercise() -> Dictionary:
+    return {
+        "rule_id": "regle_x",
+        "hint": "indice",
+        "explanation": "explication",
+        "tokens":
+        [
+            {"text": "Si", "correct": true},
+            {"text": "j'achèterai", "correct": false, "expected": "j'achèterais"},
+            {"text": "une", "correct": true},
+        ],
+    }
+
+
+func test_elided_token_accepts_the_whole_word_or_only_the_verb() -> void:
+    var exercise := _elision_exercise()
+    for typed in ["j'achèterais", "J'achèterais", "j’achèterais", "achèterais", " achèterais "]:
+        var result := AnswerValidator.validate_sentence_correction(exercise, [1], {1: typed})
+        assert_true(result.is_correct, "« %s » doit etre accepte" % typed)
+
+
+func test_elided_token_still_rejects_a_wrong_correction() -> void:
+    var exercise := _elision_exercise()
+    for typed in ["j'achèterai", "achèterai", "achetterais", ""]:
+        var result := AnswerValidator.validate_sentence_correction(exercise, [1], {1: typed})
+        assert_false(result.is_correct, "« %s » ne doit pas etre accepte" % typed)
+
+
+func test_expected_without_elision_accepts_the_prefix_of_the_touched_word() -> void:
+    var exercise := _elision_exercise()
+    exercise["tokens"][1]["expected"] = "achèterais"
+    for typed in ["achèterais", "j'achèterais"]:
+        var result := AnswerValidator.validate_sentence_correction(exercise, [1], {1: typed})
+        assert_true(result.is_correct, "« %s » doit etre accepte" % typed)
