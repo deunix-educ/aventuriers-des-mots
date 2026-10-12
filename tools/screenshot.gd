@@ -2,7 +2,7 @@ extends SceneTree
 ## Outil de developpement : charge une scene, attend quelques images puis
 ## enregistre le rendu en PNG. Usage (fenetre reelle, pas --headless) :
 ##   godot --path . --resolution 1152x648 -s res://tools/screenshot.gd -- \
-##       res://scenes/world/world_map.tscn out.png [CE1|CE2] [mission_id]
+##       res://scenes/world/world_map.tscn out.png [CE1|CE2|CM1|CM2] [mission_id]
 ## Cree un profil temporaire pour que les scenes qui lisent la progression
 ## fonctionnent, puis le supprime.
 

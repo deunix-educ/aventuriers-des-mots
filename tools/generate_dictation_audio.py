@@ -40,7 +40,7 @@ VOICE_NAME = "fr_FR-siwis-medium"
 VOICE_BASE_URL = "https://huggingface.co/rhasspy/piper-voices/resolve/main/fr/fr_FR/siwis/medium"
 
 # > 1.0 ralentit legerement le debit (duree des phonemes etiree), plus
-# confortable pour un enfant de 7-9 ans qu'une diction par defaut pensee
+# confortable pour un enfant de 7-11 ans qu'une diction par defaut pensee
 # pour un adulte.
 LENGTH_SCALE = 1.1
 

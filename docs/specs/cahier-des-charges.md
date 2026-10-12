@@ -1,12 +1,12 @@
 Cahier des charges fonctionnel et technique
-Jeu éducatif de français CE1–CE2 — Godot 4 / GDScript
-Jeu éducatif CE1-CE2 sous Godot 4 et GDScript, fondé sur les règles du BLED. Style : aventure 2D avec carte, personnages et missions. Exercices : grammaire, orthographe et dictées. Public : plusieurs profils d'enfants sur appareil familial. Fonctionnement hors ligne : oui. Prévoir architecture modulaire, progression pédagogique CE1/CE2, système de correction explicative, sauvegarde et export Linux, Windows, macOS, Android et iOS.
+Jeu éducatif de français CE1 à CM2 — Godot 4 / GDScript
+Jeu éducatif CE1 à CM2 sous Godot 4 et GDScript, fondé sur les règles du BLED. Style : aventure 2D avec carte, personnages et missions. Exercices : grammaire, orthographe et dictées. Public : plusieurs profils d'enfants sur appareil familial. Fonctionnement hors ligne : oui. Prévoir architecture modulaire, progression pédagogique CE1/CE2, système de correction explicative, sauvegarde et export Linux, Windows, macOS, Android et iOS.
 
-Direction artistique indicative : un monde de mots, des personnages attachants et une aventure adaptée aux enfants de 7 à 9 ans.
+Direction artistique indicative : un monde de mots, des personnages attachants et une aventure adaptée aux enfants de 7 à 11 ans.
 
 1. Présentation du projet
 Nom de travail : Les Aventuriers des mots
-L'objectif est de développer un jeu éducatif en 2D permettant aux enfants de CE1 et CE2 d'acquérir, de consolider et d'approfondir les règles de grammaire et d'orthographe françaises, à travers une aventure interactive inspirée de la progression pédagogique du BLED.
+L'objectif est de développer un jeu éducatif en 2D permettant aux enfants de CE1 à CM2 d'acquérir, de consolider et d'approfondir les règles de grammaire et d'orthographe françaises, à travers une aventure interactive inspirée de la progression pédagogique du BLED.
 Le jeu doit combiner trois dimensions :
 - Pédagogique : des règles clairement expliquées, des exercices progressifs, des dictées et des corrections détaillées.
 - Ludique : une carte à explorer, des personnages, des missions, des objets à collectionner et des récompenses.
@@ -14,7 +14,7 @@ Le jeu doit combiner trois dimensions :
 Le jeu ne doit pas être un simple questionnaire habillé d'un décor. La progression dans l'aventure doit donner du sens aux apprentissages, tandis que les mécanismes pédagogiques doivent garantir que l'enfant progresse réellement.
 Fiche d'identité
 Élément	Spécification
-Public cible	CE1 et CE2, environ 7–9 ans
+Public cible	CE1 à CM2, environ 7–11 ans (CM1 et CM2 ajoutés en cours de projet : voir decisions.md, points 38 à 40)
 Moteur	Godot 4.x, version stable retenue au démarrage
 Langage	GDScript typé
 Graphismes	2D, illustrations originales, animations

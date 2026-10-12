@@ -27,7 +27,7 @@ Tout ce qui suit ne peut pas être vérifié sans écran (rendu, mise en page, a
 - Profil CE1 : la carte « La forêt des accords » propose « Aller : La plage des sons » ; le tableau de la plage s'affiche avec son décor (mer, sable), ses 9 lieux sans chevauchement, et le bouton ramène à la forêt. Après une mission, on revient au tableau d'où l'on vient.
 - Jouer une mission de chaque règle de la plage (s/ss, ç, m devant m-b-p), dont une dictée : voix claire, énoncés sans répétition, indices et explications justes.
 - CE1 : trois tableaux (forêt, plage, montagne) ; CE2 : trois tableaux (marais, désert, île) ; chaque décor est distinct, le bouton « Aller : … » les parcourt en boucle. Jouer au moins une mission de chaque règle nouvelle (être/avoir/-er ; sujet-verbe, é/er, futur ; féminin, g/ge/gu, lettre muette) et vérifier : consigne claire, une seule bonne réponse, indice utile, aucune phrase déjà vue dans la même mission.
-- Création de profil : seuls CE1 et CE2 sont proposés (CM1/CM2 n'ont pas encore de contenu).
+- Création de profil : jusqu'à la 0.5, seuls CE1 et CE2 étaient proposés ; voir la ligne suivante pour les quatre niveaux.
 
 ## CM1, CM2 et sortie du jeu (point 40 de `decisions.md`)
 
@@ -77,6 +77,8 @@ Tout ce qui suit ne peut pas être vérifié sans écran (rendu, mise en page, a
 - Animations : aucune n'existe encore (interface statique assumée pour ce prototype).
 
 ## Plateformes supplémentaires (0.9.0)
+
+**Testé à la main par l'utilisateur** : Linux, Android et version web (ok). Windows, macOS et ChromeOS restent à tester ; les remarques ci-dessous sont les vérifications structurelles faites avant ce test.
 
 - `make export-android` : APK structurellement vérifié (paquet, ABI arm64-v8a et x86_64, signature) ; **jamais installé** : à tester sur une tablette, notamment le clavier virtuel dans la dictée et les champs de correction, la taille des boutons au doigt, la sauvegarde et le son.
 - `make export-macos` : archive vérifiée (structure .app, signature ad hoc) ; **jamais lancée** (pas de Mac). Au premier lancement : clic droit > Ouvrir.

@@ -1,6 +1,6 @@
 class_name AdultGate
 extends RefCounted
-## Petite barriere devant l'espace adulte : un calcul qu'un enfant de CE1-CE2
+## Petite barriere devant l'espace adulte : un calcul qu'un enfant du primaire
 ## ne fait pas facilement de tete (produit d'un nombre a deux chiffres par un
 ## chiffre). Ce n'est pas une protection de securite, seulement un frein
 ## contre un clic par curiosite. Le hasard est injecte, jamais lu ici.
