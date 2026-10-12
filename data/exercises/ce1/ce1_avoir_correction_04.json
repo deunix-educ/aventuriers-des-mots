@@ -1,0 +1,45 @@
+{
+  "id": "ce1_avoir_correction_04",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "conjugaison_present",
+  "rule_id": "regle_verbe_avoir_present",
+  "difficulty": 3,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Les",
+      "correct": true
+    },
+    {
+      "text": "voisins",
+      "correct": true
+    },
+    {
+      "text": "a",
+      "correct": false,
+      "expected": "ont",
+      "rule_id": "regle_verbe_avoir_present"
+    },
+    {
+      "text": "un",
+      "correct": true
+    },
+    {
+      "text": "grand",
+      "correct": true
+    },
+    {
+      "text": "jardin.",
+      "correct": true
+    }
+  ],
+  "hint": "Plusieurs voisins : pense à « ils ».",
+  "explanation": "Avec un sujet pluriel comme « les voisins » (= ils), on écrit « ont ».",
+  "review_tags": [
+    "verbes_present",
+    "avoir"
+  ],
+  "review_status": "draft"
+}

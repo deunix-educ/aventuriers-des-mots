@@ -1,0 +1,33 @@
+{
+  "id": "ce1_etre_dictee_01",
+  "level": "CE1",
+  "domain": "grammaire",
+  "rule_ids": [
+    "regle_verbe_etre_present"
+  ],
+  "difficulty": 1,
+  "target_text": "Je suis dans le jardin.",
+  "words": [
+    {
+      "text": "Je",
+      "expects_capital": true
+    },
+    {
+      "text": "suis",
+      "rule_id": "regle_verbe_etre_present"
+    },
+    {
+      "text": "dans"
+    },
+    {
+      "text": "le"
+    },
+    {
+      "text": "jardin."
+    }
+  ],
+  "audio_id": "ce1_etre_dictee_01",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

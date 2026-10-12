@@ -1,0 +1,24 @@
+{
+  "id": "ce1_avoir_qcm_06",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "conjugaison_present",
+  "rule_id": "regle_verbe_avoir_present",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Les filles ... de beaux ballons.",
+  "answers": [
+    "a",
+    "avez",
+    "ont"
+  ],
+  "correct_answer": 2,
+  "hint": "Plusieurs filles : pense à « elles ».",
+  "explanation": "Avec un sujet pluriel comme « les filles » (= elles), on écrit « ont ».",
+  "review_tags": [
+    "verbes_present",
+    "avoir"
+  ],
+  "review_status": "draft"
+}

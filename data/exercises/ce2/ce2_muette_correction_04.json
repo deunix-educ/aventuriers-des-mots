@@ -1,0 +1,41 @@
+{
+  "id": "ce2_muette_correction_04",
+  "level": "CE2",
+  "domain": "orthographe",
+  "skill": "lettres_et_mots",
+  "rule_id": "regle_lettre_muette_finale",
+  "difficulty": 3,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Elle",
+      "correct": true
+    },
+    {
+      "text": "porte",
+      "correct": true
+    },
+    {
+      "text": "un",
+      "correct": true
+    },
+    {
+      "text": "manteau",
+      "correct": true
+    },
+    {
+      "text": "ver.",
+      "correct": false,
+      "expected": "vert.",
+      "rule_id": "regle_lettre_muette_finale"
+    }
+  ],
+  "hint": "Pense au féminin : une veste verte.",
+  "explanation": "Au féminin, on entend « verte » : on écrit « vert » avec un -t final.",
+  "review_tags": [
+    "lettres_mots",
+    "muette"
+  ],
+  "review_status": "draft"
+}

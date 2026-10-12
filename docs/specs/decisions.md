@@ -372,3 +372,19 @@ Demande utilisateur : chaque niveau peut avoir jusqu'à 3 tableaux (lieux : for�
 **Tableau pilote CE1 « La plage des sons »** (`order` 2, décor plage) : 3 règles (s/ss entre deux voyelles, c/ç devant a-o-u, m devant m-b-p), 24 QCM, 12 corrections, 9 dictées (voix Piper provisoire, audio généré), 9 missions, compétence « sons et lettres ». Contenu entièrement `draft`. Unicité : tous les énoncés passent les gardes-fous de phrases en double et quasi doubles (points 34 et 36).
 
 **Reste à faire** : CE1 tableau 3 (« La montagne des verbes »), CE2 tableaux 2 et 3, CM1 et CM2 (3 tableaux chacun), d'autres décors et musiques par tableau. **Non vérifié** : lisibilité des nouvelles voix de dictée, pertinence pédagogique des règles et du niveau de difficulté (à relire), autres résolutions.
+
+## 39. Tableaux CE1 n°3, CE2 n°2 et n°3 (version 0.7.0)
+
+Suite du point 38, sur le même principe que le tableau pilote. Génération par script jetable, validée par les tests et les gardes-fous ; contenu entièrement `draft`.
+
+- **CE1 n°3 « La montagne des verbes »** (décor montagne, compétence « verbes au présent ») : être au présent, avoir au présent, verbes en -er au présent.
+- **CE2 n°2 « Le désert des verbes »** (décor désert, compétence « verbes : accords et formes ») : accord sujet-verbe (sujet éloigné ou double), é/er (test « vendre/vendu »), futur simple des verbes en -er.
+- **CE2 n°3 « L'île des lettres »** (décor île, compétence « lettres et mots ») : féminin des noms et adjectifs, g/ge/gu, lettre muette finale (féminin, mot de la même famille).
+
+Volume : 3 tableaux × 3 règles × (8 QCM + 4 corrections + 3 dictées) = 72 QCM, 36 corrections, 27 dictées (voix Piper provisoire, audio généré) et 27 missions (n° 31 à 57). CE1 compte maintenant 3 tableaux (27 missions), CE2 3 tableaux (30 missions). Nouveaux décors vectoriels : montagne, désert, île ; musique automatique associée (montagne → « prairie », désert → « nuit », île → « rivière »).
+
+**Correctif de contenu** : dans le tableau pilote, la bonne réponse des QCM était toujours en première position (devinable sans lire). Les réponses sont désormais mélangées de façon déterministe ; garde-fou `test_curriculum` : aucune règle ne peut avoir sa bonne réponse toujours au même rang.
+
+**Unicité** : les gardes-fous de doublons et de quasi-doublons ont attrapé 6 collisions pendant la rédaction, toutes corrigées avant livraison (phrases reformulées).
+
+**Reste** : CM1 puis CM2 (3 tableaux chacun), à lancer après relecture de ces tableaux. **Non vérifié** : voix des 27 nouvelles dictées, niveau de difficulté et justesse pédagogique (indices, formulations), notamment le test « vendre/vendu » et la règle du futur, à faire relire.

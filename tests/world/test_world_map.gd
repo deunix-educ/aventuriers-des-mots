@@ -62,6 +62,10 @@ func test_ce1_profile_can_move_between_its_regions() -> void:
 
     button.pressed.emit()
     await wait_process_frames(1)
+    assert_eq(map.get_node("%TitleLabel").text, "La montagne des verbes")
+
+    button.pressed.emit()
+    await wait_process_frames(1)
     assert_eq(map.get_node("%TitleLabel").text, "La forêt des accords")
     GameManager.map_region_id = ""
 

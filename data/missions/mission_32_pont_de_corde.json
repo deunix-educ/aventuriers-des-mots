@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_32_pont_de_corde",
+  "title": "Le pont de corde",
+  "narrative_context": "Sur le pont de corde, une forme du verbe « être » est mal posée. Trouve-la et remplace-la.",
+  "rule_id": "regle_verbe_etre_present",
+  "exercise_type": "sentence_correction",
+  "map_position": {
+    "x": 0.5,
+    "y": 0.15
+  },
+  "review_status": "draft"
+}

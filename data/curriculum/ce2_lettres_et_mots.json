@@ -1,0 +1,15 @@
+{
+  "level": "CE2",
+  "region_id": "ile_des_lettres",
+  "chapter_id": "lettres_et_mots",
+  "title": "Les lettres et les mots",
+  "region_title": "L'île des lettres",
+  "order": 3,
+  "backdrop": "island",
+  "rule_ids": [
+    "regle_feminin_noms_adjectifs",
+    "regle_g_ge_gu",
+    "regle_lettre_muette_finale"
+  ],
+  "review_status": "draft"
+}

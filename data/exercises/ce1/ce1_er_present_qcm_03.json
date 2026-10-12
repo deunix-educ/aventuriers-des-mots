@@ -1,0 +1,24 @@
+{
+  "id": "ce1_er_present_qcm_03",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "conjugaison_present",
+  "rule_id": "regle_verbe_er_present",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Le garçon ... une pomme.",
+  "answers": [
+    "mangent",
+    "manges",
+    "mange"
+  ],
+  "correct_answer": 2,
+  "hint": "Un seul garçon : pense à « il ».",
+  "explanation": "Avec un sujet singulier, le verbe finit par -e : le garçon mange.",
+  "review_tags": [
+    "verbes_present",
+    "er_present"
+  ],
+  "review_status": "draft"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ce2_feminin_dictee_01",
+  "level": "CE2",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_feminin_noms_adjectifs"
+  ],
+  "difficulty": 1,
+  "target_text": "La chanteuse a une jolie voix.",
+  "words": [
+    {
+      "text": "La",
+      "expects_capital": true
+    },
+    {
+      "text": "chanteuse",
+      "rule_id": "regle_feminin_noms_adjectifs"
+    },
+    {
+      "text": "a"
+    },
+    {
+      "text": "une"
+    },
+    {
+      "text": "jolie"
+    },
+    {
+      "text": "voix."
+    }
+  ],
+  "audio_id": "ce2_feminin_dictee_01",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

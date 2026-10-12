@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_40_oasis_aux_palmiers",
+  "title": "L'oasis aux palmiers",
+  "narrative_context": "À l'oasis, chaque palmier porte un verbe. Choisis la bonne terminaison selon le sujet.",
+  "rule_id": "regle_accord_sujet_verbe",
+  "exercise_type": "multiple_choice",
+  "map_position": {
+    "x": 0.15,
+    "y": 0.15
+  },
+  "review_status": "draft"
+}

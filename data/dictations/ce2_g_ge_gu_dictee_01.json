@@ -1,0 +1,39 @@
+{
+  "id": "ce2_g_ge_gu_dictee_01",
+  "level": "CE2",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_g_ge_gu"
+  ],
+  "difficulty": 1,
+  "target_text": "Nous mangeons des pommes sur la plage.",
+  "words": [
+    {
+      "text": "Nous",
+      "expects_capital": true
+    },
+    {
+      "text": "mangeons",
+      "rule_id": "regle_g_ge_gu"
+    },
+    {
+      "text": "des"
+    },
+    {
+      "text": "pommes"
+    },
+    {
+      "text": "sur"
+    },
+    {
+      "text": "la"
+    },
+    {
+      "text": "plage."
+    }
+  ],
+  "audio_id": "ce2_g_ge_gu_dictee_01",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

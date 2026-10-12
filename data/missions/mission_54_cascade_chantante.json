@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_54_cascade_chantante",
+  "title": "La cascade chantante",
+  "narrative_context": "La cascade chante une phrase, une seule fois. Écoute bien et écris-la sans faute.",
+  "rule_id": "regle_g_ge_gu",
+  "exercise_type": "dictation",
+  "map_position": {
+    "x": 0.85,
+    "y": 0.5
+  },
+  "review_status": "draft"
+}

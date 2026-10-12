@@ -1,0 +1,45 @@
+{
+  "id": "ce1_er_present_correction_03",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "conjugaison_present",
+  "rule_id": "regle_verbe_er_present",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Nous",
+      "correct": true
+    },
+    {
+      "text": "cuisinez",
+      "correct": false,
+      "expected": "cuisinons",
+      "rule_id": "regle_verbe_er_present"
+    },
+    {
+      "text": "un",
+      "correct": true
+    },
+    {
+      "text": "gâteau",
+      "correct": true
+    },
+    {
+      "text": "au",
+      "correct": true
+    },
+    {
+      "text": "chocolat.",
+      "correct": true
+    }
+  ],
+  "hint": "Avec « nous », le verbe finit par -ons.",
+  "explanation": "Avec « nous », le verbe finit par -ons : nous cuisinons.",
+  "review_tags": [
+    "verbes_present",
+    "er_present"
+  ],
+  "review_status": "draft"
+}

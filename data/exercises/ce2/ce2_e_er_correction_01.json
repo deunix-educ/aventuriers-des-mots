@@ -1,0 +1,41 @@
+{
+  "id": "ce2_e_er_correction_01",
+  "level": "CE2",
+  "domain": "grammaire",
+  "skill": "conjugaison_ce2",
+  "rule_id": "regle_e_er_infinitif",
+  "difficulty": 1,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Nous",
+      "correct": true
+    },
+    {
+      "text": "allons",
+      "correct": true
+    },
+    {
+      "text": "mangé",
+      "correct": false,
+      "expected": "manger",
+      "rule_id": "regle_e_er_infinitif"
+    },
+    {
+      "text": "au",
+      "correct": true
+    },
+    {
+      "text": "restaurant.",
+      "correct": true
+    }
+  ],
+  "hint": "Remplace par « vendre » : « nous allons vendre » a du sens.",
+  "explanation": "« Nous allons vendre » convient : on écrit l'infinitif « manger ».",
+  "review_tags": [
+    "verbes_ce2",
+    "e_er"
+  ],
+  "review_status": "draft"
+}

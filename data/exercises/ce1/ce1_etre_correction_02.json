@@ -1,0 +1,49 @@
+{
+  "id": "ce1_etre_correction_02",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "conjugaison_present",
+  "rule_id": "regle_verbe_etre_present",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Ce",
+      "correct": true
+    },
+    {
+      "text": "soir,",
+      "correct": true
+    },
+    {
+      "text": "nous",
+      "correct": true
+    },
+    {
+      "text": "sont",
+      "correct": false,
+      "expected": "sommes",
+      "rule_id": "regle_verbe_etre_present"
+    },
+    {
+      "text": "à",
+      "correct": true
+    },
+    {
+      "text": "la",
+      "correct": true
+    },
+    {
+      "text": "maison.",
+      "correct": true
+    }
+  ],
+  "hint": "Avec « nous », le verbe finit par -mes.",
+  "explanation": "Avec « nous », on écrit « sommes » : nous sommes.",
+  "review_tags": [
+    "verbes_present",
+    "etre"
+  ],
+  "review_status": "draft"
+}

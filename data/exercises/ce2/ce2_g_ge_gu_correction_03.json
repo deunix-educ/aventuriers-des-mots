@@ -1,0 +1,49 @@
+{
+  "id": "ce2_g_ge_gu_correction_03",
+  "level": "CE2",
+  "domain": "orthographe",
+  "skill": "lettres_et_mots",
+  "rule_id": "regle_g_ge_gu",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Le",
+      "correct": true
+    },
+    {
+      "text": "soldat",
+      "correct": true
+    },
+    {
+      "text": "est",
+      "correct": true
+    },
+    {
+      "text": "parti",
+      "correct": true
+    },
+    {
+      "text": "à",
+      "correct": true
+    },
+    {
+      "text": "la",
+      "correct": true
+    },
+    {
+      "text": "gerre.",
+      "correct": false,
+      "expected": "guerre.",
+      "rule_id": "regle_g_ge_gu"
+    }
+  ],
+  "hint": "Devant « e », pour le son dur [g], il faut « gu ».",
+  "explanation": "Devant « e », on écrit « gu » pour le son dur : « guerre ».",
+  "review_tags": [
+    "lettres_mots",
+    "g_ge_gu"
+  ],
+  "review_status": "draft"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "ce2_sujet_verbe_correction_04",
+  "level": "CE2",
+  "domain": "grammaire",
+  "skill": "conjugaison_ce2",
+  "rule_id": "regle_accord_sujet_verbe",
+  "difficulty": 3,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Mon",
+      "correct": true
+    },
+    {
+      "text": "frère",
+      "correct": true
+    },
+    {
+      "text": "et",
+      "correct": true
+    },
+    {
+      "text": "ma",
+      "correct": true
+    },
+    {
+      "text": "sœur",
+      "correct": true
+    },
+    {
+      "text": "prépare",
+      "correct": false,
+      "expected": "préparent",
+      "rule_id": "regle_accord_sujet_verbe"
+    },
+    {
+      "text": "le",
+      "correct": true
+    },
+    {
+      "text": "repas.",
+      "correct": true
+    }
+  ],
+  "hint": "Il y a deux sujets reliés par « et ».",
+  "explanation": "Deux sujets reliés par « et » donnent un sujet pluriel : « préparent ».",
+  "review_tags": [
+    "verbes_ce2",
+    "sujet_verbe"
+  ],
+  "review_status": "draft"
+}

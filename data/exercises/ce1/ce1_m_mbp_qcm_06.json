@@ -9,10 +9,10 @@
   "instruction": "Choisis le bon mot.",
   "question": "Nous dormons sous une ... dans le camping.",
   "answers": [
-    "tente",
-    "temte"
+    "temte",
+    "tente"
   ],
-  "correct_answer": 0,
+  "correct_answer": 1,
   "hint": "Attention : la lettre qui suit n'est ni « m », ni « b », ni « p ».",
   "explanation": "Devant « t », on écrit « n » : « tente ». La règle du « m » ne vaut que devant m, b, p.",
   "review_tags": [

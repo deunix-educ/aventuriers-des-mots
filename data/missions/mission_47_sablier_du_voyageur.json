@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_47_sablier_du_voyageur",
+  "title": "Le sablier du voyageur",
+  "narrative_context": "Le sablier du voyageur a mélangé les temps. Trouve la forme fautive et remets-la au futur.",
+  "rule_id": "regle_futur_simple",
+  "exercise_type": "sentence_correction",
+  "map_position": {
+    "x": 0.5,
+    "y": 0.85
+  },
+  "review_status": "draft"
+}

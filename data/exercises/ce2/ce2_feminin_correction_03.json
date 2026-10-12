@@ -1,0 +1,41 @@
+{
+  "id": "ce2_feminin_correction_03",
+  "level": "CE2",
+  "domain": "orthographe",
+  "skill": "lettres_et_mots",
+  "rule_id": "regle_feminin_noms_adjectifs",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "La",
+      "correct": true
+    },
+    {
+      "text": "directeur",
+      "correct": false,
+      "expected": "directrice",
+      "rule_id": "regle_feminin_noms_adjectifs"
+    },
+    {
+      "text": "de",
+      "correct": true
+    },
+    {
+      "text": "l'école",
+      "correct": true
+    },
+    {
+      "text": "sourit.",
+      "correct": true
+    }
+  ],
+  "hint": "Les mots en -teur font souvent -trice au féminin.",
+  "explanation": "Le féminin de « directeur » est « directrice » (-teur devient -trice).",
+  "review_tags": [
+    "lettres_mots",
+    "feminin"
+  ],
+  "review_status": "draft"
+}

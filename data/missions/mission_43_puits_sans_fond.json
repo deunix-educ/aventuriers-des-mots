@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_43_puits_sans_fond",
+  "title": "Le puits sans fond",
+  "narrative_context": "Au fond du puits, des verbes hésitent entre « é » et « er ». Aide-les à choisir.",
+  "rule_id": "regle_e_er_infinitif",
+  "exercise_type": "multiple_choice",
+  "map_position": {
+    "x": 0.15,
+    "y": 0.5
+  },
+  "review_status": "draft"
+}

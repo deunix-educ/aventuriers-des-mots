@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_37_sentier_des_chevres",
+  "title": "Le sentier des chèvres",
+  "narrative_context": "Les chèvres montent le sentier en chantant. Choisis la bonne terminaison pour chaque verbe.",
+  "rule_id": "regle_verbe_er_present",
+  "exercise_type": "multiple_choice",
+  "map_position": {
+    "x": 0.15,
+    "y": 0.85
+  },
+  "review_status": "draft"
+}

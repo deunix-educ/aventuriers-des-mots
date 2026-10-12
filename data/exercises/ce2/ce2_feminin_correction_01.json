@@ -1,0 +1,45 @@
+{
+  "id": "ce2_feminin_correction_01",
+  "level": "CE2",
+  "domain": "orthographe",
+  "skill": "lettres_et_mots",
+  "rule_id": "regle_feminin_noms_adjectifs",
+  "difficulty": 1,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Ma",
+      "correct": true
+    },
+    {
+      "text": "tante",
+      "correct": true
+    },
+    {
+      "text": "est",
+      "correct": true
+    },
+    {
+      "text": "une",
+      "correct": true
+    },
+    {
+      "text": "grande",
+      "correct": true
+    },
+    {
+      "text": "chanteur.",
+      "correct": false,
+      "expected": "chanteuse.",
+      "rule_id": "regle_feminin_noms_adjectifs"
+    }
+  ],
+  "hint": "Les mots en -eur font souvent -euse au féminin.",
+  "explanation": "Le féminin de « chanteur » est « chanteuse » (-eur devient -euse).",
+  "review_tags": [
+    "lettres_mots",
+    "feminin"
+  ],
+  "review_status": "draft"
+}

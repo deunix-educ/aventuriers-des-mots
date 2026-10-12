@@ -1,0 +1,9 @@
+{
+  "rule_id": "regle_verbe_er_present",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "conjugaison_present",
+  "statement": "Au présent, les verbes en -er se terminent par -e, -es, -e, -ons, -ez, -ent selon le sujet.",
+  "example": "Je chante. Tu chantes. Nous chantons. Ils chantent.",
+  "review_status": "draft"
+}

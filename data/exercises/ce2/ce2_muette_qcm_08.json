@@ -1,0 +1,23 @@
+{
+  "id": "ce2_muette_qcm_08",
+  "level": "CE2",
+  "domain": "orthographe",
+  "skill": "lettres_et_mots",
+  "rule_id": "regle_lettre_muette_finale",
+  "difficulty": 3,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Cet enfant est toujours ... .",
+  "answers": [
+    "genti",
+    "gentil"
+  ],
+  "correct_answer": 1,
+  "hint": "Pense au féminin : une fille gentille.",
+  "explanation": "Au féminin, on entend « gentille » : on écrit « gentil » avec un -l final.",
+  "review_tags": [
+    "lettres_mots",
+    "muette"
+  ],
+  "review_status": "draft"
+}

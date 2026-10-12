@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_52_crique_du_g_doux",
+  "title": "La crique du g doux",
+  "narrative_context": "Dans la crique, le « g » change de son selon la lettre qui le suit. Choisis la bonne écriture.",
+  "rule_id": "regle_g_ge_gu",
+  "exercise_type": "multiple_choice",
+  "map_position": {
+    "x": 0.15,
+    "y": 0.5
+  },
+  "review_status": "draft"
+}

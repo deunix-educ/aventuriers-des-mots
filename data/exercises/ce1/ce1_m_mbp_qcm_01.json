@@ -9,10 +9,10 @@
   "instruction": "Choisis le bon mot.",
   "question": "Papa allume la ... près du lit.",
   "answers": [
-    "lampe",
-    "lanpe"
+    "lanpe",
+    "lampe"
   ],
-  "correct_answer": 0,
+  "correct_answer": 1,
   "hint": "Après la voyelle, on entend [p] : quelle lettre faut-il avant ?",
   "explanation": "Devant « p », on écrit « m » : « lampe ».",
   "review_tags": [

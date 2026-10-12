@@ -1,0 +1,39 @@
+{
+  "id": "ce2_futur_dictee_01",
+  "level": "CE2",
+  "domain": "grammaire",
+  "rule_ids": [
+    "regle_futur_simple"
+  ],
+  "difficulty": 1,
+  "target_text": "Demain, nous visiterons le musée du désert.",
+  "words": [
+    {
+      "text": "Demain,",
+      "expects_capital": true
+    },
+    {
+      "text": "nous"
+    },
+    {
+      "text": "visiterons",
+      "rule_id": "regle_futur_simple"
+    },
+    {
+      "text": "le"
+    },
+    {
+      "text": "musée"
+    },
+    {
+      "text": "du"
+    },
+    {
+      "text": "désert."
+    }
+  ],
+  "audio_id": "ce2_futur_dictee_01",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

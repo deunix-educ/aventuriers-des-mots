@@ -9,10 +9,10 @@
   "instruction": "Choisis le bon mot.",
   "question": "Le ... éteint l'incendie.",
   "answers": [
-    "pompier",
-    "ponpier"
+    "ponpier",
+    "pompier"
   ],
-  "correct_answer": 0,
+  "correct_answer": 1,
   "hint": "Devant « p », quelle lettre faut-il écrire ?",
   "explanation": "Devant « p », on écrit « m » : « pompier ».",
   "review_tags": [

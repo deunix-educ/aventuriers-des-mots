@@ -1,0 +1,24 @@
+{
+  "id": "ce1_avoir_qcm_07",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "conjugaison_present",
+  "rule_id": "regle_verbe_avoir_present",
+  "difficulty": 3,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Toi et moi, nous ... le même âge.",
+  "answers": [
+    "avez",
+    "ont",
+    "avons"
+  ],
+  "correct_answer": 2,
+  "hint": "« Toi et moi » peut se remplacer par « nous ».",
+  "explanation": "« Toi et moi » = « nous » : on écrit « avons ».",
+  "review_tags": [
+    "verbes_present",
+    "avoir"
+  ],
+  "review_status": "draft"
+}

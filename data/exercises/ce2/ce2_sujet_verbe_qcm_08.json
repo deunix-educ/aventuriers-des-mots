@@ -1,0 +1,23 @@
+{
+  "id": "ce2_sujet_verbe_qcm_08",
+  "level": "CE2",
+  "domain": "grammaire",
+  "skill": "conjugaison_ce2",
+  "rule_id": "regle_accord_sujet_verbe",
+  "difficulty": 3,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Mon oncle, avec ses amis, ... le désert.",
+  "answers": [
+    "traverse",
+    "traversent"
+  ],
+  "correct_answer": 0,
+  "hint": "Qui traverse ? Les mots entre virgules ne sont pas le sujet.",
+  "explanation": "Le sujet est « mon oncle » (singulier) : « traverse ». « Avec ses amis » n'est pas le sujet.",
+  "review_tags": [
+    "verbes_ce2",
+    "sujet_verbe"
+  ],
+  "review_status": "draft"
+}

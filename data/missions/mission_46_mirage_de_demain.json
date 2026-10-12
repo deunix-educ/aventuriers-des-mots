@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_46_mirage_de_demain",
+  "title": "Le mirage de demain",
+  "narrative_context": "Dans le mirage, tout se passe demain. Choisis la bonne forme du futur.",
+  "rule_id": "regle_futur_simple",
+  "exercise_type": "multiple_choice",
+  "map_position": {
+    "x": 0.15,
+    "y": 0.85
+  },
+  "review_status": "draft"
+}

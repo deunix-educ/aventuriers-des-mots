@@ -1,0 +1,42 @@
+{
+  "id": "ce2_feminin_dictee_03",
+  "level": "CE2",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_feminin_noms_adjectifs"
+  ],
+  "difficulty": 3,
+  "target_text": "La lionne surveille ses petits dans la savane.",
+  "words": [
+    {
+      "text": "La",
+      "expects_capital": true
+    },
+    {
+      "text": "lionne",
+      "rule_id": "regle_feminin_noms_adjectifs"
+    },
+    {
+      "text": "surveille"
+    },
+    {
+      "text": "ses"
+    },
+    {
+      "text": "petits"
+    },
+    {
+      "text": "dans"
+    },
+    {
+      "text": "la"
+    },
+    {
+      "text": "savane."
+    }
+  ],
+  "audio_id": "ce2_feminin_dictee_03",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

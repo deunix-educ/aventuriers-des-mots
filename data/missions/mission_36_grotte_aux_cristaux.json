@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_36_grotte_aux_cristaux",
+  "title": "La grotte aux cristaux",
+  "narrative_context": "Dans la grotte, un cristal murmure une phrase, une seule fois. Écoute-le et écris exactement ce qu'il dit.",
+  "rule_id": "regle_verbe_avoir_present",
+  "exercise_type": "dictation",
+  "map_position": {
+    "x": 0.85,
+    "y": 0.5
+  },
+  "review_status": "draft"
+}

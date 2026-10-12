@@ -1,0 +1,43 @@
+{
+  "id": "ce2_muette_dictee_01",
+  "level": "CE2",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_lettre_muette_finale"
+  ],
+  "difficulty": 1,
+  "target_text": "Le petit chat blanc dort sur le canapé.",
+  "words": [
+    {
+      "text": "Le",
+      "expects_capital": true
+    },
+    {
+      "text": "petit",
+      "rule_id": "regle_lettre_muette_finale"
+    },
+    {
+      "text": "chat"
+    },
+    {
+      "text": "blanc",
+      "rule_id": "regle_lettre_muette_finale"
+    },
+    {
+      "text": "dort"
+    },
+    {
+      "text": "sur"
+    },
+    {
+      "text": "le"
+    },
+    {
+      "text": "canapé."
+    }
+  ],
+  "audio_id": "ce2_muette_dictee_01",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ce2_sujet_verbe_qcm_04",
+  "level": "CE2",
+  "domain": "grammaire",
+  "skill": "conjugaison_ce2",
+  "rule_id": "regle_accord_sujet_verbe",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Les enfants du village ... au puits.",
+  "answers": [
+    "court",
+    "courent"
+  ],
+  "correct_answer": 1,
+  "hint": "Cherche qui fait l'action : ce sont les enfants.",
+  "explanation": "Le sujet est « les enfants » (pluriel), même si « du village » s'intercale : « courent ».",
+  "review_tags": [
+    "verbes_ce2",
+    "sujet_verbe"
+  ],
+  "review_status": "draft"
+}

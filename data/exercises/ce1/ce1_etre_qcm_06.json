@@ -1,0 +1,24 @@
+{
+  "id": "ce1_etre_qcm_06",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "conjugaison_present",
+  "rule_id": "regle_verbe_etre_present",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Les canards ... sur le lac.",
+  "answers": [
+    "est",
+    "sont",
+    "êtes"
+  ],
+  "correct_answer": 1,
+  "hint": "Plusieurs canards : pense à « ils ».",
+  "explanation": "Avec un sujet pluriel comme « les canards » (= ils), on écrit « sont ».",
+  "review_tags": [
+    "verbes_present",
+    "etre"
+  ],
+  "review_status": "draft"
+}

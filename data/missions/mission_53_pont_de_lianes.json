@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_53_pont_de_lianes",
+  "title": "Le pont de lianes",
+  "narrative_context": "Sur le pont de lianes, un mot est mal écrit. Repère-le et corrige-le.",
+  "rule_id": "regle_g_ge_gu",
+  "exercise_type": "sentence_correction",
+  "map_position": {
+    "x": 0.5,
+    "y": 0.5
+  },
+  "review_status": "draft"
+}

@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_33_echo_de_la_vallee",
+  "title": "L'écho de la vallée",
+  "narrative_context": "La vallée répète une phrase, une seule fois. Écoute bien et écris-la en entier.",
+  "rule_id": "regle_verbe_etre_present",
+  "exercise_type": "dictation",
+  "map_position": {
+    "x": 0.85,
+    "y": 0.15
+  },
+  "review_status": "draft"
+}

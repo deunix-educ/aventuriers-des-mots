@@ -1,0 +1,9 @@
+{
+  "rule_id": "regle_futur_simple",
+  "level": "CE2",
+  "domain": "grammaire",
+  "skill": "conjugaison_ce2",
+  "statement": "Au futur, les verbes en -er gardent leur infinitif et prennent -ai, -as, -a, -ons, -ez, -ont.",
+  "example": "Demain, je chanterai. Il chantera. Nous chanterons.",
+  "review_status": "draft"
+}

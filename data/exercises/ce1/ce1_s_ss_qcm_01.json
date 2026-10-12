@@ -9,10 +9,10 @@
   "instruction": "Choisis le bon mot.",
   "question": "Le chat boit dans une ... .",
   "answers": [
-    "tasse",
-    "tase"
+    "tase",
+    "tasse"
   ],
-  "correct_answer": 0,
+  "correct_answer": 1,
   "hint": "Pour entendre [s] entre deux voyelles, il faut deux s.",
   "explanation": "Entre deux voyelles, on écrit « ss » pour le son [s] : « tasse ».",
   "review_tags": [

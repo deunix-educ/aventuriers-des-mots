@@ -1,0 +1,24 @@
+{
+  "id": "ce1_etre_qcm_01",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "conjugaison_present",
+  "rule_id": "regle_verbe_etre_present",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Je ... très content.",
+  "answers": [
+    "est",
+    "es",
+    "suis"
+  ],
+  "correct_answer": 2,
+  "hint": "Avec « je », le verbe « être » s'écrit d'une manière particulière.",
+  "explanation": "Avec « je », on écrit « suis » : je suis.",
+  "review_tags": [
+    "verbes_present",
+    "etre"
+  ],
+  "review_status": "draft"
+}

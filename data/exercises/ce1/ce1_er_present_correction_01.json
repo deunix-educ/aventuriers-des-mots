@@ -1,0 +1,37 @@
+{
+  "id": "ce1_er_present_correction_01",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "conjugaison_present",
+  "rule_id": "regle_verbe_er_present",
+  "difficulty": 1,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Tu",
+      "correct": true
+    },
+    {
+      "text": "chante",
+      "correct": false,
+      "expected": "chantes",
+      "rule_id": "regle_verbe_er_present"
+    },
+    {
+      "text": "très",
+      "correct": true
+    },
+    {
+      "text": "bien.",
+      "correct": true
+    }
+  ],
+  "hint": "Avec « tu », le verbe finit par -s.",
+  "explanation": "Avec « tu », le verbe finit par -es : tu chantes.",
+  "review_tags": [
+    "verbes_present",
+    "er_present"
+  ],
+  "review_status": "draft"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "ce2_muette_dictee_03",
+  "level": "CE2",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_lettre_muette_finale"
+  ],
+  "difficulty": 3,
+  "target_text": "Ce long chant triste fait pleurer mon grand-père.",
+  "words": [
+    {
+      "text": "Ce",
+      "expects_capital": true
+    },
+    {
+      "text": "long"
+    },
+    {
+      "text": "chant",
+      "rule_id": "regle_lettre_muette_finale"
+    },
+    {
+      "text": "triste"
+    },
+    {
+      "text": "fait"
+    },
+    {
+      "text": "pleurer"
+    },
+    {
+      "text": "mon"
+    },
+    {
+      "text": "grand-père.",
+      "rule_id": "regle_lettre_muette_finale"
+    }
+  ],
+  "audio_id": "ce2_muette_dictee_03",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

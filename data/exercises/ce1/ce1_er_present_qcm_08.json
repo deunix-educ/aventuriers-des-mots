@@ -1,0 +1,24 @@
+{
+  "id": "ce1_er_present_qcm_08",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "conjugaison_present",
+  "rule_id": "regle_verbe_er_present",
+  "difficulty": 3,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Toi et ton frère, vous ... la table.",
+  "answers": [
+    "rangent",
+    "rangez",
+    "rangeons"
+  ],
+  "correct_answer": 1,
+  "hint": "« Toi et ton frère » peut se remplacer par « vous ».",
+  "explanation": "« Toi et ton frère » = « vous » : le verbe finit par -ez.",
+  "review_tags": [
+    "verbes_present",
+    "er_present"
+  ],
+  "review_status": "draft"
+}

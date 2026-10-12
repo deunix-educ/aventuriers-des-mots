@@ -1,0 +1,24 @@
+{
+  "id": "ce1_er_present_qcm_01",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "conjugaison_present",
+  "rule_id": "regle_verbe_er_present",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Je ... dans la chorale.",
+  "answers": [
+    "chantent",
+    "chantes",
+    "chante"
+  ],
+  "correct_answer": 2,
+  "hint": "Avec « je », le verbe en -er finit par -e.",
+  "explanation": "Avec « je », le verbe en -er finit par -e : je chante.",
+  "review_tags": [
+    "verbes_present",
+    "er_present"
+  ],
+  "review_status": "draft"
+}

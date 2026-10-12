@@ -1,0 +1,23 @@
+{
+  "id": "ce2_feminin_qcm_03",
+  "level": "CE2",
+  "domain": "orthographe",
+  "skill": "lettres_et_mots",
+  "rule_id": "regle_feminin_noms_adjectifs",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Mon ami est gentil et ma ... est gentille.",
+  "answers": [
+    "amie",
+    "ami"
+  ],
+  "correct_answer": 0,
+  "hint": "Au féminin, on ajoute un -e.",
+  "explanation": "Le féminin de « ami » est « amie » : on ajoute un -e.",
+  "review_tags": [
+    "lettres_mots",
+    "feminin"
+  ],
+  "review_status": "draft"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ce2_e_er_qcm_04",
+  "level": "CE2",
+  "domain": "grammaire",
+  "skill": "conjugaison_ce2",
+  "rule_id": "regle_e_er_infinitif",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Le maçon a ... un gros sac.",
+  "answers": [
+    "porter",
+    "porté"
+  ],
+  "correct_answer": 1,
+  "hint": "Remplace par « vendu » : « il a vendu » a du sens.",
+  "explanation": "« Il a vendu » convient : on écrit le participe « porté ».",
+  "review_tags": [
+    "verbes_ce2",
+    "e_er"
+  ],
+  "review_status": "draft"
+}

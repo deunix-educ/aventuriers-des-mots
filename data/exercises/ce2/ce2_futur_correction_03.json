@@ -1,0 +1,45 @@
+{
+  "id": "ce2_futur_correction_03",
+  "level": "CE2",
+  "domain": "grammaire",
+  "skill": "conjugaison_ce2",
+  "rule_id": "regle_futur_simple",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Cet",
+      "correct": true
+    },
+    {
+      "text": "été,",
+      "correct": true
+    },
+    {
+      "text": "tu",
+      "correct": true
+    },
+    {
+      "text": "voyagerai",
+      "correct": false,
+      "expected": "voyageras",
+      "rule_id": "regle_futur_simple"
+    },
+    {
+      "text": "en",
+      "correct": true
+    },
+    {
+      "text": "train.",
+      "correct": true
+    }
+  ],
+  "hint": "Avec « tu », le futur finit par -as.",
+  "explanation": "Avec « tu », le futur finit par -as : tu voyageras.",
+  "review_tags": [
+    "verbes_ce2",
+    "futur"
+  ],
+  "review_status": "draft"
+}

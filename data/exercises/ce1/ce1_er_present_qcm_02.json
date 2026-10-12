@@ -1,0 +1,24 @@
+{
+  "id": "ce1_er_present_qcm_02",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "conjugaison_present",
+  "rule_id": "regle_verbe_er_present",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Tu ... avec ton ami.",
+  "answers": [
+    "joue",
+    "joues",
+    "jouent"
+  ],
+  "correct_answer": 1,
+  "hint": "Avec « tu », le verbe finit par -s.",
+  "explanation": "Avec « tu », le verbe finit par -es : tu joues.",
+  "review_tags": [
+    "verbes_present",
+    "er_present"
+  ],
+  "review_status": "draft"
+}

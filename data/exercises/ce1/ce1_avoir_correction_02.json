@@ -1,0 +1,41 @@
+{
+  "id": "ce1_avoir_correction_02",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "conjugaison_present",
+  "rule_id": "regle_verbe_avoir_present",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Nous",
+      "correct": true
+    },
+    {
+      "text": "avez",
+      "correct": false,
+      "expected": "avons",
+      "rule_id": "regle_verbe_avoir_present"
+    },
+    {
+      "text": "un",
+      "correct": true
+    },
+    {
+      "text": "chien",
+      "correct": true
+    },
+    {
+      "text": "noir.",
+      "correct": true
+    }
+  ],
+  "hint": "Avec « nous », le verbe finit par -ons.",
+  "explanation": "Avec « nous », on écrit « avons » : nous avons.",
+  "review_tags": [
+    "verbes_present",
+    "avoir"
+  ],
+  "review_status": "draft"
+}

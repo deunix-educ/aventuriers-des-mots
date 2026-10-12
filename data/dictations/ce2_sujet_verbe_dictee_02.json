@@ -1,0 +1,42 @@
+{
+  "id": "ce2_sujet_verbe_dictee_02",
+  "level": "CE2",
+  "domain": "grammaire",
+  "rule_ids": [
+    "regle_accord_sujet_verbe"
+  ],
+  "difficulty": 2,
+  "target_text": "Le vent du soir soulève le sable doré.",
+  "words": [
+    {
+      "text": "Le",
+      "expects_capital": true
+    },
+    {
+      "text": "vent"
+    },
+    {
+      "text": "du"
+    },
+    {
+      "text": "soir"
+    },
+    {
+      "text": "soulève",
+      "rule_id": "regle_accord_sujet_verbe"
+    },
+    {
+      "text": "le"
+    },
+    {
+      "text": "sable"
+    },
+    {
+      "text": "doré."
+    }
+  ],
+  "audio_id": "ce2_sujet_verbe_dictee_02",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

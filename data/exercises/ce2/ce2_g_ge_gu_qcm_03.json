@@ -1,0 +1,23 @@
+{
+  "id": "ce2_g_ge_gu_qcm_03",
+  "level": "CE2",
+  "domain": "orthographe",
+  "skill": "lettres_et_mots",
+  "rule_id": "regle_g_ge_gu",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Il fait un beau ... dans la mer.",
+  "answers": [
+    "plongon",
+    "plongeon"
+  ],
+  "correct_answer": 1,
+  "hint": "Devant « o », pour le son doux, il faut « ge ».",
+  "explanation": "Devant « o », on écrit « ge » pour le son doux : « plongeon ».",
+  "review_tags": [
+    "lettres_mots",
+    "g_ge_gu"
+  ],
+  "review_status": "draft"
+}

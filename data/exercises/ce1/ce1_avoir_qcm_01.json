@@ -1,0 +1,24 @@
+{
+  "id": "ce1_avoir_qcm_01",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "conjugaison_present",
+  "rule_id": "regle_verbe_avoir_present",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "J'... une grande trousse.",
+  "answers": [
+    "a",
+    "as",
+    "ai"
+  ],
+  "correct_answer": 2,
+  "hint": "Avec « je », le verbe « avoir » s'écrit « ai ».",
+  "explanation": "Avec « je », on écrit « ai » : j'ai.",
+  "review_tags": [
+    "verbes_present",
+    "avoir"
+  ],
+  "review_status": "draft"
+}

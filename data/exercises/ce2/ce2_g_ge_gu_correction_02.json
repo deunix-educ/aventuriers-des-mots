@@ -1,0 +1,53 @@
+{
+  "id": "ce2_g_ge_gu_correction_02",
+  "level": "CE2",
+  "domain": "orthographe",
+  "skill": "lettres_et_mots",
+  "rule_id": "regle_g_ge_gu",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Mon",
+      "correct": true
+    },
+    {
+      "text": "oncle",
+      "correct": true
+    },
+    {
+      "text": "joue",
+      "correct": true
+    },
+    {
+      "text": "de",
+      "correct": true
+    },
+    {
+      "text": "la",
+      "correct": true
+    },
+    {
+      "text": "gitare",
+      "correct": false,
+      "expected": "guitare",
+      "rule_id": "regle_g_ge_gu"
+    },
+    {
+      "text": "le",
+      "correct": true
+    },
+    {
+      "text": "soir.",
+      "correct": true
+    }
+  ],
+  "hint": "Devant « i », pour le son dur [g], il faut « gu ».",
+  "explanation": "Devant « i », on écrit « gu » pour le son dur : « guitare ».",
+  "review_tags": [
+    "lettres_mots",
+    "g_ge_gu"
+  ],
+  "review_status": "draft"
+}

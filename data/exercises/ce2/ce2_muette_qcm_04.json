@@ -1,0 +1,23 @@
+{
+  "id": "ce2_muette_qcm_04",
+  "level": "CE2",
+  "domain": "orthographe",
+  "skill": "lettres_et_mots",
+  "rule_id": "regle_lettre_muette_finale",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Il fait ... dehors.",
+  "answers": [
+    "froid",
+    "froi"
+  ],
+  "correct_answer": 0,
+  "hint": "Pense au féminin : une soupe froide.",
+  "explanation": "Au féminin, on entend « froide » : on écrit « froid » avec un -d final.",
+  "review_tags": [
+    "lettres_mots",
+    "muette"
+  ],
+  "review_status": "draft"
+}

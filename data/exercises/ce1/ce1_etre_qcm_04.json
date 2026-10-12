@@ -1,0 +1,24 @@
+{
+  "id": "ce1_etre_qcm_04",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "conjugaison_present",
+  "rule_id": "regle_verbe_etre_present",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Nous ... en classe ce matin.",
+  "answers": [
+    "sont",
+    "êtes",
+    "sommes"
+  ],
+  "correct_answer": 2,
+  "hint": "Avec « nous », le verbe finit par -mes.",
+  "explanation": "Avec « nous », on écrit « sommes » : nous sommes.",
+  "review_tags": [
+    "verbes_present",
+    "etre"
+  ],
+  "review_status": "draft"
+}

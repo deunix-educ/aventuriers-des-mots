@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_48_etoile_du_soir",
+  "title": "L'étoile du soir",
+  "narrative_context": "L'étoile du soir chuchote une phrase, une seule fois. Écoute bien et écris-la sans faute.",
+  "rule_id": "regle_futur_simple",
+  "exercise_type": "dictation",
+  "map_position": {
+    "x": 0.85,
+    "y": 0.85
+  },
+  "review_status": "draft"
+}

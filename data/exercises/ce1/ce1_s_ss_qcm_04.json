@@ -9,10 +9,10 @@
   "instruction": "Choisis le bon mot.",
   "question": "Un ... nage dans l'aquarium.",
   "answers": [
-    "poisson",
-    "poison"
+    "poison",
+    "poisson"
   ],
-  "correct_answer": 0,
+  "correct_answer": 1,
   "hint": "Pense à l'animal qui vit dans l'eau, et au son [s].",
   "explanation": "Pour le son [s] entre deux voyelles, on écrit « ss » : « poisson ».",
   "review_tags": [

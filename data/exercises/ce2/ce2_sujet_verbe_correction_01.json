@@ -1,0 +1,41 @@
+{
+  "id": "ce2_sujet_verbe_correction_01",
+  "level": "CE2",
+  "domain": "grammaire",
+  "skill": "conjugaison_ce2",
+  "rule_id": "regle_accord_sujet_verbe",
+  "difficulty": 1,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Les",
+      "correct": true
+    },
+    {
+      "text": "nomades",
+      "correct": true
+    },
+    {
+      "text": "monte",
+      "correct": false,
+      "expected": "montent",
+      "rule_id": "regle_accord_sujet_verbe"
+    },
+    {
+      "text": "leur",
+      "correct": true
+    },
+    {
+      "text": "tente.",
+      "correct": true
+    }
+  ],
+  "hint": "Plusieurs nomades : le verbe prend la marque du pluriel.",
+  "explanation": "Le sujet « les nomades » est pluriel : le verbe s'écrit « montent ».",
+  "review_tags": [
+    "verbes_ce2",
+    "sujet_verbe"
+  ],
+  "review_status": "draft"
+}

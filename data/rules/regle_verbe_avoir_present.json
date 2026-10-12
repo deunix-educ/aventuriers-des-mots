@@ -1,0 +1,9 @@
+{
+  "rule_id": "regle_verbe_avoir_present",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "conjugaison_present",
+  "statement": "Le verbe « avoir » change avec le sujet : j'ai, tu as, il a, nous avons, vous avez, ils ont.",
+  "example": "J'ai un chat. Tu as faim. Ils ont chaud.",
+  "review_status": "draft"
+}

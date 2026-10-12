@@ -1,0 +1,41 @@
+{
+  "id": "ce1_er_present_correction_04",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "conjugaison_present",
+  "rule_id": "regle_verbe_er_present",
+  "difficulty": 3,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Vous",
+      "correct": true
+    },
+    {
+      "text": "aimons",
+      "correct": false,
+      "expected": "aimez",
+      "rule_id": "regle_verbe_er_present"
+    },
+    {
+      "text": "beaucoup",
+      "correct": true
+    },
+    {
+      "text": "les",
+      "correct": true
+    },
+    {
+      "text": "histoires.",
+      "correct": true
+    }
+  ],
+  "hint": "Avec « vous », le verbe finit par -ez.",
+  "explanation": "Avec « vous », le verbe finit par -ez : vous aimez.",
+  "review_tags": [
+    "verbes_present",
+    "er_present"
+  ],
+  "review_status": "draft"
+}

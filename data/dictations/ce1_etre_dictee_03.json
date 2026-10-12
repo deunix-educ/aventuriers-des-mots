@@ -1,0 +1,39 @@
+{
+  "id": "ce1_etre_dictee_03",
+  "level": "CE1",
+  "domain": "grammaire",
+  "rule_ids": [
+    "regle_verbe_etre_present"
+  ],
+  "difficulty": 3,
+  "target_text": "Tu es plus grand que ton cousin.",
+  "words": [
+    {
+      "text": "Tu",
+      "expects_capital": true
+    },
+    {
+      "text": "es",
+      "rule_id": "regle_verbe_etre_present"
+    },
+    {
+      "text": "plus"
+    },
+    {
+      "text": "grand"
+    },
+    {
+      "text": "que"
+    },
+    {
+      "text": "ton"
+    },
+    {
+      "text": "cousin."
+    }
+  ],
+  "audio_id": "ce1_etre_dictee_03",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

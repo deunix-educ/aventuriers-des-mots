@@ -1,0 +1,39 @@
+{
+  "id": "ce1_er_present_dictee_02",
+  "level": "CE1",
+  "domain": "grammaire",
+  "rule_ids": [
+    "regle_verbe_er_present"
+  ],
+  "difficulty": 2,
+  "target_text": "Nous préparons un gâteau pour la fête.",
+  "words": [
+    {
+      "text": "Nous",
+      "expects_capital": true
+    },
+    {
+      "text": "préparons",
+      "rule_id": "regle_verbe_er_present"
+    },
+    {
+      "text": "un"
+    },
+    {
+      "text": "gâteau"
+    },
+    {
+      "text": "pour"
+    },
+    {
+      "text": "la"
+    },
+    {
+      "text": "fête."
+    }
+  ],
+  "audio_id": "ce1_er_present_dictee_02",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

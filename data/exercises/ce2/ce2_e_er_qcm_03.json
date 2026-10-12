@@ -1,0 +1,23 @@
+{
+  "id": "ce2_e_er_qcm_03",
+  "level": "CE2",
+  "domain": "grammaire",
+  "skill": "conjugaison_ce2",
+  "rule_id": "regle_e_er_infinitif",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Nous aimons ... des chansons.",
+  "answers": [
+    "chanté",
+    "chanter"
+  ],
+  "correct_answer": 1,
+  "hint": "Remplace par « vendre » : « nous aimons vendre » a du sens.",
+  "explanation": "« Nous aimons vendre » convient : on écrit « chanter ».",
+  "review_tags": [
+    "verbes_ce2",
+    "e_er"
+  ],
+  "review_status": "draft"
+}

@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_44_tente_du_guide",
+  "title": "La tente du guide",
+  "narrative_context": "Le guide a confondu « é » et « er » dans son carnet. Repère le mot fautif et corrige-le.",
+  "rule_id": "regle_e_er_infinitif",
+  "exercise_type": "sentence_correction",
+  "map_position": {
+    "x": 0.5,
+    "y": 0.5
+  },
+  "review_status": "draft"
+}

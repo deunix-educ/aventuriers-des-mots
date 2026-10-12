@@ -1,0 +1,24 @@
+{
+  "id": "ce1_etre_qcm_03",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "conjugaison_present",
+  "rule_id": "regle_verbe_etre_present",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Le chien ... fatigué.",
+  "answers": [
+    "sont",
+    "es",
+    "est"
+  ],
+  "correct_answer": 2,
+  "hint": "Un seul chien : pense à « il ».",
+  "explanation": "Avec un sujet singulier comme « le chien » (= il), on écrit « est ».",
+  "review_tags": [
+    "verbes_present",
+    "etre"
+  ],
+  "review_status": "draft"
+}

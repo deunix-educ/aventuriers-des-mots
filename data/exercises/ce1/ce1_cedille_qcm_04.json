@@ -9,10 +9,10 @@
   "instruction": "Choisis le bon mot.",
   "question": "Le ... construit un mur en pierre.",
   "answers": [
-    "maçon",
-    "macon"
+    "macon",
+    "maçon"
   ],
-  "correct_answer": 0,
+  "correct_answer": 1,
   "hint": "Le son [s] devant « o » s'écrit avec une cédille.",
   "explanation": "On écrit « ç » devant « o » pour le son [s] : « maçon ».",
   "review_tags": [

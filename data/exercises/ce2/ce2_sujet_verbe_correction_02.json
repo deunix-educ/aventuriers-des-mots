@@ -1,0 +1,45 @@
+{
+  "id": "ce2_sujet_verbe_correction_02",
+  "level": "CE2",
+  "domain": "grammaire",
+  "skill": "conjugaison_ce2",
+  "rule_id": "regle_accord_sujet_verbe",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Le",
+      "correct": true
+    },
+    {
+      "text": "guide",
+      "correct": true
+    },
+    {
+      "text": "des",
+      "correct": true
+    },
+    {
+      "text": "voyageurs",
+      "correct": true
+    },
+    {
+      "text": "marchent",
+      "correct": false,
+      "expected": "marche",
+      "rule_id": "regle_accord_sujet_verbe"
+    },
+    {
+      "text": "devant.",
+      "correct": true
+    }
+  ],
+  "hint": "Cherche qui marche : c'est le guide.",
+  "explanation": "Le sujet est « le guide » (singulier), même si « des voyageurs » s'intercale : « marche ».",
+  "review_tags": [
+    "verbes_ce2",
+    "sujet_verbe"
+  ],
+  "review_status": "draft"
+}

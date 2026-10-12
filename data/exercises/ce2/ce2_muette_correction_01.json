@@ -1,0 +1,49 @@
+{
+  "id": "ce2_muette_correction_01",
+  "level": "CE2",
+  "domain": "orthographe",
+  "skill": "lettres_et_mots",
+  "rule_id": "regle_lettre_muette_finale",
+  "difficulty": 1,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Le",
+      "correct": true
+    },
+    {
+      "text": "chat",
+      "correct": true
+    },
+    {
+      "text": "gri",
+      "correct": false,
+      "expected": "gris",
+      "rule_id": "regle_lettre_muette_finale"
+    },
+    {
+      "text": "dort",
+      "correct": true
+    },
+    {
+      "text": "sur",
+      "correct": true
+    },
+    {
+      "text": "le",
+      "correct": true
+    },
+    {
+      "text": "tapis.",
+      "correct": true
+    }
+  ],
+  "hint": "Pense au féminin : une souris grise.",
+  "explanation": "Au féminin, on entend « grise » : on écrit « gris » avec un -s final.",
+  "review_tags": [
+    "lettres_mots",
+    "muette"
+  ],
+  "review_status": "draft"
+}

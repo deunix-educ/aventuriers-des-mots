@@ -1,0 +1,23 @@
+{
+  "id": "ce2_sujet_verbe_qcm_06",
+  "level": "CE2",
+  "domain": "grammaire",
+  "skill": "conjugaison_ce2",
+  "rule_id": "regle_accord_sujet_verbe",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Le soleil et le vent ... la peau.",
+  "answers": [
+    "brûlent",
+    "brûle"
+  ],
+  "correct_answer": 0,
+  "hint": "Il y a deux sujets reliés par « et ».",
+  "explanation": "Deux sujets reliés par « et » donnent un sujet pluriel : « brûlent ».",
+  "review_tags": [
+    "verbes_ce2",
+    "sujet_verbe"
+  ],
+  "review_status": "draft"
+}

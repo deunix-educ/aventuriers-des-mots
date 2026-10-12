@@ -1,0 +1,42 @@
+{
+  "id": "ce2_sujet_verbe_dictee_03",
+  "level": "CE2",
+  "domain": "grammaire",
+  "rule_ids": [
+    "regle_accord_sujet_verbe"
+  ],
+  "difficulty": 3,
+  "target_text": "Mes amis et moi, nous cherchons de l'ombre.",
+  "words": [
+    {
+      "text": "Mes",
+      "expects_capital": true
+    },
+    {
+      "text": "amis"
+    },
+    {
+      "text": "et"
+    },
+    {
+      "text": "moi,"
+    },
+    {
+      "text": "nous"
+    },
+    {
+      "text": "cherchons",
+      "rule_id": "regle_accord_sujet_verbe"
+    },
+    {
+      "text": "de"
+    },
+    {
+      "text": "l'ombre."
+    }
+  ],
+  "audio_id": "ce2_sujet_verbe_dictee_03",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

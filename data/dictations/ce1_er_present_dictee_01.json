@@ -1,0 +1,33 @@
+{
+  "id": "ce1_er_present_dictee_01",
+  "level": "CE1",
+  "domain": "grammaire",
+  "rule_ids": [
+    "regle_verbe_er_present"
+  ],
+  "difficulty": 1,
+  "target_text": "Tu chantes une jolie chanson.",
+  "words": [
+    {
+      "text": "Tu",
+      "expects_capital": true
+    },
+    {
+      "text": "chantes",
+      "rule_id": "regle_verbe_er_present"
+    },
+    {
+      "text": "une"
+    },
+    {
+      "text": "jolie"
+    },
+    {
+      "text": "chanson."
+    }
+  ],
+  "audio_id": "ce1_er_present_dictee_01",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "ce2_g_ge_gu_dictee_03",
+  "level": "CE2",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_g_ge_gu"
+  ],
+  "difficulty": 3,
+  "target_text": "Nous plongeons dans l'eau claire de l'île.",
+  "words": [
+    {
+      "text": "Nous",
+      "expects_capital": true
+    },
+    {
+      "text": "plongeons",
+      "rule_id": "regle_g_ge_gu"
+    },
+    {
+      "text": "dans"
+    },
+    {
+      "text": "l'eau"
+    },
+    {
+      "text": "claire"
+    },
+    {
+      "text": "de"
+    },
+    {
+      "text": "l'île."
+    }
+  ],
+  "audio_id": "ce2_g_ge_gu_dictee_03",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

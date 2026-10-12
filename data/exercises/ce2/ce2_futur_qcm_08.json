@@ -1,0 +1,24 @@
+{
+  "id": "ce2_futur_qcm_08",
+  "level": "CE2",
+  "domain": "grammaire",
+  "skill": "conjugaison_ce2",
+  "rule_id": "regle_futur_simple",
+  "difficulty": 3,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Plus tard, toi et moi, nous ... un grand voyage.",
+  "answers": [
+    "organiseront",
+    "organiserez",
+    "organiserons"
+  ],
+  "correct_answer": 2,
+  "hint": "« Toi et moi » peut se remplacer par « nous ».",
+  "explanation": "« Toi et moi » = « nous » : le futur finit par -ons.",
+  "review_tags": [
+    "verbes_ce2",
+    "futur"
+  ],
+  "review_status": "draft"
+}

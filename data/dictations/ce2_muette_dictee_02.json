@@ -1,0 +1,46 @@
+{
+  "id": "ce2_muette_dictee_02",
+  "level": "CE2",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_lettre_muette_finale"
+  ],
+  "difficulty": 2,
+  "target_text": "Il fait froid et le vent est très fort.",
+  "words": [
+    {
+      "text": "Il",
+      "expects_capital": true
+    },
+    {
+      "text": "fait"
+    },
+    {
+      "text": "froid",
+      "rule_id": "regle_lettre_muette_finale"
+    },
+    {
+      "text": "et"
+    },
+    {
+      "text": "le"
+    },
+    {
+      "text": "vent"
+    },
+    {
+      "text": "est"
+    },
+    {
+      "text": "très"
+    },
+    {
+      "text": "fort.",
+      "rule_id": "regle_lettre_muette_finale"
+    }
+  ],
+  "audio_id": "ce2_muette_dictee_02",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_39_sommet_qui_parle",
+  "title": "Le sommet qui parle",
+  "narrative_context": "Au sommet, le vent te souffle une phrase, une seule fois. Écoute bien et écris-la sans faute.",
+  "rule_id": "regle_verbe_er_present",
+  "exercise_type": "dictation",
+  "map_position": {
+    "x": 0.85,
+    "y": 0.85
+  },
+  "review_status": "draft"
+}

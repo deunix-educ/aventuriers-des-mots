@@ -1,0 +1,24 @@
+{
+  "id": "ce1_avoir_qcm_02",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "conjugaison_present",
+  "rule_id": "regle_verbe_avoir_present",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Tu ... mal à la tête.",
+  "answers": [
+    "as",
+    "a",
+    "ai"
+  ],
+  "correct_answer": 0,
+  "hint": "Avec « tu », le verbe finit par -s.",
+  "explanation": "Avec « tu », on écrit « as » : tu as.",
+  "review_tags": [
+    "verbes_present",
+    "avoir"
+  ],
+  "review_status": "draft"
+}

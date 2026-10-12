@@ -1,0 +1,39 @@
+{
+  "id": "ce1_avoir_dictee_02",
+  "level": "CE1",
+  "domain": "grammaire",
+  "rule_ids": [
+    "regle_verbe_avoir_present"
+  ],
+  "difficulty": 2,
+  "target_text": "Vous avez de beaux crayons de couleur.",
+  "words": [
+    {
+      "text": "Vous",
+      "expects_capital": true
+    },
+    {
+      "text": "avez",
+      "rule_id": "regle_verbe_avoir_present"
+    },
+    {
+      "text": "de"
+    },
+    {
+      "text": "beaux"
+    },
+    {
+      "text": "crayons"
+    },
+    {
+      "text": "de"
+    },
+    {
+      "text": "couleur."
+    }
+  ],
+  "audio_id": "ce1_avoir_dictee_02",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

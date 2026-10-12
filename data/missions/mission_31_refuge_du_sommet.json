@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_31_refuge_du_sommet",
+  "title": "Le refuge du sommet",
+  "narrative_context": "Au refuge, les verbes « être » ont perdu leur sujet. Choisis la bonne forme pour les remettre à leur place.",
+  "rule_id": "regle_verbe_etre_present",
+  "exercise_type": "multiple_choice",
+  "map_position": {
+    "x": 0.15,
+    "y": 0.15
+  },
+  "review_status": "draft"
+}

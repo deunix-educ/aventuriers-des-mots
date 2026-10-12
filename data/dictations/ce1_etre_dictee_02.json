@@ -1,0 +1,42 @@
+{
+  "id": "ce1_etre_dictee_02",
+  "level": "CE1",
+  "domain": "grammaire",
+  "rule_ids": [
+    "regle_verbe_etre_present"
+  ],
+  "difficulty": 2,
+  "target_text": "Nous sommes tous en rang devant la porte.",
+  "words": [
+    {
+      "text": "Nous",
+      "expects_capital": true
+    },
+    {
+      "text": "sommes",
+      "rule_id": "regle_verbe_etre_present"
+    },
+    {
+      "text": "tous"
+    },
+    {
+      "text": "en"
+    },
+    {
+      "text": "rang"
+    },
+    {
+      "text": "devant"
+    },
+    {
+      "text": "la"
+    },
+    {
+      "text": "porte."
+    }
+  ],
+  "audio_id": "ce1_etre_dictee_02",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

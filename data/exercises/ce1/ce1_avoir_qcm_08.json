@@ -1,0 +1,24 @@
+{
+  "id": "ce1_avoir_qcm_08",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "conjugaison_present",
+  "rule_id": "regle_verbe_avoir_present",
+  "difficulty": 3,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Mes parents ... une voiture rouge.",
+  "answers": [
+    "as",
+    "ont",
+    "a"
+  ],
+  "correct_answer": 1,
+  "hint": "Plusieurs personnes : pense à « ils ».",
+  "explanation": "« Mes parents » = « ils » : on écrit « ont ».",
+  "review_tags": [
+    "verbes_present",
+    "avoir"
+  ],
+  "review_status": "draft"
+}

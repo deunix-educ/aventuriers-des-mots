@@ -1,0 +1,23 @@
+{
+  "id": "ce2_sujet_verbe_qcm_03",
+  "level": "CE2",
+  "domain": "grammaire",
+  "skill": "conjugaison_ce2",
+  "rule_id": "regle_accord_sujet_verbe",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Mes cousins ... en été.",
+  "answers": [
+    "voyagent",
+    "voyage"
+  ],
+  "correct_answer": 0,
+  "hint": "Plusieurs cousins : le verbe prend la marque du pluriel.",
+  "explanation": "Le sujet « mes cousins » est pluriel : le verbe s'écrit « voyagent ».",
+  "review_tags": [
+    "verbes_ce2",
+    "sujet_verbe"
+  ],
+  "review_status": "draft"
+}

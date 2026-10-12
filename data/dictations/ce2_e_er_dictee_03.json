@@ -1,0 +1,40 @@
+{
+  "id": "ce2_e_er_dictee_03",
+  "level": "CE2",
+  "domain": "grammaire",
+  "rule_ids": [
+    "regle_e_er_infinitif"
+  ],
+  "difficulty": 3,
+  "target_text": "Elle a décidé de ranger sa chambre.",
+  "words": [
+    {
+      "text": "Elle",
+      "expects_capital": true
+    },
+    {
+      "text": "a"
+    },
+    {
+      "text": "décidé",
+      "rule_id": "regle_e_er_infinitif"
+    },
+    {
+      "text": "de"
+    },
+    {
+      "text": "ranger",
+      "rule_id": "regle_e_er_infinitif"
+    },
+    {
+      "text": "sa"
+    },
+    {
+      "text": "chambre."
+    }
+  ],
+  "audio_id": "ce2_e_er_dictee_03",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

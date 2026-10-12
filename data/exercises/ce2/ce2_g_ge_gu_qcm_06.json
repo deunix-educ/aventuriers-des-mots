@@ -1,0 +1,23 @@
+{
+  "id": "ce2_g_ge_gu_qcm_06",
+  "level": "CE2",
+  "domain": "orthographe",
+  "skill": "lettres_et_mots",
+  "rule_id": "regle_g_ge_gu",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Papa range la voiture dans le ... .",
+  "answers": [
+    "garage",
+    "gearage"
+  ],
+  "correct_answer": 0,
+  "hint": "Le son dur [g] devant « a » s'écrit simplement « g ».",
+  "explanation": "Devant « a », le son dur s'écrit « g » : « garage ».",
+  "review_tags": [
+    "lettres_mots",
+    "g_ge_gu"
+  ],
+  "review_status": "draft"
+}

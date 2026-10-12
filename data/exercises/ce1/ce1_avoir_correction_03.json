@@ -1,0 +1,41 @@
+{
+  "id": "ce1_avoir_correction_03",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "conjugaison_present",
+  "rule_id": "regle_verbe_avoir_present",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Vous",
+      "correct": true
+    },
+    {
+      "text": "avons",
+      "correct": false,
+      "expected": "avez",
+      "rule_id": "regle_verbe_avoir_present"
+    },
+    {
+      "text": "du",
+      "correct": true
+    },
+    {
+      "text": "temps",
+      "correct": true
+    },
+    {
+      "text": "libre.",
+      "correct": true
+    }
+  ],
+  "hint": "Avec « vous », le verbe finit par -ez.",
+  "explanation": "Avec « vous », on écrit « avez » : vous avez.",
+  "review_tags": [
+    "verbes_present",
+    "avoir"
+  ],
+  "review_status": "draft"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ce2_sujet_verbe_qcm_05",
+  "level": "CE2",
+  "domain": "grammaire",
+  "skill": "conjugaison_ce2",
+  "rule_id": "regle_accord_sujet_verbe",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "La caravane des marchands ... lentement.",
+  "answers": [
+    "avancent",
+    "avance"
+  ],
+  "correct_answer": 1,
+  "hint": "Cherche qui fait l'action : c'est la caravane.",
+  "explanation": "Le sujet est « la caravane » (singulier), même si « des marchands » s'intercale : « avance ».",
+  "review_tags": [
+    "verbes_ce2",
+    "sujet_verbe"
+  ],
+  "review_status": "draft"
+}

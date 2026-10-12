@@ -1,0 +1,23 @@
+{
+  "id": "ce2_feminin_qcm_05",
+  "level": "CE2",
+  "domain": "orthographe",
+  "skill": "lettres_et_mots",
+  "rule_id": "regle_feminin_noms_adjectifs",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Un boulanger et une ... préparent le pain.",
+  "answers": [
+    "boulangeuse",
+    "boulangère"
+  ],
+  "correct_answer": 1,
+  "hint": "Les mots en -er font -ère au féminin.",
+  "explanation": "Le féminin de « boulanger » est « boulangère » (-er devient -ère).",
+  "review_tags": [
+    "lettres_mots",
+    "feminin"
+  ],
+  "review_status": "draft"
+}

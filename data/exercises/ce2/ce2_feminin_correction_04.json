@@ -1,0 +1,41 @@
+{
+  "id": "ce2_feminin_correction_04",
+  "level": "CE2",
+  "domain": "orthographe",
+  "skill": "lettres_et_mots",
+  "rule_id": "regle_feminin_noms_adjectifs",
+  "difficulty": 3,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Sa",
+      "correct": true
+    },
+    {
+      "text": "cousine",
+      "correct": true
+    },
+    {
+      "text": "est",
+      "correct": true
+    },
+    {
+      "text": "très",
+      "correct": true
+    },
+    {
+      "text": "sportif.",
+      "correct": false,
+      "expected": "sportive.",
+      "rule_id": "regle_feminin_noms_adjectifs"
+    }
+  ],
+  "hint": "Les adjectifs en -f font -ve au féminin.",
+  "explanation": "Le féminin de « sportif » est « sportive » (-f devient -ve).",
+  "review_tags": [
+    "lettres_mots",
+    "feminin"
+  ],
+  "review_status": "draft"
+}

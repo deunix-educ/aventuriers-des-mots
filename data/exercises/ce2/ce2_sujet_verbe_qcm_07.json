@@ -1,0 +1,23 @@
+{
+  "id": "ce2_sujet_verbe_qcm_07",
+  "level": "CE2",
+  "domain": "grammaire",
+  "skill": "conjugaison_ce2",
+  "rule_id": "regle_accord_sujet_verbe",
+  "difficulty": 3,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Les pas du chameau ... sur la dune.",
+  "answers": [
+    "résonne",
+    "résonnent"
+  ],
+  "correct_answer": 1,
+  "hint": "Cherche qui fait l'action : ce sont les pas, pas le chameau.",
+  "explanation": "Le sujet est « les pas » (pluriel), même si « du chameau » s'intercale : « résonnent ».",
+  "review_tags": [
+    "verbes_ce2",
+    "sujet_verbe"
+  ],
+  "review_status": "draft"
+}

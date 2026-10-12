@@ -1,0 +1,15 @@
+{
+  "level": "CE1",
+  "region_id": "montagne_des_verbes",
+  "chapter_id": "verbes_present",
+  "title": "Les verbes au présent",
+  "region_title": "La montagne des verbes",
+  "order": 3,
+  "backdrop": "mountain",
+  "rule_ids": [
+    "regle_verbe_etre_present",
+    "regle_verbe_avoir_present",
+    "regle_verbe_er_present"
+  ],
+  "review_status": "draft"
+}

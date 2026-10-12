@@ -1,0 +1,9 @@
+{
+  "rule_id": "regle_verbe_etre_present",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "conjugaison_present",
+  "statement": "Le verbe « être » change avec le sujet : je suis, tu es, il est, nous sommes, vous êtes, ils sont.",
+  "example": "Je suis content. Tu es grand. Ils sont là.",
+  "review_status": "draft"
+}

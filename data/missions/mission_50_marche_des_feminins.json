@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_50_marche_des_feminins",
+  "title": "Le marché des féminins",
+  "narrative_context": "Au marché de l'île, un mot est resté au masculin par erreur. Trouve-le et mets-le au féminin.",
+  "rule_id": "regle_feminin_noms_adjectifs",
+  "exercise_type": "sentence_correction",
+  "map_position": {
+    "x": 0.5,
+    "y": 0.15
+  },
+  "review_status": "draft"
+}

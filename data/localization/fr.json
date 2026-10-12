@@ -120,5 +120,8 @@
   "profile_create.level_cm1": "CM1",
   "profile_create.level_cm2": "CM2",
   "skill.sons_et_lettres": "Sons et lettres",
-  "world_map.coming_soon": "Ce niveau arrive bientôt !"
+  "world_map.coming_soon": "Ce niveau arrive bientôt !",
+  "skill.conjugaison_present": "Verbes au présent",
+  "skill.conjugaison_ce2": "Verbes : accords et formes",
+  "skill.lettres_et_mots": "Lettres et mots"
 }

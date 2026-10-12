@@ -1,0 +1,37 @@
+{
+  "id": "ce2_futur_correction_01",
+  "level": "CE2",
+  "domain": "grammaire",
+  "skill": "conjugaison_ce2",
+  "rule_id": "regle_futur_simple",
+  "difficulty": 1,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Demain,",
+      "correct": true
+    },
+    {
+      "text": "nous",
+      "correct": true
+    },
+    {
+      "text": "jouera",
+      "correct": false,
+      "expected": "jouerons",
+      "rule_id": "regle_futur_simple"
+    },
+    {
+      "text": "dehors.",
+      "correct": true
+    }
+  ],
+  "hint": "Avec « nous », le futur finit par -ons.",
+  "explanation": "Avec « nous », le futur finit par -ons : nous jouerons.",
+  "review_tags": [
+    "verbes_ce2",
+    "futur"
+  ],
+  "review_status": "draft"
+}

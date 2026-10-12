@@ -61,3 +61,21 @@ func test_school_levels_helpers() -> void:
     assert_eq(SchoolLevels.previous("CM1"), "CE2")
     assert_eq(SchoolLevels.previous("n_importe_quoi"), "")
     assert_true(SchoolLevels.rank("CM2") > SchoolLevels.rank("CE2"))
+
+
+func test_correct_answer_position_is_not_always_the_same() -> void:
+    # Une regle dont la bonne reponse est toujours au meme rang se devine sans
+    # lire : les QCM d'une regle doivent varier la position de la bonne reponse.
+    var positions: Dictionary = {}
+    for rule_id: String in ExerciseEngine._rules:
+        for exercise: Dictionary in ExerciseEngine._candidates_for(rule_id, "multiple_choice"):
+            if not positions.has(rule_id):
+                positions[rule_id] = {}
+            positions[rule_id][int(exercise["correct_answer"])] = true
+    assert_gt(positions.size(), 5)
+    for rule_id: String in positions:
+        assert_gt(
+            (positions[rule_id] as Dictionary).size(),
+            1,
+            "bonne reponse toujours au meme rang : %s" % rule_id
+        )

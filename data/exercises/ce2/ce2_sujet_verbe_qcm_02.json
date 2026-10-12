@@ -1,0 +1,23 @@
+{
+  "id": "ce2_sujet_verbe_qcm_02",
+  "level": "CE2",
+  "domain": "grammaire",
+  "skill": "conjugaison_ce2",
+  "rule_id": "regle_accord_sujet_verbe",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Le voyageur ... une tente.",
+  "answers": [
+    "installent",
+    "installe"
+  ],
+  "correct_answer": 1,
+  "hint": "Un seul voyageur : le verbe reste au singulier.",
+  "explanation": "Le sujet « le voyageur » est singulier : le verbe s'écrit « installe ».",
+  "review_tags": [
+    "verbes_ce2",
+    "sujet_verbe"
+  ],
+  "review_status": "draft"
+}

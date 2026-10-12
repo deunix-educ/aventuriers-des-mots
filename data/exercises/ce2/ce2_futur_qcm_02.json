@@ -1,0 +1,24 @@
+{
+  "id": "ce2_futur_qcm_02",
+  "level": "CE2",
+  "domain": "grammaire",
+  "skill": "conjugaison_ce2",
+  "rule_id": "regle_futur_simple",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Ce soir, tu ... aux cartes.",
+  "answers": [
+    "jouerai",
+    "jouera",
+    "joueras"
+  ],
+  "correct_answer": 2,
+  "hint": "Avec « tu », le futur finit par -as.",
+  "explanation": "Avec « tu », le futur finit par -as : tu joueras.",
+  "review_tags": [
+    "verbes_ce2",
+    "futur"
+  ],
+  "review_status": "draft"
+}

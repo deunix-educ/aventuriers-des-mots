@@ -1,0 +1,37 @@
+{
+  "id": "ce2_g_ge_gu_correction_01",
+  "level": "CE2",
+  "domain": "orthographe",
+  "skill": "lettres_et_mots",
+  "rule_id": "regle_g_ge_gu",
+  "difficulty": 1,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Nous",
+      "correct": true
+    },
+    {
+      "text": "mangons",
+      "correct": false,
+      "expected": "mangeons",
+      "rule_id": "regle_g_ge_gu"
+    },
+    {
+      "text": "une",
+      "correct": true
+    },
+    {
+      "text": "pomme.",
+      "correct": true
+    }
+  ],
+  "hint": "Devant « o », pour le son doux, il faut « ge ».",
+  "explanation": "Devant « o », on écrit « ge » pour le son doux : « mangeons ».",
+  "review_tags": [
+    "lettres_mots",
+    "g_ge_gu"
+  ],
+  "review_status": "draft"
+}

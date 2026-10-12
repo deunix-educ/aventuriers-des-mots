@@ -1,0 +1,36 @@
+{
+  "id": "ce2_feminin_dictee_02",
+  "level": "CE2",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_feminin_noms_adjectifs"
+  ],
+  "difficulty": 2,
+  "target_text": "Ma voisine est une excellente cuisinière.",
+  "words": [
+    {
+      "text": "Ma",
+      "expects_capital": true
+    },
+    {
+      "text": "voisine"
+    },
+    {
+      "text": "est"
+    },
+    {
+      "text": "une"
+    },
+    {
+      "text": "excellente"
+    },
+    {
+      "text": "cuisinière.",
+      "rule_id": "regle_feminin_noms_adjectifs"
+    }
+  ],
+  "audio_id": "ce2_feminin_dictee_02",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

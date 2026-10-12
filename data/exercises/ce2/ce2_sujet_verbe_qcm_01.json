@@ -1,0 +1,23 @@
+{
+  "id": "ce2_sujet_verbe_qcm_01",
+  "level": "CE2",
+  "domain": "grammaire",
+  "skill": "conjugaison_ce2",
+  "rule_id": "regle_accord_sujet_verbe",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Les chameaux ... dans le sable.",
+  "answers": [
+    "marchent",
+    "marche"
+  ],
+  "correct_answer": 0,
+  "hint": "Plusieurs chameaux : le verbe prend la marque du pluriel.",
+  "explanation": "Le sujet « les chameaux » est pluriel : le verbe s'écrit « marchent ».",
+  "review_tags": [
+    "verbes_ce2",
+    "sujet_verbe"
+  ],
+  "review_status": "draft"
+}

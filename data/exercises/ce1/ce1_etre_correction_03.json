@@ -1,0 +1,45 @@
+{
+  "id": "ce1_etre_correction_03",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "conjugaison_present",
+  "rule_id": "regle_verbe_etre_present",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Les",
+      "correct": true
+    },
+    {
+      "text": "enfants,",
+      "correct": true
+    },
+    {
+      "text": "vous",
+      "correct": true
+    },
+    {
+      "text": "sommes",
+      "correct": false,
+      "expected": "êtes",
+      "rule_id": "regle_verbe_etre_present"
+    },
+    {
+      "text": "en",
+      "correct": true
+    },
+    {
+      "text": "retard.",
+      "correct": true
+    }
+  ],
+  "hint": "Avec « vous », le verbe prend un accent circonflexe.",
+  "explanation": "Avec « vous », on écrit « êtes » : vous êtes.",
+  "review_tags": [
+    "verbes_present",
+    "etre"
+  ],
+  "review_status": "draft"
+}

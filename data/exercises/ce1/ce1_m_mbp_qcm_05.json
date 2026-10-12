@@ -9,10 +9,10 @@
   "instruction": "Choisis le bon mot.",
   "question": "Il joue du ... dans la fanfare.",
   "answers": [
-    "tambour",
-    "tanbour"
+    "tanbour",
+    "tambour"
   ],
-  "correct_answer": 0,
+  "correct_answer": 1,
   "hint": "Devant « b », quelle lettre faut-il écrire ?",
   "explanation": "Devant « b », on écrit « m » : « tambour ».",
   "review_tags": [

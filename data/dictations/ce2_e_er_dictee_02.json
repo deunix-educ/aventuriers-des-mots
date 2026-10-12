@@ -1,0 +1,42 @@
+{
+  "id": "ce2_e_er_dictee_02",
+  "level": "CE2",
+  "domain": "grammaire",
+  "rule_ids": [
+    "regle_e_er_infinitif"
+  ],
+  "difficulty": 2,
+  "target_text": "Hier, nous avons regardé un film au cinéma.",
+  "words": [
+    {
+      "text": "Hier,",
+      "expects_capital": true
+    },
+    {
+      "text": "nous"
+    },
+    {
+      "text": "avons"
+    },
+    {
+      "text": "regardé",
+      "rule_id": "regle_e_er_infinitif"
+    },
+    {
+      "text": "un"
+    },
+    {
+      "text": "film"
+    },
+    {
+      "text": "au"
+    },
+    {
+      "text": "cinéma."
+    }
+  ],
+  "audio_id": "ce2_e_er_dictee_02",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

@@ -1,0 +1,9 @@
+{
+  "rule_id": "regle_e_er_infinitif",
+  "level": "CE2",
+  "domain": "grammaire",
+  "skill": "conjugaison_ce2",
+  "statement": "Pour choisir entre « é » et « er », remplace le verbe par « vendre » ou « vendu » : si « vendre » convient, on écrit « er » ; si « vendu » convient, on écrit « é ».",
+  "example": "Il faut manger (vendre). Il a mangé (vendu).",
+  "review_status": "draft"
+}

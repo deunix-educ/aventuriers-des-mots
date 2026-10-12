@@ -1,0 +1,24 @@
+{
+  "id": "ce2_futur_qcm_04",
+  "level": "CE2",
+  "domain": "grammaire",
+  "skill": "conjugaison_ce2",
+  "rule_id": "regle_futur_simple",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Cet été, nous ... en bateau.",
+  "answers": [
+    "voyagerez",
+    "voyagerons",
+    "voyageront"
+  ],
+  "correct_answer": 1,
+  "hint": "Avec « nous », le futur finit par -ons.",
+  "explanation": "Avec « nous », le futur finit par -ons : nous voyagerons.",
+  "review_tags": [
+    "verbes_ce2",
+    "futur"
+  ],
+  "review_status": "draft"
+}

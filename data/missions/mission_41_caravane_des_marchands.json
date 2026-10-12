@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_41_caravane_des_marchands",
+  "title": "La caravane des marchands",
+  "narrative_context": "Un marchand a mal écrit un verbe sur son étiquette. Trouve-le et remplace-le.",
+  "rule_id": "regle_accord_sujet_verbe",
+  "exercise_type": "sentence_correction",
+  "map_position": {
+    "x": 0.5,
+    "y": 0.15
+  },
+  "review_status": "draft"
+}

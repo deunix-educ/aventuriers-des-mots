@@ -9,10 +9,10 @@
   "instruction": "Choisis le bon mot.",
   "question": "La ... de la maison est blanche.",
   "answers": [
-    "façade",
-    "facade"
+    "facade",
+    "façade"
   ],
-  "correct_answer": 0,
+  "correct_answer": 1,
   "hint": "Devant « a », pour entendre [s], il faut une cédille.",
   "explanation": "On écrit « ç » devant « a » pour le son [s] : « façade ».",
   "review_tags": [

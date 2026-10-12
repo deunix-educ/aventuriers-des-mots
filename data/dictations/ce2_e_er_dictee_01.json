@@ -1,0 +1,39 @@
+{
+  "id": "ce2_e_er_dictee_01",
+  "level": "CE2",
+  "domain": "grammaire",
+  "rule_ids": [
+    "regle_e_er_infinitif"
+  ],
+  "difficulty": 1,
+  "target_text": "Il faut arroser les fleurs chaque matin.",
+  "words": [
+    {
+      "text": "Il",
+      "expects_capital": true
+    },
+    {
+      "text": "faut"
+    },
+    {
+      "text": "arroser",
+      "rule_id": "regle_e_er_infinitif"
+    },
+    {
+      "text": "les"
+    },
+    {
+      "text": "fleurs"
+    },
+    {
+      "text": "chaque"
+    },
+    {
+      "text": "matin."
+    }
+  ],
+  "audio_id": "ce2_e_er_dictee_01",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

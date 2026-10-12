@@ -1,0 +1,24 @@
+{
+  "id": "ce1_er_present_qcm_06",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "conjugaison_present",
+  "rule_id": "regle_verbe_er_present",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Les élèves ... leur leçon.",
+  "answers": [
+    "récite",
+    "récites",
+    "récitent"
+  ],
+  "correct_answer": 2,
+  "hint": "Plusieurs élèves : pense à « ils ».",
+  "explanation": "Avec un sujet pluriel, le verbe finit par -ent : les élèves récitent.",
+  "review_tags": [
+    "verbes_present",
+    "er_present"
+  ],
+  "review_status": "draft"
+}

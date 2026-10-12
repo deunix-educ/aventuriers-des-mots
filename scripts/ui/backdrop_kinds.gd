@@ -9,6 +9,9 @@ const TEXTURES := {
     "forest": "res://assets/environments/forest_backdrop.svg",
     "marsh": "res://assets/environments/marsh_backdrop.svg",
     "beach": "res://assets/environments/beach_backdrop.svg",
+    "mountain": "res://assets/environments/mountain_backdrop.svg",
+    "desert": "res://assets/environments/desert_backdrop.svg",
+    "island": "res://assets/environments/island_backdrop.svg",
 }
 
 ## Morceau joue par defaut avec chaque decor (reglage « automatique »).
@@ -16,6 +19,9 @@ const MUSIC := {
     "forest": "forest",
     "marsh": "marsh",
     "beach": "river",
+    "mountain": "meadow",
+    "desert": "night",
+    "island": "river",
 }
 
 const FALLBACK := "forest"

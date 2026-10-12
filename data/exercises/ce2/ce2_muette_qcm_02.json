@@ -1,0 +1,23 @@
+{
+  "id": "ce2_muette_qcm_02",
+  "level": "CE2",
+  "domain": "orthographe",
+  "skill": "lettres_et_mots",
+  "rule_id": "regle_lettre_muette_finale",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Mon frère est très ... .",
+  "answers": [
+    "gran",
+    "grand"
+  ],
+  "correct_answer": 1,
+  "hint": "Pense au féminin : une grande sœur.",
+  "explanation": "Au féminin, on entend « grande » : on écrit « grand » avec un -d final.",
+  "review_tags": [
+    "lettres_mots",
+    "muette"
+  ],
+  "review_status": "draft"
+}

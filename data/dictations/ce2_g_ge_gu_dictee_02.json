@@ -1,0 +1,45 @@
+{
+  "id": "ce2_g_ge_gu_dictee_02",
+  "level": "CE2",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_g_ge_gu"
+  ],
+  "difficulty": 2,
+  "target_text": "Mon frère joue de la guitare dans sa chambre.",
+  "words": [
+    {
+      "text": "Mon",
+      "expects_capital": true
+    },
+    {
+      "text": "frère"
+    },
+    {
+      "text": "joue"
+    },
+    {
+      "text": "de"
+    },
+    {
+      "text": "la"
+    },
+    {
+      "text": "guitare",
+      "rule_id": "regle_g_ge_gu"
+    },
+    {
+      "text": "dans"
+    },
+    {
+      "text": "sa"
+    },
+    {
+      "text": "chambre."
+    }
+  ],
+  "audio_id": "ce2_g_ge_gu_dictee_02",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

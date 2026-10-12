@@ -1,0 +1,24 @@
+{
+  "id": "ce1_etre_qcm_07",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "conjugaison_present",
+  "rule_id": "regle_verbe_etre_present",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Léa et Tom ... dans le jardin.",
+  "answers": [
+    "es",
+    "est",
+    "sont"
+  ],
+  "correct_answer": 2,
+  "hint": "Deux personnes : pense à « ils ».",
+  "explanation": "Léa et Tom, c'est « ils » : on écrit « sont ».",
+  "review_tags": [
+    "verbes_present",
+    "etre"
+  ],
+  "review_status": "draft"
+}

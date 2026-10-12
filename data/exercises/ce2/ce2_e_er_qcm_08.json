@@ -1,0 +1,23 @@
+{
+  "id": "ce2_e_er_qcm_08",
+  "level": "CE2",
+  "domain": "grammaire",
+  "skill": "conjugaison_ce2",
+  "rule_id": "regle_e_er_infinitif",
+  "difficulty": 3,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Après avoir ... les fruits, nous rentrons.",
+  "answers": [
+    "ramassé",
+    "ramasser"
+  ],
+  "correct_answer": 0,
+  "hint": "Après « avoir », le verbe est un participe : essaie « vendu ».",
+  "explanation": "Après « avoir », on écrit le participe : « ramassé ».",
+  "review_tags": [
+    "verbes_ce2",
+    "e_er"
+  ],
+  "review_status": "draft"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ce2_feminin_qcm_01",
+  "level": "CE2",
+  "domain": "orthographe",
+  "skill": "lettres_et_mots",
+  "rule_id": "regle_feminin_noms_adjectifs",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Le chat blanc et la ... noire jouent.",
+  "answers": [
+    "chatte",
+    "chate"
+  ],
+  "correct_answer": 0,
+  "hint": "Le féminin de « chat » double la lettre « t ».",
+  "explanation": "Le féminin de « chat » est « chatte », avec deux t.",
+  "review_tags": [
+    "lettres_mots",
+    "feminin"
+  ],
+  "review_status": "draft"
+}

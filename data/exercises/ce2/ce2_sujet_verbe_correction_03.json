@@ -1,0 +1,41 @@
+{
+  "id": "ce2_sujet_verbe_correction_03",
+  "level": "CE2",
+  "domain": "grammaire",
+  "skill": "conjugaison_ce2",
+  "rule_id": "regle_accord_sujet_verbe",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Les",
+      "correct": true
+    },
+    {
+      "text": "oasis",
+      "correct": true
+    },
+    {
+      "text": "apparaît",
+      "correct": false,
+      "expected": "apparaissent",
+      "rule_id": "regle_accord_sujet_verbe"
+    },
+    {
+      "text": "au",
+      "correct": true
+    },
+    {
+      "text": "loin.",
+      "correct": true
+    }
+  ],
+  "hint": "Plusieurs oasis : le verbe prend la marque du pluriel.",
+  "explanation": "Le sujet « les oasis » est pluriel : le verbe s'écrit « apparaissent ».",
+  "review_tags": [
+    "verbes_ce2",
+    "sujet_verbe"
+  ],
+  "review_status": "draft"
+}

@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_49_phare_de_l_ile",
+  "title": "Le phare de l'île",
+  "narrative_context": "Le phare de l'île a besoin du bon mot au féminin pour s'allumer. Choisis la bonne forme.",
+  "rule_id": "regle_feminin_noms_adjectifs",
+  "exercise_type": "multiple_choice",
+  "map_position": {
+    "x": 0.15,
+    "y": 0.15
+  },
+  "review_status": "draft"
+}

@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_35_cabane_du_berger",
+  "title": "La cabane du berger",
+  "narrative_context": "Le berger a mal écrit un verbe sur sa porte. Repère-le et corrige-le.",
+  "rule_id": "regle_verbe_avoir_present",
+  "exercise_type": "sentence_correction",
+  "map_position": {
+    "x": 0.5,
+    "y": 0.5
+  },
+  "review_status": "draft"
+}

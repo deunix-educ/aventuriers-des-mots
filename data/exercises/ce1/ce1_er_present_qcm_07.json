@@ -1,0 +1,24 @@
+{
+  "id": "ce1_er_present_qcm_07",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "conjugaison_present",
+  "rule_id": "regle_verbe_er_present",
+  "difficulty": 3,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Mon voisin et sa femme ... le soir.",
+  "answers": [
+    "danse",
+    "dansent",
+    "dansons"
+  ],
+  "correct_answer": 1,
+  "hint": "Deux personnes : pense à « ils ».",
+  "explanation": "Deux personnes, c'est « ils » : le verbe finit par -ent.",
+  "review_tags": [
+    "verbes_present",
+    "er_present"
+  ],
+  "review_status": "draft"
+}

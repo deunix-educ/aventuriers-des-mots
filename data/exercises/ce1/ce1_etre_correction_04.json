@@ -1,0 +1,53 @@
+{
+  "id": "ce1_etre_correction_04",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "conjugaison_present",
+  "rule_id": "regle_verbe_etre_present",
+  "difficulty": 3,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Mon",
+      "correct": true
+    },
+    {
+      "text": "frère",
+      "correct": true
+    },
+    {
+      "text": "et",
+      "correct": true
+    },
+    {
+      "text": "ma",
+      "correct": true
+    },
+    {
+      "text": "sœur",
+      "correct": true
+    },
+    {
+      "text": "est",
+      "correct": false,
+      "expected": "sont",
+      "rule_id": "regle_verbe_etre_present"
+    },
+    {
+      "text": "à",
+      "correct": true
+    },
+    {
+      "text": "l'école.",
+      "correct": true
+    }
+  ],
+  "hint": "Mon frère et ma sœur : pense à « ils ».",
+  "explanation": "Deux personnes, c'est « ils » : on écrit « sont ».",
+  "review_tags": [
+    "verbes_present",
+    "etre"
+  ],
+  "review_status": "draft"
+}

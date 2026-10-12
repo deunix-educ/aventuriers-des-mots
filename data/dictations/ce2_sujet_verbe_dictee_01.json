@@ -1,0 +1,45 @@
+{
+  "id": "ce2_sujet_verbe_dictee_01",
+  "level": "CE2",
+  "domain": "grammaire",
+  "rule_ids": [
+    "regle_accord_sujet_verbe"
+  ],
+  "difficulty": 1,
+  "target_text": "Les chameaux traversent le désert au lever du jour.",
+  "words": [
+    {
+      "text": "Les",
+      "expects_capital": true
+    },
+    {
+      "text": "chameaux"
+    },
+    {
+      "text": "traversent",
+      "rule_id": "regle_accord_sujet_verbe"
+    },
+    {
+      "text": "le"
+    },
+    {
+      "text": "désert"
+    },
+    {
+      "text": "au"
+    },
+    {
+      "text": "lever"
+    },
+    {
+      "text": "du"
+    },
+    {
+      "text": "jour."
+    }
+  ],
+  "audio_id": "ce2_sujet_verbe_dictee_01",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

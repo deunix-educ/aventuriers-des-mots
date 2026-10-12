@@ -1,0 +1,23 @@
+{
+  "id": "ce2_e_er_qcm_05",
+  "level": "CE2",
+  "domain": "grammaire",
+  "skill": "conjugaison_ce2",
+  "rule_id": "regle_e_er_infinitif",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Tu dois ... tes mains avant de manger.",
+  "answers": [
+    "lavé",
+    "laver"
+  ],
+  "correct_answer": 1,
+  "hint": "Remplace par « vendre » : « tu dois vendre » a du sens.",
+  "explanation": "« Tu dois vendre » convient : on écrit « laver ».",
+  "review_tags": [
+    "verbes_ce2",
+    "e_er"
+  ],
+  "review_status": "draft"
+}

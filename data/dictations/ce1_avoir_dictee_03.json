@@ -1,0 +1,36 @@
+{
+  "id": "ce1_avoir_dictee_03",
+  "level": "CE1",
+  "domain": "grammaire",
+  "rule_ids": [
+    "regle_verbe_avoir_present"
+  ],
+  "difficulty": 3,
+  "target_text": "Mes cousins ont un petit bateau.",
+  "words": [
+    {
+      "text": "Mes",
+      "expects_capital": true
+    },
+    {
+      "text": "cousins"
+    },
+    {
+      "text": "ont",
+      "rule_id": "regle_verbe_avoir_present"
+    },
+    {
+      "text": "un"
+    },
+    {
+      "text": "petit"
+    },
+    {
+      "text": "bateau."
+    }
+  ],
+  "audio_id": "ce1_avoir_dictee_03",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

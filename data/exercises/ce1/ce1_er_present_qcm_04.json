@@ -1,0 +1,24 @@
+{
+  "id": "ce1_er_present_qcm_04",
+  "level": "CE1",
+  "domain": "grammaire",
+  "skill": "conjugaison_present",
+  "rule_id": "regle_verbe_er_present",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Nous ... au marché.",
+  "answers": [
+    "marchent",
+    "marchons",
+    "marchez"
+  ],
+  "correct_answer": 1,
+  "hint": "Avec « nous », le verbe finit par -ons.",
+  "explanation": "Avec « nous », le verbe finit par -ons : nous marchons.",
+  "review_tags": [
+    "verbes_present",
+    "er_present"
+  ],
+  "review_status": "draft"
+}

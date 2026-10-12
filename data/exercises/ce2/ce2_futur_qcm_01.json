@@ -1,0 +1,24 @@
+{
+  "id": "ce2_futur_qcm_01",
+  "level": "CE2",
+  "domain": "grammaire",
+  "skill": "conjugaison_ce2",
+  "rule_id": "regle_futur_simple",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Demain, je ... une chanson.",
+  "answers": [
+    "chanterai",
+    "chantera",
+    "chanteras"
+  ],
+  "correct_answer": 0,
+  "hint": "Avec « je », le futur finit par -ai.",
+  "explanation": "Avec « je », le futur finit par -ai : je chanterai.",
+  "review_tags": [
+    "verbes_ce2",
+    "futur"
+  ],
+  "review_status": "draft"
+}

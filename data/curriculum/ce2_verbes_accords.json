@@ -1,0 +1,15 @@
+{
+  "level": "CE2",
+  "region_id": "desert_des_verbes",
+  "chapter_id": "verbes_accords",
+  "title": "Les verbes : accords et formes",
+  "region_title": "Le désert des verbes",
+  "order": 2,
+  "backdrop": "desert",
+  "rule_ids": [
+    "regle_accord_sujet_verbe",
+    "regle_e_er_infinitif",
+    "regle_futur_simple"
+  ],
+  "review_status": "draft"
+}

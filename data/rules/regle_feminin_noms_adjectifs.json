@@ -1,0 +1,9 @@
+{
+  "rule_id": "regle_feminin_noms_adjectifs",
+  "level": "CE2",
+  "domain": "orthographe",
+  "skill": "lettres_et_mots",
+  "statement": "Pour passer au féminin, on ajoute souvent un -e ; certains mots changent : -er devient -ère, -eur devient -euse, -teur devient -trice, -on devient -onne.",
+  "example": "Un boulanger, une boulangère. Un coiffeur, une coiffeuse. Un lion, une lionne.",
+  "review_status": "draft"
+}

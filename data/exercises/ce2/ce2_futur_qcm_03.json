@@ -1,0 +1,24 @@
+{
+  "id": "ce2_futur_qcm_03",
+  "level": "CE2",
+  "domain": "grammaire",
+  "skill": "conjugaison_ce2",
+  "rule_id": "regle_futur_simple",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Samedi, Paul ... un film.",
+  "answers": [
+    "regardera",
+    "regarderai",
+    "regarderas"
+  ],
+  "correct_answer": 0,
+  "hint": "Avec « Paul » (= il), le futur finit par -a.",
+  "explanation": "Avec « il », le futur finit par -a : Paul regardera.",
+  "review_tags": [
+    "verbes_ce2",
+    "futur"
+  ],
+  "review_status": "draft"
+}

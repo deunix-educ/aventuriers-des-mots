@@ -9,10 +9,10 @@
   "instruction": "Choisis le bon mot.",
   "question": "Ma ... est près de l'école.",
   "answers": [
-    "maison",
-    "maisson"
+    "maisson",
+    "maison"
   ],
-  "correct_answer": 0,
+  "correct_answer": 1,
   "hint": "Écoute : tu entends [z], pas [s].",
   "explanation": "On entend [z] entre deux voyelles : un seul « s », on écrit « maison ».",
   "review_tags": [

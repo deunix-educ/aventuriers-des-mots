@@ -1,0 +1,42 @@
+{
+  "id": "ce1_er_present_dictee_03",
+  "level": "CE1",
+  "domain": "grammaire",
+  "rule_ids": [
+    "regle_verbe_er_present"
+  ],
+  "difficulty": 3,
+  "target_text": "Les enfants dessinent avec des feutres de couleur.",
+  "words": [
+    {
+      "text": "Les",
+      "expects_capital": true
+    },
+    {
+      "text": "enfants"
+    },
+    {
+      "text": "dessinent",
+      "rule_id": "regle_verbe_er_present"
+    },
+    {
+      "text": "avec"
+    },
+    {
+      "text": "des"
+    },
+    {
+      "text": "feutres"
+    },
+    {
+      "text": "de"
+    },
+    {
+      "text": "couleur."
+    }
+  ],
+  "audio_id": "ce1_er_present_dictee_03",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

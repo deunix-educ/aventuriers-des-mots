@@ -15,7 +15,7 @@ func test_unknown_rule_returns_empty_dictionary() -> void:
 
 func test_missions_are_loaded_and_sorted() -> void:
     var missions := ExerciseEngine.get_missions()
-    assert_eq(missions.size(), 30)
+    assert_eq(missions.size(), 57)
     var ids: Array = missions.map(func(m: Dictionary) -> String: return m["mission_id"])
     assert_eq(ids, ids.duplicate())  # trivialement vrai, documente l'ordre stable
     assert_true(ids.has("mission_01_pre_des_mots"))
@@ -24,14 +24,16 @@ func test_missions_are_loaded_and_sorted() -> void:
 
 
 func test_missions_are_filtered_by_the_level_of_their_rule() -> void:
-    assert_eq(ExerciseEngine.get_missions_for_level("CE1").size(), 18)
-    assert_eq(ExerciseEngine.get_missions_for_level("CE2").size(), 12)
+    assert_eq(ExerciseEngine.get_missions_for_level("CE1").size(), 27)
+    assert_eq(ExerciseEngine.get_missions_for_level("CE2").size(), 30)
     assert_eq(ExerciseEngine.get_missions_for_level("CM1").size(), 0)
 
 
 func test_regions_are_ordered_and_hold_their_missions() -> void:
     var ce1 := ExerciseEngine.get_regions_for_level("CE1")
-    assert_eq(ce1.size(), 2)
+    assert_eq(ce1.size(), 3)
+    assert_eq(ce1[2]["region_id"], "montagne_des_verbes")
+    assert_eq(ExerciseEngine.get_regions_for_level("CE2").size(), 3)
     assert_eq(ce1[0]["region_id"], "foret_des_accords")
     assert_eq(ce1[1]["region_id"], "plage_des_sons")
     assert_eq(ExerciseEngine.get_missions_for_region("foret_des_accords").size(), 9)

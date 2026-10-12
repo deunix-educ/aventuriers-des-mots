@@ -1,0 +1,36 @@
+{
+  "id": "ce1_avoir_dictee_01",
+  "level": "CE1",
+  "domain": "grammaire",
+  "rule_ids": [
+    "regle_verbe_avoir_present"
+  ],
+  "difficulty": 1,
+  "target_text": "J'ai un ballon bleu et rouge.",
+  "words": [
+    {
+      "text": "J'ai",
+      "expects_capital": true,
+      "rule_id": "regle_verbe_avoir_present"
+    },
+    {
+      "text": "un"
+    },
+    {
+      "text": "ballon"
+    },
+    {
+      "text": "bleu"
+    },
+    {
+      "text": "et"
+    },
+    {
+      "text": "rouge."
+    }
+  ],
+  "audio_id": "ce1_avoir_dictee_01",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

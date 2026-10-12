@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_34_sac_a_dos_plein",
+  "title": "Le sac à dos plein",
+  "narrative_context": "Ton sac à dos est plein de verbes « avoir ». Choisis la bonne forme pour qu'il ferme bien.",
+  "rule_id": "regle_verbe_avoir_present",
+  "exercise_type": "multiple_choice",
+  "map_position": {
+    "x": 0.15,
+    "y": 0.5
+  },
+  "review_status": "draft"
+}

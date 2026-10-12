@@ -9,10 +9,10 @@
   "instruction": "Choisis le bon mot.",
   "question": "Il y a une ... près de la table.",
   "answers": [
-    "chaise",
-    "chaisse"
+    "chaisse",
+    "chaise"
   ],
-  "correct_answer": 0,
+  "correct_answer": 1,
   "hint": "Ici, on entend le son [z], comme dans « rose ».",
   "explanation": "On entend [z] entre deux voyelles : un seul « s » suffit, on écrit « chaise ».",
   "review_tags": [
