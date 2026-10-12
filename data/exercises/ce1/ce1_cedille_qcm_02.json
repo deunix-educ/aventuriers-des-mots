@@ -1,0 +1,23 @@
+{
+  "id": "ce1_cedille_qcm_02",
+  "level": "CE1",
+  "domain": "orthographe",
+  "skill": "sons_et_lettres",
+  "rule_id": "regle_c_cedille",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Ma maîtresse nous donne une ... à apprendre.",
+  "answers": [
+    "leçon",
+    "lecon"
+  ],
+  "correct_answer": 0,
+  "hint": "Devant « o », pour entendre [s], il faut une cédille.",
+  "explanation": "On écrit « ç » devant « o » pour le son [s] : « leçon ».",
+  "review_tags": [
+    "sons_lettres",
+    "cedille"
+  ],
+  "review_status": "draft"
+}

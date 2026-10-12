@@ -1,0 +1,23 @@
+{
+  "id": "ce1_cedille_qcm_06",
+  "level": "CE1",
+  "domain": "orthographe",
+  "skill": "sons_et_lettres",
+  "rule_id": "regle_c_cedille",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Mon livre est écrit en ... .",
+  "answers": [
+    "français",
+    "francais"
+  ],
+  "correct_answer": 0,
+  "hint": "Devant « a », le son [s] demande une cédille.",
+  "explanation": "On écrit « ç » devant « a » pour le son [s] : « français ».",
+  "review_tags": [
+    "sons_lettres",
+    "cedille"
+  ],
+  "review_status": "draft"
+}

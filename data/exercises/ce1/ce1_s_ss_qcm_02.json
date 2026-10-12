@@ -1,0 +1,23 @@
+{
+  "id": "ce1_s_ss_qcm_02",
+  "level": "CE1",
+  "domain": "orthographe",
+  "skill": "sons_et_lettres",
+  "rule_id": "regle_s_ss",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Il y a une ... près de la table.",
+  "answers": [
+    "chaise",
+    "chaisse"
+  ],
+  "correct_answer": 0,
+  "hint": "Ici, on entend le son [z], comme dans « rose ».",
+  "explanation": "On entend [z] entre deux voyelles : un seul « s » suffit, on écrit « chaise ».",
+  "review_tags": [
+    "sons_lettres",
+    "s_ss"
+  ],
+  "review_status": "draft"
+}

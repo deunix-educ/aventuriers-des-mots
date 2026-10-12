@@ -16,7 +16,7 @@
     "schema_version": { "type": "integer", "minimum": 1 },
     "profile_id": { "type": "string", "pattern": "^[a-z][a-z0-9_]*$" },
     "display_name": { "type": "string", "minLength": 1 },
-    "school_level": { "type": "string", "enum": ["CE1", "CE2"] },
+    "school_level": { "type": "string", "enum": ["CE1", "CE2", "CM1", "CM2"] },
     "session_count": { "type": "integer", "minimum": 0 },
     "unlocked_regions": { "type": "array", "items": { "type": "string" } },
     "skills": {

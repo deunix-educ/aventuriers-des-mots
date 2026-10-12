@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_27_cerf_volant_parleur",
+  "title": "Le cerf-volant parleur",
+  "narrative_context": "Le cerf-volant te souffle une phrase, une seule fois. Écoute-le bien et écris exactement ce qu'il dit.",
+  "rule_id": "regle_c_cedille",
+  "exercise_type": "dictation",
+  "map_position": {
+    "x": 0.85,
+    "y": 0.5
+  },
+  "review_status": "draft"
+}

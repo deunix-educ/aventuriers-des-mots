@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_25_phare_du_petit_c",
+  "title": "Le phare du petit ç",
+  "narrative_context": "Le gardien du phare a perdu une cédille. Aide-le à choisir la bonne écriture pour guider les bateaux.",
+  "rule_id": "regle_c_cedille",
+  "exercise_type": "multiple_choice",
+  "map_position": {
+    "x": 0.15,
+    "y": 0.5
+  },
+  "review_status": "draft"
+}

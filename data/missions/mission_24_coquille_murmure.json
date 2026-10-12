@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_24_coquille_murmure",
+  "title": "La coquille qui murmure",
+  "narrative_context": "Colle ton oreille à la coquille : elle murmure une phrase, une seule fois. Écoute bien et écris-la en entier.",
+  "rule_id": "regle_s_ss",
+  "exercise_type": "dictation",
+  "map_position": {
+    "x": 0.85,
+    "y": 0.15
+  },
+  "review_status": "draft"
+}

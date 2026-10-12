@@ -1,0 +1,15 @@
+{
+  "level": "CE1",
+  "region_id": "plage_des_sons",
+  "chapter_id": "sons_et_lettres",
+  "title": "Les sons et les lettres",
+  "region_title": "La plage des sons",
+  "order": 2,
+  "backdrop": "beach",
+  "rule_ids": [
+    "regle_s_ss",
+    "regle_c_cedille",
+    "regle_m_devant_mbp"
+  ],
+  "review_status": "draft"
+}

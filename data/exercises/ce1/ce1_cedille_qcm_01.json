@@ -1,0 +1,23 @@
+{
+  "id": "ce1_cedille_qcm_01",
+  "level": "CE1",
+  "domain": "orthographe",
+  "skill": "sons_et_lettres",
+  "rule_id": "regle_c_cedille",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Le petit ... joue au ballon.",
+  "answers": [
+    "garçon",
+    "garcon"
+  ],
+  "correct_answer": 0,
+  "hint": "Devant « o », pour entendre [s], il faut une cédille.",
+  "explanation": "Devant « o », « c » se lit [k] ; pour entendre [s], on écrit « ç » : « garçon ».",
+  "review_tags": [
+    "sons_lettres",
+    "cedille"
+  ],
+  "review_status": "draft"
+}

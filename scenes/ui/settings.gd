@@ -95,7 +95,7 @@ func _build_track_option() -> void:
 func _on_track_selected(index: int) -> void:
     SettingsManager.set_music_track(SoundCatalog.music_choices()[index])
     # On fait entendre le choix tout de suite.
-    AudioManager.play_region_music(ProgressManager.school_level())
+    AudioManager.play_region_music(AudioManager.current_backdrop_kind())
 
 
 func _on_volume_changed(value: float) -> void:

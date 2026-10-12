@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_23_panier_coquillages",
+  "title": "Le panier à coquillages",
+  "narrative_context": "Des coquillages portent un mot mal écrit. Trouve celui qui cloche et remets-le d'aplomb.",
+  "rule_id": "regle_s_ss",
+  "exercise_type": "sentence_correction",
+  "map_position": {
+    "x": 0.5,
+    "y": 0.15
+  },
+  "review_status": "draft"
+}

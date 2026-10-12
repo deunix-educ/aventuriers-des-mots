@@ -70,3 +70,19 @@ func test_profile_deletion_belongs_to_the_adult_space() -> void:
     assert_true(ProfileManager.list_profiles().has(other_id), "les autres profils sont intacts")
 
     ProfileManager.delete_profile(other_id)
+
+
+func test_profile_creation_offers_only_levels_that_have_content() -> void:
+    var scene: Control = add_child_autofree(
+        load("res://scenes/profiles/profile_create.tscn").instantiate()
+    )
+    await wait_process_frames(1)
+    var offered: Array[String] = []
+    for button in scene.get_node("%LevelBox").get_children():
+        offered.append(button.get_meta("level"))
+    var expected: Array[String] = []
+    for level in SchoolLevels.ALL:
+        if not ExerciseEngine.get_regions_for_level(level).is_empty():
+            expected.append(level)
+    assert_eq(offered, expected)
+    assert_true(offered.has("CE1") and offered.has("CE2"))

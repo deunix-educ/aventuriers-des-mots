@@ -1,0 +1,45 @@
+{
+  "id": "ce1_s_ss_correction_01",
+  "level": "CE1",
+  "domain": "orthographe",
+  "skill": "sons_et_lettres",
+  "rule_id": "regle_s_ss",
+  "difficulty": 1,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "La",
+      "correct": true
+    },
+    {
+      "text": "fillette",
+      "correct": true
+    },
+    {
+      "text": "sent",
+      "correct": true
+    },
+    {
+      "text": "une",
+      "correct": true
+    },
+    {
+      "text": "belle",
+      "correct": true
+    },
+    {
+      "text": "roze.",
+      "correct": false,
+      "expected": "rose.",
+      "rule_id": "regle_s_ss"
+    }
+  ],
+  "hint": "Écoute : tu entends [z], comme dans « maison ».",
+  "explanation": "On entend [z] entre deux voyelles : un seul « s », on écrit « rose ».",
+  "review_tags": [
+    "sons_lettres",
+    "s_ss"
+  ],
+  "review_status": "draft"
+}

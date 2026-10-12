@@ -358,3 +358,17 @@ Ajouts à l'arborescence proposée :
 ## 37. Suppression d'un profil réservée à l'adulte (version 0.5.6)
 
 Demande utilisateur. Le bouton « Supprimer » est retiré de la sélection de profil (côté enfant) ; la suppression se fait dans l'espace adulte, derrière la barrière (point 32), via « Supprimer ce profil » avec une confirmation explicite qui nomme le profil et rappelle de l'exporter avant. Une suppression n'affecte jamais un autre profil. Le cahier des charges §9 (confirmation explicite) est respecté.
+
+## 38. Plusieurs « tableaux » par niveau, niveaux CM1/CM2, tableau pilote (version 0.6.0)
+
+Demande utilisateur : chaque niveau peut avoir jusqu'à 3 tableaux (lieux : forêt, marais, plage…) traitant d'autres règles de grammaire et d'orthographe, avec la même exigence « aucune phrase en double », et le jeu s'ouvre à CM1 et CM2 sur le même principe. Les notions s'inspirent de ce que travaillent les cahiers de ce type ; **seules les règles sont reprises, tous les textes sont originaux** (invariant du projet : rien du BLED n'est reproduit, son nom n'apparaît pas).
+
+**Format (validé par l'utilisateur avant implémentation)** : le niveau scolaire des schémas (`save`, `rule`, `curriculum`, `dictation`, exercices) passe de CE1/CE2 à CE1/CE2/CM1/CM2. Ajout compatible : aucun profil existant n'est migré, `schema_version` reste 2 ; une ancienne version du jeu ne lirait pas un profil CM. La liste est unique (`SchoolLevels`, testée contre les schémas).
+
+**Tableau = fichier de `data/curriculum/`** : nouveaux champs optionnels `region_title` (nom affiché), `order` (1 à 3) et `backdrop` (décor, liste fermée `BackdropKinds`, testée contre l'art disponible). Une mission appartient au tableau qui contient sa règle : aucun champ de plus dans les missions ni dans les sauvegardes. Garde-fous (`test_curriculum`) : une règle dans un seul tableau, du bon niveau, 3 tableaux maximum par niveau, toute mission rattachée à un tableau.
+
+**Carte** : bouton « Aller : <tableau suivant> » pour passer d'un tableau à l'autre ; « Revoir le <niveau précédent> » / « Retour au <niveau> » généralisé ; on revient au dernier tableau consulté après une mission. Décor et musique automatique suivent le tableau (plage → morceau « rivière »). Création de profil : seuls les niveaux ayant du contenu sont proposés (CM1/CM2 apparaîtront avec leur premier tableau).
+
+**Tableau pilote CE1 « La plage des sons »** (`order` 2, décor plage) : 3 règles (s/ss entre deux voyelles, c/ç devant a-o-u, m devant m-b-p), 24 QCM, 12 corrections, 9 dictées (voix Piper provisoire, audio généré), 9 missions, compétence « sons et lettres ». Contenu entièrement `draft`. Unicité : tous les énoncés passent les gardes-fous de phrases en double et quasi doubles (points 34 et 36).
+
+**Reste à faire** : CE1 tableau 3 (« La montagne des verbes »), CE2 tableaux 2 et 3, CM1 et CM2 (3 tableaux chacun), d'autres décors et musiques par tableau. **Non vérifié** : lisibilité des nouvelles voix de dictée, pertinence pédagogique des règles et du niveau de difficulté (à relire), autres résolutions.

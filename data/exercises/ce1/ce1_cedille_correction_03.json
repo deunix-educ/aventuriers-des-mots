@@ -1,0 +1,49 @@
+{
+  "id": "ce1_cedille_correction_03",
+  "level": "CE1",
+  "domain": "orthographe",
+  "skill": "sons_et_lettres",
+  "rule_id": "regle_c_cedille",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Nous",
+      "correct": true
+    },
+    {
+      "text": "commencons",
+      "correct": false,
+      "expected": "commençons",
+      "rule_id": "regle_c_cedille"
+    },
+    {
+      "text": "la",
+      "correct": true
+    },
+    {
+      "text": "dictée",
+      "correct": true
+    },
+    {
+      "text": "à",
+      "correct": true
+    },
+    {
+      "text": "neuf",
+      "correct": true
+    },
+    {
+      "text": "heures.",
+      "correct": true
+    }
+  ],
+  "hint": "Devant « o », le son [s] demande une cédille.",
+  "explanation": "On écrit « ç » devant « o » pour le son [s] : « commençons ».",
+  "review_tags": [
+    "sons_lettres",
+    "cedille"
+  ],
+  "review_status": "draft"
+}

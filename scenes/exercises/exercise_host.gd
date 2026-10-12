@@ -65,8 +65,9 @@ func _ready() -> void:
     _rule = ExerciseEngine.get_rule(_mission["rule_id"])
     _skill_id = _rule.get("skill", "")
     _current_difficulty = ProgressManager.next_difficulty_for_skill(_skill_id, 1)
-    $Backdrop.kind = "marsh" if _rule.get("level", "CE1") == "CE2" else "forest"
-    AudioManager.play_region_music(_rule.get("level", "CE1"))
+    var backdrop_kind := ExerciseEngine.backdrop_for_rule(_mission["rule_id"])
+    $Backdrop.kind = backdrop_kind
+    AudioManager.play_region_music(backdrop_kind)
     _show_rule_panel()
 
 

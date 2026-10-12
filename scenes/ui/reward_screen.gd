@@ -26,9 +26,9 @@ const ITEM_SIZE := 72.0
 
 func _ready() -> void:
     var mission := ExerciseEngine.get_mission(GameManager.pending_mission_id)
-    var rule := ExerciseEngine.get_rule(mission.get("rule_id", ""))
-    _backdrop.kind = "marsh" if rule.get("level", "CE1") == "CE2" else "forest"
-    AudioManager.play_region_music(rule.get("level", "CE1"))
+    var backdrop_kind := ExerciseEngine.backdrop_for_rule(mission.get("rule_id", ""))
+    _backdrop.kind = backdrop_kind
+    AudioManager.play_region_music(backdrop_kind)
 
     var summary := ProgressManager.complete_mission(
         GameManager.pending_mission_id, GameManager.last_outcomes

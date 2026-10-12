@@ -1,0 +1,23 @@
+{
+  "id": "ce1_s_ss_qcm_05",
+  "level": "CE1",
+  "domain": "orthographe",
+  "skill": "sons_et_lettres",
+  "rule_id": "regle_s_ss",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Un petit ... chante sur la branche.",
+  "answers": [
+    "oiseau",
+    "oisseau"
+  ],
+  "correct_answer": 0,
+  "hint": "Écoute bien : on entend [z] dans ce mot.",
+  "explanation": "On entend [z] entre deux voyelles : un seul « s », on écrit « oiseau ».",
+  "review_tags": [
+    "sons_lettres",
+    "s_ss"
+  ],
+  "review_status": "draft"
+}

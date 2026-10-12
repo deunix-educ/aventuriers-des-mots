@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_30_tambour_de_la_plage",
+  "title": "Le tambour de la plage",
+  "narrative_context": "Le tambour de la plage bat une phrase, une seule fois. Écoute bien et écris-la sans faute.",
+  "rule_id": "regle_m_devant_mbp",
+  "exercise_type": "dictation",
+  "map_position": {
+    "x": 0.85,
+    "y": 0.85
+  },
+  "review_status": "draft"
+}

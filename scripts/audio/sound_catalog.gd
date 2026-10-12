@@ -9,7 +9,7 @@ const MUSIC_DIR := "res://assets/audio/music"
 const SFX_IDS: Array[String] = ["click", "success", "try_again", "star", "fanfare"]
 const MUSIC_IDS: Array[String] = ["forest", "marsh", "meadow", "river", "night"]
 
-## Choix « automatique » : la musique de la region (voir music_for_level).
+## Choix « automatique » : la musique du decor du tableau (BackdropKinds).
 const MUSIC_AUTO := "auto"
 
 
@@ -25,11 +25,6 @@ static func music_path(music_id: String) -> String:
     return "%s/%s.ogg" % [MUSIC_DIR, music_id]
 
 
-## Musique d'une region selon le niveau scolaire de la regle.
-static func music_for_level(level: String) -> String:
-    return "marsh" if level == "CE2" else "forest"
-
-
 ## Choix possibles dans les reglages : automatique puis chaque morceau.
 static func music_choices() -> Array[String]:
     var choices: Array[String] = [MUSIC_AUTO]
@@ -37,8 +32,9 @@ static func music_choices() -> Array[String]:
     return choices
 
 
-## Morceau a jouer pour le choix de l'utilisateur et le niveau scolaire.
-static func resolve_music(choice: String, level: String) -> String:
+## Morceau a jouer pour le choix de l'utilisateur et le decor du tableau :
+## un morceau choisi vaut partout ; « automatique » suit le decor.
+static func resolve_music(choice: String, backdrop_kind: String) -> String:
     if MUSIC_IDS.has(choice):
         return choice
-    return music_for_level(level)
+    return BackdropKinds.music_for(backdrop_kind)

@@ -17,7 +17,7 @@ func _ready() -> void:
     _settings_button.pressed.connect(_on_settings_pressed)
     _new_profile_button.pressed.connect(_on_new_profile_pressed)
 
-    AudioManager.play_region_music("CE1")
+    AudioManager.play_region_music("forest")
     _refresh_profile_list()
 
 

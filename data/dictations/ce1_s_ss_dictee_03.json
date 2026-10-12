@@ -1,0 +1,42 @@
+{
+  "id": "ce1_s_ss_dictee_03",
+  "level": "CE1",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_s_ss"
+  ],
+  "difficulty": 3,
+  "target_text": "Mamie a mis ses chaussons dans la chambre.",
+  "words": [
+    {
+      "text": "Mamie",
+      "expects_capital": true
+    },
+    {
+      "text": "a"
+    },
+    {
+      "text": "mis"
+    },
+    {
+      "text": "ses"
+    },
+    {
+      "text": "chaussons",
+      "rule_id": "regle_s_ss"
+    },
+    {
+      "text": "dans"
+    },
+    {
+      "text": "la"
+    },
+    {
+      "text": "chambre."
+    }
+  ],
+  "audio_id": "ce1_s_ss_dictee_03",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

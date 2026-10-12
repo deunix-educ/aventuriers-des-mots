@@ -1,0 +1,23 @@
+{
+  "id": "ce1_cedille_qcm_05",
+  "level": "CE1",
+  "domain": "orthographe",
+  "skill": "sons_et_lettres",
+  "rule_id": "regle_c_cedille",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "La ... de la maison est blanche.",
+  "answers": [
+    "façade",
+    "facade"
+  ],
+  "correct_answer": 0,
+  "hint": "Devant « a », pour entendre [s], il faut une cédille.",
+  "explanation": "On écrit « ç » devant « a » pour le son [s] : « façade ».",
+  "review_tags": [
+    "sons_lettres",
+    "cedille"
+  ],
+  "review_status": "draft"
+}

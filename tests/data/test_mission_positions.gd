@@ -13,20 +13,24 @@ const MIN_GAP_X := 0.2
 const MIN_GAP_Y := 0.3
 
 
-func test_mission_markers_do_not_overlap_within_a_level() -> void:
-    for level in ["CE1", "CE2"]:
-        var missions := ExerciseEngine.get_missions_for_level(level)
-        assert_false(missions.is_empty(), "aucune mission pour %s" % level)
-        for i in missions.size():
-            for j in range(i + 1, missions.size()):
-                var a: Dictionary = missions[i]["map_position"]
-                var b: Dictionary = missions[j]["map_position"]
-                var dx: float = abs(float(a["x"]) - float(b["x"]))
-                var dy: float = abs(float(a["y"]) - float(b["y"]))
-                assert_true(
-                    dx >= MIN_GAP_X or dy >= MIN_GAP_Y,
-                    (
-                        "%s et %s sont trop proches (dx=%s, dy=%s)"
-                        % [missions[i]["mission_id"], missions[j]["mission_id"], dx, dy]
-                    ),
-                )
+func test_mission_markers_do_not_overlap_within_a_region() -> void:
+    var checked_regions := 0
+    for level in SchoolLevels.ALL:
+        for region in ExerciseEngine.get_regions_for_level(level):
+            var missions := ExerciseEngine.get_missions_for_region(region["region_id"])
+            assert_false(missions.is_empty(), "aucune mission pour %s" % region["region_id"])
+            checked_regions += 1
+            for i in missions.size():
+                for j in range(i + 1, missions.size()):
+                    var a: Dictionary = missions[i]["map_position"]
+                    var b: Dictionary = missions[j]["map_position"]
+                    var dx: float = abs(float(a["x"]) - float(b["x"]))
+                    var dy: float = abs(float(a["y"]) - float(b["y"]))
+                    assert_true(
+                        dx >= MIN_GAP_X or dy >= MIN_GAP_Y,
+                        (
+                            "%s et %s sont trop proches (dx=%s, dy=%s)"
+                            % [missions[i]["mission_id"], missions[j]["mission_id"], dx, dy]
+                        ),
+                    )
+    assert_gt(checked_regions, 1)

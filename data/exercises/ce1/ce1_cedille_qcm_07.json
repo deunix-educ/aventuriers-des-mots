@@ -1,0 +1,23 @@
+{
+  "id": "ce1_cedille_qcm_07",
+  "level": "CE1",
+  "domain": "orthographe",
+  "skill": "sons_et_lettres",
+  "rule_id": "regle_c_cedille",
+  "difficulty": 3,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Papa a ... une lettre ce matin.",
+  "answers": [
+    "reçu",
+    "recu"
+  ],
+  "correct_answer": 0,
+  "hint": "Devant « u », pour entendre [s], il faut une cédille.",
+  "explanation": "On écrit « ç » devant « u » pour le son [s] : « reçu ».",
+  "review_tags": [
+    "sons_lettres",
+    "cedille"
+  ],
+  "review_status": "draft"
+}

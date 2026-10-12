@@ -1,0 +1,23 @@
+{
+  "id": "ce1_s_ss_qcm_07",
+  "level": "CE1",
+  "domain": "orthographe",
+  "skill": "sons_et_lettres",
+  "rule_id": "regle_s_ss",
+  "difficulty": 3,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "La maîtresse entre dans la ... .",
+  "answers": [
+    "classe",
+    "clase"
+  ],
+  "correct_answer": 0,
+  "hint": "Entre « a » et « e », quel son entends-tu ?",
+  "explanation": "Pour le son [s] entre deux voyelles, on écrit « ss » : « classe ».",
+  "review_tags": [
+    "sons_lettres",
+    "s_ss"
+  ],
+  "review_status": "draft"
+}

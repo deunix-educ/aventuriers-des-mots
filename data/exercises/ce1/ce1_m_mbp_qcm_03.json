@@ -1,0 +1,23 @@
+{
+  "id": "ce1_m_mbp_qcm_03",
+  "level": "CE1",
+  "domain": "orthographe",
+  "skill": "sons_et_lettres",
+  "rule_id": "regle_m_devant_mbp",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Je colle un ... sur l'enveloppe.",
+  "answers": [
+    "timbre",
+    "tinbre"
+  ],
+  "correct_answer": 0,
+  "hint": "Regarde la lettre qui suit : un « b ».",
+  "explanation": "Devant « b », on écrit « m » : « timbre ».",
+  "review_tags": [
+    "sons_lettres",
+    "m_mbp"
+  ],
+  "review_status": "draft"
+}

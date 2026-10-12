@@ -11,6 +11,8 @@ var _rules: Dictionary = {}
 var _exercises_by_rule_and_type: Dictionary = {}
 var _dictations_by_rule: Dictionary = {}
 var _reward_items: Array[Dictionary] = []
+var _regions: Dictionary = {}
+var _region_order: Array[String] = []
 var _missions: Dictionary = {}
 var _mission_order: Array[String] = []
 var _rng := RandomNumberGenerator.new()
@@ -19,6 +21,7 @@ var _rng := RandomNumberGenerator.new()
 func _ready() -> void:
     _rng.randomize()
     _load_rules()
+    _load_regions()
     _load_exercises()
     _load_dictations()
     _load_missions()
@@ -44,6 +47,47 @@ func get_missions_for_level(level: String) -> Array[Dictionary]:
         if get_rule(mission["rule_id"]).get("level", "") == level:
             missions.append(mission)
     return missions
+
+
+## « Tableaux » (regions de la carte) du niveau, dans l'ordre d'affichage :
+## chacun est un fichier de data/curriculum/ (titre, decor, regles).
+func get_regions_for_level(level: String) -> Array[Dictionary]:
+    var regions: Array[Dictionary] = []
+    for region_id in _region_order:
+        if _regions[region_id]["level"] == level:
+            regions.append(_regions[region_id])
+    return regions
+
+
+func get_region(region_id: String) -> Dictionary:
+    return _regions.get(region_id, {})
+
+
+## Tableau auquel appartient une regle ("" si aucun).
+func region_id_for_rule(rule_id: String) -> String:
+    for region_id in _region_order:
+        if (_regions[region_id]["rule_ids"] as Array).has(rule_id):
+            return region_id
+    return ""
+
+
+## Missions d'un tableau : celles dont la regle figure dans ce tableau.
+func get_missions_for_region(region_id: String) -> Array[Dictionary]:
+    var missions: Array[Dictionary] = []
+    var rule_ids: Array = _regions.get(region_id, {}).get("rule_ids", [])
+    for mission in get_missions():
+        if rule_ids.has(mission["rule_id"]):
+            missions.append(mission)
+    return missions
+
+
+## Decor (BackdropKinds) du tableau d'une regle ; a defaut, celui du niveau.
+func backdrop_for_rule(rule_id: String) -> String:
+    var region := get_region(region_id_for_rule(rule_id))
+    var kind: String = region.get("backdrop", "")
+    if BackdropKinds.is_valid(kind):
+        return kind
+    return "marsh" if get_rule(rule_id).get("level", "") == "CE2" else BackdropKinds.FALLBACK
 
 
 ## Catalogue des objets de la collection, du plus facile au plus difficile
@@ -111,6 +155,32 @@ func _load_rules() -> void:
             continue
         var rule: Dictionary = DataLoader.read_json(path)
         _rules[rule["rule_id"]] = rule
+
+
+func _load_regions() -> void:
+    var loaded: Array[Dictionary] = []
+    for path in DataLoader.find_json_files("res://data/curriculum"):
+        var errors := DataLoader.validate_file(path, "curriculum")
+        if not errors.is_empty():
+            push_error("Tableau ignore (%s) : %s" % [path, errors])
+            continue
+        loaded.append(DataLoader.read_json(path))
+    # Ordre : niveau, puis numero de tableau, puis identifiant (stable).
+    loaded.sort_custom(
+        func(a: Dictionary, b: Dictionary) -> bool:
+            var rank_a := SchoolLevels.rank(a["level"])
+            var rank_b := SchoolLevels.rank(b["level"])
+            if rank_a != rank_b:
+                return rank_a < rank_b
+            var order_a := int(a.get("order", 1))
+            var order_b := int(b.get("order", 1))
+            if order_a != order_b:
+                return order_a < order_b
+            return a["region_id"] < b["region_id"]
+    )
+    for region in loaded:
+        _regions[region["region_id"]] = region
+        _region_order.append(region["region_id"])
 
 
 func _load_exercises() -> void:

@@ -27,6 +27,9 @@ var last_outcomes: Array[String] = []
 ## profil, selon d'ou il a ete ouvert).
 var settings_return_scene: String = SCENE_WORLD_MAP
 
+## Dernier tableau consulte sur la carte : on y revient apres une mission.
+var map_region_id: String = ""
+
 
 func goto(scene_path: String) -> void:
     # Differe le changement de scene : l'appeler depuis le _ready() de la

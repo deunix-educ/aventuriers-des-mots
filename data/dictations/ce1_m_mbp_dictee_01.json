@@ -1,0 +1,39 @@
+{
+  "id": "ce1_m_mbp_dictee_01",
+  "level": "CE1",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_m_devant_mbp"
+  ],
+  "difficulty": 1,
+  "target_text": "Le pompier monte sur la grande échelle.",
+  "words": [
+    {
+      "text": "Le",
+      "expects_capital": true
+    },
+    {
+      "text": "pompier",
+      "rule_id": "regle_m_devant_mbp"
+    },
+    {
+      "text": "monte"
+    },
+    {
+      "text": "sur"
+    },
+    {
+      "text": "la"
+    },
+    {
+      "text": "grande"
+    },
+    {
+      "text": "échelle."
+    }
+  ],
+  "audio_id": "ce1_m_mbp_dictee_01",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

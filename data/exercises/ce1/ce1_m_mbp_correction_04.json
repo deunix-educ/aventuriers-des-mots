@@ -1,0 +1,53 @@
+{
+  "id": "ce1_m_mbp_correction_04",
+  "level": "CE1",
+  "domain": "orthographe",
+  "skill": "sons_et_lettres",
+  "rule_id": "regle_m_devant_mbp",
+  "difficulty": 3,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Lola",
+      "correct": true
+    },
+    {
+      "text": "va",
+      "correct": true
+    },
+    {
+      "text": "enmener",
+      "correct": false,
+      "expected": "emmener",
+      "rule_id": "regle_m_devant_mbp"
+    },
+    {
+      "text": "son",
+      "correct": true
+    },
+    {
+      "text": "chien",
+      "correct": true
+    },
+    {
+      "text": "chez",
+      "correct": true
+    },
+    {
+      "text": "le",
+      "correct": true
+    },
+    {
+      "text": "vétérinaire.",
+      "correct": true
+    }
+  ],
+  "hint": "Devant un « m », on écrit aussi « m ».",
+  "explanation": "Devant « m », on écrit « m » : « emmener » (deux m).",
+  "review_tags": [
+    "sons_lettres",
+    "m_mbp"
+  ],
+  "review_status": "draft"
+}

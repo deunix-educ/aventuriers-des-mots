@@ -1,0 +1,23 @@
+{
+  "id": "ce1_m_mbp_qcm_05",
+  "level": "CE1",
+  "domain": "orthographe",
+  "skill": "sons_et_lettres",
+  "rule_id": "regle_m_devant_mbp",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Il joue du ... dans la fanfare.",
+  "answers": [
+    "tambour",
+    "tanbour"
+  ],
+  "correct_answer": 0,
+  "hint": "Devant « b », quelle lettre faut-il écrire ?",
+  "explanation": "Devant « b », on écrit « m » : « tambour ».",
+  "review_tags": [
+    "sons_lettres",
+    "m_mbp"
+  ],
+  "review_status": "draft"
+}

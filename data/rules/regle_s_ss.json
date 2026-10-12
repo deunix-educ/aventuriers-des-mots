@@ -1,0 +1,9 @@
+{
+  "rule_id": "regle_s_ss",
+  "level": "CE1",
+  "domain": "orthographe",
+  "skill": "sons_et_lettres",
+  "statement": "Entre deux voyelles, la lettre « s » seule se prononce [z]. Pour entendre le son [s], on écrit « ss ».",
+  "example": "Une rose. Un poisson. Une tasse.",
+  "review_status": "draft"
+}

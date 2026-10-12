@@ -1,0 +1,49 @@
+{
+  "id": "ce1_m_mbp_correction_03",
+  "level": "CE1",
+  "domain": "orthographe",
+  "skill": "sons_et_lettres",
+  "rule_id": "regle_m_devant_mbp",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Il",
+      "correct": true
+    },
+    {
+      "text": "faut",
+      "correct": true
+    },
+    {
+      "text": "changer",
+      "correct": true
+    },
+    {
+      "text": "l'anpoule",
+      "correct": false,
+      "expected": "l'ampoule",
+      "rule_id": "regle_m_devant_mbp"
+    },
+    {
+      "text": "de",
+      "correct": true
+    },
+    {
+      "text": "la",
+      "correct": true
+    },
+    {
+      "text": "cuisine.",
+      "correct": true
+    }
+  ],
+  "hint": "Devant « p », quelle lettre faut-il écrire ?",
+  "explanation": "Devant « p », on écrit « m » : « ampoule ».",
+  "review_tags": [
+    "sons_lettres",
+    "m_mbp"
+  ],
+  "review_status": "draft"
+}

@@ -22,6 +22,12 @@ Tout ce qui suit ne peut pas être vérifié sans écran (rendu, mise en page, a
 13. Quitter le jeu puis relancer `make run` : le profil et sa progression doivent être conservés (sélectionner le même profil, vérifier que l'état affiché sur la carte a changé par rapport à l'état initial).
 14. La suppression d'un profil n'est plus sur la sélection de profil (point 37 de `decisions.md`) : Réglages → Espace adulte (barrière) → choisir le profil → « Supprimer ce profil » : une confirmation explicite nomme le profil ; annuler ne supprime rien ; les autres profils restent intacts.
 
+## Tableaux supplémentaires (point 38 de `decisions.md`)
+
+- Profil CE1 : la carte « La forêt des accords » propose « Aller : La plage des sons » ; le tableau de la plage s'affiche avec son décor (mer, sable), ses 9 lieux sans chevauchement, et le bouton ramène à la forêt. Après une mission, on revient au tableau d'où l'on vient.
+- Jouer une mission de chaque règle de la plage (s/ss, ç, m devant m-b-p), dont une dictée : voix claire, énoncés sans répétition, indices et explications justes.
+- Création de profil : seuls CE1 et CE2 sont proposés (CM1/CM2 n'ont pas encore de contenu).
+
 ## Accessibilité et interface
 
 - Habillage (point 31 de `decisions.md`) : relire chaque écran (profils, carte CE1 et CE2, introduction, règle, les trois types d'exercice, retour juste/faux, récompense, collection) ; le rendu à 1152x648 a été relu sur captures, pas les autres tailles ni le tactile. Redimensionner la fenêtre : les lieux de la carte restent entiers et ne se chevauchent pas.

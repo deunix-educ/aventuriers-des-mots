@@ -1,0 +1,46 @@
+{
+  "id": "ce1_m_mbp_dictee_03",
+  "level": "CE1",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_m_devant_mbp"
+  ],
+  "difficulty": 3,
+  "target_text": "Le campeur plante sa tente près de la rivière.",
+  "words": [
+    {
+      "text": "Le",
+      "expects_capital": true
+    },
+    {
+      "text": "campeur",
+      "rule_id": "regle_m_devant_mbp"
+    },
+    {
+      "text": "plante"
+    },
+    {
+      "text": "sa"
+    },
+    {
+      "text": "tente",
+      "rule_id": "regle_m_devant_mbp"
+    },
+    {
+      "text": "près"
+    },
+    {
+      "text": "de"
+    },
+    {
+      "text": "la"
+    },
+    {
+      "text": "rivière."
+    }
+  ],
+  "audio_id": "ce1_m_mbp_dictee_03",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

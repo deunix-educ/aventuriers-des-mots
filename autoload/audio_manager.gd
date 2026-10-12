@@ -12,6 +12,7 @@ var _voice_player: AudioStreamPlayer
 var _music_player: AudioStreamPlayer
 var _effect_players: Array[AudioStreamPlayer] = []
 var _current_music_id := ""
+var _backdrop_kind := "forest"
 var _stream_cache: Dictionary = {}
 
 
@@ -76,10 +77,16 @@ func play_music(music_id: String) -> void:
     _music_player.play()
 
 
-## Musique de fond selon le choix des reglages et le niveau scolaire de la
-## scene appelante (« automatique » = celle de la region).
-func play_region_music(level: String) -> void:
-    play_music(SoundCatalog.resolve_music(SettingsManager.music_track, level))
+## Musique de fond selon le choix des reglages et le decor du tableau de la
+## scene appelante (« automatique » = celle du decor).
+func play_region_music(backdrop_kind: String) -> void:
+    _backdrop_kind = backdrop_kind
+    play_music(SoundCatalog.resolve_music(SettingsManager.music_track, backdrop_kind))
+
+
+## Decor du dernier tableau annonce a play_region_music (« forest » au debut).
+func current_backdrop_kind() -> String:
+    return _backdrop_kind
 
 
 func current_music_id() -> String:

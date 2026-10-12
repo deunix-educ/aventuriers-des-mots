@@ -11,11 +11,7 @@
   "profile_create.confirm_button": "Commencer l'aventure",
   "profile_create.cancel_button": "Retour",
   "profile_create.name_required_error": "Choisis un prénom avant de continuer.",
-  "world_map.title": "La forêt des accords",
   "world_map.guide_hint": "Choisis un lieu pour commencer l'aventure !",
-  "world_map.title_ce2": "Le marais des homophones",
-  "world_map.review_ce1_button": "Revoir le CE1",
-  "world_map.back_to_ce2_button": "Retour au CE2",
   "world_map.status_decouverte": "À découvrir",
   "world_map.status_en_acquisition": "En entraînement",
   "world_map.status_en_consolidation": "En progrès",
@@ -117,5 +113,12 @@
   "adult.delete_confirm_message": "Effacer pour toujours le profil « %s » et toute sa progression ? Pense à l'exporter avant si tu veux pouvoir le restaurer.",
   "adult.delete_confirm_yes": "Oui, supprimer",
   "adult.delete_confirm_no": "Non, annuler",
-  "adult.delete_done": "Profil supprimé."
+  "adult.delete_done": "Profil supprimé.",
+  "world_map.review_level_button": "Revoir le %s",
+  "world_map.back_to_level_button": "Retour au %s",
+  "world_map.other_region_button": "Aller : %s",
+  "profile_create.level_cm1": "CM1",
+  "profile_create.level_cm2": "CM2",
+  "skill.sons_et_lettres": "Sons et lettres",
+  "world_map.coming_soon": "Ce niveau arrive bientôt !"
 }

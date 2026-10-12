@@ -1,0 +1,53 @@
+{
+  "id": "ce1_cedille_correction_04",
+  "level": "CE1",
+  "domain": "orthographe",
+  "skill": "sons_et_lettres",
+  "rule_id": "regle_c_cedille",
+  "difficulty": 3,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "La",
+      "correct": true
+    },
+    {
+      "text": "maman",
+      "correct": true
+    },
+    {
+      "text": "appelle",
+      "correct": true
+    },
+    {
+      "text": "son",
+      "correct": true
+    },
+    {
+      "text": "garcon",
+      "correct": false,
+      "expected": "garçon",
+      "rule_id": "regle_c_cedille"
+    },
+    {
+      "text": "pour",
+      "correct": true
+    },
+    {
+      "text": "le",
+      "correct": true
+    },
+    {
+      "text": "dîner.",
+      "correct": true
+    }
+  ],
+  "hint": "Devant « o », pour entendre [s], il faut une cédille.",
+  "explanation": "On écrit « ç » devant « o » pour le son [s] : « garçon ».",
+  "review_tags": [
+    "sons_lettres",
+    "cedille"
+  ],
+  "review_status": "draft"
+}

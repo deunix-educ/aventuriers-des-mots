@@ -43,7 +43,7 @@ func _initialize() -> void:
         await process_frame
     # Actions optionnelles sur exercise_host, a partir du 5e argument :
     #   continue_rule | answer:<index> | toggle:<index> | type:<texte> | validate
-    #   | continue_feedback | solve_gate (espace adulte)
+    #   | continue_feedback | solve_gate (espace adulte) | call:<methode>
     for action in args.slice(4):
         if action.begins_with("outcomes:") or action.begins_with("text_scale:"):
             continue
@@ -60,6 +60,10 @@ func _initialize() -> void:
 
 func _run_action(scene: Node, action: String) -> void:
     var parts := action.split(":", true, 1)
+    if parts[0] == "call":
+        # Appelle une methode de la scene (ex. call:_on_region_pressed).
+        scene.call(parts[1])
+        return
     if parts[0] == "solve_gate":
         # Espace adulte : saisit la bonne reponse a la barriere.
         var input: LineEdit = scene.find_child("GateInput", true, false)

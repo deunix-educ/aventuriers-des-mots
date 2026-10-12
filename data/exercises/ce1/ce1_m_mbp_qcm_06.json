@@ -1,0 +1,23 @@
+{
+  "id": "ce1_m_mbp_qcm_06",
+  "level": "CE1",
+  "domain": "orthographe",
+  "skill": "sons_et_lettres",
+  "rule_id": "regle_m_devant_mbp",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Nous dormons sous une ... dans le camping.",
+  "answers": [
+    "tente",
+    "temte"
+  ],
+  "correct_answer": 0,
+  "hint": "Attention : la lettre qui suit n'est ni « m », ni « b », ni « p ».",
+  "explanation": "Devant « t », on écrit « n » : « tente ». La règle du « m » ne vaut que devant m, b, p.",
+  "review_tags": [
+    "sons_lettres",
+    "m_mbp"
+  ],
+  "review_status": "draft"
+}

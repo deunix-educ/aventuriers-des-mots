@@ -1,0 +1,42 @@
+{
+  "id": "ce1_cedille_dictee_03",
+  "level": "CE1",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_c_cedille"
+  ],
+  "difficulty": 3,
+  "target_text": "Hier, j'ai reçu une carte postale de Lola.",
+  "words": [
+    {
+      "text": "Hier,",
+      "expects_capital": true
+    },
+    {
+      "text": "j'ai"
+    },
+    {
+      "text": "reçu",
+      "rule_id": "regle_c_cedille"
+    },
+    {
+      "text": "une"
+    },
+    {
+      "text": "carte"
+    },
+    {
+      "text": "postale"
+    },
+    {
+      "text": "de"
+    },
+    {
+      "text": "Lola."
+    }
+  ],
+  "audio_id": "ce1_cedille_dictee_03",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

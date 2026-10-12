@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_26_balancoire_du_port",
+  "title": "La balançoire du port",
+  "narrative_context": "Sur le port, des lettres se sont balancées trop loin. Trouve le mot fautif et corrige-le.",
+  "rule_id": "regle_c_cedille",
+  "exercise_type": "sentence_correction",
+  "map_position": {
+    "x": 0.5,
+    "y": 0.5
+  },
+  "review_status": "draft"
+}

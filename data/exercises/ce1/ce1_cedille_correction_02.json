@@ -1,0 +1,57 @@
+{
+  "id": "ce1_cedille_correction_02",
+  "level": "CE1",
+  "domain": "orthographe",
+  "skill": "sons_et_lettres",
+  "rule_id": "regle_c_cedille",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Il",
+      "correct": true
+    },
+    {
+      "text": "y",
+      "correct": true
+    },
+    {
+      "text": "a",
+      "correct": true
+    },
+    {
+      "text": "un",
+      "correct": true
+    },
+    {
+      "text": "glacon",
+      "correct": false,
+      "expected": "glaçon",
+      "rule_id": "regle_c_cedille"
+    },
+    {
+      "text": "dans",
+      "correct": true
+    },
+    {
+      "text": "mon",
+      "correct": true
+    },
+    {
+      "text": "verre",
+      "correct": true
+    },
+    {
+      "text": "d'eau.",
+      "correct": true
+    }
+  ],
+  "hint": "Devant « o », le son [s] demande une cédille.",
+  "explanation": "On écrit « ç » devant « o » pour le son [s] : « glaçon ».",
+  "review_tags": [
+    "sons_lettres",
+    "cedille"
+  ],
+  "review_status": "draft"
+}

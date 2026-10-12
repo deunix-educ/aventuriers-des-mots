@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_29_bateau_des_pompiers",
+  "title": "Le bateau des pompiers",
+  "narrative_context": "Les pompiers du port ont un message mal écrit. Repère le mot fautif et remplace-le par le bon.",
+  "rule_id": "regle_m_devant_mbp",
+  "exercise_type": "sentence_correction",
+  "map_position": {
+    "x": 0.5,
+    "y": 0.85
+  },
+  "review_status": "draft"
+}

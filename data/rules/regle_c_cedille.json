@@ -1,0 +1,9 @@
+{
+  "rule_id": "regle_c_cedille",
+  "level": "CE1",
+  "domain": "orthographe",
+  "skill": "sons_et_lettres",
+  "statement": "Devant a, o ou u, la lettre « c » se prononce [k]. Pour entendre le son [s], on écrit « ç » avec une cédille.",
+  "example": "Un garçon. Une leçon. Ça va.",
+  "review_status": "draft"
+}

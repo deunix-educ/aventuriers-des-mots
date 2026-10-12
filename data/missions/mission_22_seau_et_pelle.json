@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_22_seau_et_pelle",
+  "title": "Le seau et la pelle",
+  "narrative_context": "Sur la plage, un seau est rempli de mots. Choisis la bonne écriture pour que le château de sable tienne debout !",
+  "rule_id": "regle_s_ss",
+  "exercise_type": "multiple_choice",
+  "map_position": {
+    "x": 0.15,
+    "y": 0.15
+  },
+  "review_status": "draft"
+}

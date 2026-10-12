@@ -1,10 +1,8 @@
-[gd_scene load_steps=4 format=3]
+[gd_scene load_steps=3 format=3]
 
 [ext_resource type="Script" path="res://scenes/profiles/profile_create.gd" id="1"]
 
 [ext_resource type="PackedScene" path="res://scenes/ui/backdrop.tscn" id="backdrop"]
-
-[sub_resource type="ButtonGroup" id="SchoolLevelGroup"]
 
 [node name="ProfileCreate" type="Control"]
 layout_mode = 3
@@ -71,26 +69,9 @@ unique_name_in_owner = true
 layout_mode = 2
 
 [node name="LevelBox" type="HBoxContainer" parent="Margin/Center/Card/VBox"]
+unique_name_in_owner = true
 layout_mode = 2
 theme_override_constants/separation = 16
-
-[node name="CE1Button" type="Button" parent="Margin/Center/Card/VBox/LevelBox"]
-unique_name_in_owner = true
-layout_mode = 2
-size_flags_horizontal = 3
-custom_minimum_size = Vector2(0, 56)
-theme_type_variation = &"SecondaryButton"
-toggle_mode = true
-button_group = SubResource("SchoolLevelGroup")
-
-[node name="CE2Button" type="Button" parent="Margin/Center/Card/VBox/LevelBox"]
-unique_name_in_owner = true
-layout_mode = 2
-size_flags_horizontal = 3
-custom_minimum_size = Vector2(0, 56)
-theme_type_variation = &"SecondaryButton"
-toggle_mode = true
-button_group = SubResource("SchoolLevelGroup")
 
 [node name="ConfirmButton" type="Button" parent="Margin/Center/Card/VBox"]
 unique_name_in_owner = true

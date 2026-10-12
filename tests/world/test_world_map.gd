@@ -24,6 +24,7 @@ func test_ce1_profile_sees_only_ce1_missions_and_no_toggle() -> void:
 
     assert_eq(map.get_node("%MapArea").get_child_count(), 9)
     assert_false(map.get_node("%LevelToggleButton").visible)
+    GameManager.map_region_id = ""
 
 
 func test_ce2_profile_sees_ce2_missions_and_can_review_ce1() -> void:
@@ -31,18 +32,38 @@ func test_ce2_profile_sees_ce2_missions_and_can_review_ce1() -> void:
     await wait_process_frames(1)
 
     assert_eq(map.get_node("%MapArea").get_child_count(), 12)
-    assert_eq(map.get_node("%TitleLabel").text, UIText.get_text("world_map.title_ce2"))
+    assert_eq(map.get_node("%TitleLabel").text, "Le marais des homophones")
     var toggle: Button = map.get_node("%LevelToggleButton")
     assert_true(toggle.visible)
 
     toggle.pressed.emit()
     await wait_process_frames(1)
     assert_eq(map.get_node("%MapArea").get_child_count(), 9)
-    assert_eq(map.get_node("%TitleLabel").text, UIText.get_text("world_map.title"))
+    assert_eq(map.get_node("%TitleLabel").text, "La forêt des accords")
+    assert_eq(toggle.text, "Retour au CE2")
 
     toggle.pressed.emit()
     await wait_process_frames(1)
     assert_eq(map.get_node("%MapArea").get_child_count(), 12)
+
+
+func test_ce1_profile_can_move_between_its_regions() -> void:
+    var map := _open_map_for("CE1")
+    await wait_process_frames(1)
+    assert_eq(map.get_node("%TitleLabel").text, "La forêt des accords")
+    var button: Button = map.get_node("%RegionButton")
+    assert_true(button.visible)
+    assert_eq(map.get_node("%MapArea").get_child_count(), 9)
+
+    button.pressed.emit()
+    await wait_process_frames(1)
+    assert_eq(map.get_node("%TitleLabel").text, "La plage des sons")
+    assert_eq(map.get_node("%MapArea").get_child_count(), 9)
+
+    button.pressed.emit()
+    await wait_process_frames(1)
+    assert_eq(map.get_node("%TitleLabel").text, "La forêt des accords")
+    GameManager.map_region_id = ""
 
 
 func test_map_offers_a_way_back_to_the_profile_selection() -> void:

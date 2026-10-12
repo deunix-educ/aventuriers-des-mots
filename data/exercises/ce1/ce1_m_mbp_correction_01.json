@@ -1,0 +1,49 @@
+{
+  "id": "ce1_m_mbp_correction_01",
+  "level": "CE1",
+  "domain": "orthographe",
+  "skill": "sons_et_lettres",
+  "rule_id": "regle_m_devant_mbp",
+  "difficulty": 1,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Maman",
+      "correct": true
+    },
+    {
+      "text": "coupe",
+      "correct": true
+    },
+    {
+      "text": "du",
+      "correct": true
+    },
+    {
+      "text": "janbon",
+      "correct": false,
+      "expected": "jambon",
+      "rule_id": "regle_m_devant_mbp"
+    },
+    {
+      "text": "pour",
+      "correct": true
+    },
+    {
+      "text": "le",
+      "correct": true
+    },
+    {
+      "text": "pique-nique.",
+      "correct": true
+    }
+  ],
+  "hint": "Regarde la lettre qui suit : un « b ».",
+  "explanation": "Devant « b », on écrit « m » : « jambon ».",
+  "review_tags": [
+    "sons_lettres",
+    "m_mbp"
+  ],
+  "review_status": "draft"
+}

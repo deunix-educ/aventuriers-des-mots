@@ -1,0 +1,39 @@
+{
+  "id": "ce1_s_ss_dictee_01",
+  "level": "CE1",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_s_ss"
+  ],
+  "difficulty": 1,
+  "target_text": "Le poisson rouge nage dans le bocal.",
+  "words": [
+    {
+      "text": "Le",
+      "expects_capital": true
+    },
+    {
+      "text": "poisson",
+      "rule_id": "regle_s_ss"
+    },
+    {
+      "text": "rouge"
+    },
+    {
+      "text": "nage"
+    },
+    {
+      "text": "dans"
+    },
+    {
+      "text": "le"
+    },
+    {
+      "text": "bocal."
+    }
+  ],
+  "audio_id": "ce1_s_ss_dictee_01",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

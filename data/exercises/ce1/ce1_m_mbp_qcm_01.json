@@ -1,0 +1,23 @@
+{
+  "id": "ce1_m_mbp_qcm_01",
+  "level": "CE1",
+  "domain": "orthographe",
+  "skill": "sons_et_lettres",
+  "rule_id": "regle_m_devant_mbp",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Papa allume la ... près du lit.",
+  "answers": [
+    "lampe",
+    "lanpe"
+  ],
+  "correct_answer": 0,
+  "hint": "Après la voyelle, on entend [p] : quelle lettre faut-il avant ?",
+  "explanation": "Devant « p », on écrit « m » : « lampe ».",
+  "review_tags": [
+    "sons_lettres",
+    "m_mbp"
+  ],
+  "review_status": "draft"
+}

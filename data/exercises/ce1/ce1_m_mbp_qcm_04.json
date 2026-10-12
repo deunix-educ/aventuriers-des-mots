@@ -1,0 +1,23 @@
+{
+  "id": "ce1_m_mbp_qcm_04",
+  "level": "CE1",
+  "domain": "orthographe",
+  "skill": "sons_et_lettres",
+  "rule_id": "regle_m_devant_mbp",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Le ... éteint l'incendie.",
+  "answers": [
+    "pompier",
+    "ponpier"
+  ],
+  "correct_answer": 0,
+  "hint": "Devant « p », quelle lettre faut-il écrire ?",
+  "explanation": "Devant « p », on écrit « m » : « pompier ».",
+  "review_tags": [
+    "sons_lettres",
+    "m_mbp"
+  ],
+  "review_status": "draft"
+}

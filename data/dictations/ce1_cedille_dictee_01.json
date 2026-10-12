@@ -1,0 +1,37 @@
+{
+  "id": "ce1_cedille_dictee_01",
+  "level": "CE1",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_c_cedille"
+  ],
+  "difficulty": 1,
+  "target_text": "Ma leçon de français est facile.",
+  "words": [
+    {
+      "text": "Ma",
+      "expects_capital": true
+    },
+    {
+      "text": "leçon",
+      "rule_id": "regle_c_cedille"
+    },
+    {
+      "text": "de"
+    },
+    {
+      "text": "français",
+      "rule_id": "regle_c_cedille"
+    },
+    {
+      "text": "est"
+    },
+    {
+      "text": "facile."
+    }
+  ],
+  "audio_id": "ce1_cedille_dictee_01",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

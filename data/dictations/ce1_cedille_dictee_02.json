@@ -1,0 +1,37 @@
+{
+  "id": "ce1_cedille_dictee_02",
+  "level": "CE1",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_c_cedille"
+  ],
+  "difficulty": 2,
+  "target_text": "Le maçon construit une façade neuve.",
+  "words": [
+    {
+      "text": "Le",
+      "expects_capital": true
+    },
+    {
+      "text": "maçon",
+      "rule_id": "regle_c_cedille"
+    },
+    {
+      "text": "construit"
+    },
+    {
+      "text": "une"
+    },
+    {
+      "text": "façade",
+      "rule_id": "regle_c_cedille"
+    },
+    {
+      "text": "neuve."
+    }
+  ],
+  "audio_id": "ce1_cedille_dictee_02",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

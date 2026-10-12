@@ -13,8 +13,7 @@ func _ready() -> void:
     var mission := ExerciseEngine.get_mission(GameManager.pending_mission_id)
     _title_label.text = mission.get("title", "")
     _guide.say(mission.get("narrative_context", ""))
-    var rule := ExerciseEngine.get_rule(mission.get("rule_id", ""))
-    $Backdrop.kind = "marsh" if rule.get("level", "CE1") == "CE2" else "forest"
+    $Backdrop.kind = ExerciseEngine.backdrop_for_rule(mission.get("rule_id", ""))
 
     _start_button.text = UIText.get_text("mission_intro.start_button")
     _back_button.text = UIText.get_text("mission_intro.back_button")

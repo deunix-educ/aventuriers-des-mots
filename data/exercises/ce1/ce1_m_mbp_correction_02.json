@@ -1,0 +1,45 @@
+{
+  "id": "ce1_m_mbp_correction_02",
+  "level": "CE1",
+  "domain": "orthographe",
+  "skill": "sons_et_lettres",
+  "rule_id": "regle_m_devant_mbp",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Le",
+      "correct": true
+    },
+    {
+      "text": "clown",
+      "correct": true
+    },
+    {
+      "text": "souffle",
+      "correct": true
+    },
+    {
+      "text": "dans",
+      "correct": true
+    },
+    {
+      "text": "sa",
+      "correct": true
+    },
+    {
+      "text": "tronpette.",
+      "correct": false,
+      "expected": "trompette.",
+      "rule_id": "regle_m_devant_mbp"
+    }
+  ],
+  "hint": "Devant « p », quelle lettre faut-il écrire ?",
+  "explanation": "Devant « p », on écrit « m » : « trompette ».",
+  "review_tags": [
+    "sons_lettres",
+    "m_mbp"
+  ],
+  "review_status": "draft"
+}

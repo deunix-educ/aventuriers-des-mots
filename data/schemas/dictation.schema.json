@@ -16,7 +16,7 @@
   "additionalProperties": false,
   "properties": {
     "id": { "type": "string", "pattern": "^[a-z][a-z0-9_]*$" },
-    "level": { "type": "string", "enum": ["CE1", "CE2"] },
+    "level": { "type": "string", "enum": ["CE1", "CE2", "CM1", "CM2"] },
     "domain": { "type": "string", "enum": ["grammaire", "orthographe"] },
     "rule_ids": {
       "type": "array",

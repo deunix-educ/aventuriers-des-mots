@@ -1,13 +1,9 @@
 extends Control
 ## Decor plein ecran derriere un ecran (illustration vectorielle provisoire,
-## voir assets/CREDITS.md). "forest" pour le CE1, "marsh" pour le CE2.
+## voir assets/CREDITS.md). Le decor est celui du « tableau » (BackdropKinds) ;
+## un identifiant inconnu retombe sur la foret.
 
-const TEXTURES := {
-    "forest": "res://assets/environments/forest_backdrop.svg",
-    "marsh": "res://assets/environments/marsh_backdrop.svg",
-}
-
-@export_enum("forest", "marsh") var kind: String = "forest":
+@export var kind: String = "forest":
     set(value):
         kind = value
         _apply()
@@ -21,4 +17,5 @@ func _ready() -> void:
 
 func _apply() -> void:
     if _picture != null:
-        _picture.texture = load(TEXTURES.get(kind, TEXTURES["forest"]))
+        var path: String = BackdropKinds.TEXTURES.get(kind, BackdropKinds.TEXTURES["forest"])
+        _picture.texture = load(path)

@@ -1,0 +1,45 @@
+{
+  "id": "ce1_m_mbp_dictee_02",
+  "level": "CE1",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_m_devant_mbp"
+  ],
+  "difficulty": 2,
+  "target_text": "Il y a un timbre rouge sur la lettre.",
+  "words": [
+    {
+      "text": "Il",
+      "expects_capital": true
+    },
+    {
+      "text": "y"
+    },
+    {
+      "text": "a"
+    },
+    {
+      "text": "un"
+    },
+    {
+      "text": "timbre",
+      "rule_id": "regle_m_devant_mbp"
+    },
+    {
+      "text": "rouge"
+    },
+    {
+      "text": "sur"
+    },
+    {
+      "text": "la"
+    },
+    {
+      "text": "lettre."
+    }
+  ],
+  "audio_id": "ce1_m_mbp_dictee_02",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

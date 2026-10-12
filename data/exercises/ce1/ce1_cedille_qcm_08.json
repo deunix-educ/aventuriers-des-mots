@@ -1,0 +1,23 @@
+{
+  "id": "ce1_cedille_qcm_08",
+  "level": "CE1",
+  "domain": "orthographe",
+  "skill": "sons_et_lettres",
+  "rule_id": "regle_c_cedille",
+  "difficulty": 3,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Les enfants forment un grand ... dans la cour.",
+  "answers": [
+    "cercle",
+    "çercle"
+  ],
+  "correct_answer": 0,
+  "hint": "Devant « e », la lettre « c » donne déjà le son [s].",
+  "explanation": "Devant « e » et « i », « c » se lit [s] tout seul : pas de cédille, on écrit « cercle ».",
+  "review_tags": [
+    "sons_lettres",
+    "cedille"
+  ],
+  "review_status": "draft"
+}

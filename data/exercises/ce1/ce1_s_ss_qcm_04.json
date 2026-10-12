@@ -1,0 +1,23 @@
+{
+  "id": "ce1_s_ss_qcm_04",
+  "level": "CE1",
+  "domain": "orthographe",
+  "skill": "sons_et_lettres",
+  "rule_id": "regle_s_ss",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Un ... nage dans l'aquarium.",
+  "answers": [
+    "poisson",
+    "poison"
+  ],
+  "correct_answer": 0,
+  "hint": "Pense à l'animal qui vit dans l'eau, et au son [s].",
+  "explanation": "Pour le son [s] entre deux voyelles, on écrit « ss » : « poisson ».",
+  "review_tags": [
+    "sons_lettres",
+    "s_ss"
+  ],
+  "review_status": "draft"
+}

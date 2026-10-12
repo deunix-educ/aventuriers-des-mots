@@ -1,0 +1,23 @@
+{
+  "id": "ce1_m_mbp_qcm_07",
+  "level": "CE1",
+  "domain": "orthographe",
+  "skill": "sons_et_lettres",
+  "rule_id": "regle_m_devant_mbp",
+  "difficulty": 3,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Ma ... est au premier étage.",
+  "answers": [
+    "chambre",
+    "chanbre"
+  ],
+  "correct_answer": 0,
+  "hint": "Regarde la lettre qui suit : un « b ».",
+  "explanation": "Devant « b », on écrit « m » : « chambre ».",
+  "review_tags": [
+    "sons_lettres",
+    "m_mbp"
+  ],
+  "review_status": "draft"
+}

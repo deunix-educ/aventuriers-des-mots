@@ -1,0 +1,53 @@
+{
+  "id": "ce1_cedille_correction_01",
+  "level": "CE1",
+  "domain": "orthographe",
+  "skill": "sons_et_lettres",
+  "rule_id": "regle_c_cedille",
+  "difficulty": 1,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Léo",
+      "correct": true
+    },
+    {
+      "text": "se",
+      "correct": true
+    },
+    {
+      "text": "balance",
+      "correct": true
+    },
+    {
+      "text": "sur",
+      "correct": true
+    },
+    {
+      "text": "la",
+      "correct": true
+    },
+    {
+      "text": "balancoire",
+      "correct": false,
+      "expected": "balançoire",
+      "rule_id": "regle_c_cedille"
+    },
+    {
+      "text": "du",
+      "correct": true
+    },
+    {
+      "text": "parc.",
+      "correct": true
+    }
+  ],
+  "hint": "Devant « o », pour entendre [s], il faut une cédille.",
+  "explanation": "On écrit « ç » devant « o » pour le son [s] : « balançoire ».",
+  "review_tags": [
+    "sons_lettres",
+    "cedille"
+  ],
+  "review_status": "draft"
+}

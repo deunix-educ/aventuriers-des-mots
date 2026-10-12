@@ -1,0 +1,23 @@
+{
+  "id": "ce1_cedille_qcm_03",
+  "level": "CE1",
+  "domain": "orthographe",
+  "skill": "sons_et_lettres",
+  "rule_id": "regle_c_cedille",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "... va très bien, merci !",
+  "answers": [
+    "Ça",
+    "Ca"
+  ],
+  "correct_answer": 0,
+  "hint": "Devant « a », pour entendre [s], il faut une cédille.",
+  "explanation": "On écrit « ç » devant « a » pour le son [s] : « ça ».",
+  "review_tags": [
+    "sons_lettres",
+    "cedille"
+  ],
+  "review_status": "draft"
+}

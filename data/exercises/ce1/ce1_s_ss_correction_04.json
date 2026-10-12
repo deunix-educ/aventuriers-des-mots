@@ -1,0 +1,53 @@
+{
+  "id": "ce1_s_ss_correction_04",
+  "level": "CE1",
+  "domain": "orthographe",
+  "skill": "sons_et_lettres",
+  "rule_id": "regle_s_ss",
+  "difficulty": 3,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Les",
+      "correct": true
+    },
+    {
+      "text": "enfants",
+      "correct": true
+    },
+    {
+      "text": "sont",
+      "correct": true
+    },
+    {
+      "text": "asis",
+      "correct": false,
+      "expected": "assis",
+      "rule_id": "regle_s_ss"
+    },
+    {
+      "text": "autour",
+      "correct": true
+    },
+    {
+      "text": "de",
+      "correct": true
+    },
+    {
+      "text": "la",
+      "correct": true
+    },
+    {
+      "text": "table.",
+      "correct": true
+    }
+  ],
+  "hint": "Écoute le son [s] entre le « a » et le « i ».",
+  "explanation": "Pour entendre [s] entre deux voyelles, on écrit « ss » : « assis ».",
+  "review_tags": [
+    "sons_lettres",
+    "s_ss"
+  ],
+  "review_status": "draft"
+}

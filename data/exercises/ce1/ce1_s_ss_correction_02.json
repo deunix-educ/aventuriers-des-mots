@@ -1,0 +1,49 @@
+{
+  "id": "ce1_s_ss_correction_02",
+  "level": "CE1",
+  "domain": "orthographe",
+  "skill": "sons_et_lettres",
+  "rule_id": "regle_s_ss",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Tom",
+      "correct": true
+    },
+    {
+      "text": "pouse",
+      "correct": false,
+      "expected": "pousse",
+      "rule_id": "regle_s_ss"
+    },
+    {
+      "text": "la",
+      "correct": true
+    },
+    {
+      "text": "porte",
+      "correct": true
+    },
+    {
+      "text": "de",
+      "correct": true
+    },
+    {
+      "text": "la",
+      "correct": true
+    },
+    {
+      "text": "cabane.",
+      "correct": true
+    }
+  ],
+  "hint": "Tu entends le son [s] entre deux voyelles.",
+  "explanation": "Pour entendre [s] entre deux voyelles, on écrit « ss » : « pousse ».",
+  "review_tags": [
+    "sons_lettres",
+    "s_ss"
+  ],
+  "review_status": "draft"
+}

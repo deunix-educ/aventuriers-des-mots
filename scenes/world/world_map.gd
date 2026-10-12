@@ -4,17 +4,20 @@ extends Control
 ## etendu (docs/specs/decisions.md, points 25 et 27). La position de chaque
 ## mission vient de data/missions/*.json (fractions 0..1 de la zone de
 ## carte), jamais d'une position fixe en dur dans le script : chaque lieu est
-## replace quand la zone change de taille. Un profil CE2 peut basculer sur la
-## carte CE1 pour revoir les notions precedentes.
+## replace quand la zone change de taille. Chaque niveau a un a trois
+## « tableaux » (data/curriculum/) entre lesquels on circule ; un profil peut
+## basculer sur le niveau precedent pour revoir les notions deja vues.
 
 const MARKER_SCENE := preload("res://scenes/world/mission_marker.tscn")
 
 var _viewed_level := "CE1"
+var _viewed_region_id := ""
 
 @onready var _backdrop: Control = %Backdrop
 @onready var _title_label: Label = %TitleLabel
 @onready var _map_area: Control = %MapArea
 @onready var _level_toggle_button: Button = %LevelToggleButton
+@onready var _region_button: Button = %RegionButton
 @onready var _total_stars_label: Label = %TotalStarsLabel
 @onready var _collection_button: Button = %CollectionButton
 @onready var _profile_button: Button = %ProfileButton
@@ -24,8 +27,9 @@ var _viewed_level := "CE1"
 
 func _ready() -> void:
     _viewed_level = ProgressManager.school_level()
-    _level_toggle_button.visible = _viewed_level == "CE2"
+    _viewed_region_id = _initial_region_id()
     _level_toggle_button.pressed.connect(_on_level_toggle_pressed)
+    _region_button.pressed.connect(_on_region_pressed)
     _collection_button.text = UIText.get_text("world_map.collection_button")
     _collection_button.pressed.connect(_on_collection_pressed)
     _profile_button.text = UIText.get_text("world_map.change_profile_button")
@@ -38,15 +42,54 @@ func _ready() -> void:
 
 
 func _refresh() -> void:
-    var is_ce2 := _viewed_level == "CE2"
-    _backdrop.kind = "marsh" if is_ce2 else "forest"
-    AudioManager.play_region_music(_viewed_level)
-    _title_label.text = UIText.get_text("world_map.title_ce2" if is_ce2 else "world_map.title")
+    var own_level := ProgressManager.school_level()
+    var previous_level := SchoolLevels.previous(own_level)
+    var regions := ExerciseEngine.get_regions_for_level(_viewed_level)
+    var region := ExerciseEngine.get_region(_viewed_region_id)
+
+    var kind: String = region.get("backdrop", BackdropKinds.FALLBACK)
+    _backdrop.kind = kind if BackdropKinds.is_valid(kind) else BackdropKinds.FALLBACK
+    AudioManager.play_region_music(_backdrop.kind)
+    _title_label.text = region.get("region_title", region.get("title", ""))
+
+    # Niveau precedent : « Revoir le CE1 » / « Retour au CE2 ».
+    _level_toggle_button.visible = previous_level != ""
+    var target_level := own_level if _viewed_level != own_level else previous_level
     _level_toggle_button.text = UIText.get_text(
-        "world_map.review_ce1_button" if is_ce2 else "world_map.back_to_ce2_button"
-    )
+        "world_map.review_level_button"
+        if _viewed_level == own_level
+        else "world_map.back_to_level_button"
+    ) % target_level
+
+    # Autres tableaux du niveau affiche : un bouton qui passe au suivant.
+    _region_button.visible = regions.size() > 1
+    if regions.size() > 1:
+        var next_region := regions[(_region_index(regions) + 1) % regions.size()]
+        _region_button.text = (
+            UIText.get_text("world_map.other_region_button")
+            % next_region.get("region_title", next_region["title"])
+        )
     _total_stars_label.text = str(ProgressManager.stars())
+    if region.is_empty():
+        _title_label.text = UIText.get_text("world_map.coming_soon")
     _populate_missions()
+
+
+## Tableau a afficher a l'ouverture : celui d'ou l'on vient s'il appartient
+## au niveau du profil, sinon le premier du niveau.
+func _initial_region_id() -> String:
+    var regions := ExerciseEngine.get_regions_for_level(_viewed_level)
+    for region in regions:
+        if region["region_id"] == GameManager.map_region_id:
+            return region["region_id"]
+    return regions[0]["region_id"] if not regions.is_empty() else ""
+
+
+func _region_index(regions: Array[Dictionary]) -> int:
+    for i in regions.size():
+        if regions[i]["region_id"] == _viewed_region_id:
+            return i
+    return 0
 
 
 func _populate_missions() -> void:
@@ -55,7 +98,7 @@ func _populate_missions() -> void:
         child.queue_free()
 
     var index := 0
-    for mission: Dictionary in ExerciseEngine.get_missions_for_level(_viewed_level):
+    for mission: Dictionary in ExerciseEngine.get_missions_for_region(_viewed_region_id):
         var marker: Button = MARKER_SCENE.instantiate()
         _map_area.add_child(marker)
         marker.set_meta("map_position", mission["map_position"])
@@ -126,12 +169,26 @@ func _on_collection_pressed() -> void:
 
 
 func _on_level_toggle_pressed() -> void:
-    _viewed_level = "CE1" if _viewed_level == "CE2" else "CE2"
+    var own_level := ProgressManager.school_level()
+    _viewed_level = (
+        SchoolLevels.previous(own_level) if _viewed_level == own_level else own_level
+    )
+    _viewed_region_id = _initial_region_id()
+    _refresh()
+
+
+func _on_region_pressed() -> void:
+    var regions := ExerciseEngine.get_regions_for_level(_viewed_level)
+    if regions.size() < 2:
+        return
+    _viewed_region_id = regions[(_region_index(regions) + 1) % regions.size()]["region_id"]
+    GameManager.map_region_id = _viewed_region_id
     _refresh()
 
 
 func _on_mission_pressed(mission_id: String) -> void:
     GameManager.pending_mission_id = mission_id
+    GameManager.map_region_id = _viewed_region_id
     GameManager.goto(GameManager.SCENE_MISSION_INTRO)
 
 
