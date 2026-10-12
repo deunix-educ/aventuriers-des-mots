@@ -149,3 +149,24 @@ func test_expected_without_elision_accepts_the_prefix_of_the_touched_word() -> v
     for typed in ["achèterais", "j'achèterais"]:
         var result := AnswerValidator.validate_sentence_correction(exercise, [1], {1: typed})
         assert_true(result.is_correct, "« %s » doit etre accepte" % typed)
+
+
+func test_correction_does_not_require_the_final_punctuation_of_the_word() -> void:
+    # Le mot touche porte souvent le point de la phrase (« roze. ») : taper
+    # « rose » ou « rose. » est correct, « roze » ne l'est pas.
+    var exercise := {
+        "rule_id": "regle_x",
+        "hint": "indice",
+        "explanation": "explication",
+        "tokens":
+        [
+            {"text": "La", "correct": true},
+            {"text": "roze.", "correct": false, "expected": "rose."},
+        ],
+    }
+    for typed in ["rose", "rose.", "Rose", " rose "]:
+        var result := AnswerValidator.validate_sentence_correction(exercise, [1], {1: typed})
+        assert_true(result.is_correct, "« %s » doit etre accepte" % typed)
+    for typed in ["roze", "roze.", "rosse", ""]:
+        var result := AnswerValidator.validate_sentence_correction(exercise, [1], {1: typed})
+        assert_false(result.is_correct, "« %s » ne doit pas etre accepte" % typed)

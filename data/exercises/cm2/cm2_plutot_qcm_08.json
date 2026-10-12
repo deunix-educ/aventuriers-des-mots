@@ -7,13 +7,13 @@
   "difficulty": 3,
   "type": "multiple_choice",
   "instruction": "Choisis le bon mot.",
-  "question": "Je me couche ... le samedi soir.",
+  "question": "Ce soir, je me couche ... que d'habitude.",
   "answers": [
     "plutôt",
     "plus tôt"
   ],
   "correct_answer": 1,
-  "hint": "Remplace par « plus tard » : « je me couche plus tard » a du sens.",
+  "hint": "Remplace par « plus tard » : « plus tard que d'habitude » a du sens.",
   "explanation": "On peut dire « plus tard » : on écrit « plus tôt ».",
   "review_tags": [
     "homophones_cm2",

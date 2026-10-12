@@ -405,3 +405,14 @@ Volume : 6 tableaux, 18 règles, 144 QCM, 72 corrections, 54 dictées (voix Pipe
 **Reste / limites** : CM1 et CM2 n'ont pas été relus pédagogiquement (indices, niveau de difficulté, règles du passé simple et de l'accord du participe avec COD, à faire valider) ; voix des 54 dictées non écoutées ; la création de profil propose désormais 4 niveaux (CE1, CE2, CM1, CM2).
 
 **Correctif (0.8.1) — mots touchés avec élision** : dans « La coulée de lave », le mot touché était « j'achèterai » mais l'attendu « achèterais » (sans « j' ») : la réponse naturelle « j'achèterais » était refusée. Données corrigées (attendu « j'achèterais ») et validateur rendu tolérant : pour un mot touché avec élision, on accepte le mot entier ou seulement le verbe, avec apostrophe droite ou typographique. Tests : validateur (formes acceptées et refusées) et garde-fou de données (un attendu ne perd pas le préfixe d'élision du mot touché).
+
+**Relecture CM1/CM2 (0.8.2)** — relecture complète des 144 QCM et 72 corrections, plus un audit automatique (attendu identique au texte, indice qui donne la réponse, dictées sans mot cible). Problèmes trouvés et corrigés :
+
+- **Défaut de validation (le plus grave)** : un mot touché portant la ponctuation de la phrase (« roze. », « vertes. ») avait un attendu avec point ; taper « rose » sans point était refusé. La comparaison ignore maintenant la ponctuation finale, des deux côtés (concerne aussi le pilote CE1 et les tableaux CE2).
+- **Énoncés ambigus** (les deux réponses étaient défendables) : ces/ses (« Julie a oublié … clés », « Pourquoi achètes-tu … pommes ? », « Léa a rangé ces affaires »), passé simple contre imparfait (sept énoncés sans marqueur d'action unique : « Soudain », « Puis… partit », « Enfin »…), futur contre conditionnel (« Ce soir, il … plus tard »), plutôt/plus tôt (« Je me couche … le samedi soir »). Reformulés avec un marqueur sans équivoque.
+- **Faux mot « réel » comme distracteur** : « éruction » (mot qui existe) remplacé par « érupsion ».
+- **Accord avec « être »** : « les enfants » n'est pas forcément masculin (remplacé par « les garçons »).
+- **Indices qui donnent la réponse** (3 couleurs, « la ») : reformulés.
+- **Énoncé de règle incomplet** : « travail → travaux » ajouté à la règle des pluriels en -aux.
+
+**Non vérifié** : lecture faite par Claude, pas par un enseignant ; l'ambiguïté résiduelle possible (ex. « marron » parfois accordé dans l'usage) est assumée au profit de la norme.

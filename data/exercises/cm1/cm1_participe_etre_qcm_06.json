@@ -7,15 +7,15 @@
   "difficulty": 2,
   "type": "multiple_choice",
   "instruction": "Choisis le bon mot.",
-  "question": "Les enfants sont ... du bus en courant.",
+  "question": "Les garçons sont ... du bus en courant.",
   "answers": [
     "descendu",
     "descendus",
     "descendues"
   ],
   "correct_answer": 1,
-  "hint": "Le sujet « les enfants » est masculin pluriel.",
-  "explanation": "Avec « être », le participe s'accorde avec le sujet : les enfants sont descendus.",
+  "hint": "Le sujet « les garçons » est masculin pluriel.",
+  "explanation": "Avec « être », le participe s'accorde avec le sujet : les garçons sont descendus.",
   "review_tags": [
     "verbes_cm1",
     "participe_etre"

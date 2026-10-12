@@ -7,14 +7,14 @@
   "difficulty": 2,
   "type": "multiple_choice",
   "instruction": "Choisis le bon mot.",
-  "question": "Julie a oublié ... clés sur la table.",
+  "question": "Julie embrasse ... grands-parents avant de partir.",
   "answers": [
     "ses",
     "ces"
   ],
   "correct_answer": 0,
-  "hint": "Remplace par « sa » : « sa clé » a du sens.",
-  "explanation": "« Ses » est le pluriel de « sa » : les clés de Julie.",
+  "hint": "Remplace par « son » : « son grand-père » a du sens.",
+  "explanation": "« Ses » est le pluriel de « son » : les grands-parents de Julie.",
   "review_tags": [
     "homophones_cm1",
     "ces_ses"

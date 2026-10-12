@@ -7,7 +7,7 @@
   "difficulty": 3,
   "type": "multiple_choice",
   "instruction": "Choisis le bon mot.",
-  "question": "Le héros ... la princesse.",
+  "question": "Ce jour-là, d'un coup d'épée, le héros ... la princesse.",
   "answers": [
     "sauva",
     "sauvait",

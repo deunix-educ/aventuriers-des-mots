@@ -73,11 +73,21 @@ static func validate_sentence_correction(
 ## (« achèterais ») : une reponse ambigue n'est pas declaree fausse
 ## automatiquement (CLAUDE.md, invariants pedagogiques).
 static func _matches_expected(submitted: String, expected: String, token_text: String = "") -> bool:
-    var typed := TextNormalizer.normalize(submitted).to_lower()
+    var typed := _comparable(submitted)
     for form in _accepted_forms(expected, token_text):
-        if typed == TextNormalizer.normalize(form).to_lower():
+        if typed == _comparable(form):
             return true
     return false
+
+
+## Forme comparable : normalisee, en minuscules, sans ponctuation finale. Le
+## mot touche porte parfois le point de la phrase (« roze. ») ; l'enfant n'a
+## pas a le retaper, et le taper n'est pas une erreur.
+static func _comparable(text: String) -> String:
+    var cleaned := TextNormalizer.normalize(text).to_lower()
+    while not cleaned.is_empty() and ".,;:!?…".contains(cleaned[cleaned.length() - 1]):
+        cleaned = cleaned.substr(0, cleaned.length() - 1).strip_edges()
+    return cleaned
 
 
 ## Formes acceptees : l'attendu, sans son prefixe d'elision (« j' », « l' »...),

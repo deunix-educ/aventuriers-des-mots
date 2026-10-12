@@ -9,15 +9,11 @@
   "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
   "tokens": [
     {
-      "text": "Léa",
+      "text": "Tom",
       "correct": true
     },
     {
-      "text": "a",
-      "correct": true
-    },
-    {
-      "text": "rangé",
+      "text": "brosse",
       "correct": true
     },
     {
@@ -27,7 +23,7 @@
       "rule_id": "regle_ces_ses"
     },
     {
-      "text": "affaires",
+      "text": "dents",
       "correct": true
     },
     {
@@ -35,24 +31,20 @@
       "correct": true
     },
     {
-      "text": "de",
+      "text": "d'aller",
       "correct": true
     },
     {
-      "text": "partir",
+      "text": "au",
       "correct": true
     },
     {
-      "text": "à",
-      "correct": true
-    },
-    {
-      "text": "l'école.",
+      "text": "lit.",
       "correct": true
     }
   ],
-  "hint": "Remplace par « son » : « son affaire » a du sens.",
-  "explanation": "« Ses » est le pluriel de « son » : les affaires de Léa.",
+  "hint": "Remplace par « sa » : « sa dent » a du sens.",
+  "explanation": "« Ses » est le pluriel de « sa » : les dents de Tom.",
   "review_tags": [
     "homophones_cm1",
     "ces_ses"

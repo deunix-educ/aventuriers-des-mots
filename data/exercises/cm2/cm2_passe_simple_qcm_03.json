@@ -7,7 +7,7 @@
   "difficulty": 1,
   "type": "multiple_choice",
   "instruction": "Choisis le bon mot.",
-  "question": "Le chevalier ... sur son cheval.",
+  "question": "Puis, le chevalier ... sur son cheval et partit.",
   "answers": [
     "monta",
     "montait",

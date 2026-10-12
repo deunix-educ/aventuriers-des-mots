@@ -228,11 +228,11 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
   - Indice : Le sujet « ma mère » est féminin singulier.
   - Explication : Avec « être », le participe s'accorde avec le sujet : ma mère est sortie.
   - Statut : draft
-- **cm1_participe_etre_qcm_06** (difficulte 2) : Les enfants sont ... du bus en courant.
+- **cm1_participe_etre_qcm_06** (difficulte 2) : Les garçons sont ... du bus en courant.
   - Reponses : descendu, descendus, descendues
   - Reponse attendue : descendus
-  - Indice : Le sujet « les enfants » est masculin pluriel.
-  - Explication : Avec « être », le participe s'accorde avec le sujet : les enfants sont descendus.
+  - Indice : Le sujet « les garçons » est masculin pluriel.
+  - Explication : Avec « être », le participe s'accorde avec le sujet : les garçons sont descendus.
   - Statut : draft
 - **cm1_participe_etre_qcm_07** (difficulte 3) : Anna et sa sœur sont ... en retard.
   - Reponses : arrivées, arrivés, arrivée
@@ -405,13 +405,13 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
 - **cm2_couleurs_qcm_04** (difficulte 2) : Il a mis des chaussures ... .
   - Reponses : marron, marrons
   - Reponse attendue : marron
-  - Indice : « Marron » vient du nom du fruit : il reste invariable.
+  - Indice : Pense au fruit qui a donné son nom à cette couleur.
   - Explication : « Marron » est un nom employé comme couleur : il reste invariable.
   - Statut : draft
 - **cm2_couleurs_qcm_05** (difficulte 2) : Mamie tricote des écharpes ... .
   - Reponses : oranges, orange
   - Reponse attendue : orange
-  - Indice : « Orange » vient du nom du fruit : il reste invariable.
+  - Indice : Pense au fruit qui a donné son nom à cette couleur.
   - Explication : « Orange » est un nom employé comme couleur : il reste invariable.
   - Statut : draft
 - **cm2_couleurs_qcm_06** (difficulte 2) : Elle aime ses rubans bleu ... .
@@ -429,7 +429,7 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
 - **cm2_couleurs_qcm_08** (difficulte 3) : Elle a des yeux ... .
   - Reponses : noisette, noisettes
   - Reponse attendue : noisette
-  - Indice : « Noisette » vient du nom du fruit : il reste invariable.
+  - Indice : Pense au fruit qui a donné son nom à cette couleur.
   - Explication : « Noisette » est un nom employé comme couleur : il reste invariable.
   - Statut : draft
 
@@ -440,11 +440,11 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
   - Explication : « Vert » est un adjectif de couleur : il s'accorde, « vertes ».
   - Statut : draft
 - **cm2_couleurs_correction_02** (difficulte 2) : Elle porte des gants [oranges. -> orange.]
-  - Indice : « Orange » vient du nom du fruit : il reste invariable.
+  - Indice : Pense au fruit qui a donné son nom à cette couleur.
   - Explication : « Orange » est un nom employé comme couleur : il reste invariable.
   - Statut : draft
 - **cm2_couleurs_correction_03** (difficulte 2) : Il porte des chaussures [marrons. -> marron.]
-  - Indice : « Marron » vient du nom du fruit : il reste invariable.
+  - Indice : Pense au fruit qui a donné son nom à cette couleur.
   - Explication : « Marron » est un nom employé comme couleur : il reste invariable.
   - Statut : draft
 - **cm2_couleurs_correction_04** (difficulte 3) : Léa a des rubans bleu [clairs. -> clair.]
@@ -672,7 +672,7 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
 - **cm1_c_est_s_est_qcm_02** (difficulte 1) : Le chat ... endormi sur le canapé.
   - Reponses : s'est, c'est
   - Reponse attendue : s'est
-  - Indice : Remplace par « se » au présent : « le chat se dort » → « s'endort ».
+  - Indice : Dis la phrase au présent : « le chat s'endort » : on entend « se ».
   - Explication : Le chat est le sujet et « endormi » le participe : on écrit « s'est ».
   - Statut : draft
 - **cm1_c_est_s_est_qcm_03** (difficulte 1) : Regarde, ... ma nouvelle bicyclette !
@@ -774,13 +774,13 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
   - Indice : Remplace par « ce » : « ce gâteau » a du sens.
   - Explication : « Ces » est le pluriel de « ce » : on montre des gâteaux.
   - Statut : draft
-- **cm1_ces_ses_qcm_04** (difficulte 2) : Julie a oublié ... clés sur la table.
+- **cm1_ces_ses_qcm_04** (difficulte 2) : Julie embrasse ... grands-parents avant de partir.
   - Reponses : ses, ces
   - Reponse attendue : ses
-  - Indice : Remplace par « sa » : « sa clé » a du sens.
-  - Explication : « Ses » est le pluriel de « sa » : les clés de Julie.
+  - Indice : Remplace par « son » : « son grand-père » a du sens.
+  - Explication : « Ses » est le pluriel de « son » : les grands-parents de Julie.
   - Statut : draft
-- **cm1_ces_ses_qcm_05** (difficulte 2) : Pourquoi achètes-tu ... pommes vertes ?
+- **cm1_ces_ses_qcm_05** (difficulte 2) : Goûte ... pommes rouges, elles sont délicieuses !
   - Reponses : ces, ses
   - Reponse attendue : ces
   - Indice : Remplace par « cette » : « cette pomme » a du sens.
@@ -815,9 +815,9 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
   - Indice : Remplace par « son » : « son oreille » a du sens.
   - Explication : « Ses » est le pluriel de « son » : les oreilles du chien.
   - Statut : draft
-- **cm1_ces_ses_correction_03** (difficulte 2) : Léa a rangé [ces -> ses] affaires avant de partir à l'école.
-  - Indice : Remplace par « son » : « son affaire » a du sens.
-  - Explication : « Ses » est le pluriel de « son » : les affaires de Léa.
+- **cm1_ces_ses_correction_03** (difficulte 2) : Tom brosse [ces -> ses] dents avant d'aller au lit.
+  - Indice : Remplace par « sa » : « sa dent » a du sens.
+  - Explication : « Ses » est le pluriel de « sa » : les dents de Tom.
   - Statut : draft
 - **cm1_ces_ses_correction_04** (difficulte 3) : Pourquoi portes-tu [ses -> ces] chaussures-ci aujourd'hui ?
   - Indice : Remplace par « cette » : « cette chaussure-ci » a du sens.
@@ -1047,10 +1047,10 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
   - Indice : Après « si » + imparfait, on emploie le conditionnel.
   - Explication : Après « si j'avais », on écrit le conditionnel : « volerais ».
   - Statut : draft
-- **cm2_futur_cond_qcm_03** (difficulte 1) : Ce soir, il ... plus tard que d'habitude.
+- **cm2_futur_cond_qcm_03** (difficulte 1) : Ce soir, il ... à huit heures, c'est certain.
   - Reponses : mangera, mangerait
   - Reponse attendue : mangera
-  - Indice : « Ce soir » : l'action est certaine, c'est le futur.
+  - Indice : « C'est certain » : l'action est sûre, c'est le futur.
   - Explication : L'action est certaine : on écrit le futur « mangera ».
   - Statut : draft
 - **cm2_futur_cond_qcm_04** (difficulte 2) : Si tu étudiais plus, tu ... ton examen.
@@ -1086,7 +1086,7 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
 
 ### Corrections de phrase
 
-- **cm2_futur_cond_correction_01** (difficulte 1) : Si j'étais riche, [j'achèterai -> achèterais] une île.
+- **cm2_futur_cond_correction_01** (difficulte 1) : Si j'étais riche, [j'achèterai -> j'achèterais] une île.
   - Indice : Après « si » + imparfait, on emploie le conditionnel.
   - Explication : Après « si j'étais », on écrit le conditionnel : « achèterais ».
   - Statut : draft
@@ -1788,7 +1788,7 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
 - **cm1_la_la_l_a_qcm_02** (difficulte 1) : ... maîtresse écrit au tableau.
   - Reponses : La, L'a, Là
   - Reponse attendue : La
-  - Indice : « La » est ici un article devant un nom.
+  - Indice : Regarde le mot qui suit : c'est un nom.
   - Explication : « La » accompagne le nom « maîtresse » : on écrit « la » sans accent.
   - Statut : draft
 - **cm1_la_la_l_a_qcm_03** (difficulte 1) : Paul ... vu hier au marché.
@@ -2430,7 +2430,7 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
 
 ### Choix multiples
 
-- **cm2_passe_simple_qcm_01** (difficulte 1) : Le roi ... le château ce matin-là.
+- **cm2_passe_simple_qcm_01** (difficulte 1) : Soudain, le roi ... le château sans un mot.
   - Reponses : quitte, quittait, quitta
   - Reponse attendue : quitta
   - Indice : Une action rapide au passé : le passé simple finit par -a.
@@ -2442,37 +2442,37 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
   - Indice : Une action soudaine : le passé simple d'un verbe en -ir finit par -it.
   - Explication : Au passé simple, un verbe en -ir finit par -it : « elle jaillit ».
   - Statut : draft
-- **cm2_passe_simple_qcm_03** (difficulte 1) : Le chevalier ... sur son cheval.
+- **cm2_passe_simple_qcm_03** (difficulte 1) : Puis, le chevalier ... sur son cheval et partit.
   - Reponses : monta, montait, monté
   - Reponse attendue : monta
   - Indice : Une action rapide au passé : le passé simple finit par -a.
   - Explication : Au passé simple, un verbe en -er finit par -a : « il monta ».
   - Statut : draft
-- **cm2_passe_simple_qcm_04** (difficulte 2) : Les villageois ... le volcan avec crainte.
+- **cm2_passe_simple_qcm_04** (difficulte 2) : Alors, les villageois ... le volcan avec crainte, puis s'enfuirent.
   - Reponses : regardaient, regardant, regardèrent
   - Reponse attendue : regardèrent
   - Indice : Plusieurs villageois : le passé simple finit par -èrent.
   - Explication : Au passé simple, ils : un verbe en -er finit par -èrent : « ils regardèrent ».
   - Statut : draft
-- **cm2_passe_simple_qcm_05** (difficulte 2) : Alors, le dragon ... un grand cri.
+- **cm2_passe_simple_qcm_05** (difficulte 2) : Alors, d'un seul coup, le dragon ... un grand cri.
   - Reponses : poussa, pousser, poussait
   - Reponse attendue : poussa
   - Indice : Une action rapide au passé : le passé simple finit par -a.
   - Explication : Au passé simple, un verbe en -er finit par -a : « il poussa ».
   - Statut : draft
-- **cm2_passe_simple_qcm_06** (difficulte 2) : Les enfants ... vers la cabane.
+- **cm2_passe_simple_qcm_06** (difficulte 2) : Soudain, les enfants ... vers la cabane.
   - Reponses : couraient, courant, coururent
   - Reponse attendue : coururent
   - Indice : Plusieurs enfants, une action soudaine : le passé simple finit par -urent.
   - Explication : Au passé simple, ils : « ils coururent ».
   - Statut : draft
-- **cm2_passe_simple_qcm_07** (difficulte 3) : Elles ... leur travail avant la nuit.
+- **cm2_passe_simple_qcm_07** (difficulte 3) : Enfin, elles ... leur travail avant la nuit.
   - Reponses : finissaient, finies, finirent
   - Reponse attendue : finirent
   - Indice : Plusieurs filles : le passé simple d'un verbe en -ir finit par -irent.
   - Explication : Au passé simple, elles : un verbe en -ir finit par -irent : « elles finirent ».
   - Statut : draft
-- **cm2_passe_simple_qcm_08** (difficulte 3) : Le héros ... la princesse.
+- **cm2_passe_simple_qcm_08** (difficulte 3) : Ce jour-là, d'un coup d'épée, le héros ... la princesse.
   - Reponses : sauva, sauvait, sauvé
   - Reponse attendue : sauva
   - Indice : Une action rapide au passé : le passé simple finit par -a.
@@ -2515,7 +2515,7 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
 
 ## regle_pluriel_aux_eaux (CM1, orthographe)
 
-**Enonce** : Les noms en -al font leur pluriel en -aux (un cheval, des chevaux) ; les noms en -eau prennent un -x (un bateau, des bateaux) ; quelques noms en -ou aussi (un bijou, des bijoux).
+**Enonce** : Les noms en -al font leur pluriel en -aux (un cheval, des chevaux) ; les noms en -eau prennent un -x (un bateau, des bateaux) ; quelques noms en -ou aussi (un bijou, des bijoux) ; « travail » fait « travaux ».
 
 **Exemple** : Un animal, des animaux. Un bateau, des bateaux. Un bijou, des bijoux.
 
@@ -2751,10 +2751,10 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
   - Indice : Remplace par « plus tard » : la phrase n'a pas de sens.
   - Explication : On exprime une préférence : on écrit « plutôt ».
   - Statut : draft
-- **cm2_plutot_qcm_08** (difficulte 3) : Je me couche ... le samedi soir.
+- **cm2_plutot_qcm_08** (difficulte 3) : Ce soir, je me couche ... que d'habitude.
   - Reponses : plutôt, plus tôt
   - Reponse attendue : plus tôt
-  - Indice : Remplace par « plus tard » : « je me couche plus tard » a du sens.
+  - Indice : Remplace par « plus tard » : « plus tard que d'habitude » a du sens.
   - Explication : On peut dire « plus tard » : on écrit « plus tôt ».
   - Statut : draft
 
@@ -3118,7 +3118,7 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
   - Explication : Le mot « impression » s'écrit avec -ssion.
   - Statut : draft
 - **cm2_tion_sion_qcm_07** (difficulte 3) : La ... du volcan a duré trois jours.
-  - Reponses : érussion, éruction, éruption
+  - Reponses : érussion, érupsion, éruption
   - Reponse attendue : éruption
   - Indice : Le son [sjɔ̃] s'écrit ici avec -ption.
   - Explication : Le mot « éruption » s'écrit avec -ption.

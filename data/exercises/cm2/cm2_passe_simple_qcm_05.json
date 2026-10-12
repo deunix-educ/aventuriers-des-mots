@@ -7,7 +7,7 @@
   "difficulty": 2,
   "type": "multiple_choice",
   "instruction": "Choisis le bon mot.",
-  "question": "Alors, le dragon ... un grand cri.",
+  "question": "Alors, d'un seul coup, le dragon ... un grand cri.",
   "answers": [
     "poussa",
     "pousser",

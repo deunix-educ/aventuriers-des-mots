@@ -3,7 +3,7 @@
   "level": "CM1",
   "domain": "orthographe",
   "skill": "orthographe_cm1",
-  "statement": "Les noms en -al font leur pluriel en -aux (un cheval, des chevaux) ; les noms en -eau prennent un -x (un bateau, des bateaux) ; quelques noms en -ou aussi (un bijou, des bijoux).",
+  "statement": "Les noms en -al font leur pluriel en -aux (un cheval, des chevaux) ; les noms en -eau prennent un -x (un bateau, des bateaux) ; quelques noms en -ou aussi (un bijou, des bijoux) ; « travail » fait « travaux ».",
   "example": "Un animal, des animaux. Un bateau, des bateaux. Un bijou, des bijoux.",
   "review_status": "draft"
 }
