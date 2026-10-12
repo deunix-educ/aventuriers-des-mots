@@ -4,6 +4,10 @@ Jeu éducatif de français du CE1 au CM2 (7-11 ans) : une aventure 2D hors ligne
 
 Projet open source, en développement. Statut actuel : version 0.9.2, jouable hors ligne sur Linux, Android et dans un navigateur (versions testées à la main), avec des exports Windows, macOS et ChromeOS non encore testés sur matériel — profils, sauvegardes (avec export et restauration dans l'espace adulte), étoiles et collection d'objets, sons et musique, réglages (volumes, taille du texte, animations), tableau de progrès pour l'adulte, trois types d'exercices (choix multiple, correction de phrase, dictée), CE1, CE2, CM1 et CM2 en trois tableaux chacun (homophones, verbes, orthographe des mots), 111 missions. Contenu pédagogique entièrement en brouillon (`draft`, à valider) et voix des dictées provisoires (voir `assets/CREDITS.md` ; voir `docs/specs/decisions.md` pour les décisions de cadrage et `docs/specs/cahier-des-charges.md` pour la spécification complète).
 
+## Télécharger
+
+Les versions prêtes à jouer sont sur la page des [Releases](https://github.com/deunix-educ/aventuriers-des-mots/releases) : une archive par plateforme (Linux, Windows, macOS, Android, ChromeOS/navigateur) et `SHA256SUMS` pour vérifier les fichiers. Ce sont des versions préliminaires : contenu pédagogique en brouillon, voix provisoires. Chaque archive contient un fichier `LISEZMOI` qui explique le lancement.
+
 ## Pile technique
 
 - Godot 4.6 (GDScript typé)

@@ -4,6 +4,10 @@ An educational French-language game for 7-11 year olds (French grades CE1 to CM2
 
 Open source project, in development. Current status: version 0.9.2, playable offline on Linux, Android and in a web browser (hand-tested), with Windows, macOS and ChromeOS exports not yet tested on real hardware — profiles, saves (with export and restore in the adult area), stars and an item collection, sound effects and music, settings (volumes, text size, animations), a progress dashboard for adults, three exercise types (multiple choice, sentence correction, dictation), CE1, CE2, CM1 and CM2 in three boards each (homophones, verbs, word spelling), 111 missions. All pedagogical content is still `draft` (awaiting validation) and dictation voices are placeholders (see `assets/CREDITS.md`; see `docs/specs/decisions.md` for scoping decisions and `docs/specs/cahier-des-charges.md` for the full specification, both in French — this is a French-curriculum product).
 
+## Download
+
+Ready-to-play builds are on the [Releases](https://github.com/deunix-educ/aventuriers-des-mots/releases) page: one archive per platform (Linux, Windows, macOS, Android, ChromeOS/browser) and `SHA256SUMS` to verify the files. These are preview versions: draft educational content and placeholder voices. Each archive contains a `LISEZMOI` file (in French) explaining how to start the game.
+
 ## Tech stack
 
 - Godot 4.6 (typed GDScript)
