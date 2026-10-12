@@ -434,3 +434,5 @@ Les corrections et les dictées CE1/CE2 n'ont pas révélé d'autre problème ; 
 - **Signature Android** : clé de débogage publique de Godot, via variables d'environnement (aucun secret dans le dépôt). Une publication sur un magasin demandera une vraie clé (`GODOT_ANDROID_KEYSTORE_RELEASE_*`).
 - **Réglage de projet** : import ETC2/ASTC activé (exigé par les exports mobile et macOS universel).
 - **Non vérifié** : aucune des trois nouvelles versions n'a été lancée sur un appareil. Le tactile (clavier virtuel Android pour les champs de saisie, taille des boutons), le stockage `user://` et l'audio sur Android/web restent à tester à la main.
+
+**Son sur la version web (0.9.1)** : Godot 4.6 joue par défaut les sons du web en mode « échantillon » (Web Audio direct), qui ignore les bus créés à l'exécution (Music/Effects) et leurs volumes. Réglage `audio/general/default_playback_type.web = Stream` : le son passe par le moteur audio comme sur bureau. **Non vérifié** : aucun navigateur avec sortie audio dans l'environnement de développement ; à tester à la main (premier clic requis par le navigateur avant tout son).

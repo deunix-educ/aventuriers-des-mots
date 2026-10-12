@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Les Aventuriers des mots"
-config/version="0.9.0"
+config/version="0.9.1"
 run/main_scene="res://scenes/boot/boot.tscn"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
@@ -40,3 +40,7 @@ theme/custom="res://assets/interface/theme.tres"
 [rendering]
 
 textures/vram_compression/import_etc2_astc=true
+
+[audio]
+
+general/default_playback_type.web=0
