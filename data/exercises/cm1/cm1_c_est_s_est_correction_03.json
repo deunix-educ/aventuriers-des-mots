@@ -1,0 +1,53 @@
+{
+  "id": "cm1_c_est_s_est_correction_03",
+  "level": "CM1",
+  "domain": "orthographe",
+  "skill": "homophones_cm1",
+  "rule_id": "regle_c_est_s_est",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "La",
+      "correct": true
+    },
+    {
+      "text": "petite",
+      "correct": true
+    },
+    {
+      "text": "fille",
+      "correct": true
+    },
+    {
+      "text": "c'est",
+      "correct": false,
+      "expected": "s'est",
+      "rule_id": "regle_c_est_s_est"
+    },
+    {
+      "text": "perdue",
+      "correct": true
+    },
+    {
+      "text": "dans",
+      "correct": true
+    },
+    {
+      "text": "la",
+      "correct": true
+    },
+    {
+      "text": "forêt.",
+      "correct": true
+    }
+  ],
+  "hint": "Remplace par « se perd » au présent.",
+  "explanation": "La petite fille est le sujet, « perdue » est un participe : « s'est ».",
+  "review_tags": [
+    "homophones_cm1",
+    "c_est_s_est"
+  ],
+  "review_status": "draft"
+}

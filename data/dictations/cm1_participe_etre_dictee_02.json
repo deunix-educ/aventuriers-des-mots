@@ -1,0 +1,42 @@
+{
+  "id": "cm1_participe_etre_dictee_02",
+  "level": "CM1",
+  "domain": "grammaire",
+  "rule_ids": [
+    "regle_accord_participe_etre"
+  ],
+  "difficulty": 2,
+  "target_text": "Les enfants sont rentrés tard de la sortie.",
+  "words": [
+    {
+      "text": "Les",
+      "expects_capital": true
+    },
+    {
+      "text": "enfants"
+    },
+    {
+      "text": "sont"
+    },
+    {
+      "text": "rentrés",
+      "rule_id": "regle_accord_participe_etre"
+    },
+    {
+      "text": "tard"
+    },
+    {
+      "text": "de"
+    },
+    {
+      "text": "la"
+    },
+    {
+      "text": "sortie."
+    }
+  ],
+  "audio_id": "cm1_participe_etre_dictee_02",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_83_sentier_du_tigre",
+  "title": "Le sentier du tigre",
+  "narrative_context": "Une trace sur le sentier est mal écrite. Trouve le mot fautif et corrige-le.",
+  "rule_id": "regle_la_la_accent_l_a",
+  "exercise_type": "sentence_correction",
+  "map_position": {
+    "x": 0.5,
+    "y": 0.85
+  },
+  "review_status": "draft"
+}

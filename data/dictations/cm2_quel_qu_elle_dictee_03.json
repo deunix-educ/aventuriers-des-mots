@@ -1,0 +1,48 @@
+{
+  "id": "cm2_quel_qu_elle_dictee_03",
+  "level": "CM2",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_quel_qu_elle"
+  ],
+  "difficulty": 3,
+  "target_text": "Je me demande quels livres elle lira pendant les vacances.",
+  "words": [
+    {
+      "text": "Je",
+      "expects_capital": true
+    },
+    {
+      "text": "me"
+    },
+    {
+      "text": "demande"
+    },
+    {
+      "text": "quels",
+      "rule_id": "regle_quel_qu_elle"
+    },
+    {
+      "text": "livres"
+    },
+    {
+      "text": "elle"
+    },
+    {
+      "text": "lira"
+    },
+    {
+      "text": "pendant"
+    },
+    {
+      "text": "les"
+    },
+    {
+      "text": "vacances."
+    }
+  ],
+  "audio_id": "cm2_quel_qu_elle_dictee_03",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

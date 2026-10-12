@@ -1,0 +1,53 @@
+{
+  "id": "cm1_imparfait_correction_04",
+  "level": "CM1",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm1",
+  "rule_id": "regle_imparfait",
+  "difficulty": 3,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Le",
+      "correct": true
+    },
+    {
+      "text": "dimanche,",
+      "correct": true
+    },
+    {
+      "text": "vous",
+      "correct": true
+    },
+    {
+      "text": "marchions",
+      "correct": false,
+      "expected": "marchiez",
+      "rule_id": "regle_imparfait"
+    },
+    {
+      "text": "lentement",
+      "correct": true
+    },
+    {
+      "text": "dans",
+      "correct": true
+    },
+    {
+      "text": "la",
+      "correct": true
+    },
+    {
+      "text": "neige.",
+      "correct": true
+    }
+  ],
+  "hint": "Avec « vous », l'imparfait finit par -iez.",
+  "explanation": "Avec « vous », l'imparfait finit par -iez : vous marchiez.",
+  "review_tags": [
+    "verbes_cm1",
+    "imparfait"
+  ],
+  "review_status": "draft"
+}

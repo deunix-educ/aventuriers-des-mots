@@ -1,0 +1,49 @@
+{
+  "id": "cm2_quand_quant_correction_01",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "homophones_cm2",
+  "rule_id": "regle_quand_quant_qu_en",
+  "difficulty": 1,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Quant",
+      "correct": false,
+      "expected": "Quand",
+      "rule_id": "regle_quand_quant_qu_en"
+    },
+    {
+      "text": "il",
+      "correct": true
+    },
+    {
+      "text": "fait",
+      "correct": true
+    },
+    {
+      "text": "beau,",
+      "correct": true
+    },
+    {
+      "text": "nous",
+      "correct": true
+    },
+    {
+      "text": "jouons",
+      "correct": true
+    },
+    {
+      "text": "dehors.",
+      "correct": true
+    }
+  ],
+  "hint": "Remplace par « lorsque » : « lorsqu'il fait beau » a du sens.",
+  "explanation": "On peut dire « lorsque » : on écrit « quand ».",
+  "review_tags": [
+    "homophones_cm2",
+    "quand_quant"
+  ],
+  "review_status": "draft"
+}

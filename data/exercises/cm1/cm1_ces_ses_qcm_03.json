@@ -1,0 +1,23 @@
+{
+  "id": "cm1_ces_ses_qcm_03",
+  "level": "CM1",
+  "domain": "orthographe",
+  "skill": "homophones_cm1",
+  "rule_id": "regle_ces_ses",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "J'aime beaucoup ... gâteaux au chocolat, là-bas.",
+  "answers": [
+    "ses",
+    "ces"
+  ],
+  "correct_answer": 1,
+  "hint": "Remplace par « ce » : « ce gâteau » a du sens.",
+  "explanation": "« Ces » est le pluriel de « ce » : on montre des gâteaux.",
+  "review_tags": [
+    "homophones_cm1",
+    "ces_ses"
+  ],
+  "review_status": "draft"
+}

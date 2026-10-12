@@ -1,0 +1,39 @@
+{
+  "id": "cm1_la_la_l_a_dictee_02",
+  "level": "CM1",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_la_la_accent_l_a"
+  ],
+  "difficulty": 2,
+  "target_text": "Mon frère est là depuis ce matin.",
+  "words": [
+    {
+      "text": "Mon",
+      "expects_capital": true
+    },
+    {
+      "text": "frère"
+    },
+    {
+      "text": "est"
+    },
+    {
+      "text": "là",
+      "rule_id": "regle_la_la_accent_l_a"
+    },
+    {
+      "text": "depuis"
+    },
+    {
+      "text": "ce"
+    },
+    {
+      "text": "matin."
+    }
+  ],
+  "audio_id": "cm1_la_la_l_a_dictee_02",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

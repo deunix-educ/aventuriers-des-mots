@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_73_chemin_des_voyageurs",
+  "title": "Le chemin des voyageurs",
+  "narrative_context": "Les voyageurs sont arrivés au village. Accorde leur participe avec le bon sujet.",
+  "rule_id": "regle_accord_participe_etre",
+  "exercise_type": "multiple_choice",
+  "map_position": {
+    "x": 0.15,
+    "y": 0.85
+  },
+  "review_status": "draft"
+}

@@ -388,3 +388,18 @@ Volume : 3 tableaux × 3 règles × (8 QCM + 4 corrections + 3 dictées) = 72 QC
 **Unicité** : les gardes-fous de doublons et de quasi-doublons ont attrapé 6 collisions pendant la rédaction, toutes corrigées avant livraison (phrases reformulées).
 
 **Reste** : CM1 puis CM2 (3 tableaux chacun), à lancer après relecture de ces tableaux. **Non vérifié** : voix des 27 nouvelles dictées, niveau de difficulté et justesse pédagogique (indices, formulations), notamment le test « vendre/vendu » et la règle du futur, à faire relire.
+
+## 40. CM1 et CM2, bouton « Quitter le jeu » (version 0.8.0)
+
+**Quitter** (demande utilisateur) : bouton « Quitter le jeu » sur le choix du profil et dans les réglages (donc accessible depuis la carte), avec confirmation ; la progression du profil courant est sauvegardée avant la sortie (`GameManager.quit_game`, point d'arrêt remplaçable dans les tests).
+
+**CM1 et CM2** : mêmes principes que CE1/CE2 (3 tableaux, 3 règles par tableau, 8 QCM + 4 corrections + 3 dictées par règle, 3 missions par règle). Contenu entièrement `draft`, rédigé en réutilisant les règles de cadrage du point 38 (règles inspirées de ce type de cahier, textes originaux).
+
+- **CM1** : « Le château des homophones » (leur/leurs, ces/ses, c'est/s'est) ; « Le village des verbes » (imparfait, forme du participe passé, accord du participe avec être) ; « La jungle des mots » (pluriel en -aux/-eaux/-oux, ou/où, la/là/l'a).
+- **CM2** : « La station des homophones » (quel/qu'elle, quand/quant/qu'en, plutôt/plus tôt) ; « Le volcan des verbes » (futur ou conditionnel, passé simple, accord du participe avec avoir et COD placé avant) ; « La bibliothèque des mots » (adverbes en -emment/-amment, -tion/-sion/-ssion, adjectifs de couleur).
+
+Volume : 6 tableaux, 18 règles, 144 QCM, 72 corrections, 54 dictées (voix Piper provisoire, audio généré), 54 missions (n° 58 à 111). Le jeu compte 111 missions. Six nouveaux décors vectoriels (château, village, jungle, espace, volcan, bibliothèque) avec musique associée.
+
+**Contrôles** : les gardes-fous de doublons et de quasi-doublons ont attrapé 14 collisions pendant la rédaction (dont avec CE2), toutes corrigées. Aucune dictée ne contient de point d'interrogation ou d'exclamation isolé (l'espace insécable avant « ? » rend la saisie ambiguë) ; ces phrases sont réservées aux QCM et corrections.
+
+**Reste / limites** : CM1 et CM2 n'ont pas été relus pédagogiquement (indices, niveau de difficulté, règles du passé simple et de l'accord du participe avec COD, à faire valider) ; voix des 54 dictées non écoutées ; la création de profil propose désormais 4 niveaux (CE1, CE2, CM1, CM2).

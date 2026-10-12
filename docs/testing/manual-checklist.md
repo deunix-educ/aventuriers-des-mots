@@ -29,6 +29,13 @@ Tout ce qui suit ne peut pas être vérifié sans écran (rendu, mise en page, a
 - CE1 : trois tableaux (forêt, plage, montagne) ; CE2 : trois tableaux (marais, désert, île) ; chaque décor est distinct, le bouton « Aller : … » les parcourt en boucle. Jouer au moins une mission de chaque règle nouvelle (être/avoir/-er ; sujet-verbe, é/er, futur ; féminin, g/ge/gu, lettre muette) et vérifier : consigne claire, une seule bonne réponse, indice utile, aucune phrase déjà vue dans la même mission.
 - Création de profil : seuls CE1 et CE2 sont proposés (CM1/CM2 n'ont pas encore de contenu).
 
+## CM1, CM2 et sortie du jeu (point 40 de `decisions.md`)
+
+- Création de profil : quatre niveaux proposés (CE1, CE2, CM1, CM2), un seul actif à la fois ; un profil CM1 ouvre « Le château des homophones », un profil CM2 « La station des homophones ».
+- Chaque niveau CM : trois tableaux (« Aller : … »), décors distincts, « Revoir le CE2 » / « Revoir le CM1 » selon le profil.
+- Jouer au moins une mission de chaque règle CM nouvelle ; vérifier consignes, indices et aucune phrase déjà vue dans la mission.
+- « Quitter le jeu » (choix du profil et réglages) : une confirmation apparaît ; refuser ne quitte pas ; accepter ferme le jeu et la progression est conservée au relancement.
+
 ## Accessibilité et interface
 
 - Habillage (point 31 de `decisions.md`) : relire chaque écran (profils, carte CE1 et CE2, introduction, règle, les trois types d'exercice, retour juste/faux, récompense, collection) ; le rendu à 1152x648 a été relu sur captures, pas les autres tailles ni le tactile. Redimensionner la fenêtre : les lieux de la carte restent entiers et ne se chevauchent pas.

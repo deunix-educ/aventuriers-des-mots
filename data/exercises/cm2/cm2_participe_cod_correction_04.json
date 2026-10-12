@@ -1,0 +1,53 @@
+{
+  "id": "cm2_participe_cod_correction_04",
+  "level": "CM2",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm2",
+  "rule_id": "regle_participe_cod_avant",
+  "difficulty": 3,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Les",
+      "correct": true
+    },
+    {
+      "text": "lettres",
+      "correct": true
+    },
+    {
+      "text": "que",
+      "correct": true
+    },
+    {
+      "text": "j'ai",
+      "correct": true
+    },
+    {
+      "text": "écrit",
+      "correct": false,
+      "expected": "écrites",
+      "rule_id": "regle_participe_cod_avant"
+    },
+    {
+      "text": "hier",
+      "correct": true
+    },
+    {
+      "text": "sont",
+      "correct": true
+    },
+    {
+      "text": "parties.",
+      "correct": true
+    }
+  ],
+  "hint": "Les lettres (que) sont placées avant le verbe : le participe s'accorde.",
+  "explanation": "Le complément « que » (= les lettres) est avant : « écrites ».",
+  "review_tags": [
+    "verbes_cm2",
+    "participe_cod"
+  ],
+  "review_status": "draft"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cm2_participe_cod_qcm_02",
+  "level": "CM2",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm2",
+  "rule_id": "regle_participe_cod_avant",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Les fleurs que Léa a ... sont belles.",
+  "answers": [
+    "cueillies",
+    "cueilli"
+  ],
+  "correct_answer": 0,
+  "hint": "Les fleurs (que) sont placées avant le verbe : le participe s'accorde.",
+  "explanation": "Le complément « que » (= les fleurs) est avant : « cueillies ».",
+  "review_tags": [
+    "verbes_cm2",
+    "participe_cod"
+  ],
+  "review_status": "draft"
+}

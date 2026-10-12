@@ -1,0 +1,49 @@
+{
+  "id": "cm2_passe_simple_correction_03",
+  "level": "CM2",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm2",
+  "rule_id": "regle_passe_simple",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Le",
+      "correct": true
+    },
+    {
+      "text": "roi",
+      "correct": true
+    },
+    {
+      "text": "finissa",
+      "correct": false,
+      "expected": "finit",
+      "rule_id": "regle_passe_simple"
+    },
+    {
+      "text": "son",
+      "correct": true
+    },
+    {
+      "text": "repas",
+      "correct": true
+    },
+    {
+      "text": "en",
+      "correct": true
+    },
+    {
+      "text": "silence.",
+      "correct": true
+    }
+  ],
+  "hint": "Un verbe en -ir finit par -it au passé simple.",
+  "explanation": "Au passé simple, il : « il finit ».",
+  "review_tags": [
+    "verbes_cm2",
+    "passe_simple"
+  ],
+  "review_status": "draft"
+}

@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_88_orbite_de_mars",
+  "title": "L'orbite de Mars",
+  "narrative_context": "En orbite, « quand », « quant » et « qu'en » flottent. Choisis le bon.",
+  "rule_id": "regle_quand_quant_qu_en",
+  "exercise_type": "multiple_choice",
+  "map_position": {
+    "x": 0.15,
+    "y": 0.5
+  },
+  "review_status": "draft"
+}

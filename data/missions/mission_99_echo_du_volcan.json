@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_99_echo_du_volcan",
+  "title": "L'écho du volcan",
+  "narrative_context": "Le volcan gronde une phrase, une seule fois. Écoute bien et écris-la sans faute.",
+  "rule_id": "regle_passe_simple",
+  "exercise_type": "dictation",
+  "map_position": {
+    "x": 0.85,
+    "y": 0.5
+  },
+  "review_status": "draft"
+}

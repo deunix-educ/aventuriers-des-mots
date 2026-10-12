@@ -1,0 +1,23 @@
+{
+  "id": "cm1_ou_ou_qcm_02",
+  "level": "CM1",
+  "domain": "orthographe",
+  "skill": "orthographe_cm1",
+  "rule_id": "regle_ou_ou_accent",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Veux-tu du thé ... du chocolat ?",
+  "answers": [
+    "où",
+    "ou"
+  ],
+  "correct_answer": 1,
+  "hint": "Remplace par « ou bien » : « du thé ou bien du chocolat » a du sens.",
+  "explanation": "On peut dire « ou bien » : on écrit « ou » sans accent.",
+  "review_tags": [
+    "orthographe_cm1",
+    "ou_ou"
+  ],
+  "review_status": "draft"
+}

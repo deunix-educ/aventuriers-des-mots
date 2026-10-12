@@ -1,0 +1,23 @@
+{
+  "id": "cm1_c_est_s_est_qcm_02",
+  "level": "CM1",
+  "domain": "orthographe",
+  "skill": "homophones_cm1",
+  "rule_id": "regle_c_est_s_est",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Le chat ... endormi sur le canapé.",
+  "answers": [
+    "s'est",
+    "c'est"
+  ],
+  "correct_answer": 0,
+  "hint": "Remplace par « se » au présent : « le chat se dort » → « s'endort ».",
+  "explanation": "Le chat est le sujet et « endormi » le participe : on écrit « s'est ».",
+  "review_tags": [
+    "homophones_cm1",
+    "c_est_s_est"
+  ],
+  "review_status": "draft"
+}

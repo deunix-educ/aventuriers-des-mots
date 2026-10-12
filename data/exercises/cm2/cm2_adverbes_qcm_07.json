@@ -1,0 +1,24 @@
+{
+  "id": "cm2_adverbes_qcm_07",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "orthographe_cm2",
+  "rule_id": "regle_adverbes_ment",
+  "difficulty": 3,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Le médecin examine ... le malade.",
+  "answers": [
+    "attentivement",
+    "attentivemment",
+    "attentivamment"
+  ],
+  "correct_answer": 0,
+  "hint": "L'adjectif « attentif » donne « attentive » au féminin : on ajoute -ment.",
+  "explanation": "« Attentive » + -ment : l'adverbe s'écrit « attentivement ».",
+  "review_tags": [
+    "orthographe_cm2",
+    "adverbes"
+  ],
+  "review_status": "draft"
+}

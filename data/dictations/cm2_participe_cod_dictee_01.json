@@ -1,0 +1,42 @@
+{
+  "id": "cm2_participe_cod_dictee_01",
+  "level": "CM2",
+  "domain": "grammaire",
+  "rule_ids": [
+    "regle_participe_cod_avant"
+  ],
+  "difficulty": 1,
+  "target_text": "Hier, ma sœur a cueilli des framboises sauvages.",
+  "words": [
+    {
+      "text": "Hier,",
+      "expects_capital": true
+    },
+    {
+      "text": "ma"
+    },
+    {
+      "text": "sœur"
+    },
+    {
+      "text": "a"
+    },
+    {
+      "text": "cueilli",
+      "rule_id": "regle_participe_cod_avant"
+    },
+    {
+      "text": "des"
+    },
+    {
+      "text": "framboises"
+    },
+    {
+      "text": "sauvages."
+    }
+  ],
+  "audio_id": "cm2_participe_cod_dictee_01",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_75_ecole_du_village",
+  "title": "L'école du village",
+  "narrative_context": "Le maître dicte une phrase, une seule fois. Écoute-le bien et écris-la exactement.",
+  "rule_id": "regle_accord_participe_etre",
+  "exercise_type": "dictation",
+  "map_position": {
+    "x": 0.85,
+    "y": 0.85
+  },
+  "review_status": "draft"
+}

@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_104_escalier_de_la_tour",
+  "title": "L'escalier de la tour",
+  "narrative_context": "Une marche de l'escalier porte un adverbe mal écrit. Trouve-le et corrige-le.",
+  "rule_id": "regle_adverbes_ment",
+  "exercise_type": "sentence_correction",
+  "map_position": {
+    "x": 0.5,
+    "y": 0.15
+  },
+  "review_status": "draft"
+}

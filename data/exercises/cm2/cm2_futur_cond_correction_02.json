@@ -1,0 +1,49 @@
+{
+  "id": "cm2_futur_cond_correction_02",
+  "level": "CM2",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm2",
+  "rule_id": "regle_futur_conditionnel",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Demain,",
+      "correct": true
+    },
+    {
+      "text": "nous",
+      "correct": true
+    },
+    {
+      "text": "partirions",
+      "correct": false,
+      "expected": "partirons",
+      "rule_id": "regle_futur_conditionnel"
+    },
+    {
+      "text": "tôt",
+      "correct": true
+    },
+    {
+      "text": "pour",
+      "correct": true
+    },
+    {
+      "text": "le",
+      "correct": true
+    },
+    {
+      "text": "volcan.",
+      "correct": true
+    }
+  ],
+  "hint": "« Demain » : l'action est certaine, c'est le futur.",
+  "explanation": "L'action est certaine : on écrit le futur « partirons ».",
+  "review_tags": [
+    "verbes_cm2",
+    "futur_cond"
+  ],
+  "review_status": "draft"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "cm2_quand_quant_dictee_02",
+  "level": "CM2",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_quand_quant_qu_en"
+  ],
+  "difficulty": 2,
+  "target_text": "Quant à Julie, elle préfère rester à la maison.",
+  "words": [
+    {
+      "text": "Quant",
+      "expects_capital": true,
+      "rule_id": "regle_quand_quant_qu_en"
+    },
+    {
+      "text": "à"
+    },
+    {
+      "text": "Julie,"
+    },
+    {
+      "text": "elle"
+    },
+    {
+      "text": "préfère"
+    },
+    {
+      "text": "rester"
+    },
+    {
+      "text": "à"
+    },
+    {
+      "text": "la"
+    },
+    {
+      "text": "maison."
+    }
+  ],
+  "audio_id": "cm2_quand_quant_dictee_02",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

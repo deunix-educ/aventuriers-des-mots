@@ -1,0 +1,24 @@
+{
+  "id": "cm1_pluriel_aux_qcm_02",
+  "level": "CM1",
+  "domain": "orthographe",
+  "skill": "orthographe_cm1",
+  "rule_id": "regle_pluriel_aux_eaux",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Plusieurs ... naviguent sur le lac.",
+  "answers": [
+    "bateau",
+    "bateaus",
+    "bateaux"
+  ],
+  "correct_answer": 2,
+  "hint": "Le nom « bateau » finit par -eau.",
+  "explanation": "Les noms en -eau prennent un -x au pluriel : « bateaux ».",
+  "review_tags": [
+    "orthographe_cm1",
+    "pluriel_aux"
+  ],
+  "review_status": "draft"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "cm2_plutot_correction_03",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "homophones_cm2",
+  "rule_id": "regle_plutot_plus_tot",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Réveille-toi",
+      "correct": true
+    },
+    {
+      "text": "plutôt",
+      "correct": false,
+      "expected": "plus tôt",
+      "rule_id": "regle_plutot_plus_tot"
+    },
+    {
+      "text": "que",
+      "correct": true
+    },
+    {
+      "text": "d'habitude",
+      "correct": true
+    },
+    {
+      "text": "demain.",
+      "correct": true
+    }
+  ],
+  "hint": "Remplace par « plus tard » : « plus tard que d'habitude » a du sens.",
+  "explanation": "On peut dire « plus tard » : on écrit « plus tôt ».",
+  "review_tags": [
+    "homophones_cm2",
+    "plutot"
+  ],
+  "review_status": "draft"
+}

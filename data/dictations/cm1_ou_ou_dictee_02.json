@@ -1,0 +1,45 @@
+{
+  "id": "cm1_ou_ou_dictee_02",
+  "level": "CM1",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_ou_ou_accent"
+  ],
+  "difficulty": 2,
+  "target_text": "Tu peux boire du lait ou du jus d'orange.",
+  "words": [
+    {
+      "text": "Tu",
+      "expects_capital": true
+    },
+    {
+      "text": "peux"
+    },
+    {
+      "text": "boire"
+    },
+    {
+      "text": "du"
+    },
+    {
+      "text": "lait"
+    },
+    {
+      "text": "ou",
+      "rule_id": "regle_ou_ou_accent"
+    },
+    {
+      "text": "du"
+    },
+    {
+      "text": "jus"
+    },
+    {
+      "text": "d'orange."
+    }
+  ],
+  "audio_id": "cm1_ou_ou_dictee_02",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

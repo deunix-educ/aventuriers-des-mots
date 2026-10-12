@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_71_grenier_a_foin",
+  "title": "Le grenier à foin",
+  "narrative_context": "Un participe passé est mal écrit dans le grenier. Repère-le et corrige-le.",
+  "rule_id": "regle_participe_passe_forme",
+  "exercise_type": "sentence_correction",
+  "map_position": {
+    "x": 0.5,
+    "y": 0.5
+  },
+  "review_status": "draft"
+}

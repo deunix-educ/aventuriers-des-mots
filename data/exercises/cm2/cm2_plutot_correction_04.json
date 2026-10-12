@@ -1,0 +1,45 @@
+{
+  "id": "cm2_plutot_correction_04",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "homophones_cm2",
+  "rule_id": "regle_plutot_plus_tot",
+  "difficulty": 3,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Ce",
+      "correct": true
+    },
+    {
+      "text": "gâteau",
+      "correct": true
+    },
+    {
+      "text": "est",
+      "correct": true
+    },
+    {
+      "text": "plus",
+      "correct": false,
+      "expected": "plutôt",
+      "rule_id": "regle_plutot_plus_tot"
+    },
+    {
+      "text": "tôt",
+      "correct": true
+    },
+    {
+      "text": "bon.",
+      "correct": true
+    }
+  ],
+  "hint": "Remplace par « plus tard » : la phrase n'a pas de sens.",
+  "explanation": "On nuance : on écrit « plutôt ».",
+  "review_tags": [
+    "homophones_cm2",
+    "plutot"
+  ],
+  "review_status": "draft"
+}

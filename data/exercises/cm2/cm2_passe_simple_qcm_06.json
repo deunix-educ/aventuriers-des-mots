@@ -1,0 +1,24 @@
+{
+  "id": "cm2_passe_simple_qcm_06",
+  "level": "CM2",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm2",
+  "rule_id": "regle_passe_simple",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Les enfants ... vers la cabane.",
+  "answers": [
+    "couraient",
+    "courant",
+    "coururent"
+  ],
+  "correct_answer": 2,
+  "hint": "Plusieurs enfants, une action soudaine : le passé simple finit par -urent.",
+  "explanation": "Au passé simple, ils : « ils coururent ».",
+  "review_tags": [
+    "verbes_cm2",
+    "passe_simple"
+  ],
+  "review_status": "draft"
+}

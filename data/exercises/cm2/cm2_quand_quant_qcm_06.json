@@ -1,0 +1,23 @@
+{
+  "id": "cm2_quand_quant_qcm_06",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "homophones_cm2",
+  "rule_id": "regle_quand_quant_qu_en",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "... à Paul, il est déjà parti.",
+  "answers": [
+    "Quand",
+    "Quant"
+  ],
+  "correct_answer": 1,
+  "hint": "Remplace par « en ce qui concerne ».",
+  "explanation": "On peut dire « en ce qui concerne » : on écrit « quant ».",
+  "review_tags": [
+    "homophones_cm2",
+    "quand_quant"
+  ],
+  "review_status": "draft"
+}

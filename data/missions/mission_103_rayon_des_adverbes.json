@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_103_rayon_des_adverbes",
+  "title": "Le rayon des adverbes",
+  "narrative_context": "Au rayon des adverbes, chaque mot attend sa terminaison. Choisis la bonne écriture.",
+  "rule_id": "regle_adverbes_ment",
+  "exercise_type": "multiple_choice",
+  "map_position": {
+    "x": 0.15,
+    "y": 0.15
+  },
+  "review_status": "draft"
+}

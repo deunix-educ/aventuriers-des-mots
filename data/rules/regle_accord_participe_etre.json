@@ -1,0 +1,9 @@
+{
+  "rule_id": "regle_accord_participe_etre",
+  "level": "CM1",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm1",
+  "statement": "Avec l'auxiliaire « être », le participe passé s'accorde avec le sujet : elle est partie, ils sont partis, elles sont parties.",
+  "example": "Léa est arrivée. Les garçons sont partis.",
+  "review_status": "draft"
+}

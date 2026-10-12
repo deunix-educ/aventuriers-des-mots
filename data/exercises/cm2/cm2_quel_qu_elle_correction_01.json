@@ -1,0 +1,33 @@
+{
+  "id": "cm2_quel_qu_elle_correction_01",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "homophones_cm2",
+  "rule_id": "regle_quel_qu_elle",
+  "difficulty": 1,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Qu'elle",
+      "correct": false,
+      "expected": "Quelle",
+      "rule_id": "regle_quel_qu_elle"
+    },
+    {
+      "text": "belle",
+      "correct": true
+    },
+    {
+      "text": "journée !",
+      "correct": true
+    }
+  ],
+  "hint": "Remplace par « qu'il » : la phrase n'a pas de sens.",
+  "explanation": "« Quelle » accompagne le nom « journée » : on écrit « quelle ».",
+  "review_tags": [
+    "homophones_cm2",
+    "quel_qu_elle"
+  ],
+  "review_status": "draft"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "cm2_adverbes_correction_02",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "orthographe_cm2",
+  "rule_id": "regle_adverbes_ment",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Elle",
+      "correct": true
+    },
+    {
+      "text": "écoute",
+      "correct": true
+    },
+    {
+      "text": "attentivemment",
+      "correct": false,
+      "expected": "attentivement",
+      "rule_id": "regle_adverbes_ment"
+    },
+    {
+      "text": "la",
+      "correct": true
+    },
+    {
+      "text": "leçon.",
+      "correct": true
+    }
+  ],
+  "hint": "L'adjectif « attentif » donne « attentive » au féminin.",
+  "explanation": "« Attentive » + -ment : l'adverbe s'écrit « attentivement ».",
+  "review_tags": [
+    "orthographe_cm2",
+    "adverbes"
+  ],
+  "review_status": "draft"
+}

@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_70_forge_du_maitre",
+  "title": "La forge du maître",
+  "narrative_context": "Le forgeron a rangé ses participes dans de mauvais tiroirs. Choisis la bonne terminaison.",
+  "rule_id": "regle_participe_passe_forme",
+  "exercise_type": "multiple_choice",
+  "map_position": {
+    "x": 0.15,
+    "y": 0.5
+  },
+  "review_status": "draft"
+}

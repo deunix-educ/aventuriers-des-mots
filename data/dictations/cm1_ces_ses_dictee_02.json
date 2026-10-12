@@ -1,0 +1,42 @@
+{
+  "id": "cm1_ces_ses_dictee_02",
+  "level": "CM1",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_ces_ses"
+  ],
+  "difficulty": 2,
+  "target_text": "Le boulanger sort ses pains du four chaud.",
+  "words": [
+    {
+      "text": "Le",
+      "expects_capital": true
+    },
+    {
+      "text": "boulanger"
+    },
+    {
+      "text": "sort"
+    },
+    {
+      "text": "ses",
+      "rule_id": "regle_ces_ses"
+    },
+    {
+      "text": "pains"
+    },
+    {
+      "text": "du"
+    },
+    {
+      "text": "four"
+    },
+    {
+      "text": "chaud."
+    }
+  ],
+  "audio_id": "cm1_ces_ses_dictee_02",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

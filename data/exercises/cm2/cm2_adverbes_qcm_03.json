@@ -1,0 +1,24 @@
+{
+  "id": "cm2_adverbes_qcm_03",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "orthographe_cm2",
+  "rule_id": "regle_adverbes_ment",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Elle parle ... devant la classe.",
+  "answers": [
+    "courammant",
+    "courement",
+    "couramment"
+  ],
+  "correct_answer": 2,
+  "hint": "L'adjectif « courant » finit par -ant.",
+  "explanation": "« Courant » finit par -ant : l'adverbe s'écrit « couramment ».",
+  "review_tags": [
+    "orthographe_cm2",
+    "adverbes"
+  ],
+  "review_status": "draft"
+}

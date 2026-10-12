@@ -1,0 +1,9 @@
+{
+  "rule_id": "regle_participe_cod_avant",
+  "level": "CM2",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm2",
+  "statement": "Avec « avoir », le participe passé s'accorde avec le complément d'objet seulement s'il est placé avant le verbe : la lettre que j'ai écrite ; j'ai écrit une lettre.",
+  "example": "Les fleurs que Léa a cueillies. Léa a cueilli des fleurs.",
+  "review_status": "draft"
+}

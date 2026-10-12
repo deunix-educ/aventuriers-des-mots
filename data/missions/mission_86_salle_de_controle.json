@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_86_salle_de_controle",
+  "title": "La salle de contrôle",
+  "narrative_context": "Un message de la salle de contrôle est fautif. Repère le mot et corrige-le.",
+  "rule_id": "regle_quel_qu_elle",
+  "exercise_type": "sentence_correction",
+  "map_position": {
+    "x": 0.5,
+    "y": 0.15
+  },
+  "review_status": "draft"
+}

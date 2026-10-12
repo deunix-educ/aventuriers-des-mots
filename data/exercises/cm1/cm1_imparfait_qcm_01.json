@@ -1,0 +1,24 @@
+{
+  "id": "cm1_imparfait_qcm_01",
+  "level": "CM1",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm1",
+  "rule_id": "regle_imparfait",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Quand j'étais petit, je ... souvent au parc.",
+  "answers": [
+    "jouais",
+    "jouait",
+    "jouaient"
+  ],
+  "correct_answer": 0,
+  "hint": "Avec « je », l'imparfait finit par -ais.",
+  "explanation": "Avec « je », l'imparfait finit par -ais : je jouais.",
+  "review_tags": [
+    "verbes_cm1",
+    "imparfait"
+  ],
+  "review_status": "draft"
+}

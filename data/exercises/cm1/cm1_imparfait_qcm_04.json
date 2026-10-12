@@ -1,0 +1,24 @@
+{
+  "id": "cm1_imparfait_qcm_04",
+  "level": "CM1",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm1",
+  "rule_id": "regle_imparfait",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Autrefois, nous ... au bord de la rivière.",
+  "answers": [
+    "pêchiez",
+    "pêchions",
+    "pêchaient"
+  ],
+  "correct_answer": 1,
+  "hint": "Avec « nous », l'imparfait finit par -ions.",
+  "explanation": "Avec « nous », l'imparfait finit par -ions : nous pêchions.",
+  "review_tags": [
+    "verbes_cm1",
+    "imparfait"
+  ],
+  "review_status": "draft"
+}

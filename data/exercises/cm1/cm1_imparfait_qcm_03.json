@@ -1,0 +1,24 @@
+{
+  "id": "cm1_imparfait_qcm_03",
+  "level": "CM1",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm1",
+  "rule_id": "regle_imparfait",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Chaque matin, tu ... du pain frais.",
+  "answers": [
+    "mangeait",
+    "mangeais",
+    "mangeaient"
+  ],
+  "correct_answer": 1,
+  "hint": "Avec « tu », l'imparfait finit par -ais.",
+  "explanation": "Avec « tu », l'imparfait finit par -ais : tu mangeais.",
+  "review_tags": [
+    "verbes_cm1",
+    "imparfait"
+  ],
+  "review_status": "draft"
+}

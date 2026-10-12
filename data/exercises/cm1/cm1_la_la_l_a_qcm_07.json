@@ -1,0 +1,24 @@
+{
+  "id": "cm1_la_la_l_a_qcm_07",
+  "level": "CM1",
+  "domain": "orthographe",
+  "skill": "orthographe_cm1",
+  "rule_id": "regle_la_la_accent_l_a",
+  "difficulty": 3,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Cette chanson, Tom ... apprise par cœur.",
+  "answers": [
+    "la",
+    "l'a",
+    "là"
+  ],
+  "correct_answer": 1,
+  "hint": "Remplace par « l'avait » : « Tom l'avait apprise » a du sens.",
+  "explanation": "On peut dire « l'avait » : on écrit « l'a ».",
+  "review_tags": [
+    "orthographe_cm1",
+    "la_la_l_a"
+  ],
+  "review_status": "draft"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "cm1_participe_forme_qcm_04",
+  "level": "CM1",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm1",
+  "rule_id": "regle_participe_passe_forme",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Les enfants ont ... un gros gâteau.",
+  "answers": [
+    "choisé",
+    "choisi",
+    "choisu"
+  ],
+  "correct_answer": 1,
+  "hint": "Le verbe « choisir » est en -ir : son participe finit par -i.",
+  "explanation": "Les verbes en -ir ont un participe en -i : « choisi ».",
+  "review_tags": [
+    "verbes_cm1",
+    "participe_forme"
+  ],
+  "review_status": "draft"
+}

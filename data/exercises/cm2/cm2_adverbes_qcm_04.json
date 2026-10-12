@@ -1,0 +1,24 @@
+{
+  "id": "cm2_adverbes_qcm_04",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "orthographe_cm2",
+  "rule_id": "regle_adverbes_ment",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Le chevalier combat ... pour défendre le roi.",
+  "answers": [
+    "vaillemment",
+    "vaillament",
+    "vaillamment"
+  ],
+  "correct_answer": 2,
+  "hint": "L'adjectif « vaillant » finit par -ant.",
+  "explanation": "« Vaillant » finit par -ant : l'adverbe s'écrit « vaillamment ».",
+  "review_tags": [
+    "orthographe_cm2",
+    "adverbes"
+  ],
+  "review_status": "draft"
+}

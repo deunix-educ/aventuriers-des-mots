@@ -1,0 +1,53 @@
+{
+  "id": "cm2_plutot_correction_02",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "homophones_cm2",
+  "rule_id": "regle_plutot_plus_tot",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Je",
+      "correct": true
+    },
+    {
+      "text": "préfère",
+      "correct": true
+    },
+    {
+      "text": "plus",
+      "correct": false,
+      "expected": "plutôt",
+      "rule_id": "regle_plutot_plus_tot"
+    },
+    {
+      "text": "tôt",
+      "correct": true
+    },
+    {
+      "text": "le",
+      "correct": true
+    },
+    {
+      "text": "thé",
+      "correct": true
+    },
+    {
+      "text": "au",
+      "correct": true
+    },
+    {
+      "text": "café.",
+      "correct": true
+    }
+  ],
+  "hint": "Remplace par « plus tard » : la phrase n'a pas de sens.",
+  "explanation": "On exprime une préférence : on écrit « plutôt ».",
+  "review_tags": [
+    "homophones_cm2",
+    "plutot"
+  ],
+  "review_status": "draft"
+}

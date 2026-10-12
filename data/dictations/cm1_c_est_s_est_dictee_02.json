@@ -1,0 +1,39 @@
+{
+  "id": "cm1_c_est_s_est_dictee_02",
+  "level": "CM1",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_c_est_s_est"
+  ],
+  "difficulty": 2,
+  "target_text": "Mon cousin s'est perdu dans la ville.",
+  "words": [
+    {
+      "text": "Mon",
+      "expects_capital": true
+    },
+    {
+      "text": "cousin"
+    },
+    {
+      "text": "s'est",
+      "rule_id": "regle_c_est_s_est"
+    },
+    {
+      "text": "perdu"
+    },
+    {
+      "text": "dans"
+    },
+    {
+      "text": "la"
+    },
+    {
+      "text": "ville."
+    }
+  ],
+  "audio_id": "cm1_c_est_s_est_dictee_02",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

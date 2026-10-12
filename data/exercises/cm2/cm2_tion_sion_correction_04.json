@@ -1,0 +1,49 @@
+{
+  "id": "cm2_tion_sion_correction_04",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "orthographe_cm2",
+  "rule_id": "regle_tion_sion_ssion",
+  "difficulty": 3,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Le",
+      "correct": true
+    },
+    {
+      "text": "professeur",
+      "correct": true
+    },
+    {
+      "text": "a",
+      "correct": true
+    },
+    {
+      "text": "posé",
+      "correct": true
+    },
+    {
+      "text": "une",
+      "correct": true
+    },
+    {
+      "text": "questsion",
+      "correct": false,
+      "expected": "question",
+      "rule_id": "regle_tion_sion_ssion"
+    },
+    {
+      "text": "difficile.",
+      "correct": true
+    }
+  ],
+  "hint": "Le plus souvent, on écrit -tion.",
+  "explanation": "Le mot « question » s'écrit avec -tion.",
+  "review_tags": [
+    "orthographe_cm2",
+    "tion_sion"
+  ],
+  "review_status": "draft"
+}

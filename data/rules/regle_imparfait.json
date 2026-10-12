@@ -1,0 +1,9 @@
+{
+  "rule_id": "regle_imparfait",
+  "level": "CM1",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm1",
+  "statement": "À l'imparfait, les terminaisons sont -ais, -ais, -ait, -ions, -iez, -aient.",
+  "example": "Je chantais. Il chantait. Nous chantions. Ils chantaient.",
+  "review_status": "draft"
+}

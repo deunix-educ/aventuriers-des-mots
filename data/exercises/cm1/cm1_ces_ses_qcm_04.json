@@ -1,0 +1,23 @@
+{
+  "id": "cm1_ces_ses_qcm_04",
+  "level": "CM1",
+  "domain": "orthographe",
+  "skill": "homophones_cm1",
+  "rule_id": "regle_ces_ses",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Julie a oublié ... clés sur la table.",
+  "answers": [
+    "ses",
+    "ces"
+  ],
+  "correct_answer": 0,
+  "hint": "Remplace par « sa » : « sa clé » a du sens.",
+  "explanation": "« Ses » est le pluriel de « sa » : les clés de Julie.",
+  "review_tags": [
+    "homophones_cm1",
+    "ces_ses"
+  ],
+  "review_status": "draft"
+}

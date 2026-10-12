@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_95_coulee_de_lave",
+  "title": "La coulée de lave",
+  "narrative_context": "La lave a dissous un verbe : il n'est pas au bon temps. Trouve-le et corrige-le.",
+  "rule_id": "regle_futur_conditionnel",
+  "exercise_type": "sentence_correction",
+  "map_position": {
+    "x": 0.5,
+    "y": 0.15
+  },
+  "review_status": "draft"
+}

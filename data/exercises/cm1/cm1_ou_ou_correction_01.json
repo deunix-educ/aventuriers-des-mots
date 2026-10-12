@@ -1,0 +1,37 @@
+{
+  "id": "cm1_ou_ou_correction_01",
+  "level": "CM1",
+  "domain": "orthographe",
+  "skill": "orthographe_cm1",
+  "rule_id": "regle_ou_ou_accent",
+  "difficulty": 1,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Ou",
+      "correct": false,
+      "expected": "Où",
+      "rule_id": "regle_ou_ou_accent"
+    },
+    {
+      "text": "vas-tu",
+      "correct": true
+    },
+    {
+      "text": "après",
+      "correct": true
+    },
+    {
+      "text": "l'école ?",
+      "correct": true
+    }
+  ],
+  "hint": "Remplace par « ou bien » : la phrase n'a pas de sens.",
+  "explanation": "On cherche un lieu : on écrit « où » avec un accent.",
+  "review_tags": [
+    "orthographe_cm1",
+    "ou_ou"
+  ],
+  "review_status": "draft"
+}

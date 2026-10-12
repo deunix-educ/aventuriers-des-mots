@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_100_source_chaude",
+  "title": "La source chaude",
+  "narrative_context": "Dans la source chaude, les participes cherchent leur accord. Aide-les à choisir.",
+  "rule_id": "regle_participe_cod_avant",
+  "exercise_type": "multiple_choice",
+  "map_position": {
+    "x": 0.15,
+    "y": 0.85
+  },
+  "review_status": "draft"
+}

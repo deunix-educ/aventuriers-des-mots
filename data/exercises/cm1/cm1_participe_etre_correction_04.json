@@ -1,0 +1,49 @@
+{
+  "id": "cm1_participe_etre_correction_04",
+  "level": "CM1",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm1",
+  "rule_id": "regle_accord_participe_etre",
+  "difficulty": 3,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Lucas",
+      "correct": true
+    },
+    {
+      "text": "et",
+      "correct": true
+    },
+    {
+      "text": "Emma",
+      "correct": true
+    },
+    {
+      "text": "sont",
+      "correct": true
+    },
+    {
+      "text": "allé",
+      "correct": false,
+      "expected": "allés",
+      "rule_id": "regle_accord_participe_etre"
+    },
+    {
+      "text": "au",
+      "correct": true
+    },
+    {
+      "text": "cinéma.",
+      "correct": true
+    }
+  ],
+  "hint": "Deux personnes : le sujet est pluriel.",
+  "explanation": "Avec « être », le participe s'accorde avec le sujet pluriel : « allés ».",
+  "review_tags": [
+    "verbes_cm1",
+    "participe_etre"
+  ],
+  "review_status": "draft"
+}

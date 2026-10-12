@@ -1,0 +1,23 @@
+{
+  "id": "cm1_ces_ses_qcm_05",
+  "level": "CM1",
+  "domain": "orthographe",
+  "skill": "homophones_cm1",
+  "rule_id": "regle_ces_ses",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Pourquoi achètes-tu ... pommes vertes ?",
+  "answers": [
+    "ces",
+    "ses"
+  ],
+  "correct_answer": 0,
+  "hint": "Remplace par « cette » : « cette pomme » a du sens.",
+  "explanation": "« Ces » est le pluriel de « cette » : on montre des pommes.",
+  "review_tags": [
+    "homophones_cm1",
+    "ces_ses"
+  ],
+  "review_status": "draft"
+}

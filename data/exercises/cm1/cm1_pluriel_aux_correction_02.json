@@ -1,0 +1,45 @@
+{
+  "id": "cm1_pluriel_aux_correction_02",
+  "level": "CM1",
+  "domain": "orthographe",
+  "skill": "orthographe_cm1",
+  "rule_id": "regle_pluriel_aux_eaux",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "La",
+      "correct": true
+    },
+    {
+      "text": "princesse",
+      "correct": true
+    },
+    {
+      "text": "a",
+      "correct": true
+    },
+    {
+      "text": "perdu",
+      "correct": true
+    },
+    {
+      "text": "ses",
+      "correct": true
+    },
+    {
+      "text": "bijous.",
+      "correct": false,
+      "expected": "bijoux.",
+      "rule_id": "regle_pluriel_aux_eaux"
+    }
+  ],
+  "hint": "« Bijou » fait partie des noms en -ou qui prennent un -x.",
+  "explanation": "« Bijou » prend un -x au pluriel : « bijoux ».",
+  "review_tags": [
+    "orthographe_cm1",
+    "pluriel_aux"
+  ],
+  "review_status": "draft"
+}

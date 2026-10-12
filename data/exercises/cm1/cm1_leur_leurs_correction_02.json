@@ -1,0 +1,41 @@
+{
+  "id": "cm1_leur_leurs_correction_02",
+  "level": "CM1",
+  "domain": "orthographe",
+  "skill": "homophones_cm1",
+  "rule_id": "regle_leur_leurs",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Je",
+      "correct": true
+    },
+    {
+      "text": "leurs",
+      "correct": false,
+      "expected": "leur",
+      "rule_id": "regle_leur_leurs"
+    },
+    {
+      "text": "parle",
+      "correct": true
+    },
+    {
+      "text": "chaque",
+      "correct": true
+    },
+    {
+      "text": "jour.",
+      "correct": true
+    }
+  ],
+  "hint": "Remplace par « lui » : « je lui parle » a du sens.",
+  "explanation": "On peut dire « je lui parle » : « leur » reste sans -s.",
+  "review_tags": [
+    "homophones_cm1",
+    "leur_leurs"
+  ],
+  "review_status": "draft"
+}

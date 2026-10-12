@@ -1,0 +1,36 @@
+{
+  "id": "cm2_passe_simple_dictee_02",
+  "level": "CM2",
+  "domain": "grammaire",
+  "rule_ids": [
+    "regle_passe_simple"
+  ],
+  "difficulty": 2,
+  "target_text": "Les chevaliers montèrent sur leurs chevaux.",
+  "words": [
+    {
+      "text": "Les",
+      "expects_capital": true
+    },
+    {
+      "text": "chevaliers"
+    },
+    {
+      "text": "montèrent",
+      "rule_id": "regle_passe_simple"
+    },
+    {
+      "text": "sur"
+    },
+    {
+      "text": "leurs"
+    },
+    {
+      "text": "chevaux."
+    }
+  ],
+  "audio_id": "cm2_passe_simple_dictee_02",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

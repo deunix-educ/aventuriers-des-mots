@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_92_serre_orbitale",
+  "title": "La serre orbitale",
+  "narrative_context": "Dans la serre, une étiquette est fautive. Trouve le mot et corrige-le.",
+  "rule_id": "regle_plutot_plus_tot",
+  "exercise_type": "sentence_correction",
+  "map_position": {
+    "x": 0.5,
+    "y": 0.85
+  },
+  "review_status": "draft"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "cm1_pluriel_aux_correction_03",
+  "level": "CM1",
+  "domain": "orthographe",
+  "skill": "orthographe_cm1",
+  "rule_id": "regle_pluriel_aux_eaux",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Les",
+      "correct": true
+    },
+    {
+      "text": "pêcheurs",
+      "correct": true
+    },
+    {
+      "text": "lavent",
+      "correct": true
+    },
+    {
+      "text": "leurs",
+      "correct": true
+    },
+    {
+      "text": "bateaus.",
+      "correct": false,
+      "expected": "bateaux.",
+      "rule_id": "regle_pluriel_aux_eaux"
+    }
+  ],
+  "hint": "Le nom « bateau » finit par -eau.",
+  "explanation": "Les noms en -eau prennent un -x au pluriel : « bateaux ».",
+  "review_tags": [
+    "orthographe_cm1",
+    "pluriel_aux"
+  ],
+  "review_status": "draft"
+}

@@ -30,6 +30,19 @@ var settings_return_scene: String = SCENE_WORLD_MAP
 ## Dernier tableau consulte sur la carte : on y revient apres une mission.
 var map_region_id: String = ""
 
+## Appelee a la sortie du jeu ; remplacable dans les tests (qui ne doivent pas
+## arreter l'arbre de scenes).
+var quit_hook: Callable = Callable()
+
+
+## Quitte le jeu apres avoir sauvegarde le profil courant.
+func quit_game() -> void:
+    ProgressManager.save_now()
+    if quit_hook.is_valid():
+        quit_hook.call()
+    else:
+        get_tree().quit()
+
 
 func goto(scene_path: String) -> void:
     # Differe le changement de scene : l'appeler depuis le _ready() de la

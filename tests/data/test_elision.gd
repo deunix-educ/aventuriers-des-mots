@@ -8,6 +8,8 @@ const DATA_DIR := "res://data"
 ## Mots a « h » aspire ou vocalique sans elision : « le hibou », « le onze ».
 const NO_ELISION_WORDS: Array[String] = [
     "hibou",
+    "hublot",
+    "hublots",
     "haie",
     "haies",
     "héros",

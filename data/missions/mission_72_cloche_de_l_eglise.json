@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_72_cloche_de_l_eglise",
+  "title": "La cloche de l'église",
+  "narrative_context": "La cloche sonne une phrase, une seule fois. Écoute bien et écris-la sans faute.",
+  "rule_id": "regle_participe_passe_forme",
+  "exercise_type": "dictation",
+  "map_position": {
+    "x": 0.85,
+    "y": 0.5
+  },
+  "review_status": "draft"
+}

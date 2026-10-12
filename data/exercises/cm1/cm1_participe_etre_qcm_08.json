@@ -1,0 +1,24 @@
+{
+  "id": "cm1_participe_etre_qcm_08",
+  "level": "CM1",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm1",
+  "rule_id": "regle_accord_participe_etre",
+  "difficulty": 3,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Mon voisin et sa femme sont ... en vacances.",
+  "answers": [
+    "parti",
+    "parties",
+    "partis"
+  ],
+  "correct_answer": 2,
+  "hint": "Un homme et une femme : le masculin l'emporte.",
+  "explanation": "Un sujet mixte s'accorde au masculin pluriel : « partis ».",
+  "review_tags": [
+    "verbes_cm1",
+    "participe_etre"
+  ],
+  "review_status": "draft"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cm2_couleurs_qcm_02",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "orthographe_cm2",
+  "rule_id": "regle_adjectifs_couleur",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "J'ai acheté deux pulls ... .",
+  "answers": [
+    "rouges",
+    "rouge"
+  ],
+  "correct_answer": 0,
+  "hint": "« Rouge » est un vrai adjectif : il s'accorde.",
+  "explanation": "« Rouge » est un adjectif de couleur : il s'accorde, « rouges ».",
+  "review_tags": [
+    "orthographe_cm2",
+    "couleurs"
+  ],
+  "review_status": "draft"
+}

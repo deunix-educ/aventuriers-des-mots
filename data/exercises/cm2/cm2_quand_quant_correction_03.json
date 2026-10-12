@@ -1,0 +1,41 @@
+{
+  "id": "cm2_quand_quant_correction_03",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "homophones_cm2",
+  "rule_id": "regle_quand_quant_qu_en",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Appelle-moi",
+      "correct": true
+    },
+    {
+      "text": "quant",
+      "correct": false,
+      "expected": "quand",
+      "rule_id": "regle_quand_quant_qu_en"
+    },
+    {
+      "text": "tu",
+      "correct": true
+    },
+    {
+      "text": "seras",
+      "correct": true
+    },
+    {
+      "text": "prêt.",
+      "correct": true
+    }
+  ],
+  "hint": "Remplace par « lorsque » : « lorsque tu seras prêt » a du sens.",
+  "explanation": "On peut dire « lorsque » : on écrit « quand ».",
+  "review_tags": [
+    "homophones_cm2",
+    "quand_quant"
+  ],
+  "review_status": "draft"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "cm1_participe_etre_qcm_05",
+  "level": "CM1",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm1",
+  "rule_id": "regle_accord_participe_etre",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Ma mère est ... tôt ce matin.",
+  "answers": [
+    "sortis",
+    "sortie",
+    "sorti"
+  ],
+  "correct_answer": 1,
+  "hint": "Le sujet « ma mère » est féminin singulier.",
+  "explanation": "Avec « être », le participe s'accorde avec le sujet : ma mère est sortie.",
+  "review_tags": [
+    "verbes_cm1",
+    "participe_etre"
+  ],
+  "review_status": "draft"
+}

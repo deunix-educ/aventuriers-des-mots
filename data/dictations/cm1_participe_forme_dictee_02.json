@@ -1,0 +1,42 @@
+{
+  "id": "cm1_participe_forme_dictee_02",
+  "level": "CM1",
+  "domain": "grammaire",
+  "rule_ids": [
+    "regle_participe_passe_forme"
+  ],
+  "difficulty": 2,
+  "target_text": "Le fermier a vendu ses légumes au marché.",
+  "words": [
+    {
+      "text": "Le",
+      "expects_capital": true
+    },
+    {
+      "text": "fermier"
+    },
+    {
+      "text": "a"
+    },
+    {
+      "text": "vendu",
+      "rule_id": "regle_participe_passe_forme"
+    },
+    {
+      "text": "ses"
+    },
+    {
+      "text": "légumes"
+    },
+    {
+      "text": "au"
+    },
+    {
+      "text": "marché."
+    }
+  ],
+  "audio_id": "cm1_participe_forme_dictee_02",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

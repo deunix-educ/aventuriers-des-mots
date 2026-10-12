@@ -1,0 +1,49 @@
+{
+  "id": "cm1_participe_forme_correction_03",
+  "level": "CM1",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm1",
+  "rule_id": "regle_participe_passe_forme",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Le",
+      "correct": true
+    },
+    {
+      "text": "boulanger",
+      "correct": true
+    },
+    {
+      "text": "a",
+      "correct": true
+    },
+    {
+      "text": "vendi",
+      "correct": false,
+      "expected": "vendu",
+      "rule_id": "regle_participe_passe_forme"
+    },
+    {
+      "text": "tous",
+      "correct": true
+    },
+    {
+      "text": "ses",
+      "correct": true
+    },
+    {
+      "text": "pains.",
+      "correct": true
+    }
+  ],
+  "hint": "Le verbe « vendre » est en -re : son participe finit par -u.",
+  "explanation": "Beaucoup de verbes en -re ont un participe en -u : « vendu ».",
+  "review_tags": [
+    "verbes_cm1",
+    "participe_forme"
+  ],
+  "review_status": "draft"
+}

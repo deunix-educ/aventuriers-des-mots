@@ -188,6 +188,99 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
   - Audio : provisoire
   - Statut : draft
 
+## regle_accord_participe_etre (CM1, grammaire)
+
+**Enonce** : Avec l'auxiliaire « être », le participe passé s'accorde avec le sujet : elle est partie, ils sont partis, elles sont parties.
+
+**Exemple** : Léa est arrivée. Les garçons sont partis.
+
+**Statut** : draft
+
+### Choix multiples
+
+- **cm1_participe_etre_qcm_01** (difficulte 1) : Léa est ... à l'école ce matin.
+  - Reponses : arrivé, arrivés, arrivée
+  - Reponse attendue : arrivée
+  - Indice : Le sujet « Léa » est féminin singulier.
+  - Explication : Avec « être », le participe s'accorde avec le sujet : Léa est arrivée.
+  - Statut : draft
+- **cm1_participe_etre_qcm_02** (difficulte 1) : Paul est ... chez sa grand-mère.
+  - Reponses : allé, allés, allée
+  - Reponse attendue : allé
+  - Indice : Le sujet « Paul » est masculin singulier.
+  - Explication : Avec « être », le participe s'accorde avec le sujet : Paul est allé.
+  - Statut : draft
+- **cm1_participe_etre_qcm_03** (difficulte 1) : Les filles sont ... à la plage.
+  - Reponses : parties, parti, partie
+  - Reponse attendue : parties
+  - Indice : Le sujet « les filles » est féminin pluriel.
+  - Explication : Avec « être », le participe s'accorde avec le sujet : les filles sont parties.
+  - Statut : draft
+- **cm1_participe_etre_qcm_04** (difficulte 2) : Mes cousins sont ... hier soir.
+  - Reponses : venus, venue, venu
+  - Reponse attendue : venus
+  - Indice : Le sujet « mes cousins » est masculin pluriel.
+  - Explication : Avec « être », le participe s'accorde avec le sujet : mes cousins sont venus.
+  - Statut : draft
+- **cm1_participe_etre_qcm_05** (difficulte 2) : Ma mère est ... tôt ce matin.
+  - Reponses : sortis, sortie, sorti
+  - Reponse attendue : sortie
+  - Indice : Le sujet « ma mère » est féminin singulier.
+  - Explication : Avec « être », le participe s'accorde avec le sujet : ma mère est sortie.
+  - Statut : draft
+- **cm1_participe_etre_qcm_06** (difficulte 2) : Les enfants sont ... du bus en courant.
+  - Reponses : descendu, descendus, descendues
+  - Reponse attendue : descendus
+  - Indice : Le sujet « les enfants » est masculin pluriel.
+  - Explication : Avec « être », le participe s'accorde avec le sujet : les enfants sont descendus.
+  - Statut : draft
+- **cm1_participe_etre_qcm_07** (difficulte 3) : Anna et sa sœur sont ... en retard.
+  - Reponses : arrivées, arrivés, arrivée
+  - Reponse attendue : arrivées
+  - Indice : Deux filles : le sujet est féminin pluriel.
+  - Explication : Anna et sa sœur, c'est « elles » : le participe prend -ées.
+  - Statut : draft
+- **cm1_participe_etre_qcm_08** (difficulte 3) : Mon voisin et sa femme sont ... en vacances.
+  - Reponses : parti, parties, partis
+  - Reponse attendue : partis
+  - Indice : Un homme et une femme : le masculin l'emporte.
+  - Explication : Un sujet mixte s'accorde au masculin pluriel : « partis ».
+  - Statut : draft
+
+### Corrections de phrase
+
+- **cm1_participe_etre_correction_01** (difficulte 1) : Marie est [parti -> partie] à la piscine.
+  - Indice : Le sujet « Marie » est féminin.
+  - Explication : Avec « être », le participe s'accorde avec le sujet : Marie est partie.
+  - Statut : draft
+- **cm1_participe_etre_correction_02** (difficulte 2) : Les garçons sont [tombé -> tombés] dans la boue.
+  - Indice : Le sujet « les garçons » est pluriel.
+  - Explication : Avec « être », le participe s'accorde avec le sujet : les garçons sont tombés.
+  - Statut : draft
+- **cm1_participe_etre_correction_03** (difficulte 2) : Mes sœurs sont [arrivés -> arrivées] en avance.
+  - Indice : Le sujet « mes sœurs » est féminin pluriel.
+  - Explication : Avec « être », le participe s'accorde avec le sujet : mes sœurs sont arrivées.
+  - Statut : draft
+- **cm1_participe_etre_correction_04** (difficulte 3) : Lucas et Emma sont [allé -> allés] au cinéma.
+  - Indice : Deux personnes : le sujet est pluriel.
+  - Explication : Avec « être », le participe s'accorde avec le sujet pluriel : « allés ».
+  - Statut : draft
+
+### Dictees
+
+- **cm1_participe_etre_dictee_01** : Ma tante est arrivée ce matin par le train.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **cm1_participe_etre_dictee_02** : Les enfants sont rentrés tard de la sortie.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **cm1_participe_etre_dictee_03** : Léa et Sara sont montées dans le grand bateau.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+
 ## regle_accord_sujet_verbe (CE2, grammaire)
 
 **Enonce** : Le verbe s'accorde avec son sujet, même si d'autres mots les séparent.
@@ -281,6 +374,192 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
   - Audio : provisoire
   - Statut : draft
 
+## regle_adjectifs_couleur (CM2, orthographe)
+
+**Enonce** : Un adjectif de couleur s'accorde (des robes vertes) ; un nom employé comme couleur (marron, orange) ou un adjectif composé (bleu clair) reste invariable.
+
+**Exemple** : Des rubans verts. Des chaussures marron. Des yeux bleu clair.
+
+**Statut** : draft
+
+### Choix multiples
+
+- **cm2_couleurs_qcm_01** (difficulte 1) : Léa porte des chaussettes ... .
+  - Reponses : vertes, vert
+  - Reponse attendue : vertes
+  - Indice : « Vert » est un vrai adjectif : il s'accorde.
+  - Explication : « Vert » est un adjectif de couleur : il s'accorde, « vertes ».
+  - Statut : draft
+- **cm2_couleurs_qcm_02** (difficulte 1) : J'ai acheté deux pulls ... .
+  - Reponses : rouges, rouge
+  - Reponse attendue : rouges
+  - Indice : « Rouge » est un vrai adjectif : il s'accorde.
+  - Explication : « Rouge » est un adjectif de couleur : il s'accorde, « rouges ».
+  - Statut : draft
+- **cm2_couleurs_qcm_03** (difficulte 1) : Les murs sont ... .
+  - Reponses : blancs, blanc
+  - Reponse attendue : blancs
+  - Indice : « Blanc » est un vrai adjectif : il s'accorde.
+  - Explication : « Blanc » est un adjectif de couleur : il s'accorde, « blancs ».
+  - Statut : draft
+- **cm2_couleurs_qcm_04** (difficulte 2) : Il a mis des chaussures ... .
+  - Reponses : marron, marrons
+  - Reponse attendue : marron
+  - Indice : « Marron » vient du nom du fruit : il reste invariable.
+  - Explication : « Marron » est un nom employé comme couleur : il reste invariable.
+  - Statut : draft
+- **cm2_couleurs_qcm_05** (difficulte 2) : Mamie tricote des écharpes ... .
+  - Reponses : oranges, orange
+  - Reponse attendue : orange
+  - Indice : « Orange » vient du nom du fruit : il reste invariable.
+  - Explication : « Orange » est un nom employé comme couleur : il reste invariable.
+  - Statut : draft
+- **cm2_couleurs_qcm_06** (difficulte 2) : Elle aime ses rubans bleu ... .
+  - Reponses : clairs, clair
+  - Reponse attendue : clair
+  - Indice : Une couleur précisée par un autre mot reste invariable.
+  - Explication : « Bleu clair » est un adjectif composé : il reste invariable.
+  - Statut : draft
+- **cm2_couleurs_qcm_07** (difficulte 3) : Des rideaux vert ... pendent aux fenêtres.
+  - Reponses : foncé, foncés
+  - Reponse attendue : foncé
+  - Indice : Une couleur précisée par un autre mot reste invariable.
+  - Explication : « Vert foncé » est un adjectif composé : il reste invariable.
+  - Statut : draft
+- **cm2_couleurs_qcm_08** (difficulte 3) : Elle a des yeux ... .
+  - Reponses : noisette, noisettes
+  - Reponse attendue : noisette
+  - Indice : « Noisette » vient du nom du fruit : il reste invariable.
+  - Explication : « Noisette » est un nom employé comme couleur : il reste invariable.
+  - Statut : draft
+
+### Corrections de phrase
+
+- **cm2_couleurs_correction_01** (difficulte 1) : Mes chaussettes sont [vert. -> vertes.]
+  - Indice : « Vert » est un vrai adjectif : il s'accorde.
+  - Explication : « Vert » est un adjectif de couleur : il s'accorde, « vertes ».
+  - Statut : draft
+- **cm2_couleurs_correction_02** (difficulte 2) : Elle porte des gants [oranges. -> orange.]
+  - Indice : « Orange » vient du nom du fruit : il reste invariable.
+  - Explication : « Orange » est un nom employé comme couleur : il reste invariable.
+  - Statut : draft
+- **cm2_couleurs_correction_03** (difficulte 2) : Il porte des chaussures [marrons. -> marron.]
+  - Indice : « Marron » vient du nom du fruit : il reste invariable.
+  - Explication : « Marron » est un nom employé comme couleur : il reste invariable.
+  - Statut : draft
+- **cm2_couleurs_correction_04** (difficulte 3) : Léa a des rubans bleu [clairs. -> clair.]
+  - Indice : Une couleur précisée par un autre mot reste invariable.
+  - Explication : « Bleu clair » est un adjectif composé : il reste invariable.
+  - Statut : draft
+
+### Dictees
+
+- **cm2_couleurs_dictee_01** : Les enfants portent des bonnets rouges.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **cm2_couleurs_dictee_02** : Elle a acheté des chaussures marron.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **cm2_couleurs_dictee_03** : Mon frère a des yeux bleu clair.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+
+## regle_adverbes_ment (CM2, orthographe)
+
+**Enonce** : Les adverbes en -ment dérivés d'un adjectif en -ent s'écrivent -emment (prudent, prudemment) ; ceux dérivés d'un adjectif en -ant s'écrivent -amment (vaillant, vaillamment) ; les autres ajoutent -ment au féminin (lent, lentement).
+
+**Exemple** : Prudent, prudemment. Vaillant, vaillamment. Lent, lentement.
+
+**Statut** : draft
+
+### Choix multiples
+
+- **cm2_adverbes_qcm_01** (difficulte 1) : Le chat guette ... la souris.
+  - Reponses : patiemment, patiamment, patiement
+  - Reponse attendue : patiemment
+  - Indice : L'adjectif « patient » finit par -ent.
+  - Explication : « Patient » finit par -ent : l'adverbe s'écrit « patiemment ».
+  - Statut : draft
+- **cm2_adverbes_qcm_02** (difficulte 1) : Il marche ... dans le couloir.
+  - Reponses : prudemment, prudamment, prudement
+  - Reponse attendue : prudemment
+  - Indice : L'adjectif « prudent » finit par -ent.
+  - Explication : « Prudent » finit par -ent : l'adverbe s'écrit « prudemment ».
+  - Statut : draft
+- **cm2_adverbes_qcm_03** (difficulte 1) : Elle parle ... devant la classe.
+  - Reponses : courammant, courement, couramment
+  - Reponse attendue : couramment
+  - Indice : L'adjectif « courant » finit par -ant.
+  - Explication : « Courant » finit par -ant : l'adverbe s'écrit « couramment ».
+  - Statut : draft
+- **cm2_adverbes_qcm_04** (difficulte 2) : Le chevalier combat ... pour défendre le roi.
+  - Reponses : vaillemment, vaillament, vaillamment
+  - Reponse attendue : vaillamment
+  - Indice : L'adjectif « vaillant » finit par -ant.
+  - Explication : « Vaillant » finit par -ant : l'adverbe s'écrit « vaillamment ».
+  - Statut : draft
+- **cm2_adverbes_qcm_05** (difficulte 2) : L'élève répond ... à la question.
+  - Reponses : intelligement, intelligamment, intelligemment
+  - Reponse attendue : intelligemment
+  - Indice : L'adjectif « intelligent » finit par -ent.
+  - Explication : « Intelligent » finit par -ent : l'adverbe s'écrit « intelligemment ».
+  - Statut : draft
+- **cm2_adverbes_qcm_06** (difficulte 2) : Le sportif court ... vers l'arrivée.
+  - Reponses : rapidement, rapidemment, rapidamment
+  - Reponse attendue : rapidement
+  - Indice : L'adjectif « rapide » finit par -e : on ajoute -ment.
+  - Explication : « Rapide » finit par -e : l'adverbe s'écrit « rapidement ».
+  - Statut : draft
+- **cm2_adverbes_qcm_07** (difficulte 3) : Le médecin examine ... le malade.
+  - Reponses : attentivement, attentivemment, attentivamment
+  - Reponse attendue : attentivement
+  - Indice : L'adjectif « attentif » donne « attentive » au féminin : on ajoute -ment.
+  - Explication : « Attentive » + -ment : l'adverbe s'écrit « attentivement ».
+  - Statut : draft
+- **cm2_adverbes_qcm_08** (difficulte 3) : Il se bat ... pour gagner.
+  - Reponses : violamment, violemment, violement
+  - Reponse attendue : violemment
+  - Indice : L'adjectif « violent » finit par -ent.
+  - Explication : « Violent » finit par -ent : l'adverbe s'écrit « violemment ».
+  - Statut : draft
+
+### Corrections de phrase
+
+- **cm2_adverbes_correction_01** (difficulte 1) : Il traverse la rue [prudamment. -> prudemment.]
+  - Indice : L'adjectif « prudent » finit par -ent.
+  - Explication : « Prudent » finit par -ent : l'adverbe s'écrit « prudemment ».
+  - Statut : draft
+- **cm2_adverbes_correction_02** (difficulte 2) : Elle écoute [attentivemment -> attentivement] la leçon.
+  - Indice : L'adjectif « attentif » donne « attentive » au féminin.
+  - Explication : « Attentive » + -ment : l'adverbe s'écrit « attentivement ».
+  - Statut : draft
+- **cm2_adverbes_correction_03** (difficulte 2) : Le chien aboie [bruyemment -> bruyamment] dans la cour.
+  - Indice : L'adjectif « bruyant » finit par -ant.
+  - Explication : « Bruyant » finit par -ant : l'adverbe s'écrit « bruyamment ».
+  - Statut : draft
+- **cm2_adverbes_correction_04** (difficulte 3) : Le héros se bat [vaillemment -> vaillamment] jusqu'au bout.
+  - Indice : L'adjectif « vaillant » finit par -ant.
+  - Explication : « Vaillant » finit par -ant : l'adverbe s'écrit « vaillamment ».
+  - Statut : draft
+
+### Dictees
+
+- **cm2_adverbes_dictee_01** : Le lion regarde sa proie patiemment.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **cm2_adverbes_dictee_02** : Elle lit à voix haute très couramment.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **cm2_adverbes_dictee_03** : Le chevalier combattit vaillamment jusqu'au soir.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+
 ## regle_c_cedille (CE1, orthographe)
 
 **Enonce** : Devant a, o ou u, la lettre « c » se prononce [k]. Pour entendre le son [s], on écrit « ç » avec une cédille.
@@ -370,6 +649,192 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
   - Audio : provisoire
   - Statut : draft
 - **ce1_cedille_dictee_03** : Hier, j'ai reçu une carte postale de Lola.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+
+## regle_c_est_s_est (CM1, orthographe)
+
+**Enonce** : « c'est » veut dire « cela est » ; « s'est » accompagne un sujet et un participe passé : « Paul s'est blessé » (on peut dire « Paul se blesse »).
+
+**Exemple** : C'est un gâteau. Paul s'est blessé.
+
+**Statut** : draft
+
+### Choix multiples
+
+- **cm1_c_est_s_est_qcm_01** (difficulte 1) : ... un beau jour pour jouer dehors.
+  - Reponses : S'est, C'est
+  - Reponse attendue : C'est
+  - Indice : Remplace par « cela est » : « cela est un beau jour » a du sens.
+  - Explication : On peut dire « cela est » : on écrit « c'est ».
+  - Statut : draft
+- **cm1_c_est_s_est_qcm_02** (difficulte 1) : Le chat ... endormi sur le canapé.
+  - Reponses : s'est, c'est
+  - Reponse attendue : s'est
+  - Indice : Remplace par « se » au présent : « le chat se dort » → « s'endort ».
+  - Explication : Le chat est le sujet et « endormi » le participe : on écrit « s'est ».
+  - Statut : draft
+- **cm1_c_est_s_est_qcm_03** (difficulte 1) : Regarde, ... ma nouvelle bicyclette !
+  - Reponses : c'est, s'est
+  - Reponse attendue : c'est
+  - Indice : Remplace par « cela est ».
+  - Explication : On peut dire « cela est ma nouvelle bicyclette » : « c'est ».
+  - Statut : draft
+- **cm1_c_est_s_est_qcm_04** (difficulte 2) : Léa ... lavé les mains avant de manger.
+  - Reponses : c'est, s'est
+  - Reponse attendue : s'est
+  - Indice : Remplace par « se lave » au présent.
+  - Explication : Léa est le sujet, « lavé » est un participe : « s'est ».
+  - Statut : draft
+- **cm1_c_est_s_est_qcm_05** (difficulte 2) : Je crois que ... le facteur qui sonne.
+  - Reponses : s'est, c'est
+  - Reponse attendue : c'est
+  - Indice : Remplace par « cela est ».
+  - Explication : On peut dire « cela est le facteur » : « c'est ».
+  - Statut : draft
+- **cm1_c_est_s_est_qcm_06** (difficulte 2) : Mon frère ... cassé la jambe en jouant.
+  - Reponses : s'est, c'est
+  - Reponse attendue : s'est
+  - Indice : Remplace par « se casse » au présent.
+  - Explication : Mon frère est le sujet, « cassé » est un participe : « s'est ».
+  - Statut : draft
+- **cm1_c_est_s_est_qcm_07** (difficulte 3) : Il a bien travaillé : ... pour cela qu'il a réussi.
+  - Reponses : s'est, c'est
+  - Reponse attendue : c'est
+  - Indice : Remplace par « cela est ».
+  - Explication : On peut dire « cela est pour cela » : « c'est ».
+  - Statut : draft
+- **cm1_c_est_s_est_qcm_08** (difficulte 3) : Le soleil ... caché derrière un gros nuage.
+  - Reponses : c'est, s'est
+  - Reponse attendue : s'est
+  - Indice : Remplace par « se cache » au présent.
+  - Explication : Le soleil est le sujet, « caché » est un participe : « s'est ».
+  - Statut : draft
+
+### Corrections de phrase
+
+- **cm1_c_est_s_est_correction_01** (difficulte 1) : Paul [c'est -> s'est] blessé au genou.
+  - Indice : Remplace par « se blesse » au présent.
+  - Explication : Paul est le sujet, « blessé » est un participe : « s'est ».
+  - Statut : draft
+- **cm1_c_est_s_est_correction_02** (difficulte 2) : [S'est -> C'est] la maison de mes grands-parents.
+  - Indice : Remplace par « cela est ».
+  - Explication : On peut dire « cela est la maison » : « c'est ».
+  - Statut : draft
+- **cm1_c_est_s_est_correction_03** (difficulte 2) : La petite fille [c'est -> s'est] perdue dans la forêt.
+  - Indice : Remplace par « se perd » au présent.
+  - Explication : La petite fille est le sujet, « perdue » est un participe : « s'est ».
+  - Statut : draft
+- **cm1_c_est_s_est_correction_04** (difficulte 3) : Je sais que [s'est -> c'est] toi qui as gagné la course.
+  - Indice : Remplace par « cela est ».
+  - Explication : On peut dire « cela est toi qui as gagné » : « c'est ».
+  - Statut : draft
+
+### Dictees
+
+- **cm1_c_est_s_est_dictee_01** : C'est un grand jour pour toute la classe.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **cm1_c_est_s_est_dictee_02** : Mon cousin s'est perdu dans la ville.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **cm1_c_est_s_est_dictee_03** : Quand la pluie s'est arrêtée, c'est le soleil qui est revenu.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+
+## regle_ces_ses (CM1, orthographe)
+
+**Enonce** : « ces » sert à montrer (ces livres-ci) ; « ses » indique ce qui appartient à quelqu'un (ses livres : les livres de lui ou d'elle).
+
+**Exemple** : Ces nuages annoncent la pluie. Léa range ses crayons.
+
+**Statut** : draft
+
+### Choix multiples
+
+- **cm1_ces_ses_qcm_01** (difficulte 1) : Regarde ... beaux oiseaux dans le ciel !
+  - Reponses : ces, ses
+  - Reponse attendue : ces
+  - Indice : Remplace par « ce » : « ce bel oiseau » a du sens.
+  - Explication : « Ces » est le pluriel de « ce » : on montre des oiseaux.
+  - Statut : draft
+- **cm1_ces_ses_qcm_02** (difficulte 1) : Théo range ... crayons dans sa trousse.
+  - Reponses : ses, ces
+  - Reponse attendue : ses
+  - Indice : Remplace par « son » : « son crayon » a du sens.
+  - Explication : « Ses » est le pluriel de « son » : les crayons de Théo.
+  - Statut : draft
+- **cm1_ces_ses_qcm_03** (difficulte 1) : J'aime beaucoup ... gâteaux au chocolat, là-bas.
+  - Reponses : ses, ces
+  - Reponse attendue : ces
+  - Indice : Remplace par « ce » : « ce gâteau » a du sens.
+  - Explication : « Ces » est le pluriel de « ce » : on montre des gâteaux.
+  - Statut : draft
+- **cm1_ces_ses_qcm_04** (difficulte 2) : Julie a oublié ... clés sur la table.
+  - Reponses : ses, ces
+  - Reponse attendue : ses
+  - Indice : Remplace par « sa » : « sa clé » a du sens.
+  - Explication : « Ses » est le pluriel de « sa » : les clés de Julie.
+  - Statut : draft
+- **cm1_ces_ses_qcm_05** (difficulte 2) : Pourquoi achètes-tu ... pommes vertes ?
+  - Reponses : ces, ses
+  - Reponse attendue : ces
+  - Indice : Remplace par « cette » : « cette pomme » a du sens.
+  - Explication : « Ces » est le pluriel de « cette » : on montre des pommes.
+  - Statut : draft
+- **cm1_ces_ses_qcm_06** (difficulte 2) : Le chat lèche ... pattes après la pluie.
+  - Reponses : ses, ces
+  - Reponse attendue : ses
+  - Indice : Remplace par « sa » : « sa patte » a du sens.
+  - Explication : « Ses » est le pluriel de « sa » : les pattes du chat.
+  - Statut : draft
+- **cm1_ces_ses_qcm_07** (difficulte 3) : Regarde ... nuages noirs, il va pleuvoir !
+  - Reponses : ces, ses
+  - Reponse attendue : ces
+  - Indice : Remplace par « ce » : « ce nuage » a du sens.
+  - Explication : « Ces » est le pluriel de « ce » : on montre des nuages.
+  - Statut : draft
+- **cm1_ces_ses_qcm_08** (difficulte 3) : Max a rangé tous ... jouets dans son coffre.
+  - Reponses : ces, ses
+  - Reponse attendue : ses
+  - Indice : Remplace par « son » : « son jouet » a du sens.
+  - Explication : « Ses » est le pluriel de « son » : les jouets de Max.
+  - Statut : draft
+
+### Corrections de phrase
+
+- **cm1_ces_ses_correction_01** (difficulte 1) : Regarde [ses -> ces] nuages-là, ils sont très noirs !
+  - Indice : Remplace par « ce » : « ce nuage-là » a du sens.
+  - Explication : « Ces » est le pluriel de « ce » : on montre des nuages.
+  - Statut : draft
+- **cm1_ces_ses_correction_02** (difficulte 2) : Le chien secoue [ces -> ses] oreilles en sortant de l'eau.
+  - Indice : Remplace par « son » : « son oreille » a du sens.
+  - Explication : « Ses » est le pluriel de « son » : les oreilles du chien.
+  - Statut : draft
+- **cm1_ces_ses_correction_03** (difficulte 2) : Léa a rangé [ces -> ses] affaires avant de partir à l'école.
+  - Indice : Remplace par « son » : « son affaire » a du sens.
+  - Explication : « Ses » est le pluriel de « son » : les affaires de Léa.
+  - Statut : draft
+- **cm1_ces_ses_correction_04** (difficulte 3) : Pourquoi portes-tu [ses -> ces] chaussures-ci aujourd'hui ?
+  - Indice : Remplace par « cette » : « cette chaussure-ci » a du sens.
+  - Explication : « Ces » est le pluriel de « cette » : on montre des chaussures.
+  - Statut : draft
+
+### Dictees
+
+- **cm1_ces_ses_dictee_01** : Ces champignons poussent après la pluie.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **cm1_ces_ses_dictee_02** : Le boulanger sort ses pains du four chaud.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **cm1_ces_ses_dictee_03** : Mon voisin répare ses outils avec ces vis neuves.
   - Variantes acceptees : aucune
   - Audio : provisoire
   - Statut : draft
@@ -556,6 +1021,99 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
   - Audio : provisoire
   - Statut : draft
 - **ce2_feminin_dictee_03** : La lionne surveille ses petits dans la savane.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+
+## regle_futur_conditionnel (CM2, grammaire)
+
+**Enonce** : Au futur, la terminaison est -rai, -ras, -ra, -rons, -rez, -ront ; au conditionnel présent, elle est -rais, -rais, -rait, -rions, -riez, -raient. Après « si » + imparfait, on emploie le conditionnel.
+
+**Exemple** : Demain, je viendrai. Si j'avais le temps, je viendrais.
+
+**Statut** : draft
+
+### Choix multiples
+
+- **cm2_futur_cond_qcm_01** (difficulte 1) : Demain, je ... te voir.
+  - Reponses : viendrais, viendrai
+  - Reponse attendue : viendrai
+  - Indice : « Demain » : l'action est certaine, c'est le futur.
+  - Explication : L'action est certaine : on écrit le futur « viendrai ».
+  - Statut : draft
+- **cm2_futur_cond_qcm_02** (difficulte 1) : Si j'avais des ailes, je ... jusqu'au volcan.
+  - Reponses : volerais, volerai
+  - Reponse attendue : volerais
+  - Indice : Après « si » + imparfait, on emploie le conditionnel.
+  - Explication : Après « si j'avais », on écrit le conditionnel : « volerais ».
+  - Statut : draft
+- **cm2_futur_cond_qcm_03** (difficulte 1) : Ce soir, il ... plus tard que d'habitude.
+  - Reponses : mangera, mangerait
+  - Reponse attendue : mangera
+  - Indice : « Ce soir » : l'action est certaine, c'est le futur.
+  - Explication : L'action est certaine : on écrit le futur « mangera ».
+  - Statut : draft
+- **cm2_futur_cond_qcm_04** (difficulte 2) : Si tu étudiais plus, tu ... ton examen.
+  - Reponses : réussirais, réussiras
+  - Reponse attendue : réussirais
+  - Indice : Après « si » + imparfait, on emploie le conditionnel.
+  - Explication : Après « si tu étudiais », on écrit le conditionnel : « réussirais ».
+  - Statut : draft
+- **cm2_futur_cond_qcm_05** (difficulte 2) : Quand il fera beau, nous ... en forêt.
+  - Reponses : irions, irons
+  - Reponse attendue : irons
+  - Indice : Après « quand » + futur, on reste au futur.
+  - Explication : Après « quand il fera », on écrit le futur : « irons ».
+  - Statut : draft
+- **cm2_futur_cond_qcm_06** (difficulte 2) : Si nous avions de l'argent, nous ... un bateau.
+  - Reponses : achèterions, achèterons
+  - Reponse attendue : achèterions
+  - Indice : Après « si » + imparfait, on emploie le conditionnel.
+  - Explication : Après « si nous avions », on écrit le conditionnel : « achèterions ».
+  - Statut : draft
+- **cm2_futur_cond_qcm_07** (difficulte 3) : Ils ... du feu s'ils avaient du bois.
+  - Reponses : feront, feraient
+  - Reponse attendue : feraient
+  - Indice : Après « s'ils avaient » (imparfait), on emploie le conditionnel.
+  - Explication : Après « s'ils avaient », on écrit le conditionnel : « feraient ».
+  - Statut : draft
+- **cm2_futur_cond_qcm_08** (difficulte 3) : Si elle le pouvait, elle ... le tour du monde.
+  - Reponses : ferait, fera
+  - Reponse attendue : ferait
+  - Indice : Après « si » + imparfait, on emploie le conditionnel.
+  - Explication : Après « si elle le pouvait », on écrit le conditionnel : « ferait ».
+  - Statut : draft
+
+### Corrections de phrase
+
+- **cm2_futur_cond_correction_01** (difficulte 1) : Si j'étais riche, [j'achèterai -> achèterais] une île.
+  - Indice : Après « si » + imparfait, on emploie le conditionnel.
+  - Explication : Après « si j'étais », on écrit le conditionnel : « achèterais ».
+  - Statut : draft
+- **cm2_futur_cond_correction_02** (difficulte 2) : Demain, nous [partirions -> partirons] tôt pour le volcan.
+  - Indice : « Demain » : l'action est certaine, c'est le futur.
+  - Explication : L'action est certaine : on écrit le futur « partirons ».
+  - Statut : draft
+- **cm2_futur_cond_correction_03** (difficulte 2) : S'il pleuvait, [tu -> resterais] resteras à la maison.
+  - Indice : Après « s'il pleuvait » (imparfait), on emploie le conditionnel.
+  - Explication : Après « s'il pleuvait », on écrit le conditionnel : « resterais ».
+  - Statut : draft
+- **cm2_futur_cond_correction_04** (difficulte 3) : Dès qu'il arrivera, elle lui [parlerait. -> parlera]
+  - Indice : Après « dès qu'il arrivera » (futur), on reste au futur.
+  - Explication : Après « dès qu'il arrivera », on écrit le futur : « parlera ».
+  - Statut : draft
+
+### Dictees
+
+- **cm2_futur_cond_dictee_01** : Si j'avais une cape, je volerais au-dessus des nuages.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **cm2_futur_cond_dictee_02** : Le guide nous montrera la lave dès demain.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **cm2_futur_cond_dictee_03** : Si le volcan se réveillait, les habitants partiraient.
   - Variantes acceptees : aucune
   - Audio : provisoire
   - Statut : draft
@@ -1118,6 +1676,192 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
   - Audio : provisoire
   - Statut : draft
 
+## regle_imparfait (CM1, grammaire)
+
+**Enonce** : À l'imparfait, les terminaisons sont -ais, -ais, -ait, -ions, -iez, -aient.
+
+**Exemple** : Je chantais. Il chantait. Nous chantions. Ils chantaient.
+
+**Statut** : draft
+
+### Choix multiples
+
+- **cm1_imparfait_qcm_01** (difficulte 1) : Quand j'étais petit, je ... souvent au parc.
+  - Reponses : jouais, jouait, jouaient
+  - Reponse attendue : jouais
+  - Indice : Avec « je », l'imparfait finit par -ais.
+  - Explication : Avec « je », l'imparfait finit par -ais : je jouais.
+  - Statut : draft
+- **cm1_imparfait_qcm_02** (difficulte 1) : Autrefois, il ... une vieille voiture.
+  - Reponses : avait, avais, avaient
+  - Reponse attendue : avait
+  - Indice : Avec « il », l'imparfait finit par -ait.
+  - Explication : Avec « il », l'imparfait finit par -ait : il avait.
+  - Statut : draft
+- **cm1_imparfait_qcm_03** (difficulte 1) : Chaque matin, tu ... du pain frais.
+  - Reponses : mangeait, mangeais, mangeaient
+  - Reponse attendue : mangeais
+  - Indice : Avec « tu », l'imparfait finit par -ais.
+  - Explication : Avec « tu », l'imparfait finit par -ais : tu mangeais.
+  - Statut : draft
+- **cm1_imparfait_qcm_04** (difficulte 2) : Autrefois, nous ... au bord de la rivière.
+  - Reponses : pêchiez, pêchions, pêchaient
+  - Reponse attendue : pêchions
+  - Indice : Avec « nous », l'imparfait finit par -ions.
+  - Explication : Avec « nous », l'imparfait finit par -ions : nous pêchions.
+  - Statut : draft
+- **cm1_imparfait_qcm_05** (difficulte 2) : Le soir, vous ... des histoires à vos enfants.
+  - Reponses : racontiez, racontaient, racontions
+  - Reponse attendue : racontiez
+  - Indice : Avec « vous », l'imparfait finit par -iez.
+  - Explication : Avec « vous », l'imparfait finit par -iez : vous racontiez.
+  - Statut : draft
+- **cm1_imparfait_qcm_06** (difficulte 2) : Les chevaliers ... le château jour et nuit.
+  - Reponses : gardait, gardions, gardaient
+  - Reponse attendue : gardaient
+  - Indice : Plusieurs chevaliers : pense à « ils ».
+  - Explication : Avec « ils », l'imparfait finit par -aient : ils gardaient.
+  - Statut : draft
+- **cm1_imparfait_qcm_07** (difficulte 3) : Pendant que la pluie tombait, mes sœurs ... un jeu.
+  - Reponses : préparaient, préparions, préparait
+  - Reponse attendue : préparaient
+  - Indice : Plusieurs sœurs : pense à « elles ».
+  - Explication : Avec « elles », l'imparfait finit par -aient : elles préparaient.
+  - Statut : draft
+- **cm1_imparfait_qcm_08** (difficulte 3) : Toi et moi, nous ... toujours ensemble à l'école.
+  - Reponses : allaient, alliez, allions
+  - Reponse attendue : allions
+  - Indice : « Toi et moi » peut se remplacer par « nous ».
+  - Explication : Avec « nous », l'imparfait finit par -ions : nous allions.
+  - Statut : draft
+
+### Corrections de phrase
+
+- **cm1_imparfait_correction_01** (difficulte 1) : Autrefois, je [jouait -> jouais] aux billes avec mon frère.
+  - Indice : Avec « je », l'imparfait finit par -ais.
+  - Explication : Avec « je », l'imparfait finit par -ais : je jouais.
+  - Statut : draft
+- **cm1_imparfait_correction_02** (difficulte 2) : Les enfants [chantait -> chantaient] pendant le voyage.
+  - Indice : Plusieurs enfants : pense à « ils ».
+  - Explication : Avec « ils », l'imparfait finit par -aient : ils chantaient.
+  - Statut : draft
+- **cm1_imparfait_correction_03** (difficulte 2) : Autrefois, nous [habitiez -> habitions] dans une petite ferme.
+  - Indice : Avec « nous », l'imparfait finit par -ions.
+  - Explication : Avec « nous », l'imparfait finit par -ions : nous habitions.
+  - Statut : draft
+- **cm1_imparfait_correction_04** (difficulte 3) : Le dimanche, vous [marchions -> marchiez] lentement dans la neige.
+  - Indice : Avec « vous », l'imparfait finit par -iez.
+  - Explication : Avec « vous », l'imparfait finit par -iez : vous marchiez.
+  - Statut : draft
+
+### Dictees
+
+- **cm1_imparfait_dictee_01** : Autrefois, les villageois puisaient l'eau au puits.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **cm1_imparfait_dictee_02** : Tous les soirs, ma grand-mère tricotait près du feu.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **cm1_imparfait_dictee_03** : Quand nous étions enfants, nous construisions des cabanes.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+
+## regle_la_la_accent_l_a (CM1, orthographe)
+
+**Enonce** : « la » est un article ou un pronom devant un nom ou un verbe ; « là » avec un accent indique un lieu ; « l'a » est « l' » + le verbe avoir : on peut dire « l'avait ».
+
+**Exemple** : La table est là. Il l'a vue.
+
+**Statut** : draft
+
+### Choix multiples
+
+- **cm1_la_la_l_a_qcm_01** (difficulte 1) : Mets ton sac ... , sur la chaise.
+  - Reponses : l'a, la, là
+  - Reponse attendue : là
+  - Indice : Cherche un lieu : « là-bas » a du sens.
+  - Explication : On indique un lieu : on écrit « là » avec un accent.
+  - Statut : draft
+- **cm1_la_la_l_a_qcm_02** (difficulte 1) : ... maîtresse écrit au tableau.
+  - Reponses : La, L'a, Là
+  - Reponse attendue : La
+  - Indice : « La » est ici un article devant un nom.
+  - Explication : « La » accompagne le nom « maîtresse » : on écrit « la » sans accent.
+  - Statut : draft
+- **cm1_la_la_l_a_qcm_03** (difficulte 1) : Paul ... vu hier au marché.
+  - Reponses : là, l'a, la
+  - Reponse attendue : l'a
+  - Indice : Remplace par « l'avait » : « Paul l'avait vu » a du sens.
+  - Explication : On peut dire « l'avait » : on écrit « l'a ».
+  - Statut : draft
+- **cm1_la_la_l_a_qcm_04** (difficulte 2) : Pose le livre ... et viens manger.
+  - Reponses : là, l'a, la
+  - Reponse attendue : là
+  - Indice : Cherche un lieu : « là-bas » a du sens.
+  - Explication : On indique un lieu : on écrit « là » avec un accent.
+  - Statut : draft
+- **cm1_la_la_l_a_qcm_05** (difficulte 2) : Je pense que Marie ... déjà lu ce livre.
+  - Reponses : là, l'a, la
+  - Reponse attendue : l'a
+  - Indice : Remplace par « l'avait » : « Marie l'avait lu » a du sens.
+  - Explication : On peut dire « l'avait » : on écrit « l'a ».
+  - Statut : draft
+- **cm1_la_la_l_a_qcm_06** (difficulte 2) : Ma sœur est ... , près de la fenêtre.
+  - Reponses : l'a, la, là
+  - Reponse attendue : là
+  - Indice : Cherche un lieu : « là-bas » a du sens.
+  - Explication : On indique un lieu : on écrit « là » avec un accent.
+  - Statut : draft
+- **cm1_la_la_l_a_qcm_07** (difficulte 3) : Cette chanson, Tom ... apprise par cœur.
+  - Reponses : la, l'a, là
+  - Reponse attendue : l'a
+  - Indice : Remplace par « l'avait » : « Tom l'avait apprise » a du sens.
+  - Explication : On peut dire « l'avait » : on écrit « l'a ».
+  - Statut : draft
+- **cm1_la_la_l_a_qcm_08** (difficulte 3) : Reste ... jusqu'à mon retour.
+  - Reponses : l'a, la, là
+  - Reponse attendue : là
+  - Indice : Cherche un lieu : « là-bas » a du sens.
+  - Explication : On indique un lieu : on écrit « là » avec un accent.
+  - Statut : draft
+
+### Corrections de phrase
+
+- **cm1_la_la_l_a_correction_01** (difficulte 1) : Papa [la -> l'a] lavé ce matin.
+  - Indice : Remplace par « l'avait » : « papa l'avait lavé » a du sens.
+  - Explication : On peut dire « l'avait » : on écrit « l'a ».
+  - Statut : draft
+- **cm1_la_la_l_a_correction_02** (difficulte 2) : Mon chat est [la, -> là,] sur le canapé.
+  - Indice : Cherche un lieu : « là-bas » a du sens.
+  - Explication : On indique un lieu : on écrit « là » avec un accent.
+  - Statut : draft
+- **cm1_la_la_l_a_correction_03** (difficulte 2) : [L'a -> La] maison de Léa est très grande.
+  - Indice : « La » est ici un article devant le nom « maison ».
+  - Explication : « La » accompagne le nom « maison » : on écrit « la ».
+  - Statut : draft
+- **cm1_la_la_l_a_correction_04** (difficulte 3) : Je la connais bien : ma mère [la -> l'a] rencontrée hier.
+  - Indice : Remplace par « l'avait » : « ma mère l'avait rencontrée » a du sens.
+  - Explication : On peut dire « l'avait » : on écrit « l'a ».
+  - Statut : draft
+
+### Dictees
+
+- **cm1_la_la_l_a_dictee_01** : La tortue avance lentement sur le chemin.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **cm1_la_la_l_a_dictee_02** : Mon frère est là depuis ce matin.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **cm1_la_la_l_a_dictee_03** : Ma tante l'a invitée pour son anniversaire.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+
 ## regle_lettre_muette_finale (CE2, orthographe)
 
 **Enonce** : Pour trouver la lettre muette à la fin d'un mot, cherche son féminin ou un mot de la même famille : grand (grande), petit (petite), chant (chanter).
@@ -1207,6 +1951,99 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
   - Audio : provisoire
   - Statut : draft
 - **ce2_muette_dictee_03** : Ce long chant triste fait pleurer mon grand-père.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+
+## regle_leur_leurs (CM1, orthographe)
+
+**Enonce** : « leur » ne prend pas de -s quand il accompagne un verbe (je leur parle) ; « leurs » prend un -s quand il accompagne un nom pluriel (leurs amis).
+
+**Exemple** : Je leur donne un livre. Ils rangent leurs jouets.
+
+**Statut** : draft
+
+### Choix multiples
+
+- **cm1_leur_leurs_qcm_01** (difficulte 1) : Les enfants rangent ... jouets.
+  - Reponses : leurs, leur
+  - Reponse attendue : leurs
+  - Indice : Remplace par « ses » : « ses jouets » a du sens.
+  - Explication : On peut dire « ses jouets » : « leurs » accompagne un nom pluriel.
+  - Statut : draft
+- **cm1_leur_leurs_qcm_02** (difficulte 1) : Je ... donne un cadeau.
+  - Reponses : leur, leurs
+  - Reponse attendue : leur
+  - Indice : Remplace par « lui » : « je lui donne » a du sens.
+  - Explication : On peut dire « je lui donne » : « leur » accompagne le verbe et ne prend pas de -s.
+  - Statut : draft
+- **cm1_leur_leurs_qcm_03** (difficulte 1) : Les élèves ouvrent ... cahiers.
+  - Reponses : leurs, leur
+  - Reponse attendue : leurs
+  - Indice : Remplace par « ses » : « ses cahiers » a du sens.
+  - Explication : On peut dire « ses cahiers » : « leurs » accompagne un nom pluriel.
+  - Statut : draft
+- **cm1_leur_leurs_qcm_04** (difficulte 2) : Le maître ... explique la leçon.
+  - Reponses : leurs, leur
+  - Reponse attendue : leur
+  - Indice : Remplace par « lui » : « il lui explique » a du sens.
+  - Explication : On peut dire « il lui explique » : « leur » reste sans -s.
+  - Statut : draft
+- **cm1_leur_leurs_qcm_05** (difficulte 2) : Mes voisins arrosent ... fleurs.
+  - Reponses : leurs, leur
+  - Reponse attendue : leurs
+  - Indice : Remplace par « ses » : « ses fleurs » a du sens.
+  - Explication : On peut dire « ses fleurs » : « leurs » accompagne un nom pluriel.
+  - Statut : draft
+- **cm1_leur_leurs_qcm_06** (difficulte 2) : Je ... ai dit la vérité.
+  - Reponses : leurs, leur
+  - Reponse attendue : leur
+  - Indice : Remplace par « lui » : « je lui ai dit » a du sens.
+  - Explication : On peut dire « je lui ai dit » : « leur » reste sans -s.
+  - Statut : draft
+- **cm1_leur_leurs_qcm_07** (difficulte 3) : Les musiciens ont perdu ... partitions.
+  - Reponses : leurs, leur
+  - Reponse attendue : leurs
+  - Indice : Remplace par « ses » : « ses partitions » a du sens.
+  - Explication : On peut dire « ses partitions » : « leurs » accompagne un nom pluriel.
+  - Statut : draft
+- **cm1_leur_leurs_qcm_08** (difficulte 3) : Ils ne ... ont pas répondu hier.
+  - Reponses : leurs, leur
+  - Reponse attendue : leur
+  - Indice : Remplace par « lui » : « ils ne lui ont pas répondu » a du sens.
+  - Explication : On peut dire « ne lui ont pas répondu » : « leur » reste sans -s.
+  - Statut : draft
+
+### Corrections de phrase
+
+- **cm1_leur_leurs_correction_01** (difficulte 1) : Les chats lèchent [leur -> leurs] pattes.
+  - Indice : Remplace par « ses » : « ses pattes » a du sens.
+  - Explication : On peut dire « ses pattes » : il faut « leurs ».
+  - Statut : draft
+- **cm1_leur_leurs_correction_02** (difficulte 2) : Je [leurs -> leur] parle chaque jour.
+  - Indice : Remplace par « lui » : « je lui parle » a du sens.
+  - Explication : On peut dire « je lui parle » : « leur » reste sans -s.
+  - Statut : draft
+- **cm1_leur_leurs_correction_03** (difficulte 2) : Les sportifs lavent [leur -> leurs] maillots.
+  - Indice : Remplace par « ses » : « ses maillots » a du sens.
+  - Explication : On peut dire « ses maillots » : il faut « leurs ».
+  - Statut : draft
+- **cm1_leur_leurs_correction_04** (difficulte 3) : Maman [leurs -> leur] a préparé un goûter.
+  - Indice : Remplace par « lui » : « maman lui a préparé » a du sens.
+  - Explication : On peut dire « lui a préparé » : « leur » reste sans -s.
+  - Statut : draft
+
+### Dictees
+
+- **cm1_leur_leurs_dictee_01** : Les enfants rangent leurs affaires dans le placard.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **cm1_leur_leurs_dictee_02** : Je leur prête mon vélo pour la journée.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **cm1_leur_leurs_dictee_03** : Les marins leur ont raconté leurs voyages.
   - Variantes acceptees : aucune
   - Audio : provisoire
   - Statut : draft
@@ -1304,6 +2141,471 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
   - Audio : provisoire
   - Statut : draft
 
+## regle_ou_ou_accent (CM1, orthographe)
+
+**Enonce** : « où » avec un accent indique un lieu ou un moment (Où vas-tu ?) ; « ou » sans accent veut dire « ou bien » et peut se remplacer par « ou bien ».
+
+**Exemple** : Où vas-tu ? Du thé ou du café ?
+
+**Statut** : draft
+
+### Choix multiples
+
+- **cm1_ou_ou_qcm_01** (difficulte 1) : ... habites-tu ?
+  - Reponses : Où, Ou
+  - Reponse attendue : Où
+  - Indice : Remplace par « ou bien » : la phrase n'a pas de sens, c'est un lieu.
+  - Explication : On cherche un lieu : on écrit « où » avec un accent.
+  - Statut : draft
+- **cm1_ou_ou_qcm_02** (difficulte 1) : Veux-tu du thé ... du chocolat ?
+  - Reponses : où, ou
+  - Reponse attendue : ou
+  - Indice : Remplace par « ou bien » : « du thé ou bien du chocolat » a du sens.
+  - Explication : On peut dire « ou bien » : on écrit « ou » sans accent.
+  - Statut : draft
+- **cm1_ou_ou_qcm_03** (difficulte 1) : Voici la ville ... je suis né.
+  - Reponses : où, ou
+  - Reponse attendue : où
+  - Indice : Remplace par « ou bien » : la phrase n'a pas de sens.
+  - Explication : On indique un lieu : on écrit « où » avec un accent.
+  - Statut : draft
+- **cm1_ou_ou_qcm_04** (difficulte 2) : Tu peux prendre le bus ... le train.
+  - Reponses : où, ou
+  - Reponse attendue : ou
+  - Indice : Remplace par « ou bien » : « le bus ou bien le train » a du sens.
+  - Explication : On peut dire « ou bien » : on écrit « ou » sans accent.
+  - Statut : draft
+- **cm1_ou_ou_qcm_05** (difficulte 2) : Je ne sais pas ... j'ai posé mes lunettes.
+  - Reponses : ou, où
+  - Reponse attendue : où
+  - Indice : Remplace par « ou bien » : la phrase n'a pas de sens.
+  - Explication : On indique un lieu : on écrit « où » avec un accent.
+  - Statut : draft
+- **cm1_ou_ou_qcm_06** (difficulte 2) : Le jour ... il pleut, nous restons à la maison.
+  - Reponses : ou, où
+  - Reponse attendue : où
+  - Indice : Remplace par « ou bien » : la phrase n'a pas de sens.
+  - Explication : On indique un moment : on écrit « où » avec un accent.
+  - Statut : draft
+- **cm1_ou_ou_qcm_07** (difficulte 3) : Elle hésite : le chat ... le chien ?
+  - Reponses : où, ou
+  - Reponse attendue : ou
+  - Indice : Remplace par « ou bien » : « le chat ou bien le chien » a du sens.
+  - Explication : On peut dire « ou bien » : on écrit « ou » sans accent.
+  - Statut : draft
+- **cm1_ou_ou_qcm_08** (difficulte 3) : C'est le moment ... tout a commencé.
+  - Reponses : où, ou
+  - Reponse attendue : où
+  - Indice : Remplace par « ou bien » : la phrase n'a pas de sens.
+  - Explication : On indique un moment : on écrit « où » avec un accent.
+  - Statut : draft
+
+### Corrections de phrase
+
+- **cm1_ou_ou_correction_01** (difficulte 1) : [Ou -> Où] vas-tu après l'école ?
+  - Indice : Remplace par « ou bien » : la phrase n'a pas de sens.
+  - Explication : On cherche un lieu : on écrit « où » avec un accent.
+  - Statut : draft
+- **cm1_ou_ou_correction_02** (difficulte 2) : Tu préfères la pomme [où -> ou] la poire ?
+  - Indice : Remplace par « ou bien » : « la pomme ou bien la poire » a du sens.
+  - Explication : On peut dire « ou bien » : on écrit « ou » sans accent.
+  - Statut : draft
+- **cm1_ou_ou_correction_03** (difficulte 2) : Voilà la plage [ou -> où] nous avons joué.
+  - Indice : Remplace par « ou bien » : la phrase n'a pas de sens.
+  - Explication : On indique un lieu : on écrit « où » avec un accent.
+  - Statut : draft
+- **cm1_ou_ou_correction_04** (difficulte 3) : Dis-moi [ou -> où] tu as caché mon livre.
+  - Indice : Remplace par « ou bien » : la phrase n'a pas de sens.
+  - Explication : On indique un lieu : on écrit « où » avec un accent.
+  - Statut : draft
+
+### Dictees
+
+- **cm1_ou_ou_dictee_01** : Je sais où j'ai mis mon cartable rouge.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **cm1_ou_ou_dictee_02** : Tu peux boire du lait ou du jus d'orange.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **cm1_ou_ou_dictee_03** : Voici le village où ma grand-mère est née.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+
+## regle_participe_cod_avant (CM2, grammaire)
+
+**Enonce** : Avec « avoir », le participe passé s'accorde avec le complément d'objet seulement s'il est placé avant le verbe : la lettre que j'ai écrite ; j'ai écrit une lettre.
+
+**Exemple** : Les fleurs que Léa a cueillies. Léa a cueilli des fleurs.
+
+**Statut** : draft
+
+### Choix multiples
+
+- **cm2_participe_cod_qcm_01** (difficulte 1) : Léa a ... des fleurs.
+  - Reponses : cueillies, cueilli
+  - Reponse attendue : cueilli
+  - Indice : Les fleurs sont placées après le verbe : le participe ne s'accorde pas.
+  - Explication : Le complément est après le verbe : le participe reste « cueilli ».
+  - Statut : draft
+- **cm2_participe_cod_qcm_02** (difficulte 1) : Les fleurs que Léa a ... sont belles.
+  - Reponses : cueillies, cueilli
+  - Reponse attendue : cueillies
+  - Indice : Les fleurs (que) sont placées avant le verbe : le participe s'accorde.
+  - Explication : Le complément « que » (= les fleurs) est avant : « cueillies ».
+  - Statut : draft
+- **cm2_participe_cod_qcm_03** (difficulte 1) : Paul a ... les pommes.
+  - Reponses : mangées, mangé
+  - Reponse attendue : mangé
+  - Indice : Les pommes sont placées après le verbe : le participe ne s'accorde pas.
+  - Explication : Le complément est après le verbe : le participe reste « mangé ».
+  - Statut : draft
+- **cm2_participe_cod_qcm_04** (difficulte 2) : Les pommes que Paul a ... étaient bonnes.
+  - Reponses : mangées, mangé
+  - Reponse attendue : mangées
+  - Indice : Les pommes (que) sont placées avant le verbe : le participe s'accorde.
+  - Explication : Le complément « que » (= les pommes) est avant : « mangées ».
+  - Statut : draft
+- **cm2_participe_cod_qcm_05** (difficulte 2) : La lettre que j'ai ... est partie.
+  - Reponses : écrite, écrit
+  - Reponse attendue : écrite
+  - Indice : La lettre (que) est placée avant le verbe : le participe s'accorde.
+  - Explication : Le complément « que » (= la lettre) est avant : « écrite ».
+  - Statut : draft
+- **cm2_participe_cod_qcm_06** (difficulte 2) : Max a ... plusieurs lettres.
+  - Reponses : écrites, écrit
+  - Reponse attendue : écrit
+  - Indice : Les lettres sont placées après le verbe : le participe ne s'accorde pas.
+  - Explication : Le complément est après le verbe : le participe reste « écrit ».
+  - Statut : draft
+- **cm2_participe_cod_qcm_07** (difficulte 3) : Les photos qu'elle a ... sont réussies.
+  - Reponses : pris, prises
+  - Reponse attendue : prises
+  - Indice : Les photos (que) sont placées avant le verbe : le participe s'accorde.
+  - Explication : Le complément « que » (= les photos) est avant : « prises ».
+  - Statut : draft
+- **cm2_participe_cod_qcm_08** (difficulte 3) : Quelle belle histoire il a ... !
+  - Reponses : raconté, racontée
+  - Reponse attendue : racontée
+  - Indice : « Quelle belle histoire » est placé avant le verbe : le participe s'accorde.
+  - Explication : Le complément est avant le verbe : « racontée ».
+  - Statut : draft
+
+### Corrections de phrase
+
+- **cm2_participe_cod_correction_01** (difficulte 1) : Les framboises que ma sœur a [cueilli -> cueillies] sont mûres.
+  - Indice : Les framboises (que) sont placées avant le verbe : le participe s'accorde.
+  - Explication : Le complément « que » (= les framboises) est avant : « cueillies ».
+  - Statut : draft
+- **cm2_participe_cod_correction_02** (difficulte 2) : Sophie a [mangées -> mangé] toutes les cerises du panier.
+  - Indice : Les cerises sont placées après le verbe : le participe ne s'accorde pas.
+  - Explication : Le complément est après le verbe : le participe reste « mangé ».
+  - Statut : draft
+- **cm2_participe_cod_correction_03** (difficulte 2) : La chanson qu'il a [chanté -> chantée] était jolie.
+  - Indice : La chanson (que) est placée avant le verbe : le participe s'accorde.
+  - Explication : Le complément « qu' » (= la chanson) est avant : « chantée ».
+  - Statut : draft
+- **cm2_participe_cod_correction_04** (difficulte 3) : Les lettres que j'ai [écrit -> écrites] hier sont parties.
+  - Indice : Les lettres (que) sont placées avant le verbe : le participe s'accorde.
+  - Explication : Le complément « que » (= les lettres) est avant : « écrites ».
+  - Statut : draft
+
+### Dictees
+
+- **cm2_participe_cod_dictee_01** : Hier, ma sœur a cueilli des framboises sauvages.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **cm2_participe_cod_dictee_02** : Mon frère a rangé tous ses livres sur l'étagère.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **cm2_participe_cod_dictee_03** : La poésie qu'il a apprise est très longue.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+
+## regle_participe_passe_forme (CM1, grammaire)
+
+**Enonce** : Le participe passé des verbes en -ir se termine par -i (fini), celui des verbes en -re souvent par -u (vendu), et quelques-uns par -is ou -it (pris, écrit).
+
+**Exemple** : J'ai fini. Il a vendu. Elle a pris. Nous avons écrit.
+
+**Statut** : draft
+
+### Choix multiples
+
+- **cm1_participe_forme_qcm_01** (difficulte 1) : Léa a ... son travail à midi.
+  - Reponses : fini, finé, finu
+  - Reponse attendue : fini
+  - Indice : Le verbe « finir » est en -ir : son participe finit par -i.
+  - Explication : Les verbes en -ir ont un participe en -i : « fini ».
+  - Statut : draft
+- **cm1_participe_forme_qcm_02** (difficulte 1) : Papa a ... sa voiture au garage.
+  - Reponses : vendi, vendé, vendu
+  - Reponse attendue : vendu
+  - Indice : Le verbe « vendre » est en -re : son participe finit par -u.
+  - Explication : Beaucoup de verbes en -re ont un participe en -u : « vendu ».
+  - Statut : draft
+- **cm1_participe_forme_qcm_03** (difficulte 1) : Tu as ... ta clé dans le jardin.
+  - Reponses : perdu, perdé, perdi
+  - Reponse attendue : perdu
+  - Indice : Le verbe « perdre » est en -re : son participe finit par -u.
+  - Explication : Beaucoup de verbes en -re ont un participe en -u : « perdu ».
+  - Statut : draft
+- **cm1_participe_forme_qcm_04** (difficulte 2) : Les enfants ont ... un gros gâteau.
+  - Reponses : choisé, choisi, choisu
+  - Reponse attendue : choisi
+  - Indice : Le verbe « choisir » est en -ir : son participe finit par -i.
+  - Explication : Les verbes en -ir ont un participe en -i : « choisi ».
+  - Statut : draft
+- **cm1_participe_forme_qcm_05** (difficulte 2) : Mon frère a ... une lettre à sa tante.
+  - Reponses : écri, écrie, écrit
+  - Reponse attendue : écrit
+  - Indice : Le participe du verbe « écrire » finit par -it.
+  - Explication : Le participe passé d'« écrire » est « écrit ».
+  - Statut : draft
+- **cm1_participe_forme_qcm_06** (difficulte 2) : Nous avons ... le train de justesse.
+  - Reponses : pri, prit, pris
+  - Reponse attendue : pris
+  - Indice : Le participe du verbe « prendre » finit par -is.
+  - Explication : Le participe passé de « prendre » est « pris ».
+  - Statut : draft
+- **cm1_participe_forme_qcm_07** (difficulte 3) : Elle a ... la porte du jardin.
+  - Reponses : ouvrit, ouvri, ouvert
+  - Reponse attendue : ouvert
+  - Indice : Le participe du verbe « ouvrir » finit par -ert.
+  - Explication : Le participe passé d'« ouvrir » est « ouvert ».
+  - Statut : draft
+- **cm1_participe_forme_qcm_08** (difficulte 3) : Les élèves ont ... leur leçon par cœur.
+  - Reponses : apprit, appris, apri
+  - Reponse attendue : appris
+  - Indice : Le participe du verbe « apprendre » finit par -is.
+  - Explication : Le participe passé d'« apprendre » est « appris ».
+  - Statut : draft
+
+### Corrections de phrase
+
+- **cm1_participe_forme_correction_01** (difficulte 1) : Hier, Tom a [perdi -> perdu] sa casquette.
+  - Indice : Le verbe « perdre » est en -re : son participe finit par -u.
+  - Explication : Beaucoup de verbes en -re ont un participe en -u : « perdu ».
+  - Statut : draft
+- **cm1_participe_forme_correction_02** (difficulte 2) : Nous avons [finu -> fini] nos devoirs avant le dîner.
+  - Indice : Le verbe « finir » est en -ir : son participe finit par -i.
+  - Explication : Les verbes en -ir ont un participe en -i : « fini ».
+  - Statut : draft
+- **cm1_participe_forme_correction_03** (difficulte 2) : Le boulanger a [vendi -> vendu] tous ses pains.
+  - Indice : Le verbe « vendre » est en -re : son participe finit par -u.
+  - Explication : Beaucoup de verbes en -re ont un participe en -u : « vendu ».
+  - Statut : draft
+- **cm1_participe_forme_correction_04** (difficulte 3) : Elle a [ouvri -> ouvert] la fenêtre de la chambre.
+  - Indice : Le participe du verbe « ouvrir » finit par -ert.
+  - Explication : Le participe passé d'« ouvrir » est « ouvert ».
+  - Statut : draft
+
+### Dictees
+
+- **cm1_participe_forme_dictee_01** : Hier, j'ai fini mon livre avant le dîner.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **cm1_participe_forme_dictee_02** : Le fermier a vendu ses légumes au marché.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **cm1_participe_forme_dictee_03** : Les élèves ont appris une longue poésie.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+
+## regle_passe_simple (CM2, grammaire)
+
+**Enonce** : Au passé simple, à la 3e personne, les verbes en -er font -a (il chanta) et -èrent (ils chantèrent) ; les autres font souvent -it et -irent (il finit, ils finirent).
+
+**Exemple** : Il chanta. Ils chantèrent. Elle finit. Elles finirent.
+
+**Statut** : draft
+
+### Choix multiples
+
+- **cm2_passe_simple_qcm_01** (difficulte 1) : Le roi ... le château ce matin-là.
+  - Reponses : quitte, quittait, quitta
+  - Reponse attendue : quitta
+  - Indice : Une action rapide au passé : le passé simple finit par -a.
+  - Explication : Au passé simple, un verbe en -er finit par -a : « il quitta ».
+  - Statut : draft
+- **cm2_passe_simple_qcm_02** (difficulte 1) : Soudain, la lave ... de la montagne.
+  - Reponses : jaillit, jaillissait, jaillie
+  - Reponse attendue : jaillit
+  - Indice : Une action soudaine : le passé simple d'un verbe en -ir finit par -it.
+  - Explication : Au passé simple, un verbe en -ir finit par -it : « elle jaillit ».
+  - Statut : draft
+- **cm2_passe_simple_qcm_03** (difficulte 1) : Le chevalier ... sur son cheval.
+  - Reponses : monta, montait, monté
+  - Reponse attendue : monta
+  - Indice : Une action rapide au passé : le passé simple finit par -a.
+  - Explication : Au passé simple, un verbe en -er finit par -a : « il monta ».
+  - Statut : draft
+- **cm2_passe_simple_qcm_04** (difficulte 2) : Les villageois ... le volcan avec crainte.
+  - Reponses : regardaient, regardant, regardèrent
+  - Reponse attendue : regardèrent
+  - Indice : Plusieurs villageois : le passé simple finit par -èrent.
+  - Explication : Au passé simple, ils : un verbe en -er finit par -èrent : « ils regardèrent ».
+  - Statut : draft
+- **cm2_passe_simple_qcm_05** (difficulte 2) : Alors, le dragon ... un grand cri.
+  - Reponses : poussa, pousser, poussait
+  - Reponse attendue : poussa
+  - Indice : Une action rapide au passé : le passé simple finit par -a.
+  - Explication : Au passé simple, un verbe en -er finit par -a : « il poussa ».
+  - Statut : draft
+- **cm2_passe_simple_qcm_06** (difficulte 2) : Les enfants ... vers la cabane.
+  - Reponses : couraient, courant, coururent
+  - Reponse attendue : coururent
+  - Indice : Plusieurs enfants, une action soudaine : le passé simple finit par -urent.
+  - Explication : Au passé simple, ils : « ils coururent ».
+  - Statut : draft
+- **cm2_passe_simple_qcm_07** (difficulte 3) : Elles ... leur travail avant la nuit.
+  - Reponses : finissaient, finies, finirent
+  - Reponse attendue : finirent
+  - Indice : Plusieurs filles : le passé simple d'un verbe en -ir finit par -irent.
+  - Explication : Au passé simple, elles : un verbe en -ir finit par -irent : « elles finirent ».
+  - Statut : draft
+- **cm2_passe_simple_qcm_08** (difficulte 3) : Le héros ... la princesse.
+  - Reponses : sauva, sauvait, sauvé
+  - Reponse attendue : sauva
+  - Indice : Une action rapide au passé : le passé simple finit par -a.
+  - Explication : Au passé simple, un verbe en -er finit par -a : « il sauva ».
+  - Statut : draft
+
+### Corrections de phrase
+
+- **cm2_passe_simple_correction_01** (difficulte 1) : Soudain, le héros [entrat -> entra] dans la grotte.
+  - Indice : Au passé simple, un verbe en -er finit par -a.
+  - Explication : À la 3e personne du singulier, un verbe en -er finit par -a : « il entra ».
+  - Statut : draft
+- **cm2_passe_simple_correction_02** (difficulte 2) : Les soldats [traversa -> traversèrent] la rivière à la nage.
+  - Indice : Plusieurs soldats : le passé simple finit par -èrent.
+  - Explication : Au passé simple, ils : « ils traversèrent ».
+  - Statut : draft
+- **cm2_passe_simple_correction_03** (difficulte 2) : Le roi [finissa -> finit] son repas en silence.
+  - Indice : Un verbe en -ir finit par -it au passé simple.
+  - Explication : Au passé simple, il : « il finit ».
+  - Statut : draft
+- **cm2_passe_simple_correction_04** (difficulte 3) : Elles [ouvrit -> ouvrirent] la porte avec précaution.
+  - Indice : Plusieurs filles : le passé simple finit par -irent.
+  - Explication : Au passé simple, elles : « elles ouvrirent ».
+  - Statut : draft
+
+### Dictees
+
+- **cm2_passe_simple_dictee_01** : Le roi traversa la forêt sans s'arrêter.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **cm2_passe_simple_dictee_02** : Les chevaliers montèrent sur leurs chevaux.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **cm2_passe_simple_dictee_03** : Soudain, la princesse ouvrit la lourde porte.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+
+## regle_pluriel_aux_eaux (CM1, orthographe)
+
+**Enonce** : Les noms en -al font leur pluriel en -aux (un cheval, des chevaux) ; les noms en -eau prennent un -x (un bateau, des bateaux) ; quelques noms en -ou aussi (un bijou, des bijoux).
+
+**Exemple** : Un animal, des animaux. Un bateau, des bateaux. Un bijou, des bijoux.
+
+**Statut** : draft
+
+### Choix multiples
+
+- **cm1_pluriel_aux_qcm_01** (difficulte 1) : Les ... broutent dans le pré.
+  - Reponses : chevals, chevaux, chevaus
+  - Reponse attendue : chevaux
+  - Indice : Le nom « cheval » finit par -al.
+  - Explication : Les noms en -al font -aux au pluriel : « chevaux ».
+  - Statut : draft
+- **cm1_pluriel_aux_qcm_02** (difficulte 1) : Plusieurs ... naviguent sur le lac.
+  - Reponses : bateau, bateaus, bateaux
+  - Reponse attendue : bateaux
+  - Indice : Le nom « bateau » finit par -eau.
+  - Explication : Les noms en -eau prennent un -x au pluriel : « bateaux ».
+  - Statut : draft
+- **cm1_pluriel_aux_qcm_03** (difficulte 1) : Le zoo accueille beaucoup d'... .
+  - Reponses : animals, animaux, animaus
+  - Reponse attendue : animaux
+  - Indice : Le nom « animal » finit par -al.
+  - Explication : Les noms en -al font -aux au pluriel : « animaux ».
+  - Statut : draft
+- **cm1_pluriel_aux_qcm_04** (difficulte 2) : La reine porte de magnifiques ... .
+  - Reponses : bijoux, bijoues, bijous
+  - Reponse attendue : bijoux
+  - Indice : « Bijou » fait partie des noms en -ou qui prennent un -x.
+  - Explication : « Bijou » prend un -x au pluriel : « bijoux ».
+  - Statut : draft
+- **cm1_pluriel_aux_qcm_05** (difficulte 2) : Les ouvriers font des ... sur la route.
+  - Reponses : travaux, travails, travaus
+  - Reponse attendue : travaux
+  - Indice : Le nom « travail » finit par -ail.
+  - Explication : « Travail » fait « travaux » au pluriel.
+  - Statut : draft
+- **cm1_pluriel_aux_qcm_06** (difficulte 2) : J'ai trouvé trois petits ... sur la plage.
+  - Reponses : cailloux, caillous, cailloues
+  - Reponse attendue : cailloux
+  - Indice : « Caillou » fait partie des noms en -ou qui prennent un -x.
+  - Explication : « Caillou » prend un -x au pluriel : « cailloux ».
+  - Statut : draft
+- **cm1_pluriel_aux_qcm_07** (difficulte 3) : Le facteur apporte les ... du matin.
+  - Reponses : journals, journaux, journeaux
+  - Reponse attendue : journaux
+  - Indice : Le nom « journal » finit par -al.
+  - Explication : Les noms en -al font -aux au pluriel : « journaux ».
+  - Statut : draft
+- **cm1_pluriel_aux_qcm_08** (difficulte 3) : Deux ... se promènent dans la forêt.
+  - Reponses : oiseau, oiseaus, oiseaux
+  - Reponse attendue : oiseaux
+  - Indice : Le nom « oiseau » finit par -eau.
+  - Explication : Les noms en -eau prennent un -x au pluriel : « oiseaux ».
+  - Statut : draft
+
+### Corrections de phrase
+
+- **cm1_pluriel_aux_correction_01** (difficulte 1) : Les [chevals -> chevaux] galopent dans le champ.
+  - Indice : Le nom « cheval » finit par -al.
+  - Explication : Les noms en -al font -aux au pluriel : « chevaux ».
+  - Statut : draft
+- **cm1_pluriel_aux_correction_02** (difficulte 2) : La princesse a perdu ses [bijous. -> bijoux.]
+  - Indice : « Bijou » fait partie des noms en -ou qui prennent un -x.
+  - Explication : « Bijou » prend un -x au pluriel : « bijoux ».
+  - Statut : draft
+- **cm1_pluriel_aux_correction_03** (difficulte 2) : Les pêcheurs lavent leurs [bateaus. -> bateaux.]
+  - Indice : Le nom « bateau » finit par -eau.
+  - Explication : Les noms en -eau prennent un -x au pluriel : « bateaux ».
+  - Statut : draft
+- **cm1_pluriel_aux_correction_04** (difficulte 3) : Les ouvriers ont fini les [travails -> travaux] de la rue.
+  - Indice : Le nom « travail » finit par -ail.
+  - Explication : « Travail » fait « travaux » au pluriel.
+  - Statut : draft
+
+### Dictees
+
+- **cm1_pluriel_aux_dictee_01** : Les chevaux courent librement dans la prairie.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **cm1_pluriel_aux_dictee_02** : Mamie garde ses bijoux dans une petite boîte.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **cm1_pluriel_aux_dictee_03** : Les journaux annoncent de bonnes nouvelles.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+
 ## regle_pluriel_nom (CE1, grammaire)
 
 **Enonce** : Le plus souvent, on forme le pluriel d'un nom en ajoutant un -s à la fin du mot.
@@ -1397,6 +2699,285 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
   - Audio : provisoire
   - Statut : draft
 
+## regle_plutot_plus_tot (CM2, orthographe)
+
+**Enonce** : « plutôt » exprime une préférence ou une nuance (plutôt du thé) ; « plus tôt » s'oppose à « plus tard » : on peut le remplacer par « plus tard ».
+
+**Exemple** : Je prends plutôt du thé. Viens plus tôt demain.
+
+**Statut** : draft
+
+### Choix multiples
+
+- **cm2_plutot_qcm_01** (difficulte 1) : Je prends ... du thé que du café.
+  - Reponses : plutôt, plus tôt
+  - Reponse attendue : plutôt
+  - Indice : Remplace par « plus tard » : la phrase n'a pas de sens.
+  - Explication : On exprime une préférence : on écrit « plutôt ».
+  - Statut : draft
+- **cm2_plutot_qcm_02** (difficulte 1) : Demain, il faut se lever ... .
+  - Reponses : plus tôt, plutôt
+  - Reponse attendue : plus tôt
+  - Indice : Remplace par « plus tard » : « se lever plus tard » a du sens.
+  - Explication : On peut dire « plus tard » : on écrit « plus tôt ».
+  - Statut : draft
+- **cm2_plutot_qcm_03** (difficulte 1) : Il fait ... froid ce matin.
+  - Reponses : plutôt, plus tôt
+  - Reponse attendue : plutôt
+  - Indice : Remplace par « plus tard » : la phrase n'a pas de sens.
+  - Explication : On nuance : on écrit « plutôt ».
+  - Statut : draft
+- **cm2_plutot_qcm_04** (difficulte 2) : Le train est arrivé ... que prévu.
+  - Reponses : plus tôt, plutôt
+  - Reponse attendue : plus tôt
+  - Indice : Remplace par « plus tard » : « plus tard que prévu » a du sens.
+  - Explication : On peut dire « plus tard » : on écrit « plus tôt ».
+  - Statut : draft
+- **cm2_plutot_qcm_05** (difficulte 2) : Ce film est ... drôle.
+  - Reponses : plus tôt, plutôt
+  - Reponse attendue : plutôt
+  - Indice : Remplace par « plus tard » : la phrase n'a pas de sens.
+  - Explication : On nuance : on écrit « plutôt ».
+  - Statut : draft
+- **cm2_plutot_qcm_06** (difficulte 2) : Si tu viens ... , nous pourrons jouer.
+  - Reponses : plutôt, plus tôt
+  - Reponse attendue : plus tôt
+  - Indice : Remplace par « plus tard » : « si tu viens plus tard » a du sens.
+  - Explication : On peut dire « plus tard » : on écrit « plus tôt ».
+  - Statut : draft
+- **cm2_plutot_qcm_07** (difficulte 3) : Elle aime ... la mer que la montagne.
+  - Reponses : plus tôt, plutôt
+  - Reponse attendue : plutôt
+  - Indice : Remplace par « plus tard » : la phrase n'a pas de sens.
+  - Explication : On exprime une préférence : on écrit « plutôt ».
+  - Statut : draft
+- **cm2_plutot_qcm_08** (difficulte 3) : Je me couche ... le samedi soir.
+  - Reponses : plutôt, plus tôt
+  - Reponse attendue : plus tôt
+  - Indice : Remplace par « plus tard » : « je me couche plus tard » a du sens.
+  - Explication : On peut dire « plus tard » : on écrit « plus tôt ».
+  - Statut : draft
+
+### Corrections de phrase
+
+- **cm2_plutot_correction_01** (difficulte 1) : Léa est partie [plutôt -> plus tôt] que prévu.
+  - Indice : Remplace par « plus tard » : « plus tard que prévu » a du sens.
+  - Explication : On peut dire « plus tard » : on écrit « plus tôt ».
+  - Statut : draft
+- **cm2_plutot_correction_02** (difficulte 2) : Je préfère [plus -> plutôt] tôt le thé au café.
+  - Indice : Remplace par « plus tard » : la phrase n'a pas de sens.
+  - Explication : On exprime une préférence : on écrit « plutôt ».
+  - Statut : draft
+- **cm2_plutot_correction_03** (difficulte 2) : Réveille-toi [plutôt -> plus tôt] que d'habitude demain.
+  - Indice : Remplace par « plus tard » : « plus tard que d'habitude » a du sens.
+  - Explication : On peut dire « plus tard » : on écrit « plus tôt ».
+  - Statut : draft
+- **cm2_plutot_correction_04** (difficulte 3) : Ce gâteau est [plus -> plutôt] tôt bon.
+  - Indice : Remplace par « plus tard » : la phrase n'a pas de sens.
+  - Explication : On nuance : on écrit « plutôt ».
+  - Statut : draft
+
+### Dictees
+
+- **cm2_plutot_dictee_01** : Je prends plutôt une pomme qu'un gâteau.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **cm2_plutot_dictee_02** : Demain, nous irons à l'école plus tôt.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **cm2_plutot_dictee_03** : Il est arrivé plus tôt que les autres invités.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+
+## regle_quand_quant_qu_en (CM2, orthographe)
+
+**Enonce** : « quand » indique le moment (on peut dire « lorsque ») ; « quant à » veut dire « en ce qui concerne » ; « qu'en » est « que » + « en ».
+
+**Exemple** : Quand il pleut, je reste. Quant à moi, j'ai faim.
+
+**Statut** : draft
+
+### Choix multiples
+
+- **cm2_quand_quant_qcm_01** (difficulte 1) : ... la nuit tombe, les étoiles apparaissent.
+  - Reponses : Quant, Quand
+  - Reponse attendue : Quand
+  - Indice : Remplace par « lorsque » : « lorsque la nuit tombe » a du sens.
+  - Explication : On peut dire « lorsque » : on écrit « quand ».
+  - Statut : draft
+- **cm2_quand_quant_qcm_02** (difficulte 1) : Je te téléphonerai ... je serai arrivé.
+  - Reponses : quand, quant
+  - Reponse attendue : quand
+  - Indice : Remplace par « lorsque » : « lorsque je serai arrivé » a du sens.
+  - Explication : On peut dire « lorsque » : on écrit « quand ».
+  - Statut : draft
+- **cm2_quand_quant_qcm_03** (difficulte 1) : ... à moi, je préfère le chocolat.
+  - Reponses : Quand, Quant
+  - Reponse attendue : Quant
+  - Indice : Remplace par « en ce qui concerne » : la phrase a du sens.
+  - Explication : On peut dire « en ce qui concerne » : on écrit « quant ».
+  - Statut : draft
+- **cm2_quand_quant_qcm_04** (difficulte 2) : Léa sourit ... elle voit son chien.
+  - Reponses : quand, quant
+  - Reponse attendue : quand
+  - Indice : Remplace par « lorsque » : « lorsqu'elle voit » a du sens.
+  - Explication : On peut dire « lorsque » : on écrit « quand ».
+  - Statut : draft
+- **cm2_quand_quant_qcm_05** (difficulte 2) : Il sait bien ... hiver les jours sont courts.
+  - Reponses : quant, quand, qu'en
+  - Reponse attendue : qu'en
+  - Indice : Il y a « que » + « en » : « il sait que, en hiver ».
+  - Explication : C'est « que » + « en » : on écrit « qu'en ».
+  - Statut : draft
+- **cm2_quand_quant_qcm_06** (difficulte 2) : ... à Paul, il est déjà parti.
+  - Reponses : Quand, Quant
+  - Reponse attendue : Quant
+  - Indice : Remplace par « en ce qui concerne ».
+  - Explication : On peut dire « en ce qui concerne » : on écrit « quant ».
+  - Statut : draft
+- **cm2_quand_quant_qcm_07** (difficulte 3) : Je pense ... été il fait chaud ici.
+  - Reponses : quand, quant, qu'en
+  - Reponse attendue : qu'en
+  - Indice : Il y a « que » + « en » : « je pense que, en été ».
+  - Explication : C'est « que » + « en » : on écrit « qu'en ».
+  - Statut : draft
+- **cm2_quand_quant_qcm_08** (difficulte 3) : ... tu auras fini, appelle-moi.
+  - Reponses : Quant, Quand
+  - Reponse attendue : Quand
+  - Indice : Remplace par « lorsque » : « lorsque tu auras fini » a du sens.
+  - Explication : On peut dire « lorsque » : on écrit « quand ».
+  - Statut : draft
+
+### Corrections de phrase
+
+- **cm2_quand_quant_correction_01** (difficulte 1) : [Quant -> Quand] il fait beau, nous jouons dehors.
+  - Indice : Remplace par « lorsque » : « lorsqu'il fait beau » a du sens.
+  - Explication : On peut dire « lorsque » : on écrit « quand ».
+  - Statut : draft
+- **cm2_quand_quant_correction_02** (difficulte 2) : [Quand -> Quant] à ma sœur, elle dort encore.
+  - Indice : Remplace par « en ce qui concerne ».
+  - Explication : On peut dire « en ce qui concerne » : on écrit « quant ».
+  - Statut : draft
+- **cm2_quand_quant_correction_03** (difficulte 2) : Appelle-moi [quant -> quand] tu seras prêt.
+  - Indice : Remplace par « lorsque » : « lorsque tu seras prêt » a du sens.
+  - Explication : On peut dire « lorsque » : on écrit « quand ».
+  - Statut : draft
+- **cm2_quand_quant_correction_04** (difficulte 3) : Mamie dit toujours [quand -> qu'en] hiver il faut se couvrir.
+  - Indice : Il y a « que » + « en » : « elle dit que, en hiver ».
+  - Explication : C'est « que » + « en » : on écrit « qu'en ».
+  - Statut : draft
+
+### Dictees
+
+- **cm2_quand_quant_dictee_01** : Quand le jour se lève, les oiseaux chantent.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **cm2_quand_quant_dictee_02** : Quant à Julie, elle préfère rester à la maison.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **cm2_quand_quant_dictee_03** : Je sais bien qu'en été les nuits sont courtes.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+
+## regle_quel_qu_elle (CM2, orthographe)
+
+**Enonce** : « quel(le)(s) » s'accorde avec un nom (quelle heure ?) ; « qu'elle(s) » est « que » + « elle » : on peut le remplacer par « qu'il(s) ».
+
+**Exemple** : Quelle heure est-il ? Je pense qu'elle arrive.
+
+**Statut** : draft
+
+### Choix multiples
+
+- **cm2_quel_qu_elle_qcm_01** (difficulte 1) : ... heure est-il ?
+  - Reponses : Qu'elle, Quelle
+  - Reponse attendue : Quelle
+  - Indice : Remplace par « qu'il » : la phrase n'a pas de sens.
+  - Explication : « Quelle » accompagne le nom « heure » : on écrit « quelle ».
+  - Statut : draft
+- **cm2_quel_qu_elle_qcm_02** (difficulte 1) : Je crois ... est partie.
+  - Reponses : quelle, qu'elle
+  - Reponse attendue : qu'elle
+  - Indice : Remplace par « qu'il » : « je crois qu'il est parti » a du sens.
+  - Explication : On peut dire « qu'il » : on écrit « qu'elle ».
+  - Statut : draft
+- **cm2_quel_qu_elle_qcm_03** (difficulte 1) : ... beau dessin tu as fait !
+  - Reponses : Qu'elle, Quel
+  - Reponse attendue : Quel
+  - Indice : Remplace par « qu'il » : la phrase n'a pas de sens.
+  - Explication : « Quel » accompagne le nom « dessin » : on écrit « quel ».
+  - Statut : draft
+- **cm2_quel_qu_elle_qcm_04** (difficulte 2) : Dis-moi à ... étage tu habites.
+  - Reponses : quel, qu'elle
+  - Reponse attendue : quel
+  - Indice : Remplace par « qu'il » : la phrase n'a pas de sens.
+  - Explication : « Quel » accompagne le nom « étage » : on écrit « quel ».
+  - Statut : draft
+- **cm2_quel_qu_elle_qcm_05** (difficulte 2) : Papa pense ... a gagné la course.
+  - Reponses : quelle, qu'elle
+  - Reponse attendue : qu'elle
+  - Indice : Remplace par « qu'il » : « papa pense qu'il a gagné » a du sens.
+  - Explication : On peut dire « qu'il » : on écrit « qu'elle ».
+  - Statut : draft
+- **cm2_quel_qu_elle_qcm_06** (difficulte 2) : ... jolies fleurs dans ce vase !
+  - Reponses : Qu'elles, Quelles
+  - Reponse attendue : Quelles
+  - Indice : Remplace par « qu'ils » : la phrase n'a pas de sens.
+  - Explication : « Quelles » accompagne le nom pluriel « fleurs » : on écrit « quelles ».
+  - Statut : draft
+- **cm2_quel_qu_elle_qcm_07** (difficulte 3) : Les filles disent ... ont faim.
+  - Reponses : quelles, qu'elles
+  - Reponse attendue : qu'elles
+  - Indice : Remplace par « qu'ils » : « les garçons disent qu'ils ont faim » a du sens.
+  - Explication : On peut dire « qu'ils » : on écrit « qu'elles ».
+  - Statut : draft
+- **cm2_quel_qu_elle_qcm_08** (difficulte 3) : Je me demande ... robe elle portera.
+  - Reponses : qu'elle, quelle
+  - Reponse attendue : quelle
+  - Indice : Remplace par « qu'il » : la phrase n'a pas de sens.
+  - Explication : « Quelle » accompagne le nom « robe » : on écrit « quelle ».
+  - Statut : draft
+
+### Corrections de phrase
+
+- **cm2_quel_qu_elle_correction_01** (difficulte 1) : [Qu'elle -> Quelle] belle journée !
+  - Indice : Remplace par « qu'il » : la phrase n'a pas de sens.
+  - Explication : « Quelle » accompagne le nom « journée » : on écrit « quelle ».
+  - Statut : draft
+- **cm2_quel_qu_elle_correction_02** (difficulte 2) : Je pense [quelle -> qu'elle] viendra demain.
+  - Indice : Remplace par « qu'il » : « je pense qu'il viendra » a du sens.
+  - Explication : On peut dire « qu'il » : on écrit « qu'elle ».
+  - Statut : draft
+- **cm2_quel_qu_elle_correction_03** (difficulte 2) : [Quelle -> Quelles] sont les couleurs de ce drapeau ?
+  - Indice : « Quelles » accompagne le nom pluriel « couleurs ».
+  - Explication : Le nom « couleurs » est au pluriel : on écrit « quelles ».
+  - Statut : draft
+- **cm2_quel_qu_elle_correction_04** (difficulte 3) : Léa m'a dit [quelles -> qu'elles] étaient fatiguées.
+  - Indice : Remplace par « qu'ils » : « il m'a dit qu'ils étaient fatigués » a du sens.
+  - Explication : On peut dire « qu'ils » : on écrit « qu'elles ».
+  - Statut : draft
+
+### Dictees
+
+- **cm2_quel_qu_elle_dictee_01** : Quelle belle étoile brille ce soir.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **cm2_quel_qu_elle_dictee_02** : Maman dit qu'elle rentrera tard ce soir.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **cm2_quel_qu_elle_dictee_03** : Je me demande quels livres elle lira pendant les vacances.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+
 ## regle_s_ss (CE1, orthographe)
 
 **Enonce** : Entre deux voyelles, la lettre « s » seule se prononce [z]. Pour entendre le son [s], on écrit « ss ».
@@ -1486,6 +3067,99 @@ Genere automatiquement depuis `data/` par `tools/generate_content_review.py`. Ne
   - Audio : provisoire
   - Statut : draft
 - **ce1_s_ss_dictee_03** : Mamie a mis ses chaussons dans la chambre.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+
+## regle_tion_sion_ssion (CM2, orthographe)
+
+**Enonce** : Le son [sjɔ̃] s'écrit le plus souvent « -tion » (attention, réaction) ; quelques mots s'écrivent « -sion » (télévision, tension) ou « -ssion » (passion, mission) et sont à connaître.
+
+**Exemple** : Une attention. Une télévision. Une mission.
+
+**Statut** : draft
+
+### Choix multiples
+
+- **cm2_tion_sion_qcm_01** (difficulte 1) : Fais bien ... en traversant la rue.
+  - Reponses : attention, attenssion, attension
+  - Reponse attendue : attention
+  - Indice : Le plus souvent, on écrit -tion.
+  - Explication : Le mot « attention » s'écrit avec -tion.
+  - Statut : draft
+- **cm2_tion_sion_qcm_02** (difficulte 1) : Nous regardons la ... après le dîner.
+  - Reponses : télévision, télévission, télévition
+  - Reponse attendue : télévision
+  - Indice : Ce mot vient du verbe « voir » : il s'écrit avec -sion.
+  - Explication : Le mot « télévision » s'écrit avec -sion.
+  - Statut : draft
+- **cm2_tion_sion_qcm_03** (difficulte 1) : Le pilote a une grande ... : voler.
+  - Reponses : passion, passtion, pasion
+  - Reponse attendue : passion
+  - Indice : Ce mot a deux s : -ssion.
+  - Explication : Le mot « passion » s'écrit avec -ssion.
+  - Statut : draft
+- **cm2_tion_sion_qcm_04** (difficulte 2) : Les astronautes partent en ... dans l'espace.
+  - Reponses : mision, mition, mission
+  - Reponse attendue : mission
+  - Indice : Ce mot a deux s : -ssion.
+  - Explication : Le mot « mission » s'écrit avec -ssion.
+  - Statut : draft
+- **cm2_tion_sion_qcm_05** (difficulte 2) : Le professeur pose une ... aux élèves.
+  - Reponses : queston, question, questsion
+  - Reponse attendue : question
+  - Indice : Le plus souvent, on écrit -tion.
+  - Explication : Le mot « question » s'écrit avec -tion.
+  - Statut : draft
+- **cm2_tion_sion_qcm_06** (difficulte 2) : Ce film me fait une grande ... .
+  - Reponses : impresion, impression, impretion
+  - Reponse attendue : impression
+  - Indice : Ce mot a deux s : -ssion.
+  - Explication : Le mot « impression » s'écrit avec -ssion.
+  - Statut : draft
+- **cm2_tion_sion_qcm_07** (difficulte 3) : La ... du volcan a duré trois jours.
+  - Reponses : érussion, éruction, éruption
+  - Reponse attendue : éruption
+  - Indice : Le son [sjɔ̃] s'écrit ici avec -ption.
+  - Explication : Le mot « éruption » s'écrit avec -ption.
+  - Statut : draft
+- **cm2_tion_sion_qcm_08** (difficulte 3) : Il y a trop de ... dans cette pièce.
+  - Reponses : tension, tenssion, tention
+  - Reponse attendue : tension
+  - Indice : Ce mot s'écrit avec -sion.
+  - Explication : Le mot « tension » s'écrit avec -sion.
+  - Statut : draft
+
+### Corrections de phrase
+
+- **cm2_tion_sion_correction_01** (difficulte 1) : Fais [attension -> attention] en descendant l'escalier.
+  - Indice : Le plus souvent, on écrit -tion.
+  - Explication : Le mot « attention » s'écrit avec -tion.
+  - Statut : draft
+- **cm2_tion_sion_correction_02** (difficulte 2) : La [télévition -> télévision] est allumée dans le salon.
+  - Indice : Ce mot vient du verbe « voir » : il s'écrit avec -sion.
+  - Explication : Le mot « télévision » s'écrit avec -sion.
+  - Statut : draft
+- **cm2_tion_sion_correction_03** (difficulte 2) : Cette [misson -> mission] est très importante.
+  - Indice : Ce mot a deux s : -ssion.
+  - Explication : Le mot « mission » s'écrit avec -ssion.
+  - Statut : draft
+- **cm2_tion_sion_correction_04** (difficulte 3) : Le professeur a posé une [questsion -> question] difficile.
+  - Indice : Le plus souvent, on écrit -tion.
+  - Explication : Le mot « question » s'écrit avec -tion.
+  - Statut : draft
+
+### Dictees
+
+- **cm2_tion_sion_dictee_01** : Les élèves écoutent avec attention la leçon.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **cm2_tion_sion_dictee_02** : La mission des astronautes dure six mois.
+  - Variantes acceptees : aucune
+  - Audio : provisoire
+  - Statut : draft
+- **cm2_tion_sion_dictee_03** : Cette émission de télévision passionne les enfants.
   - Variantes acceptees : aucune
   - Audio : provisoire
   - Statut : draft

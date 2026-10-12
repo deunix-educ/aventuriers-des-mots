@@ -1,0 +1,57 @@
+{
+  "id": "cm1_ces_ses_correction_02",
+  "level": "CM1",
+  "domain": "orthographe",
+  "skill": "homophones_cm1",
+  "rule_id": "regle_ces_ses",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Le",
+      "correct": true
+    },
+    {
+      "text": "chien",
+      "correct": true
+    },
+    {
+      "text": "secoue",
+      "correct": true
+    },
+    {
+      "text": "ces",
+      "correct": false,
+      "expected": "ses",
+      "rule_id": "regle_ces_ses"
+    },
+    {
+      "text": "oreilles",
+      "correct": true
+    },
+    {
+      "text": "en",
+      "correct": true
+    },
+    {
+      "text": "sortant",
+      "correct": true
+    },
+    {
+      "text": "de",
+      "correct": true
+    },
+    {
+      "text": "l'eau.",
+      "correct": true
+    }
+  ],
+  "hint": "Remplace par « son » : « son oreille » a du sens.",
+  "explanation": "« Ses » est le pluriel de « son » : les oreilles du chien.",
+  "review_tags": [
+    "homophones_cm1",
+    "ces_ses"
+  ],
+  "review_status": "draft"
+}

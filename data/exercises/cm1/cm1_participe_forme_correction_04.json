@@ -1,0 +1,53 @@
+{
+  "id": "cm1_participe_forme_correction_04",
+  "level": "CM1",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm1",
+  "rule_id": "regle_participe_passe_forme",
+  "difficulty": 3,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Elle",
+      "correct": true
+    },
+    {
+      "text": "a",
+      "correct": true
+    },
+    {
+      "text": "ouvri",
+      "correct": false,
+      "expected": "ouvert",
+      "rule_id": "regle_participe_passe_forme"
+    },
+    {
+      "text": "la",
+      "correct": true
+    },
+    {
+      "text": "fenêtre",
+      "correct": true
+    },
+    {
+      "text": "de",
+      "correct": true
+    },
+    {
+      "text": "la",
+      "correct": true
+    },
+    {
+      "text": "chambre.",
+      "correct": true
+    }
+  ],
+  "hint": "Le participe du verbe « ouvrir » finit par -ert.",
+  "explanation": "Le participe passé d'« ouvrir » est « ouvert ».",
+  "review_tags": [
+    "verbes_cm1",
+    "participe_forme"
+  ],
+  "review_status": "draft"
+}

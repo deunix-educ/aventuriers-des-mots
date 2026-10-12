@@ -1,0 +1,23 @@
+{
+  "id": "cm1_ou_ou_qcm_01",
+  "level": "CM1",
+  "domain": "orthographe",
+  "skill": "orthographe_cm1",
+  "rule_id": "regle_ou_ou_accent",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "... habites-tu ?",
+  "answers": [
+    "Où",
+    "Ou"
+  ],
+  "correct_answer": 0,
+  "hint": "Remplace par « ou bien » : la phrase n'a pas de sens, c'est un lieu.",
+  "explanation": "On cherche un lieu : on écrit « où » avec un accent.",
+  "review_tags": [
+    "orthographe_cm1",
+    "ou_ou"
+  ],
+  "review_status": "draft"
+}

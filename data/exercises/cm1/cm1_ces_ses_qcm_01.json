@@ -1,0 +1,23 @@
+{
+  "id": "cm1_ces_ses_qcm_01",
+  "level": "CM1",
+  "domain": "orthographe",
+  "skill": "homophones_cm1",
+  "rule_id": "regle_ces_ses",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Regarde ... beaux oiseaux dans le ciel !",
+  "answers": [
+    "ces",
+    "ses"
+  ],
+  "correct_answer": 0,
+  "hint": "Remplace par « ce » : « ce bel oiseau » a du sens.",
+  "explanation": "« Ces » est le pluriel de « ce » : on montre des oiseaux.",
+  "review_tags": [
+    "homophones_cm1",
+    "ces_ses"
+  ],
+  "review_status": "draft"
+}

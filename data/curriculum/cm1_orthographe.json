@@ -1,0 +1,15 @@
+{
+  "level": "CM1",
+  "region_id": "jungle_des_mots",
+  "chapter_id": "orthographe_cm1",
+  "title": "L'orthographe des mots",
+  "region_title": "La jungle des mots",
+  "order": 3,
+  "backdrop": "jungle",
+  "rule_ids": [
+    "regle_pluriel_aux_eaux",
+    "regle_ou_ou_accent",
+    "regle_la_la_accent_l_a"
+  ],
+  "review_status": "draft"
+}

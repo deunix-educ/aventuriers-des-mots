@@ -1,0 +1,23 @@
+{
+  "id": "cm2_quel_qu_elle_qcm_06",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "homophones_cm2",
+  "rule_id": "regle_quel_qu_elle",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "... jolies fleurs dans ce vase !",
+  "answers": [
+    "Qu'elles",
+    "Quelles"
+  ],
+  "correct_answer": 1,
+  "hint": "Remplace par « qu'ils » : la phrase n'a pas de sens.",
+  "explanation": "« Quelles » accompagne le nom pluriel « fleurs » : on écrit « quelles ».",
+  "review_tags": [
+    "homophones_cm2",
+    "quel_qu_elle"
+  ],
+  "review_status": "draft"
+}

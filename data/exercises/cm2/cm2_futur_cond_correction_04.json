@@ -1,0 +1,45 @@
+{
+  "id": "cm2_futur_cond_correction_04",
+  "level": "CM2",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm2",
+  "rule_id": "regle_futur_conditionnel",
+  "difficulty": 3,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Dès",
+      "correct": true
+    },
+    {
+      "text": "qu'il",
+      "correct": true
+    },
+    {
+      "text": "arrivera,",
+      "correct": true
+    },
+    {
+      "text": "elle",
+      "correct": true
+    },
+    {
+      "text": "lui",
+      "correct": true
+    },
+    {
+      "text": "parlerait.",
+      "correct": false,
+      "expected": "parlera",
+      "rule_id": "regle_futur_conditionnel"
+    }
+  ],
+  "hint": "Après « dès qu'il arrivera » (futur), on reste au futur.",
+  "explanation": "Après « dès qu'il arrivera », on écrit le futur : « parlera ».",
+  "review_tags": [
+    "verbes_cm2",
+    "futur_cond"
+  ],
+  "review_status": "draft"
+}

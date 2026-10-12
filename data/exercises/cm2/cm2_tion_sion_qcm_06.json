@@ -1,0 +1,24 @@
+{
+  "id": "cm2_tion_sion_qcm_06",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "orthographe_cm2",
+  "rule_id": "regle_tion_sion_ssion",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Ce film me fait une grande ... .",
+  "answers": [
+    "impresion",
+    "impression",
+    "impretion"
+  ],
+  "correct_answer": 1,
+  "hint": "Ce mot a deux s : -ssion.",
+  "explanation": "Le mot « impression » s'écrit avec -ssion.",
+  "review_tags": [
+    "orthographe_cm2",
+    "tion_sion"
+  ],
+  "review_status": "draft"
+}

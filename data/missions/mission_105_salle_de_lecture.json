@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_105_salle_de_lecture",
+  "title": "La salle de lecture",
+  "narrative_context": "Le bibliothécaire lit une phrase, une seule fois. Écoute bien et écris-la en entier.",
+  "rule_id": "regle_adverbes_ment",
+  "exercise_type": "dictation",
+  "map_position": {
+    "x": 0.85,
+    "y": 0.15
+  },
+  "review_status": "draft"
+}

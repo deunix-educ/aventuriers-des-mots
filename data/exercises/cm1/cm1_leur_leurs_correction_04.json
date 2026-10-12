@@ -1,0 +1,45 @@
+{
+  "id": "cm1_leur_leurs_correction_04",
+  "level": "CM1",
+  "domain": "orthographe",
+  "skill": "homophones_cm1",
+  "rule_id": "regle_leur_leurs",
+  "difficulty": 3,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Maman",
+      "correct": true
+    },
+    {
+      "text": "leurs",
+      "correct": false,
+      "expected": "leur",
+      "rule_id": "regle_leur_leurs"
+    },
+    {
+      "text": "a",
+      "correct": true
+    },
+    {
+      "text": "préparé",
+      "correct": true
+    },
+    {
+      "text": "un",
+      "correct": true
+    },
+    {
+      "text": "goûter.",
+      "correct": true
+    }
+  ],
+  "hint": "Remplace par « lui » : « maman lui a préparé » a du sens.",
+  "explanation": "On peut dire « lui a préparé » : « leur » reste sans -s.",
+  "review_tags": [
+    "homophones_cm1",
+    "leur_leurs"
+  ],
+  "review_status": "draft"
+}

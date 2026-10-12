@@ -1,0 +1,61 @@
+{
+  "id": "cm1_ces_ses_correction_03",
+  "level": "CM1",
+  "domain": "orthographe",
+  "skill": "homophones_cm1",
+  "rule_id": "regle_ces_ses",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Léa",
+      "correct": true
+    },
+    {
+      "text": "a",
+      "correct": true
+    },
+    {
+      "text": "rangé",
+      "correct": true
+    },
+    {
+      "text": "ces",
+      "correct": false,
+      "expected": "ses",
+      "rule_id": "regle_ces_ses"
+    },
+    {
+      "text": "affaires",
+      "correct": true
+    },
+    {
+      "text": "avant",
+      "correct": true
+    },
+    {
+      "text": "de",
+      "correct": true
+    },
+    {
+      "text": "partir",
+      "correct": true
+    },
+    {
+      "text": "à",
+      "correct": true
+    },
+    {
+      "text": "l'école.",
+      "correct": true
+    }
+  ],
+  "hint": "Remplace par « son » : « son affaire » a du sens.",
+  "explanation": "« Ses » est le pluriel de « son » : les affaires de Léa.",
+  "review_tags": [
+    "homophones_cm1",
+    "ces_ses"
+  ],
+  "review_status": "draft"
+}

@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_58_pont_levis_du_chateau",
+  "title": "Le pont-levis du château",
+  "narrative_context": "Le pont-levis ne s'abaisse que si tu choisis le bon mot entre « leur » et « leurs ».",
+  "rule_id": "regle_leur_leurs",
+  "exercise_type": "multiple_choice",
+  "map_position": {
+    "x": 0.15,
+    "y": 0.15
+  },
+  "review_status": "draft"
+}

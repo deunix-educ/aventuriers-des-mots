@@ -1,0 +1,23 @@
+{
+  "id": "cm1_c_est_s_est_qcm_08",
+  "level": "CM1",
+  "domain": "orthographe",
+  "skill": "homophones_cm1",
+  "rule_id": "regle_c_est_s_est",
+  "difficulty": 3,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Le soleil ... caché derrière un gros nuage.",
+  "answers": [
+    "c'est",
+    "s'est"
+  ],
+  "correct_answer": 1,
+  "hint": "Remplace par « se cache » au présent.",
+  "explanation": "Le soleil est le sujet, « caché » est un participe : « s'est ».",
+  "review_tags": [
+    "homophones_cm1",
+    "c_est_s_est"
+  ],
+  "review_status": "draft"
+}

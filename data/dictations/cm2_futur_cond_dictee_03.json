@@ -1,0 +1,42 @@
+{
+  "id": "cm2_futur_cond_dictee_03",
+  "level": "CM2",
+  "domain": "grammaire",
+  "rule_ids": [
+    "regle_futur_conditionnel"
+  ],
+  "difficulty": 3,
+  "target_text": "Si le volcan se réveillait, les habitants partiraient.",
+  "words": [
+    {
+      "text": "Si",
+      "expects_capital": true
+    },
+    {
+      "text": "le"
+    },
+    {
+      "text": "volcan"
+    },
+    {
+      "text": "se"
+    },
+    {
+      "text": "réveillait,"
+    },
+    {
+      "text": "les"
+    },
+    {
+      "text": "habitants"
+    },
+    {
+      "text": "partiraient.",
+      "rule_id": "regle_futur_conditionnel"
+    }
+  ],
+  "audio_id": "cm2_futur_cond_dictee_03",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

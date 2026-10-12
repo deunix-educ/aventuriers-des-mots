@@ -1,0 +1,36 @@
+{
+  "id": "cm1_pluriel_aux_dictee_03",
+  "level": "CM1",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_pluriel_aux_eaux"
+  ],
+  "difficulty": 3,
+  "target_text": "Les journaux annoncent de bonnes nouvelles.",
+  "words": [
+    {
+      "text": "Les",
+      "expects_capital": true
+    },
+    {
+      "text": "journaux",
+      "rule_id": "regle_pluriel_aux_eaux"
+    },
+    {
+      "text": "annoncent"
+    },
+    {
+      "text": "de"
+    },
+    {
+      "text": "bonnes"
+    },
+    {
+      "text": "nouvelles."
+    }
+  ],
+  "audio_id": "cm1_pluriel_aux_dictee_03",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

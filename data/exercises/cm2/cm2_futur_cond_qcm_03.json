@@ -1,0 +1,23 @@
+{
+  "id": "cm2_futur_cond_qcm_03",
+  "level": "CM2",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm2",
+  "rule_id": "regle_futur_conditionnel",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Ce soir, il ... plus tard que d'habitude.",
+  "answers": [
+    "mangera",
+    "mangerait"
+  ],
+  "correct_answer": 0,
+  "hint": "« Ce soir » : l'action est certaine, c'est le futur.",
+  "explanation": "L'action est certaine : on écrit le futur « mangera ».",
+  "review_tags": [
+    "verbes_cm2",
+    "futur_cond"
+  ],
+  "review_status": "draft"
+}

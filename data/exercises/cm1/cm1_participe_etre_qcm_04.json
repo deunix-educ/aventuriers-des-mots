@@ -1,0 +1,24 @@
+{
+  "id": "cm1_participe_etre_qcm_04",
+  "level": "CM1",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm1",
+  "rule_id": "regle_accord_participe_etre",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Mes cousins sont ... hier soir.",
+  "answers": [
+    "venus",
+    "venue",
+    "venu"
+  ],
+  "correct_answer": 0,
+  "hint": "Le sujet « mes cousins » est masculin pluriel.",
+  "explanation": "Avec « être », le participe s'accorde avec le sujet : mes cousins sont venus.",
+  "review_tags": [
+    "verbes_cm1",
+    "participe_etre"
+  ],
+  "review_status": "draft"
+}

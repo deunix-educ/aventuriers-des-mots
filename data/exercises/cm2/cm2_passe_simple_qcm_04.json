@@ -1,0 +1,24 @@
+{
+  "id": "cm2_passe_simple_qcm_04",
+  "level": "CM2",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm2",
+  "rule_id": "regle_passe_simple",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Les villageois ... le volcan avec crainte.",
+  "answers": [
+    "regardaient",
+    "regardant",
+    "regardèrent"
+  ],
+  "correct_answer": 2,
+  "hint": "Plusieurs villageois : le passé simple finit par -èrent.",
+  "explanation": "Au passé simple, ils : un verbe en -er finit par -èrent : « ils regardèrent ».",
+  "review_tags": [
+    "verbes_cm2",
+    "passe_simple"
+  ],
+  "review_status": "draft"
+}

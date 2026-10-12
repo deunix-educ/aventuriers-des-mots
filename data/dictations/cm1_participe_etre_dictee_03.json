@@ -1,0 +1,45 @@
+{
+  "id": "cm1_participe_etre_dictee_03",
+  "level": "CM1",
+  "domain": "grammaire",
+  "rule_ids": [
+    "regle_accord_participe_etre"
+  ],
+  "difficulty": 3,
+  "target_text": "Léa et Sara sont montées dans le grand bateau.",
+  "words": [
+    {
+      "text": "Léa",
+      "expects_capital": true
+    },
+    {
+      "text": "et"
+    },
+    {
+      "text": "Sara"
+    },
+    {
+      "text": "sont"
+    },
+    {
+      "text": "montées",
+      "rule_id": "regle_accord_participe_etre"
+    },
+    {
+      "text": "dans"
+    },
+    {
+      "text": "le"
+    },
+    {
+      "text": "grand"
+    },
+    {
+      "text": "bateau."
+    }
+  ],
+  "audio_id": "cm1_participe_etre_dictee_03",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

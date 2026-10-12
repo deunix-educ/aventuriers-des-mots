@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_110_atelier_du_relieur",
+  "title": "L'atelier du relieur",
+  "narrative_context": "Le relieur a mal accordé une couleur. Trouve le mot fautif et corrige-le.",
+  "rule_id": "regle_adjectifs_couleur",
+  "exercise_type": "sentence_correction",
+  "map_position": {
+    "x": 0.5,
+    "y": 0.85
+  },
+  "review_status": "draft"
+}

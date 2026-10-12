@@ -1,0 +1,9 @@
+{
+  "rule_id": "regle_futur_conditionnel",
+  "level": "CM2",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm2",
+  "statement": "Au futur, la terminaison est -rai, -ras, -ra, -rons, -rez, -ront ; au conditionnel présent, elle est -rais, -rais, -rait, -rions, -riez, -raient. Après « si » + imparfait, on emploie le conditionnel.",
+  "example": "Demain, je viendrai. Si j'avais le temps, je viendrais.",
+  "review_status": "draft"
+}

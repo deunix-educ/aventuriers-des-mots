@@ -1,0 +1,24 @@
+{
+  "id": "cm2_quand_quant_qcm_05",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "homophones_cm2",
+  "rule_id": "regle_quand_quant_qu_en",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Il sait bien ... hiver les jours sont courts.",
+  "answers": [
+    "quant",
+    "quand",
+    "qu'en"
+  ],
+  "correct_answer": 2,
+  "hint": "Il y a « que » + « en » : « il sait que, en hiver ».",
+  "explanation": "C'est « que » + « en » : on écrit « qu'en ».",
+  "review_tags": [
+    "homophones_cm2",
+    "quand_quant"
+  ],
+  "review_status": "draft"
+}

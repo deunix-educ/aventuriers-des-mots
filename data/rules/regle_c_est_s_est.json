@@ -1,0 +1,9 @@
+{
+  "rule_id": "regle_c_est_s_est",
+  "level": "CM1",
+  "domain": "orthographe",
+  "skill": "homophones_cm1",
+  "statement": "« c'est » veut dire « cela est » ; « s'est » accompagne un sujet et un participe passé : « Paul s'est blessé » (on peut dire « Paul se blesse »).",
+  "example": "C'est un gâteau. Paul s'est blessé.",
+  "review_status": "draft"
+}

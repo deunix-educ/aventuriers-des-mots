@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_81_cascade_cachee",
+  "title": "La cascade cachée",
+  "narrative_context": "La cascade murmure une phrase, une seule fois. Écoute bien et écris-la sans faute.",
+  "rule_id": "regle_ou_ou_accent",
+  "exercise_type": "dictation",
+  "map_position": {
+    "x": 0.85,
+    "y": 0.5
+  },
+  "review_status": "draft"
+}

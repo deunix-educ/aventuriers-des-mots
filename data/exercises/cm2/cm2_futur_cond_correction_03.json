@@ -1,0 +1,49 @@
+{
+  "id": "cm2_futur_cond_correction_03",
+  "level": "CM2",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm2",
+  "rule_id": "regle_futur_conditionnel",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "S'il",
+      "correct": true
+    },
+    {
+      "text": "pleuvait,",
+      "correct": true
+    },
+    {
+      "text": "tu",
+      "correct": false,
+      "expected": "resterais",
+      "rule_id": "regle_futur_conditionnel"
+    },
+    {
+      "text": "resteras",
+      "correct": true
+    },
+    {
+      "text": "à",
+      "correct": true
+    },
+    {
+      "text": "la",
+      "correct": true
+    },
+    {
+      "text": "maison.",
+      "correct": true
+    }
+  ],
+  "hint": "Après « s'il pleuvait » (imparfait), on emploie le conditionnel.",
+  "explanation": "Après « s'il pleuvait », on écrit le conditionnel : « resterais ».",
+  "review_tags": [
+    "verbes_cm2",
+    "futur_cond"
+  ],
+  "review_status": "draft"
+}

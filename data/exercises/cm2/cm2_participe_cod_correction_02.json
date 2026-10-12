@@ -1,0 +1,53 @@
+{
+  "id": "cm2_participe_cod_correction_02",
+  "level": "CM2",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm2",
+  "rule_id": "regle_participe_cod_avant",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Sophie",
+      "correct": true
+    },
+    {
+      "text": "a",
+      "correct": true
+    },
+    {
+      "text": "mangées",
+      "correct": false,
+      "expected": "mangé",
+      "rule_id": "regle_participe_cod_avant"
+    },
+    {
+      "text": "toutes",
+      "correct": true
+    },
+    {
+      "text": "les",
+      "correct": true
+    },
+    {
+      "text": "cerises",
+      "correct": true
+    },
+    {
+      "text": "du",
+      "correct": true
+    },
+    {
+      "text": "panier.",
+      "correct": true
+    }
+  ],
+  "hint": "Les cerises sont placées après le verbe : le participe ne s'accorde pas.",
+  "explanation": "Le complément est après le verbe : le participe reste « mangé ».",
+  "review_tags": [
+    "verbes_cm2",
+    "participe_cod"
+  ],
+  "review_status": "draft"
+}

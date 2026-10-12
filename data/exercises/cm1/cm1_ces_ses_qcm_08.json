@@ -1,0 +1,23 @@
+{
+  "id": "cm1_ces_ses_qcm_08",
+  "level": "CM1",
+  "domain": "orthographe",
+  "skill": "homophones_cm1",
+  "rule_id": "regle_ces_ses",
+  "difficulty": 3,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Max a rangé tous ... jouets dans son coffre.",
+  "answers": [
+    "ces",
+    "ses"
+  ],
+  "correct_answer": 1,
+  "hint": "Remplace par « son » : « son jouet » a du sens.",
+  "explanation": "« Ses » est le pluriel de « son » : les jouets de Max.",
+  "review_tags": [
+    "homophones_cm1",
+    "ces_ses"
+  ],
+  "review_status": "draft"
+}

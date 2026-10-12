@@ -19,6 +19,8 @@ extends Control
 @onready var _animations_box: HBoxContainer = %AnimationsBox
 @onready var _adult_button: Button = %AdultButton
 @onready var _back_button: Button = %BackButton
+@onready var _quit_button: Button = %QuitButton
+@onready var _quit_dialog: ConfirmationDialog = %QuitDialog
 
 
 func _ready() -> void:
@@ -28,6 +30,7 @@ func _ready() -> void:
     _animations_label.text = UIText.get_text("settings.animations_label")
     _adult_button.text = UIText.get_text("settings.adult_button")
     _back_button.text = UIText.get_text("settings.back_button")
+    _quit_button.text = UIText.get_text("quit.button")
 
     _music_label.text = UIText.get_text("settings.music_label")
     _effects_label.text = UIText.get_text("settings.effects_label")
@@ -45,6 +48,7 @@ func _ready() -> void:
 
     _adult_button.pressed.connect(_on_adult_pressed)
     _back_button.pressed.connect(_on_back_pressed)
+    _quit_button.pressed.connect(_quit_dialog.request)
 
 
 func _build_text_size_buttons() -> void:

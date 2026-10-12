@@ -1,0 +1,23 @@
+{
+  "id": "cm1_ces_ses_qcm_02",
+  "level": "CM1",
+  "domain": "orthographe",
+  "skill": "homophones_cm1",
+  "rule_id": "regle_ces_ses",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Théo range ... crayons dans sa trousse.",
+  "answers": [
+    "ses",
+    "ces"
+  ],
+  "correct_answer": 0,
+  "hint": "Remplace par « son » : « son crayon » a du sens.",
+  "explanation": "« Ses » est le pluriel de « son » : les crayons de Théo.",
+  "review_tags": [
+    "homophones_cm1",
+    "ces_ses"
+  ],
+  "review_status": "draft"
+}

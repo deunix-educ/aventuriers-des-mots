@@ -1,0 +1,24 @@
+{
+  "id": "cm2_tion_sion_qcm_05",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "orthographe_cm2",
+  "rule_id": "regle_tion_sion_ssion",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Le professeur pose une ... aux élèves.",
+  "answers": [
+    "queston",
+    "question",
+    "questsion"
+  ],
+  "correct_answer": 1,
+  "hint": "Le plus souvent, on écrit -tion.",
+  "explanation": "Le mot « question » s'écrit avec -tion.",
+  "review_tags": [
+    "orthographe_cm2",
+    "tion_sion"
+  ],
+  "review_status": "draft"
+}

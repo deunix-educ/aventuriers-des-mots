@@ -1,0 +1,15 @@
+{
+  "level": "CM2",
+  "region_id": "bibliotheque_des_mots",
+  "chapter_id": "orthographe_cm2",
+  "title": "L'orthographe des mots",
+  "region_title": "La bibliothèque des mots",
+  "order": 3,
+  "backdrop": "library",
+  "rule_ids": [
+    "regle_adverbes_ment",
+    "regle_tion_sion_ssion",
+    "regle_adjectifs_couleur"
+  ],
+  "review_status": "draft"
+}

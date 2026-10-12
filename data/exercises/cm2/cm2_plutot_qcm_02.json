@@ -1,0 +1,23 @@
+{
+  "id": "cm2_plutot_qcm_02",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "homophones_cm2",
+  "rule_id": "regle_plutot_plus_tot",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Demain, il faut se lever ... .",
+  "answers": [
+    "plus tôt",
+    "plutôt"
+  ],
+  "correct_answer": 0,
+  "hint": "Remplace par « plus tard » : « se lever plus tard » a du sens.",
+  "explanation": "On peut dire « plus tard » : on écrit « plus tôt ».",
+  "review_tags": [
+    "homophones_cm2",
+    "plutot"
+  ],
+  "review_status": "draft"
+}

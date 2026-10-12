@@ -1,0 +1,23 @@
+{
+  "id": "cm2_futur_cond_qcm_01",
+  "level": "CM2",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm2",
+  "rule_id": "regle_futur_conditionnel",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Demain, je ... te voir.",
+  "answers": [
+    "viendrais",
+    "viendrai"
+  ],
+  "correct_answer": 1,
+  "hint": "« Demain » : l'action est certaine, c'est le futur.",
+  "explanation": "L'action est certaine : on écrit le futur « viendrai ».",
+  "review_tags": [
+    "verbes_cm2",
+    "futur_cond"
+  ],
+  "review_status": "draft"
+}

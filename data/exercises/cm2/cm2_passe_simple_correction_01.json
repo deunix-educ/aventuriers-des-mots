@@ -1,0 +1,49 @@
+{
+  "id": "cm2_passe_simple_correction_01",
+  "level": "CM2",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm2",
+  "rule_id": "regle_passe_simple",
+  "difficulty": 1,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Soudain,",
+      "correct": true
+    },
+    {
+      "text": "le",
+      "correct": true
+    },
+    {
+      "text": "héros",
+      "correct": true
+    },
+    {
+      "text": "entrat",
+      "correct": false,
+      "expected": "entra",
+      "rule_id": "regle_passe_simple"
+    },
+    {
+      "text": "dans",
+      "correct": true
+    },
+    {
+      "text": "la",
+      "correct": true
+    },
+    {
+      "text": "grotte.",
+      "correct": true
+    }
+  ],
+  "hint": "Au passé simple, un verbe en -er finit par -a.",
+  "explanation": "À la 3e personne du singulier, un verbe en -er finit par -a : « il entra ».",
+  "review_tags": [
+    "verbes_cm2",
+    "passe_simple"
+  ],
+  "review_status": "draft"
+}

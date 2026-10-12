@@ -1,0 +1,23 @@
+{
+  "id": "cm2_participe_cod_qcm_07",
+  "level": "CM2",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm2",
+  "rule_id": "regle_participe_cod_avant",
+  "difficulty": 3,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Les photos qu'elle a ... sont réussies.",
+  "answers": [
+    "pris",
+    "prises"
+  ],
+  "correct_answer": 1,
+  "hint": "Les photos (que) sont placées avant le verbe : le participe s'accorde.",
+  "explanation": "Le complément « que » (= les photos) est avant : « prises ».",
+  "review_tags": [
+    "verbes_cm2",
+    "participe_cod"
+  ],
+  "review_status": "draft"
+}

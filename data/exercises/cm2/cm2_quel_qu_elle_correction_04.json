@@ -1,0 +1,45 @@
+{
+  "id": "cm2_quel_qu_elle_correction_04",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "homophones_cm2",
+  "rule_id": "regle_quel_qu_elle",
+  "difficulty": 3,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Léa",
+      "correct": true
+    },
+    {
+      "text": "m'a",
+      "correct": true
+    },
+    {
+      "text": "dit",
+      "correct": true
+    },
+    {
+      "text": "quelles",
+      "correct": false,
+      "expected": "qu'elles",
+      "rule_id": "regle_quel_qu_elle"
+    },
+    {
+      "text": "étaient",
+      "correct": true
+    },
+    {
+      "text": "fatiguées.",
+      "correct": true
+    }
+  ],
+  "hint": "Remplace par « qu'ils » : « il m'a dit qu'ils étaient fatigués » a du sens.",
+  "explanation": "On peut dire « qu'ils » : on écrit « qu'elles ».",
+  "review_tags": [
+    "homophones_cm2",
+    "quel_qu_elle"
+  ],
+  "review_status": "draft"
+}

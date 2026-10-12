@@ -1,0 +1,23 @@
+{
+  "id": "cm2_participe_cod_qcm_04",
+  "level": "CM2",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm2",
+  "rule_id": "regle_participe_cod_avant",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Les pommes que Paul a ... étaient bonnes.",
+  "answers": [
+    "mangées",
+    "mangé"
+  ],
+  "correct_answer": 0,
+  "hint": "Les pommes (que) sont placées avant le verbe : le participe s'accorde.",
+  "explanation": "Le complément « que » (= les pommes) est avant : « mangées ».",
+  "review_tags": [
+    "verbes_cm2",
+    "participe_cod"
+  ],
+  "review_status": "draft"
+}

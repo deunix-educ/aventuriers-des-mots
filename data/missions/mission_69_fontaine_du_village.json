@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_69_fontaine_du_village",
+  "title": "La fontaine du village",
+  "narrative_context": "La fontaine murmure une phrase, une seule fois. Écoute bien et écris-la en entier.",
+  "rule_id": "regle_imparfait",
+  "exercise_type": "dictation",
+  "map_position": {
+    "x": 0.85,
+    "y": 0.15
+  },
+  "review_status": "draft"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cm2_futur_cond_qcm_04",
+  "level": "CM2",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm2",
+  "rule_id": "regle_futur_conditionnel",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Si tu étudiais plus, tu ... ton examen.",
+  "answers": [
+    "réussirais",
+    "réussiras"
+  ],
+  "correct_answer": 0,
+  "hint": "Après « si » + imparfait, on emploie le conditionnel.",
+  "explanation": "Après « si tu étudiais », on écrit le conditionnel : « réussirais ».",
+  "review_tags": [
+    "verbes_cm2",
+    "futur_cond"
+  ],
+  "review_status": "draft"
+}

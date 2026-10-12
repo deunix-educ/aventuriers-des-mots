@@ -1,0 +1,39 @@
+{
+  "id": "cm1_imparfait_dictee_01",
+  "level": "CM1",
+  "domain": "grammaire",
+  "rule_ids": [
+    "regle_imparfait"
+  ],
+  "difficulty": 1,
+  "target_text": "Autrefois, les villageois puisaient l'eau au puits.",
+  "words": [
+    {
+      "text": "Autrefois,",
+      "expects_capital": true
+    },
+    {
+      "text": "les"
+    },
+    {
+      "text": "villageois"
+    },
+    {
+      "text": "puisaient",
+      "rule_id": "regle_imparfait"
+    },
+    {
+      "text": "l'eau"
+    },
+    {
+      "text": "au"
+    },
+    {
+      "text": "puits."
+    }
+  ],
+  "audio_id": "cm1_imparfait_dictee_01",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

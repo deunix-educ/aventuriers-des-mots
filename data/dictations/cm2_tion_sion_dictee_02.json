@@ -1,0 +1,39 @@
+{
+  "id": "cm2_tion_sion_dictee_02",
+  "level": "CM2",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_tion_sion_ssion"
+  ],
+  "difficulty": 2,
+  "target_text": "La mission des astronautes dure six mois.",
+  "words": [
+    {
+      "text": "La",
+      "expects_capital": true
+    },
+    {
+      "text": "mission",
+      "rule_id": "regle_tion_sion_ssion"
+    },
+    {
+      "text": "des"
+    },
+    {
+      "text": "astronautes"
+    },
+    {
+      "text": "dure"
+    },
+    {
+      "text": "six"
+    },
+    {
+      "text": "mois."
+    }
+  ],
+  "audio_id": "cm2_tion_sion_dictee_02",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

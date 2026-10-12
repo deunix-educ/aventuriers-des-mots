@@ -1,0 +1,23 @@
+{
+  "id": "cm2_participe_cod_qcm_03",
+  "level": "CM2",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm2",
+  "rule_id": "regle_participe_cod_avant",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Paul a ... les pommes.",
+  "answers": [
+    "mangées",
+    "mangé"
+  ],
+  "correct_answer": 1,
+  "hint": "Les pommes sont placées après le verbe : le participe ne s'accorde pas.",
+  "explanation": "Le complément est après le verbe : le participe reste « mangé ».",
+  "review_tags": [
+    "verbes_cm2",
+    "participe_cod"
+  ],
+  "review_status": "draft"
+}

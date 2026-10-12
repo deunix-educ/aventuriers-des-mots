@@ -1,0 +1,23 @@
+{
+  "id": "cm2_plutot_qcm_01",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "homophones_cm2",
+  "rule_id": "regle_plutot_plus_tot",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Je prends ... du thé que du café.",
+  "answers": [
+    "plutôt",
+    "plus tôt"
+  ],
+  "correct_answer": 0,
+  "hint": "Remplace par « plus tard » : la phrase n'a pas de sens.",
+  "explanation": "On exprime une préférence : on écrit « plutôt ».",
+  "review_tags": [
+    "homophones_cm2",
+    "plutot"
+  ],
+  "review_status": "draft"
+}

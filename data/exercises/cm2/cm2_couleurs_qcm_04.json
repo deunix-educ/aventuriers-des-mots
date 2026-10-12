@@ -1,0 +1,23 @@
+{
+  "id": "cm2_couleurs_qcm_04",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "orthographe_cm2",
+  "rule_id": "regle_adjectifs_couleur",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Il a mis des chaussures ... .",
+  "answers": [
+    "marron",
+    "marrons"
+  ],
+  "correct_answer": 0,
+  "hint": "« Marron » vient du nom du fruit : il reste invariable.",
+  "explanation": "« Marron » est un nom employé comme couleur : il reste invariable.",
+  "review_tags": [
+    "orthographe_cm2",
+    "couleurs"
+  ],
+  "review_status": "draft"
+}

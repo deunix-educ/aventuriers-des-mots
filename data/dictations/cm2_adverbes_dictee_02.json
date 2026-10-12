@@ -1,0 +1,39 @@
+{
+  "id": "cm2_adverbes_dictee_02",
+  "level": "CM2",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_adverbes_ment"
+  ],
+  "difficulty": 2,
+  "target_text": "Elle lit à voix haute très couramment.",
+  "words": [
+    {
+      "text": "Elle",
+      "expects_capital": true
+    },
+    {
+      "text": "lit"
+    },
+    {
+      "text": "à"
+    },
+    {
+      "text": "voix"
+    },
+    {
+      "text": "haute"
+    },
+    {
+      "text": "très"
+    },
+    {
+      "text": "couramment.",
+      "rule_id": "regle_adverbes_ment"
+    }
+  ],
+  "audio_id": "cm2_adverbes_dictee_02",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

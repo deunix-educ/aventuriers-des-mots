@@ -1,0 +1,23 @@
+{
+  "id": "cm2_quel_qu_elle_qcm_07",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "homophones_cm2",
+  "rule_id": "regle_quel_qu_elle",
+  "difficulty": 3,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Les filles disent ... ont faim.",
+  "answers": [
+    "quelles",
+    "qu'elles"
+  ],
+  "correct_answer": 1,
+  "hint": "Remplace par « qu'ils » : « les garçons disent qu'ils ont faim » a du sens.",
+  "explanation": "On peut dire « qu'ils » : on écrit « qu'elles ».",
+  "review_tags": [
+    "homophones_cm2",
+    "quel_qu_elle"
+  ],
+  "review_status": "draft"
+}

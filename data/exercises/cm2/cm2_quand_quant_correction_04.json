@@ -1,0 +1,57 @@
+{
+  "id": "cm2_quand_quant_correction_04",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "homophones_cm2",
+  "rule_id": "regle_quand_quant_qu_en",
+  "difficulty": 3,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Mamie",
+      "correct": true
+    },
+    {
+      "text": "dit",
+      "correct": true
+    },
+    {
+      "text": "toujours",
+      "correct": true
+    },
+    {
+      "text": "quand",
+      "correct": false,
+      "expected": "qu'en",
+      "rule_id": "regle_quand_quant_qu_en"
+    },
+    {
+      "text": "hiver",
+      "correct": true
+    },
+    {
+      "text": "il",
+      "correct": true
+    },
+    {
+      "text": "faut",
+      "correct": true
+    },
+    {
+      "text": "se",
+      "correct": true
+    },
+    {
+      "text": "couvrir.",
+      "correct": true
+    }
+  ],
+  "hint": "Il y a « que » + « en » : « elle dit que, en hiver ».",
+  "explanation": "C'est « que » + « en » : on écrit « qu'en ».",
+  "review_tags": [
+    "homophones_cm2",
+    "quand_quant"
+  ],
+  "review_status": "draft"
+}

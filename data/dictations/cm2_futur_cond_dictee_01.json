@@ -1,0 +1,45 @@
+{
+  "id": "cm2_futur_cond_dictee_01",
+  "level": "CM2",
+  "domain": "grammaire",
+  "rule_ids": [
+    "regle_futur_conditionnel"
+  ],
+  "difficulty": 1,
+  "target_text": "Si j'avais une cape, je volerais au-dessus des nuages.",
+  "words": [
+    {
+      "text": "Si",
+      "expects_capital": true
+    },
+    {
+      "text": "j'avais"
+    },
+    {
+      "text": "une"
+    },
+    {
+      "text": "cape,"
+    },
+    {
+      "text": "je"
+    },
+    {
+      "text": "volerais",
+      "rule_id": "regle_futur_conditionnel"
+    },
+    {
+      "text": "au-dessus"
+    },
+    {
+      "text": "des"
+    },
+    {
+      "text": "nuages."
+    }
+  ],
+  "audio_id": "cm2_futur_cond_dictee_01",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

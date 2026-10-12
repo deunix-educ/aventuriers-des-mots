@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_98_observatoire",
+  "title": "L'observatoire",
+  "narrative_context": "Le registre de l'observatoire contient un verbe mal conjugué. Trouve-le et corrige-le.",
+  "rule_id": "regle_passe_simple",
+  "exercise_type": "sentence_correction",
+  "map_position": {
+    "x": 0.5,
+    "y": 0.5
+  },
+  "review_status": "draft"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "cm1_pluriel_aux_qcm_06",
+  "level": "CM1",
+  "domain": "orthographe",
+  "skill": "orthographe_cm1",
+  "rule_id": "regle_pluriel_aux_eaux",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "J'ai trouvé trois petits ... sur la plage.",
+  "answers": [
+    "cailloux",
+    "caillous",
+    "cailloues"
+  ],
+  "correct_answer": 0,
+  "hint": "« Caillou » fait partie des noms en -ou qui prennent un -x.",
+  "explanation": "« Caillou » prend un -x au pluriel : « cailloux ».",
+  "review_tags": [
+    "orthographe_cm1",
+    "pluriel_aux"
+  ],
+  "review_status": "draft"
+}

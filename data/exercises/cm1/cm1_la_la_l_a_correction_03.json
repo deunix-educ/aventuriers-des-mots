@@ -1,0 +1,49 @@
+{
+  "id": "cm1_la_la_l_a_correction_03",
+  "level": "CM1",
+  "domain": "orthographe",
+  "skill": "orthographe_cm1",
+  "rule_id": "regle_la_la_accent_l_a",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "L'a",
+      "correct": false,
+      "expected": "La",
+      "rule_id": "regle_la_la_accent_l_a"
+    },
+    {
+      "text": "maison",
+      "correct": true
+    },
+    {
+      "text": "de",
+      "correct": true
+    },
+    {
+      "text": "Léa",
+      "correct": true
+    },
+    {
+      "text": "est",
+      "correct": true
+    },
+    {
+      "text": "très",
+      "correct": true
+    },
+    {
+      "text": "grande.",
+      "correct": true
+    }
+  ],
+  "hint": "« La » est ici un article devant le nom « maison ».",
+  "explanation": "« La » accompagne le nom « maison » : on écrit « la ».",
+  "review_tags": [
+    "orthographe_cm1",
+    "la_la_l_a"
+  ],
+  "review_status": "draft"
+}

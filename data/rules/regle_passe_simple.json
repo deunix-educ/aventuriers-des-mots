@@ -1,0 +1,9 @@
+{
+  "rule_id": "regle_passe_simple",
+  "level": "CM2",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm2",
+  "statement": "Au passé simple, à la 3e personne, les verbes en -er font -a (il chanta) et -èrent (ils chantèrent) ; les autres font souvent -it et -irent (il finit, ils finirent).",
+  "example": "Il chanta. Ils chantèrent. Elle finit. Elles finirent.",
+  "review_status": "draft"
+}

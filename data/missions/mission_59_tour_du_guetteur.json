@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_59_tour_du_guetteur",
+  "title": "La tour du guetteur",
+  "narrative_context": "Le guetteur a mal écrit un message. Trouve l'erreur sur « leur » ou « leurs » et corrige-la.",
+  "rule_id": "regle_leur_leurs",
+  "exercise_type": "sentence_correction",
+  "map_position": {
+    "x": 0.5,
+    "y": 0.15
+  },
+  "review_status": "draft"
+}

@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_97_village_de_pierre",
+  "title": "Le village de pierre",
+  "narrative_context": "Au village de pierre, tout s'est passé en un instant. Choisis la bonne forme du passé simple.",
+  "rule_id": "regle_passe_simple",
+  "exercise_type": "multiple_choice",
+  "map_position": {
+    "x": 0.15,
+    "y": 0.5
+  },
+  "review_status": "draft"
+}

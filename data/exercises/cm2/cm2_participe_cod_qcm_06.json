@@ -1,0 +1,23 @@
+{
+  "id": "cm2_participe_cod_qcm_06",
+  "level": "CM2",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm2",
+  "rule_id": "regle_participe_cod_avant",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Max a ... plusieurs lettres.",
+  "answers": [
+    "écrites",
+    "écrit"
+  ],
+  "correct_answer": 1,
+  "hint": "Les lettres sont placées après le verbe : le participe ne s'accorde pas.",
+  "explanation": "Le complément est après le verbe : le participe reste « écrit ».",
+  "review_tags": [
+    "verbes_cm2",
+    "participe_cod"
+  ],
+  "review_status": "draft"
+}

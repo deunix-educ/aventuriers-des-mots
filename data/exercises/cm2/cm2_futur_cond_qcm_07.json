@@ -1,0 +1,23 @@
+{
+  "id": "cm2_futur_cond_qcm_07",
+  "level": "CM2",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm2",
+  "rule_id": "regle_futur_conditionnel",
+  "difficulty": 3,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Ils ... du feu s'ils avaient du bois.",
+  "answers": [
+    "feront",
+    "feraient"
+  ],
+  "correct_answer": 1,
+  "hint": "Après « s'ils avaient » (imparfait), on emploie le conditionnel.",
+  "explanation": "Après « s'ils avaient », on écrit le conditionnel : « feraient ».",
+  "review_tags": [
+    "verbes_cm2",
+    "futur_cond"
+  ],
+  "review_status": "draft"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "cm1_participe_forme_qcm_06",
+  "level": "CM1",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm1",
+  "rule_id": "regle_participe_passe_forme",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Nous avons ... le train de justesse.",
+  "answers": [
+    "pri",
+    "prit",
+    "pris"
+  ],
+  "correct_answer": 2,
+  "hint": "Le participe du verbe « prendre » finit par -is.",
+  "explanation": "Le participe passé de « prendre » est « pris ».",
+  "review_tags": [
+    "verbes_cm1",
+    "participe_forme"
+  ],
+  "review_status": "draft"
+}

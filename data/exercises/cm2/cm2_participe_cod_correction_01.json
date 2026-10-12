@@ -1,0 +1,57 @@
+{
+  "id": "cm2_participe_cod_correction_01",
+  "level": "CM2",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm2",
+  "rule_id": "regle_participe_cod_avant",
+  "difficulty": 1,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Les",
+      "correct": true
+    },
+    {
+      "text": "framboises",
+      "correct": true
+    },
+    {
+      "text": "que",
+      "correct": true
+    },
+    {
+      "text": "ma",
+      "correct": true
+    },
+    {
+      "text": "sœur",
+      "correct": true
+    },
+    {
+      "text": "a",
+      "correct": true
+    },
+    {
+      "text": "cueilli",
+      "correct": false,
+      "expected": "cueillies",
+      "rule_id": "regle_participe_cod_avant"
+    },
+    {
+      "text": "sont",
+      "correct": true
+    },
+    {
+      "text": "mûres.",
+      "correct": true
+    }
+  ],
+  "hint": "Les framboises (que) sont placées avant le verbe : le participe s'accorde.",
+  "explanation": "Le complément « que » (= les framboises) est avant : « cueillies ».",
+  "review_tags": [
+    "verbes_cm2",
+    "participe_cod"
+  ],
+  "review_status": "draft"
+}

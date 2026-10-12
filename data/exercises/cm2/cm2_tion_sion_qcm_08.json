@@ -1,0 +1,24 @@
+{
+  "id": "cm2_tion_sion_qcm_08",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "orthographe_cm2",
+  "rule_id": "regle_tion_sion_ssion",
+  "difficulty": 3,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Il y a trop de ... dans cette pièce.",
+  "answers": [
+    "tension",
+    "tenssion",
+    "tention"
+  ],
+  "correct_answer": 0,
+  "hint": "Ce mot s'écrit avec -sion.",
+  "explanation": "Le mot « tension » s'écrit avec -sion.",
+  "review_tags": [
+    "orthographe_cm2",
+    "tion_sion"
+  ],
+  "review_status": "draft"
+}

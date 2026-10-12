@@ -1,0 +1,23 @@
+{
+  "id": "cm2_quel_qu_elle_qcm_04",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "homophones_cm2",
+  "rule_id": "regle_quel_qu_elle",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Dis-moi à ... étage tu habites.",
+  "answers": [
+    "quel",
+    "qu'elle"
+  ],
+  "correct_answer": 0,
+  "hint": "Remplace par « qu'il » : la phrase n'a pas de sens.",
+  "explanation": "« Quel » accompagne le nom « étage » : on écrit « quel ».",
+  "review_tags": [
+    "homophones_cm2",
+    "quel_qu_elle"
+  ],
+  "review_status": "draft"
+}

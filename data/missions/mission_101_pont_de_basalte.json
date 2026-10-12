@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_101_pont_de_basalte",
+  "title": "Le pont de basalte",
+  "narrative_context": "Un participe du pont de basalte est mal accordé. Trouve-le et corrige-le.",
+  "rule_id": "regle_participe_cod_avant",
+  "exercise_type": "sentence_correction",
+  "map_position": {
+    "x": 0.5,
+    "y": 0.85
+  },
+  "review_status": "draft"
+}

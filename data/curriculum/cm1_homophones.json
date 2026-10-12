@@ -1,0 +1,15 @@
+{
+  "level": "CM1",
+  "region_id": "chateau_des_homophones",
+  "chapter_id": "homophones_cm1",
+  "title": "Les homophones",
+  "region_title": "Le château des homophones",
+  "order": 1,
+  "backdrop": "castle",
+  "rule_ids": [
+    "regle_leur_leurs",
+    "regle_ces_ses",
+    "regle_c_est_s_est"
+  ],
+  "review_status": "draft"
+}

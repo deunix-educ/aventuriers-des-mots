@@ -1,0 +1,42 @@
+{
+  "id": "cm2_futur_cond_dictee_02",
+  "level": "CM2",
+  "domain": "grammaire",
+  "rule_ids": [
+    "regle_futur_conditionnel"
+  ],
+  "difficulty": 2,
+  "target_text": "Le guide nous montrera la lave dès demain.",
+  "words": [
+    {
+      "text": "Le",
+      "expects_capital": true
+    },
+    {
+      "text": "guide"
+    },
+    {
+      "text": "nous"
+    },
+    {
+      "text": "montrera",
+      "rule_id": "regle_futur_conditionnel"
+    },
+    {
+      "text": "la"
+    },
+    {
+      "text": "lave"
+    },
+    {
+      "text": "dès"
+    },
+    {
+      "text": "demain."
+    }
+  ],
+  "audio_id": "cm2_futur_cond_dictee_02",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

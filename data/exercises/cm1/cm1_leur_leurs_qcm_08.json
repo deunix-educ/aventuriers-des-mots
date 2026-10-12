@@ -1,0 +1,23 @@
+{
+  "id": "cm1_leur_leurs_qcm_08",
+  "level": "CM1",
+  "domain": "orthographe",
+  "skill": "homophones_cm1",
+  "rule_id": "regle_leur_leurs",
+  "difficulty": 3,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Ils ne ... ont pas répondu hier.",
+  "answers": [
+    "leurs",
+    "leur"
+  ],
+  "correct_answer": 1,
+  "hint": "Remplace par « lui » : « ils ne lui ont pas répondu » a du sens.",
+  "explanation": "On peut dire « ne lui ont pas répondu » : « leur » reste sans -s.",
+  "review_tags": [
+    "homophones_cm1",
+    "leur_leurs"
+  ],
+  "review_status": "draft"
+}

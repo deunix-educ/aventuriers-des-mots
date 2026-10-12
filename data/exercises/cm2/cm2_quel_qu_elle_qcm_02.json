@@ -1,0 +1,23 @@
+{
+  "id": "cm2_quel_qu_elle_qcm_02",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "homophones_cm2",
+  "rule_id": "regle_quel_qu_elle",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Je crois ... est partie.",
+  "answers": [
+    "quelle",
+    "qu'elle"
+  ],
+  "correct_answer": 1,
+  "hint": "Remplace par « qu'il » : « je crois qu'il est parti » a du sens.",
+  "explanation": "On peut dire « qu'il » : on écrit « qu'elle ».",
+  "review_tags": [
+    "homophones_cm2",
+    "quel_qu_elle"
+  ],
+  "review_status": "draft"
+}

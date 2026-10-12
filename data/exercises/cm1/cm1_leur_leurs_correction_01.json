@@ -1,0 +1,41 @@
+{
+  "id": "cm1_leur_leurs_correction_01",
+  "level": "CM1",
+  "domain": "orthographe",
+  "skill": "homophones_cm1",
+  "rule_id": "regle_leur_leurs",
+  "difficulty": 1,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Les",
+      "correct": true
+    },
+    {
+      "text": "chats",
+      "correct": true
+    },
+    {
+      "text": "lèchent",
+      "correct": true
+    },
+    {
+      "text": "leur",
+      "correct": false,
+      "expected": "leurs",
+      "rule_id": "regle_leur_leurs"
+    },
+    {
+      "text": "pattes.",
+      "correct": true
+    }
+  ],
+  "hint": "Remplace par « ses » : « ses pattes » a du sens.",
+  "explanation": "On peut dire « ses pattes » : il faut « leurs ».",
+  "review_tags": [
+    "homophones_cm1",
+    "leur_leurs"
+  ],
+  "review_status": "draft"
+}

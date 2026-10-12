@@ -1,0 +1,45 @@
+{
+  "id": "cm1_pluriel_aux_correction_01",
+  "level": "CM1",
+  "domain": "orthographe",
+  "skill": "orthographe_cm1",
+  "rule_id": "regle_pluriel_aux_eaux",
+  "difficulty": 1,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Les",
+      "correct": true
+    },
+    {
+      "text": "chevals",
+      "correct": false,
+      "expected": "chevaux",
+      "rule_id": "regle_pluriel_aux_eaux"
+    },
+    {
+      "text": "galopent",
+      "correct": true
+    },
+    {
+      "text": "dans",
+      "correct": true
+    },
+    {
+      "text": "le",
+      "correct": true
+    },
+    {
+      "text": "champ.",
+      "correct": true
+    }
+  ],
+  "hint": "Le nom « cheval » finit par -al.",
+  "explanation": "Les noms en -al font -aux au pluriel : « chevaux ».",
+  "review_tags": [
+    "orthographe_cm1",
+    "pluriel_aux"
+  ],
+  "review_status": "draft"
+}

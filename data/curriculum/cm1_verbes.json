@@ -1,0 +1,15 @@
+{
+  "level": "CM1",
+  "region_id": "village_des_verbes",
+  "chapter_id": "verbes_cm1",
+  "title": "Les verbes : temps du passé",
+  "region_title": "Le village des verbes",
+  "order": 2,
+  "backdrop": "village",
+  "rule_ids": [
+    "regle_imparfait",
+    "regle_participe_passe_forme",
+    "regle_accord_participe_etre"
+  ],
+  "review_status": "draft"
+}

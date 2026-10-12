@@ -1,0 +1,9 @@
+{
+  "rule_id": "regle_plutot_plus_tot",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "homophones_cm2",
+  "statement": "« plutôt » exprime une préférence ou une nuance (plutôt du thé) ; « plus tôt » s'oppose à « plus tard » : on peut le remplacer par « plus tard ».",
+  "example": "Je prends plutôt du thé. Viens plus tôt demain.",
+  "review_status": "draft"
+}

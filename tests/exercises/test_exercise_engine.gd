@@ -15,7 +15,7 @@ func test_unknown_rule_returns_empty_dictionary() -> void:
 
 func test_missions_are_loaded_and_sorted() -> void:
     var missions := ExerciseEngine.get_missions()
-    assert_eq(missions.size(), 57)
+    assert_eq(missions.size(), 111)
     var ids: Array = missions.map(func(m: Dictionary) -> String: return m["mission_id"])
     assert_eq(ids, ids.duplicate())  # trivialement vrai, documente l'ordre stable
     assert_true(ids.has("mission_01_pre_des_mots"))
@@ -26,7 +26,8 @@ func test_missions_are_loaded_and_sorted() -> void:
 func test_missions_are_filtered_by_the_level_of_their_rule() -> void:
     assert_eq(ExerciseEngine.get_missions_for_level("CE1").size(), 27)
     assert_eq(ExerciseEngine.get_missions_for_level("CE2").size(), 30)
-    assert_eq(ExerciseEngine.get_missions_for_level("CM1").size(), 0)
+    assert_eq(ExerciseEngine.get_missions_for_level("CM1").size(), 27)
+    assert_eq(ExerciseEngine.get_missions_for_level("CM2").size(), 27)
 
 
 func test_regions_are_ordered_and_hold_their_missions() -> void:

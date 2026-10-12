@@ -1,0 +1,42 @@
+{
+  "id": "cm1_leur_leurs_dictee_01",
+  "level": "CM1",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_leur_leurs"
+  ],
+  "difficulty": 1,
+  "target_text": "Les enfants rangent leurs affaires dans le placard.",
+  "words": [
+    {
+      "text": "Les",
+      "expects_capital": true
+    },
+    {
+      "text": "enfants"
+    },
+    {
+      "text": "rangent"
+    },
+    {
+      "text": "leurs",
+      "rule_id": "regle_leur_leurs"
+    },
+    {
+      "text": "affaires"
+    },
+    {
+      "text": "dans"
+    },
+    {
+      "text": "le"
+    },
+    {
+      "text": "placard."
+    }
+  ],
+  "audio_id": "cm1_leur_leurs_dictee_01",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

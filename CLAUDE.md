@@ -1,6 +1,6 @@
 # Les Aventuriers des mots
 
-Jeu éducatif de français CE1–CE2 (7–9 ans), aventure 2D, hors ligne, Godot 4 / GDScript typé. Projet open source.
+Jeu éducatif de français CE1 à CM2 (7–11 ans), aventure 2D, hors ligne, Godot 4 / GDScript typé. Projet open source.
 
 - Spécification de référence : `docs/specs/cahier-des-charges.md`. Elle fait foi. En cas de contradiction ou d'ambiguïté, poser la question au lieu de trancher seul.
 - Cycle de vie d'un exercice : `docs/specs/exercise-lifecycle.md`.

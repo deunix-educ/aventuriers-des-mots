@@ -1,0 +1,45 @@
+{
+  "id": "cm2_quand_quant_dictee_03",
+  "level": "CM2",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_quand_quant_qu_en"
+  ],
+  "difficulty": 3,
+  "target_text": "Je sais bien qu'en été les nuits sont courtes.",
+  "words": [
+    {
+      "text": "Je",
+      "expects_capital": true
+    },
+    {
+      "text": "sais"
+    },
+    {
+      "text": "bien"
+    },
+    {
+      "text": "qu'en",
+      "rule_id": "regle_quand_quant_qu_en"
+    },
+    {
+      "text": "été"
+    },
+    {
+      "text": "les"
+    },
+    {
+      "text": "nuits"
+    },
+    {
+      "text": "sont"
+    },
+    {
+      "text": "courtes."
+    }
+  ],
+  "audio_id": "cm2_quand_quant_dictee_03",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

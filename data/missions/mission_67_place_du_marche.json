@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_67_place_du_marche",
+  "title": "La place du marché",
+  "narrative_context": "Sur la place du marché, tout se passait autrefois. Choisis la bonne forme de l'imparfait.",
+  "rule_id": "regle_imparfait",
+  "exercise_type": "multiple_choice",
+  "map_position": {
+    "x": 0.15,
+    "y": 0.15
+  },
+  "review_status": "draft"
+}

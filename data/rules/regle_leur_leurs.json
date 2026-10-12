@@ -1,0 +1,9 @@
+{
+  "rule_id": "regle_leur_leurs",
+  "level": "CM1",
+  "domain": "orthographe",
+  "skill": "homophones_cm1",
+  "statement": "« leur » ne prend pas de -s quand il accompagne un verbe (je leur parle) ; « leurs » prend un -s quand il accompagne un nom pluriel (leurs amis).",
+  "example": "Je leur donne un livre. Ils rangent leurs jouets.",
+  "review_status": "draft"
+}

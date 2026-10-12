@@ -1,0 +1,36 @@
+{
+  "id": "cm2_adverbes_dictee_01",
+  "level": "CM2",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_adverbes_ment"
+  ],
+  "difficulty": 1,
+  "target_text": "Le lion regarde sa proie patiemment.",
+  "words": [
+    {
+      "text": "Le",
+      "expects_capital": true
+    },
+    {
+      "text": "lion"
+    },
+    {
+      "text": "regarde"
+    },
+    {
+      "text": "sa"
+    },
+    {
+      "text": "proie"
+    },
+    {
+      "text": "patiemment.",
+      "rule_id": "regle_adverbes_ment"
+    }
+  ],
+  "audio_id": "cm2_adverbes_dictee_01",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_107_reserve_des_manuscrits",
+  "title": "La réserve des manuscrits",
+  "narrative_context": "Un manuscrit contient une faute sur une terminaison. Repère-la et corrige-la.",
+  "rule_id": "regle_tion_sion_ssion",
+  "exercise_type": "sentence_correction",
+  "map_position": {
+    "x": 0.5,
+    "y": 0.5
+  },
+  "review_status": "draft"
+}

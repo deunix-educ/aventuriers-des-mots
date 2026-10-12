@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_89_capsule_de_secours",
+  "title": "La capsule de secours",
+  "narrative_context": "Le journal de la capsule contient une erreur. Trouve-la et corrige-la.",
+  "rule_id": "regle_quand_quant_qu_en",
+  "exercise_type": "sentence_correction",
+  "map_position": {
+    "x": 0.5,
+    "y": 0.5
+  },
+  "review_status": "draft"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cm2_participe_cod_qcm_05",
+  "level": "CM2",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm2",
+  "rule_id": "regle_participe_cod_avant",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "La lettre que j'ai ... est partie.",
+  "answers": [
+    "écrite",
+    "écrit"
+  ],
+  "correct_answer": 0,
+  "hint": "La lettre (que) est placée avant le verbe : le participe s'accorde.",
+  "explanation": "Le complément « que » (= la lettre) est avant : « écrite ».",
+  "review_tags": [
+    "verbes_cm2",
+    "participe_cod"
+  ],
+  "review_status": "draft"
+}

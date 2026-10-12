@@ -1,0 +1,45 @@
+{
+  "id": "cm2_plutot_dictee_03",
+  "level": "CM2",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_plutot_plus_tot"
+  ],
+  "difficulty": 3,
+  "target_text": "Il est arrivé plus tôt que les autres invités.",
+  "words": [
+    {
+      "text": "Il",
+      "expects_capital": true
+    },
+    {
+      "text": "est"
+    },
+    {
+      "text": "arrivé"
+    },
+    {
+      "text": "plus"
+    },
+    {
+      "text": "tôt",
+      "rule_id": "regle_plutot_plus_tot"
+    },
+    {
+      "text": "que"
+    },
+    {
+      "text": "les"
+    },
+    {
+      "text": "autres"
+    },
+    {
+      "text": "invités."
+    }
+  ],
+  "audio_id": "cm2_plutot_dictee_03",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

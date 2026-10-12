@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_61_armurerie_royale",
+  "title": "L'armurerie royale",
+  "narrative_context": "À l'armurerie, chaque objet est étiqueté « ces » ou « ses ». Choisis la bonne étiquette.",
+  "rule_id": "regle_ces_ses",
+  "exercise_type": "multiple_choice",
+  "map_position": {
+    "x": 0.15,
+    "y": 0.5
+  },
+  "review_status": "draft"
+}

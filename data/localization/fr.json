@@ -123,5 +123,16 @@
   "world_map.coming_soon": "Ce niveau arrive bientôt !",
   "skill.conjugaison_present": "Verbes au présent",
   "skill.conjugaison_ce2": "Verbes : accords et formes",
-  "skill.lettres_et_mots": "Lettres et mots"
+  "skill.lettres_et_mots": "Lettres et mots",
+  "skill.homophones_cm1": "Homophones (CM1)",
+  "skill.conjugaison_cm1": "Verbes du passé (CM1)",
+  "skill.orthographe_cm1": "Orthographe des mots (CM1)",
+  "skill.homophones_cm2": "Homophones (CM2)",
+  "skill.conjugaison_cm2": "Verbes : temps et accords (CM2)",
+  "skill.orthographe_cm2": "Orthographe des mots (CM2)",
+  "quit.button": "Quitter le jeu",
+  "quit.confirm_title": "Quitter le jeu ?",
+  "quit.confirm_message": "Ta progression est sauvegardée. À bientôt !",
+  "quit.confirm_yes": "Oui, quitter",
+  "quit.confirm_no": "Non, je reste"
 }

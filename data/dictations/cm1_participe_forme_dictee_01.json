@@ -1,0 +1,42 @@
+{
+  "id": "cm1_participe_forme_dictee_01",
+  "level": "CM1",
+  "domain": "grammaire",
+  "rule_ids": [
+    "regle_participe_passe_forme"
+  ],
+  "difficulty": 1,
+  "target_text": "Hier, j'ai fini mon livre avant le dîner.",
+  "words": [
+    {
+      "text": "Hier,",
+      "expects_capital": true
+    },
+    {
+      "text": "j'ai"
+    },
+    {
+      "text": "fini",
+      "rule_id": "regle_participe_passe_forme"
+    },
+    {
+      "text": "mon"
+    },
+    {
+      "text": "livre"
+    },
+    {
+      "text": "avant"
+    },
+    {
+      "text": "le"
+    },
+    {
+      "text": "dîner."
+    }
+  ],
+  "audio_id": "cm1_participe_forme_dictee_01",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

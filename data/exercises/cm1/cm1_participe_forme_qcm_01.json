@@ -1,0 +1,24 @@
+{
+  "id": "cm1_participe_forme_qcm_01",
+  "level": "CM1",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm1",
+  "rule_id": "regle_participe_passe_forme",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Léa a ... son travail à midi.",
+  "answers": [
+    "fini",
+    "finé",
+    "finu"
+  ],
+  "correct_answer": 0,
+  "hint": "Le verbe « finir » est en -ir : son participe finit par -i.",
+  "explanation": "Les verbes en -ir ont un participe en -i : « fini ».",
+  "review_tags": [
+    "verbes_cm1",
+    "participe_forme"
+  ],
+  "review_status": "draft"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "cm1_participe_etre_correction_03",
+  "level": "CM1",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm1",
+  "rule_id": "regle_accord_participe_etre",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Mes",
+      "correct": true
+    },
+    {
+      "text": "sœurs",
+      "correct": true
+    },
+    {
+      "text": "sont",
+      "correct": true
+    },
+    {
+      "text": "arrivés",
+      "correct": false,
+      "expected": "arrivées",
+      "rule_id": "regle_accord_participe_etre"
+    },
+    {
+      "text": "en",
+      "correct": true
+    },
+    {
+      "text": "avance.",
+      "correct": true
+    }
+  ],
+  "hint": "Le sujet « mes sœurs » est féminin pluriel.",
+  "explanation": "Avec « être », le participe s'accorde avec le sujet : mes sœurs sont arrivées.",
+  "review_tags": [
+    "verbes_cm1",
+    "participe_etre"
+  ],
+  "review_status": "draft"
+}

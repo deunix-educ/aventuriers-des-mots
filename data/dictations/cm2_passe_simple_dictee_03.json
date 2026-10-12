@@ -1,0 +1,39 @@
+{
+  "id": "cm2_passe_simple_dictee_03",
+  "level": "CM2",
+  "domain": "grammaire",
+  "rule_ids": [
+    "regle_passe_simple"
+  ],
+  "difficulty": 3,
+  "target_text": "Soudain, la princesse ouvrit la lourde porte.",
+  "words": [
+    {
+      "text": "Soudain,",
+      "expects_capital": true
+    },
+    {
+      "text": "la"
+    },
+    {
+      "text": "princesse"
+    },
+    {
+      "text": "ouvrit",
+      "rule_id": "regle_passe_simple"
+    },
+    {
+      "text": "la"
+    },
+    {
+      "text": "lourde"
+    },
+    {
+      "text": "porte."
+    }
+  ],
+  "audio_id": "cm2_passe_simple_dictee_03",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

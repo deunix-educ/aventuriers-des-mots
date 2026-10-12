@@ -1,0 +1,24 @@
+{
+  "id": "cm1_imparfait_qcm_08",
+  "level": "CM1",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm1",
+  "rule_id": "regle_imparfait",
+  "difficulty": 3,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Toi et moi, nous ... toujours ensemble à l'école.",
+  "answers": [
+    "allaient",
+    "alliez",
+    "allions"
+  ],
+  "correct_answer": 2,
+  "hint": "« Toi et moi » peut se remplacer par « nous ».",
+  "explanation": "Avec « nous », l'imparfait finit par -ions : nous allions.",
+  "review_tags": [
+    "verbes_cm1",
+    "imparfait"
+  ],
+  "review_status": "draft"
+}

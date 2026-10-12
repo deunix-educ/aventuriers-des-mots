@@ -1,0 +1,49 @@
+{
+  "id": "cm1_imparfait_correction_03",
+  "level": "CM1",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm1",
+  "rule_id": "regle_imparfait",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Autrefois,",
+      "correct": true
+    },
+    {
+      "text": "nous",
+      "correct": true
+    },
+    {
+      "text": "habitiez",
+      "correct": false,
+      "expected": "habitions",
+      "rule_id": "regle_imparfait"
+    },
+    {
+      "text": "dans",
+      "correct": true
+    },
+    {
+      "text": "une",
+      "correct": true
+    },
+    {
+      "text": "petite",
+      "correct": true
+    },
+    {
+      "text": "ferme.",
+      "correct": true
+    }
+  ],
+  "hint": "Avec « nous », l'imparfait finit par -ions.",
+  "explanation": "Avec « nous », l'imparfait finit par -ions : nous habitions.",
+  "review_tags": [
+    "verbes_cm1",
+    "imparfait"
+  ],
+  "review_status": "draft"
+}

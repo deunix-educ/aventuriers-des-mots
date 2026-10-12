@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_66_salle_du_trone",
+  "title": "La salle du trône",
+  "narrative_context": "Le roi dicte une phrase, une seule fois. Écoute-le bien et écris-la sans faute.",
+  "rule_id": "regle_c_est_s_est",
+  "exercise_type": "dictation",
+  "map_position": {
+    "x": 0.85,
+    "y": 0.85
+  },
+  "review_status": "draft"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "cm2_quel_qu_elle_dictee_02",
+  "level": "CM2",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_quel_qu_elle"
+  ],
+  "difficulty": 2,
+  "target_text": "Maman dit qu'elle rentrera tard ce soir.",
+  "words": [
+    {
+      "text": "Maman",
+      "expects_capital": true
+    },
+    {
+      "text": "dit"
+    },
+    {
+      "text": "qu'elle",
+      "rule_id": "regle_quel_qu_elle"
+    },
+    {
+      "text": "rentrera"
+    },
+    {
+      "text": "tard"
+    },
+    {
+      "text": "ce"
+    },
+    {
+      "text": "soir."
+    }
+  ],
+  "audio_id": "cm2_quel_qu_elle_dictee_02",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

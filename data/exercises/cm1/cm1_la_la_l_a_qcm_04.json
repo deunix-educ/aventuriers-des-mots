@@ -1,0 +1,24 @@
+{
+  "id": "cm1_la_la_l_a_qcm_04",
+  "level": "CM1",
+  "domain": "orthographe",
+  "skill": "orthographe_cm1",
+  "rule_id": "regle_la_la_accent_l_a",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Pose le livre ... et viens manger.",
+  "answers": [
+    "là",
+    "l'a",
+    "la"
+  ],
+  "correct_answer": 0,
+  "hint": "Cherche un lieu : « là-bas » a du sens.",
+  "explanation": "On indique un lieu : on écrit « là » avec un accent.",
+  "review_tags": [
+    "orthographe_cm1",
+    "la_la_l_a"
+  ],
+  "review_status": "draft"
+}

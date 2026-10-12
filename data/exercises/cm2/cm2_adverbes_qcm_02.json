@@ -1,0 +1,24 @@
+{
+  "id": "cm2_adverbes_qcm_02",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "orthographe_cm2",
+  "rule_id": "regle_adverbes_ment",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Il marche ... dans le couloir.",
+  "answers": [
+    "prudemment",
+    "prudamment",
+    "prudement"
+  ],
+  "correct_answer": 0,
+  "hint": "L'adjectif « prudent » finit par -ent.",
+  "explanation": "« Prudent » finit par -ent : l'adverbe s'écrit « prudemment ».",
+  "review_tags": [
+    "orthographe_cm2",
+    "adverbes"
+  ],
+  "review_status": "draft"
+}

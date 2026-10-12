@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_76_riviere_aux_crocodiles",
+  "title": "La rivière aux crocodiles",
+  "narrative_context": "Sur la rivière, les mots passent au pluriel. Choisis la bonne forme pour traverser.",
+  "rule_id": "regle_pluriel_aux_eaux",
+  "exercise_type": "multiple_choice",
+  "map_position": {
+    "x": 0.15,
+    "y": 0.15
+  },
+  "review_status": "draft"
+}

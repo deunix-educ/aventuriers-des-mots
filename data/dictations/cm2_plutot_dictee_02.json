@@ -1,0 +1,39 @@
+{
+  "id": "cm2_plutot_dictee_02",
+  "level": "CM2",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_plutot_plus_tot"
+  ],
+  "difficulty": 2,
+  "target_text": "Demain, nous irons à l'école plus tôt.",
+  "words": [
+    {
+      "text": "Demain,",
+      "expects_capital": true
+    },
+    {
+      "text": "nous"
+    },
+    {
+      "text": "irons"
+    },
+    {
+      "text": "à"
+    },
+    {
+      "text": "l'école"
+    },
+    {
+      "text": "plus"
+    },
+    {
+      "text": "tôt.",
+      "rule_id": "regle_plutot_plus_tot"
+    }
+  ],
+  "audio_id": "cm2_plutot_dictee_02",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

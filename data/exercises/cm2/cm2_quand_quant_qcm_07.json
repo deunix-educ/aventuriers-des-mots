@@ -1,0 +1,24 @@
+{
+  "id": "cm2_quand_quant_qcm_07",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "homophones_cm2",
+  "rule_id": "regle_quand_quant_qu_en",
+  "difficulty": 3,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Je pense ... été il fait chaud ici.",
+  "answers": [
+    "quand",
+    "quant",
+    "qu'en"
+  ],
+  "correct_answer": 2,
+  "hint": "Il y a « que » + « en » : « je pense que, en été ».",
+  "explanation": "C'est « que » + « en » : on écrit « qu'en ».",
+  "review_tags": [
+    "homophones_cm2",
+    "quand_quant"
+  ],
+  "review_status": "draft"
+}

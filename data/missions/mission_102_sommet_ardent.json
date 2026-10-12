@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_102_sommet_ardent",
+  "title": "Le sommet ardent",
+  "narrative_context": "Au sommet, une voix dicte une phrase, une seule fois. Écoute bien et écris-la exactement.",
+  "rule_id": "regle_participe_cod_avant",
+  "exercise_type": "dictation",
+  "map_position": {
+    "x": 0.85,
+    "y": 0.85
+  },
+  "review_status": "draft"
+}

@@ -2,7 +2,7 @@
 
 Jeu éducatif de français pour les CE1-CE2 (7-9 ans) : une aventure 2D hors ligne, avec une carte à explorer, un personnage guide, et des exercices de grammaire, d'orthographe et de dictées.
 
-Projet open source, en développement. Statut actuel : version 0.7.0, jouable hors ligne sur Linux et Windows — profils, sauvegardes (avec export et restauration dans l'espace adulte), étoiles et collection d'objets, sons et musique, réglages (volumes, taille du texte, animations), tableau de progrès pour l'adulte, trois types d'exercices (choix multiple, correction de phrase, dictée), CE1 et CE2 en trois tableaux chacun (accords, sons et lettres, verbes au présent ; homophones, verbes, lettres et mots), 57 missions ; CM1 et CM2 sont prévus. Contenu pédagogique entièrement en brouillon (`draft`, à valider) et voix des dictées provisoires (voir `assets/CREDITS.md` ; voir `docs/specs/decisions.md` pour les décisions de cadrage et `docs/specs/cahier-des-charges.md` pour la spécification complète).
+Projet open source, en développement. Statut actuel : version 0.8.0, jouable hors ligne sur Linux et Windows — profils, sauvegardes (avec export et restauration dans l'espace adulte), étoiles et collection d'objets, sons et musique, réglages (volumes, taille du texte, animations), tableau de progrès pour l'adulte, trois types d'exercices (choix multiple, correction de phrase, dictée), CE1, CE2, CM1 et CM2 en trois tableaux chacun (homophones, verbes, orthographe des mots), 111 missions. Contenu pédagogique entièrement en brouillon (`draft`, à valider) et voix des dictées provisoires (voir `assets/CREDITS.md` ; voir `docs/specs/decisions.md` pour les décisions de cadrage et `docs/specs/cahier-des-charges.md` pour la spécification complète).
 
 ## Pile technique
 

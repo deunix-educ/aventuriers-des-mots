@@ -1,0 +1,42 @@
+{
+  "id": "cm1_ou_ou_dictee_03",
+  "level": "CM1",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_ou_ou_accent"
+  ],
+  "difficulty": 3,
+  "target_text": "Voici le village où ma grand-mère est née.",
+  "words": [
+    {
+      "text": "Voici",
+      "expects_capital": true
+    },
+    {
+      "text": "le"
+    },
+    {
+      "text": "village"
+    },
+    {
+      "text": "où",
+      "rule_id": "regle_ou_ou_accent"
+    },
+    {
+      "text": "ma"
+    },
+    {
+      "text": "grand-mère"
+    },
+    {
+      "text": "est"
+    },
+    {
+      "text": "née."
+    }
+  ],
+  "audio_id": "cm1_ou_ou_dictee_03",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

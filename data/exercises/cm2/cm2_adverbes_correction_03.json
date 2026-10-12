@@ -1,0 +1,49 @@
+{
+  "id": "cm2_adverbes_correction_03",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "orthographe_cm2",
+  "rule_id": "regle_adverbes_ment",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Le",
+      "correct": true
+    },
+    {
+      "text": "chien",
+      "correct": true
+    },
+    {
+      "text": "aboie",
+      "correct": true
+    },
+    {
+      "text": "bruyemment",
+      "correct": false,
+      "expected": "bruyamment",
+      "rule_id": "regle_adverbes_ment"
+    },
+    {
+      "text": "dans",
+      "correct": true
+    },
+    {
+      "text": "la",
+      "correct": true
+    },
+    {
+      "text": "cour.",
+      "correct": true
+    }
+  ],
+  "hint": "L'adjectif « bruyant » finit par -ant.",
+  "explanation": "« Bruyant » finit par -ant : l'adverbe s'écrit « bruyamment ».",
+  "review_tags": [
+    "orthographe_cm2",
+    "adverbes"
+  ],
+  "review_status": "draft"
+}

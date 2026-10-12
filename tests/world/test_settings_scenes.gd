@@ -86,3 +86,23 @@ func test_profile_creation_offers_only_levels_that_have_content() -> void:
             expected.append(level)
     assert_eq(offered, expected)
     assert_true(offered.has("CE1") and offered.has("CE2"))
+
+
+func test_quit_button_asks_for_confirmation_then_quits_through_the_hook() -> void:
+    var quits: Array[int] = []
+    GameManager.quit_hook = func() -> void: quits.append(1)
+    for path in ["res://scenes/profiles/profile_select.tscn", "res://scenes/ui/settings.tscn"]:
+        var scene: Control = add_child_autofree(load(path).instantiate())
+        await wait_process_frames(1)
+        var button: Button = scene.get_node("%QuitButton")
+        var dialog: ConfirmationDialog = scene.get_node("%QuitDialog")
+        assert_eq(button.text, UIText.get_text("quit.button"))
+        var before_press := quits.size()
+        button.pressed.emit()
+        assert_true(dialog.visible, "une confirmation doit etre demandee")
+        assert_eq(quits.size(), before_press, "rien ne quitte avant la confirmation")
+        var before := quits.size()
+        dialog.hide()
+        dialog.confirmed.emit()
+        assert_eq(quits.size(), before + 1)
+    GameManager.quit_hook = Callable()

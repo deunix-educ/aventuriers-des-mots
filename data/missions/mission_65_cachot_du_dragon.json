@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_65_cachot_du_dragon",
+  "title": "Le cachot du dragon",
+  "narrative_context": "Une inscription du cachot est fautive. Trouve « c'est » ou « s'est » mal placé et corrige-le.",
+  "rule_id": "regle_c_est_s_est",
+  "exercise_type": "sentence_correction",
+  "map_position": {
+    "x": 0.5,
+    "y": 0.85
+  },
+  "review_status": "draft"
+}

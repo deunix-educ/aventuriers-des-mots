@@ -1,0 +1,9 @@
+{
+  "rule_id": "regle_tion_sion_ssion",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "orthographe_cm2",
+  "statement": "Le son [sjɔ̃] s'écrit le plus souvent « -tion » (attention, réaction) ; quelques mots s'écrivent « -sion » (télévision, tension) ou « -ssion » (passion, mission) et sont à connaître.",
+  "example": "Une attention. Une télévision. Une mission.",
+  "review_status": "draft"
+}

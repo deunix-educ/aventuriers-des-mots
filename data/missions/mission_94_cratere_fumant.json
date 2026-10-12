@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_94_cratere_fumant",
+  "title": "Le cratère fumant",
+  "narrative_context": "Au bord du cratère, « futur » ou « conditionnel » ? Choisis la bonne terminaison.",
+  "rule_id": "regle_futur_conditionnel",
+  "exercise_type": "multiple_choice",
+  "map_position": {
+    "x": 0.15,
+    "y": 0.15
+  },
+  "review_status": "draft"
+}

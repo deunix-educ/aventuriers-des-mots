@@ -1,0 +1,42 @@
+{
+  "id": "cm1_c_est_s_est_dictee_01",
+  "level": "CM1",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_c_est_s_est"
+  ],
+  "difficulty": 1,
+  "target_text": "C'est un grand jour pour toute la classe.",
+  "words": [
+    {
+      "text": "C'est",
+      "expects_capital": true,
+      "rule_id": "regle_c_est_s_est"
+    },
+    {
+      "text": "un"
+    },
+    {
+      "text": "grand"
+    },
+    {
+      "text": "jour"
+    },
+    {
+      "text": "pour"
+    },
+    {
+      "text": "toute"
+    },
+    {
+      "text": "la"
+    },
+    {
+      "text": "classe."
+    }
+  ],
+  "audio_id": "cm1_c_est_s_est_dictee_01",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

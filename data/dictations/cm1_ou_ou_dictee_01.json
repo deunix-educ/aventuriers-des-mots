@@ -1,0 +1,42 @@
+{
+  "id": "cm1_ou_ou_dictee_01",
+  "level": "CM1",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_ou_ou_accent"
+  ],
+  "difficulty": 1,
+  "target_text": "Je sais où j'ai mis mon cartable rouge.",
+  "words": [
+    {
+      "text": "Je",
+      "expects_capital": true
+    },
+    {
+      "text": "sais"
+    },
+    {
+      "text": "où",
+      "rule_id": "regle_ou_ou_accent"
+    },
+    {
+      "text": "j'ai"
+    },
+    {
+      "text": "mis"
+    },
+    {
+      "text": "mon"
+    },
+    {
+      "text": "cartable"
+    },
+    {
+      "text": "rouge."
+    }
+  ],
+  "audio_id": "cm1_ou_ou_dictee_01",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

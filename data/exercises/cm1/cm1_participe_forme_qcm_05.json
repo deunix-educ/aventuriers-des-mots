@@ -1,0 +1,24 @@
+{
+  "id": "cm1_participe_forme_qcm_05",
+  "level": "CM1",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm1",
+  "rule_id": "regle_participe_passe_forme",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Mon frère a ... une lettre à sa tante.",
+  "answers": [
+    "écri",
+    "écrie",
+    "écrit"
+  ],
+  "correct_answer": 2,
+  "hint": "Le participe du verbe « écrire » finit par -it.",
+  "explanation": "Le participe passé d'« écrire » est « écrit ».",
+  "review_tags": [
+    "verbes_cm1",
+    "participe_forme"
+  ],
+  "review_status": "draft"
+}

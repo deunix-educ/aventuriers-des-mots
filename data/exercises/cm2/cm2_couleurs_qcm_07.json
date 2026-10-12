@@ -1,0 +1,23 @@
+{
+  "id": "cm2_couleurs_qcm_07",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "orthographe_cm2",
+  "rule_id": "regle_adjectifs_couleur",
+  "difficulty": 3,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Des rideaux vert ... pendent aux fenêtres.",
+  "answers": [
+    "foncé",
+    "foncés"
+  ],
+  "correct_answer": 0,
+  "hint": "Une couleur précisée par un autre mot reste invariable.",
+  "explanation": "« Vert foncé » est un adjectif composé : il reste invariable.",
+  "review_tags": [
+    "orthographe_cm2",
+    "couleurs"
+  ],
+  "review_status": "draft"
+}

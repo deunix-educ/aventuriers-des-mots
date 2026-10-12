@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_79_clairiere_des_singes",
+  "title": "La clairière des singes",
+  "narrative_context": "Les singes se demandent « où » ou « ou ». Aide-les à choisir.",
+  "rule_id": "regle_ou_ou_accent",
+  "exercise_type": "multiple_choice",
+  "map_position": {
+    "x": 0.15,
+    "y": 0.5
+  },
+  "review_status": "draft"
+}

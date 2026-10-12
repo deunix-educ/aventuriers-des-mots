@@ -1,0 +1,41 @@
+{
+  "id": "cm1_la_la_l_a_correction_01",
+  "level": "CM1",
+  "domain": "orthographe",
+  "skill": "orthographe_cm1",
+  "rule_id": "regle_la_la_accent_l_a",
+  "difficulty": 1,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Papa",
+      "correct": true
+    },
+    {
+      "text": "la",
+      "correct": false,
+      "expected": "l'a",
+      "rule_id": "regle_la_la_accent_l_a"
+    },
+    {
+      "text": "lavé",
+      "correct": true
+    },
+    {
+      "text": "ce",
+      "correct": true
+    },
+    {
+      "text": "matin.",
+      "correct": true
+    }
+  ],
+  "hint": "Remplace par « l'avait » : « papa l'avait lavé » a du sens.",
+  "explanation": "On peut dire « l'avait » : on écrit « l'a ».",
+  "review_tags": [
+    "orthographe_cm1",
+    "la_la_l_a"
+  ],
+  "review_status": "draft"
+}

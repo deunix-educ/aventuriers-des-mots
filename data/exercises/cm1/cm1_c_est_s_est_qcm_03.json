@@ -1,0 +1,23 @@
+{
+  "id": "cm1_c_est_s_est_qcm_03",
+  "level": "CM1",
+  "domain": "orthographe",
+  "skill": "homophones_cm1",
+  "rule_id": "regle_c_est_s_est",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Regarde, ... ma nouvelle bicyclette !",
+  "answers": [
+    "c'est",
+    "s'est"
+  ],
+  "correct_answer": 0,
+  "hint": "Remplace par « cela est ».",
+  "explanation": "On peut dire « cela est ma nouvelle bicyclette » : « c'est ».",
+  "review_tags": [
+    "homophones_cm1",
+    "c_est_s_est"
+  ],
+  "review_status": "draft"
+}

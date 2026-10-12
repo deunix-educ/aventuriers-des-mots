@@ -1,0 +1,41 @@
+{
+  "id": "cm2_couleurs_correction_03",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "orthographe_cm2",
+  "rule_id": "regle_adjectifs_couleur",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Il",
+      "correct": true
+    },
+    {
+      "text": "porte",
+      "correct": true
+    },
+    {
+      "text": "des",
+      "correct": true
+    },
+    {
+      "text": "chaussures",
+      "correct": true
+    },
+    {
+      "text": "marrons.",
+      "correct": false,
+      "expected": "marron.",
+      "rule_id": "regle_adjectifs_couleur"
+    }
+  ],
+  "hint": "« Marron » vient du nom du fruit : il reste invariable.",
+  "explanation": "« Marron » est un nom employé comme couleur : il reste invariable.",
+  "review_tags": [
+    "orthographe_cm2",
+    "couleurs"
+  ],
+  "review_status": "draft"
+}

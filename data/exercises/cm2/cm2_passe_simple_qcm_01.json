@@ -1,0 +1,24 @@
+{
+  "id": "cm2_passe_simple_qcm_01",
+  "level": "CM2",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm2",
+  "rule_id": "regle_passe_simple",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Le roi ... le château ce matin-là.",
+  "answers": [
+    "quitte",
+    "quittait",
+    "quitta"
+  ],
+  "correct_answer": 2,
+  "hint": "Une action rapide au passé : le passé simple finit par -a.",
+  "explanation": "Au passé simple, un verbe en -er finit par -a : « il quitta ».",
+  "review_tags": [
+    "verbes_cm2",
+    "passe_simple"
+  ],
+  "review_status": "draft"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "cm2_quand_quant_dictee_01",
+  "level": "CM2",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_quand_quant_qu_en"
+  ],
+  "difficulty": 1,
+  "target_text": "Quand le jour se lève, les oiseaux chantent.",
+  "words": [
+    {
+      "text": "Quand",
+      "expects_capital": true,
+      "rule_id": "regle_quand_quant_qu_en"
+    },
+    {
+      "text": "le"
+    },
+    {
+      "text": "jour"
+    },
+    {
+      "text": "se"
+    },
+    {
+      "text": "lève,"
+    },
+    {
+      "text": "les"
+    },
+    {
+      "text": "oiseaux"
+    },
+    {
+      "text": "chantent."
+    }
+  ],
+  "audio_id": "cm2_quand_quant_dictee_01",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

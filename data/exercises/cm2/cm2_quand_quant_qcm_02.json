@@ -1,0 +1,23 @@
+{
+  "id": "cm2_quand_quant_qcm_02",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "homophones_cm2",
+  "rule_id": "regle_quand_quant_qu_en",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Je te téléphonerai ... je serai arrivé.",
+  "answers": [
+    "quand",
+    "quant"
+  ],
+  "correct_answer": 0,
+  "hint": "Remplace par « lorsque » : « lorsque je serai arrivé » a du sens.",
+  "explanation": "On peut dire « lorsque » : on écrit « quand ».",
+  "review_tags": [
+    "homophones_cm2",
+    "quand_quant"
+  ],
+  "review_status": "draft"
+}

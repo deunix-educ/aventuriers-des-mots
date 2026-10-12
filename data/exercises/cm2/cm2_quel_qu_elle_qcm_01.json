@@ -1,0 +1,23 @@
+{
+  "id": "cm2_quel_qu_elle_qcm_01",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "homophones_cm2",
+  "rule_id": "regle_quel_qu_elle",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "... heure est-il ?",
+  "answers": [
+    "Qu'elle",
+    "Quelle"
+  ],
+  "correct_answer": 1,
+  "hint": "Remplace par « qu'il » : la phrase n'a pas de sens.",
+  "explanation": "« Quelle » accompagne le nom « heure » : on écrit « quelle ».",
+  "review_tags": [
+    "homophones_cm2",
+    "quel_qu_elle"
+  ],
+  "review_status": "draft"
+}

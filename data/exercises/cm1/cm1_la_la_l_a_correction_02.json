@@ -1,0 +1,49 @@
+{
+  "id": "cm1_la_la_l_a_correction_02",
+  "level": "CM1",
+  "domain": "orthographe",
+  "skill": "orthographe_cm1",
+  "rule_id": "regle_la_la_accent_l_a",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Mon",
+      "correct": true
+    },
+    {
+      "text": "chat",
+      "correct": true
+    },
+    {
+      "text": "est",
+      "correct": true
+    },
+    {
+      "text": "la,",
+      "correct": false,
+      "expected": "là,",
+      "rule_id": "regle_la_la_accent_l_a"
+    },
+    {
+      "text": "sur",
+      "correct": true
+    },
+    {
+      "text": "le",
+      "correct": true
+    },
+    {
+      "text": "canapé.",
+      "correct": true
+    }
+  ],
+  "hint": "Cherche un lieu : « là-bas » a du sens.",
+  "explanation": "On indique un lieu : on écrit « là » avec un accent.",
+  "review_tags": [
+    "orthographe_cm1",
+    "la_la_l_a"
+  ],
+  "review_status": "draft"
+}

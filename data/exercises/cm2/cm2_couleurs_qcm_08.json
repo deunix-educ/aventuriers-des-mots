@@ -1,0 +1,23 @@
+{
+  "id": "cm2_couleurs_qcm_08",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "orthographe_cm2",
+  "rule_id": "regle_adjectifs_couleur",
+  "difficulty": 3,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Elle a des yeux ... .",
+  "answers": [
+    "noisette",
+    "noisettes"
+  ],
+  "correct_answer": 0,
+  "hint": "« Noisette » vient du nom du fruit : il reste invariable.",
+  "explanation": "« Noisette » est un nom employé comme couleur : il reste invariable.",
+  "review_tags": [
+    "orthographe_cm2",
+    "couleurs"
+  ],
+  "review_status": "draft"
+}

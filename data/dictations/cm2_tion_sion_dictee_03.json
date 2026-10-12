@@ -1,0 +1,40 @@
+{
+  "id": "cm2_tion_sion_dictee_03",
+  "level": "CM2",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_tion_sion_ssion"
+  ],
+  "difficulty": 3,
+  "target_text": "Cette émission de télévision passionne les enfants.",
+  "words": [
+    {
+      "text": "Cette",
+      "expects_capital": true
+    },
+    {
+      "text": "émission",
+      "rule_id": "regle_tion_sion_ssion"
+    },
+    {
+      "text": "de"
+    },
+    {
+      "text": "télévision",
+      "rule_id": "regle_tion_sion_ssion"
+    },
+    {
+      "text": "passionne"
+    },
+    {
+      "text": "les"
+    },
+    {
+      "text": "enfants."
+    }
+  ],
+  "audio_id": "cm2_tion_sion_dictee_03",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_85_hublot_de_la_station",
+  "title": "Le hublot de la station",
+  "narrative_context": "Par le hublot, des phrases flottent : « quel », « quelle » ou « qu'elle » ? Choisis le bon.",
+  "rule_id": "regle_quel_qu_elle",
+  "exercise_type": "multiple_choice",
+  "map_position": {
+    "x": 0.15,
+    "y": 0.15
+  },
+  "review_status": "draft"
+}

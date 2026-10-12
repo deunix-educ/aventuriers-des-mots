@@ -1,0 +1,23 @@
+{
+  "id": "cm1_c_est_s_est_qcm_05",
+  "level": "CM1",
+  "domain": "orthographe",
+  "skill": "homophones_cm1",
+  "rule_id": "regle_c_est_s_est",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Je crois que ... le facteur qui sonne.",
+  "answers": [
+    "s'est",
+    "c'est"
+  ],
+  "correct_answer": 1,
+  "hint": "Remplace par « cela est ».",
+  "explanation": "On peut dire « cela est le facteur » : « c'est ».",
+  "review_tags": [
+    "homophones_cm1",
+    "c_est_s_est"
+  ],
+  "review_status": "draft"
+}

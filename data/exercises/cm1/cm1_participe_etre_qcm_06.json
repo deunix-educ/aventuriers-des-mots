@@ -1,0 +1,24 @@
+{
+  "id": "cm1_participe_etre_qcm_06",
+  "level": "CM1",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm1",
+  "rule_id": "regle_accord_participe_etre",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Les enfants sont ... du bus en courant.",
+  "answers": [
+    "descendu",
+    "descendus",
+    "descendues"
+  ],
+  "correct_answer": 1,
+  "hint": "Le sujet « les enfants » est masculin pluriel.",
+  "explanation": "Avec « être », le participe s'accorde avec le sujet : les enfants sont descendus.",
+  "review_tags": [
+    "verbes_cm1",
+    "participe_etre"
+  ],
+  "review_status": "draft"
+}

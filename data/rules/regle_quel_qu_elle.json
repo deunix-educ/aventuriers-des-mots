@@ -1,0 +1,9 @@
+{
+  "rule_id": "regle_quel_qu_elle",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "homophones_cm2",
+  "statement": "« quel(le)(s) » s'accorde avec un nom (quelle heure ?) ; « qu'elle(s) » est « que » + « elle » : on peut le remplacer par « qu'il(s) ».",
+  "example": "Quelle heure est-il ? Je pense qu'elle arrive.",
+  "review_status": "draft"
+}

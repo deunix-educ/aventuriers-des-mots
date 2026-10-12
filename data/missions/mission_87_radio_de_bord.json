@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_87_radio_de_bord",
+  "title": "La radio de bord",
+  "narrative_context": "La radio grésille une phrase, une seule fois. Écoute bien et écris-la en entier.",
+  "rule_id": "regle_quel_qu_elle",
+  "exercise_type": "dictation",
+  "map_position": {
+    "x": 0.85,
+    "y": 0.15
+  },
+  "review_status": "draft"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "cm2_passe_simple_correction_04",
+  "level": "CM2",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm2",
+  "rule_id": "regle_passe_simple",
+  "difficulty": 3,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Elles",
+      "correct": true
+    },
+    {
+      "text": "ouvrit",
+      "correct": false,
+      "expected": "ouvrirent",
+      "rule_id": "regle_passe_simple"
+    },
+    {
+      "text": "la",
+      "correct": true
+    },
+    {
+      "text": "porte",
+      "correct": true
+    },
+    {
+      "text": "avec",
+      "correct": true
+    },
+    {
+      "text": "précaution.",
+      "correct": true
+    }
+  ],
+  "hint": "Plusieurs filles : le passé simple finit par -irent.",
+  "explanation": "Au passé simple, elles : « elles ouvrirent ».",
+  "review_tags": [
+    "verbes_cm2",
+    "passe_simple"
+  ],
+  "review_status": "draft"
+}

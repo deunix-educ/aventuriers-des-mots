@@ -1,0 +1,24 @@
+{
+  "id": "cm1_participe_forme_qcm_08",
+  "level": "CM1",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm1",
+  "rule_id": "regle_participe_passe_forme",
+  "difficulty": 3,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Les élèves ont ... leur leçon par cœur.",
+  "answers": [
+    "apprit",
+    "appris",
+    "apri"
+  ],
+  "correct_answer": 1,
+  "hint": "Le participe du verbe « apprendre » finit par -is.",
+  "explanation": "Le participe passé d'« apprendre » est « appris ».",
+  "review_tags": [
+    "verbes_cm1",
+    "participe_forme"
+  ],
+  "review_status": "draft"
+}

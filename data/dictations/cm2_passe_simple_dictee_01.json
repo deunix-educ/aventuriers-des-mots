@@ -1,0 +1,39 @@
+{
+  "id": "cm2_passe_simple_dictee_01",
+  "level": "CM2",
+  "domain": "grammaire",
+  "rule_ids": [
+    "regle_passe_simple"
+  ],
+  "difficulty": 1,
+  "target_text": "Le roi traversa la forêt sans s'arrêter.",
+  "words": [
+    {
+      "text": "Le",
+      "expects_capital": true
+    },
+    {
+      "text": "roi"
+    },
+    {
+      "text": "traversa",
+      "rule_id": "regle_passe_simple"
+    },
+    {
+      "text": "la"
+    },
+    {
+      "text": "forêt"
+    },
+    {
+      "text": "sans"
+    },
+    {
+      "text": "s'arrêter."
+    }
+  ],
+  "audio_id": "cm2_passe_simple_dictee_01",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

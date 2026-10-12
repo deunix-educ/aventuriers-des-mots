@@ -1,0 +1,23 @@
+{
+  "id": "cm1_ou_ou_qcm_05",
+  "level": "CM1",
+  "domain": "orthographe",
+  "skill": "orthographe_cm1",
+  "rule_id": "regle_ou_ou_accent",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Je ne sais pas ... j'ai posé mes lunettes.",
+  "answers": [
+    "ou",
+    "où"
+  ],
+  "correct_answer": 1,
+  "hint": "Remplace par « ou bien » : la phrase n'a pas de sens.",
+  "explanation": "On indique un lieu : on écrit « où » avec un accent.",
+  "review_tags": [
+    "orthographe_cm1",
+    "ou_ou"
+  ],
+  "review_status": "draft"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "cm1_participe_etre_correction_01",
+  "level": "CM1",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm1",
+  "rule_id": "regle_accord_participe_etre",
+  "difficulty": 1,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Marie",
+      "correct": true
+    },
+    {
+      "text": "est",
+      "correct": true
+    },
+    {
+      "text": "parti",
+      "correct": false,
+      "expected": "partie",
+      "rule_id": "regle_accord_participe_etre"
+    },
+    {
+      "text": "à",
+      "correct": true
+    },
+    {
+      "text": "la",
+      "correct": true
+    },
+    {
+      "text": "piscine.",
+      "correct": true
+    }
+  ],
+  "hint": "Le sujet « Marie » est féminin.",
+  "explanation": "Avec « être », le participe s'accorde avec le sujet : Marie est partie.",
+  "review_tags": [
+    "verbes_cm1",
+    "participe_etre"
+  ],
+  "review_status": "draft"
+}

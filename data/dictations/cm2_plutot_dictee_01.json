@@ -1,0 +1,39 @@
+{
+  "id": "cm2_plutot_dictee_01",
+  "level": "CM2",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_plutot_plus_tot"
+  ],
+  "difficulty": 1,
+  "target_text": "Je prends plutôt une pomme qu'un gâteau.",
+  "words": [
+    {
+      "text": "Je",
+      "expects_capital": true
+    },
+    {
+      "text": "prends"
+    },
+    {
+      "text": "plutôt",
+      "rule_id": "regle_plutot_plus_tot"
+    },
+    {
+      "text": "une"
+    },
+    {
+      "text": "pomme"
+    },
+    {
+      "text": "qu'un"
+    },
+    {
+      "text": "gâteau."
+    }
+  ],
+  "audio_id": "cm2_plutot_dictee_01",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

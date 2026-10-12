@@ -1,0 +1,57 @@
+{
+  "id": "cm1_la_la_l_a_correction_04",
+  "level": "CM1",
+  "domain": "orthographe",
+  "skill": "orthographe_cm1",
+  "rule_id": "regle_la_la_accent_l_a",
+  "difficulty": 3,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Je",
+      "correct": true
+    },
+    {
+      "text": "la",
+      "correct": true
+    },
+    {
+      "text": "connais",
+      "correct": true
+    },
+    {
+      "text": "bien :",
+      "correct": true
+    },
+    {
+      "text": "ma",
+      "correct": true
+    },
+    {
+      "text": "mère",
+      "correct": true
+    },
+    {
+      "text": "la",
+      "correct": false,
+      "expected": "l'a",
+      "rule_id": "regle_la_la_accent_l_a"
+    },
+    {
+      "text": "rencontrée",
+      "correct": true
+    },
+    {
+      "text": "hier.",
+      "correct": true
+    }
+  ],
+  "hint": "Remplace par « l'avait » : « ma mère l'avait rencontrée » a du sens.",
+  "explanation": "On peut dire « l'avait » : on écrit « l'a ».",
+  "review_tags": [
+    "orthographe_cm1",
+    "la_la_l_a"
+  ],
+  "review_status": "draft"
+}

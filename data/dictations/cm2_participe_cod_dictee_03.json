@@ -1,0 +1,42 @@
+{
+  "id": "cm2_participe_cod_dictee_03",
+  "level": "CM2",
+  "domain": "grammaire",
+  "rule_ids": [
+    "regle_participe_cod_avant"
+  ],
+  "difficulty": 3,
+  "target_text": "La poésie qu'il a apprise est très longue.",
+  "words": [
+    {
+      "text": "La",
+      "expects_capital": true
+    },
+    {
+      "text": "poésie"
+    },
+    {
+      "text": "qu'il"
+    },
+    {
+      "text": "a"
+    },
+    {
+      "text": "apprise",
+      "rule_id": "regle_participe_cod_avant"
+    },
+    {
+      "text": "est"
+    },
+    {
+      "text": "très"
+    },
+    {
+      "text": "longue."
+    }
+  ],
+  "audio_id": "cm2_participe_cod_dictee_03",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

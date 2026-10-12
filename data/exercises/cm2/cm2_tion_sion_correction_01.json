@@ -1,0 +1,41 @@
+{
+  "id": "cm2_tion_sion_correction_01",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "orthographe_cm2",
+  "rule_id": "regle_tion_sion_ssion",
+  "difficulty": 1,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Fais",
+      "correct": true
+    },
+    {
+      "text": "attension",
+      "correct": false,
+      "expected": "attention",
+      "rule_id": "regle_tion_sion_ssion"
+    },
+    {
+      "text": "en",
+      "correct": true
+    },
+    {
+      "text": "descendant",
+      "correct": true
+    },
+    {
+      "text": "l'escalier.",
+      "correct": true
+    }
+  ],
+  "hint": "Le plus souvent, on écrit -tion.",
+  "explanation": "Le mot « attention » s'écrit avec -tion.",
+  "review_tags": [
+    "orthographe_cm2",
+    "tion_sion"
+  ],
+  "review_status": "draft"
+}

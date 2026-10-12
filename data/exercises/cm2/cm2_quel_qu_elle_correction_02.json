@@ -1,0 +1,41 @@
+{
+  "id": "cm2_quel_qu_elle_correction_02",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "homophones_cm2",
+  "rule_id": "regle_quel_qu_elle",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Je",
+      "correct": true
+    },
+    {
+      "text": "pense",
+      "correct": true
+    },
+    {
+      "text": "quelle",
+      "correct": false,
+      "expected": "qu'elle",
+      "rule_id": "regle_quel_qu_elle"
+    },
+    {
+      "text": "viendra",
+      "correct": true
+    },
+    {
+      "text": "demain.",
+      "correct": true
+    }
+  ],
+  "hint": "Remplace par « qu'il » : « je pense qu'il viendra » a du sens.",
+  "explanation": "On peut dire « qu'il » : on écrit « qu'elle ».",
+  "review_tags": [
+    "homophones_cm2",
+    "quel_qu_elle"
+  ],
+  "review_status": "draft"
+}

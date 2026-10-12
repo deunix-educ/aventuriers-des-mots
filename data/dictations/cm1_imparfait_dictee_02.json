@@ -1,0 +1,45 @@
+{
+  "id": "cm1_imparfait_dictee_02",
+  "level": "CM1",
+  "domain": "grammaire",
+  "rule_ids": [
+    "regle_imparfait"
+  ],
+  "difficulty": 2,
+  "target_text": "Tous les soirs, ma grand-mère tricotait près du feu.",
+  "words": [
+    {
+      "text": "Tous",
+      "expects_capital": true
+    },
+    {
+      "text": "les"
+    },
+    {
+      "text": "soirs,"
+    },
+    {
+      "text": "ma"
+    },
+    {
+      "text": "grand-mère"
+    },
+    {
+      "text": "tricotait",
+      "rule_id": "regle_imparfait"
+    },
+    {
+      "text": "près"
+    },
+    {
+      "text": "du"
+    },
+    {
+      "text": "feu."
+    }
+  ],
+  "audio_id": "cm1_imparfait_dictee_02",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

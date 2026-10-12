@@ -1,0 +1,49 @@
+{
+  "id": "cm2_participe_cod_correction_03",
+  "level": "CM2",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm2",
+  "rule_id": "regle_participe_cod_avant",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "La",
+      "correct": true
+    },
+    {
+      "text": "chanson",
+      "correct": true
+    },
+    {
+      "text": "qu'il",
+      "correct": true
+    },
+    {
+      "text": "a",
+      "correct": true
+    },
+    {
+      "text": "chanté",
+      "correct": false,
+      "expected": "chantée",
+      "rule_id": "regle_participe_cod_avant"
+    },
+    {
+      "text": "était",
+      "correct": true
+    },
+    {
+      "text": "jolie.",
+      "correct": true
+    }
+  ],
+  "hint": "La chanson (que) est placée avant le verbe : le participe s'accorde.",
+  "explanation": "Le complément « qu' » (= la chanson) est avant : « chantée ».",
+  "review_tags": [
+    "verbes_cm2",
+    "participe_cod"
+  ],
+  "review_status": "draft"
+}

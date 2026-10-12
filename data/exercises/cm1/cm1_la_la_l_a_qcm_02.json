@@ -1,0 +1,24 @@
+{
+  "id": "cm1_la_la_l_a_qcm_02",
+  "level": "CM1",
+  "domain": "orthographe",
+  "skill": "orthographe_cm1",
+  "rule_id": "regle_la_la_accent_l_a",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "... maîtresse écrit au tableau.",
+  "answers": [
+    "La",
+    "L'a",
+    "Là"
+  ],
+  "correct_answer": 0,
+  "hint": "« La » est ici un article devant un nom.",
+  "explanation": "« La » accompagne le nom « maîtresse » : on écrit « la » sans accent.",
+  "review_tags": [
+    "orthographe_cm1",
+    "la_la_l_a"
+  ],
+  "review_status": "draft"
+}

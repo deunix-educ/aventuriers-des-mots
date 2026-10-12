@@ -1,0 +1,45 @@
+{
+  "id": "cm1_participe_etre_dictee_01",
+  "level": "CM1",
+  "domain": "grammaire",
+  "rule_ids": [
+    "regle_accord_participe_etre"
+  ],
+  "difficulty": 1,
+  "target_text": "Ma tante est arrivée ce matin par le train.",
+  "words": [
+    {
+      "text": "Ma",
+      "expects_capital": true
+    },
+    {
+      "text": "tante"
+    },
+    {
+      "text": "est"
+    },
+    {
+      "text": "arrivée",
+      "rule_id": "regle_accord_participe_etre"
+    },
+    {
+      "text": "ce"
+    },
+    {
+      "text": "matin"
+    },
+    {
+      "text": "par"
+    },
+    {
+      "text": "le"
+    },
+    {
+      "text": "train."
+    }
+  ],
+  "audio_id": "cm1_participe_etre_dictee_01",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_109_galerie_des_couleurs",
+  "title": "La galerie des couleurs",
+  "narrative_context": "Dans la galerie, les couleurs s'accordent… ou pas. Choisis la bonne forme.",
+  "rule_id": "regle_adjectifs_couleur",
+  "exercise_type": "multiple_choice",
+  "map_position": {
+    "x": 0.15,
+    "y": 0.85
+  },
+  "review_status": "draft"
+}

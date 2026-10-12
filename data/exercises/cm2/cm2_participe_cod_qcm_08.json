@@ -1,0 +1,23 @@
+{
+  "id": "cm2_participe_cod_qcm_08",
+  "level": "CM2",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm2",
+  "rule_id": "regle_participe_cod_avant",
+  "difficulty": 3,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Quelle belle histoire il a ... !",
+  "answers": [
+    "raconté",
+    "racontée"
+  ],
+  "correct_answer": 1,
+  "hint": "« Quelle belle histoire » est placé avant le verbe : le participe s'accorde.",
+  "explanation": "Le complément est avant le verbe : « racontée ».",
+  "review_tags": [
+    "verbes_cm2",
+    "participe_cod"
+  ],
+  "review_status": "draft"
+}

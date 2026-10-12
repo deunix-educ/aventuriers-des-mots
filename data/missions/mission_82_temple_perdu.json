@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_82_temple_perdu",
+  "title": "Le temple perdu",
+  "narrative_context": "Dans le temple, « la », « là » et « l'a » se ressemblent. Choisis le bon.",
+  "rule_id": "regle_la_la_accent_l_a",
+  "exercise_type": "multiple_choice",
+  "map_position": {
+    "x": 0.15,
+    "y": 0.85
+  },
+  "review_status": "draft"
+}

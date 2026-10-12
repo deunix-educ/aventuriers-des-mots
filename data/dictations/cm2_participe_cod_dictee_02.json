@@ -1,0 +1,45 @@
+{
+  "id": "cm2_participe_cod_dictee_02",
+  "level": "CM2",
+  "domain": "grammaire",
+  "rule_ids": [
+    "regle_participe_cod_avant"
+  ],
+  "difficulty": 2,
+  "target_text": "Mon frère a rangé tous ses livres sur l'étagère.",
+  "words": [
+    {
+      "text": "Mon",
+      "expects_capital": true
+    },
+    {
+      "text": "frère"
+    },
+    {
+      "text": "a"
+    },
+    {
+      "text": "rangé",
+      "rule_id": "regle_participe_cod_avant"
+    },
+    {
+      "text": "tous"
+    },
+    {
+      "text": "ses"
+    },
+    {
+      "text": "livres"
+    },
+    {
+      "text": "sur"
+    },
+    {
+      "text": "l'étagère."
+    }
+  ],
+  "audio_id": "cm2_participe_cod_dictee_02",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

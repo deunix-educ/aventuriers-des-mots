@@ -1,0 +1,9 @@
+{
+  "rule_id": "regle_participe_passe_forme",
+  "level": "CM1",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm1",
+  "statement": "Le participe passé des verbes en -ir se termine par -i (fini), celui des verbes en -re souvent par -u (vendu), et quelques-uns par -is ou -it (pris, écrit).",
+  "example": "J'ai fini. Il a vendu. Elle a pris. Nous avons écrit.",
+  "review_status": "draft"
+}

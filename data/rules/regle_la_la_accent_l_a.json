@@ -1,0 +1,9 @@
+{
+  "rule_id": "regle_la_la_accent_l_a",
+  "level": "CM1",
+  "domain": "orthographe",
+  "skill": "orthographe_cm1",
+  "statement": "« la » est un article ou un pronom devant un nom ou un verbe ; « là » avec un accent indique un lieu ; « l'a » est « l' » + le verbe avoir : on peut dire « l'avait ».",
+  "example": "La table est là. Il l'a vue.",
+  "review_status": "draft"
+}

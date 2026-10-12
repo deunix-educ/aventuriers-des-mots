@@ -1,0 +1,49 @@
+{
+  "id": "cm2_adverbes_correction_04",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "orthographe_cm2",
+  "rule_id": "regle_adverbes_ment",
+  "difficulty": 3,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Le",
+      "correct": true
+    },
+    {
+      "text": "héros",
+      "correct": true
+    },
+    {
+      "text": "se",
+      "correct": true
+    },
+    {
+      "text": "bat",
+      "correct": true
+    },
+    {
+      "text": "vaillemment",
+      "correct": false,
+      "expected": "vaillamment",
+      "rule_id": "regle_adverbes_ment"
+    },
+    {
+      "text": "jusqu'au",
+      "correct": true
+    },
+    {
+      "text": "bout.",
+      "correct": true
+    }
+  ],
+  "hint": "L'adjectif « vaillant » finit par -ant.",
+  "explanation": "« Vaillant » finit par -ant : l'adverbe s'écrit « vaillamment ».",
+  "review_tags": [
+    "orthographe_cm2",
+    "adverbes"
+  ],
+  "review_status": "draft"
+}

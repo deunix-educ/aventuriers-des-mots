@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_106_catalogue_des_noms",
+  "title": "Le catalogue des noms",
+  "narrative_context": "Dans le catalogue, « -tion », « -sion » ou « -ssion » ? Choisis la bonne fin de mot.",
+  "rule_id": "regle_tion_sion_ssion",
+  "exercise_type": "multiple_choice",
+  "map_position": {
+    "x": 0.15,
+    "y": 0.5
+  },
+  "review_status": "draft"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cm1_leur_leurs_qcm_06",
+  "level": "CM1",
+  "domain": "orthographe",
+  "skill": "homophones_cm1",
+  "rule_id": "regle_leur_leurs",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Je ... ai dit la vérité.",
+  "answers": [
+    "leurs",
+    "leur"
+  ],
+  "correct_answer": 1,
+  "hint": "Remplace par « lui » : « je lui ai dit » a du sens.",
+  "explanation": "On peut dire « je lui ai dit » : « leur » reste sans -s.",
+  "review_tags": [
+    "homophones_cm1",
+    "leur_leurs"
+  ],
+  "review_status": "draft"
+}

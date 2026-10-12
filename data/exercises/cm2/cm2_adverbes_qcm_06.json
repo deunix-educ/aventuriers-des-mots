@@ -1,0 +1,24 @@
+{
+  "id": "cm2_adverbes_qcm_06",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "orthographe_cm2",
+  "rule_id": "regle_adverbes_ment",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Le sportif court ... vers l'arrivée.",
+  "answers": [
+    "rapidement",
+    "rapidemment",
+    "rapidamment"
+  ],
+  "correct_answer": 0,
+  "hint": "L'adjectif « rapide » finit par -e : on ajoute -ment.",
+  "explanation": "« Rapide » finit par -e : l'adverbe s'écrit « rapidement ».",
+  "review_tags": [
+    "orthographe_cm2",
+    "adverbes"
+  ],
+  "review_status": "draft"
+}

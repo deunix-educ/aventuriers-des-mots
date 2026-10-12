@@ -1,0 +1,24 @@
+{
+  "id": "cm2_passe_simple_qcm_05",
+  "level": "CM2",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm2",
+  "rule_id": "regle_passe_simple",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Alors, le dragon ... un grand cri.",
+  "answers": [
+    "poussa",
+    "pousser",
+    "poussait"
+  ],
+  "correct_answer": 0,
+  "hint": "Une action rapide au passé : le passé simple finit par -a.",
+  "explanation": "Au passé simple, un verbe en -er finit par -a : « il poussa ».",
+  "review_tags": [
+    "verbes_cm2",
+    "passe_simple"
+  ],
+  "review_status": "draft"
+}

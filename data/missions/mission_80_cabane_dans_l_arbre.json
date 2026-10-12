@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_80_cabane_dans_l_arbre",
+  "title": "La cabane dans l'arbre",
+  "narrative_context": "Un panneau de la cabane confond « où » et « ou ». Trouve l'erreur et corrige-la.",
+  "rule_id": "regle_ou_ou_accent",
+  "exercise_type": "sentence_correction",
+  "map_position": {
+    "x": 0.5,
+    "y": 0.5
+  },
+  "review_status": "draft"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "cm1_pluriel_aux_dictee_01",
+  "level": "CM1",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_pluriel_aux_eaux"
+  ],
+  "difficulty": 1,
+  "target_text": "Les chevaux courent librement dans la prairie.",
+  "words": [
+    {
+      "text": "Les",
+      "expects_capital": true
+    },
+    {
+      "text": "chevaux",
+      "rule_id": "regle_pluriel_aux_eaux"
+    },
+    {
+      "text": "courent"
+    },
+    {
+      "text": "librement"
+    },
+    {
+      "text": "dans"
+    },
+    {
+      "text": "la"
+    },
+    {
+      "text": "prairie."
+    }
+  ],
+  "audio_id": "cm1_pluriel_aux_dictee_01",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

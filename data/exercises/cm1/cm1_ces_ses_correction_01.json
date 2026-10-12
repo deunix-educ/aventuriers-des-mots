@@ -1,0 +1,49 @@
+{
+  "id": "cm1_ces_ses_correction_01",
+  "level": "CM1",
+  "domain": "orthographe",
+  "skill": "homophones_cm1",
+  "rule_id": "regle_ces_ses",
+  "difficulty": 1,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Regarde",
+      "correct": true
+    },
+    {
+      "text": "ses",
+      "correct": false,
+      "expected": "ces",
+      "rule_id": "regle_ces_ses"
+    },
+    {
+      "text": "nuages-là,",
+      "correct": true
+    },
+    {
+      "text": "ils",
+      "correct": true
+    },
+    {
+      "text": "sont",
+      "correct": true
+    },
+    {
+      "text": "très",
+      "correct": true
+    },
+    {
+      "text": "noirs !",
+      "correct": true
+    }
+  ],
+  "hint": "Remplace par « ce » : « ce nuage-là » a du sens.",
+  "explanation": "« Ces » est le pluriel de « ce » : on montre des nuages.",
+  "review_tags": [
+    "homophones_cm1",
+    "ces_ses"
+  ],
+  "review_status": "draft"
+}

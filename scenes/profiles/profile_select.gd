@@ -7,6 +7,8 @@ extends Control
 @onready var _empty_state_label: Label = %EmptyStateLabel
 @onready var _new_profile_button: Button = %NewProfileButton
 @onready var _settings_button: Button = %SettingsButton
+@onready var _quit_button: Button = %QuitButton
+@onready var _quit_dialog: ConfirmationDialog = %QuitDialog
 
 
 func _ready() -> void:
@@ -15,6 +17,8 @@ func _ready() -> void:
     _empty_state_label.text = UIText.get_text("profile_select.empty_state")
     _settings_button.text = UIText.get_text("profile_select.settings_button")
     _settings_button.pressed.connect(_on_settings_pressed)
+    _quit_button.text = UIText.get_text("quit.button")
+    _quit_button.pressed.connect(_quit_dialog.request)
     _new_profile_button.pressed.connect(_on_new_profile_pressed)
 
     AudioManager.play_region_music("forest")

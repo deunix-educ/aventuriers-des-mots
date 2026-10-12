@@ -1,0 +1,23 @@
+{
+  "id": "cm1_leur_leurs_qcm_01",
+  "level": "CM1",
+  "domain": "orthographe",
+  "skill": "homophones_cm1",
+  "rule_id": "regle_leur_leurs",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Les enfants rangent ... jouets.",
+  "answers": [
+    "leurs",
+    "leur"
+  ],
+  "correct_answer": 0,
+  "hint": "Remplace par « ses » : « ses jouets » a du sens.",
+  "explanation": "On peut dire « ses jouets » : « leurs » accompagne un nom pluriel.",
+  "review_tags": [
+    "homophones_cm1",
+    "leur_leurs"
+  ],
+  "review_status": "draft"
+}

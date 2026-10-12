@@ -1,0 +1,45 @@
+{
+  "id": "cm1_c_est_s_est_correction_02",
+  "level": "CM1",
+  "domain": "orthographe",
+  "skill": "homophones_cm1",
+  "rule_id": "regle_c_est_s_est",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "S'est",
+      "correct": false,
+      "expected": "C'est",
+      "rule_id": "regle_c_est_s_est"
+    },
+    {
+      "text": "la",
+      "correct": true
+    },
+    {
+      "text": "maison",
+      "correct": true
+    },
+    {
+      "text": "de",
+      "correct": true
+    },
+    {
+      "text": "mes",
+      "correct": true
+    },
+    {
+      "text": "grands-parents.",
+      "correct": true
+    }
+  ],
+  "hint": "Remplace par « cela est ».",
+  "explanation": "On peut dire « cela est la maison » : « c'est ».",
+  "review_tags": [
+    "homophones_cm1",
+    "c_est_s_est"
+  ],
+  "review_status": "draft"
+}

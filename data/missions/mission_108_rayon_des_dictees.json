@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_108_rayon_des_dictees",
+  "title": "Le rayon des dictées",
+  "narrative_context": "Un livre à voix haute dicte une phrase, une seule fois. Écoute bien et écris-la sans faute.",
+  "rule_id": "regle_tion_sion_ssion",
+  "exercise_type": "dictation",
+  "map_position": {
+    "x": 0.85,
+    "y": 0.5
+  },
+  "review_status": "draft"
+}

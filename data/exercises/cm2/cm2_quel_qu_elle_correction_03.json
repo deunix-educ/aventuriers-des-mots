@@ -1,0 +1,49 @@
+{
+  "id": "cm2_quel_qu_elle_correction_03",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "homophones_cm2",
+  "rule_id": "regle_quel_qu_elle",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Quelle",
+      "correct": false,
+      "expected": "Quelles",
+      "rule_id": "regle_quel_qu_elle"
+    },
+    {
+      "text": "sont",
+      "correct": true
+    },
+    {
+      "text": "les",
+      "correct": true
+    },
+    {
+      "text": "couleurs",
+      "correct": true
+    },
+    {
+      "text": "de",
+      "correct": true
+    },
+    {
+      "text": "ce",
+      "correct": true
+    },
+    {
+      "text": "drapeau ?",
+      "correct": true
+    }
+  ],
+  "hint": "« Quelles » accompagne le nom pluriel « couleurs ».",
+  "explanation": "Le nom « couleurs » est au pluriel : on écrit « quelles ».",
+  "review_tags": [
+    "homophones_cm2",
+    "quel_qu_elle"
+  ],
+  "review_status": "draft"
+}

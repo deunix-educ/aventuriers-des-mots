@@ -1,0 +1,24 @@
+{
+  "id": "cm1_participe_etre_qcm_03",
+  "level": "CM1",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm1",
+  "rule_id": "regle_accord_participe_etre",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Les filles sont ... à la plage.",
+  "answers": [
+    "parties",
+    "parti",
+    "partie"
+  ],
+  "correct_answer": 0,
+  "hint": "Le sujet « les filles » est féminin pluriel.",
+  "explanation": "Avec « être », le participe s'accorde avec le sujet : les filles sont parties.",
+  "review_tags": [
+    "verbes_cm1",
+    "participe_etre"
+  ],
+  "review_status": "draft"
+}

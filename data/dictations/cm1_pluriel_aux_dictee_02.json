@@ -1,0 +1,42 @@
+{
+  "id": "cm1_pluriel_aux_dictee_02",
+  "level": "CM1",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_pluriel_aux_eaux"
+  ],
+  "difficulty": 2,
+  "target_text": "Mamie garde ses bijoux dans une petite boîte.",
+  "words": [
+    {
+      "text": "Mamie",
+      "expects_capital": true
+    },
+    {
+      "text": "garde"
+    },
+    {
+      "text": "ses"
+    },
+    {
+      "text": "bijoux",
+      "rule_id": "regle_pluriel_aux_eaux"
+    },
+    {
+      "text": "dans"
+    },
+    {
+      "text": "une"
+    },
+    {
+      "text": "petite"
+    },
+    {
+      "text": "boîte."
+    }
+  ],
+  "audio_id": "cm1_pluriel_aux_dictee_02",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

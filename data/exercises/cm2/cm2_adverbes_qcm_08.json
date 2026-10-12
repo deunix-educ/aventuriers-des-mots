@@ -1,0 +1,24 @@
+{
+  "id": "cm2_adverbes_qcm_08",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "orthographe_cm2",
+  "rule_id": "regle_adverbes_ment",
+  "difficulty": 3,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Il se bat ... pour gagner.",
+  "answers": [
+    "violamment",
+    "violemment",
+    "violement"
+  ],
+  "correct_answer": 1,
+  "hint": "L'adjectif « violent » finit par -ent.",
+  "explanation": "« Violent » finit par -ent : l'adverbe s'écrit « violemment ».",
+  "review_tags": [
+    "orthographe_cm2",
+    "adverbes"
+  ],
+  "review_status": "draft"
+}

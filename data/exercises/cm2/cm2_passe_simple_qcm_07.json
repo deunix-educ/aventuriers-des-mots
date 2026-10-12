@@ -1,0 +1,24 @@
+{
+  "id": "cm2_passe_simple_qcm_07",
+  "level": "CM2",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm2",
+  "rule_id": "regle_passe_simple",
+  "difficulty": 3,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Elles ... leur travail avant la nuit.",
+  "answers": [
+    "finissaient",
+    "finies",
+    "finirent"
+  ],
+  "correct_answer": 2,
+  "hint": "Plusieurs filles : le passé simple d'un verbe en -ir finit par -irent.",
+  "explanation": "Au passé simple, elles : un verbe en -ir finit par -irent : « elles finirent ».",
+  "review_tags": [
+    "verbes_cm2",
+    "passe_simple"
+  ],
+  "review_status": "draft"
+}

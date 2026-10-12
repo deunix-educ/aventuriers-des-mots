@@ -1,0 +1,49 @@
+{
+  "id": "cm2_tion_sion_correction_02",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "orthographe_cm2",
+  "rule_id": "regle_tion_sion_ssion",
+  "difficulty": 2,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "La",
+      "correct": true
+    },
+    {
+      "text": "télévition",
+      "correct": false,
+      "expected": "télévision",
+      "rule_id": "regle_tion_sion_ssion"
+    },
+    {
+      "text": "est",
+      "correct": true
+    },
+    {
+      "text": "allumée",
+      "correct": true
+    },
+    {
+      "text": "dans",
+      "correct": true
+    },
+    {
+      "text": "le",
+      "correct": true
+    },
+    {
+      "text": "salon.",
+      "correct": true
+    }
+  ],
+  "hint": "Ce mot vient du verbe « voir » : il s'écrit avec -sion.",
+  "explanation": "Le mot « télévision » s'écrit avec -sion.",
+  "review_tags": [
+    "orthographe_cm2",
+    "tion_sion"
+  ],
+  "review_status": "draft"
+}

@@ -1,0 +1,61 @@
+{
+  "id": "cm1_c_est_s_est_correction_04",
+  "level": "CM1",
+  "domain": "orthographe",
+  "skill": "homophones_cm1",
+  "rule_id": "regle_c_est_s_est",
+  "difficulty": 3,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Je",
+      "correct": true
+    },
+    {
+      "text": "sais",
+      "correct": true
+    },
+    {
+      "text": "que",
+      "correct": true
+    },
+    {
+      "text": "s'est",
+      "correct": false,
+      "expected": "c'est",
+      "rule_id": "regle_c_est_s_est"
+    },
+    {
+      "text": "toi",
+      "correct": true
+    },
+    {
+      "text": "qui",
+      "correct": true
+    },
+    {
+      "text": "as",
+      "correct": true
+    },
+    {
+      "text": "gagné",
+      "correct": true
+    },
+    {
+      "text": "la",
+      "correct": true
+    },
+    {
+      "text": "course.",
+      "correct": true
+    }
+  ],
+  "hint": "Remplace par « cela est ».",
+  "explanation": "On peut dire « cela est toi qui as gagné » : « c'est ».",
+  "review_tags": [
+    "homophones_cm1",
+    "c_est_s_est"
+  ],
+  "review_status": "draft"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cm2_futur_cond_qcm_02",
+  "level": "CM2",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm2",
+  "rule_id": "regle_futur_conditionnel",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Si j'avais des ailes, je ... jusqu'au volcan.",
+  "answers": [
+    "volerais",
+    "volerai"
+  ],
+  "correct_answer": 0,
+  "hint": "Après « si » + imparfait, on emploie le conditionnel.",
+  "explanation": "Après « si j'avais », on écrit le conditionnel : « volerais ».",
+  "review_tags": [
+    "verbes_cm2",
+    "futur_cond"
+  ],
+  "review_status": "draft"
+}

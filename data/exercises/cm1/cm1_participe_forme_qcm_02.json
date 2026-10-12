@@ -1,0 +1,24 @@
+{
+  "id": "cm1_participe_forme_qcm_02",
+  "level": "CM1",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm1",
+  "rule_id": "regle_participe_passe_forme",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Papa a ... sa voiture au garage.",
+  "answers": [
+    "vendi",
+    "vendé",
+    "vendu"
+  ],
+  "correct_answer": 2,
+  "hint": "Le verbe « vendre » est en -re : son participe finit par -u.",
+  "explanation": "Beaucoup de verbes en -re ont un participe en -u : « vendu ».",
+  "review_tags": [
+    "verbes_cm1",
+    "participe_forme"
+  ],
+  "review_status": "draft"
+}

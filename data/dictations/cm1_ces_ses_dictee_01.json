@@ -1,0 +1,36 @@
+{
+  "id": "cm1_ces_ses_dictee_01",
+  "level": "CM1",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_ces_ses"
+  ],
+  "difficulty": 1,
+  "target_text": "Ces champignons poussent après la pluie.",
+  "words": [
+    {
+      "text": "Ces",
+      "expects_capital": true,
+      "rule_id": "regle_ces_ses"
+    },
+    {
+      "text": "champignons"
+    },
+    {
+      "text": "poussent"
+    },
+    {
+      "text": "après"
+    },
+    {
+      "text": "la"
+    },
+    {
+      "text": "pluie."
+    }
+  ],
+  "audio_id": "cm1_ces_ses_dictee_01",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

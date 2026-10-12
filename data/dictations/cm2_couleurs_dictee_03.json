@@ -1,0 +1,39 @@
+{
+  "id": "cm2_couleurs_dictee_03",
+  "level": "CM2",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_adjectifs_couleur"
+  ],
+  "difficulty": 3,
+  "target_text": "Mon frère a des yeux bleu clair.",
+  "words": [
+    {
+      "text": "Mon",
+      "expects_capital": true
+    },
+    {
+      "text": "frère"
+    },
+    {
+      "text": "a"
+    },
+    {
+      "text": "des"
+    },
+    {
+      "text": "yeux"
+    },
+    {
+      "text": "bleu"
+    },
+    {
+      "text": "clair.",
+      "rule_id": "regle_adjectifs_couleur"
+    }
+  ],
+  "audio_id": "cm2_couleurs_dictee_03",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

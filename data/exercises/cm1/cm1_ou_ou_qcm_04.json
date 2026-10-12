@@ -1,0 +1,23 @@
+{
+  "id": "cm1_ou_ou_qcm_04",
+  "level": "CM1",
+  "domain": "orthographe",
+  "skill": "orthographe_cm1",
+  "rule_id": "regle_ou_ou_accent",
+  "difficulty": 2,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Tu peux prendre le bus ... le train.",
+  "answers": [
+    "où",
+    "ou"
+  ],
+  "correct_answer": 1,
+  "hint": "Remplace par « ou bien » : « le bus ou bien le train » a du sens.",
+  "explanation": "On peut dire « ou bien » : on écrit « ou » sans accent.",
+  "review_tags": [
+    "orthographe_cm1",
+    "ou_ou"
+  ],
+  "review_status": "draft"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "cm2_tion_sion_qcm_03",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "orthographe_cm2",
+  "rule_id": "regle_tion_sion_ssion",
+  "difficulty": 1,
+  "type": "multiple_choice",
+  "instruction": "Choisis le bon mot.",
+  "question": "Le pilote a une grande ... : voler.",
+  "answers": [
+    "passion",
+    "passtion",
+    "pasion"
+  ],
+  "correct_answer": 0,
+  "hint": "Ce mot a deux s : -ssion.",
+  "explanation": "Le mot « passion » s'écrit avec -ssion.",
+  "review_tags": [
+    "orthographe_cm2",
+    "tion_sion"
+  ],
+  "review_status": "draft"
+}

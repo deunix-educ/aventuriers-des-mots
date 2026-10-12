@@ -1,0 +1,39 @@
+{
+  "id": "cm1_la_la_l_a_dictee_01",
+  "level": "CM1",
+  "domain": "orthographe",
+  "rule_ids": [
+    "regle_la_la_accent_l_a"
+  ],
+  "difficulty": 1,
+  "target_text": "La tortue avance lentement sur le chemin.",
+  "words": [
+    {
+      "text": "La",
+      "expects_capital": true,
+      "rule_id": "regle_la_la_accent_l_a"
+    },
+    {
+      "text": "tortue"
+    },
+    {
+      "text": "avance"
+    },
+    {
+      "text": "lentement"
+    },
+    {
+      "text": "sur"
+    },
+    {
+      "text": "le"
+    },
+    {
+      "text": "chemin."
+    }
+  ],
+  "audio_id": "cm1_la_la_l_a_dictee_01",
+  "audio_provisional": true,
+  "accepted_variants": [],
+  "review_status": "draft"
+}

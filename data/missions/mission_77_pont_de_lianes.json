@@ -1,0 +1,12 @@
+{
+  "mission_id": "mission_77_pont_de_lianes",
+  "title": "Le pont de lianes",
+  "narrative_context": "Une liane du pont est mal nouée : un pluriel est faux. Trouve-le et corrige-le.",
+  "rule_id": "regle_pluriel_aux_eaux",
+  "exercise_type": "sentence_correction",
+  "map_position": {
+    "x": 0.5,
+    "y": 0.15
+  },
+  "review_status": "draft"
+}

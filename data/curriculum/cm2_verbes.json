@@ -1,0 +1,15 @@
+{
+  "level": "CM2",
+  "region_id": "volcan_des_verbes",
+  "chapter_id": "verbes_cm2",
+  "title": "Les verbes : temps et accords",
+  "region_title": "Le volcan des verbes",
+  "order": 2,
+  "backdrop": "volcano",
+  "rule_ids": [
+    "regle_futur_conditionnel",
+    "regle_passe_simple",
+    "regle_participe_cod_avant"
+  ],
+  "review_status": "draft"
+}

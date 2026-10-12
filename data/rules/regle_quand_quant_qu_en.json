@@ -1,0 +1,9 @@
+{
+  "rule_id": "regle_quand_quant_qu_en",
+  "level": "CM2",
+  "domain": "orthographe",
+  "skill": "homophones_cm2",
+  "statement": "« quand » indique le moment (on peut dire « lorsque ») ; « quant à » veut dire « en ce qui concerne » ; « qu'en » est « que » + « en ».",
+  "example": "Quand il pleut, je reste. Quant à moi, j'ai faim.",
+  "review_status": "draft"
+}

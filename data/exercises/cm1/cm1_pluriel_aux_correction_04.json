@@ -1,0 +1,57 @@
+{
+  "id": "cm1_pluriel_aux_correction_04",
+  "level": "CM1",
+  "domain": "orthographe",
+  "skill": "orthographe_cm1",
+  "rule_id": "regle_pluriel_aux_eaux",
+  "difficulty": 3,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Les",
+      "correct": true
+    },
+    {
+      "text": "ouvriers",
+      "correct": true
+    },
+    {
+      "text": "ont",
+      "correct": true
+    },
+    {
+      "text": "fini",
+      "correct": true
+    },
+    {
+      "text": "les",
+      "correct": true
+    },
+    {
+      "text": "travails",
+      "correct": false,
+      "expected": "travaux",
+      "rule_id": "regle_pluriel_aux_eaux"
+    },
+    {
+      "text": "de",
+      "correct": true
+    },
+    {
+      "text": "la",
+      "correct": true
+    },
+    {
+      "text": "rue.",
+      "correct": true
+    }
+  ],
+  "hint": "Le nom « travail » finit par -ail.",
+  "explanation": "« Travail » fait « travaux » au pluriel.",
+  "review_tags": [
+    "orthographe_cm1",
+    "pluriel_aux"
+  ],
+  "review_status": "draft"
+}

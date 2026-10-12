@@ -1,0 +1,45 @@
+{
+  "id": "cm1_participe_forme_correction_01",
+  "level": "CM1",
+  "domain": "grammaire",
+  "skill": "conjugaison_cm1",
+  "rule_id": "regle_participe_passe_forme",
+  "difficulty": 1,
+  "type": "sentence_correction",
+  "instruction": "Touche le mot qui contient une erreur, puis corrige-le.",
+  "tokens": [
+    {
+      "text": "Hier,",
+      "correct": true
+    },
+    {
+      "text": "Tom",
+      "correct": true
+    },
+    {
+      "text": "a",
+      "correct": true
+    },
+    {
+      "text": "perdi",
+      "correct": false,
+      "expected": "perdu",
+      "rule_id": "regle_participe_passe_forme"
+    },
+    {
+      "text": "sa",
+      "correct": true
+    },
+    {
+      "text": "casquette.",
+      "correct": true
+    }
+  ],
+  "hint": "Le verbe « perdre » est en -re : son participe finit par -u.",
+  "explanation": "Beaucoup de verbes en -re ont un participe en -u : « perdu ».",
+  "review_tags": [
+    "verbes_cm1",
+    "participe_forme"
+  ],
+  "review_status": "draft"
+}

@@ -1,0 +1,15 @@
+{
+  "level": "CM2",
+  "region_id": "station_des_homophones",
+  "chapter_id": "homophones_cm2",
+  "title": "Les homophones",
+  "region_title": "La station des homophones",
+  "order": 1,
+  "backdrop": "space",
+  "rule_ids": [
+    "regle_quel_qu_elle",
+    "regle_quand_quant_qu_en",
+    "regle_plutot_plus_tot"
+  ],
+  "review_status": "draft"
+}
