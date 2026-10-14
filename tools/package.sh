@@ -37,7 +37,7 @@ Les Aventuriers des mots ${VERSION}
 Jeu éducatif de français CE1 à CM2, hors ligne.
 
 Lancer : $2
-Aucune installation ni connexion Internet n'est nécessaire.
+Aucune connexion Internet n'est nécessaire.
 
 Les profils et la progression sont enregistrés localement :
   $3
