@@ -8,6 +8,10 @@ Open source project, in development. Current status: version 0.9.4, playable off
 
 Ready-to-play builds are on the [Releases](https://github.com/deunix-educ/aventuriers-des-mots/releases) page: one archive per platform (Linux, Windows, macOS, Android, ChromeOS/browser) and `SHA256SUMS` to verify the files. These are preview versions: draft educational content and placeholder voices. Each archive contains a `LISEZMOI` file (in French) explaining how to start the game.
 
+**Android via F-Droid**: in F-Droid (or Droid-ify, Neo Store), Settings > Repositories > Add, enter `https://deunix-educ.github.io/aventuriers-des-mots/repo`, then install "Les Aventuriers des mots". Repository SHA-256 fingerprint, to compare with the one shown by the client:
+
+`87:29:A2:08:FA:21:58:00:A0:44:9B:C7:2C:77:7B:F5:89:CE:83:0C:7F:C3:5D:3B:C6:73:54:5B:B4:8A:A9:05`
+
 ## Tech stack
 
 - Godot 4.6 (typed GDScript)

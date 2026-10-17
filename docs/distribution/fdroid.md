@@ -41,7 +41,7 @@ module de vérification de licence Google Play (`com.android.vending.licensing`)
 inactif sans Play Store. Les analyseurs de F-Droid le signalent ; IzzyOnDroid est
 plus tolérant, mais la demande peut le relever.
 
-## Voie 2 : dépôt F-Droid personnel (en place)
+## Voie 2 : dépôt F-Droid personnel (en place et publié le 2026-10-17)
 
 Dépôt compatible F-Droid hébergé par GitHub Pages. Aucune revue : les
 utilisateurs ajoutent l'adresse du dépôt dans leur client (F-Droid, Droid-ify,
