@@ -7,6 +7,7 @@ extends Control
 signal answer_submitted(selected_indices: Array, corrections: Dictionary)
 
 var _correction_edits: Dictionary = {}
+var _accent_bar := AccentBar.new()
 
 @onready var _instruction_label: Label = %InstructionLabel
 @onready var _tokens_box: HFlowContainer = %TokensBox
@@ -17,6 +18,10 @@ var _correction_edits: Dictionary = {}
 func _ready() -> void:
     _validate_button.text = UIText.get_text("exercise_host.validate_button")
     _validate_button.pressed.connect(_on_validate_pressed)
+    # Barre d'accents sous les champs de correction (masquee sans champ).
+    _corrections_box.get_parent().add_child(_accent_bar)
+    _corrections_box.get_parent().move_child(_accent_bar, _corrections_box.get_index() + 1)
+    _accent_bar.set_target(null)
 
 
 func load_exercise(exercise: Dictionary) -> void:
@@ -27,6 +32,7 @@ func load_exercise(exercise: Dictionary) -> void:
     for child in _corrections_box.get_children():
         child.queue_free()
     _correction_edits.clear()
+    _accent_bar.set_target(null)
 
     var tokens: Array = exercise["tokens"]
     for i in tokens.size():
@@ -47,12 +53,18 @@ func _on_token_toggled(pressed: bool, index: int) -> void:
             edit.placeholder_text = UIText.get_text("sentence_correction.correction_placeholder")
             # La touche Entree valide comme le bouton.
             edit.text_submitted.connect(func(_text: String) -> void: _on_validate_pressed())
+            edit.focus_entered.connect(_accent_bar.set_target.bind(edit))
             _corrections_box.add_child(edit)
+            _accent_bar.set_target(edit)
             _correction_edits[index] = edit
     elif _correction_edits.has(index):
         var edit: LineEdit = _correction_edits[index]
         edit.queue_free()
         _correction_edits.erase(index)
+        if _correction_edits.is_empty():
+            _accent_bar.set_target(null)
+        else:
+            _accent_bar.set_target(_correction_edits.values().back() as LineEdit)
 
 
 func _on_validate_pressed() -> void:

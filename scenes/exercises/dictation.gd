@@ -11,6 +11,7 @@ extends Control
 signal answer_submitted(submitted_text: String)
 
 var _dictation: Dictionary = {}
+var _accent_bar := AccentBar.new()
 
 @onready var _instruction_label: Label = %InstructionLabel
 @onready var _replay_button: Button = %ReplayButton
@@ -27,6 +28,11 @@ func _ready() -> void:
     _provisional_badge.text = UIText.get_text("dictation.provisional_audio_badge")
     _convention_hint_label.text = UIText.get_text("dictation.convention_hint")
     _validate_button.text = UIText.get_text("exercise_host.validate_button")
+
+    # Barre d'accents sous le champ : utile si le clavier n'a pas les accents.
+    _text_edit.get_parent().add_child(_accent_bar)
+    _text_edit.get_parent().move_child(_accent_bar, _text_edit.get_index() + 1)
+    _accent_bar.set_target(_text_edit)
 
     _replay_button.pressed.connect(_on_replay_pressed)
     _validate_button.pressed.connect(_on_validate_pressed)

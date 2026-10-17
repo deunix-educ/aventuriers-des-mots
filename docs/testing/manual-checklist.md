@@ -85,3 +85,9 @@ Tout ce qui suit ne peut pas être vérifié sans écran (rendu, mise en page, a
 - `make export-web` : fichiers générés ; **jamais ouvert dans un navigateur**. Servir `build/web/` avec `python3 -m http.server`, ouvrir dans Chrome, vérifier son (le navigateur exige un premier clic), sauvegarde et plein écran.
 - Touche Entrée : en dictée et en correction, Entrée valide ; une seconde pression sur Entrée pendant le retour ne doit pas compter une réponse de plus.
 - Version web : `make serve-web` (ou `lancer-web.sh` / `lancer-web.bat` de l'archive ChromeOS) ; son confirmé à la main après un clic dans la page (0.9.1).
+
+## Barre d'accents (0.9.3)
+
+- Dictée : la rangée d'accents s'affiche sous le champ ; toucher « é » l'insère à l'endroit du curseur sans fermer le clavier tactile ; ⇧ puis « É » met une majuscule, puis revient aux minuscules.
+- Correction : la barre n'apparaît qu'après avoir touché un mot fautif ; avec plusieurs champs, elle écrit dans celui qui a le focus.
+- Android : vérifier que les touches sont assez grandes au doigt et que la rangée passe à la ligne sur petit écran.
