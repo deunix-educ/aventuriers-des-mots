@@ -25,6 +25,9 @@ __pycache__/
 secrets.*
 export_credentials.cfg
 
+# Modele Gradle Android (genere par `make android-template`)
+android/
+
 # Fichiers d'edition courants
 *.swp
 .DS_Store

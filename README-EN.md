@@ -35,6 +35,7 @@ make run     # runs the game
 | `make generate-dictation-audio` | generates the placeholder dictation audio |
 | `make release` / `make release-dry-run` | publishes (or simulates) a GitHub Release |
 | `make help` | lists the available commands |
+| `make export-play` | App Bundle (.aab) for Google Play |
 | `make serve-web` | exports, then serves the web build locally and opens the browser |
 | `make export-linux` / `make export-windows` / `make export-android` / `make export-macos` / `make export-web` | exports into `build/` |
 | `make package` | builds the distributable archives in `dist/` (single executable + license + credits) |

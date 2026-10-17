@@ -8,7 +8,7 @@ GD_SOURCES := autoload scripts tests
 
 .DEFAULT_GOAL := help
 
-.PHONY: release release-dry-run serve-web help setup import run lint format validate-data test check content-review generate-dictation-audio generate-sounds export-linux export-windows export-android export-macos export-web package screenshot
+.PHONY: android-template export-play release release-dry-run serve-web help setup import run lint format validate-data test check content-review generate-dictation-audio generate-sounds export-linux export-windows export-android export-macos export-web package screenshot
 
 # Liste les commandes : toute cible suivie de « ## description » y figure.
 help: ## Affiche cette aide
@@ -103,3 +103,21 @@ release: ## Publie une pre-release GitHub (STABLE=1 pour une version stable)
 
 release-dry-run: ## Verifie tout et construit les archives sans rien publier
 	tools/release.sh --dry-run
+
+# Modele de projet Android (Gradle), requis pour l'App Bundle de Google Play.
+# Extrait des modeles d'export de la version Godot pinnee ; android/ n'est pas
+# versionne (regenerable, 200 Mo).
+GODOT_TEMPLATE_DIR := $(HOME)/.local/share/godot/export_templates/$(subst -,.,$(shell cat .godot-version))
+
+android-template: ## Installe le modele Gradle Android (android/build) pour Google Play
+	@if [ "$$(cat android/.build_version 2>/dev/null)" != "$(subst -,.,$(shell cat .godot-version))" ]; then \
+		rm -rf android; mkdir -p android/build; \
+		unzip -q "$(GODOT_TEMPLATE_DIR)/android_source.zip" -d android/build; \
+		printf '%s' "$(subst -,.,$(shell cat .godot-version))" > android/.build_version; \
+	fi
+
+export-play: import android-template ## Exporte l'App Bundle (.aab) pour Google Play dans build/play/
+	@[ -f "$(RELEASE_ENV)" ] || { echo "ERREUR : cle de publication absente ($(RELEASE_ENV))" >&2; exit 1; }
+	mkdir -p build/play
+	set -a; . "$(RELEASE_ENV)"; set +a; \
+	$(GODOT_BIN) --headless --path . --export-release "Android Play" build/play/aventuriers_des_mots.aab

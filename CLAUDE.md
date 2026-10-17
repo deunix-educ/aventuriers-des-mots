@@ -24,6 +24,7 @@ Le `Makefile` est le seul point d'entrée pour les opérations système. Tenir c
 - `make export-linux` / `make export-windows` : exports dans `build/`
 - `make screenshot SCENE=… OUT=… ARGS=…` : capture le rendu réel d'une scène dans une fenêtre (outil de développement, ouvre brièvement une fenêtre)
 - `make export-android` / `make export-macos` / `make export-web` : APK Android (arm64 + x86_64, aussi pour ChromeOS), application macOS universelle (zip, signature ad hoc), version web
+- `make android-template` / `make export-play` : modèle Gradle Android (non versionné) et App Bundle `.aab` signé avec la clé de publication, pour Google Play (`build/play/`) ; guide dans `docs/distribution/play-store.md`
 - `make serve-web` : exporte puis sert la version web en local (127.0.0.1) et ouvre le navigateur (`tools/serve_web.py`)
 - `make release` / `make release-dry-run` : publie (ou simule) une Release GitHub « pre-release » depuis `main` à partir de la version de `project.godot` (`tools/release.sh` ; `STABLE=1` pour une version stable). Clé Android de publication hors dépôt, dans `~/.config/aventuriers-des-mots/release.env`
 - `make package` : réexporte puis produit les archives distribuables (Linux, Windows, Android, macOS, ChromeOS ; licence + crédits + notice) et `SHA256SUMS` dans `dist/`
