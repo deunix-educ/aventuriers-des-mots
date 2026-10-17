@@ -69,7 +69,7 @@ distincte**.
 **Pour les utilisateurs** (une fois publié)
 1. Installer F-Droid (f-droid.org) ou un client compatible.
 2. Réglages > Dépôts > Ajouter un dépôt, saisir
-   `https://deunix-educ.github.io/aventuriers-des-mots/repo`.
+   `https://deunix-educ.github.io/aventuriers-des-mots/fdroid/repo`.
 3. Vérifier l'empreinte SHA-256 affichée par `make fdroid-repo` (à publier dans
    le README) pour être sûr de la source ; installer « Les Aventuriers des mots ».
 

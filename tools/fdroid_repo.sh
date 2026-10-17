@@ -9,7 +9,7 @@
 #   ~/.local/share/aventuriers-des-mots/fdroid-repo.keystore
 #   ~/.config/aventuriers-des-mots/fdroid.env   (droits 600)
 # Publication : branche orpheline gh-pages (force-push, sans historique) servie
-# par GitHub Pages sur https://deunix-educ.github.io/aventuriers-des-mots/repo
+# par GitHub Pages sur https://deunix-educ.github.io/aventuriers-des-mots/fdroid/repo
 set -euo pipefail
 
 cd "$(dirname "$0")/.."
@@ -78,7 +78,7 @@ FPR="$(keytool -list -keystore "${KEYSTORE}" -storepass "${FDROID_KEYSTORE_PASS}
 echo
 echo "Depot construit : ${STATE}/repo"
 echo "Empreinte de la cle du depot (SHA-256) : ${FPR}"
-echo "Adresse du depot : https://deunix-educ.github.io/aventuriers-des-mots/repo"
+echo "Adresse du depot : https://deunix-educ.github.io/aventuriers-des-mots/fdroid/repo"
 
 [ "${PUBLISH}" -eq 1 ] || { echo "(simulation : rien n'est publie ; --publish pour publier)"; exit 0; }
 
@@ -87,11 +87,13 @@ echo "== Publication sur la branche gh-pages =="
 REMOTE_URL="$(git remote get-url origin)"
 PUB="$(mktemp -d)"
 trap 'rm -rf "${PUB}"' EXIT
-cp -r "${STATE}/repo" "${PUB}/repo"
+# Le client F-Droid attend une adresse se terminant par /fdroid/repo.
+mkdir -p "${PUB}/fdroid"
+cp -r "${STATE}/repo" "${PUB}/fdroid/repo"
 cat > "${PUB}/index.html" <<'HTML'
 <!doctype html><meta charset="utf-8"><title>Les Aventuriers des mots - dépôt F-Droid</title>
-<meta http-equiv="refresh" content="0; url=repo/">
-<a href="repo/">Dépôt F-Droid de Les Aventuriers des mots</a>
+<meta http-equiv="refresh" content="0; url=fdroid/repo/">
+<a href="fdroid/repo/">Dépôt F-Droid de Les Aventuriers des mots</a>
 HTML
 touch "${PUB}/.nojekyll"
 (

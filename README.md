@@ -8,7 +8,7 @@ Projet open source, en développement. Statut actuel : version 0.9.4, jouable ho
 
 Les versions prêtes à jouer sont sur la page des [Releases](https://github.com/deunix-educ/aventuriers-des-mots/releases) : une archive par plateforme (Linux, Windows, macOS, Android, ChromeOS/navigateur) et `SHA256SUMS` pour vérifier les fichiers. Ce sont des versions préliminaires : contenu pédagogique en brouillon, voix provisoires. Chaque archive contient un fichier `LISEZMOI` qui explique le lancement.
 
-**Android via F-Droid** : dans F-Droid (ou Droid-ify, Neo Store), Réglages > Dépôts > Ajouter, saisir `https://deunix-educ.github.io/aventuriers-des-mots/repo`, puis installer « Les Aventuriers des mots ». Empreinte SHA-256 du dépôt, à comparer avec celle affichée par le client :
+**Android via F-Droid** : dans F-Droid (ou Droid-ify, Neo Store), Réglages > Dépôts > Ajouter, saisir `https://deunix-educ.github.io/aventuriers-des-mots/fdroid/repo`, puis installer « Les Aventuriers des mots ». Empreinte SHA-256 du dépôt, à comparer avec celle affichée par le client :
 
 `87:29:A2:08:FA:21:58:00:A0:44:9B:C7:2C:77:7B:F5:89:CE:83:0C:7F:C3:5D:3B:C6:73:54:5B:B4:8A:A9:05`
 

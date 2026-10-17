@@ -3,7 +3,7 @@
 # (jamais commites). Le fichier genere vit hors du depot.
 ---
 sdk_path: @SDK@
-repo_url: https://deunix-educ.github.io/aventuriers-des-mots/repo
+repo_url: https://deunix-educ.github.io/aventuriers-des-mots/fdroid/repo
 repo_name: Les Aventuriers des mots
 repo_description: >-
   Depot de l'application éducative « Les Aventuriers des mots » (français,
