@@ -73,6 +73,10 @@ distincte**.
 3. Vérifier l'empreinte SHA-256 affichée par `make fdroid-repo` (à publier dans
    le README) pour être sûr de la source ; installer « Les Aventuriers des mots ».
 
+Support imprimable (QR code, adresse, 4 étapes, empreinte) : `docs/distribution/support-imprimable.pdf`
+(`make generate-flyer` le régénère ; adresse et empreinte sont dans
+`tools/generate_flyer.py`).
+
 Limite : arm64 seulement (téléphones et tablettes ARM récents) ; une tablette
 x86_64 utilise l'APK de `android.zip`.
 

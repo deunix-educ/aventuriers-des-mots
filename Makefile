@@ -8,7 +8,7 @@ GD_SOURCES := autoload scripts tests
 
 .DEFAULT_GOAL := help
 
-.PHONY: fdroid-repo fdroid-publish release release-dry-run serve-web help setup import run lint format validate-data test check content-review generate-dictation-audio generate-sounds export-linux export-windows export-android export-macos export-web package screenshot
+.PHONY: generate-flyer fdroid-repo fdroid-publish release release-dry-run serve-web help setup import run lint format validate-data test check content-review generate-dictation-audio generate-sounds export-linux export-windows export-android export-macos export-web package screenshot
 
 # Liste les commandes : toute cible suivie de « ## description » y figure.
 help: ## Affiche cette aide
@@ -110,3 +110,6 @@ fdroid-repo: ## Construit le depot F-Droid personnel (APK de dist/) sans le publ
 
 fdroid-publish: ## Construit puis publie le depot F-Droid sur la branche gh-pages
 	tools/fdroid_repo.sh --publish
+
+generate-flyer: ## Genere le support imprimable (HTML + PDF) du depot F-Droid
+	$(PYTHON) tools/generate_flyer.py
