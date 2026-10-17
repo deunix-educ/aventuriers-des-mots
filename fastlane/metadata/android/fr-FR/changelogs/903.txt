@@ -1,0 +1,1 @@
+Barre d accents sous les champs de saisie (dictée et correction), pour les claviers sans accents.

@@ -1,0 +1,14 @@
+Les Aventuriers des mots est un jeu éducatif de français pour les enfants de 7 à 11 ans (CE1, CE2, CM1 et CM2). Il se joue entièrement hors ligne : aucune connexion Internet, aucun compte, aucune publicité, aucune collecte de données.
+
+L'enfant explore une carte, accompagné d'un hibou guide, et relève des missions : choix multiple, correction de phrase et dictée avec voix. Chaque règle est expliquée avant les exercices, et une erreur déclenche une explication, jamais une punition. Il n'y a aucune récompense liée à la vitesse.
+
+Pour chaque niveau, trois tableaux : les homophones, les verbes et l'orthographe des mots. Les étoiles gagnées font grandir une collection d'objets.
+
+Fonctions :
+• plusieurs profils d'enfants sur le même appareil, avec sauvegarde locale
+• espace adulte protégé par un petit calcul : tableau de progrès, export et restauration de la progression, suppression d'un profil
+• réglages : volumes, musique au choix, taille du texte, animations
+• barre d'accents sous les champs de saisie, utile avec un clavier tactile non français
+• conçu pour le tactile, la souris et le clavier
+
+Projet libre sous licence AGPL-3.0. Le contenu pédagogique est encore en brouillon, en attente de validation par des enseignants, et les voix des dictées sont des voix de synthèse provisoires.

@@ -118,7 +118,10 @@ WEB
     && zip -qr "${ANDROID}.zip" "${ANDROID}" \
     && zip -qr "${MACOS}.zip" "${MACOS}" \
     && zip -qr "${CHROMEOS}.zip" "${CHROMEOS}")
+# L'APK est aussi publie seul : les depots F-Droid tiers (IzzyOnDroid) le lisent
+# directement dans la Release, sans archive.
+cp build/android/aventuriers_des_mots.apk "dist/${ANDROID}.apk"
 (cd dist && sha256sum "${LINUX}.tar.gz" "${WINDOWS}.zip" "${ANDROID}.zip" \
-    "${MACOS}.zip" "${CHROMEOS}.zip" > SHA256SUMS)
+    "${ANDROID}.apk" "${MACOS}.zip" "${CHROMEOS}.zip" > SHA256SUMS)
 rm -rf "dist/${LINUX}" "dist/${WINDOWS}" "dist/${ANDROID}" "dist/${MACOS}" "dist/${CHROMEOS}"
 ls -lh dist
