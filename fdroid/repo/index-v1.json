@@ -1,0 +1,73 @@
+{
+  "repo": {
+    "timestamp": 1792269002000,
+    "version": 20002,
+    "name": "Les Aventuriers des mots",
+    "icon": "icon.png",
+    "address": "https://deunix-educ.github.io/aventuriers-des-mots/fdroid/repo",
+    "description": "Depot de l'application \u00e9ducative \u00ab Les Aventuriers des mots \u00bb (fran\u00e7ais, CE1 \u00e0 CM2), logiciel libre sous AGPL-3.0. Aucune publicit\u00e9, aucun traqueur."
+  },
+  "requests": {
+    "install": [],
+    "uninstall": []
+  },
+  "apps": [
+    {
+      "authorName": "deunix-educ",
+      "categories": [
+        "Games",
+        "Science & Education"
+      ],
+      "changelog": "https://github.com/deunix-educ/aventuriers-des-mots/releases",
+      "suggestedVersionCode": "904",
+      "issueTracker": "https://github.com/deunix-educ/aventuriers-des-mots/issues",
+      "license": "AGPL-3.0-or-later",
+      "name": "Les Aventuriers des mots",
+      "sourceCode": "https://github.com/deunix-educ/aventuriers-des-mots",
+      "summary": "Jeu d'aventure pour apprendre l'orthographe et la grammaire (CE1 \u00e0 CM2)",
+      "webSite": "https://github.com/deunix-educ/aventuriers-des-mots",
+      "added": 1792267173000,
+      "packageName": "org.deunix.aventuriersdesmots",
+      "lastUpdated": 1792267173000,
+      "localized": {
+        "fr-FR": {
+          "description": "Les Aventuriers des mots est un jeu \u00e9ducatif de fran\u00e7ais pour les enfants de 7 \u00e0 11 ans (CE1, CE2, CM1 et CM2). Il se joue enti\u00e8rement hors ligne : aucune connexion Internet, aucun compte, aucune publicit\u00e9, aucune collecte de donn\u00e9es.\n\nL'enfant explore une carte, accompagn\u00e9 d'un hibou guide, et rel\u00e8ve des missions : choix multiple, correction de phrase et dict\u00e9e avec voix. Chaque r\u00e8gle est expliqu\u00e9e avant les exercices, et une erreur d\u00e9clenche une explication, jamais une punition. Il n'y a aucune r\u00e9compense li\u00e9e \u00e0 la vitesse.\n\nPour chaque niveau, trois tableaux : les homophones, les verbes et l'orthographe des mots. Les \u00e9toiles gagn\u00e9es font grandir une collection d'objets.\n\nFonctions :\n\u2022 plusieurs profils d'enfants sur le m\u00eame appareil, avec sauvegarde locale\n\u2022 espace adulte prot\u00e9g\u00e9 par un petit calcul : tableau de progr\u00e8s, export et restauration de la progression, suppression d'un profil\n\u2022 r\u00e9glages : volumes, musique au choix, taille du texte, animations\n\u2022 barre d'accents sous les champs de saisie, utile avec un clavier tactile non fran\u00e7ais\n\u2022 con\u00e7u pour le tactile, la souris et le clavier\n\nProjet libre sous licence AGPL-3.0. Le contenu p\u00e9dagogique est encore en brouillon, en attente de validation par des enseignants, et les voix des dict\u00e9es sont des voix de synth\u00e8se provisoires.\n",
+          "icon": "icon_xjk3WREYh759_15qwelgSkNqxgWbeIIDXVFoH2xKa38=.png",
+          "name": "Les Aventuriers des mots",
+          "phoneScreenshots": [
+            "1.png",
+            "2.png",
+            "3.png",
+            "4.png"
+          ],
+          "summary": "Jeu d'aventure pour apprendre l'orthographe et la grammaire, du CE1 au CM2",
+          "whatsNew": "APK arm64 seul de moins de 30 Mo pour les d\u00e9p\u00f4ts F-Droid tiers ; lecture silencieuse des fichiers corrompus.\n"
+        }
+      }
+    }
+  ],
+  "packages": {
+    "org.deunix.aventuriersdesmots": [
+      {
+        "added": 1792267173000,
+        "apkName": "aventuriers-des-mots-0.9.4-android-arm64.apk",
+        "features": [
+          "android.hardware.vulkan.version"
+        ],
+        "hash": "72bd91436c6bd432e80abc89c460d7911696aa2aba9f605ef631a510b4d1dd25",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "nativecode": [
+          "arm64-v8a"
+        ],
+        "packageName": "org.deunix.aventuriersdesmots",
+        "sig": "49112d900b69a90931ea6ad3f2ad3553",
+        "signer": "5d2cbda93a3dd74ec023830234408c9b7c10952d24aa80b1a846f5e05dcdb47b",
+        "size": 29812275,
+        "targetSdkVersion": 36,
+        "versionCode": 904,
+        "versionName": "0.9.4"
+      }
+    ]
+  }
+}

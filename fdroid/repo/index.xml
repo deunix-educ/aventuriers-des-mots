@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fdroid>
+	<repo icon="icon.png" name="Les Aventuriers des mots" pubkey="308205423082032aa003020102020900ae79ed2f5f7c01e5300d06092a864886f70d01010c0500304e310b300906035504061302465231143012060355040a130b6465756e69782d6564756331293027060355040313204c6573204176656e7475726965727320646573206d6f747320286465706f74293020170d3236313031373139353933325a180f32303534303330343139353933325a304e310b300906035504061302465231143012060355040a130b6465756e69782d6564756331293027060355040313204c6573204176656e7475726965727320646573206d6f747320286465706f742930820222300d06092a864886f70d01010105000382020f003082020a0282020100c0b1cb0232d864c7b9161211ca1077dc5a84cd002c903c212dbe8df0c2e40197ea58cf3c08a368963eb41844fde357684f6fb47e0766b1235a844d4927db511e395ae04035a0447ed25a2cc9b0256fae8be16b3545c14adee9e1cc6c9b570e55d96776918d2336fa5b887bd1b02026c63f6903200d51cbd39d75e1d2e4dd9d885cb93fccf035ef46295e0776d953aa1486969afd19cd36effa40c0d5b8e97ebc361b7abcc6a98f37655b80763fb50f3881e1bf35d5f842cf4e6d028f9301c7f912e199a735c56bad45be039ffee4cb873f06258a0073892991a7f9d1a94afc5aebb8298f3b2dfb3d46dc7ac4ebea3591c304ef77bb1a29651981b2eb9072d8b5a857b33e73dc13b4428c0dddca0fe758f6964167edaf7f5892aaebf21b126a9febd0277de8dd7bf89f49e0448b1b0af77065b9a6323303690c16fc97e24d1350224ec872d7db47632fb04dc2ffb7f0c4f3007a72a2adaddb77ee60ea3369e96347969e65ccb08910bf0b6358c03371bcb5be112ea0af4bf605697c5d9e6784b3ad129c3b1aa5d6485427422be50c1cc1a531ef1eb7a8e7dc970fb9056b5ce795f84d7603d252027da2dbadf529b29d1b93ad1f65a3ca6cae6f25d71243cbd224d8bab3586444c4a1c15edbb7ebf2226cd59b82dda6384ce41f6239ae3624282fbce2e640e344fc312ed870bfdc4214af33e3d98d40cdb30ce2f864ada449cdd90203010001a321301f301d0603551d0e0416041466db001d449f471c3da2c8624181e22b58fc5c47300d06092a864886f70d01010c0500038202010093879677ca80de70c069c6f65519afd3f954771130cc7d360e63c15fb5e7caf37774eb69b97acf694f2856d85e2e7103bba004afe211885550da8d0bc56c8a3c080c68f03d5ebdddf9b3a19e4af271d81635368c0d1e05b0506c41dde8731efc7ca32d0a43d46129e8c4a885642312d76c61f39f3a6c92d9946e9062bb7df923774aab2519bffeb46e023775779bd4060395ecf7f538ebd63be4e75917af1739f1ae9d77f45a391a2dc17bf73dd875f2eabb020f9158417f0582f461781ef750719e8a4c3bb601b389a029171e79b151abdfc3d4e93f9eab27a41ff2c8c8868fae29c84b36740df3b23fa6ed315fc271ce5bbfcd1c9b1c4c39588e8a1a1a8c7210a2a224c35eeebdad23cc1551e93e79f13509e1394e3a3cd24c72d7da61a802691da6d802a52c6b3f4ad950258751514e946309243522b256a8eaa78b0ea0ab23faf1a5b65cdbcdc613a0039b58f7fff3961a8a84c3c57d1811a6e6d3a9e879f281c41cd9e2feec3049895601f41b5e8812ba4944e764035cbc0aafd46368926b733f88463d565b5e6ce4bf3c02d9db67f32a4acce4babebb4edddf8bb54f458b42fa9a1413b9e0c0a934273c5cd6a21bb9b44567b53bd7bb06b11c1ab4727acb6dc5b7ff4ba33f4545fe97d9e60792a243bea824b3a5db0f59343b89bf89d68e0c27731c852362e1c9b4a5ba283cc78b8d878ae562a15b33ba6e278251e454" timestamp="1792269002" url="https://deunix-educ.github.io/aventuriers-des-mots/fdroid/repo" version="20002">
+		<description>Depot de l'application éducative « Les Aventuriers des mots » (français, CE1 à CM2), logiciel libre sous AGPL-3.0. Aucune publicité, aucun traqueur.</description>
+	</repo>
+	<application id="org.deunix.aventuriersdesmots">
+		<id>org.deunix.aventuriersdesmots</id>
+		<added>2026-10-17</added>
+		<lastupdated>2026-10-17</lastupdated>
+		<name>Les Aventuriers des mots</name>
+		<summary>Jeu d'aventure pour apprendre l'orthographe et la grammaire (CE1 à CM2)</summary>
+		<desc>No description available</desc>
+		<license>AGPL-3.0-or-later</license>
+		<categories>Games,Science &amp; Education</categories>
+		<category>Games</category>
+		<web>https://github.com/deunix-educ/aventuriers-des-mots</web>
+		<source>https://github.com/deunix-educ/aventuriers-des-mots</source>
+		<tracker>https://github.com/deunix-educ/aventuriers-des-mots/issues</tracker>
+		<changelog>https://github.com/deunix-educ/aventuriers-des-mots/releases</changelog>
+		<author>deunix-educ</author>
+		<marketversion></marketversion>
+		<marketvercode>904</marketvercode>
+		<package>
+			<version>0.9.4</version>
+			<versioncode>904</versioncode>
+			<apkname>aventuriers-des-mots-0.9.4-android-arm64.apk</apkname>
+			<hash type="sha256">72bd91436c6bd432e80abc89c460d7911696aa2aba9f605ef631a510b4d1dd25</hash>
+			<size>29812275</size>
+			<sdkver>24</sdkver>
+			<targetSdkVersion>36</targetSdkVersion>
+			<added>2026-10-17</added>
+			<sig>49112d900b69a90931ea6ad3f2ad3553</sig>
+			<nativecode>arm64-v8a</nativecode>
+			<features>android.hardware.vulkan.version</features>
+		</package>
+	</application>
+</fdroid>

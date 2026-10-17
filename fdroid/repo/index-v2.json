@@ -1,0 +1,123 @@
+{
+  "repo": {
+    "name": {
+      "en-US": "Les Aventuriers des mots"
+    },
+    "description": {
+      "en-US": "Depot de l'application éducative « Les Aventuriers des mots » (français, CE1 à CM2), logiciel libre sous AGPL-3.0. Aucune publicité, aucun traqueur."
+    },
+    "icon": {
+      "en-US": {
+        "name": "/icons/icon.png",
+        "sha256": "5aa8147583a19618b0695d95bcc740f5aa29f9bf92e6955a2bbf6dcd5e99b4b7",
+        "size": 11986
+      }
+    },
+    "address": "https://deunix-educ.github.io/aventuriers-des-mots/fdroid/repo",
+    "timestamp": 1792269002000,
+    "categories": {
+      "Games": {
+        "name": {
+          "en-US": "Games"
+        }
+      },
+      "Science & Education": {
+        "name": {
+          "en-US": "Science & Education"
+        }
+      }
+    }
+  },
+  "packages": {
+    "org.deunix.aventuriersdesmots": {
+      "metadata": {
+        "added": 1792267173000,
+        "categories": [
+          "Games",
+          "Science & Education"
+        ],
+        "changelog": "https://github.com/deunix-educ/aventuriers-des-mots/releases",
+        "issueTracker": "https://github.com/deunix-educ/aventuriers-des-mots/issues",
+        "lastUpdated": 1792267173000,
+        "license": "AGPL-3.0-or-later",
+        "sourceCode": "https://github.com/deunix-educ/aventuriers-des-mots",
+        "webSite": "https://github.com/deunix-educ/aventuriers-des-mots",
+        "screenshots": {
+          "phone": {
+            "fr-FR": [
+              {
+                "name": "/org.deunix.aventuriersdesmots/fr-FR/phoneScreenshots/1.png",
+                "sha256": "5af72d6242b9795eb67549b99a5a9432fe0dbfe32dee5febf2a617a5f6b08b3b",
+                "size": 84415
+              },
+              {
+                "name": "/org.deunix.aventuriersdesmots/fr-FR/phoneScreenshots/2.png",
+                "sha256": "d9f04d8bdfc154e658315f3bc3d8e81b5d44c2d39502cac100ce046710a38baa",
+                "size": 144390
+              },
+              {
+                "name": "/org.deunix.aventuriersdesmots/fr-FR/phoneScreenshots/3.png",
+                "sha256": "197585bd67c46345fc7a788c18a3b1aa3b2ddc638d755d685445485f7bbc2b20",
+                "size": 42777
+              },
+              {
+                "name": "/org.deunix.aventuriersdesmots/fr-FR/phoneScreenshots/4.png",
+                "sha256": "051db44c9d44445197f5cf2585610800a883d039b6d521520445d5c196841571",
+                "size": 54091
+              }
+            ]
+          }
+        },
+        "authorName": "deunix-educ",
+        "name": {
+          "en-US": "Les Aventuriers des mots"
+        },
+        "summary": {
+          "en-US": "Jeu d'aventure pour apprendre l'orthographe et la grammaire (CE1 à CM2)"
+        },
+        "description": {
+          "fr-FR": "Les Aventuriers des mots est un jeu éducatif de français pour les enfants de 7 à 11 ans (CE1, CE2, CM1 et CM2). Il se joue entièrement hors ligne : aucune connexion Internet, aucun compte, aucune publicité, aucune collecte de données.\n\nL'enfant explore une carte, accompagné d'un hibou guide, et relève des missions : choix multiple, correction de phrase et dictée avec voix. Chaque règle est expliquée avant les exercices, et une erreur déclenche une explication, jamais une punition. Il n'y a aucune récompense liée à la vitesse.\n\nPour chaque niveau, trois tableaux : les homophones, les verbes et l'orthographe des mots. Les étoiles gagnées font grandir une collection d'objets.\n\nFonctions :\n• plusieurs profils d'enfants sur le même appareil, avec sauvegarde locale\n• espace adulte protégé par un petit calcul : tableau de progrès, export et restauration de la progression, suppression d'un profil\n• réglages : volumes, musique au choix, taille du texte, animations\n• barre d'accents sous les champs de saisie, utile avec un clavier tactile non français\n• conçu pour le tactile, la souris et le clavier\n\nProjet libre sous licence AGPL-3.0. Le contenu pédagogique est encore en brouillon, en attente de validation par des enseignants, et les voix des dictées sont des voix de synthèse provisoires.\n"
+        },
+        "icon": {
+          "fr-FR": {
+            "name": "/org.deunix.aventuriersdesmots/fr-FR/icon_xjk3WREYh759_15qwelgSkNqxgWbeIIDXVFoH2xKa38=.png",
+            "sha256": "c6393759111887be7dff5e6ac1e9604a436ac6059b7882035d51681f6c4a6b7f",
+            "size": 11088
+          }
+        },
+        "preferredSigner": "5d2cbda93a3dd74ec023830234408c9b7c10952d24aa80b1a846f5e05dcdb47b"
+      },
+      "versions": {
+        "72bd91436c6bd432e80abc89c460d7911696aa2aba9f605ef631a510b4d1dd25": {
+          "added": 1792267173000,
+          "file": {
+            "name": "/aventuriers-des-mots-0.9.4-android-arm64.apk",
+            "sha256": "72bd91436c6bd432e80abc89c460d7911696aa2aba9f605ef631a510b4d1dd25",
+            "size": 29812275
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a"
+            ],
+            "versionName": "0.9.4",
+            "versionCode": 904,
+            "features": [
+              {
+                "name": "android.hardware.vulkan.version"
+              }
+            ],
+            "usesSdk": {
+              "minSdkVersion": 24,
+              "targetSdkVersion": 36
+            },
+            "signer": {
+              "sha256": [
+                "5d2cbda93a3dd74ec023830234408c9b7c10952d24aa80b1a846f5e05dcdb47b"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "repo": {
+    "icon": {
+      "en-US": {
+        "sha256": "5aa8147583a19618b0695d95bcc740f5aa29f9bf92e6955a2bbf6dcd5e99b4b7",
+        "size": 11986
+      }
+    },
+    "address": "https://deunix-educ.github.io/aventuriers-des-mots/fdroid/repo",
+    "timestamp": 1792269002000
+  },
+  "packages": {
+    "org.deunix.aventuriersdesmots": {
+      "metadata": {
+        "name": {
+          "fr-FR": null
+        },
+        "summary": {
+          "fr-FR": null,
+          "en-US": "Jeu d'aventure pour apprendre l'orthographe et la grammaire (CE1 à CM2)"
+        }
+      }
+    }
+  }
+}

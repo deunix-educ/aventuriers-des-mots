@@ -1,0 +1,36 @@
+{
+  "/etc/issue.net": "Debian GNU/Linux 13",
+  "antiFeatures": {},
+  "apksigner": "/home/denis/Android/Sdk/build-tools/37.0.0/apksigner",
+  "archivePolicy0": [],
+  "commandLine": [
+    "/workdisk/denis/projets/Workspace/Mots-Magiques/.venv/bin/fdroid update",
+    "--create-metadata",
+    "--pretty"
+  ],
+  "disabled": [],
+  "endTimestamp": 1792269004372,
+  "failedBuilds": {},
+  "jarsigner": "/usr/lib/jvm/java-21-openjdk-amd64/bin/jarsigner",
+  "keytool": "/usr/lib/jvm/java-21-openjdk-amd64/bin/keytool",
+  "needsUpdate": [
+    "org.deunix.aventuriersdesmots"
+  ],
+  "noPackages": [
+    "org.deunix.aventuriersdesmots"
+  ],
+  "noUpdateCheck": [
+    "org.deunix.aventuriersdesmots"
+  ],
+  "stages": {
+    "delete_disabled_builds": 1792269001572,
+    "index.make repo": 1792269002411,
+    "prepare_apps repo": 1792269002006,
+    "process_apks": 1792269001572,
+    "read_added_date_from_all_apks": 1792269002006,
+    "remove_apks": 1792269002005,
+    "scan_repo_files": 1792269002005
+  },
+  "startTimestamp": 1792265401000,
+  "subcommand": "update"
+}
