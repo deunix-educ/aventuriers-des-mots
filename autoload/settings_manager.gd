@@ -70,7 +70,9 @@ func load_from_disk() -> void:
     if FileAccess.file_exists(SETTINGS_PATH):
         var file := FileAccess.open(SETTINGS_PATH, FileAccess.READ)
         if file != null:
-            raw = JSON.parse_string(file.get_as_text())
+            var json := JSON.new()
+            if json.parse(file.get_as_text()) == OK:
+                raw = json.data
     var clean := AppSettings.sanitize(raw)
     volume = clean["volume"]
     music_volume = clean["music_volume"]

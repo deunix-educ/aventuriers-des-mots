@@ -87,7 +87,12 @@ static func _read_raw_json(path: String) -> Variant:
     var text := file.get_as_text()
     if text.strip_edges().is_empty():
         return null
-    return JSON.parse_string(text)
+    # JSON.new().parse : un fichier corrompu est un cas normal (repli sur la
+    # copie de secours), pas une erreur moteur a journaliser.
+    var json := JSON.new()
+    if json.parse(text) != OK:
+        return null
+    return json.data
 
 
 static func _copy_file(from_path: String, to_path: String) -> void:

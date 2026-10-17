@@ -94,7 +94,6 @@ func test_corrupted_main_file_falls_back_to_backup() -> void:
     main_file.close()
 
     var read_back: Variant = SaveIO.read(profile_id, save_schema)
-    assert_engine_error("Parse JSON failed")
     assert_not_null(read_back)
     assert_eq(int(read_back["session_count"]), 1)
 
