@@ -8,7 +8,7 @@ GD_SOURCES := autoload scripts tests
 
 .DEFAULT_GOAL := help
 
-.PHONY: release release-dry-run serve-web help setup import run lint format validate-data test check content-review generate-dictation-audio generate-sounds export-linux export-windows export-android export-macos export-web package screenshot
+.PHONY: fdroid-repo fdroid-publish release release-dry-run serve-web help setup import run lint format validate-data test check content-review generate-dictation-audio generate-sounds export-linux export-windows export-android export-macos export-web package screenshot
 
 # Liste les commandes : toute cible suivie de « ## description » y figure.
 help: ## Affiche cette aide
@@ -104,3 +104,9 @@ release: ## Publie une pre-release GitHub (STABLE=1 pour une version stable)
 
 release-dry-run: ## Verifie tout et construit les archives sans rien publier
 	tools/release.sh --dry-run
+
+fdroid-repo: ## Construit le depot F-Droid personnel (APK de dist/) sans le publier
+	tools/fdroid_repo.sh
+
+fdroid-publish: ## Construit puis publie le depot F-Droid sur la branche gh-pages
+	tools/fdroid_repo.sh --publish

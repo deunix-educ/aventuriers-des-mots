@@ -41,11 +41,40 @@ module de vérification de licence Google Play (`com.android.vending.licensing`)
 inactif sans Play Store. Les analyseurs de F-Droid le signalent ; IzzyOnDroid est
 plus tolérant, mais la demande peut le relever.
 
-## Voie 2 : dépôt F-Droid personnel (facultatif)
+## Voie 2 : dépôt F-Droid personnel (en place)
 
-Héberger soi-même un dépôt compatible F-Droid (outil `fdroidserver`, fichiers
-statiques sur GitHub Pages). Aucune revue, mais il faut publier l'index à chaque
-version. Utile si IzzyOnDroid refuse ou tarde.
+Dépôt compatible F-Droid hébergé par GitHub Pages. Aucune revue : les
+utilisateurs ajoutent l'adresse du dépôt dans leur client (F-Droid, Droid-ify,
+Neo Store) et reçoivent les mises à jour. Les APK sont ceux de la Release,
+signés avec la clé de publication ; l'index est signé par une **clé de dépôt
+distincte**.
+
+**Pour le propriétaire**
+- `make fdroid-repo` : construit le dépôt localement à partir de l'APK arm64 de
+  `dist/` (donc après `make package` ou `make release`). État dans
+  `~/.local/share/aventuriers-des-mots/fdroid/` (trois dernières versions).
+- `make fdroid-publish` : fait de même, puis publie sur la branche orpheline
+  `gh-pages` (force-push, sans historique). Une seule fois : activer GitHub
+  Pages (Settings > Pages > Source : branche `gh-pages`, dossier `/`).
+- Au premier lancement, la clé du dépôt est créée :
+  `~/.local/share/aventuriers-des-mots/fdroid-repo.keystore`, mot de passe dans
+  `~/.config/aventuriers-des-mots/fdroid.env` (droits 600). **À sauvegarder hors
+  de la machine** : la perdre oblige tous les utilisateurs à retirer puis
+  rajouter le dépôt.
+- `fdroidserver` est installé par `make setup` (`.venv`).
+- Fichiers versionnés : `fdroid/config.template.yml`,
+  `fdroid/metadata/org.deunix.aventuriersdesmots.yml` ; les textes et images
+  viennent de `fastlane/`.
+
+**Pour les utilisateurs** (une fois publié)
+1. Installer F-Droid (f-droid.org) ou un client compatible.
+2. Réglages > Dépôts > Ajouter un dépôt, saisir
+   `https://deunix-educ.github.io/aventuriers-des-mots/repo`.
+3. Vérifier l'empreinte SHA-256 affichée par `make fdroid-repo` (à publier dans
+   le README) pour être sûr de la source ; installer « Les Aventuriers des mots ».
+
+Limite : arm64 seulement (téléphones et tablettes ARM récents) ; une tablette
+x86_64 utilise l'APK de `android.zip`.
 
 ## Voie 3 : F-Droid officiel (lourde, plus tard)
 

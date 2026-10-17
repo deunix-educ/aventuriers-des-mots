@@ -68,7 +68,7 @@ if [ ! -d ".venv" ]; then
     python3 -m venv .venv
 fi
 ./.venv/bin/pip install --quiet --upgrade pip
-./.venv/bin/pip install --quiet "gdtoolkit==${GDTOOLKIT_VERSION}" "pyright==${PYRIGHT_VERSION}" piper-tts
+./.venv/bin/pip install --quiet "gdtoolkit==${GDTOOLKIT_VERSION}" "pyright==${PYRIGHT_VERSION}" piper-tts "fdroidserver==2.4.5"
 
 echo "Import du projet (enregistre les class_name globaux : SchemaValidator, DataLoader...)."
 "${GODOT_BIN}" --headless --path . --import >/dev/null

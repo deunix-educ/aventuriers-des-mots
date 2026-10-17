@@ -1,0 +1,18 @@
+# Modele de configuration du depot F-Droid personnel. Les mots de passe sont
+# injectes par tools/fdroid_repo.sh depuis ~/.config/aventuriers-des-mots/fdroid.env
+# (jamais commites). Le fichier genere vit hors du depot.
+---
+sdk_path: @SDK@
+repo_url: https://deunix-educ.github.io/aventuriers-des-mots/repo
+repo_name: Les Aventuriers des mots
+repo_description: >-
+  Depot de l'application éducative « Les Aventuriers des mots » (français,
+  CE1 à CM2), logiciel libre sous AGPL-3.0. Aucune publicité, aucun traqueur.
+repo_icon: icon.png
+repo_keyalias: aventuriers-repo
+keystore: @KEYSTORE@
+keystorepass: @PASS@
+keypass: @PASS@
+keydname: CN=Les Aventuriers des mots (depot), O=deunix-educ, C=FR
+archive_older: 0
+make_current_version_link: false
