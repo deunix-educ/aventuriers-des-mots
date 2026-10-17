@@ -79,13 +79,14 @@ screenshot: import ## Capture une scene (SCENE=... OUT=... ARGS=...)
 RELEASE_ENV ?= $(HOME)/.config/aventuriers-des-mots/release.env
 ANDROID_DEBUG_KEYSTORE ?= $(HOME)/.local/share/godot/keystores/debug.keystore
 
-export-android: import ## Exporte l'APK Android / ChromeOS dans build/android/
+export-android: import ## Exporte les APK Android (arm64+x86_64, et arm64 seul < 30 Mo) dans build/android/
 	mkdir -p build/android
 	set -a; [ -f "$(RELEASE_ENV)" ] && . "$(RELEASE_ENV)"; set +a; \
-	GODOT_ANDROID_KEYSTORE_RELEASE_PATH="$${GODOT_ANDROID_KEYSTORE_RELEASE_PATH:-$(ANDROID_DEBUG_KEYSTORE)}" \
-	GODOT_ANDROID_KEYSTORE_RELEASE_USER="$${GODOT_ANDROID_KEYSTORE_RELEASE_USER:-androiddebugkey}" \
-	GODOT_ANDROID_KEYSTORE_RELEASE_PASSWORD="$${GODOT_ANDROID_KEYSTORE_RELEASE_PASSWORD:-android}" \
-	$(GODOT_BIN) --headless --path . --export-release "Android" build/android/aventuriers_des_mots.apk
+	export GODOT_ANDROID_KEYSTORE_RELEASE_PATH="$${GODOT_ANDROID_KEYSTORE_RELEASE_PATH:-$(ANDROID_DEBUG_KEYSTORE)}"; \
+	export GODOT_ANDROID_KEYSTORE_RELEASE_USER="$${GODOT_ANDROID_KEYSTORE_RELEASE_USER:-androiddebugkey}"; \
+	export GODOT_ANDROID_KEYSTORE_RELEASE_PASSWORD="$${GODOT_ANDROID_KEYSTORE_RELEASE_PASSWORD:-android}"; \
+	$(GODOT_BIN) --headless --path . --export-release "Android" build/android/aventuriers_des_mots.apk && \
+	$(GODOT_BIN) --headless --path . --export-release "Android arm64" build/android/aventuriers_des_mots_arm64.apk
 
 export-macos: import ## Exporte l'application macOS (zip) dans build/macos/
 	mkdir -p build/macos

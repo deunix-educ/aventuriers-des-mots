@@ -55,7 +55,7 @@ ARCHIVES=(
     "dist/aventuriers-des-mots-${VERSION}-linux-x86_64.tar.gz"
     "dist/aventuriers-des-mots-${VERSION}-windows-x86_64.zip"
     "dist/aventuriers-des-mots-${VERSION}-android.zip"
-    "dist/aventuriers-des-mots-${VERSION}-android.apk"
+    "dist/aventuriers-des-mots-${VERSION}-android-arm64.apk"
     "dist/aventuriers-des-mots-${VERSION}-macos-universal.zip"
     "dist/aventuriers-des-mots-${VERSION}-chromeos.zip"
 )
@@ -69,7 +69,10 @@ APKSIGNER="$(ls -d "${ANDROID_HOME:-${HOME}/Android/Sdk}"/build-tools/*/apksigne
 [ -x "${APKSIGNER}" ] || fail "apksigner introuvable (Android SDK build-tools)"
 TMP="$(mktemp -d)"
 trap 'rm -rf "${TMP}"' EXIT
-CERTS="$("${APKSIGNER}" verify --print-certs "dist/aventuriers-des-mots-${VERSION}-android.apk")"
+# IzzyOnDroid n'accepte pas d'APK de plus de 30 Mo.
+APK_SIZE="$(stat -c %s "dist/aventuriers-des-mots-${VERSION}-android-arm64.apk")"
+[ "${APK_SIZE}" -le 30000000 ] || fail "l'APK arm64 depasse 30 Mo (${APK_SIZE} octets)"
+CERTS="$("${APKSIGNER}" verify --print-certs "dist/aventuriers-des-mots-${VERSION}-android-arm64.apk")"
 if grep -q "${DEBUG_CERT_DN}" <<<"${CERTS}"; then
     fail "l'APK est signe avec la cle de debogage Godot : verifier ${RELEASE_ENV}"
 fi
@@ -86,7 +89,7 @@ les voix des dictées sont provisoires (synthèse vocale).
 | Plateforme | Archive | Testé à la main |
 |---|---|---|
 | Linux | \`linux-x86_64.tar.gz\` | oui |
-| Android | \`android.apk\` (ou \`android.zip\` avec notice) | oui |
+| Android | \`android-arm64.apk\` (téléphones et tablettes ARM) ou \`android.zip\` (arm64 + x86_64, avec notice) | oui |
 | Navigateur / ChromeOS | \`chromeos.zip\` (version web + APK) | web : oui |
 | Windows | \`windows-x86_64.zip\` | non |
 | macOS | \`macos-universal.zip\` | non |

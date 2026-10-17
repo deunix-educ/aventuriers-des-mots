@@ -120,8 +120,10 @@ WEB
     && zip -qr "${CHROMEOS}.zip" "${CHROMEOS}")
 # L'APK est aussi publie seul : les depots F-Droid tiers (IzzyOnDroid) le lisent
 # directement dans la Release, sans archive.
-cp build/android/aventuriers_des_mots.apk "dist/${ANDROID}.apk"
+# Version arm64 seule (moins de 30 Mo, plafond d'IzzyOnDroid) ; l'APK arm64 + x86_64
+# reste dans l'archive android.zip.
+cp build/android/aventuriers_des_mots_arm64.apk "dist/${ANDROID}-arm64.apk"
 (cd dist && sha256sum "${LINUX}.tar.gz" "${WINDOWS}.zip" "${ANDROID}.zip" \
-    "${ANDROID}.apk" "${MACOS}.zip" "${CHROMEOS}.zip" > SHA256SUMS)
+    "${ANDROID}-arm64.apk" "${MACOS}.zip" "${CHROMEOS}.zip" > SHA256SUMS)
 rm -rf "dist/${LINUX}" "dist/${WINDOWS}" "dist/${ANDROID}" "dist/${MACOS}" "dist/${CHROMEOS}"
 ls -lh dist

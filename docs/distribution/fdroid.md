@@ -6,9 +6,12 @@ toute demande.
 
 ## Ce que fournit le dépôt
 
-- **L'APK seul dans chaque Release** : `aventuriers-des-mots-X.Y.Z-android.apk`
-  (en plus de l'archive `android.zip`), signé avec la clé de publication
-  (`make release`). Les dépôts tiers lisent ce fichier directement.
+- **L'APK seul dans chaque Release** : `aventuriers-des-mots-X.Y.Z-android-arm64.apk`
+  (arm64 uniquement, environ 28 Mo : IzzyOnDroid refuse au-delà de 30 Mo), signé
+  avec la clé de publication (`make release` vérifie signature et taille). L'APK
+  arm64 + x86_64 reste dans `android.zip`. Marge faible : si le contenu grossit
+  (plus de dictées), l'APK dépassera 30 Mo : compresser davantage l'audio ou
+  demander une dérogation.
 - **Métadonnées de magasin** dans `fastlane/metadata/android/fr-FR/` : titre,
   descriptions courte et longue, icône 512 px, quatre captures d'écran, notes
   de version par `versionCode` (`changelogs/903.txt` pour la 0.9.3). C'est le
@@ -26,9 +29,10 @@ dans les Releases GitHub. Pas de frais, pas de recompilation, mise à jour
 automatique quand un tag et une Release portant un APK sont publiés.
 
 1. Avoir au moins une Release avec l'APK (voir plus haut) : publier la 0.9.3.
-2. Ouvrir une demande d'inclusion sur le suivi des demandes d'IzzyOnDroid
-   (hébergé sur Codeberg ; adresse sur izzyondroid.org, page « App Inclusion
-   Policy »), avec l'adresse du dépôt GitHub.
+2. Ouvrir un ticket sur https://codeberg.org/IzzyOnDroid/repodata/issues (compte
+   Codeberg gratuit ; page « New app inclusions » du site). Brouillon prêt dans
+   `docs/distribution/izzyondroid-request.md`, avec la mention du développement
+   assisté par IA (leur politique rejette les apps « vibe-coded »).
 3. Les utilisateurs ajoutent ensuite le dépôt IzzyOnDroid dans le client
    F-Droid (ou Droid-ify, Neo Store) et installent l'application.
 
