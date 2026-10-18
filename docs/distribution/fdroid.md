@@ -7,41 +7,29 @@ toute demande.
 ## Ce que fournit le dépôt
 
 - **L'APK seul dans chaque Release** : `aventuriers-des-mots-X.Y.Z-android-arm64.apk`
-  (arm64 uniquement, environ 28 Mo : IzzyOnDroid refuse au-delà de 30 Mo), signé
-  avec la clé de publication (`make release` vérifie signature et taille). L'APK
-  arm64 + x86_64 reste dans `android.zip`. Marge faible : si le contenu grossit
-  (plus de dictées), l'APK dépassera 30 Mo : compresser davantage l'audio ou
-  demander une dérogation.
+  (arm64 uniquement, environ 28 Mo, utilisé par le dépôt personnel), signé avec la
+  clé de publication (`make release` vérifie la signature). L'APK
+  arm64 + x86_64 reste dans `android.zip`.
 - **Métadonnées de magasin** dans `fastlane/metadata/android/fr-FR/` : titre,
   descriptions courte et longue, icône 512 px, quatre captures d'écran, notes
   de version par `versionCode` (`changelogs/903.txt` pour la 0.9.3). C'est le
-  format lu par F-Droid et IzzyOnDroid. Pour chaque nouvelle version, ajouter
+  format lu par F-Droid. Pour chaque nouvelle version, ajouter
   `changelogs/<versionCode>.txt` (`versionCode = major*10000 + minor*100 + patch`).
 - Dossier `fastlane/` ignoré par Godot (`.gdignore`) et exclu des exports.
 - Licences compatibles : code et illustrations AGPL-3.0, police OFL, voix CC BY
   4.0 (attribution dans `assets/CREDITS.md`), aucun traqueur, aucune permission
   Internet.
 
-## Voie 1 (recommandée) : dépôt IzzyOnDroid
+## Voie 1 : dépôt IzzyOnDroid (refusée)
 
-Dépôt compatible F-Droid qui publie les APK officiels des développeurs, pris
-dans les Releases GitHub. Pas de frais, pas de recompilation, mise à jour
-automatique quand un tag et une Release portant un APK sont publiés.
+La demande d'inclusion déposée (octobre 2026) a reçu une réponse négative
+(motif à consigner ici s'il est communiqué). Leur politique mentionne le rejet
+des applications « vibe-coded » et un plafond de 30 Mo par APK ; le projet est
+développé avec une IA. Le texte déposé figurait dans
+`docs/distribution/izzyondroid-request.md` (retiré, visible dans l'historique
+git). Pas de nouvelle demande prévue ; la voie 2 couvre le besoin.
 
-1. Avoir au moins une Release avec l'APK (voir plus haut) : publier la 0.9.3.
-2. Ouvrir un ticket sur https://codeberg.org/IzzyOnDroid/repodata/issues (compte
-   Codeberg gratuit ; page « New app inclusions » du site). Brouillon prêt dans
-   `docs/distribution/izzyondroid-request.md`, avec la mention du développement
-   assisté par IA (leur politique rejette les apps « vibe-coded »).
-3. Les utilisateurs ajoutent ensuite le dépôt IzzyOnDroid dans le client
-   F-Droid (ou Droid-ify, Neo Store) et installent l'application.
-
-Point d'attention : le modèle Android standard de Godot embarque un petit
-module de vérification de licence Google Play (`com.android.vending.licensing`),
-inactif sans Play Store. Les analyseurs de F-Droid le signalent ; IzzyOnDroid est
-plus tolérant, mais la demande peut le relever.
-
-## Voie 2 : dépôt F-Droid personnel (en place, publié le 2026-10-17, installation testée sur Pixel 8)
+## Voie 2 : dépôt F-Droid personnel (voie retenue ; en place, publié le 2026-10-17, installation testée sur Pixel 8)
 
 Dépôt compatible F-Droid hébergé par GitHub Pages. Aucune revue : les
 utilisateurs ajoutent l'adresse du dépôt dans leur client (F-Droid, Droid-ify,
@@ -103,5 +91,4 @@ l'établissement l'une de ces trois options.
 
 ## Non vérifié
 
-- Aucune demande déposée ; l'acceptation d'IzzyOnDroid n'est pas garantie.
 - Installation via un client F-Droid non testée.

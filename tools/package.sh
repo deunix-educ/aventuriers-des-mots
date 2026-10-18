@@ -118,9 +118,9 @@ WEB
     && zip -qr "${ANDROID}.zip" "${ANDROID}" \
     && zip -qr "${MACOS}.zip" "${MACOS}" \
     && zip -qr "${CHROMEOS}.zip" "${CHROMEOS}")
-# L'APK est aussi publie seul : les depots F-Droid tiers (IzzyOnDroid) le lisent
-# directement dans la Release, sans archive.
-# Version arm64 seule (moins de 30 Mo, plafond d'IzzyOnDroid) ; l'APK arm64 + x86_64
+# L'APK est aussi publie seul dans la Release (source du depot F-Droid
+# personnel, voir tools/fdroid_repo.sh), sans archive.
+# Version arm64 seule (environ 28 Mo) ; l'APK arm64 + x86_64
 # reste dans l'archive android.zip.
 cp build/android/aventuriers_des_mots_arm64.apk "dist/${ANDROID}-arm64.apk"
 (cd dist && sha256sum "${LINUX}.tar.gz" "${WINDOWS}.zip" "${ANDROID}.zip" \

@@ -69,9 +69,6 @@ APKSIGNER="$(ls -d "${ANDROID_HOME:-${HOME}/Android/Sdk}"/build-tools/*/apksigne
 [ -x "${APKSIGNER}" ] || fail "apksigner introuvable (Android SDK build-tools)"
 TMP="$(mktemp -d)"
 trap 'rm -rf "${TMP}"' EXIT
-# IzzyOnDroid n'accepte pas d'APK de plus de 30 Mo.
-APK_SIZE="$(stat -c %s "dist/aventuriers-des-mots-${VERSION}-android-arm64.apk")"
-[ "${APK_SIZE}" -le 30000000 ] || fail "l'APK arm64 depasse 30 Mo (${APK_SIZE} octets)"
 CERTS="$("${APKSIGNER}" verify --print-certs "dist/aventuriers-des-mots-${VERSION}-android-arm64.apk")"
 if grep -q "${DEBUG_CERT_DN}" <<<"${CERTS}"; then
     fail "l'APK est signe avec la cle de debogage Godot : verifier ${RELEASE_ENV}"
